@@ -842,24 +842,24 @@
 ## ==Documentos ==
 ### Vista de edição:
 ##### Visão geral
-  - [ ] Nome do ficheiro
-  - [ ] Situação
-  - [ ] Nome do documento
-  - [ ] Revisão
-  - [ ] Tipo de documento
-  - [ ] Modelo?
-  - [ ] Data de publicação
-  - [ ] Categoria
-  - [ ] Data de validade
-  - [ ] Subcategoria
-  - [ ] Descrição
-  - [ ] Documento relacionado
-  - [ ] Revisão do documento relacionado
-  - [ ] Medicina Ocupacional
-  - [ ] Fichas de Aptidão
+  - [x] Nome do ficheiro
+  - [x] Situação
+  - [x] Nome do documento
+  - [x] Revisão
+  - [x] Tipo de documento
+  - [x] Modelo?
+  - [x] Data de publicação
+  - [x] Categoria
+  - [x] Data de validade
+  - [x] Subcategoria
+  - [x] Descrição
+  - [x] Documento relacionado
+  - [x] Revisão do documento relacionado
+  - [x] Medicina Ocupacional
+  - [x] Fichas de Aptidão
 
 ##### Outro
-  - [ ] Atribuído a
+  - [x] Atribuído a
 
 ### Vista de detalhe:
 ##### Visão geral
@@ -875,7 +875,7 @@
   - [x] Subcategoria
   - [x] Descrição
   - [x] Documento relacionado
-  - [ ] Revisão do documento relacionado
+  - [x] Revisão do documento relacionado
   - [x] Medicina Ocupacional
   - [ ] Fichas de Aptidão
 
@@ -883,33 +883,33 @@
   - [x] Atribuído a
 ### Vista de Lista
 #### Predefinido
-  - [ ] Nome do ficheiro: [filename]
-  - [ ] Data de criação: [date_entered]
-  - [ ] Criado por: [created_by_name]
-  - [ ] Descrição: [description]
-  - [ ] Tipo de documento: [template_type]
-  - [ ] Categoria: [category_id]
-  - [ ] Data de validade: [exp_date]
-  - [ ] Utilizador: [assigned_user_name]
+  - [x] Nome do ficheiro: [filename]
+  - [x] Data de criação: [date_entered]
+  - [x] Criado por: [created_by_name]
+  - [x] Descrição: [description]
+  - [x] Tipo de documento: [template_type]
+  - [x] Categoria: [category_id]
+  - [x] Data de validade: [exp_date]
+  - [x] Utilizador: [assigned_user_name]
 
 ### Criação rápida:
 ##### Predefinido
-  - [ ] Nome do ficheiro
-  - [ ] Nome do documento
-  - [ ] Atribuído a
-  - [ ] Data de publicação
-  - [ ] Descrição
+  - [x] Nome do ficheiro
+  - [x] Nome do documento
+  - [x] Atribuído a
+  - [x] Data de publicação
+  - [x] Descrição
 
 ### Filtro
 #### Predefinido
-  - [ ] Nome do documento: [document_name]
-  - [ ] Situação: [status_id]
-  - [ ] Tipo de documento: [template_type]
-  - [ ] Categoria: [category_id]
-  - [ ] Subcategoria: [subcategory_id]
-  - [ ] Atribuído a: [assigned_user_id]
-  - [ ] Data de publicação: [active_date]
-  - [ ] Data de validade: [exp_date]
+  - [x] Nome do documento: [document_name]
+  - [x] Situação: [status_id]
+  - [x] Tipo de documento: [template_type]
+  - [x] Categoria: [category_id]
+  - [x] Subcategoria: [subcategory_id]
+  - [x] Atribuído a: [assigned_user_id]
+  - [x] Data de publicação: [active_date]
+  - [x] Data de validade: [exp_date]
 
 ## ==Notas ==
 ### Vista de edição:

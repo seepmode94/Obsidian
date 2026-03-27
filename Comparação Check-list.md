@@ -81,6 +81,27 @@ No módulo Sessões, verifica-se uma diferença significativa entre a Tacovia e 
 No módulo ==Formações==, na Criação rápida, a Seepmode não apresenta o bloco Recursos Administrativos, ao contrário da Tacovia. No entanto, esse bloco existe na Seepmode na Vista de detalhe, pelo que a diferença se verifica apenas nessa vista específica.
 
 4. Documentos:
+No módulo ==Documentos==, na Vista de detalhe, existem diferenças de conteúdo entre a Seepmode e a Tacovia.
+
+  Na Seepmode, surge o campo Fichas de Aptidão, que não está presente na Tacovia.
+
+  Por outro lado, na Tacovia, surgem elementos que não estão refletidos da mesma forma na Seepmode, nomeadamente:
+
+  - Faturas(Histórico)
+  - um campo adicional de (preencher)
+  - o bloco LBL_REVISIONS_PANEL, que inclui:
+  - Revisão criada por
+  - Data de criação da última revisão
+  - Situação
+  - Data de criação
+  - Data de alteração
+  
+Na Vista de Lista > Predefinido do lado esquerdo (Seepmode) falta o campo:
+
+  - Nome do documento: [document_name]
+
+  Assim, a diferença neste módulo não está apenas na organização, mas também em campos distintos presentes em cada ficheiro.
+
 
 5. Acessos IEFP:
 
