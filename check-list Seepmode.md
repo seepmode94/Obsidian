@@ -711,7 +711,7 @@
 
 ### Vista de detalhe:
 ##### Visão geral
-[ ] Assunto
+  - [ ] Assunto
   - [ ] Situação
   - [ ] Data e hora de inicio
   - [ ] Referente a
@@ -729,15 +729,144 @@
   - [ ] Data criação
   - [ ] Data alteração
 
-##### Itens de linha
+
+### Vista de Lista
+#### Predefinido
+  - [ ] Fechar: [sct_complete]
+  - [ ] Data de inicio: [date_start]
+  - [ ] Assunto: [name]
+  - [ ] Situação: [status]
+  - [ ] Contacto: [contact_name]
+  - [ ] Data criação: [date_entered]
+  - [ ] Referente a: [parent_name]
+  - [ ] Atribuído a: [assigned_user_name]
+  - [ ] Propostas: [aos_quotes_calls_1_name]
+  - [ ] Histórico tentativas telefonemas: [reschedule_history]
+
+
+### Criação rápida:
+##### Predefinido
+  - [ ] Assunto
+  - [ ] Situação
+  - [ ] Data e hora de inicio
+  - [ ] Referente a
+  - [ ] Duração
+  - [ ] Lembretes
+  - [ ] Atribuído a
+  - [ ] Descrição
+### Filtro
+#### Predefinido
+  - [ ] Assunto: [name]
+  - [ ] Referente a: [parent_name]
+  - [ ] Meus itens: [current_user_only]
+  - [ ] Direção: [direction]
+  - [ ] Situação: [status]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Data inicio: [date_start]
+  - [ ] Data criação: [date_entered]
+  - [ ] Data alteração: [date_modified] 
+
+## ==Reuniões ==
+### Vista de edição:
+##### Visão geral
+  - [ ] Assunto
+  - [ ] Situação
+  - [ ] Data inicio
+  - [ ] Cliente
+  - [ ] Data fim
+  - [ ] Local
+  - [ ] Duração
+  - [ ] Notificação auditoria ao cliente
+  - [ ] Lembretes
+  - [ ] Descrição
+  - [ ] Propostas
+
+##### Outro
+  - [ ] Atribuído a
+
+### Vista de detalhe:
+##### Visão geral
+  - [ ] Assunto
+  - [ ] Situação
+  - [ ] Data e hora de inicio
+  - [ ] Cliente
+  - [ ] Data fim
+  - [ ] Local
+  - [ ] Duração
+  - [ ] Notificação auditoria ao cliente
+  - [ ] Lembretes
+  - [ ] Descrição
+  - [ ] Propostas
+
+##### Outro
+  - [ ] Atribuído a
+
+### Vista de Lista
+#### Predefinido
+  - [ ] Fechar: [set_complete]
+  - [ ] Data de inicio: [date_start]
+  - [ ] Assunto: [name]
+  - [ ] Contacto: [contact_name]
+  - [ ] Cliente: [parent_name]
+  - [ ] Propostas: [aos_quotes_meetings_1_name]
+  - [ ] Local: [location]
+  - [ ] Utilizador atribuído: [assigned_user_name]
+  - [ ] Data criação: [date_entered]
+  - [ ] Criado por: [created_by_name]
+
+### Criação rápida:
+##### Visão geral
+  - [ ] Assunto
+  - [ ] Situação
+  - [ ] Data inicio
+  - [ ] Cliente
+  - [ ] Data fim
+  - [ ] Local
+  - [ ] Duração
+  - [ ] Notificação auditoria ao cliente
+  - [ ] Lembretes
+  - [ ] Descrição
+  - [ ] Propostas
+
+##### Outro
+  - [ ] Atribuído a
+
+### Filtro
+#### Predefinido
+  - [ ] Assunto: [name]
+  - [ ] Cliente: [parent_name]
+  - [ ] Meus itens: [current_user_only]
+  - [ ] Situação: [status]
+  - [ ] Atribuído a: [assigned_user_id]
+
+## ==Documentos ==
+### Vista de edição:
+##### Visão geral
+  - [ ] Nome do ficheiro
+  - [ ] Situação
+  - [ ] Nome do documento
+  - [ ] Revisão
+  - [ ] Tipo de documento
+  - [ ] Modelo?
+  - [ ] Data de publicação
+  - [ ] Categoria
+  - [ ] Data de validade
+  - [ ] Subcategoria
+  - [ ] Descrição
+  - [ ] Documento relacionado
+  - [ ] Revisão do documento relacionado
+  - [ ] Medicina Ocupacional
+  - [ ] Fichas de Aptidão
+
+##### Outro
+  - [ ] Atribuído a
+
+### Vista de detalhe:
 
 ### Vista de Lista
 #### Predefinido
 
 ### Criação rápida:
-##### Visão geral
-
-##### Itens de linha
 
 ### Filtro
 #### Predefinido
