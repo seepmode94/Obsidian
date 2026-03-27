@@ -1723,87 +1723,87 @@
   - [x] Observações
 
 ##### Patologia Apresentada
-  - [ ] Sem problemas de saúde
-  - [ ] Com problemas de saúde
-  - [ ] Observações
+  - [x] Sem problemas de saúde
+  - [x] Com problemas de saúde
+  - [x] Observações
 
 ##### FMO
-  - [ ] Recomendações
-  - [ ] (preencher)
+  - [x] Recomendações
+  - [x] (preencher)
 ##### Especialidade
-  - [ ] Médico Assistente
-  - [ ] Ginecologia
-  - [ ] Cardiologia
-  - [ ] Neurologia
-  - [ ] Cirurgia
-  - [ ] Oftalmologia
-  - [ ] Dermatologia
-  - [ ] Ortopedia
-  - [ ] Endocrinologia
-  - [ ] Otorrinolaringologia
-  - [ ] Estomatologia
-  - [ ] Outros
+  - [x] Médico Assistente
+  - [x] Ginecologia
+  - [x] Cardiologia
+  - [x] Neurologia
+  - [x] Cirurgia
+  - [x] Oftalmologia
+  - [x] Dermatologia
+  - [x] Ortopedia
+  - [x] Endocrinologia
+  - [x] Otorrinolaringologia
+  - [x] Estomatologia
+  - [x] Outros
 
 ##### Promoção da saúde/Aconselhamentos
-  - [ ] Reduzir peso corporal
-  - [ ] (preencher)
-  - [ ] Reduzir consumo tabágico
-  - [ ] (preencher)
-  - [ ] Reduzir consumo bebidas alcoólicas
-  - [ ] (preencher)
-  - [ ] Praticar exercício físico
-  - [ ] (preencher)
-  - [ ] Atualizar vacinas
-  - [ ] (preencher)
-  - [ ] Outros
-  - [ ] (preencher)
+  - [x] Reduzir peso corporal
+  - [x] (preencher)
+  - [x] Reduzir consumo tabágico
+  - [x] (preencher)
+  - [x] Reduzir consumo bebidas alcoólicas
+  - [x] (preencher)
+  - [x] Praticar exercício físico
+  - [x] (preencher)
+  - [x] Atualizar vacinas
+  - [x] (preencher)
+  - [x] Outros
+  - [x] (preencher)
 
 ##### FMO
-  - [ ] Observações Finais
+  - [x] Observações Finais
 ##### FMO
-  - [ ] Presenças
-  - [ ] Data Presença
-  - [ ] Apreciação médica
-  - [ ] (preencher)
-  - [ ] Nome do Médico
-  - [ ] Nº Cédula Profissional
-  - [ ] Assinatura (Médico)
-  - [ ] Modelo de projeto
-  - [ ] Data de criação
-  - [ ] Data de alteração
-  - [ ] Considerar dias úteis
+  - [x] Presenças
+  - [x] Data Presença
+  - [x] Apreciação médica
+  - [x] (preencher)
+  - [x] Nome do Médico
+  - [x] Nº Cédula Profissional
+  - [x] Assinatura (Médico)
+  - [x] Modelo de projeto
+  - [x] Data de criação
+  - [x] Data de alteração
+  - [x] Considerar dias úteis
 ### Vista de Lista
   #### Predefinido
-  - [ ] Nome: [name]
-  - [ ] Paciente: [contacts_project_1_name]
-  - [ ] Cliente: [accounts_project_1_name]
-  - [ ] Concelho: [billing_address_state]
-  - [ ] Cidade: [billing_address_city]
-  - [ ] NUTS II: [nutsii_c]
-  - [ ] Tipo de exame: [medicine_exam_type_c]
-  - [ ] Apreciação médica: [medical_appreciation_c]
-  - [ ] Nome do Médico: [nome_do_medico_c]
-  - [ ] Data de admissão: [admission_date_c]
-  - [ ] Data Prevista: [estimated_start_date]
+  - [x] Nome: [name]
+  - [x] Paciente: [contacts_project_1_name]
+  - [x] Cliente: [accounts_project_1_name]
+  - [x] Concelho: [billing_address_state]
+  - [x] Cidade: [billing_address_city]
+  - [x] NUTS II: [nutsii_c]
+  - [x] Tipo de exame: [medicine_exam_type_c]
+  - [x] Apreciação médica: [medical_appreciation_c]
+  - [x] Nome do Médico: [nome_do_medico_c]
+  - [x] Data de admissão: [admission_date_c]
+  - [x] Data Prevista: [estimated_start_date]
   - [ ] Data de Nascimento: [contacts_birthdate_c]
   - [ ] Sexo: [contact_gender_c]
-  - [ ] Gestor de projeto: [assigned_user_name]
+  - [x] Gestor de projeto: [assigned_user_name]
 ### Filtro
   #### Predefinido
-  - [ ] Cliente: [accounts_project_1_name]
-  - [ ] Concelho: [billing_address_state]
-  - [ ] Cidade: [billing_address_city]
+  - [x] Cliente: [accounts_project_1_name]
+  - [x] Concelho: [billing_address_state]
+  - [x] Cidade: [billing_address_city]
   - [ ] Data de Nascimento: [contacts_birthdate_c]
   - [ ] Sexo: [contact_gender_c]
-  - [ ] Tipo de exame: [medicine_exam_type_c]
-  - [ ] Apreciação médica: [medical_appreciation_c]
-  - [ ] Paciente: [contacts_project_1_name]
-  - [ ] Médico/Enfermeiro: [assigned_user_name]
-  - [ ] Data Prevista: [estimated_start_date]
-  - [ ] Data de alteração: [date_modified]
-  - [ ] Data Presença: [attendance_date_c]
-  - [ ] Data de admissão: [admission_date_c]
-  - [ ] NUTS I: [nutsi]
+  - [x] Tipo de exame: [medicine_exam_type_c]
+  - [x] Apreciação médica: [medical_appreciation_c]
+  - [x] Paciente: [contacts_project_1_name]
+  - [x] Médico/Enfermeiro: [assigned_user_name]
+  - [x] Data Prevista: [estimated_start_date]
+  - [x] Data de alteração: [date_modified]
+  - [x] Data Presença: [attendance_date_c]
+  - [x] Data de admissão: [admission_date_c]
+  - [x] NUTS I: [nutsi]
   - [ ] Criado por: [created_by]
 
 ## ==Fichas de Aptidão ==

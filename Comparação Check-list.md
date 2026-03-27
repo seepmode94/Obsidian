@@ -61,11 +61,14 @@
 
 ## Módulos que exigem validação manual
 1. Medicina Ocupacional:
-comparando os modulos dentro de 
-2. Sessões
-3. Formações
-4. Documentos
-5. Acessos IEFP
+Comparando os módulos, falta na Seepmode a opção - [ ] Rastreio oftalmológico; em contrapartida, a Seepmode inclui - [ ] Rastreio otorrinolingolo. Após Patologia Apresentada, ambos os módulos incluem Recomendações, no entanto, na Seepmode esse bloco surge identificado como FMO, tal como acontece com outros blocos ao longo da comparação.
+
+  Depois dessas diferenças, na Vista de Lista a Seepmode apresenta, a mais face à Tacovia, os campos Data de Nascimento e Sexo. Essas diferenças também se refletem nos Filtros, com o acréscimo adicional do campo Criado por no lado da
+  Seepmode.
+1. Sessões
+2. Formações
+3. Documentos
+4. Acessos IEFP
 
 ## Conclusão
 - `Contratos` não tem falta de conteúdo relevante no bloco `Itens de linha`.
