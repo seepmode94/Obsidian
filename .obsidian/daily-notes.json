@@ -1,0 +1,5 @@
+{
+  "folder": "06 - Logs",
+  "format": "YYYY-MM-DD",
+  "template": "Templates/Diário de Trabalho.md"
+}
