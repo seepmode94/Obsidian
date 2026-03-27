@@ -191,6 +191,7 @@
 - [ ] Taxa
 - [ ] Total final
 
+
 ### Vista de Lista
 #### Predefinido
 - [ ] Núm.: [number]
@@ -208,3 +209,132 @@
 - [ ] Data criação: [date_entered]
 - [ ] Data alteração: [date_modified]
 - [ ] Criado por: [created_by_name]
+
+### Criação rápida:
+##### Visão geral
+- [ ] Título
+- [ ] Oportunidade
+- [ ] Número da proposta
+- [ ] Fase proposta
+- [ ] Válida até
+- [ ] Situação da fatura
+- [ ] Atribuído a
+- [ ] Condições de pagamento
+- [ ] Situação de aprovação
+- [ ] Descrição Proposta
+
+##### Dados de endereço
+- [ ] Clientes
+- [ ] (preencher)
+- [ ] Contactos
+- [ ] (preencher)
+- [ ] Faturação - Rua
+- [ ] Rua - endereço de envio
+
+##### Itens de linha
+- [ ] Moeda
+- [ ] Itens de linha
+- [ ] (preencher)
+- [ ] (empty)
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
+
+### Filtro
+#### Predefinido
+- [ ] Título: [name]
+- [ ] Fase proposta: [stage]
+- [ ] Clientes: [billing_account]
+- [ ] Concelho: [billing_address_state]
+- [ ] Cidade: [billing_address_city]
+- [ ] Contactos: [billing_contact]
+- [ ] Válida até: [expiration]
+- [ ] Data prevista fecho: [data_prevista_fecho_c]
+- [ ] Situação de aprovação: [approval_status]
+- [ ] Total final: [total_amount]
+- [ ] Condições de pagamento: [crm]
+- [ ] Empresa: [empresa_c]
+- [ ] Data alteração: [date_modified]
+- [ ] Data criação: [date_entered]
+- [ ] Atribuído a: [assigned_user_id]
+
+## ==Faturas ==
+### Vista de edição:
+##### Visão geral
+- [ ] Título
+- [ ] Vendedor
+- [ ] Número da fatura
+- [ ] Clientes
+- [ ] (preencher)
+- [ ] Tipo
+- [ ] Descrição
+- [ ] Data da fatura
+- [ ] Valor Pago (€)
+- [ ] Data Pagamento
+- [ ] Valor Aberto (€)
+- [ ] Pack Avançado
+- [ ] Valor renovação (€)
+- [ ] Data Renovação
+- [ ] Empresa
+- [ ] Contratos
+- [ ] (preencher)
+- [ ] Notas da Faturação
+- [ ] Enviar Email Automático a Relembrar Pagamento
+- [ ] Situação
+- [ ] Data de criação
+- [ ] Atribuído a
+
+##### Itens de linha
+- [ ] Moeda
+- [ ] Itens de linha
+- [ ] (preencher)
+- [ ] (empty)
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
+
+### Vista de detalhe:
+##### Visão geral
+- [ ] Título
+- [ ] Vendedor
+- [ ] Número da fatura
+- [ ] Clientes
+- [ ] (preencher)
+- [ ] Tipo
+- [ ] Descrição
+- [ ] Data da fatura
+- [ ] Valor Pago (€)
+- [ ] Data Pagamento
+- [ ] Valor Aberto (€)
+- [ ] Pack Avançado
+- [ ] Valor renovação (€)
+- [ ] Data Renovação
+- [ ] Empresa
+- [ ] Contratos
+- [ ] (preencher)
+- [ ] Notas da Faturação
+- [ ] Enviar Email Automático a Relembrar Pagamento
+- [ ] Situação
+- [ ] Data de criação
+- [ ] Atribuído a
+
+##### Itens de linha
+- [ ] Moeda
+- [ ] Itens de linha
+- [ ] (preencher)
+- [ ] (empty)
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
