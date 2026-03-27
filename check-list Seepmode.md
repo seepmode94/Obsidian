@@ -1807,3 +1807,187 @@
   - [ ] NUTS I: [nutsi]
   - [ ] Criado por: [created_by]
 
+## ==Fichas de Aptidão ==
+### Vista de edição:
+  ##### Posto de trabalho
+  - [ ] Cliente
+  - [ ] NIPC/NIF
+  - [ ] Estabelecimento
+  - [ ] CAE principal
+  - [ ] Endereço
+  - [ ] (preencher)
+  - [ ] Código Postal
+  - [ ] Localidade
+  - [ ] Telefone
+  - [ ] E-mail
+  - [ ] Medicina Ocupacional
+
+  ##### Trabalhador
+  - [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
+  - [ ] Se outro, especifique
+  - [ ] Designação da empresa de serviço externo de saúde do trabalho se aplicável
+  - [ ] NIPC/NIF
+  - [ ] Processo de autorização (PA) da DGS nº
+  - [ ] (preencher)
+##### Serviço de saúde do trabalho
+  - [ ] Paciente
+  - [ ] Nacionalidade
+  - [ ] Sexo
+  - [ ] Data de nascimento
+  - [ ] Data de admissão na empresa
+  - [ ] Categoria Profissional
+  - [ ] Posto de trabalho principal
+  - [ ] Atividade/Função (proposta ou atual)
+  - [ ] Data de admissão na Atividade/função
+
+  ##### Recomendações [Da responsabilidade do médico do trabalho dirigida ao Empregador/Gestor de Topo responsável pela área da Saúde e Segurança do Trabalho ou do Responsável dos Recursos Humanos da empresa/entidade empregadora]
+  - [ ] Análise do posto de trabalho
+  - [ ] Justificar em caso negativo
+  - [ ] Identificação de fatores de risco profissional
+  - [ ] Especificar principais fatores de risco profissional
+  - [ ] Avaliação da exposição profissional do trabalhador
+  - [ ] Especificar a avaliação profissional
+##### Entidade Empregadora/Empresa
+  - [ ] Data do exame
+  - [ ] Resultado da aptidão
+  - [ ] Tipo
+  - [ ] Outras funções que pode desempenhar
+  - [ ] Se outro, especifique
+
+  ##### Recomendações
+  - [ ] Recomendações
+  - [ ] Outras recomendações
+
+  ##### Médico do Trabalho
+  - [ ] Nome do Médico
+  - [ ] Nº Cédula Profissional
+
+  ##### Gestor
+  - [ ] Gestor
+  - [ ] (preencher)
+
+  ##### Assinaturas
+  - [ ] Assinatura (Médico)
+  - [ ] Data
+  - [ ] Assinatura (Trabalhador)
+  - [ ] Data
+  - [ ] Assinatura (Responsável)
+  - [ ] Data
+### Vista de detalhe:
+  ##### Entidade Empregadora/Empresa
+  - [ ] Cliente
+  - [ ] NIPC/NIF
+  - [ ] Estabelecimento
+  - [ ] CAE principal
+  - [ ] Endereço
+  - [ ] Código Postal
+  - [ ] Localidade
+  - [ ] Telefone
+  - [ ] E-mail
+  - [ ] Medicina Ocupacional
+
+  ##### Serviço de saúde do trabalho
+  - [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
+  - [ ] Se outro, especifique
+  - [ ] Designação da empresa de serviço externo de saúde do trabalho se aplicável
+  - [ ] NIPC/NIF
+  - [ ] Processo de autorização (PA) da DGS nº
+##### Trabalhador
+  - [ ] Paciente
+  - [ ] Nacionalidade
+  - [ ] Sexo
+  - [ ] Data de nascimento
+  - [ ] Data de admissão na empresa
+  - [ ] Categoria Profissional
+  - [ ] Posto de trabalho principal
+  - [ ] Atividade/Função (proposta ou atual)
+  - [ ] Data de admissão na Atividade/função
+
+  ##### Posto de trabalho
+  - [ ] Análise do posto de trabalho
+  - [ ] Justificar em caso negativo
+  - [ ] Identificação de fatores de risco profissional
+  - [ ] Especificar os principais fatores de risco profissional
+  - [ ] Avaliação da exposição profissional do trabalhador
+  - [ ] Especificar a avaliação profissional
+
+  ##### Exame de saúde e resultado de aptidão
+  - [ ] Data do exame
+  - [ ] Resultado de aptidão
+  - [ ] Tipo
+  - [ ] Outras funções que pode desempenhar
+  - [ ] Se outro, especifique
+##### Recomendações [Da responsabilidade do médico do trabalho dirigida ao Empregador/Gestor de Topo responsável pela área da Saúde e Segurança do Trabalho ou do Responsável dos Recursos Humanos da empresa/entidade empregadora]
+  - [ ] Recomendações
+  - [ ] Outras recomendações
+
+  ##### Médico do Trabalho
+  - [ ] Nome do Médico
+  - [ ] Nº Cédula Profissional
+
+  ##### Gestor
+  - [ ] Gestor
+  - [ ] (preencher)
+### Vista de Lista
+#### Predefinido
+  - [ ] Ação: [name]
+  - [ ] Paciente: [contacts_smdm_capability_1_name]
+  - [ ] Cliente: [accounts_smdm_capability_1_name]
+  - [ ] Resultado de aptidão: [ability_result_c]
+  - [ ] Tipo: [exam_type_c]
+  - [ ] Localidade: [localidade_c]
+  - [ ] Data do exame: [exam_date_c]
+  - [ ] Gestor: [assigned_user_name]
+### Criação rápida:
+##### Predefinido
+  - [ ] Cliente
+  - [ ] NIPC/NIF
+  - [ ] Endereço
+  - [ ] CAE principal
+  - [ ] Código Postal
+  - [ ] Localidade
+  - [ ] Telefone
+  - [ ] E-mail
+
+##### Serviço de saúde do trabalho
+  - [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
+  - [ ] Se outro, especifique
+  - [ ] Designação da empresa de serviço externo de saúde do trabalho se aplicável
+  - [ ] NIPC/NIF
+  - [ ] Processo de autorização (PA) da DGS nº
+
+##### Trabalhador
+  - [ ] Paciente
+  - [ ] Nacionalidade
+  - [ ] Sexo
+  - [ ] Data de nascimento
+  - [ ] Data de admissão na empresa
+  - [ ] Categoria Profissional
+  - [ ] Posto de trabalho principal
+  - [ ] Atividade/Função (proposta ou atual)
+  - [ ] Data de admissão na Atividade/função
+##### Posto de trabalho
+  - [ ] Análise do posto de trabalho
+  - [ ] Justificar em caso negativo
+  - [ ] Identificação de fatores de risco profissional
+  - [ ] Especificar os principais fatores de risco profissional
+  - [ ] Avaliação da exposição profissional do trabalhador
+  - [ ] Especificar a avaliação profissional
+
+##### Exame de saúde e resultado de aptidão
+  - [ ] Data do exame
+  - [ ] Resultado de aptidão
+  - [ ] Tipo
+  - [ ] Outras funções que pode desempenhar
+  - [ ] Se outro, especifique
+
+##### Recomendações [Da responsabilidade do médico do trabalho dirigida ao Empregador/Gestor de Topo responsável pela área da Saúde e Segurança do Trabalho ou do Responsável dos Recursos Humanos da empresa/entidade empregadora]
+  - [ ] Recomendações
+### Filtro
+#### Predefinido
+  - [ ] Cliente: [accounts_smdm_capability_1_name]
+  - [ ] NIPC/NIF: [nipc_c]
+  - [ ] Paciente: [contacts_smdm_capability_1_name]
+  - [ ] Data do exame: [exam_date_c]
+  - [ ] Resultado de aptidão: [ability_result_c]
+  - [ ] Atribuído a: [assigned_user_id]
