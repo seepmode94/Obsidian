@@ -1571,7 +1571,7 @@
 - [ ] Criado por
 
 ### Vista de Lista
-  #### Predefinido
+#### Predefinido
   - [ ] Código: [cod_c]
   - [ ] Situação: [status]
   - [ ] Prioridade: [priority]
@@ -1616,7 +1616,7 @@
   - [ ] Unidades
   - [ ] Data resolução
 ### Filtro
-  #### Predefinido
+#### Predefinido
   - [ ] Assunto: [name]
   - [ ] Nome da conta: [account_name]
   - [ ] Cidade: [billing_address_city]
@@ -1809,7 +1809,7 @@
 
 ## ==Fichas de Aptidão ==
 ### Vista de edição:
-  ##### Posto de trabalho
+##### Posto de trabalho
   - [ ] Cliente
   - [ ] NIPC/NIF
   - [ ] Estabelecimento
@@ -1822,7 +1822,7 @@
   - [ ] E-mail
   - [ ] Medicina Ocupacional
 
-  ##### Trabalhador
+##### Trabalhador
   - [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
   - [ ] Se outro, especifique
   - [ ] Designação da empresa de serviço externo de saúde do trabalho se aplicável
@@ -1840,7 +1840,7 @@
   - [ ] Atividade/Função (proposta ou atual)
   - [ ] Data de admissão na Atividade/função
 
-  ##### Recomendações [Da responsabilidade do médico do trabalho dirigida ao Empregador/Gestor de Topo responsável pela área da Saúde e Segurança do Trabalho ou do Responsável dos Recursos Humanos da empresa/entidade empregadora]
+##### Recomendações [Da responsabilidade do médico do trabalho dirigida ao Empregador/Gestor de Topo responsável pela área da Saúde e Segurança do Trabalho ou do Responsável dos Recursos Humanos da empresa/entidade empregadora]
   - [ ] Análise do posto de trabalho
   - [ ] Justificar em caso negativo
   - [ ] Identificação de fatores de risco profissional
@@ -1854,19 +1854,19 @@
   - [ ] Outras funções que pode desempenhar
   - [ ] Se outro, especifique
 
-  ##### Recomendações
+##### Recomendações
   - [ ] Recomendações
   - [ ] Outras recomendações
 
-  ##### Médico do Trabalho
+##### Médico do Trabalho
   - [ ] Nome do Médico
   - [ ] Nº Cédula Profissional
 
-  ##### Gestor
+##### Gestor
   - [ ] Gestor
   - [ ] (preencher)
 
-  ##### Assinaturas
+##### Assinaturas
   - [ ] Assinatura (Médico)
   - [ ] Data
   - [ ] Assinatura (Trabalhador)
@@ -1874,7 +1874,7 @@
   - [ ] Assinatura (Responsável)
   - [ ] Data
 ### Vista de detalhe:
-  ##### Entidade Empregadora/Empresa
+##### Entidade Empregadora/Empresa
   - [ ] Cliente
   - [ ] NIPC/NIF
   - [ ] Estabelecimento
@@ -1886,7 +1886,7 @@
   - [ ] E-mail
   - [ ] Medicina Ocupacional
 
-  ##### Serviço de saúde do trabalho
+##### Serviço de saúde do trabalho
   - [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
   - [ ] Se outro, especifique
   - [ ] Designação da empresa de serviço externo de saúde do trabalho se aplicável
@@ -1903,7 +1903,7 @@
   - [ ] Atividade/Função (proposta ou atual)
   - [ ] Data de admissão na Atividade/função
 
-  ##### Posto de trabalho
+##### Posto de trabalho
   - [ ] Análise do posto de trabalho
   - [ ] Justificar em caso negativo
   - [ ] Identificação de fatores de risco profissional
@@ -1911,7 +1911,7 @@
   - [ ] Avaliação da exposição profissional do trabalhador
   - [ ] Especificar a avaliação profissional
 
-  ##### Exame de saúde e resultado de aptidão
+##### Exame de saúde e resultado de aptidão
   - [ ] Data do exame
   - [ ] Resultado de aptidão
   - [ ] Tipo
@@ -1921,11 +1921,11 @@
   - [ ] Recomendações
   - [ ] Outras recomendações
 
-  ##### Médico do Trabalho
+##### Médico do Trabalho
   - [ ] Nome do Médico
   - [ ] Nº Cédula Profissional
 
-  ##### Gestor
+##### Gestor
   - [ ] Gestor
   - [ ] (preencher)
 ### Vista de Lista

@@ -1,9 +1,14 @@
 # Comparação Check-list
 
 ## Objetivo
-Comparar `check-list Tacovia.md` com `check-list Seepmode.md`, focando na organização dos módulos e nas secções principais, para identificar o que ainda falta do lado da Seepmode.
+Comparar `check-list Tacovia.md` com `check-list Seepmode.md`, focando na organização dos módulos e nas secções principais, para perceber o que ainda falta ou está organizado de forma diferente na Seepmode.
 
-## Módulos existentes nos dois ficheiros
+## Resumo geral
+- Os dois ficheiros têm os mesmos módulos principais.
+- A Seepmode está agora bastante mais alinhada com a Tacovia do que na comparação anterior.
+- As diferenças que restam são sobretudo de organização, nomenclatura de títulos e alguns blocos em falta.
+
+## Módulos presentes nos dois ficheiros
 - Clientes
 - Propostas
 - Faturas
@@ -23,96 +28,120 @@ Comparar `check-list Tacovia.md` com `check-list Seepmode.md`, focando na organi
 - Medicina Ocupacional
 - Fichas de Aptidão
 
-## Módulos alinhados na estrutura principal
+## Módulos alinhados ou praticamente alinhados
 - Clientes
 - Propostas
 - Faturas
+- Contactos
+- Telefonemas
 - Reuniões
 - Notas
 - Emails
 - Formandos
 - Formadores
+- Assistências
 
-## Módulos com faltas ou diferenças relevantes na Seepmode
+## Diferenças principais ainda existentes
 
-
-
+### Contratos
+- A organização ainda não está alinhada com a Tacovia.
+- Em `Tacovia` existe:
+- `### Vista de Lista`
+- `#### Predefinido`
+- `### Criação rápida`
+- `#### Predefinido`
+- `### Filtro`
+- `#### Predefinido`
+- Em `Seepmode`, a ordem e a hierarquia destes blocos ainda está incorreta.
+- `Criação rápida`, `Vista de Lista` e `Filtro` aparecem, mas sem a mesma estrutura da Tacovia.
+- Existe também uma diferença de nível no título `Itens de linha` dentro de `Vista de edição`.
 
 ### Documentos
-- Na `Vista de detalhe`, Tacovia usa `##### LBL_REVISIONS_PANEL`.
-- Na Seepmode existe `##### Outro` em vez desse bloco.
+- Em `Tacovia`, a `Vista de Detalhe` usa:
+- `#### LBL_REVISIONS_PANEL`
+- Em `Seepmode`, nessa zona existe:
+- `##### Outro`
+- Ou seja, a estrutura existe, mas o nome do bloco não coincide.
 
 ### Formações
-- Quase alinhado.
-- Em `Criação rápida` falta:
-- `##### Recursos Administrativos`
+- Está quase alinhado.
+- Na `Criação rápida`, em `Tacovia`, existe:
+- `#### Recursos Administrativos`
+- Na `Seepmode`, esse bloco ainda falta nessa vista.
 
 ### Sessões
-- Em Tacovia, `Vista de Edição` e `Vista de Detalhe` estão separadas.
-- Em Seepmode estão fundidas em `### Vista de edição/Vista de detalhe:`.
-- O conteúdo principal existe, mas a organização não coincide.
+- Em `Tacovia`, as vistas estão separadas:
+- `### Vista de Edição`
+- `### Vista de Detalhe`
+- Em `Seepmode`, continuam agregadas em:
+- `### Vista de edição/Vista de detalhe:`
+- O conteúdo principal está presente, mas a organização ainda não coincide.
 
 ### Acessos IEFP
-- Existem as vistas principais, mas a estrutura está incompleta.
-- Faltam:
-- `#### Predefinido` em `Vista de Lista`
-- `#### Predefinido` em `Criação rápida`
-- `#### Predefinido` em `Filtro`
-
-### Assistências
-- Estrutura incompleta em relação à Tacovia.
-- Faltam:
-- `#### Predefinido` em `Vista de Lista`
-- `#### Predefinido` em `Filtro`
+- Em `Tacovia`, existe `#### Predefinido` em:
+- `Criação rápida`
+- Em `Seepmode`, `Criação rápida` existe, mas sem esse subtítulo.
+- Além disso, `Vista de Lista` e `Filtro` aparecem sem o mesmo nível de detalhe estrutural.
 
 ### Medicina Ocupacional
-- É um dos módulos mais diferentes.
-- Em Tacovia, a estrutura está separada por:
+- Continua a ser um dos módulos com maior diferença estrutural.
+- Em `Tacovia`, está separado em:
 - `### Vista de Edição`
 - `### Vista de Detalhe`
 - `### Criação rápida`
-- Em Seepmode, tudo está agregado em:
+- Em `Seepmode`, continua agregado em:
 - `### Vista de edição/Vista de detalhe/Criação rápida:`
-- Além disso, vários blocos com nomes próprios em Tacovia aparecem como `##### FMO` na Seepmode.
-- Principais diferenças de nome/organização:
-- `Passatempos` aparece como `FMO`
-- `Recomendações` aparece como `FMO`
-- `Observações Finais` aparece como `FMO`
-- `Outros` aparece como `FMO`
-- A `Vista de Lista` e o `Filtro` existem em Seepmode, mas a organização geral do módulo ainda não está equivalente à da Tacovia.
+- Há também diferenças de nomenclatura em vários blocos:
+- `Passatempos` em Tacovia aparece como `FMO` na Seepmode
+- `Recomendações` em Tacovia aparece como `FMO` na Seepmode
+- `Observações Finais` em Tacovia aparece como `FMO` na Seepmode
+- `Outros` em Tacovia aparece como `FMO` na Seepmode
+- Existe ainda diferença ortográfica em:
+- `Biometrias - Exame Médico Objetivado` em Tacovia
+- `Biometrias - Exame Médico Objectivo` em Seepmode
+- E também em:
+- `Vacinação - Inoculações administradas` em Tacovia
+- `Vacinação- Inoculações administradas` em Seepmode
 
 ### Fichas de Aptidão
-- É o módulo mais incompleto na Seepmode.
-- Em Tacovia, o módulo está organizado com vários blocos distintos.
-- Na Seepmode, a distribuição das secções entre `Vista de edição`, `Vista de detalhe` e `Criação rápida` ainda não corresponde à organização da Tacovia.
-- Blocos que existem em Tacovia e devem ser validados/organizados na Seepmode:
-- `##### Predefinido`
-- `##### Serviço de saúde do trabalho`
-- `##### Trabalhador`
-- `##### Posto de trabalho`
-- `##### Exame de saúde e resultado de aptidão`
-- `##### Recomendações`
-- `##### Médico do Trabalho`
-- `##### Gestor`
-- `##### Assinaturas`
+- Este módulo ficou muito mais completo na Seepmode.
+- A estrutura principal já cobre quase todos os blocos que aparecem na Tacovia.
+- A principal diferença agora é de organização:
+- Em `Tacovia`, a `Vista de Edição` e a `Vista de Detalhe` estão simplificadas com `#### Predefinido`
+- Em `Seepmode`, o módulo já está distribuído por blocos específicos como:
+- `Posto de trabalho`
+- `Trabalhador`
+- `Serviço de saúde do trabalho`
+- `Exame de saúde e resultado de aptidão`
+- `Médico do Trabalho`
+- `Gestor`
+- `Assinaturas`
+- Ou seja, aqui a Seepmode já não está propriamente em falta; está mais detalhada e organizada de forma diferente.
 
-## Diferenças gerais entre os ficheiros
-- `check-list Tacovia.md` está mais normalizado por vista.
-- `check-list Seepmode.md` tem vários módulos onde as vistas estão agregadas numa só linha, por exemplo:
-- `Vista de edição/Vista de detalhe`
-- `Vista de edição/Vista de detalhe/Criação rápida`
-- Em vários módulos da Seepmode faltam subtítulos `Predefinido` onde Tacovia os usa.
-- Em `Medicina Ocupacional`, a Seepmode reutiliza `FMO` em vez de nomes mais específicos dos blocos.
-- Em `Contratos`, há um erro claro de hierarquia de títulos.
+## Diferenças gerais de formatação
+- `Tacovia` usa mais frequentemente:
+- `### Vista de Edição`
+- `### Vista de Detalhe`
+- `#### ...`
+- `Seepmode` ainda mistura:
+- `Vista de edição:`
+- `Vista de detalhe:`
+- `Vista de edição/Vista de detalhe:`
+- `Vista de edição/Vista de detalhe/Criação rápida:`
+- Em vários módulos da Seepmode os subtítulos internos usam `#####`, enquanto na Tacovia aparecem como `####`.
+- Em alguns módulos, a Seepmode está mais detalhada que a Tacovia, mas com hierarquia diferente.
 
-## Prioridade de revisão sugerida
-1. Fichas de Aptidão
-2. Medicina Ocupacional
-3. Contactos
-4. Contratos
-5. Acessos IEFP
-6. Assistências
-7. Sessões
-8. Telefonemas
-9. Documentos
-10. Formações
+## Estado atual por prioridade
+1. Medicina Ocupacional
+2. Contratos
+3. Sessões
+4. Acessos IEFP
+5. Documentos
+6. Formações
+7. Fichas de Aptidão
+
+## Conclusão
+- A maior parte dos módulos já está alinhada ou muito próxima.
+- As diferenças restantes estão concentradas sobretudo em organização de vistas e normalização de títulos.
+- O módulo mais distante continua a ser `Medicina Ocupacional`.
+- O módulo `Fichas de Aptidão` já não está em falta, mas continua com uma organização diferente da Tacovia.
