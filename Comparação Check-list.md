@@ -48,7 +48,7 @@
 - `Nome`
 - `Atribuído a`
 - `Descrição`
-- e a `Seepmode` expandiu isso em vários blocos específicos.
+-  A `Seepmode` expandiu isso em vários blocos específicos.
 - Neste módulo, a diferença é de modelação e detalhe, não de falta evidente na `Seepmode`.
 
 ## Módulos que exigem validação manual
@@ -93,6 +93,46 @@
 
   Assim, a diferença neste módulo não está apenas na organização, mas também em campos distintos presentes em cada ficheiro.
 
+## Mapa de inconsistências
+
+  | Módulo | Campo / Bloco | Seepmode | Tacovia | Observação |
+  |---|---|---|---|---|
+  | Medicina Ocupacional | Exame complementar | Rastreio otorrinolingolo | Rastreio oftalmológico | Diferença de conteúdo |
+  | Medicina Ocupacional | Bloco após `Patologia Apresentada` | FMO | Recomendações | Diferença de nomenclatura |
+  | Medicina Ocupacional | Vista de Lista | Data de Nascimento | — | Campo a mais na Seepmode |
+  | Medicina Ocupacional | Vista de Lista | Sexo | — | Campo a mais na Seepmode |
+  | Medicina Ocupacional | Filtro | Criado por | — | Campo a mais na Seepmode |
+  | Medicina Ocupacional | Vista de Lista / Filtro | NUTS I: [nutsi] | — | Campo a mais na Seepmode |
+  | Sessões | Estrutura do módulo | Relatórios agendados | Sessões de formação | Diferença de finalidade |
+  | Sessões | Campo principal | Relatórios | Sessões | Diferença de conteúdo |
+  | Sessões | Campo | Situação | Abreviatura | Diferença de conteúdo |
+  | Sessões | Campo | Agendar | — | Campo a mais na Seepmode |
+  | Sessões | Campo | Última execução | — | Campo a mais na Seepmode |
+  | Sessões | Campo | Destinatários do email | — | Campo a mais na Seepmode |
+  | Sessões | Filtro | Meus itens | — | Campo a mais na Seepmode |
+  | Sessões | Filtro | Todos os endereços de email | — | Campo a mais na Seepmode |
+  | Sessões | Filtro | — | Atribuído a | Em falta na Seepmode |
+  | Sessões | Campo | — | Formação | Em falta na Seepmode |
+  | Sessões | Campo | — | Atribuído a | Em falta na Seepmode |
+  | Formações | Criação rápida | — | Recursos Administrativos | Em falta na Seepmode nesta vista |
+  | Formações | Campo | — | Data entrega informação ao Formando | Em falta na Seepmode |
+  | Formações | Campo | — | Média dos Formandos(€) | Em falta na Seepmode |
+  | Formações | Campo | — | Valor pago(€) | Em falta na Seepmode |
+  | Documentos | Vista de detalhe | Fichas de Aptidão | — | Campo a mais na Seepmode |
+  | Documentos | Vista de detalhe | — | Faturas(Histórico) | Em falta na Seepmode |
+  | Documentos | Vista de detalhe | — | (preencher) | Em falta na Seepmode |
+  | Documentos | Vista de detalhe | — | Revisão criada por | Em falta na Seepmode |
+  | Documentos | Vista de detalhe | — | Data de criação da última revisão | Em falta na Seepmode |
+  | Documentos | Vista de detalhe | — | Data de alteração | Em falta na Seepmode |
+  | Documentos | Vista de Lista | — | Nome do documento: [document_name] | Em falta na Seepmode |
+  | Contactos | Campo | — | ADR | Em falta na Seepmode |
+  | Contactos | Campo | Todos os endereços: [address_street] | — | Campo a mais na Seepmode |
+  | Contactos | Campo | Código postal: [address_postalcode] | — | Campo a mais na Seepmode |
+  | Reuniões | Campo | — | Notificações auditoria ao cliente | Em falta na Seepmode |
+  | Formandos | Campo | Data Verificação portal IEPF - Estado da Candidatura | — | Campo a mais na Seepmode |
+  | Acessos IEFP | Campo técnico | Email- IEFP: [icfp_email_c] | Email - IEFP: [iefp_email_c] | Diferença de nomenclatura / identificador |
+  | Assistências | Campo | Criado por | — | Campo a mais na Seepmode |
+  | Assistências | Campo | Criado em | — | Campo a mais na Seepmode |
 
 
 ## Conclusão
