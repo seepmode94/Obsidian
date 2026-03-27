@@ -1492,3 +1492,7 @@
 
 ### Filtro
 #### Predefinido
+- [ ] Nome: [name]
+- [ ] Meus itens: [curr_user_only]
+- [ ] Todos os endereços de email: [email]
+
