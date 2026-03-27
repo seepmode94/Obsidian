@@ -1076,12 +1076,278 @@
   - [ ] Vendedor
 
 ### Vista de detalhe:
+##### Predefinido
+  - [ ] Ação
+  - [ ] Ano
+  - [ ] Tipo de ação
+  - [ ] Estado
+  - [ ] Data Formação
+  - [ ] Data Fim da Formação
+  - [ ] Cliente
+  - [ ] Formador
+  - [ ] Contacto
+  - [ ] Sessões
+  - [ ] Nº horas
+  - [ ] Data adjudicação
+  - [ ] Valor formação (€)
+  - [ ] NUTS II
+  - [ ] Nº Faturados
+  - [ ] Média dos Formandos (€)
+  - [ ] Nº presenças
+  - [ ] Com Cheque Formação
+  - [ ] Nº card
+  - [ ] Data Candidatura
+  - [ ] (preencher)
+##### Recursos Administrativos
+  - [ ] Data Verificação
+  - [ ] Data Envio Email Info ao Cliente
+  - [ ] Data entrega informação do formando
+  - [ ] Data Confirmação Telf Cliente
+  - [ ] Data Envio Adjudicação ao Formador
+  - [ ] Data a Relembrar Formação
+  - [ ] Nº certificados enviados
+  - [ ] Data envio certificados
+  - [ ] Followup Cliente
+  - [ ] Observações
+  - [ ] Data Digitalização
+  - [ ] Data Análise Estatística
+  - [ ] Ação Fechada?
+  - [ ] Data Fecho ação
+  - [ ] Fechado por
+  - [ ] (preencher)
+
+##### Recursos Técnicos
+  - [ ] Local
+  - [ ] Nº Fatura
+  - [ ] Morada
+  - [ ] Valor
+  - [ ] Sala
+  - [ ] Data Pagamento Sala
+  - [ ] Projector
+##### Pagamentos
+  - [ ] Nº factura
+  - [ ] Data Pagamento
+  - [ ] Valor factura (€)
+  - [ ] Valor pago (€)
+  - [ ] Data factura
+  - [ ] (preencher)
+
+##### Outros
+  - [ ] Atribuído a
+  - [ ] Vendedor
 
 ### Vista de Lista
 #### Predefinido
+  - [ ] Ação: [formation_action]
+  - [ ] Tipo de ação: [type]
+  - [ ] Cliente: [accounts_smd_training_1_name]
+  - [ ] Contacto: [contact]
+  - [ ] Ano: [year]
+  - [ ] Followup Cliente: [followup_client_c]
+  - [ ] Data Formação: [formation_date]
+  - [ ] Valor factura (€): [invoice_value]
+  - [ ] Data Pagamento: [payment_date]
+  - [ ] Estado: [status]
+  - [ ] Local: [place]
+  - [ ] Valor pago (€): [paid_value_c]
+  - [ ] Nº Faturados: [trainings_number]
+  - [ ] Nº presenças: [trainees_number_action_c]
+  - [ ] Nº horas: [hours_number]
+  - [ ] Data Candidatura: [data_candidatura_c]
+  - [ ] Nº card: [formition_check_quantity_c]
+  - [ ] Vendedor: [salesperson_c]
+  - [ ] Atribuído a: [assigned_user_name]
+  - [ ] Criado em: [date_entered]
+
+### Criação rápida:
+##### Predefinido
+  - [ ] Ação
+  - [ ] Ano
+  - [ ] Tipo de ação
+  - [ ] Estado
+  - [ ] Data Formação
+  - [ ] Data Fim da Formação
+  - [ ] Cliente
+  - [ ] Contacto
+  - [ ] Sessões
+  - [ ] Nº horas
+  - [ ] Data adjudicação
+  - [ ] Valor formação (€)
+  - [ ] NUTS II
+  - [ ] Nº Faturados
+  - [ ] Média dos Formandos (€)
+  - [ ] Nº presenças
+  - [ ] Com Cheque Formação
+  - [ ] Nº card
+##### Recursos Técnicos
+  - [ ] Local
+  - [ ] Nº Fatura
+  - [ ] Morada
+  - [ ] Valor
+  - [ ] Sala
+  - [ ] Data Pagamento Sala
+  - [ ] Projector
+
+##### Pagamentos
+  - [ ] Nº factura
+  - [ ] Data Pagamento
+  - [ ] Valor factura (€)
+  - [ ] Valor pago (€)
+  - [ ] Data factura
+  - [ ] (preencher)
+
+##### Outros
+  - [ ] Atribuído a
+  - [ ] Vendedor
+
+
+### Filtro
+#### Predefinido
+  - [ ] Ação: [formation_action]
+  - [ ] Cliente: [accounts_smd_training_1_name]
+  - [ ] Ano: [year]
+  - [ ] Local: [place]
+  - [ ] Data Pagamento: [payment_date]
+  - [ ] Tipo de ação: [name]
+  - [ ] Data Formação: [formation_date]
+  - [ ] Data Envio Email Info ao Cliente: [client_email_info_date_c]
+  - [ ] Valor pago (€): [paid_value_c]
+  - [ ] Data Início Candidatura: [application_start_date_c]
+  - [ ] Data Receção Info Cliente: [client_info_reception_date_c]
+  - [ ] Data envio certificados: [sent_certificates_date]
+  - [ ] Data Análise Estatística: [data_analise_estatistica_c]
+  - [ ] Data Fecho ação: [data_fecho_acao_c]
+  - [ ] Data Digitalização: [data_digitalizacao_c]
+  - [ ] Estado: [status]
+  - [ ] NUTS II: [nutsii_c]
+  - [ ] Com Cheque Formação: [formation_check_checkboxs_c]
+  - [ ] Criado em: [date_entered]
+  - [ ] Atribuído a: [assigned_user_name]
+  - [ ] Vendedor: [salesperson_c]
+
+## ==Formandos ==
+### Vista de edição:
+##### Predefinido
+  - [ ] Contacto
+  - [ ] Atribuído a
+  - [ ] Cliente
+  - [ ] Nº ação
+  - [ ] Nome da ação
+  - [ ] Horas
+  - [ ] Tipos de Formação
+  - [ ] Local
+
+##### IEFP
+  - [ ] Data Inicio Submissão IEFP Formando
+  - [ ] Nº de candidatura IEFP
+  - [ ] Data Candidatura Formando
+  - [ ] Estado Candidatura
+  - [ ] Data Verificação portal IEPF - Estado da Candidatura
+  - [ ] Data Notificação do Pedido
+  - [ ] Data limite p/ resposta
+  - [ ] Razões de indeferimento / Dados
+  - [ ] Data Pedido Dados Adicionais
+  - [ ] Data Envio Dados Adicionais Portal IEFP
+  - [ ] Valor Aprovado em Candidatura IEFP (€)
+  - [ ] Data Envio Resultado a Clientes
+  - [ ] Data Deferimento
+  - [ ] Processo encerrado?
+##### Certificados Internos
+  - [ ] Data Emissão certificado Internos
+  - [ ] Data envio certificado
+  - [ ] Certificado Nº
+  - [ ] Nº / Referência
+  - [ ] Data da Ação - Inicio
+  - [ ] Avaliação
+  - [ ] Data da Ação - Fim
+  - [ ] (preencher)
+
+##### SIGO
+  - [ ] Data Emissão Certificado SIGO
+  - [ ] Data inicial certificados SIGO
+  - [ ] Código da Ação - SIGO
+  - [ ] Data final certificados SIGO
+  - [ ] Data upload IEFP
+  - [ ] Sigo nº
+
+##### IMTT
+  - [ ] Nº Código Acção IMT
+  - [ ] Data Início Candidatura
+  - [ ] Data envio certificados
+  - [ ] Data Fecho da Candidatura
+  - [ ] Processo encerrado?
+
+### Vista de detalhe:
+##### Predefinido
+  - [ ] Contacto
+  - [ ] Atribuído a
+  - [ ] Cliente
+  - [ ] Nº ação
+  - [ ] Nome da ação
+  - [ ] Horas
+  - [ ] Tipos de Formação
+  - [ ] Local
+
+##### IEFP
+  - [ ] Data Inicio Submissão IEFP Formando
+  - [ ] Nº de candidatura IEFP
+  - [ ] Data Candidatura Formando
+  - [ ] Estado Candidatura
+  - [ ] Data Verificação portal IEFP - Estado da Candidatura
+  - [ ] Data Notificação do Pedido
+  - [ ] Data limite p/ resposta
+  - [ ] Razões de indeferimento / Dados
+  - [ ] Data Pedido Dados Adicionais
+  - [ ] Data Envio Dados Adicionais Portal IEFP
+  - [ ] Valor Aprovado em Candidatura IEFP (€)
+  - [ ] Data Envio Resultado a Clientes
+  - [ ] Data Deferimento
+  - [ ] Processo encerrado?
+##### Certificados Internos
+  - [ ] Data Emissão certificado Internos
+  - [ ] Data envio certificado
+  - [ ] Certificado Nº
+  - [ ] Nº / Referência
+  - [ ] Data da Ação - Inicio
+  - [ ] Avaliação
+  - [ ] Data da Ação - Fim
+  - [ ] (preencher)
+
+##### SIGO
+  - [ ] Data Emissão Certificado SIGO
+  - [ ] Data inicial certificados SIGO
+  - [ ] Código da Ação - SIGO
+  - [ ] Data final certificados SIGO
+  - [ ] Data upload IEFP
+  - [ ] Sigo nº
+
+##### IMTT
+  - [ ] Nº Código Acção IMT
+  - [ ] Data Início Candidatura
+  - [ ] Data envio certificados
+  - [ ] Data Fecho da Candidatura
+  - [ ] Processo encerrado?
+
+### Vista de Lista
+#### Predefinido
+  - [ ] Ação: [name]
+  - [ ] Nome da ação: [description]
+  - [ ] Horas: [formation_hours_c]
+  - [ ] Nº ação: [action_number_c]
+  - [ ] Contacto: [contacts_sdmod_training_control_1_name]
+  - [ ] Cliente: [accounts_sdmod_training_control_1_name]
+  - [ ] Data Inicio Submissão IEFP Formando: [iefp_submission_date]
+  - [ ] Nº de candidatura IEFP: [iefp_application_number]
+  - [ ] Estado Candidatura: [candidature_status_c]
+  - [ ] Data Verificação portal IEFP - Estado da Candidatura: [iefp_verification_date]
+  - [ ] Certificado Nº: [intern_certificate_number_c]
+  - [ ] Data envio certificado: [certificate_sent_date]
+  - [ ] Código da Ação - SIGO: [sigo_formation_code]
+  - [ ] Sigo nº: [sigo_n_c]
+  - [ ] Data upload IEFP: [iefp_upload_date]
+  - [ ] Criado em: [date_entered]
 
 ### Criação rápida:
 
 ### Filtro
 #### Predefinido
-
