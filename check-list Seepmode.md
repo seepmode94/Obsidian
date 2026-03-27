@@ -1348,6 +1348,147 @@
   - [ ] Criado em: [date_entered]
 
 ### Criação rápida:
+##### Predefinido
+  - [ ] Contacto
+  - [ ] Atribuído a
+  - [ ] Cliente
+  - [ ] Nº ação
+  - [ ] Nome da ação
+  - [ ] Horas
+  - [ ] Tipos de Formação
+  - [ ] Local
+
+##### IEFP
+  - [ ] Data Inicio Submissão IEFP Formando
+  - [ ] Nº de candidatura IEFP
+  - [ ] Data Candidatura Formando
+  - [ ] Estado Candidatura
+  - [ ] Data Verificação portal IEFP - Estado da Candidatura
+  - [ ] Data Notificação do Pedido
+  - [ ] Data limite p/ resposta
+  - [ ] Razões de indeferimento / Dados
+  - [ ] Data Pedido Dados Adicionais
+  - [ ] Data Envio Dados Adicionais Portal IEFP
+  - [ ] Data Deferimento
+  - [ ] Valor Aprovado em Candidatura IEFP (€)
+  - [ ] Data Envio Resultado a Clientes
+  - [ ] Processo encerrado?
+##### Certificados Internos
+  - [ ] Data Emissão certificado Internos
+  - [ ] Data envio certificado
+  - [ ] Certificado Nº
+  - [ ] Nº / Referência
+  - [ ] Data da Ação - Inicio
+  - [ ] Avaliação
+  - [ ] Data da Ação - Fim
+  - [ ] (preencher)
+
+##### SIGO
+  - [ ] Data Emissão Certificado SIGO
+  - [ ] Data inicial certificados SIGO
+  - [ ] Código da Ação - SIGO
+  - [ ] Data final certificados SIGO
+  - [ ] Data upload IEFP
+  - [ ] (preencher)
+
+##### IMTT
+  - [ ] Nº Código Acção IMT
+  - [ ] Data Início Candidatura
+  - [ ] Data envio certificados
+  - [ ] Data Fecho da Candidatura
+  - [ ] Processo encerrado?
+
+### Filtro
+#### Predefinido
+  - [ ] Nº ação: [action_number_c]
+  - [ ] Cliente: [accounts_sdmod_training_control_1_name]
+  - [ ] Nº de candidatura IEFP: [iefp_application_number]
+  - [ ] NIF: [formationaccountsnif]
+  - [ ] Data Emissão certificado Internos: [internal_certificate_date]
+  - [ ] Código da Ação - SIGO: [sigo_formation_code]
+  - [ ] Data envio certificado: [certificate_sent_date]
+  - [ ] Data Emissão Certificado SIGO: [certificate_issue_date]
+  - [ ] Data inicial certificados SIGO: [sigo_training_date]
+  - [ ] Data final certificados SIGO: [sigo_training_date_new_c]
+  - [ ] Data da Ação - Inicio: [intern_date_start_c]
+  - [ ] Data da Ação - Fim: [intern_date_end_c]
+  - [ ] Estado Candidatura: [candidature_status_c]
+  - [ ] Tipos de Formação: [training_type_c]
+  - [ ] Atribuído a: [assigned_user_id]
+
+## ==Formadores ==
+### Vista de edição/Vista de detalhe/Criação rápida:
+##### Predefinido
+  - [ ] Nome
+  - [ ] Valor/Hora
+  - [ ] Valor Total
+  - [ ] Número da Factura
+  - [ ] Data de pagamento
+  - [ ] Data da factura
+  - [ ] Valor do recibo (€)
+  - [ ] Data Entrega Recibo
+  - [ ] (preencher)
+  - [ ] Dossier entregue pelo formador/a
+  - [ ] Data verificação do Dossier
+  - [ ] Observações
+
+### Vista de Lista
+#### Predefinido
+  - [ ] Acção: [name]
+  - [ ] Ação de Formação: [training_ref_c]
+  - [ ] Nome: [trainer_name]
+  - [ ] Cliente: [training_client_c]
+  - [ ] Data da formação: [training_date_c]
+  - [ ] Nº de Formandos da Ação: [training_trainees_c]
+  - [ ] Valor/Hora: [hour_value]
+  - [ ] Valor Total: [total_amount]
+  - [ ] Valor do recibo (€): [registration_cost]
+  - [ ] Número da Factura: [receipt_number]
+  - [ ] Data da factura: [receipt_date]
+  - [ ] Data Entrega Recibo: [receipt_delivery_date_c]
+  - [ ] Data de pagamento: [payment_date]
+  - [ ] Dossier entregue pelo formador/a: [trainer_info_date_c]
+  - [ ] Data verificação do Dossier: [info_verification_date_c]
+  - [ ] Observações: [observations]
+
+
+### Filtro
+#### Predefinido
+  - [ ] Nome: [trainer_name]
+  - [ ] Data da factura: [receipt_date]
+  - [ ] Dossier entregue pelo formador/a: [trainer_info_date_c]
+  - [ ] Ação de Formação: [training_ref_c]
+  - [ ] Data da formação: [training_date_c]
+  - [ ] Número de Formandos da Ação: [trainees_number]
+  - [ ] Data de pagamento: [payment_date]
+  - [ ] Data Entrega Recibo: [receipt_delivery_date_c]
+  - [ ] Valor Total: [total_amount]
+
+## ==Sessões ==
+### Vista de edição/Vista de detalhe:
+##### Relatórios agendados
+  - [ ] Nome
+  - [ ] Situação
+  - [ ] Relatórios
+  - [ ] Agendar
+  - [ ] Última execução
+  - [ ] Destinatários do email
+  - [ ] Descrição
+
+
+### Vista de Lista
+#### Predefinido
+  - [ ] Nome: [name]
+  - [ ] Relatórios: [aor_report_name]
+  - [ ] Situação: [status]
+
+### Criação rápida:
+##### Relatórios agendados
+  - [ ] Nome
+  - [ ] Situação
+  - [ ] Relatórios
+  - [ ] Agendar
+  - [ ] email1
 
 ### Filtro
 #### Predefinido
