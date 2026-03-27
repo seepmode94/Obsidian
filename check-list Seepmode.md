@@ -246,22 +246,18 @@
 
 ### Filtro
 #### Predefinido
+- [ ] Valor Aberto (€): [open_value_c]
+- [ ] Data da fatura: [invoice_date]
+- [ ] Data Pagamento: [due_date]
 - [ ] Título: [name]
-- [ ] Fase proposta: [stage]
 - [ ] Clientes: [billing_account]
-- [ ] Concelho: [billing_address_state]
-- [ ] Cidade: [billing_address_city]
-- [ ] Contactos: [billing_contact]
-- [ ] Válida até: [expiration]
-- [ ] Data prevista fecho: [data_prevista_fecho_c]
-- [ ] Situação de aprovação: [approval_status]
+- [ ] Valor Pago (€): [paid_value_c]
 - [ ] Total final: [total_amount]
-- [ ] Condições de pagamento: [crm]
-- [ ] Empresa: [empresa_c]
-- [ ] Data alteração: [date_modified]
-- [ ] Data criação: [date_entered]
+- [ ] Categoria do produto: [product_category]
+- [ ] Produtos: [products_name_filter]
+- [ ] Itens de linha: [lin_items]
+- [ ] Vendedor: [salesperson_c]
 - [ ] Atribuído a: [assigned_user_id]
-
 ## ==Faturas ==
 ### Vista de edição:
 ##### Visão geral
@@ -338,3 +334,68 @@
 - [ ] Taxa de envio
 - [ ] Taxa
 - [ ] Total final
+
+### Vista de Lista
+#### Predefinido
+- [ ] Núm.: [number]
+- [ ] Título: [name]
+- [ ] Clientes: [billing_account]
+- [ ] Data da fatura: [invoice_date]
+- [ ] Descrição: [description]
+- [ ] Total final: [total_amount]
+- [ ] Subtotal: [subtotal_amount]
+- [ ] Valor Aberto (€): [open_value_c]
+- [ ] Valor Pago (€): [paid_value_c]
+- [ ] Data Pagamento: [date_paid]
+- [ ] Data Renovação: [duo_date]
+- [ ] Valor renovação (€): [renovation_value_c]
+- [ ] Vendedor: [salesperson_c]
+- [ ] Data de criação: [date_entered]
+- [ ] Utilizador: [assigned_user_name]
+- [ ] Criado por: [created_by_name]
+
+### Criação rápida:
+##### Visão geral
+- [ ] Título
+- [ ] Vendedor
+- [ ] Número da fatura
+- [ ] Clientes
+- [ ] Descrição
+- [ ] Data da fatura
+- [ ] Valor Pago (€)
+- [ ] Data Pagamento
+- [ ] Valor Aberto (€)
+- [ ] Pack Avançado
+- [ ] Valor renovação (€)
+- [ ] Data Renovação
+- [ ] Enviar Email Automático a Relembrar Pagamento
+- [ ] Situação
+- [ ] Atribuído a
+
+##### Itens de linha
+- [ ] Moeda
+- [ ] Itens de linha
+- [ ] (preencher)
+- [ ] (empty)
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
+
+### Filtro
+#### Predefinido
+- [ ] Valor Aberto (€): [open_value_c]
+- [ ] Data da fatura: [invoice_date]
+- [ ] Data Pagamento: [due_date]
+- [ ] Título: [name]
+- [ ] Clientes: [billing_account]
+- [ ] Valor Pago (€): [paid_value_c]
+- [ ] Total final: [total_amount]
+- [ ] Categoria do produto: [product_category]
+- [ ] Produtos: [products_name_filter]
+- [ ] Itens de linha: [lin_items]
+- [ ] Vendedor: [salesperson_c]
+- [ ] Atribuído a: [assigned_user_id]
