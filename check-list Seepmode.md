@@ -862,11 +862,107 @@
   - [ ] Atribuído a
 
 ### Vista de detalhe:
+##### Visão geral
+  - [ ] Nome do ficheiro
+  - [ ] Situação
+  - [ ] Nome do documento
+  - [ ] Revisão
+  - [ ] Tipo de documento
+  - [ ] Modelo?
+  - [ ] Data de publicação
+  - [ ] Categoria
+  - [ ] Data de validade
+  - [ ] Subcategoria
+  - [ ] Descrição
+  - [ ] Documento relacionado
+  - [ ] Revisão do documento relacionado
+  - [ ] Medicina Ocupacional
+  - [ ] Fichas de Aptidão
 
+##### Outro
+  - [ ] Atribuído a
 ### Vista de Lista
 #### Predefinido
+  - [ ] Nome do ficheiro: [filename]
+  - [ ] Data de criação: [date_entered]
+  - [ ] Criado por: [created_by_name]
+  - [ ] Descrição: [description]
+  - [ ] Tipo de documento: [template_type]
+  - [ ] Categoria: [category_id]
+  - [ ] Data de validade: [exp_date]
+  - [ ] Utilizador: [assigned_user_name]
 
 ### Criação rápida:
+##### Predefinido
+  - [ ] Nome do ficheiro
+  - [ ] Nome do documento
+  - [ ] Atribuído a
+  - [ ] Data de publicação
+  - [ ] Descrição
 
 ### Filtro
 #### Predefinido
+  - [ ] Nome do documento: [document_name]
+  - [ ] Situação: [status_id]
+  - [ ] Tipo de documento: [template_type]
+  - [ ] Categoria: [category_id]
+  - [ ] Subcategoria: [subcategory_id]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Data de publicação: [active_date]
+  - [ ] Data de validade: [exp_date]
+
+## ==Notas ==
+### Vista de edição:
+##### Visão geral
+  - [ ] Contacto
+  - [ ] Referente a
+  - [ ] Assunto da Nota
+  - [ ] (preencher)
+  - [ ] Anexo
+  - [ ] Nota
+  - [ ] (preencher)
+
+##### Outro
+  - [ ] Atribuído a
+
+### Vista de detalhe:
+##### Visão geral
+  - [ ] Contacto
+  - [ ] Referente a
+  - [ ] Assunto
+  - [ ] Anexo
+  - [ ] Nota
+  - [ ] Atribuído a
+  - [ ] (preencher)
+
+##### Outro
+  - [ ] Data alteração
+  - [ ] Data de criação
+### Vista de Lista
+#### Predefinido
+  - [ ] Assunto: [name]
+  - [ ] Contacto: [contact_name]
+  - [ ] Relacionada com: [parent_name]
+  - [ ] Anexo: [filename]
+  - [ ] Criado por: [created_by_name]
+  - [ ] Data de criação: [date_entered]
+
+### Criação rápida:
+##### Predefinido
+  - [ ] Contacto
+  - [ ] Referente a
+  - [ ] Assunto
+  - [ ] Atribuído a
+  - [ ] Anexo
+  - [ ] Nota
+
+### Filtro
+#### Predefinido
+  - [ ] Assunto da Nota: [name]
+  - [ ] Contacto: [contact_name]
+  - [ ] Referente a: [parent_name]
+  - [ ] Anexo: [filename]
+  - [ ] Data de criação: [date_entered]
+
+
+
