@@ -34,38 +34,20 @@
 - Existem alguns campos em `Tacovia` que não aparecem de forma equivalente em `Seepmode`.
 - Principais itens a validar:
 - `Recursos Administrativos` na `Criação rápida`
-- `Nº Cand`
 - `Data entrega informação ao Formando`
-- Alguns nomes técnicos também parecem divergentes e devem ser revistos caso a caso.
 
 ### Sessões
 - O conteúdo entre os dois ficheiros é substancialmente diferente.
-- `Tacovia` está orientado para sessões de formação.
-- `Seepmode` está orientado para relatórios agendados.
-- Isto parece ser uma diferença real de conteúdo, não apenas de estrutura.
 - Principais itens que existem em `Tacovia` e não estão refletidos na `Seepmode`:
 - `Formação`
 - `Abreviatura`
 - `Sessões`
 - `Atribuído a`
 
-### Acessos IEFP
-- Há uma diferença pequena mas relevante de conteúdo/nome de campo.
-- Validar:
-- `Email - IEFP`
-- Também convém confirmar os nomes técnicos do relacionamento `Contactos` e do campo de email, porque os identificadores não coincidem exatamente entre os ficheiros.
 
 ### Medicina Ocupacional
-- Continua a ser o módulo com mais diferenças de conteúdo aparente.
-- Parte das diferenças pode ser apenas ortografia, mas há itens que devem ser validados com atenção.
 - Principais pontos a rever:
 - `Passatempos`, `Recomendações`, `Observações Finais` e `Outros` aparecem agregados como `FMO` na `Seepmode`
-- `Médico/Enfermeiro` vs `Médico/ Enfermeiro`
-- `Análises à Urina` vs `Análises a Urina`
-- `Análises ao Colesterol` vs `Análises ao Colestrol`
-- `Rastreio oftalmológico` vs `Rastreio otorrinolingolo`
-- `Observações ao boletim de vacinas` vs `Observações do boletim de vacinas`
-- Aqui há mistura de diferenças de nome e possíveis diferenças reais de conteúdo, por isso este módulo ainda precisa de revisão manual.
 
 ### Fichas de Aptidão
 - A `Seepmode` tem muito mais conteúdo detalhado do que a `Tacovia`.
@@ -78,7 +60,8 @@
 - Neste módulo, a diferença é de modelação e detalhe, não de falta evidente na `Seepmode`.
 
 ## Módulos que exigem validação manual
-1. Medicina Ocupacional
+1. Medicina Ocupacional:
+comparando os modulos dentro de 
 2. Sessões
 3. Formações
 4. Documentos

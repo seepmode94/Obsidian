@@ -1178,7 +1178,7 @@
   - [ ] Média dos Formandos (€)
   - [ ] Nº presenças
   - [ ] Com Cheque Formação
-  - [ ] Nº card
+  - [ ] Nº cand
 ##### Recursos Técnicos
   - [ ] Local
   - [ ] Nº Fatura
@@ -1499,13 +1499,12 @@
 ## ==Acessos IEFP ==
 ### Vista de edição/Vista de detalhe:
 ##### Predefinido
-  - [ ] Exibir tipo: [Painel]
   - [ ] Contrair?
   - [ ] Contactos
   - [ ] Atribuído a
   - [ ] PUK
   - [ ] Password
-  - [ ] #Email - IEFP
+  - [ ] Email - IEFP
   - [ ] (preencher)
 ### Vista de Lista
   #### Predefinido
@@ -1641,87 +1640,87 @@
 
 ### Vista de edição/Vista de detalhe/Criação rápida:
 ##### Visão geral
-  - [ ] Paciente
-  - [ ] Nº Exame
-  - [ ] Cliente
-  - [ ] Data Prevista
-  - [ ] Categoria Profissional
-  - [ ] Tipo de exame
-  - [ ] Data de admissão
-  - [ ] Médico/ Enfermeiro
+  - [x] Paciente
+  - [x] Nº Exame
+  - [x] Cliente
+  - [x] Data Prevista
+  - [x] Categoria Profissional
+  - [x] Tipo de exame
+  - [x] Data de admissão
+  - [x] Médico/ Enfermeiro
 
 ##### Histórico Familiar
-  - [ ] Irrelevante
-  - [ ] Relevante
-  - [ ] Qual
+  - [x] Irrelevante
+  - [x] Relevante
+  - [x] Qual
 
 ##### Doenças profissionais - Histórico Ocupacional
-  - [ ] Sem doenças
-  - [ ] Declaradas
-  - [ ] Quais?
-  - [ ] Detetadas
-  - [ ] Quais?
+  - [x] Sem doenças
+  - [x] Declaradas
+  - [x] Quais?
+  - [x] Detetadas
+  - [x] Quais?
 
 ##### Acidentes de trabalho - Histórico Ocupacional
-  - [ ] Sem acidentes
-  - [ ] Com acidentes
-  - [ ] Quais?
+  - [x] Sem acidentes
+  - [x] Com acidentes
+  - [x] Quais?
 
 ##### Exposição a riscos profissionais - Histórico Ocupacional
-  - [ ] Não
-  - [ ] Sim
-  - [ ] Quais?
-  - [ ] Avaliação da exposição profissional do trabalhador
+  - [x] Não
+  - [x] Sim
+  - [x] Quais?
+  - [x] Avaliação da exposição profissional do trabalhador
 
 ##### Álcool - Hábitos
-  - [ ] Não
-  - [ ] Sim
-  - [ ] Frequência
+  - [x] Não
+  - [x] Sim
+  - [x] Frequência
 
 ##### Tabaco - Hábitos
-  - [ ] Não
-  - [ ] Sim
-  - [ ] Frequência
+  - [x] Não
+  - [x] Sim
+  - [x] Frequência
 
 ##### Café - Hábitos
-  - [ ] Não
-  - [ ] Sim
-  - [ ] Frequência
+  - [x] Não
+  - [x] Sim
+  - [x] Frequência
 ##### Medicamentos - Hábitos
-  - [ ] Não
-  - [ ] Sim
-  - [ ] Frequência
+  - [x] Não
+  - [x] Sim
+  - [x] Frequência
 
 ##### FMO
-  - [ ] Passatempos
-  - [ ] (preencher)
+  - [x] Passatempos
+  - [x] (preencher)
 
 ##### Biometrias - Exame Médico Objectivo
-  - [ ] Altura
-  - [ ] Peso
-  - [ ] Pulsação
-  - [ ] Tensão arterial (min-mmHg)
-  - [ ] Tensão arterial (máx-mmHg)
+  - [x] Altura
+  - [x] Peso
+  - [x] Pulsação
+  - [x] Tensão arterial (min-mmHg)
+  - [x] Tensão arterial (máx-mmHg)
 
 ##### Vacinação- Inoculações administradas
-  - [ ] Atualizado
-  - [ ] (preencher)
-  - [ ] Não Atualizado
-  - [ ] Quais?
-  - [ ] Observações do boletim de vacinas
+  - [x] Atualizado
+  - [x] (preencher)
+  - [x] Não Atualizado
+  - [x] Quais?
+  - [x] Observações do boletim de vacinas
 ##### Exames Complementares de Diagnóstico
-  - [ ] Análises ao Sangue
-  - [ ] ECG
-  - [ ] Análises a Urina
-  - [ ] RX Tórax
-  - [ ] Análises às Fezes
+  - [x] Análises ao Sangue
+  - [x] ECG
+  - [x] Análises a Urina
+  - [x] RX Tórax
+  - [x] Análises às Fezes
   - [ ] Rastreio otorrinolingolo
-  - [ ] Análises à Glicémia
-  - [ ] Análises ao Colestrol
-  - [ ] Audiometria
-  - [ ] Espirometria
-  - [ ] Outros
-  - [ ] Observações
+  - [x] Análises à Glicémia
+  - [x] Análises ao Colestrol
+  - [x] Audiometria
+  - [x] Espirometria
+  - [x] Outros
+  - [x] Observações
 
 ##### Patologia Apresentada
   - [ ] Sem problemas de saúde
