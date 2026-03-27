@@ -2092,7 +2092,7 @@
 - Data de admissão: [admission_date_c];
 - NUTS II: [nutsii_c];
 
-## ==Ficha de Aptidão==
+## ==Fichas de Aptidão==
 
 ### Vista de Edição
 #### Predefinido
