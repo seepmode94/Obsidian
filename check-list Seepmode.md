@@ -1569,3 +1569,122 @@
 - [ ] Unidades
 - [ ] Atualização interna?
 - [ ] Criado por
+
+### Vista de Lista
+  #### Predefinido
+  - [ ] Código: [cod_c]
+  - [ ] Situação: [status]
+  - [ ] Prioridade: [priority]
+  - [ ] Assunto: [name]
+  - [ ] Nome da conta: [account_name]
+  - [ ] Telefone: [phone_office]
+  - [ ] Concelho: [billing_address_state]
+  - [ ] Cidade: [billing_address_city]
+  - [ ] Contacto: [who_contacted_c]
+  - [ ] Data: [assistence_datetime_c]
+  - [ ] Data Limite: [deadline_c]
+  - [ ] Data resolução: [resolutions_date_c]
+  - [ ] Fechado por: [closed_by_c]
+  - [ ] Criado em: [date_entered]
+  - [ ] Aberto por: [opened_by_c]
+  - [ ] Criado por: [created_by_name]
+
+### Criação rápida:
+##### Visão geral
+  - [ ] Assunto
+  - [ ] Data
+  - [ ] Modo
+  - [ ] Data do serviço/ auditoria
+  - [ ] Enviar/Receber
+  - [ ] Contacto
+  - [ ] Área
+  - [ ] Nome da conta
+  - [ ] Data Limite
+  - [ ] Prioridade
+  - [ ] Código
+  - [ ] Simulação de Inspeção Realizada?
+  - [ ] Situação
+  - [ ] Data de Receção de Ficheiros do Cliente
+  - [ ] Aberto por
+  - [ ] Fechado por
+  - [ ] Atribuído a
+  - [ ] (preencher)
+##### OUTRO
+  - [ ] Descrição do Problema / Serviços
+  - [ ] Resolução
+  - [ ] Hardware
+  - [ ] Unidades
+  - [ ] Data resolução
+
+## ==Medicina Ocupacional ==
+
+### Vista de edição/Vista de detalhe:
+##### Visão geral
+  - [ ] Paciente
+  - [ ] Nº Exame
+  - [ ] Cliente
+  - [ ] Data Prevista
+  - [ ] Categoria Profissional
+  - [ ] Tipo de exame
+  - [ ] Data de admissão
+  - [ ] Médico/ Enfermeiro
+
+##### Histórico Familiar
+  - [ ] Irrelevante
+  - [ ] Relevante
+  - [ ] Qual
+
+##### Doenças profissionais - Histórico Ocupacional
+  - [ ] Sem doenças
+  - [ ] Declaradas
+  - [ ] Quais?
+  - [ ] Detetadas
+  - [ ] Quais?
+
+##### Acidentes de trabalho - Histórico Ocupacional
+  - [ ] Sem acidentes
+  - [ ] Com acidentes
+  - [ ] Quais?
+
+##### Exposição a riscos profissionais - Histórico Ocupacional
+  - [ ] Não
+  - [ ] Sim
+  - [ ] Quais?
+  - [ ] Avaliação da exposição profissional do trabalhador
+
+##### Álcool - Hábitos
+  - [ ] Não
+  - [ ] Sim
+  - [ ] Frequência
+
+##### Tabaco - Hábitos
+  - [ ] Não
+  - [ ] Sim
+  - [ ] Frequência
+
+##### Café - Hábitos
+  - [ ] Não
+  - [ ] Sim
+  - [ ] Frequência
+##### Medicamentos - Hábitos
+  - [ ] Não
+  - [ ] Sim
+  - [ ] Frequência
+
+##### FMO
+  - [ ] Passatempos
+  - [ ] (preencher)
+
+##### Biometrias - Exame Médico Objectivo
+  - [ ] Altura
+  - [ ] Peso
+  - [ ] Pulsação
+  - [ ] Tensão arterial (min-mmHg)
+  - [ ] Tensão arterial (máx-mmHg)
+
+##### Vacinação- Inoculações administradas
+  - [ ] Atualizado
+  - [ ] (preencher)
+  - [ ] Não Atualizado
+  - [ ] Quais?
+  - [ ] Observações do boletim de vacinas
