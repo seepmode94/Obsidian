@@ -454,3 +454,132 @@
 - [ ] Taxa de envio
 - [ ] Taxa
 - [ ] Total final
+
+### Vista de detalhe:
+##### Predefinido
+- [ ] Nº
+- [ ] Gestor do contrato
+- [ ] Anuidade
+- [ ] Versão
+- [ ] Data inicio
+- [ ] Data fim
+- [ ] Cliente
+- [ ] Data Renovação
+- [ ] Valor Líquido €
+- [ ] Valor do Pack
+- [ ] Pack
+- [ ] Estado do Pack
+- [ ] Descrição
+- [ ] Empresa
+- [ ] Contacto
+- [ ] Data criação
+##### Itens de linha
+  - [ ] Moeda
+  - [ ] Itens de linha
+  - [ ] (preencher)
+  - [ ] (empty)
+  - [ ] Total
+  - [ ] Desconto
+  - [ ] Subtotal
+  - [ ] Portes de envio
+  - [ ] Taxa de envio
+  - [ ] Taxa
+  - [ ] Total final
+
+##### Vista de Lista
+  
+  #### Predefinido
+  - [ ] Nº: [name]
+  - [ ] Cliente: [contract_account]
+  - [ ] Anuidade: [anuidade_c]
+  - [ ] Versão: [versao_c]
+  - [ ] Data inicio: [start_date]
+  - [ ] Data Renovação: [renewal_date]
+  - [ ] Data fim: [end_date]
+  - [ ] Valor liquido €: [net_value_c]
+  - [ ] Pack: [pack_c]
+  - [ ] Estado do Pack: [pack_state_c]
+  - [ ] Valor do Pack: [renewal_value_c]
+  - [ ] Gestor do contrato: [assigned_user_name]
+  - [ ] Data criação: [date_entered]
+### Criação rápida:
+  ##### Predefinido
+  - [ ] Nº
+  - [ ] Gestor do contrato
+  - [ ] Anuidade
+  - [ ] Versão
+  - [ ] Data inicio
+  - [ ] Data fim
+  - [ ] Cliente
+  - [ ] Data Renovação
+  - [ ] Valor Líquido €
+  - [ ] Valor do Pack
+  - [ ] Pack
+  - [ ] Estado do Pack
+  - [ ] Descrição
+  - [ ] Empresa
+  - [ ] Contacto
+  - [ ] Data criação
+### Filtro
+  #### Predefinido
+  - [ ] Nº: [name]
+  - [ ] Cliente: [contract_account]
+  - [ ] Anuidade: [anuidade_c]
+  - [ ] Data Renovação: [renewal_date_c]
+  - [ ] Data inicio: [start_date]
+  - [ ] Valor do contrato: [total_contract_value_c]
+  - [ ] Versão: [versao_c]
+  - [ ] Data fim: [end_date]
+  - [ ] Pack: [pack_c]
+  - [ ] Estado do Pack: [pack_state_c]
+  - [ ] Valor do Pack: [renewal_value_c]
+  - [ ] Empresa: [empresa_c]
+  - [ ] Tipo de contrato: [contract_type]
+  - [ ] Gestor do contrato: [assigned_user_id]
+
+## ==Contactos ==
+### Vista de edição:
+##### Visão geral
+  - [ ] Nome próprio
+  - [ ] Data Admissão
+  - [ ] Apelido
+  - [ ] Telefone trabalho
+  - [ ] Data Nascimento
+  - [ ] Telemóvel
+  - [ ] Cargo
+  - [ ] Fax
+  - [ ] Departamento
+  - [ ] Sessão
+  - [ ] Nome da conta
+  - [ ] Profissão
+  - [ ] Rua - endereço principal
+  - [ ] Rua - Endereço alternativo
+  - [ ] Número CC
+  - [ ] Data Validade CC
+  - [ ] NIF
+  - [ ] Nuts II
+  - [ ] Estado civil
+  - [ ] Nacionalidade
+  - [ ] Sexo
+  - [ ] Freguesia de nascimento
+  - [ ] ADR?
+  - [ ] Concelho de nascimento
+  - [ ] Tipo
+  - [ ] Habilitações Literárias
+  - [ ] Email
+  - [ ] Descrição
+  - [ ] Tipo de Recurso
+  - [ ] Número do Beneficiário
+  - [ ] Último Exame
+  - [ ] Próximo Exame
+##### Mais detalhes
+  - [ ] Supervisionado por
+  - [ ] Sincronizar contacto
+  - [ ] Fonte da pista
+  - [ ] Não telefonar
+  - [ ] Campanha
+
+  ##### Outro
+  - [ ] Atribuído a
+  - [ ] (preencher)
+
