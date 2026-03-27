@@ -1499,37 +1499,34 @@
 ## ==Acessos IEFP ==
 ### Vista de edição/Vista de detalhe:
 ##### Predefinido
-  - [ ] Contrair?
-  - [ ] Contactos
-  - [ ] Atribuído a
-  - [ ] PUK
-  - [ ] Password
-  - [ ] Email - IEFP
-  - [ ] (preencher)
+  - [x] Contactos
+  - [x] Atribuído a
+  - [x] PUK
+  - [x] Password
+  - [x] Email - IEFP
+  - [x] (preencher)
 ### Vista de Lista
   #### Predefinido
-- [ ] Contactos: [contacts_smdm_icfp_accesses_1_name]
-- [ ] PUK: [puk_c]
-- [ ] Password: [contacts_password_c]
-- [ ] Email- IEFP: [icfp_email_c]
-- [ ] Criado em: [date_entered]
-- [ ] Modificado por (nome): [modified_by_name]
-- [ ] Atribuído a: [assigned_user_name]
+- [x] Contactos: [contacts_smdm_icfp_accesses_1_name]
+- [x] PUK: [puk_c]
+- [x] Password: [contacts_password_c]
+- [x] Email- IEFP: [icfp_email_c]
+- [x] Criado em: [date_entered]
+- [x] Modificado por (nome): [modified_by_name]
+- [x] Atribuído a: [assigned_user_name]
 
 ### Criação rápida:
-  ##### Predefinido
-- [ ] Exibir tipo: [Painel]
-- [ ] Contrair?
-- [ ] Contactos
-- [ ] Atribuído a
-- [ ] PUK
-- [ ] Password
-- [ ] #Email - IEFP
-- [ ] (preencher)
+##### Predefinido
+- [x] Contactos
+- [x] Atribuído a
+- [x] PUK
+- [x] Password
+- [x] Email - IEFP
+- [x] (preencher)
 ### Filtro
   #### Predefinido
- - [ ] Ação: [name]
- - [ ] Atribuído a: [assigned_user_id]
+ - [x] Ação: [name]
+ - [x] Atribuído a: [assigned_user_id]
 ## ==Assistências ==
 ### Vista de edição/Vista de detalhe:
 #### Visão geral
