@@ -129,3 +129,82 @@
 - [ ] Atribuído a: [assigned_user_id]
 - [ ] Data de criação: [date_entered]
 
+
+## ==Propostas ==
+### Vista de edição:
+##### Visão geral
+- [ ] Título
+- [ ] Clientes
+- [ ] Número da proposta
+- [ ] Fase proposta
+- [ ] Válida até
+- [ ] Data prevista fecho
+- [ ] Situação da fatura
+- [ ] Condições de pagamento
+- [ ] Situação de aprovação
+- [ ] Empresa
+- [ ] Descrição Proposta
+- [ ] Notas para a Faturação
+- [ ] Contactos
+- [ ] Atribuído a
+
+##### Itens de linha
+- [ ] Moeda
+- [ ] Itens de linha
+- [ ] (preencher)
+- [ ] (empty)
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
+
+### Vista de detalhe:
+##### Visão geral
+- [ ] Título
+- [ ] Clientes
+- [ ] Número da proposta
+- [ ] Fase proposta
+- [ ] Válida até
+- [ ] Data prevista fecho
+- [ ] Situação da fatura
+- [ ] Condições de pagamento
+- [ ] Situação de aprovação
+- [ ] Empresa
+- [ ] Descrição Proposta
+- [ ] Notas para a Faturação
+- [ ] Contactos
+- [ ] Atribuído a
+
+##### Itens de linha
+- [ ] Moeda
+- [ ] Itens de linha
+- [ ] (preencher)
+- [ ] (empty)
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
+
+### Vista de Lista
+#### Predefinido
+- [ ] Núm.: [number]
+- [ ] Título: [name]
+- [ ] Clientes: [billing_account]
+- [ ] Empresa: [empresa_c]
+- [ ] Data prevista fecho: [data_prevista_fecho_c]
+- [ ] Cidade: [billing_address_city]
+- [ ] Concelho: [billing_address_state]
+- [ ] Total final: [total_amount]
+- [ ] Total: [total_amt]
+- [ ] Fase proposta: [stage]
+- [ ] Situação de aprovação: [approval_status]
+- [ ] Utilizador: [assigned_user_name]
+- [ ] Data criação: [date_entered]
+- [ ] Data alteração: [date_modified]
+- [ ] Criado por: [created_by_name]
