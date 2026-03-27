@@ -965,4 +965,123 @@
   - [ ] Data de criação: [date_entered]
 
 
+## ==Emails ==
+### Vista de edição:
+##### Email
+  - [ ] Atribuído a
+  - [ ] Relacionar com
+  - [ ] Categoria
+
+### Vista de detalhe:
+##### Email
+  - [ ] Consentir
+  - [ ] Data de envio/receção
+  - [ ] De
+  - [ ] Para
+  - [ ] Cc
+  - [ ] Bcc
+  - [ ] Assunto
+  - [ ] Corpo
+  - [ ] Relacionar com
+  - [ ] Data de criação
+  - [ ] Data de alteração
+  - [ ] Categoria
+
+### Vista de Lista:
+#### Predefinido
+  - [ ] De: [from_addr_name]
+  - [ ] Indicador: [indicator]
+  - [ ] Assunto: [subject]
+  - [ ] Data de criação: [date_entered]
+  - [ ] Data de envio/receção: [date_sent_received]
+  - [ ] Categoria: [category_id]
+### Criação rápida:
+##### Predefinido
+  - [ ] Assunto
+  - [ ] Atribuído a
+  - [ ] Categoria
+
+### Filtro:
+#### Predefinido
+  - [ ] Palavras-chave de IMAP: [imap_keywords]
+  - [ ] De: [from_addr_name]
+  - [ ] Para: [to_addrs_names]
+  - [ ] Assunto: [name]
+  - [ ] Corpo: [description]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Categoria: [category_id]
+  - [ ] Relacionar com: [parent_name]
+
+
+## ==Formações ==
+### Vista de edição:
+##### Predefinido
+  - [ ] Ação
+  - [ ] Ano
+  - [ ] Tipo de ação
+  - [ ] Estado
+  - [ ] Data Formação
+  - [ ] Data Fim da Formação
+  - [ ] Cliente
+  - [ ] Formador
+  - [ ] Contacto
+  - [ ] Sessões
+  - [ ] Nº horas
+  - [ ] Data adjudicação
+  - [ ] Valor formação (€)
+  - [ ] NUTS II
+  - [ ] Nº Faturados
+  - [ ] Média dos Formandos (€)
+  - [ ] Nº presenças
+  - [ ] Com Cheque Formação
+  - [ ] Nº card
+  - [ ] Data Candidatura
+  - [ ] (preencher)
+##### Recursos Administrativos
+  - [ ] Data Verificação
+  - [ ] Data Envio Email Info ao Cliente
+  - [ ] Data entrega informação do Cliente
+  - [ ] Data Confirmação Telf Cliente
+  - [ ] Data Envio Adjudicação ao Formador
+  - [ ] Data a Relembrar Formação
+  - [ ] Nº certificados enviados
+  - [ ] Data envio certificados
+  - [ ] Followup Cliente
+  - [ ] Observações
+  - [ ] Data Digitalização
+  - [ ] Data Análise Estatística
+  - [ ] Ação Fechada?
+  - [ ] Data Fecho ação
+  - [ ] Fechado por
+  - [ ] (preencher)
+
+##### Recursos Técnicos
+  - [ ] Local
+  - [ ] Nº Fatura
+  - [ ] Morada
+  - [ ] Valor
+  - [ ] Sala
+  - [ ] Data Pagamento Sala
+  - [ ] Projector
+##### Pagamentos
+  - [ ] Nº factura
+  - [ ] Data Pagamento
+  - [ ] Valor factura (€)
+  - [ ] Valor pago (€)
+  - [ ] Data factura
+  - [ ] (preencher)
+
+##### Outros
+  - [ ] Atribuído a
+  - [ ] Vendedor
+
+### Vista de detalhe:
+
+### Vista de Lista
+#### Predefinido
+
+### Criação rápida:
+
+### Filtro
+#### Predefinido
 
