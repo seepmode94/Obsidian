@@ -442,7 +442,7 @@
 - [ ] Contacto
 - [ ] Data criação
 
-##### Itens de linha
+###### Itens de linha
 - [ ] Moeda
 - [ ] Itens de linha
 - [ ] (preencher)
@@ -486,22 +486,6 @@
   - [ ] Taxa
   - [ ] Total final
 
-##### Vista de Lista
-  
-  #### Predefinido
-  - [ ] Nº: [name]
-  - [ ] Cliente: [contract_account]
-  - [ ] Anuidade: [anuidade_c]
-  - [ ] Versão: [versao_c]
-  - [ ] Data inicio: [start_date]
-  - [ ] Data Renovação: [renewal_date]
-  - [ ] Data fim: [end_date]
-  - [ ] Valor liquido €: [net_value_c]
-  - [ ] Pack: [pack_c]
-  - [ ] Estado do Pack: [pack_state_c]
-  - [ ] Valor do Pack: [renewal_value_c]
-  - [ ] Gestor do contrato: [assigned_user_name]
-  - [ ] Data criação: [date_entered]
 ### Criação rápida:
   ##### Predefinido
   - [ ] Nº
@@ -520,6 +504,22 @@
   - [ ] Empresa
   - [ ] Contacto
   - [ ] Data criação
+### Vista de Lista
+  
+  #### Predefinido
+  - [ ] Nº: [name]
+  - [ ] Cliente: [contract_account]
+  - [ ] Anuidade: [anuidade_c]
+  - [ ] Versão: [versao_c]
+  - [ ] Data inicio: [start_date]
+  - [ ] Data Renovação: [renewal_date]
+  - [ ] Data fim: [end_date]
+  - [ ] Valor liquido €: [net_value_c]
+  - [ ] Pack: [pack_c]
+  - [ ] Estado do Pack: [pack_state_c]
+  - [ ] Valor do Pack: [renewal_value_c]
+  - [ ] Gestor do contrato: [assigned_user_name]
+  - [ ] Data criação: [date_entered]
 ### Filtro
   #### Predefinido
   - [ ] Nº: [name]
@@ -579,12 +579,12 @@
   - [ ] Não telefonar
   - [ ] Campanha
 
-  ##### Outro
+##### Outro
   - [ ] Atribuído a
   - [ ] (preencher)
 
 ### Vista de detalhe:
-  ##### Visão geral
+##### Visão geral
   - [ ] Nome próprio
   - [ ] Data Admissão
   - [ ] Apelido
@@ -626,11 +626,11 @@
   - [ ] Não telefonar
   - [ ] Campanha
 
-  ##### Outro
+##### Outro
   - [ ] Atribuído a
 
 ### Vista de Lista
-  #### Predefinido
+#### Predefinido
   - [ ] Nome: [name]
   - [ ] Tipo: [contact_type_c]
   - [ ] Cargo: [title]
@@ -642,7 +642,7 @@
   - [ ] Data criação: [date_entered]
 
 ### Criação rápida:
-  ##### Visão geral
+##### Visão geral
   - [ ] Nome próprio
   - [ ] Apelido
   - [ ] Telefone trabalho
@@ -676,10 +676,10 @@
   - [ ] Não telefonar
   - [ ] Campanha
 
-  ##### Outro
+##### Outro
   - [ ] Atribuído a
 ### Filtro
-  #### Predefinido
+#### Predefinido
   - [ ] Nome próprio: [first_name]
   - [ ] Apelido: [last_name]
   - [ ] Todos os endereços de email: [email]
@@ -721,11 +721,11 @@
   - [ ] Atribuído a
   - [ ] Propostas
 
-  ##### Reagendar
+##### Reagendar
   - [ ] Histórico tentativas telefonemas
   - [ ] (preencher)
 
-  ##### Outro
+##### Outro
   - [ ] Data criação
   - [ ] Data alteração
 
