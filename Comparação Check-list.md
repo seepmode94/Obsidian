@@ -140,4 +140,6 @@
   - `Sessões` constitui um caso de conteúdo efetivamente diferente entre ficheiros.
   - `Documentos` apresenta diferenças concretas em campos disponíveis nas vistas de detalhe e de lista.
   - `Medicina Ocupacional` continua a ser o módulo com maior número de diferenças a confirmar manualmente.
+- `Formações` mantém algumas diferenças pontuais de conteúdo, sobretudo na `Criação rápida` e em campos específicos.
+- Existem ainda divergências isoladas noutros módulos, mas com impacto mais reduzido, como em `Contactos`, `Reuniões`, `Acessos IEFP`, `Formandos` e `Assistências`.
 
