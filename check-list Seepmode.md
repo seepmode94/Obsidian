@@ -1498,7 +1498,7 @@
 
 ## ==Acessos IEFP ==
 ### Vista de edição/Vista de detalhe:
-  ##### Predefinido
+##### Predefinido
   - [ ] Exibir tipo: [Painel]
   - [ ] Contrair?
   - [ ] Contactos
@@ -1506,4 +1506,66 @@
   - [ ] PUK
   - [ ] Password
   - [ ] #Email - IEFP
+  - [ ] (preencher)
+### Vista de Lista
+  #### Predefinido
+- [ ] Contactos: [contacts_smdm_icfp_accesses_1_name]
+- [ ] PUK: [puk_c]
+- [ ] Password: [contacts_password_c]
+- [ ] Email- IEFP: [icfp_email_c]
+- [ ] Criado em: [date_entered]
+- [ ] Modificado por (nome): [modified_by_name]
+- [ ] Atribuído a: [assigned_user_name]
+
+### Criação rápida:
+  ##### Predefinido
+- [ ] Exibir tipo: [Painel]
+- [ ] Contrair?
+- [ ] Contactos
+- [ ] Atribuído a
+- [ ] PUK
+- [ ] Password
+- [ ] #Email - IEFP
 - [ ] (preencher)
+### Filtro
+  #### Predefinido
+ - [ ] Ação: [name]
+ - [ ] Atribuído a: [assigned_user_id]
+## ==Assistências ==
+### Vista de edição/Vista de detalhe:
+#### Visão geral
+- [ ] Exibir tipo: [Painel]
+- [ ] Contrair?
+- [ ] Assunto
+- [ ] Data
+- [ ] Modo
+- [ ] Data do serviço/ auditoria
+- [ ] Enviar/Receber
+- [ ] Contacto
+- [ ] Área
+- [ ] Nome da conta
+- [ ] LBL_BILLING_ADDRESS
+- [ ] Concelho
+- [ ] Data Limite
+- [ ] Prioridade
+- [ ] Código
+- [ ] Simulação de Inspeção Realizada?
+- [ ] Situação
+- [ ] Data resolução
+- [ ] Aberto por
+- [ ] Fechado por
+- [ ] Atribuído a
+- [ ] Envio automático de Email ao Cliente quando encerrado assistência
+- [ ] Faturas
+- [ ] Criado em
+#### OUTRO
+- [ ] Exibir tipo: [Painel]
+- [ ] Contrair?
+- [ ] Descrição do Problema / Serviços
+- [ ] Sugestões
+- [ ] Resolução
+- [ ] Atualizações - Texto
+- [ ] Hardware
+- [ ] Unidades
+- [ ] Atualização interna?
+- [ ] Criado por
