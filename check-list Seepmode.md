@@ -539,7 +539,7 @@
 
 ## ==Contactos ==
 ### Vista de edição:
-##### Visão geral
+###### Visão geral
   - [ ] Nome próprio
   - [ ] Data Admissão
   - [ ] Apelido
@@ -572,7 +572,7 @@
   - [ ] Número do Beneficiário
   - [ ] Último Exame
   - [ ] Próximo Exame
-##### Mais detalhes
+###### Mais detalhes
   - [ ] Supervisionado por
   - [ ] Sincronizar contacto
   - [ ] Fonte da pista
@@ -583,3 +583,161 @@
   - [ ] Atribuído a
   - [ ] (preencher)
 
+### Vista de detalhe:
+  ##### Visão geral
+  - [ ] Nome próprio
+  - [ ] Data Admissão
+  - [ ] Apelido
+  - [ ] Telefone trabalho
+  - [ ] Data Nascimento
+  - [ ] Telemóvel
+  - [ ] Cargo
+  - [ ] Fax
+  - [ ] Departamento
+  - [ ] Sessão
+  - [ ] Nome da conta
+  - [ ] Profissão
+  - [ ] Endereço principal
+  - [ ] Endereço alternativo
+  - [ ] Número CC
+  - [ ] Data Validade CC
+  - [ ] NIF
+  - [ ] Nuts II
+  - [ ] Estado civil
+  - [ ] Nacionalidade
+  - [ ] Sexo
+  - [ ] Habilitações Literárias
+  - [ ] ADR?
+  - [ ] (preencher)
+  - [ ] É Formando?
+  - [ ] É Formador?
+  - [ ] Tipo
+  - [ ] (preencher)
+  - [ ] Email
+  - [ ] Descrição
+  - [ ] Tipo de Recurso
+  - [ ] Número do Beneficiário
+  - [ ] Último Exame
+  - [ ] Próximo Exame
+##### Mais detalhes
+  - [ ] Supervisionado por
+  - [ ] Sincronizar contacto
+  - [ ] Fonte da pista
+  - [ ] Não telefonar
+  - [ ] Campanha
+
+  ##### Outro
+  - [ ] Atribuído a
+
+### Vista de Lista
+  #### Predefinido
+  - [ ] Nome: [name]
+  - [ ] Tipo: [contact_type_c]
+  - [ ] Cargo: [title]
+  - [ ] Nome da conta: [account_name]
+  - [ ] Departamento: [department]
+  - [ ] Email: [email1]
+  - [ ] Telefone trabalho: [phone_work]
+  - [ ] Utilizador: [assigned_user_name]
+  - [ ] Data criação: [date_entered]
+
+### Criação rápida:
+  ##### Visão geral
+  - [ ] Nome próprio
+  - [ ] Apelido
+  - [ ] Telefone trabalho
+  - [ ] Data Nascimento
+  - [ ] Cargo
+  - [ ] (preencher)
+  - [ ] (filler)
+  - [ ] Departamento
+  - [ ] (preencher)
+  - [ ] Nome da conta
+  - [ ] Rua - endereço principal
+  - [ ] Rua - Endereço alternativo
+  - [ ] Número CC
+  - [ ] Data Validade CC
+  - [ ] NIF
+  - [ ] Nuts II
+  - [ ] Estado civil
+  - [ ] Nacionalidade
+  - [ ] Sexo
+  - [ ] Habilitações Literárias
+  - [ ] ADR?
+  - [ ] (preencher)
+  - [ ] Tipo
+  - [ ] (preencher)
+  - [ ] Email
+  - [ ] Descrição
+##### Mais detalhes
+  - [ ] Supervisionado por
+  - [ ] Sincronizar contacto
+  - [ ] Fonte da pista
+  - [ ] Não telefonar
+  - [ ] Campanha
+
+  ##### Outro
+  - [ ] Atribuído a
+### Filtro
+  #### Predefinido
+  - [ ] Nome próprio: [first_name]
+  - [ ] Apelido: [last_name]
+  - [ ] Todos os endereços de email: [email]
+  - [ ] Todos os telefones: [phone]
+  - [ ] Todos os endereços: [address_street]
+  - [ ] Nome da conta: [account_name]
+  - [ ] Departamento: [department]
+  - [ ] NIF: [vat_number_c]
+  - [ ] Cidade: [address_city]
+  - [ ] Concelho: [address_state]
+  - [ ] Código postal: [address_postalcode]
+  - [ ] País: [primary_address_country]
+  - [ ] Tipo: [contact_type_c]
+  - [ ] Cargo: [title]
+  - [ ] Atribuído a: [assigned_user_id]
+
+##  ==Telefonemas==
+### Vista de edição:
+##### Visão geral
+- [ ] Assunto
+  - [ ] Situação
+  - [ ] Data e hora de inicio
+  - [ ] Referente a
+  - [ ] Duração
+  - [ ] Lembretes
+  - [ ] Descrição
+  - [ ] Propostas
+  - [ ] Atribuído a
+
+### Vista de detalhe:
+##### Visão geral
+[ ] Assunto
+  - [ ] Situação
+  - [ ] Data e hora de inicio
+  - [ ] Referente a
+  - [ ] Duração
+  - [ ] Lembretes
+  - [ ] Descrição
+  - [ ] Atribuído a
+  - [ ] Propostas
+
+  ##### Reagendar
+  - [ ] Histórico tentativas telefonemas
+  - [ ] (preencher)
+
+  ##### Outro
+  - [ ] Data criação
+  - [ ] Data alteração
+
+##### Itens de linha
+
+### Vista de Lista
+#### Predefinido
+
+### Criação rápida:
+##### Visão geral
+
+##### Itens de linha
+
+### Filtro
+#### Predefinido
