@@ -162,6 +162,25 @@
 - [ ] Total final
 
 ### Vista de detalhe:
+##### Predefinido
+- [ ] Nº
+- [ ] Gestor do contrato
+- [ ] Anuidade
+- [ ] Versão
+- [ ] Data inicio
+- [ ] Data fim
+- [ ] Cliente
+- [ ] Data Renovação
+- [ ] Valor Líquido €
+- [ ] Valor do Pack
+- [ ] Pack
+- [ ] Estado do Pack
+- [ ] Descrição
+- [ ] Empresa
+- [ ] Contacto
+- [ ] Data criação
+
+### Vista de detalhe:
 ##### Visão geral
 - [ ] Título
 - [ ] Clientes
@@ -246,17 +265,20 @@
 
 ### Filtro
 #### Predefinido
-- [ ] Valor Aberto (€): [open_value_c]
-- [ ] Data da fatura: [invoice_date]
-- [ ] Data Pagamento: [due_date]
 - [ ] Título: [name]
+- [ ] Fase proposta: [stage]
 - [ ] Clientes: [billing_account]
-- [ ] Valor Pago (€): [paid_value_c]
+- [ ] Concelho: [billing_address_state]
+- [ ] Cidade: [billing_address_city]
+- [ ] Contactos: [billing_contact]
+- [ ] Válida até: [expiration]
+- [ ] Data prevista fecho: [data_prevista_fecho_c]
+- [ ] Situação de aprovação: [approval_status]
 - [ ] Total final: [total_amount]
-- [ ] Categoria do produto: [product_category]
-- [ ] Produtos: [products_name_filter]
-- [ ] Itens de linha: [lin_items]
-- [ ] Vendedor: [salesperson_c]
+- [ ] Condições de pagamento: [crm]
+- [ ] Empresa: [empresa_c]
+- [ ] Data alteração: [date_modified]
+- [ ] Data criação: [date_entered]
 - [ ] Atribuído a: [assigned_user_id]
 ## ==Faturas ==
 ### Vista de edição:
@@ -399,3 +421,36 @@
 - [ ] Itens de linha: [lin_items]
 - [ ] Vendedor: [salesperson_c]
 - [ ] Atribuído a: [assigned_user_id]
+
+## ==Contratos ==
+### Vista de edição:
+##### Predefinido
+- [ ] Nº
+- [ ] Gestor do contrato
+- [ ] Anuidade
+- [ ] Versão
+- [ ] Data inicio
+- [ ] Data fim
+- [ ] Cliente
+- [ ] Data Renovação
+- [ ] Valor Líquido €
+- [ ] Valor do Pack
+- [ ] Pack
+- [ ] Estado do Pack
+- [ ] Descrição
+- [ ] Empresa
+- [ ] Contacto
+- [ ] Data criação
+
+##### Itens de linha
+- [ ] Moeda
+- [ ] Itens de linha
+- [ ] (preencher)
+- [ ] (empty)
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
