@@ -1615,10 +1615,31 @@
   - [ ] Hardware
   - [ ] Unidades
   - [ ] Data resolução
+### Filtro
+  #### Predefinido
+  - [ ] Assunto: [name]
+  - [ ] Nome da conta: [account_name]
+  - [ ] Cidade: [billing_address_city]
+  - [ ] Concelho: [billing_address_state]
+  - [ ] Telefone: [phone_office]
+  - [ ] Data Limite: [deadline_c]
+  - [ ] Data: [assistence_datetime_c]
+  - [ ] Data resolução: [resolutions_date_c]
+  - [ ] Data do serviço/auditoria: [service_date_c]
+  - [ ] Aberto por: [opened_by_c]
+  - [ ] Fechado por: [closed_by_c]
+  - [ ] Situação: [status]
+  - [ ] Prioridade: [priority]
+  - [ ] Modo: [mode_c]
+  - [ ] Código: [cod_c]
+  - [ ] Área: [area_c]
+  - [ ] Criado em: [date_entered]
+  - [ ] Alterado em: [date_modified]
+  - [ ] Atribuído a: [assigned_user_id]
 
 ## ==Medicina Ocupacional ==
 
-### Vista de edição/Vista de detalhe:
+### Vista de edição/Vista de detalhe/Criação rápida:
 ##### Visão geral
   - [ ] Paciente
   - [ ] Nº Exame
@@ -1688,3 +1709,101 @@
   - [ ] Não Atualizado
   - [ ] Quais?
   - [ ] Observações do boletim de vacinas
+##### Exames Complementares de Diagnóstico
+  - [ ] Análises ao Sangue
+  - [ ] ECG
+  - [ ] Análises a Urina
+  - [ ] RX Tórax
+  - [ ] Análises às Fezes
+  - [ ] Rastreio otorrinolingolo
+  - [ ] Análises à Glicémia
+  - [ ] Análises ao Colestrol
+  - [ ] Audiometria
+  - [ ] Espirometria
+  - [ ] Outros
+  - [ ] Observações
+
+##### Patologia Apresentada
+  - [ ] Sem problemas de saúde
+  - [ ] Com problemas de saúde
+  - [ ] Observações
+
+##### FMO
+  - [ ] Recomendações
+  - [ ] (preencher)
+##### Especialidade
+  - [ ] Médico Assistente
+  - [ ] Ginecologia
+  - [ ] Cardiologia
+  - [ ] Neurologia
+  - [ ] Cirurgia
+  - [ ] Oftalmologia
+  - [ ] Dermatologia
+  - [ ] Ortopedia
+  - [ ] Endocrinologia
+  - [ ] Otorrinolaringologia
+  - [ ] Estomatologia
+  - [ ] Outros
+
+##### Promoção da saúde/Aconselhamentos
+  - [ ] Reduzir peso corporal
+  - [ ] (preencher)
+  - [ ] Reduzir consumo tabágico
+  - [ ] (preencher)
+  - [ ] Reduzir consumo bebidas alcoólicas
+  - [ ] (preencher)
+  - [ ] Praticar exercício físico
+  - [ ] (preencher)
+  - [ ] Atualizar vacinas
+  - [ ] (preencher)
+  - [ ] Outros
+  - [ ] (preencher)
+
+##### FMO
+  - [ ] Observações Finais
+##### FMO
+  - [ ] Presenças
+  - [ ] Data Presença
+  - [ ] Apreciação médica
+  - [ ] (preencher)
+  - [ ] Nome do Médico
+  - [ ] Nº Cédula Profissional
+  - [ ] Assinatura (Médico)
+  - [ ] Modelo de projeto
+  - [ ] Data de criação
+  - [ ] Data de alteração
+  - [ ] Considerar dias úteis
+### Vista de Lista
+  #### Predefinido
+  - [ ] Nome: [name]
+  - [ ] Paciente: [contacts_project_1_name]
+  - [ ] Cliente: [accounts_project_1_name]
+  - [ ] Concelho: [billing_address_state]
+  - [ ] Cidade: [billing_address_city]
+  - [ ] NUTS II: [nutsii_c]
+  - [ ] Tipo de exame: [medicine_exam_type_c]
+  - [ ] Apreciação médica: [medical_appreciation_c]
+  - [ ] Nome do Médico: [nome_do_medico_c]
+  - [ ] Data de admissão: [admission_date_c]
+  - [ ] Data Prevista: [estimated_start_date]
+  - [ ] Data de Nascimento: [contacts_birthdate_c]
+  - [ ] Sexo: [contact_gender_c]
+  - [ ] Gestor de projeto: [assigned_user_name]
+### Filtro
+  #### Predefinido
+  - [ ] Cliente: [accounts_project_1_name]
+  - [ ] Concelho: [billing_address_state]
+  - [ ] Cidade: [billing_address_city]
+  - [ ] Data de Nascimento: [contacts_birthdate_c]
+  - [ ] Sexo: [contact_gender_c]
+  - [ ] Tipo de exame: [medicine_exam_type_c]
+  - [ ] Apreciação médica: [medical_appreciation_c]
+  - [ ] Paciente: [contacts_project_1_name]
+  - [ ] Médico/Enfermeiro: [assigned_user_name]
+  - [ ] Data Prevista: [estimated_start_date]
+  - [ ] Data de alteração: [date_modified]
+  - [ ] Data Presença: [attendance_date_c]
+  - [ ] Data de admissão: [admission_date_c]
+  - [ ] NUTS I: [nutsi]
+  - [ ] Criado por: [created_by]
+
