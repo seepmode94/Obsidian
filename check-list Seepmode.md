@@ -93,3 +93,39 @@
 - [ ] Email
 - [ ] Descrição
 - [ ] LBL_PROJECT_ACCOUT
+
+##### Mais detalhes
+- [ ] Tipo
+- [ ] Nº Func.
+- [ ] Área de atividade
+- [ ] Nº Cond.
+- [ ] NIF
+- [ ] Ligeiros
+- [ ] Membro de
+- [ ] Pesados
+- [ ] CAE
+- [ ] Nº Estab.
+- [ ] Tipo
+- [ ] Enviar lembrete de Pagamento
+- [ ] (preencher)
+
+##### Outro
+- [ ] Atribuído a
+
+### Filtro
+#### Predefinido
+- [ ] Nome: [name]
+- [ ] NIF: [sic_code]
+- [ ] Telefone de trabalho: [phone_office]
+- [ ] Pesados: [ownership]
+- [ ] Faturação - Rua: [billing_address_street]
+- [ ] Cidade: [address_city]
+- [ ] Concelho: [billing_address_state]
+- [ ] Local de Visita: [place_of_visit_c]
+- [ ] País: [billing_address_country]
+- [ ] Nº Cond.: [n_condutores_c]
+- [ ] Nuts II: [nutsii_c]
+- [ ] Nº Func.: [employees]
+- [ ] Atribuído a: [assigned_user_id]
+- [ ] Data de criação: [date_entered]
+
