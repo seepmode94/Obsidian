@@ -1016,64 +1016,64 @@
 ## ==Formações ==
 ### Vista de edição:
 ##### Predefinido
-  - [ ] Ação
-  - [ ] Ano
-  - [ ] Tipo de ação
-  - [ ] Estado
-  - [ ] Data Formação
-  - [ ] Data Fim da Formação
-  - [ ] Cliente
-  - [ ] Formador
-  - [ ] Contacto
-  - [ ] Sessões
-  - [ ] Nº horas
-  - [ ] Data adjudicação
-  - [ ] Valor formação (€)
-  - [ ] NUTS II
-  - [ ] Nº Faturados
-  - [ ] Média dos Formandos (€)
-  - [ ] Nº presenças
-  - [ ] Com Cheque Formação
-  - [ ] Nº card
-  - [ ] Data Candidatura
-  - [ ] (preencher)
+  - [x] Ação
+  - [x] Ano
+  - [x] Tipo de ação
+  - [x] Estado
+  - [x] Data Formação
+  - [x] Data Fim da Formação
+  - [x] Cliente
+  - [x] Formador
+  - [x] Contacto
+  - [x] Sessões
+  - [x] Nº horas
+  - [x] Data adjudicação
+  - [x] Valor formação (€)
+  - [x] NUTS II
+  - [x] Nº Faturados
+  - [x] Média dos Formandos (€)
+  - [x] Nº presenças
+  - [x] Com Cheque Formação
+  - [x] Nº card
+  - [x] Data Candidatura
+  - [x] (preencher)
 ##### Recursos Administrativos
-  - [ ] Data Verificação
-  - [ ] Data Envio Email Info ao Cliente
-  - [ ] Data entrega informação do Cliente
-  - [ ] Data Confirmação Telf Cliente
-  - [ ] Data Envio Adjudicação ao Formador
-  - [ ] Data a Relembrar Formação
-  - [ ] Nº certificados enviados
-  - [ ] Data envio certificados
-  - [ ] Followup Cliente
-  - [ ] Observações
-  - [ ] Data Digitalização
-  - [ ] Data Análise Estatística
-  - [ ] Ação Fechada?
-  - [ ] Data Fecho ação
-  - [ ] Fechado por
-  - [ ] (preencher)
+  - [x] Data Verificação
+  - [x] Data Envio Email Info ao Cliente
+  - [x] Data entrega informação do Cliente
+  - [x] Data Confirmação Telf Cliente
+  - [x] Data Envio Adjudicação ao Formador
+  - [x] Data a Relembrar Formação
+  - [x] Nº certificados enviados
+  - [x] Data envio certificados
+  - [x] Followup Cliente
+  - [x] Observações
+  - [x] Data Digitalização
+  - [x] Data Análise Estatística
+  - [x] Ação Fechada?
+  - [x] Data Fecho ação
+  - [x] Fechado por
+  - [x] (preencher)
 
 ##### Recursos Técnicos
-  - [ ] Local
-  - [ ] Nº Fatura
-  - [ ] Morada
-  - [ ] Valor
-  - [ ] Sala
-  - [ ] Data Pagamento Sala
-  - [ ] Projector
+  - [x] Local
+  - [x] Nº Fatura
+  - [x] Morada
+  - [x] Valor
+  - [x] Sala
+  - [x] Data Pagamento Sala
+  - [x] Projector
 ##### Pagamentos
-  - [ ] Nº factura
-  - [ ] Data Pagamento
-  - [ ] Valor factura (€)
-  - [ ] Valor pago (€)
-  - [ ] Data factura
-  - [ ] (preencher)
+  - [x] Nº factura
+  - [x] Data Pagamento
+  - [x] Valor factura (€)
+  - [x] Valor pago (€)
+  - [x] Data factura
+  - [x] (preencher)
 
 ##### Outros
-  - [ ] Atribuído a
-  - [ ] Vendedor
+  - [x] Atribuído a
+  - [x] Vendedor
 
 ### Vista de detalhe:
 ##### Predefinido

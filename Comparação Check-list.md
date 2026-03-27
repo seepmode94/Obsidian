@@ -61,14 +61,25 @@
 
 ## Módulos que exigem validação manual
 1. Medicina Ocupacional:
-Comparando os módulos, falta na Seepmode a opção - [ ] Rastreio oftalmológico; em contrapartida, a Seepmode inclui - [ ] Rastreio otorrinolingolo. Após Patologia Apresentada, ambos os módulos incluem Recomendações, no entanto, na Seepmode esse bloco surge identificado como FMO, tal como acontece com outros blocos ao longo da comparação.
+Comparando os módulos, falta na Seepmode a opção - [ ] Rastreio oftalmológico; em contrapartida, a Seepmode inclui - [ ] Rastreio otorrinolingolo. Após Patologia Apresentada, ambos os módulos incluem **Recomendações**, no entanto, na Seepmode esse bloco surge identificado como FMO, tal como acontece com outros blocos ao longo da comparação.
 
-  Depois dessas diferenças, na Vista de Lista a Seepmode apresenta, a mais face à Tacovia, os campos Data de Nascimento e Sexo. Essas diferenças também se refletem nos Filtros, com o acréscimo adicional do campo Criado por no lado da
+  Depois dessas diferenças, na Vista de Lista a Seepmode apresenta, a mais face à Tacovia, os campos **Data de Nascimento** e **Sexo**. Essas diferenças também se refletem nos Filtros, com o acréscimo adicional do campo Criado por no lado da
   Seepmode.
-1. Sessões
-2. Formações
-3. Documentos
-4. Acessos IEFP
+  
+2. Sessões:
+No módulo Sessões, verifica-se uma diferença significativa entre a Tacovia e a Seepmode, tanto ao nível da estrutura como do conteúdo apresentado.
+
+  Na **Tacovia**, o módulo está orientado para sessões de formação, incluindo campos como Formação, Nome, Abreviatura, Sessões, Descrição e Atribuído a, distribuídos por Vista de Detalhe, Vista de Lista, Criação rápida e Filtro.
+
+  Na **Seepmode**, o módulo apresenta uma configuração claramente distinta, centrada em Relatórios agendados, com campos como ==Nome==, ==Situação==, ==Relatórios==, ==Agendar==, ==Última execução==, ==Destinatários do email== e ==Descrição==. Na Vista de Lista, surgem
+  ainda os campos ==Nome==, ==Relatórios== e ==Situação==, e no Filtro aparecem ==Nome==, ==Meus itens== e ==Todos os endereços de email==.
+
+  Desta forma, não se trata apenas de uma diferença de organização, mas sim de uma diferença real de conteúdo e de finalidade do módulo entre os dois ficheiros.
+
+
+3. Formações
+4. Documentos
+5. Acessos IEFP
 
 ## Conclusão
 - `Contratos` não tem falta de conteúdo relevante no bloco `Itens de linha`.
