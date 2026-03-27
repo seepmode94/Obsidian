@@ -1496,3 +1496,14 @@
 - [ ] Meus itens: [curr_user_only]
 - [ ] Todos os endereços de email: [email]
 
+## ==Acessos IEFP ==
+### Vista de edição/Vista de detalhe:
+  ##### Predefinido
+  - [ ] Exibir tipo: [Painel]
+  - [ ] Contrair?
+  - [ ] Contactos
+  - [ ] Atribuído a
+  - [ ] PUK
+  - [ ] Password
+  - [ ] #Email - IEFP
+- [ ] (preencher)
