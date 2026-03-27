@@ -77,9 +77,12 @@ No módulo Sessões, verifica-se uma diferença significativa entre a Tacovia e 
   Desta forma, não se trata apenas de uma diferença de organização, mas sim de uma diferença real de conteúdo e de finalidade do módulo entre os dois ficheiros.
 
 
-3. Formações
-4. Documentos
-5. Acessos IEFP
+3. Formações:
+No módulo ==Formações==, na Criação rápida, a Seepmode não apresenta o bloco Recursos Administrativos, ao contrário da Tacovia. No entanto, esse bloco existe na Seepmode na Vista de detalhe, pelo que a diferença se verifica apenas nessa vista específica.
+
+4. Documentos:
+
+5. Acessos IEFP:
 
 ## Conclusão
 - `Contratos` não tem falta de conteúdo relevante no bloco `Itens de linha`.

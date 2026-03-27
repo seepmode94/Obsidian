@@ -863,24 +863,24 @@
 
 ### Vista de detalhe:
 ##### Visão geral
-  - [ ] Nome do ficheiro
-  - [ ] Situação
-  - [ ] Nome do documento
-  - [ ] Revisão
-  - [ ] Tipo de documento
-  - [ ] Modelo?
-  - [ ] Data de publicação
-  - [ ] Categoria
-  - [ ] Data de validade
-  - [ ] Subcategoria
-  - [ ] Descrição
-  - [ ] Documento relacionado
+  - [x] Nome do ficheiro
+  - [x] Situação
+  - [x] Nome do documento
+  - [x] Revisão
+  - [x] Tipo de documento
+  - [x] Modelo?
+  - [x] Data de publicação
+  - [x] Categoria
+  - [x] Data de validade
+  - [x] Subcategoria
+  - [x] Descrição
+  - [x] Documento relacionado
   - [ ] Revisão do documento relacionado
-  - [ ] Medicina Ocupacional
+  - [x] Medicina Ocupacional
   - [ ] Fichas de Aptidão
 
 ##### Outro
-  - [ ] Atribuído a
+  - [x] Atribuído a
 ### Vista de Lista
 #### Predefinido
   - [ ] Nome do ficheiro: [filename]
@@ -1077,153 +1077,153 @@
 
 ### Vista de detalhe:
 ##### Predefinido
-  - [ ] Ação
-  - [ ] Ano
-  - [ ] Tipo de ação
-  - [ ] Estado
-  - [ ] Data Formação
-  - [ ] Data Fim da Formação
-  - [ ] Cliente
-  - [ ] Formador
-  - [ ] Contacto
-  - [ ] Sessões
-  - [ ] Nº horas
-  - [ ] Data adjudicação
-  - [ ] Valor formação (€)
-  - [ ] NUTS II
-  - [ ] Nº Faturados
-  - [ ] Média dos Formandos (€)
-  - [ ] Nº presenças
-  - [ ] Com Cheque Formação
-  - [ ] Nº card
-  - [ ] Data Candidatura
-  - [ ] (preencher)
+  - [x] Ação
+  - [x] Ano
+  - [x] Tipo de ação
+  - [x] Estado
+  - [x] Data Formação
+  - [x] Data Fim da Formação
+  - [x] Cliente
+  - [x] Formador
+  - [x] Contacto
+  - [x] Sessões
+  - [x] Nº horas
+  - [x] Data adjudicação
+  - [x] Valor formação (€)
+  - [x] NUTS II
+  - [x] Nº Faturados
+  - [x] Média dos Formandos (€)
+  - [x] Nº presenças
+  - [x] Com Cheque Formação
+  - [x] Nº card
+  - [x] Data Candidatura
+  - [x] (preencher)
 ##### Recursos Administrativos
-  - [ ] Data Verificação
-  - [ ] Data Envio Email Info ao Cliente
-  - [ ] Data entrega informação do formando
-  - [ ] Data Confirmação Telf Cliente
-  - [ ] Data Envio Adjudicação ao Formador
-  - [ ] Data a Relembrar Formação
-  - [ ] Nº certificados enviados
-  - [ ] Data envio certificados
-  - [ ] Followup Cliente
-  - [ ] Observações
-  - [ ] Data Digitalização
-  - [ ] Data Análise Estatística
-  - [ ] Ação Fechada?
-  - [ ] Data Fecho ação
-  - [ ] Fechado por
-  - [ ] (preencher)
+  - [x] Data Verificação
+  - [x] Data Envio Email Info ao Cliente
+  - [x] Data entrega informação do formando
+  - [x] Data Confirmação Telf Cliente
+  - [x] Data Envio Adjudicação ao Formador
+  - [x] Data a Relembrar Formação
+  - [x] Nº certificados enviados
+  - [x] Data envio certificados
+  - [x] Followup Cliente
+  - [x] Observações
+  - [x] Data Digitalização
+  - [x] Data Análise Estatística
+  - [x] Ação Fechada?
+  - [x] Data Fecho ação
+  - [x] Fechado por
+  - [x] (preencher)
 
 ##### Recursos Técnicos
-  - [ ] Local
-  - [ ] Nº Fatura
-  - [ ] Morada
-  - [ ] Valor
-  - [ ] Sala
-  - [ ] Data Pagamento Sala
-  - [ ] Projector
+  - [x] Local
+  - [x] Nº Fatura
+  - [x] Morada
+  - [x] Valor
+  - [x] Sala
+  - [x] Data Pagamento Sala
+  - [x] Projector
 ##### Pagamentos
-  - [ ] Nº factura
-  - [ ] Data Pagamento
-  - [ ] Valor factura (€)
-  - [ ] Valor pago (€)
-  - [ ] Data factura
-  - [ ] (preencher)
+  - [x] Nº factura
+  - [x] Data Pagamento
+  - [x] Valor factura (€)
+  - [x] Valor pago (€)
+  - [x] Data factura
+  - [x] (preencher)
 
 ##### Outros
-  - [ ] Atribuído a
-  - [ ] Vendedor
+  - [x] Atribuído a
+  - [x] Vendedor
 
 ### Vista de Lista
 #### Predefinido
-  - [ ] Ação: [formation_action]
-  - [ ] Tipo de ação: [type]
-  - [ ] Cliente: [accounts_smd_training_1_name]
-  - [ ] Contacto: [contact]
-  - [ ] Ano: [year]
-  - [ ] Followup Cliente: [followup_client_c]
-  - [ ] Data Formação: [formation_date]
-  - [ ] Valor factura (€): [invoice_value]
-  - [ ] Data Pagamento: [payment_date]
-  - [ ] Estado: [status]
-  - [ ] Local: [place]
-  - [ ] Valor pago (€): [paid_value_c]
-  - [ ] Nº Faturados: [trainings_number]
-  - [ ] Nº presenças: [trainees_number_action_c]
-  - [ ] Nº horas: [hours_number]
-  - [ ] Data Candidatura: [data_candidatura_c]
-  - [ ] Nº card: [formition_check_quantity_c]
-  - [ ] Vendedor: [salesperson_c]
-  - [ ] Atribuído a: [assigned_user_name]
-  - [ ] Criado em: [date_entered]
+  - [x] Ação: [formation_action]
+  - [x] Tipo de ação: [type]
+  - [x] Cliente: [accounts_smd_training_1_name]
+  - [x] Contacto: [contact]
+  - [x] Ano: [year]
+  - [x] Followup Cliente: [followup_client_c]
+  - [x] Data Formação: [formation_date]
+  - [x] Valor factura (€): [invoice_value]
+  - [x] Data Pagamento: [payment_date]
+  - [x] Estado: [status]
+  - [x] Local: [place]
+  - [x] Valor pago (€): [paid_value_c]
+  - [x] Nº Faturados: [trainings_number]
+  - [x] Nº presenças: [trainees_number_action_c]
+  - [x] Nº horas: [hours_number]
+  - [x] Data Candidatura: [data_candidatura_c]
+  - [x] Nº card: [formition_check_quantity_c]
+  - [x] Vendedor: [salesperson_c]
+  - [x] Atribuído a: [assigned_user_name]
+  - [x] Criado em: [date_entered]
 
 ### Criação rápida:
 ##### Predefinido
-  - [ ] Ação
-  - [ ] Ano
-  - [ ] Tipo de ação
-  - [ ] Estado
-  - [ ] Data Formação
-  - [ ] Data Fim da Formação
-  - [ ] Cliente
-  - [ ] Contacto
-  - [ ] Sessões
-  - [ ] Nº horas
-  - [ ] Data adjudicação
-  - [ ] Valor formação (€)
-  - [ ] NUTS II
-  - [ ] Nº Faturados
-  - [ ] Média dos Formandos (€)
-  - [ ] Nº presenças
-  - [ ] Com Cheque Formação
-  - [ ] Nº cand
+  - [x] Ação
+  - [x] Ano
+  - [x] Tipo de ação
+  - [x] Estado
+  - [x] Data Formação
+  - [x] Data Fim da Formação
+  - [x] Cliente
+  - [x] Contacto
+  - [x] Sessões
+  - [x] Nº horas
+  - [x] Data adjudicação
+  - [x] Valor formação (€)
+  - [x] NUTS II
+  - [x] Nº Faturados
+  - [x] Média dos Formandos (€)
+  - [x] Nº presenças
+  - [x] Com Cheque Formação
+  - [x] Nº cand
 ##### Recursos Técnicos
-  - [ ] Local
-  - [ ] Nº Fatura
-  - [ ] Morada
-  - [ ] Valor
-  - [ ] Sala
-  - [ ] Data Pagamento Sala
-  - [ ] Projector
+  - [x] Local
+  - [x] Nº Fatura
+  - [x] Morada
+  - [x] Valor
+  - [x] Sala
+  - [x] Data Pagamento Sala
+  - [x] Projector
 
 ##### Pagamentos
-  - [ ] Nº factura
-  - [ ] Data Pagamento
-  - [ ] Valor factura (€)
-  - [ ] Valor pago (€)
-  - [ ] Data factura
-  - [ ] (preencher)
+  - [x] Nº factura
+  - [x] Data Pagamento
+  - [x] Valor factura (€)
+  - [x] Valor pago (€)
+  - [x] Data factura
+  - [x] (preencher)
 
 ##### Outros
-  - [ ] Atribuído a
-  - [ ] Vendedor
+  - [x] Atribuído a
+  - [x] Vendedor
 
 
 ### Filtro
 #### Predefinido
-  - [ ] Ação: [formation_action]
-  - [ ] Cliente: [accounts_smd_training_1_name]
-  - [ ] Ano: [year]
-  - [ ] Local: [place]
-  - [ ] Data Pagamento: [payment_date]
-  - [ ] Tipo de ação: [name]
-  - [ ] Data Formação: [formation_date]
-  - [ ] Data Envio Email Info ao Cliente: [client_email_info_date_c]
-  - [ ] Valor pago (€): [paid_value_c]
-  - [ ] Data Início Candidatura: [application_start_date_c]
-  - [ ] Data Receção Info Cliente: [client_info_reception_date_c]
-  - [ ] Data envio certificados: [sent_certificates_date]
-  - [ ] Data Análise Estatística: [data_analise_estatistica_c]
-  - [ ] Data Fecho ação: [data_fecho_acao_c]
-  - [ ] Data Digitalização: [data_digitalizacao_c]
-  - [ ] Estado: [status]
-  - [ ] NUTS II: [nutsii_c]
-  - [ ] Com Cheque Formação: [formation_check_checkboxs_c]
-  - [ ] Criado em: [date_entered]
-  - [ ] Atribuído a: [assigned_user_name]
-  - [ ] Vendedor: [salesperson_c]
+  - [x] Ação: [formation_action]
+  - [x] Cliente: [accounts_smd_training_1_name]
+  - [x] Ano: [year]
+  - [x] Local: [place]
+  - [x] Data Pagamento: [payment_date]
+  - [x] Tipo de ação: [name]
+  - [x] Data Formação: [formation_date]
+  - [x] Data Envio Email Info ao Cliente: [client_email_info_date_c]
+  - [x] Valor pago (€): [paid_value_c]
+  - [x] Data Início Candidatura: [application_start_date_c]
+  - [x] Data Receção Info Cliente: [client_info_reception_date_c]
+  - [x] Data envio certificados: [sent_certificates_date]
+  - [x] Data Análise Estatística: [data_analise_estatistica_c]
+  - [x] Data Fecho ação: [data_fecho_acao_c]
+  - [x] Data Digitalização: [data_digitalizacao_c]
+  - [x] Estado: [status]
+  - [x] NUTS II: [nutsii_c]
+  - [x] Com Cheque Formação: [formation_check_checkboxs_c]
+  - [x] Criado em: [date_entered]
+  - [x] Atribuído a: [assigned_user_name]
+  - [x] Vendedor: [salesperson_c]
 
 ## ==Formandos ==
 ### Vista de edição:
