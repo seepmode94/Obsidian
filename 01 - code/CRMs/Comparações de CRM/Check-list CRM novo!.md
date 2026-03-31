@@ -1556,33 +1556,134 @@
   - [ ] Data do serviço/auditoria [service_date_c]
   - [ ] Enviar/Receber [send_receive_c]
 
-ordem
+## ==Fichas de Aptidão==
+### Vista de edição:
+  - [ ] Cliente [account_id]
+  - [ ] NIPC/NIF [nipc_c]
+  - [ ] Estabelecimento [estabelecimento_c]
+  - [ ] CAE principal [cae_c]
+  - [ ] Endereço [endereco_c]
+  - [ ] Código Postal [zip_code_c]
+  - [ ] Localidade [localidade_c]
+  - [ ] Telefone [telefone_c]
+  - [ ] E-mail [email_c]
+  - [ ] project_sdmod_capability_1_name [project_sdmod_capability_1_name]
 
+##### Service Organization
+  - [ ] Modalidade de Organização do Serviço de Saúde do Trabalho [service_organization_c]
+  - [ ] Se outro, especifique [service_organization_other_c]
+  - [ ] Designação da empresa de serviço externo de saúde de trabalho [se aplicável] [service_organization_name_c]
+  - [ ] NIPC/NIF [service_organization_nipc_c]
+  - [ ] Processo de autorização (PA) da DGS nº [dgs_authorization_process_c]
 
+##### Worker Information
+  - [ ] Paciente [contact_id]
+  - [ ] Nacionalidade [nacionalidade_c]
+  - [ ] Sexo [sexo_c]
+  - [ ] Data de nascimento [data_nascimento_c]
+  - [ ] Data de admissão na empresa [data_admissao_c]
+  - [ ] Categoria Profissional [cat_profissional_c]
+  - [ ] Posto de trabalho principal [posto_trabalho_c]
+  - [ ] Atividade/Função (proposta ou atual) [atividade_funcao_c]
+  - [ ] Data de admissão na Atividade/função [data_admissao_atividade_c]
 
+##### Work Analysis
+  - [ ] Análise do posto de trabalho: [analise_posto_trabalho_c]
+  - [ ] Justificar em caso negativo [analise_posto_trabalho_justi_c]
+  - [ ] Identificação de fatores de risco profissional [fatores_risco_pro_c]
+  - [ ] Especificar os principais fatores de risco profissional [fatores_risco_pro_especifica_c]
+  - [ ] Avaliação da exposição profissional do trabalhador [exposicao_profissional_c]
+  - [ ] Especificar a avaliação profissional [exposicao_profissional_espec_c]
 
+##### Exam
+  - [ ] Data do exame [exam_date_c]
+  - [ ] Resultado de aptidão [ability_result_c]
+  - [ ] Tipo [exam_type_c]
+  - [ ] Outras funções que pode desempenhar [outras_funcoes_c]
+  - [ ] Se outro, especifique [exam_type_other_c]
 
+##### Recommendations
+  - [ ] Recomendações [recommendations_c]
+  - [ ] Outras recomendações [other_recommendations_c]
 
+##### Doctor
+  - [ ] Nome do Médico [nome_do_medico_c]
+  - [ ] Nº Cédula Profissional [n_cedula_profissional_c]
 
-  
+##### Assignment
+  - [ ] Gestor [assigned_user_id]
 
-  
+##### Signatures
+  - [ ] medic_signature_c [medic_signature_c]
+  - [ ] medic_signature_date_c [medic_signature_date_c]
+  - [ ] worker_signature_c [worker_signature_c]
+  - [ ] worker_signature_date_c [worker_signature_date_c]
+  - [ ] manager_signature_c [manager_signature_c]
+  - [ ] manager_signature_date_c [manager_signature_date_c]
 
+### Vista de detalhe:
+##### Company Information
+  - [ ] Cliente [account_id]
+  - [ ] NIPC/NIF [nipc_c]
+  - [ ] Estabelecimento [estabelecimento_c]
+  - [ ] CAE principal [cae_c]
+  - [ ] Endereço [endereco_c]
+  - [ ] Código Postal [zip_code_c]
+  - [ ] Localidade [localidade_c]
+  - [ ] Telefone [telefone_c]
+  - [ ] E-mail [email_c]
+  - [ ] project_sdmod_capability_1_name [project_sdmod_capability_1_name]
 
+##### Service Organization
+  - [ ] Modalidade de Organização do Serviço de Saúde do Trabalho [service_organization_c]
+  - [ ] Se outro, especifique [service_organization_other_c]
+  - [ ] Designação da empresa de serviço externo de saúde de trabalho [se aplicável] [service_organization_name_c]
+  - [ ] NIPC/NIF [service_organization_nipc_c]
+  - [ ] Processo de autorização (PA) da DGS nº [dgs_authorization_process_c]
 
+##### Worker Information
+  - [ ] Paciente [contact_id]
+  - [ ] Nacionalidade [nacionalidade_c]
+  - [ ] Sexo [sexo_c]
+  - [ ] Data de nascimento [data_nascimento_c]
+  - [ ] Data de admissão na empresa [data_admissao_c]
+  - [ ] Categoria Profissional [cat_profissional_c]
+  - [ ] Posto de trabalho principal [posto_trabalho_c]
+  - [ ] Atividade/Função (proposta ou atual) [atividade_funcao_c]
+  - [ ] Data de admissão na Atividade/função [data_admissao_atividade_c]
 
+##### Work Analysis
+  - [ ] Análise do posto de trabalho: [analise_posto_trabalho_c]
+  - [ ] Justificar em caso negativo [analise_posto_trabalho_justi_c]
+  - [ ] Identificação de fatores de risco profissional [fatores_risco_pro_c]
+  - [ ] Especificar os principais fatores de risco profissional [fatores_risco_pro_especifica_c]
+  - [ ] Avaliação da exposição profissional do trabalhador [exposicao_profissional_c]
+  - [ ] Especificar a avaliação profissional [exposicao_profissional_espec_c]
 
-  
+##### Exam
+  - [ ] Data do exame [exam_date_c]
+  - [ ] Resultado de aptidão [ability_result_c]
+  - [ ] Tipo [exam_type_c]
+  - [ ] Outras funções que pode desempenhar [outras_funcoes_c]
+  - [ ] Se outro, especifique [exam_type_other_c]
 
+##### Recommendations
+  - [ ] Recomendações [recommendations_c]
+  - [ ] Outras recomendações [other_recommendations_c]
 
-  
+##### Doctor
+  - [ ] Nome do Médico [nome_do_medico_c]
+  - [ ] Nº Cédula Profissional [n_cedula_profissional_c]
 
+##### Assignment
+  - [ ] Gestor [assigned_user_id]
 
-
-
-
-  ## ==Fichas de Aptidão==
-
-
-
-
+### Vista de Lista
+  - [ ] name [name]
+  - [ ] Paciente [contact_id]
+  - [ ] Cliente [account_id]
+  - [ ] Resultado de aptidão [ability_result_c]
+  - [ ] Tipo [exam_type_c]
+  - [ ] Localidade [localidade_c]
+  - [ ] Data do exame [exam_date_c]
+  - [ ] Gestor [assigned_user_id]
