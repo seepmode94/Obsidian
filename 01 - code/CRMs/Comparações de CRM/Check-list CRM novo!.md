@@ -165,6 +165,48 @@
   - [ ] Notas para a Faturação [invoicing_notes_c]
   - [ ] Line Items [line_items]
 
+### Vista de Lista
+  - [ ] ID [id]
+  - [ ] Título [name]
+  - [ ] Clientes [account_id]
+  - [ ] Fase proposta [quote_stage]
+  - [ ] Válida até [valid_until]
+  - [ ] Condições de pagamento [payment_terms]
+
+### Vista de Criação Rápida
+  - [ ] Título [name]
+  - [ ] Clientes [account_id]
+  - [ ] Fase proposta [quote_stage]
+  - [ ] Válida até [valid_until]
+  - [ ] Condições de pagamento [payment_terms]
+  - [ ] Subtotal [subtotal]
+  - [ ] Desconto [discount_amount]
+  - [ ] Taxa [tax_amount]
+  - [ ] Portes de envio [shipping_amount]
+  - [ ] Total [total]
+  - [ ] Descrição Proposta [description]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Número da proposta [quote_number]
+  - [ ] Situação de aprovação [approval_status]
+  - [ ] Situação da fatura [invoice_status]
+  - [ ] Expected Close Date [expected_close_date]
+  - [ ] Billing Notes [billing_notes]
+  - [ ] Empresa [company]
+  - [ ] Currency [currency]
+  - [ ] Taxa de envio [shipping_tax]
+  - [ ] Total final [grand_total]
+  - [ ] Contactos [contact_id]
+  - [ ] Data prevista fecho [data_prevista_fecho_c]
+  - [ ] Company [empresa_c]
+  - [ ] Notas para a Faturação [invoicing_notes_c]
+  - [ ] Line Items [line_items]
+### Filtro
+  - [ ] ID [id]
+  - [ ] Título [name]
+  - [ ] Clientes [account_id]
+  - [ ] Fase proposta [quote_stage]
+  - [ ] Válida até [valid_until]
+  - [ ] Condições de pagamento [payment_terms]
 
 ## ==Faturas==
 ### Vista de edição:
@@ -622,16 +664,102 @@
   - [ ] Duration Hours [duration_hours]
   - [ ] Duration Minutes [duration_minutes]
 
+## ==Reuniões==
+### Vista de edição:
+  - [ ] Subject [name]
+  - [ ] Start Date [date_start]
+  - [ ] End Date [date_end]
+  - [ ] Duration Hours [duration_hours]
+  - [ ] Duration Minutes [duration_minutes]
+  - [ ] Location [location]
+  - [ ] Status [status]
+  - [ ] Related To (Module) [parent_type]
+  - [ ] Related To [parent_id]
+  - [ ] Description [description]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Reminder [reminder_time]
+  - [ ] Longitude [iwg_maps_lng_c]
+  - [ ] Latitude [iwg_maps_lat_c]
+  - [ ] Geocode Status [iwg_maps_geocode_status_c]
+  - [ ] Mapped Address [iwg_maps_address_c]
+  - [ ] Audit Notification [notificacao_de_auditoria_c]
+### Vista de detalhe:
+  - [ ] Subject [name]
+  - [ ] Start Date [date_start]
+  - [ ] End Date [date_end]
+  - [ ] Duration Hours [duration_hours]
+  - [ ] Duration Minutes [duration_minutes]
+  - [ ] Location [location]
+  - [ ] Status [status]
+  - [ ] Related To (Module) [parent_type]
+  - [ ] Related To [parent_id]
+  - [ ] Description [description]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Reminder [reminder_time]
+  - [ ] Longitude [iwg_maps_lng_c]
+  - [ ] Latitude [iwg_maps_lat_c]
+  - [ ] Geocode Status [iwg_maps_geocode_status_c]
+  - [ ] Mapped Address [iwg_maps_address_c]
+  - [ ] Audit Notification [notificacao_de_auditoria_c]
 
+### Vista de Lista
+  - [ ] ID [id]
+  - [ ] Subject [name]
+  - [ ] Start Date [date_start]
+  - [ ] End Date [date_end]
+  - [ ] Duration Hours [duration_hours]
+  - [ ] Duration Minutes [duration_minutes]
+### Vista de Criação Rápida
+  - [ ] Subject [name]
+  - [ ] Start Date [date_start]
+  - [ ] End Date [date_end]
+  - [ ] Duration Hours [duration_hours]
+  - [ ] Duration Minutes [duration_minutes]
+  - [ ] Location [location]
+  - [ ] Status [status]
+  - [ ] Related To (Module) [parent_type]
+  - [ ] Related To [parent_id]
+  - [ ] Description [description]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Reminder [reminder_time]
+  - [ ] Longitude [iwg_maps_lng_c]
+  - [ ] Latitude [iwg_maps_lat_c]
+  - [ ] Geocode Status [iwg_maps_geocode_status_c]
+  - [ ] Mapped Address [iwg_maps_address_c]
+  - [ ] Audit Notification [notificacao_de_auditoria_c]
 
+### Filtro
+  - [ ] ID [id]
+  - [ ] Subject [name]
+  - [ ] Start Date [date_start]
+  - [ ] End Date [date_end]
+  - [ ] Duration Hours [duration_hours]
+  - [ ] Duration Minutes [duration_minutes]
 
-
-
-
-
-
-
-
+## ==Documentos==
+### Vista de edição:
+  - [ ] Name [name]
+  - [ ] Document Name [document_name]
+  - [ ] File Name [filename]
+  - [ ] Revision [revision]
+  - [ ] Status [status_id]
+  - [ ] Active Date [active_date]
+  - [ ] Expiration Date [exp_date]
+  - [ ] Category [category_id]
+  - [ ] Subcategory [subcategory_id]
+  - [ ] Template Type [template_type]
+  - [ ] Is Template [is_template]
+  - [ ] Document Source [doc_type]
+  - [ ] Document URL [doc_url]
+  - [ ] External ID [doc_id]
+  - [ ] Related Document [related_doc_id]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Description [description]
+  - [ ] MIME Type [file_mime_type]
+  - [ ] File Extension [file_ext]
+  - [ ] Last Revision Date [last_rev_create_date]
+  - [ ] Current Revision ID [document_revision_id]
+  - [ ] Related Revision ID [related_doc_rev_id]
 
 
 
@@ -642,19 +770,11 @@ ordem
 
 
 
-## ==Clientes==
 
-  ## ==Propostas==
 
-  ## ==Faturas==
+  
 
-  ## ==Contratos==
-
-  ## ==Contactos==
-
-  ## ==Telefonemas==
-
-  ## ==Reuniões==
+  
 
   ## ==Documentos==
 
