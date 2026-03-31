@@ -38,3 +38,13 @@
 
   **Só na página real:**
   - [ ] Nenhuma
+
+## Fichas de Aptidão
+
+### Create / Quickcreate
+
+  **Só no Studio:**
+  - [ ] Gestor [assigned_user_id]
+
+  **Só na página real:**
+  - [ ] Nenhuma
