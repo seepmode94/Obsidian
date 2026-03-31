@@ -1,6 +1,7 @@
-#### Diferenças
+# Diferenças
 
 ## Fichas de Aptidão
+
 ### Filtro
 
 **Só no Studio:**
@@ -15,6 +16,14 @@
 - [ ] Resultado de aptidão [ability_result_c]
 - [ ] Gestor [assigned_user_id]
 
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] Gestor [assigned_user_id]
+
+**Só na página real:**
+- Sem diferenças
+
 ## Assistências
 
 ### Create / Quickcreate
@@ -25,27 +34,17 @@
 - [ ] Atribuído a [assigned_user_id]
 
 **Só na página real:**
-- [ ] Nenhuma
+- Sem diferenças
 
 ## Acessos IEFP
 
 ### Create / Quickcreate
 
 **Só no Studio:**
-- [ ] Nenhuma
+- Sem diferenças
 
 **Só na página real:**
-- [ ] Nenhuma
-
-## Fichas de Aptidão
-
-### Create / Quickcreate
-
-**Só no Studio:**
-- [ ] Gestor [assigned_user_id]
-
-**Só na página real:**
-- [ ] Nenhuma
+- Sem diferenças
 
 ## Medicinas Ocupacionais
 
@@ -72,6 +71,14 @@
 - [ ] NUTS II [nutsii_c]
 - [ ] Criado por [created_by]
 
-#### Nota
+**Nota técnica:**
 Vários campos visíveis no filtro real não estão em `Default`, mas existem em `Available`.
 Isto sugere que a página real pode estar a usar outra configuração para montar o filtro, em vez de respeitar apenas o `Filter View` do Studio.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- Sem diferenças
