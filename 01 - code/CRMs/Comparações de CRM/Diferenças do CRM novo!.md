@@ -16,6 +16,24 @@
 - [ ] Resultado de aptidão [ability_result_c]
 - [ ] Gestor [assigned_user_id]
 
+### List View
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] NIPC/NIF [nipc_c]
+- [ ] Estabelecimento [estabelecimento_c]
+- [ ] CAE principal [cae_c]
+- [ ] Endereço [endereco_c]
+
+**Só na página real:**
+- [ ] Paciente [contact_id]
+- [ ] Resultado de aptidão [ability_result_c]
+- [ ] Tipo [exam_type_c]
+- [ ] Localidade [localidade_c]
+- [ ] Data do exame [exam_date_c]
+- [ ] Gestor [assigned_user_id]
+- [ ] Date Created [date_entered]
+
 ### Create / Quickcreate
 
 **Só no Studio:**
@@ -23,6 +41,9 @@
 
 **Só na página real:**
 - Sem diferenças
+
+**Nota técnica:**
+Não foi possível validar a página real de `Detail View` para este módulo devido ao erro: `Error: Invalid or expired token`.
 
 ## Assistências
 
