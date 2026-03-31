@@ -1,7 +1,5 @@
 #### Diferenças
 
-  ## Fichas de Aptidão
-
 ## Fichas de Aptidão
 ### Filtro
 
@@ -48,3 +46,31 @@
 
   **Só na página real:**
   - [ ] Nenhuma
+## Medicinas Ocupacionais
+
+### Filtro
+
+  **Só no Studio:**
+  - [ ] ID [id]
+  - [ ] Nome [name]
+  - [ ] Nº Exame [medicine_exam_number_c]
+  - [ ] Cliente [account_id]
+  - [ ] Data Prevista [estimated_start_date]
+
+  **Só na página real:**
+  - [ ] Concelho [billing_address_state]
+  - [ ] Cidade [billing_address_city]
+  - [ ] Data de Nascimento [contacts_birthdate_c]
+  - [ ] Sexo [contact_gender_c]
+  - [ ] Tipo de exame [medicine_exam_type_c]
+  - [ ] Apreciação médica [medical_appreciation_c]
+  - [ ] Gestor de projeto [assigned_user_id]
+  - [ ] Data de alteração [date_modified]
+  - [ ] Data Presença [attendance_date_c]
+  - [ ] Data de admissão [admission_date_c]
+  - [ ] NUTS II [nutsii_c]
+  - [ ] Criado por [created_by]
+
+  #### Nota
+  Vários campos visíveis no filtro real não estão em `Default`, mas existem em `Available`.
+  Isto sugere que a página real pode estar a usar outra configuração para montar o filtro, em vez de respeitar apenas o `Filter View` do Studio.
