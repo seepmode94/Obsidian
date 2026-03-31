@@ -1277,6 +1277,101 @@
   - [ ] Data Fecho da Candidatura [application_closing_date]
   - [ ] Processo encerrado? [process_closed]
 
+### Filtro
+  - [ ] ID [id]
+  - [ ] Contacto [contact_id]
+  - [ ] Atribuído a [assigned_user_id]
+  - [ ] Cliente [account_id]
+  - [ ] Nº ação [action_number_c]
+  - [ ] Nome da ação [description]
+
+## ==Formadores==
+### Vista de edição:
+  - [ ] Nome [trainer_name]
+  - [ ] Valor/Hora [hour_value]
+  - [ ] Valor Total [total_amount]
+  - [ ] Número da Factura [receipt_number]
+  - [ ] Data de pagamento [payment_date]
+  - [ ] Data da factura [receipt_date]
+  - [ ] Valor do recibo (€) [registration_cost]
+  - [ ] Data Entrega Recibo [receipt_delivery_date_c]
+  - [ ] Dossier entregue pelo formador/a [trainer_info_date_c]
+  - [ ] Data verificação do Dossier [info_verification_date_c]
+  - [ ] Observações [observations]
+  - [ ] Training [training_id]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Contact [contact_id]
+  - [ ] Receipt Value [receipt_value]
+  - [ ] Currency [currency_id]
+
+### Vista de detalhe:
+  - [ ] Nome [trainer_name]
+  - [ ] Valor/Hora [hour_value]
+  - [ ] Valor Total [total_amount]
+  - [ ] Número da Factura [receipt_number]
+  - [ ] Data de pagamento [payment_date]
+  - [ ] Data da factura [receipt_date]
+  - [ ] Valor do recibo (€) [registration_cost]
+  - [ ] Data Entrega Recibo [receipt_delivery_date_c]
+  - [ ] Dossier entregue pelo formador/a [trainer_info_date_c]
+  - [ ] Data verificação do Dossier [info_verification_date_c]
+  - [ ] Observações [observations]
+  - [ ] Training [training_id]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Contact [contact_id]
+  - [ ] Receipt Value [receipt_value]
+  - [ ] Currency [currency_id]
+
+### Vista de Lista
+  - [ ] ID [id]
+  - [ ] Nome [trainer_name]
+  - [ ] Valor/Hora [hour_value]
+  - [ ] Valor Total [total_amount]
+  - [ ] Número da Factura [receipt_number]
+  - [ ] Data de pagamento [payment_date]
+
+### Vista de Criação Rápida
+  - [ ] Nome [trainer_name]
+  - [ ] Valor/Hora [hour_value]
+  - [ ] Valor Total [total_amount]
+  - [ ] Número da Factura [receipt_number]
+  - [ ] Data de pagamento [payment_date]
+  - [ ] Data da factura [receipt_date]
+  - [ ] Valor do recibo (€) [registration_cost]
+  - [ ] Data Entrega Recibo [receipt_delivery_date_c]
+  - [ ] Dossier entregue pelo formador/a [trainer_info_date_c]
+  - [ ] Data verificação do Dossier [info_verification_date_c]
+  - [ ] Observações [observations]
+  - [ ] Training [training_id]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Contact [contact_id]
+  - [ ] Receipt Value [receipt_value]
+  - [ ] Currency [currency_id]
+
+### Filtro
+  - [ ] ID [id]
+  - [ ] Nome [trainer_name]
+  - [ ] Valor/Hora [hour_value]
+  - [ ] Valor Total [total_amount]
+  - [ ] Número da Factura [receipt_number]
+  - [ ] Data de pagamento [payment_date]
+
+## ==Sessões==
+### Vista de edição:
+  - [ ] Formação [training_id]
+  - [ ] Nome [name]
+  - [ ] Abreviatura [abbreviation]
+  - [ ] Sessões [session]
+  - [ ] Descrição [description]
+  - [ ] Session Identifier [session_identifier_c]
+### Vista de detalhe:
+  - [ ] Formação [training_id]
+  - [ ] Nome [name]
+  - [ ] Abreviatura [abbreviation]
+  - [ ] Sessões [session]
+  - [ ] Descrição [description]
+  - [ ] Session Identifier [session_identifier_c]
+
 
 ordem
 
@@ -1296,9 +1391,8 @@ ordem
 
   
 
-  ## ==Formandos==
 
-  ## ==Formadores==
+  
 
   ## ==Sessões==
 
