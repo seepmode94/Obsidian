@@ -26,6 +26,49 @@
 
 ## Assistências
 
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Enviar/Receber [send_receive_c]
+
+**Só na página real:**
+- [ ] Nome da conta: [account_id]
+- [ ] Concelho [billing_address_state]
+- [ ] Data Limite [deadline_c]
+- [ ] Data resolução [resolutions_date_c]
+- [ ] Aberto por [opened_by_c]
+- [ ] Fechado por [closed_by_c]
+- [ ] Situação: [status]
+- [ ] Prioridade: [priority]
+- [ ] Código [code_c]
+- [ ] Área [area_c]
+- [ ] Criado em [date_entered]
+- [ ] Date Modified [date_modified]
+- [ ] Atribuído a: [assigned_user_id]
+
+### List View
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Data do serviço/auditoria [service_date_c]
+- [ ] Enviar/Receber [send_receive_c]
+
+**Só na página real:**
+- [ ] Código [code_c]
+- [ ] Situação: [status]
+- [ ] Prioridade: [priority]
+- [ ] Nome da conta: [account_id]
+- [ ] Concelho [billing_address_state]
+- [ ] Contacto [who_contacted_c]
+- [ ] Data Limite [deadline_c]
+- [ ] Data resolução [resolutions_date_c]
+- [ ] Fechado por [closed_by_c]
+- [ ] Criado em [date_entered]
+- [ ] Aberto por [opened_by_c]
+- [ ] Criado por [created_by_name]
+- [ ] Date Created [date_entered]
+
 ### Create / Quickcreate
 
 **Só no Studio:**
