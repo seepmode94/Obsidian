@@ -793,12 +793,50 @@
   - [ ] Revision [revision]
   - [ ] Status [status_id]
 
+### Vista de Criação Rápida
+  - [ ] Name [name]
+  - [ ] Document Name [document_name]
+  - [ ] File Name [filename]
+  - [ ] Revision [revision]
+  - [ ] Status [status_id]
+  - [ ] Active Date [active_date]
+  - [ ] Expiration Date [exp_date]
+  - [ ] Category [category_id]
+  - [ ] Subcategory [subcategory_id]
+  - [ ] Template Type [template_type]
+  - [ ] Is Template [is_template]
+  - [ ] Document Source [doc_type]
+  - [ ] Document URL [doc_url]
+  - [ ] External ID [doc_id]
+  - [ ] Related Document [related_doc_id]
+  - [ ] Assigned To [assigned_user_id]
+  - [ ] Description [description]
+  - [ ] MIME Type [file_mime_type]
+  - [ ] File Extension [file_ext]
+  - [ ] Last Revision Date [last_rev_create_date]
+  - [ ] Current Revision ID [document_revision_id]
+  - [ ] Related Revision ID [related_doc_rev_id]
+
+### Filtro
+  ##### Predefinido
+  - [ ] ID [id]
+  - [ ] Name [name]
+  - [ ] Document Name [document_name]
+  - [ ] File Name [filename]
+  - [ ] Revision [revision]
+  - [ ] Status [status_id]
 
 
-
-
-
-
+## ==Notas==
+### Vista de edição:
+  - [ ] Subject [name]
+  - [ ] Description [description]
+  - [ ] Related To (Module) [parent_type]
+  - [ ] Related To [parent_id]
+  - [ ] Contact [contact_id]
+  - [ ] Attachment [filename]
+  - [ ] MIME Type [file_mime_type]
+  - [ ] Assigned To [assigned_user_id]
 
 
 
@@ -822,7 +860,7 @@ ordem
 
   
 
-  ## ==Documentos==
+
 
   ## ==Notas==
 
@@ -841,4 +879,5 @@ ordem
   ## ==Assistências==
 
   ## ==Fichas de Aptidão==
+
 
