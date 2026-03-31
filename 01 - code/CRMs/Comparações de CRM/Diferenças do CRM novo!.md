@@ -1,5 +1,41 @@
 # Diferenças
 
+## Clientes
+
+### List View
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Telefone alternativo [phone_alternate]
+- [ ] Date Modified [date_modified]
+- [ ] NUTS II [nutsii_c]
+
+**Só na página real:**
+- [ ] NIF [sic_code]
+- [ ] Nome [name]
+- [ ] Nº Func. [employees]
+- [ ] Área de atividade [industry]
+- [ ] Billing City [billing_address_city]
+- [ ] Billing State [billing_address_state]
+- [ ] Billing Country [billing_address_country]
+- [ ] Telefone de trabalho [phone_office]
+- [ ] Nº Estab. [employees_establishment_c]
+- [ ] Nº Cond. [n_condutores_c]
+- [ ] Pesados [ownership]
+- [ ] Ligeiros [ticker_symbol]
+- [ ] Atribuído a [assigned_user_id]
+
+**Nota técnica:**
+A listagem real mostra duas colunas `Date Created`, o que sugere duplicação na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] Atribuído a [assigned_user_id]
+
+**Só na página real:**
+- Sem diferenças
+
 ## Fichas de Aptidão
 
 ### Filtro
