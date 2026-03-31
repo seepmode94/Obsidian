@@ -99,3 +99,12 @@
    - [ ] Shipping Country [shipping_address_country]
    - [ ] Pesados: [ownership]
 ---
+  Filtro
+  Predefinido
+   - [ ] ID [id]
+   - [ ] Date Created [date_entered]
+   - [ ] Telefone alternativo: [phone_alternate]
+   - [ ] Date Modified [date_modified]
+   - [ ] NUTS II [nutsii_c]
+   - [ ] Local de Visita [place_of_visit_c]
+---
