@@ -139,6 +139,25 @@ Não foi possível validar a página real de `Detail View` para este módulo dev
 Vários campos visíveis no filtro real não estão em `Default`, mas existem em `Available`.
 Isto sugere que a página real pode estar a usar outra configuração para montar o filtro, em vez de respeitar apenas o `Filter View` do Studio.
 
+### List View
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Nº Exame [medicine_exam_number_c]
+- [ ] Data Prevista [estimated_start_date]
+
+**Só na página real:**
+- [ ] Concelho [billing_address_state]
+- [ ] Cidade [billing_address_city]
+- [ ] NUTS II [nutsii_c]
+- [ ] Tipo de exame [medicine_exam_type_c]
+- [ ] Apreciação médica [medical_appreciation_c]
+- [ ] Nome do Médico [nome_do_medico_c]
+
+**Nota técnica:**
+Várias colunas visíveis na listagem real não estão em `Default`, mas existem em `Available`.
+Isto sugere que a listagem real pode estar a usar outra configuração para montar as colunas, em vez de respeitar apenas o `List View` do Studio.
+
 ### Create / Quickcreate
 
 **Só no Studio:**
@@ -146,3 +165,16 @@ Isto sugere que a página real pode estar a usar outra configuração para monta
 
 **Só na página real:**
 - Sem diferenças
+
+## Conclusões
+
+- [ ] Foram identificadas diferenças reais entre o Studio e as páginas visíveis nos módulos `Fichas de Aptidão`, `Assistências` e `Medicinas Ocupacionais`
+- [ ] Em `Medicinas Ocupacionais`, tanto o `Filtro` como a `List View` mostram um padrão consistente de divergência entre `Default` e comportamento real
+- [ ] Em `Assistências`, o `Filtro`, a `List View` e o `Create / Quickcreate` também não coincidem totalmente com o Studio
+- [ ] `Acessos IEFP` não apresentou diferenças no `Create / Quickcreate`
+
+## Limitações
+
+- [ ] A revisão global foi interrompida antes de cobrir todos os módulos
+- [ ] Não foi possível validar a página real de `Detail View` de `Fichas de Aptidão` devido ao erro `Error: Invalid or expired token`
+- [ ] Alguns módulos não foram comparados nesta fase
