@@ -202,6 +202,105 @@ Isto sugere que a listagem real pode estar a usar outra configuração para mont
 **Só na página real:**
 - Sem diferenças
 
+## Propostas
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Fase proposta [quote_stage]
+- [ ] Válida até [valid_until]
+- [ ] Condições de pagamento [payment_terms]
+
+**Só na página real:**
+- [ ] Contactos [contact_id]
+- [ ] Data prevista fecho [data_prevista_fecho_c]
+- [ ] Situação de aprovação [approval_status]
+- [ ] Company [empresa_c]
+- [ ] Date Modified [date_modified]
+- [ ] Date Created [date_entered]
+- [ ] Atribuído a [assigned_user_id]
+
+### List View
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Fase proposta [quote_stage]
+- [ ] Válida até [valid_until]
+- [ ] Condições de pagamento [payment_terms]
+
+**Só na página real:**
+- [ ] Company [empresa_c]
+- [ ] Data prevista fecho [data_prevista_fecho_c]
+- [ ] Situação de aprovação [approval_status]
+- [ ] Atribuído a [assigned_user_id]
+- [ ] Date Created [date_entered]
+- [ ] Date Modified [date_modified]
+
+**Nota técnica:**
+A listagem real mostra duas colunas `Date Created`, o que sugere duplicação na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] Subtotal [subtotal]
+- [ ] Desconto [discount_amount]
+- [ ] Taxa [tax_amount]
+- [ ] Portes de envio [shipping_amount]
+- [ ] Total [total]
+- [ ] Atribuído a [assigned_user_id]
+- [ ] Currency [currency]
+- [ ] Taxa de envio [shipping_tax]
+- [ ] Total final [grand_total]
+- [ ] Data prevista fecho [data_prevista_fecho_c]
+- [ ] Company [empresa_c]
+
+**Só na página real:**
+- Sem diferenças
+
+## Faturas
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Situação [status]
+
+**Só na página real:**
+- [ ] Valor Aberto (€) [open_value_c]
+- [ ] Valor Pago (€) [paid_value_c]
+- [ ] Line Items [line_items]
+- [ ] Vendedor [salesperson_c]
+- [ ] Atribuído a [assigned_user_id]
+
+### List View
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Situação [status]
+
+**Só na página real:**
+- [ ] Descrição [description]
+- [ ] Valor Aberto (€) [open_value_c]
+- [ ] Valor Pago (€) [paid_value_c]
+- [ ] Quote Date [quote_date]
+- [ ] Renovation Value [renovation_value_c]
+- [ ] Vendedor [salesperson_c]
+- [ ] Data de criação [date_entered]
+- [ ] Atribuído a [assigned_user_id]
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real mostra `Data de criação` e `Date Created` em simultâneo, o que sugere duplicação semântica na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] Atribuído a [assigned_user_id]
+
+**Só na página real:**
+- Sem diferenças
+
 ## Conclusões
 
 - [ ] Foram identificadas diferenças reais entre o Studio e as páginas visíveis nos módulos `Fichas de Aptidão`, `Assistências` e `Medicinas Ocupacionais`
