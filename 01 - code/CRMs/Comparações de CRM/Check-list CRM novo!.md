@@ -242,3 +242,151 @@
   - [ ] Nome da conta: [account_id]
   - [ ] Fonte da pista: [lead_source]
 
+### Filtro
+  - [ ] ID [id]
+  - [ ] Date Created [date_entered]
+  - [ ] Data Nascimento: [birthdate]
+  - [ ] Date Modified [date_modified]
+  - [ ] Endereço principal: [primary_address_street]
+  - [ ] Endereço alternativo: [alt_address_street]
+
+
+## ==Faturas==
+### Vista de edição:
+  - [ ] Título [name]
+  - [ ] Clientes [account_id]
+  - [ ] Data da fatura [invoice_date]
+  - [ ] Data Pagamento [due_date]
+  - [ ] Situação [status]
+  - [ ] Subtotal [subtotal]
+  - [ ] Desconto [discount_amount]
+  - [ ] Taxa [tax_amount]
+  - [ ] Total [total]
+  - [ ] Portes de envio [amount_paid]
+  - [ ] Descrição [description]
+  - [ ] Atribuído a [assigned_user_id]
+  - [ ] Número da fatura [invoice_number]
+  - [ ] Tipo [type]
+  - [ ] Vendor [vendor]
+  - [ ] Amount Open (€) [amount_open]
+  - [ ] Valor renovação (€) [renewal_value]
+  - [ ] Pack Avançado [advanced_pack]
+  - [ ] Data Renovação [renewal_date]
+  - [ ] Contratos [contract_id]
+  - [ ] Notas da Faturação [billing_notes]
+  - [ ] Enviar Email Automático a Relembrar Pagamento [auto_email_reminder]
+  - [ ] Empresa [company]
+  - [ ] Currency [currency]
+  - [ ] Taxa de envio [shipping_tax]
+  - [ ] Total final [grand_total]
+  - [ ] Vendedor [salesperson_c]
+  - [ ] Valor Pago (€) [paid_value_c]
+  - [ ] Valor Aberto (€) [open_value_c]
+  - [ ] Legal Pack [legal_pack_c]
+  - [ ] Renovation Value [renovation_value_c]
+  - [ ] Quote Date [quote_date]
+  - [ ] Invoicing Notes [invoicing_notes_c]
+  - [ ] Payment Reminder [payment_reminder_c]
+  - [ ] Company [empresa_c]
+  - [ ] Line Items [line_items]
+
+### Vista de detalhe:
+  - [ ] Título [name]
+  - [ ] Clientes [account_id]
+  - [ ] Data da fatura [invoice_date]
+  - [ ] Data Pagamento [due_date]
+  - [ ] Situação [status]
+  - [ ] Subtotal [subtotal]
+  - [ ] Desconto [discount_amount]
+  - [ ] Taxa [tax_amount]
+  - [ ] Total [total]
+  - [ ] Portes de envio [amount_paid]
+  - [ ] Descrição [description]
+  - [ ] Atribuído a [assigned_user_id]
+  - [ ] Número da fatura [invoice_number]
+  - [ ] Tipo [type]
+  - [ ] Vendor [vendor]
+  - [ ] Amount Open (€) [amount_open]
+  - [ ] Valor renovação (€) [renewal_value]
+  - [ ] Pack Avançado [advanced_pack]
+  - [ ] Data Renovação [renewal_date]
+  - [ ] Contratos [contract_id]
+  - [ ] Notas da Faturação [billing_notes]
+  - [ ] Enviar Email Automático a Relembrar Pagamento [auto_email_reminder]
+  - [ ] Empresa [company]
+  - [ ] Currency [currency]
+  - [ ] Taxa de envio [shipping_tax]
+  - [ ] Total final [grand_total]
+  - [ ] Vendedor [salesperson_c]
+  - [ ] Valor Pago (€) [paid_value_c]
+  - [ ] Valor Aberto (€) [open_value_c]
+  - [ ] Legal Pack [legal_pack_c]
+  - [ ] Renovation Value [renovation_value_c]
+  - [ ] Quote Date [quote_date]
+  - [ ] Invoicing Notes [invoicing_notes_c]
+  - [ ] Payment Reminder [payment_reminder_c]
+  - [ ] Company [empresa_c]
+  - [ ] Line Items [line_items]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ordem
+
+## ==Clientes==
+
+  ## ==Propostas==
+
+  ## ==Faturas==
+
+  ## ==Contratos==
+
+  ## ==Contactos==
+
+  ## ==Telefonemas==
+
+  ## ==Reuniões==
+
+  ## ==Documentos==
+
+  ## ==Notas==
+
+  ## ==Emails==
+
+  ## ==Formações==
+
+  ## ==Formandos==
+
+  ## ==Formadores==
+
+  ## ==Sessões==
+
+  ## ==Acessos IEFP==
+
+  ## ==Assistências==
+
+  ## ==Fichas de Aptidão==
+
