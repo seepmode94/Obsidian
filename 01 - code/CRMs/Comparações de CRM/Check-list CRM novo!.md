@@ -1431,6 +1431,130 @@
   - [ ] Access Type [access_type]
   - [ ] Status [status]
 
+## ==Assistências==
+### Vista de edição:
+  - [ ] Assunto: [name]
+  - [ ] Data [assistence_datetime_c]
+  - [ ] Modo [mode_c]
+  - [ ] Data do serviço/auditoria [service_date_c]
+  - [ ] Enviar/Receber [send_receive_c]
+  - [ ] Contacto [who_contacted_c]
+  - [ ] Área [area_c]
+  - [ ] Nome da conta: [account_id]
+  - [ ] Country [billing_address_country]
+  - [ ] Concelho [billing_address_state]
+  - [ ] Data Limite [deadline_c]
+  - [ ] Prioridade: [priority]
+  - [ ] Código [code_c]
+  - [ ] Simulação de Inspeção Realizada? [inspectio_simulation_c]
+  - [ ] Situação: [status]
+  - [ ] Data resolução [resolutions_date_c]
+  - [ ] Aberto por [opened_by_c]
+  - [ ] Fechado por [closed_by_c]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Envio automático de Email ao Cliente quando encerrado assistência [automatic_email_sending_c]
+  - [ ] Faturas [invoice_id]
+  - [ ] Criado em [date_entered]
+
+##### Details
+  - [ ] Descrição do Problema / Serviços [problem_description_c]
+  - [ ] Sugestões [suggestion_box]
+  - [ ] Resolução: [resolution]
+  - [ ] Atualizações - Texto [update_text]
+  - [ ] Hardware [hardware_c]
+  - [ ] Unidades [units_c]
+  - [ ] Atualização interna [internal]
+  - [ ] Criado por [created_by_name]
+### Vista de detalhe:
+  - [ ] Assunto: [name]
+  - [ ] Data [assistence_datetime_c]
+  - [ ] Modo [mode_c]
+  - [ ] Data do serviço/auditoria [service_date_c]
+  - [ ] Enviar/Receber [send_receive_c]
+  - [ ] Contacto [who_contacted_c]
+  - [ ] Área [area_c]
+  - [ ] Nome da conta: [account_id]
+  - [ ] Country [billing_address_country]
+  - [ ] Concelho [billing_address_state]
+  - [ ] Data Limite [deadline_c]
+  - [ ] Prioridade: [priority]
+  - [ ] Código [code_c]
+  - [ ] Simulação de Inspeção Realizada? [inspectio_simulation_c]
+  - [ ] Situação: [status]
+  - [ ] Data resolução [resolutions_date_c]
+  - [ ] Aberto por [opened_by_c]
+  - [ ] Fechado por [closed_by_c]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Envio automático de Email ao Cliente quando encerrado assistência [automatic_email_sending_c]
+  - [ ] Faturas [invoice_id]
+  - [ ] Criado em [date_entered]
+
+  ##### Details
+  - [ ] Descrição do Problema / Serviços [problem_description_c]
+  - [ ] Sugestões [suggestion_box]
+  - [ ] Resolução: [resolution]
+  - [ ] Atualizações - Texto [update_text]
+  - [ ] Hardware [hardware_c]
+  - [ ] Unidades [units_c]
+  - [ ] Atualização interna [internal]
+  - [ ] Criado por [created_by_name]
+
+### Vista de Lista
+  - [ ] Código [code_c]
+  - [ ] Situação: [status]
+  - [ ] Prioridade: [priority]
+  - [ ] Assunto: [name]
+  - [ ] Nome da conta: [account_id]
+  - [ ] phone_office [phone_office]
+  - [ ] Concelho [billing_address_state]
+  - [ ] billing_address_city [billing_address_city]
+  - [ ] Contacto [who_contacted_c]
+  - [ ] Data [assistence_datetime_c]
+  - [ ] Data Limite [deadline_c]
+  - [ ] Data resolução [resolutions_date_c]
+  - [ ] Fechado por [closed_by_c]
+  - [ ] Criado em [date_entered]
+  - [ ] Aberto por [opened_by_c]
+  - [ ] Criado por [created_by_name]
+
+### Vista de Criação Rápida
+  - [ ] Assunto: [name]
+  - [ ] Data [assistence_datetime_c]
+  - [ ] Modo [mode_c]
+  - [ ] Data do serviço/auditoria [service_date_c]
+  - [ ] Enviar/Receber [send_receive_c]
+  - [ ] Contacto [who_contacted_c]
+  - [ ] Área [area_c]
+  - [ ] Nome da conta: [account_id]
+  - [ ] Country [billing_address_country]
+  - [ ] Concelho [billing_address_state]
+  - [ ] Data Limite [deadline_c]
+  - [ ] Prioridade: [priority]
+  - [ ] Código [code_c]
+  - [ ] Simulação de Inspeção Realizada? [inspectio_simulation_c]
+  - [ ] Situação: [status]
+  - [ ] Data resolução [resolutions_date_c]
+  - [ ] Aberto por [opened_by_c]
+  - [ ] Fechado por [closed_by_c]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Envio automático de Email ao Cliente quando encerrado assistência [automatic_email_sending_c]
+  - [ ] Faturas [invoice_id]
+  - [ ] Descrição do Problema / Serviços [problem_description_c]
+  - [ ] Sugestões [suggestion_box]
+  - [ ] Resolução: [resolution]
+  - [ ] Atualizações - Texto [update_text]
+  - [ ] Hardware [hardware_c]
+  - [ ] Unidades [units_c]
+  - [ ] Atualização interna [internal]
+  - [ ] Criado por [created_by_name]
+
+### Filtro
+  - [ ] ID [id]
+  - [ ] Assunto: [name]
+  - [ ] Data [assistence_datetime_c]
+  - [ ] Modo [mode_c]
+  - [ ] Data do serviço/auditoria [service_date_c]
+  - [ ] Enviar/Receber [send_receive_c]
 
 ordem
 
@@ -1455,11 +1579,10 @@ ordem
 
 
 
-  ## ==Acessos IEFP==
 
-  ## ==Assistências==
 
   ## ==Fichas de Aptidão==
+
 
 
 
