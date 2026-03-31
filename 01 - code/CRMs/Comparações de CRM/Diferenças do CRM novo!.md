@@ -313,3 +313,32 @@ A listagem real mostra `Data de criação` e `Date Created` em simultâneo, o qu
 - [ ] A revisão global foi interrompida antes de cobrir todos os módulos
 - [ ] Não foi possível validar a página real de `Detail View` de `Fichas de Aptidão` devido ao erro `Error: Invalid or expired token`
 - [ ] Alguns módulos não foram comparados nesta fase
+
+## Continuação
+
+**Módulos já revistos:**
+- [ ] Clientes
+- [ ] Propostas
+- [ ] Faturas
+- [ ] Fichas de Aptidão
+- [ ] Assistências
+- [ ] Acessos IEFP
+- [ ] Medicinas Ocupacionais
+
+**Módulos por rever:**
+- [ ] Contratos
+- [ ] Contactos
+- [ ] Telefonemas
+- [ ] Reuniões
+- [ ] Documentos
+- [ ] Notas
+- [ ] Emails
+- [ ] Formações
+- [ ] Formandos
+- [ ] Formadores
+- [ ] Sessões
+
+**Plano para retomar:**
+- [ ] Continuar por módulo
+- [ ] Comparar apenas `Filtro`, `List View` e `Create / Quickcreate`
+- [ ] Registar só diferenças reais entre Studio e página visível
