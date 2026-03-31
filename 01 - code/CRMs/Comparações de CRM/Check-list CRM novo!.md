@@ -63,3 +63,39 @@
 
   ---
 
+### Vista de Lista
+   - [ ] NIF: [sic_code]
+   - [ ] Nome: [name]
+   - [ ] Nº Func.: [employees]
+   - [ ] Área de atividade: [industry]
+   - [ ] Billing City [billing_address_city]
+   - [ ] Billing State [billing_address_state]
+   - [ ] Billing Country [billing_address_country]
+   - [ ] Local de Visita [place_of_visit_c]
+   - [ ] Telefone de trabalho: [phone_office]
+   - [ ] Nº Estab. [employees_establishment_c]
+   - [ ] Nº Cond. [n_condutores_c]
+   - [ ] Pesados: [ownership]
+   - [ ] Ligeiros [ticker_symbol]
+   - [ ] Date Created [date_entered]
+   - [ ] Atribuído a: [assigned_user_id]
+---
+### Vista de Criação Rápida
+   - [ ] Telefone alternativo: [phone_alternate]
+   - [ ] Local de Visita [place_of_visit_c]
+   - [ ] CAE [accounts_cae_c]
+   - [ ] Tipo [client_service_type_c]
+   - [ ] Atribuído a: [assigned_user_id]
+   - [ ] Nome: [name]
+   - [ ] Tipo: [account_type]
+   - [ ] Annual Revenue [annual_revenue]
+   - [ ] Fax [phone_fax]
+   - [ ] Nº Func.: [employees]
+   - [ ] NIF: [sic_code]
+   - [ ] Billing City [billing_address_city]
+   - [ ] Billing Postal Code [billing_address_postalcode]
+   - [ ] Endereço de envio: [shipping_address_street]
+   - [ ] Shipping State [shipping_address_state]
+   - [ ] Shipping Country [shipping_address_country]
+   - [ ] Pesados: [ownership]
+
