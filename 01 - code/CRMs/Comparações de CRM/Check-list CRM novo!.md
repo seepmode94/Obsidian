@@ -107,6 +107,65 @@
 - [ ] NUTS II [nutsii_c]
 - [ ] Local de Visita [place_of_visit_c]
 ---
+## ==Propostas==
+### Vista de edição:
+
+  - [ ] Título [name]
+  - [ ] Clientes [account_id]
+  - [ ] Fase proposta [quote_stage]
+  - [ ] Válida até [valid_until]
+  - [ ] Condições de pagamento [payment_terms]
+  - [ ] Subtotal [subtotal]
+  - [ ] Desconto [discount_amount]
+  - [ ] Taxa [tax_amount]
+  - [ ] Portes de envio [shipping_amount]
+  - [ ] Total [total]
+  - [ ] Descrição Proposta [description]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Número da proposta [quote_number]
+  - [ ] Situação de aprovação [approval_status]
+  - [ ] Situação da fatura [invoice_status]
+  - [ ] Expected Close Date [expected_close_date]
+  - [ ] Billing Notes [billing_notes]
+  - [ ] Empresa [company]
+  - [ ] Currency [currency]
+  - [ ] Taxa de envio [shipping_tax]
+  - [ ] Total final [grand_total]
+  - [ ] Contactos [contact_id]
+  - [ ] Data prevista fecho [data_prevista_fecho_c]
+  - [ ] Company [empresa_c]
+  - [ ] Notas para a Faturação [invoicing_notes_c]
+  - [ ] Line Items [line_items]
+
+### Vista de detalhe:
+  - [ ] Título [name]
+  - [ ] Clientes [account_id]
+  - [ ] Fase proposta [quote_stage]
+  - [ ] Válida até [valid_until]
+  - [ ] Condições de pagamento [payment_terms]
+  - [ ] Subtotal [subtotal]
+  - [ ] Desconto [discount_amount]
+  - [ ] Taxa [tax_amount]
+  - [ ] Portes de envio [shipping_amount]
+  - [ ] Total [total]
+  - [ ] Descrição Proposta [description]
+  - [ ] Atribuído a: [assigned_user_id]
+  - [ ] Número da proposta [quote_number]
+  - [ ] Situação de aprovação [approval_status]
+  - [ ] Situação da fatura [invoice_status]
+  - [ ] Expected Close Date [expected_close_date]
+  - [ ] Billing Notes [billing_notes]
+  - [ ] Empresa [company]
+  - [ ] Currency [currency]
+  - [ ] Taxa de envio [shipping_tax]
+  - [ ] Total final [grand_total]
+  - [ ] Contactos [contact_id]
+  - [ ] Data prevista fecho [data_prevista_fecho_c]
+  - [ ] Company [empresa_c]
+  - [ ] Notas para a Faturação [invoicing_notes_c]
+  - [ ] Line Items [line_items]
+
+
 ## ==Faturas==
 ### Vista de edição:
   - [ ] Título [name]
@@ -542,7 +601,6 @@
   - [ ] Duration Minutes [duration_minutes]
 
 ### Vista de Criação Rápida
-  ##### Overview
   - [ ] Subject [name]
   - [ ] Start Date [date_start]
   - [ ] End Date [date_end]
@@ -555,6 +613,17 @@
   - [ ] Description [description]
   - [ ] Assigned To [assigned_user_id]
   - [ ] Reminder [reminder_time]
+
+### Filtro
+  - [ ] ID [id]
+  - [ ] Subject [name]
+  - [ ] Start Date [date_start]
+  - [ ] End Date [date_end]
+  - [ ] Duration Hours [duration_hours]
+  - [ ] Duration Minutes [duration_minutes]
+
+
+
 
 
 
