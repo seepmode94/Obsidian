@@ -1371,6 +1371,65 @@
   - [ ] Sessões [session]
   - [ ] Descrição [description]
   - [ ] Session Identifier [session_identifier_c]
+### Vista de Lista
+  - [ ] ID [id]
+  - [ ] Formação [training_id]
+  - [ ] Nome [name]
+  - [ ] Abreviatura [abbreviation]
+  - [ ] Sessões [session]
+  - [ ] Descrição [description]
+### Vista de Criação Rápida
+  - [ ] Formação [training_id]
+  - [ ] Nome [name]
+  - [ ] Abreviatura [abbreviation]
+  - [ ] Sessões [session]
+  - [ ] Descrição [description]
+  - [ ] Session Identifier [session_identifier_c]
+### Filtro
+  - [ ] ID [id]
+  - [ ] Formação [training_id]
+  - [ ] Nome [name]
+  - [ ] Abreviatura [abbreviation]
+  - [ ] Sessões [session]
+  - [ ] Descrição [description]
+
+## ==Acessos IEFP==
+### Vista de edição:
+  - [ ] Name [name]
+  - [ ] Contact [contact_id]
+  - [ ] Access Date [access_date]
+  - [ ] Access Type [access_type]
+  - [ ] Status [status]
+  - [ ] Observations [observations]
+### Vista de detalhe:
+  - [ ] Name [name]
+  - [ ] Contact [contact_id]
+  - [ ] Access Date [access_date]
+  - [ ] Access Type [access_type]
+  - [ ] Status [status]
+  - [ ] Observations [observations]
+### Vista de Lista
+  - [ ] ID [id]
+  - [ ] Name [name]
+  - [ ] Contact [contact_id]
+  - [ ] Access Date [access_date]
+  - [ ] Access Type [access_type]
+  - [ ] Status [status]
+
+### Vista de Criação Rápida
+  - [ ] Name [name]
+  - [ ] Contact [contact_id]
+  - [ ] Access Date [access_date]
+  - [ ] Access Type [access_type]
+  - [ ] Status [status]
+  - [ ] Observations [observations]
+### Filtro
+  - [ ] ID [id]
+  - [ ] Name [name]
+  - [ ] Contact [contact_id]
+  - [ ] Access Date [access_date]
+  - [ ] Access Type [access_type]
+  - [ ] Status [status]
 
 
 ordem
@@ -1394,12 +1453,13 @@ ordem
 
   
 
-  ## ==Sessões==
+
 
   ## ==Acessos IEFP==
 
   ## ==Assistências==
 
   ## ==Fichas de Aptidão==
+
 
 
