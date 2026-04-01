@@ -242,17 +242,133 @@
 ## ==Faturas==
 ### Vista de edição:
 #### Visão geral
+- [ ] Título
+- [ ] Vendedor
+- [ ] number
+- [ ] Clientes
+- [ ] type_c
+- [ ] Descrição
+- [ ] Data da fatura
+- [ ] Valor Pago (€)
+- [ ] Data Pagamento
+- [ ] Valor Aberto (€)
+- [ ] Legal Pack
+- [ ] Renovation Value
+- [ ] Quote Date
+- [ ] Company
+- [ ] Contratos
+- [ ] Invoicing Notes
+- [ ] Payment Reminder
+- [ ] Situação
+- [ ] Data de criação
+- [ ] Atribuído a
 #### Itens de linha
+- [ ] currency_id
+- [ ] Line Items
+- [ ] total_amt
+- [ ] Desconto
+- [ ] subtotal_amount
+- [ ] shipping_amount
+- [ ] shipping_tax_amt
+- [ ] Taxa
+- [ ] total_amount
 ### Vista de detalhe:
 #### Visão geral
+- [ ] Título
+- [ ] Vendedor
+- [ ] number
+- [ ] Clientes
+- [ ] type_c
+- [ ] Descrição
+- [ ] Data da fatura
+- [ ] Valor Pago (€)
+- [ ] Data Pagamento
+- [ ] Valor Aberto (€)
+- [ ] Legal Pack
+- [ ] Renovation Value
+- [ ] Quote Date
+- [ ] Company
+- [ ] Contratos
+- [ ] Invoicing Notes
+- [ ] Payment Reminder
+- [ ] Situação
+- [ ] Data de criação
+- [ ] Atribuído a
 #### Itens de linha
+- [ ] currency_id
+- [ ] Line Items
+- [ ] total_amt
+- [ ] Desconto
+- [ ] subtotal_amount
+- [ ] shipping_amount
+- [ ] shipping_tax_amt
+- [ ] Taxa
+- [ ] total_amount
 ### Vista de Lista
 #### Predefinido
+- [ ] number: [number]
+- [ ] Título: [name]
+- [ ] Clientes: [account_id]
+- [ ] Data da fatura: [invoice_date]
+- [ ] Descrição: [description]
+- [ ] total_amount: [total_amount]
+- [ ] subtotal_amount: [subtotal]
+- [ ] Valor Aberto (€): [open_value_c]
+- [ ] Valor Pago (€): [paid_value_c]
+- [ ] Data Pagamento: [due_date]
+- [ ] Quote Date: [quote_date]
+- [ ] Renovation Value: [renovation_value_c]
+- [ ] Vendedor: [salesperson_c]
+- [ ] Data de criação: [date_entered]
+- [ ] Atribuído a: [assigned_user_id]
+- [ ] created_by_name: [created_by_name]
 ### Criação rápida:
 #### Visão geral
+- [ ] Título
+- [ ] Clientes
+- [ ] Data da fatura
+- [ ] Data Pagamento
+- [ ] Situação
+- [ ] Subtotal
+- [ ] Desconto
+- [ ] Taxa
+- [ ] Total
+- [ ] Portes de envio
+- [ ] Descrição
+- [ ] Atribuído a
+- [ ] Número da fatura
+- [ ] Tipo
+- [ ] Vendor
+- [ ] Amount Open (€)
+- [ ] Valor renovação (€)
+- [ ] Pack Avançado
+- [ ] Data Renovação
+- [ ] Contratos
+- [ ] Enviar Email Automático a Relembrar Pagamento
+- [ ] Notas da Faturação
+- [ ] Currency
+- [ ] Empresa
+- [ ] Total final
+- [ ] Taxa de envio
+- [ ] Vendedor
+- [ ] Valor Pago (€)
+- [ ] Valor Aberto (€)
+- [ ] Legal Pack
+- [ ] Renovation Value
+- [ ] Quote Date
+- [ ] Invoicing Notes
+- [ ] Payment Reminder
+- [ ] Company
+- [ ] Line Items
 #### Itens de linha
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Título: [name]
+- [ ] Clientes: [account_id]
+- [ ] Data da fatura: [invoice_date]
+- [ ] Data Pagamento: [due_date]
+- [ ] Situação: [status]
 
 ## ==Contratos==
 ### Vista de edição:
