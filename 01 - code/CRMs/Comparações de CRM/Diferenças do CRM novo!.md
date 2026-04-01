@@ -822,8 +822,3 @@ O `Create / Quickcreate` de `Sessões` na página real expõe `assigned_user_id`
 - [ ] Acessos IEFP
 - [ ] Medicinas Ocupacionais
 
-**Módulos por rever:**
-- [ ] Nenhum
-
-**Estado:**
-- [ ] Revisão desta fase concluída
