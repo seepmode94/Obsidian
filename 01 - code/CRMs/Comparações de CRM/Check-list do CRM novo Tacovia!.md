@@ -859,22 +859,149 @@
 ## ==Notas==
 ### Vista de edição:
 #### Visão geral
-#### Outro
+- [ ] Subject
+- [ ] Description
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Contact
+- [ ] Attachment
+- [ ] MIME Type
+- [ ] Assigned To
 ### Vista de detalhe:
 #### Visão geral
-#### Outro
+- [ ] Subject
+- [ ] Description
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Contact
+- [ ] Attachment
+- [ ] MIME Type
+- [ ] Assigned To
 ### Vista de Lista
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] Description: [description]
+- [ ] Related To (Module): [parent_type]
+- [ ] Related To: [parent_id]
+- [ ] Contact: [contact_id]
 ### Criação rápida:
-#### Predefinido
+#### Visão geral
+- [ ] Subject
+- [ ] Description
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Contact
+- [ ] Attachment
+- [ ] MIME Type
+- [ ] Assigned To
 ### Filtro
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] Description: [description]
+- [ ] Related To (Module): [parent_type]
+- [ ] Related To: [parent_id]
+- [ ] Contact: [contact_id]
 
 ## ==Emails==
 ### Vista de edição:
+#### Visão geral
+- [ ] Subject
+- [ ] From
+- [ ] To
+- [ ] CC
+- [ ] BCC
+- [ ] Reply To
+- [ ] Body
+- [ ] HTML Body
+- [ ] Raw Source
+- [ ] Date Sent/Received
+- [ ] Date Sent
+- [ ] Type
+- [ ] Status
+- [ ] Flagged
+- [ ] Reply To Status
+- [ ] Related Module
+- [ ] Related Record ID
+- [ ] Related To
+- [ ] Category
+- [ ] Assigned To
+- [ ] Message ID
+- [ ] UID
+- [ ] Intent
+- [ ] Mailbox ID
+- [ ] Orphaned
 ### Vista de detalhe:
+#### Visão geral
+- [ ] Subject
+- [ ] From
+- [ ] To
+- [ ] CC
+- [ ] BCC
+- [ ] Reply To
+- [ ] Body
+- [ ] HTML Body
+- [ ] Raw Source
+- [ ] Date Sent/Received
+- [ ] Date Sent
+- [ ] Type
+- [ ] Status
+- [ ] Flagged
+- [ ] Reply To Status
+- [ ] Related Module
+- [ ] Related Record ID
+- [ ] Related To
+- [ ] Category
+- [ ] Assigned To
+- [ ] Message ID
+- [ ] UID
+- [ ] Intent
+- [ ] Mailbox ID
+- [ ] Orphaned
 ### Vista de Lista
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] From: [from_addr_name]
+- [ ] To: [to_addrs_names]
+- [ ] CC: [cc_addrs_names]
+- [ ] BCC: [bcc_addrs_names]
 ### Criação rápida:
+#### Visão geral
+- [ ] Subject
+- [ ] From
+- [ ] To
+- [ ] CC
+- [ ] BCC
+- [ ] Reply To
+- [ ] Body
+- [ ] HTML Body
+- [ ] Raw Source
+- [ ] Date Sent/Received
+- [ ] Date Sent
+- [ ] Type
+- [ ] Status
+- [ ] Flagged
+- [ ] Reply To Status
+- [ ] Related Module
+- [ ] Related Record ID
+- [ ] Related To
+- [ ] Category
+- [ ] Assigned To
+- [ ] Message ID
+- [ ] UID
+- [ ] Intent
+- [ ] Mailbox ID
+- [ ] Orphaned
 ### Filtro
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] From: [from_addr_name]
+- [ ] To: [to_addrs_names]
+- [ ] CC: [cc_addrs_names]
+- [ ] BCC: [bcc_addrs_names]
 
 ## ==Formações==
 ### Vista de edição:
