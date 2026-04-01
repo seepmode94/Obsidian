@@ -790,7 +790,7 @@ O `Create / Quickcreate` de `Sessões` na página real expõe `assigned_user_id`
 - [ ] A revisão ficou concluída para todos os módulos previstos nesta fase
 - [ ] O padrão mais frequente foi divergência entre o `Filtro` do Studio e os campos realmente visíveis na página
 - [ ] Vários módulos apresentam também diferenças no `Create / Quickcreate`, sobretudo por exposição de campos técnicos no Studio que não aparecem na página real
-- [ ] Foram detetados casos de divergência na `List View`, incluindo colunas adicionais na página real e duplicação semântica de `Date Created` em `Clientes`, `Propostas`, `Faturas`, `Contratos`, `Contactos`, `Notas`, `Formações` e `Formandos`
+- [ ] Em várias `List View`, existem colunas adicionais ou em falta face ao `Studio`. Exemplo: em `Fichas de Aptidão`, a página real mostra `Date Created` e o `Studio` tem `name` em `Default`. O mesmo padrão repete-se em `Clientes`, `Fichas de Aptidão`, `Assistências`, `Medicinas Ocupacionais`, `Propostas`, `Faturas`, `Contratos`, `Telefonemas`, `Reuniões`, `Documentos`, `Notas`, `Emails`, `Formandos` e `Sessões`
 - [ ] `Medicinas Ocupacionais` e `Assistências` mantêm-se como módulos com divergências mais consistentes entre configuração do Studio e comportamento visível
 - [ ] `Acessos IEFP` foi o único módulo revisto sem diferenças no `Create / Quickcreate`
 
