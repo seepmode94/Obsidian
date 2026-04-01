@@ -75,26 +75,169 @@
 - [ ] Atribuído a: [assigned_user_id]
 ### Criação rápida:
 #### Visão geral
+- [ ] Telefone alternativo
+- [ ] NUTS II
+- [ ] Local de Visita
+- [ ] Nº Cond.
+- [ ] CAE
+- [ ] Nº Estab.
+- [ ] Tipo
+- [ ] Enviar lembrete de Pagamento
+- [ ] Atribuído a
+- [ ] Descrição
+- [ ] Nome
+- [ ] Membro de
+- [ ] Tipo
+- [ ] Área de atividade
+- [ ] Annual Revenue
+- [ ] Telefone de trabalho
+- [ ] Fax
+- [ ] Sítio Internet
+- [ ] Nº Func.
+- [ ] Ligeiros
+- [ ] NIF
+- [ ] Endereço de faturação
+- [ ] Billing City
+- [ ] Billing State
+- [ ] Billing Postal Code
+- [ ] Billing Country
+- [ ] Endereço de envio
+- [ ] Shipping City
+- [ ] Shipping State
+- [ ] Shipping Postal Code
+- [ ] Shipping Country
+- [ ] Rating
+- [ ] Pesados
+
 #### Mais detalhes
+
 #### Outro
+
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Date Created: [date_entered]
+- [ ] Telefone alternativo: [phone_alternate]
+- [ ] Date Modified: [date_modified]
+- [ ] NUTS II: [nutsii_c]
+- [ ] Local de Visita: [place_of_visit_c]
 
 ## ==Propostas==
 ### Vista de edição:
 #### Visão geral
+- [ ] Título
+- [ ] Clientes
+- [ ] number
+- [ ] stage
+- [ ] expiration
+- [ ] Data prevista fecho
+- [ ] Situação da fatura
+- [ ] term
+- [ ] Situação de aprovação
+- [ ] Company
+- [ ] approval_issue
+- [ ] Notas para a Faturação
+- [ ] Contactos
+- [ ] Atribuído a
+
 #### Itens de linha
+- [ ] currency_id
+- [ ] Line Items
+- [ ] total_amt
+- [ ] Desconto
+- [ ] subtotal_amount
+- [ ] Portes de envio
+- [ ] shipping_tax_amt
+- [ ] Taxa
+- [ ] total_amount
+
 ### Vista de detalhe:
 #### Visão geral
+- [ ] Título
+- [ ] Clientes
+- [ ] number
+- [ ] stage
+- [ ] expiration
+- [ ] Data prevista fecho
+- [ ] Situação da fatura
+- [ ] term
+- [ ] Situação de aprovação
+- [ ] Company
+- [ ] approval_issue
+- [ ] Notas para a Faturação
+- [ ] Contactos
+- [ ] Atribuído a
+
 #### Itens de linha
+- [ ] currency_id
+- [ ] Line Items
+- [ ] total_amt
+- [ ] Desconto
+- [ ] subtotal_amount
+- [ ] Portes de envio
+- [ ] shipping_tax_amt
+- [ ] Taxa
+- [ ] total_amount
+
 ### Vista de Lista
 #### Predefinido
+- [ ] number: [number]
+- [ ] Título: [name]
+- [ ] Clientes: [account_id]
+- [ ] Company: [empresa_c]
+- [ ] Data prevista fecho: [data_prevista_fecho_c]
+- [ ] billing_address_city: [billing_address_city]
+- [ ] billing_address_state: [billing_address_state]
+- [ ] total_amount: [total_amount]
+- [ ] total_amt: [total_amt]
+- [ ] stage: [stage]
+- [ ] Situação de aprovação: [approval_status]
+- [ ] Atribuído a: [assigned_user_id]
+- [ ] Date Created: [date_entered]
+- [ ] Date Modified: [date_modified]
+- [ ] created_by_name: [created_by_name]
+
 ### Criação rápida:
 #### Visão geral
+- [ ] Título
+- [ ] Clientes
+- [ ] Fase proposta
+- [ ] Válida até
+- [ ] Condições de pagamento
+- [ ] Subtotal
+- [ ] Desconto
+- [ ] Taxa
+- [ ] Portes de envio
+- [ ] Total
+- [ ] Descrição Proposta
+- [ ] Atribuído a
+- [ ] Número da proposta
+- [ ] Situação de aprovação
+- [ ] Situação da fatura
+- [ ] Expected Close Date
+- [ ] Billing Notes
+- [ ] Empresa
+- [ ] Currency
+- [ ] Taxa de envio
+- [ ] Total final
+- [ ] Contactos
+- [ ] Data prevista fecho
+- [ ] Company
+- [ ] Notas para a Faturação
+- [ ] Line Items
+
 #### Dados de endereço
+
 #### Itens de linha
+
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Título: [name]
+- [ ] Clientes: [account_id]
+- [ ] Fase proposta: [quote_stage]
+- [ ] Válida até: [valid_until]
+- [ ] Condições de pagamento: [payment_terms]
 
 ## ==Faturas==
 ### Vista de edição:
