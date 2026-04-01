@@ -360,10 +360,42 @@ A listagem real mostra `Data criação` e `Date Created` em simultâneo, o que s
 **Nota técnica:**
 O `Create / Quickcreate` mistura no Studio campos legacy em inglês com campos custom em português, enquanto a página real privilegia os campos custom e ainda expõe campos técnicos associados aos totais e à secção de `Line Items`.
 
+## Telefonemas
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] End Date [date_end]
+- [ ] Duration Hours [duration_hours]
+- [ ] Duration Minutes [duration_minutes]
+
+**Só na página real:**
+- [ ] Direction [direction]
+- [ ] Status [status]
+- [ ] Assigned To [assigned_user_id]
+
+### List View
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- Sem diferenças
+
 ## Conclusões
 
 - [ ] Foram identificadas diferenças reais entre o Studio e as páginas visíveis nos módulos `Fichas de Aptidão`, `Assistências` e `Medicinas Ocupacionais`
 - [ ] `Contratos` apresenta diferenças no `Filtro` e no `Create / Quickcreate`, e uma duplicação semântica na `List View`
+- [ ] `Telefonemas` apresenta diferenças no `Filtro` e uma coluna adicional na `List View`
 - [ ] Em `Medicinas Ocupacionais`, tanto o `Filtro` como a `List View` mostram um padrão consistente de divergência entre `Default` e comportamento real
 - [ ] Em `Assistências`, o `Filtro`, a `List View` e o `Create / Quickcreate` também não coincidem totalmente com o Studio
 - [ ] `Acessos IEFP` não apresentou diferenças no `Create / Quickcreate`
@@ -381,6 +413,7 @@ O `Create / Quickcreate` mistura no Studio campos legacy em inglês com campos c
 - [ ] Propostas
 - [ ] Faturas
 - [ ] Contratos
+- [ ] Telefonemas
 - [ ] Fichas de Aptidão
 - [ ] Assistências
 - [ ] Acessos IEFP
@@ -388,7 +421,6 @@ O `Create / Quickcreate` mistura no Studio campos legacy em inglês com campos c
 
 **Módulos por rever:**
 - [ ] Contactos
-- [ ] Telefonemas
 - [ ] Reuniões
 - [ ] Documentos
 - [ ] Notas
