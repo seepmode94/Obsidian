@@ -1,7 +1,7 @@
 # Tacovia
 
-## ==Clientes==
 
+## ==Clientes==
 ### Vista de edição:
 #### Visão geral
 - [ ] Nome
@@ -14,7 +14,6 @@
 - [ ] Local de Visita
 - [ ] email1
 - [ ] Descrição
-
 #### Mais detalhes
 - [ ] Tipo
 - [ ] Nº Func.
@@ -28,10 +27,8 @@
 - [ ] Nº Estab.
 - [ ] Tipo
 - [ ] Enviar lembrete de Pagamento
-
 #### Outro
 - [ ] Atribuído a
-
 ### Vista de detalhe:
 #### Visão geral
 - [ ] Nome
@@ -44,7 +41,6 @@
 - [ ] Local de Visita
 - [ ] email1
 - [ ] Descrição
-
 #### Mais detalhes
 - [ ] Tipo
 - [ ] Nº Func.
@@ -58,483 +54,308 @@
 - [ ] Nº Estab.
 - [ ] Tipo
 - [ ] Enviar lembrete de Pagamento
-
 #### Outro
 - [ ] Atribuído a
-
 ### Vista de Lista
 #### Predefinido
-
+- [ ] NIF: [sic_code]
+- [ ] Nome: [name]
+- [ ] Nº Func.: [employees]
+- [ ] Área de atividade: [industry]
+- [ ] Billing City: [billing_address_city]
+- [ ] Billing State: [billing_address_state]
+- [ ] Billing Country: [billing_address_country]
+- [ ] Local de Visita: [place_of_visit_c]
+- [ ] Telefone de trabalho: [phone_office]
+- [ ] Nº Estab.: [employees_establishment_c]
+- [ ] Nº Cond.: [n_condutores_c]
+- [ ] Pesados: [ownership]
+- [ ] Ligeiros: [ticker_symbol]
+- [ ] Date Created: [date_entered]
+- [ ] Atribuído a: [assigned_user_id]
 ### Criação rápida:
 #### Visão geral
-
 #### Mais detalhes
-
 #### Outro
-
 ### Filtro
 #### Predefinido
 
 ## ==Propostas==
-
 ### Vista de edição:
 #### Visão geral
-
 #### Itens de linha
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### Itens de linha
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Visão geral
-
 #### Dados de endereço
-
 #### Itens de linha
-
 ### Filtro
 #### Predefinido
 
 ## ==Faturas==
-
 ### Vista de edição:
 #### Visão geral
-
 #### Itens de linha
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### Itens de linha
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Visão geral
-
 #### Itens de linha
-
 ### Filtro
 #### Predefinido
 
 ## ==Contratos==
-
 ### Vista de edição:
 #### Predefinido
-
 #### Itens de linha
-
 ### Vista de detalhe:
 #### Predefinido
-
 #### Itens de linha
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Predefinido
-
 ### Filtro
 #### Predefinido
 
 ## ==Contactos==
-
 ### Vista de edição:
 #### Visão geral
-
 #### Mais detalhes
-
 #### Outro
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### Mais detalhes
-
 #### Outro
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Visão geral
-
 #### Mais detalhes
-
 #### Outro
-
 ### Filtro
 #### Predefinido
 
 ## ==Telefonemas==
-
 ### Vista de edição:
 #### Visão geral
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### Reagendar
-
 #### Outro
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Predefinido
-
 ### Filtro
 #### Predefinido
 
 ## ==Reuniões==
-
 ### Vista de edição:
 #### Visão geral
-
 #### Outro
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### Outro
-
 ### Vista de Lista
-
 ### Criação rápida:
 #### Visão geral
-
 #### Outro
-
 ### Filtro
 #### Predefinido
 
 ## ==Documentos==
-
 ### Vista de edição:
 #### Visão geral
-
 #### Outro
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### LBL_REVISIONS_PANEL
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Predefinido
-
 ### Filtro
 #### Predefinido
 
 ## ==Notas==
-
 ### Vista de edição:
 #### Visão geral
-
 #### Outro
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### Outro
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Predefinido
-
 ### Filtro
 
 ## ==Emails==
-
 ### Vista de edição:
-
 ### Vista de detalhe:
-
 ### Vista de Lista
-
 ### Criação rápida:
-
 ### Filtro
 
 ## ==Formações==
-
 ### Vista de edição:
 #### Predefinido
-
 #### Recursos Administrativos
-
 #### Recursos Técnicos
-
 #### Pagamentos
-
 #### Outros
-
 ### Vista de detalhe:
 #### Predefinido
-
 #### Recursos Administrativos
-
 #### Recursos Técnicos
-
 #### Pagamentos
-
 #### Outros
-
 ### Vista de Lista
-
 ### Criação rápida:
 #### Predefinido
-
 #### Recursos Administrativos
-
 #### Recursos Técnicos
-
 #### Pagamentos
-
 #### Outros
-
 ### Filtro
 
 ## ==Formandos==
-
 ### Vista de edição:
 #### Predefinido
-
 #### IEFP
-
 #### Certificados Internos
-
 #### SIGO
-
 #### IMTT
-
 ### Vista de detalhe:
 #### Predefinido
-
 #### IEFP
-
 #### Certificados Internos
-
 #### SIGO
-
 #### IMTT
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Predefinido
-
 #### IEFP
-
 #### Certificados Internos
-
 #### SIGO
-
 #### IMTT
-
 ### Filtro
 #### Predefinido
 
 ## ==Formadores==
-
 ### Vista de edição / Vista de detalhe / Criação rápida:
 #### Predefinido
-
 ### Vista de Lista
-
 ### Filtro
 
 ## ==Sessões==
-
 ### Vista de edição:
 #### Predefinido
-
 ### Vista de detalhe:
 #### Predefinido
-
 ### Vista de Lista
-
 ### Criação rápida:
 #### Predefinido
-
 ### Filtro
 
 ## ==Acessos IEFP==
-
 ### Vista de edição / Vista de detalhe:
 #### Predefinido
-
 ### Vista de Lista
-
 ### Criação rápida:
 #### Predefinido
-
 ### Filtro
 
 ## ==Assistências==
-
 ### Vista de edição / Vista de detalhe:
 #### Visão geral
-
 #### Outro
-
 ### Vista de Lista
 #### Predefinido
-
 ### Criação rápida:
 #### Visão geral
-
 #### Outro
-
 ### Filtro
 #### Predefinido
 
 ## ==Medicina Ocupacional==
-
 ### Vista de edição:
 #### Visão geral
-
 #### Histórico Familiar
-
 #### Doenças profissionais - Histórico Ocupacional
-
 #### Acidentes de trabalho - Histórico Ocupacional
-
 #### Exposição a riscos profissionais - Histórico Ocupacional
-
 #### Álcool - Hábitos
-
 #### Tabaco - Hábitos
-
 #### Café - Hábitos
-
 #### Medicamentos - Hábitos
-
 #### Passatempos
-
 #### Biometrias - Exame Médico Objetivado
-
 #### Vacinação - Inoculações administradas
-
 #### Exames Complementares de Diagnóstico
-
 #### Patologia Apresentada
-
 #### Recomendações
-
 #### Especialidade
-
 #### Promoção da saúde/Aconselhamentos
-
 #### Observações Finais
-
 #### Outros
-
 ### Vista de detalhe:
 #### Visão geral
-
 #### Histórico Familiar
-
 #### Doenças profissionais - Histórico Ocupacional
-
 #### Acidentes de trabalho - Histórico Ocupacional
-
 #### Exposição a riscos profissionais - Histórico Ocupacional
-
 #### Álcool - Hábitos
-
 #### Tabaco - Hábitos
-
 #### Café - Hábitos
-
 #### Medicamentos - Hábitos
-
 #### Passatempos
-
 #### Biometrias - Exame Médico Objetivado
-
 #### Vacinação - Inoculações administradas
-
 #### Exames Complementares de Diagnóstico
-
 #### Patologia Apresentada
-
 #### Recomendações
-
 #### Especialidade
-
 #### Promoção da saúde/Aconselhamentos
-
 #### Observações Finais
-
 ### Vista de Lista
-
 ### Criação rápida:
 #### Visão geral
-
 #### Histórico Familiar
-
 #### Doenças profissionais - Histórico Ocupacional
-
 #### Acidentes de trabalho - Histórico Ocupacional
-
 #### Exposição a riscos profissionais - Histórico Ocupacional
-
 #### Álcool - Hábitos
-
 #### Tabaco - Hábitos
-
 #### Café - Hábitos
-
 #### Medicamentos - Hábitos
-
 #### Passatempos
-
 #### Biometrias - Exame Médico Objetivado
-
 #### Vacinação - Inoculações administradas
-
 #### Exames Complementares de Diagnóstico
-
 #### Patologia Apresentada
-
 #### Recomendações
-
 #### Especialidade
-
 #### Promoção da saúde/Aconselhamentos
-
 #### Observações Finais
-
 #### Outros
-
 ### Filtro
 
 ## ==Fichas de Aptidão==
-
 ### Vista de edição:
 #### Predefinido
-
 ### Vista de detalhe:
 #### Predefinido
-
 ### Vista de Lista
-
 ### Criação rápida:
 #### Predefinido
-
 ### Filtro
