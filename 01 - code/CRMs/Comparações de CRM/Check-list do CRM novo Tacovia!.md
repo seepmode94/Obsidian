@@ -508,30 +508,137 @@
 ## ==Telefonemas==
 ### Vista de edição:
 #### Visão geral
+- [ ] Subject
+- [ ] Start Date
+- [ ] End Date
+- [ ] Duration Hours
+- [ ] Duration Minutes
+- [ ] Status
+- [ ] Direction
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Description
+- [ ] Assigned To
+- [ ] Reminder
 ### Vista de detalhe:
 #### Visão geral
-#### Reagendar
-#### Outro
+- [ ] Subject
+- [ ] Start Date
+- [ ] End Date
+- [ ] Duration Hours
+- [ ] Duration Minutes
+- [ ] Status
+- [ ] Direction
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Description
+- [ ] Assigned To
+- [ ] Reminder
 ### Vista de Lista
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] Start Date: [date_start]
+- [ ] End Date: [date_end]
+- [ ] Duration Hours: [duration_hours]
+- [ ] Duration Minutes: [duration_minutes]
 ### Criação rápida:
-#### Predefinido
+#### Visão geral
+- [ ] Subject
+- [ ] Start Date
+- [ ] End Date
+- [ ] Duration Hours
+- [ ] Duration Minutes
+- [ ] Status
+- [ ] Direction
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Description
+- [ ] Assigned To
+- [ ] Reminder
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] Start Date: [date_start]
+- [ ] End Date: [date_end]
+- [ ] Duration Hours: [duration_hours]
+- [ ] Duration Minutes: [duration_minutes]
 
 ## ==Reuniões==
 ### Vista de edição:
 #### Visão geral
-#### Outro
+- [ ] Subject
+- [ ] Start Date
+- [ ] End Date
+- [ ] Duration Hours
+- [ ] Duration Minutes
+- [ ] Status
+- [ ] Location
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Description
+- [ ] Assigned To
+- [ ] Reminder
+- [ ] Longitude
+- [ ] Latitude
+- [ ] Geocode Status
+- [ ] Mapped Address
+- [ ] Audit Notification
 ### Vista de detalhe:
 #### Visão geral
-#### Outro
+- [ ] Subject
+- [ ] Start Date
+- [ ] End Date
+- [ ] Duration Hours
+- [ ] Duration Minutes
+- [ ] Status
+- [ ] Location
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Description
+- [ ] Assigned To
+- [ ] Reminder
+- [ ] Longitude
+- [ ] Latitude
+- [ ] Geocode Status
+- [ ] Mapped Address
+- [ ] Audit Notification
 ### Vista de Lista
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] Start Date: [date_start]
+- [ ] End Date: [date_end]
+- [ ] Duration Hours: [duration_hours]
+- [ ] Duration Minutes: [duration_minutes]
 ### Criação rápida:
 #### Visão geral
-#### Outro
+- [ ] Subject
+- [ ] Start Date
+- [ ] End Date
+- [ ] Duration Hours
+- [ ] Duration Minutes
+- [ ] Status
+- [ ] Location
+- [ ] Related To (Module)
+- [ ] Related To
+- [ ] Description
+- [ ] Assigned To
+- [ ] Reminder
+- [ ] Longitude
+- [ ] Latitude
+- [ ] Geocode Status
+- [ ] Mapped Address
+- [ ] Audit Notification
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Subject: [name]
+- [ ] Start Date: [date_start]
+- [ ] End Date: [date_end]
+- [ ] Duration Hours: [duration_hours]
+- [ ] Duration Minutes: [duration_minutes]
 
 ## ==Documentos==
 ### Vista de edição:
