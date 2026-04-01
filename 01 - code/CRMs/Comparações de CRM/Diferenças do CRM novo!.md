@@ -391,11 +391,148 @@ O `Create / Quickcreate` mistura no Studio campos legacy em inglês com campos c
 **Só na página real:**
 - Sem diferenças
 
+## Contactos
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Date Created [date_entered]
+- [ ] Data Nascimento [birthdate]
+- [ ] Date Modified [date_modified]
+- [ ] Endereço principal [primary_address_street]
+- [ ] Endereço alternativo [alt_address_street]
+
+**Só na página real:**
+- [ ] Nome próprio [first_name]
+- [ ] Apelido [last_name]
+- [ ] Nome da conta [account_id]
+- [ ] Departamento [department]
+- [ ] NIF [vat_number_c]
+- [ ] Tipo [contact_type_c]
+- [ ] Cargo [title]
+- [ ] Atribuído a [assigned_user_id]
+
+### List View
+
+**Só no Studio:**
+- [ ] Nome [name]
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real não mostra a coluna `Nome [name]` que está em `Default` no Studio e apresenta duas colunas `Date Created`, o que sugere simultaneamente ocultação de um campo esperado e duplicação semântica na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Date Created [date_entered]
+- [ ] Date Modified [date_modified]
+- [ ] Modified By [modified_user_id]
+- [ ] Created By [created_by]
+- [ ] Deleted [deleted]
+- [ ] Salutation [salutation]
+- [ ] Home Phone [phone_home]
+- [ ] Supervisionado por [report_to_id]
+- [ ] É Formando? [is_trainee_c]
+- [ ] É Formador? [is_trainer_c]
+
+**Só na página real:**
+- [ ] report_to_name [report_to_name]
+- [ ] campaign_name [campaign_name]
+- [ ] Fonte da pista [lead_source]
+- [ ] Sincronizar contacto [sync_contact]
+- [ ] Não telefonar [do_not_call]
+
+**Nota técnica:**
+O `Create / Quickcreate` de `Contactos` não replica integralmente o layout do Studio: a página real privilegia campos operacionais e visíveis para o utilizador final, enquanto o Studio mantém vários campos técnicos, de auditoria e relacionamento indireto.
+
+## Reuniões
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Duration Hours [duration_hours]
+- [ ] Duration Minutes [duration_minutes]
+
+**Só na página real:**
+- [ ] Location [location]
+- [ ] Assigned To [assigned_user_id]
+- [ ] Status [status]
+
+### List View
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- Sem diferenças
+
+## Documentos
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Name [name]
+- [ ] Revision [revision]
+
+**Só na página real:**
+- [ ] Category [category_id]
+- [ ] Subcategory [subcategory_id]
+- [ ] Assigned To [assigned_user_id]
+- [ ] Last Revision Date [last_rev_create_date]
+- [ ] Expiration Date [exp_date]
+
+### List View
+
+**Só no Studio:**
+- [ ] Status [status_id]
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real não mostra `Status [status_id]`, embora esteja em `Default` no Studio, e apresenta duas colunas com `Date Created`, o que sugere ocultação de um campo esperado e duplicação semântica na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] Name [name]
+- [ ] ID [id]
+- [ ] Date Created [date_entered]
+- [ ] Date Modified [date_modified]
+- [ ] External ID [doc_id]
+- [ ] File Extension [file_ext]
+- [ ] Current Revision ID [document_revision_id]
+- [ ] Related Revision ID [related_doc_rev_id]
+- [ ] Last Revision Date [last_rev_create_date]
+
+**Só na página real:**
+- [ ] Document File [filename]
+
+**Nota técnica:**
+O `Create / Quickcreate` de `Documentos` no Studio inclui vários campos técnicos e de gestão documental, enquanto a página real expõe o carregamento direto do ficheiro na secção `FILE UPLOAD`, o que altera materialmente a experiência face ao layout configurado.
+
 ## Conclusões
 
 - [ ] Foram identificadas diferenças reais entre o Studio e as páginas visíveis nos módulos `Fichas de Aptidão`, `Assistências` e `Medicinas Ocupacionais`
 - [ ] `Contratos` apresenta diferenças no `Filtro` e no `Create / Quickcreate`, e uma duplicação semântica na `List View`
 - [ ] `Telefonemas` apresenta diferenças no `Filtro` e uma coluna adicional na `List View`
+- [ ] `Contactos` apresenta divergências relevantes no `Filtro`, na `List View` e no `Create / Quickcreate`
+- [ ] `Reuniões` apresenta diferenças no `Filtro` e uma coluna adicional na `List View`
+- [ ] `Documentos` apresenta divergências no `Filtro`, na `List View` e no `Create / Quickcreate`
 - [ ] Em `Medicinas Ocupacionais`, tanto o `Filtro` como a `List View` mostram um padrão consistente de divergência entre `Default` e comportamento real
 - [ ] Em `Assistências`, o `Filtro`, a `List View` e o `Create / Quickcreate` também não coincidem totalmente com o Studio
 - [ ] `Acessos IEFP` não apresentou diferenças no `Create / Quickcreate`
@@ -414,15 +551,15 @@ O `Create / Quickcreate` mistura no Studio campos legacy em inglês com campos c
 - [ ] Faturas
 - [ ] Contratos
 - [ ] Telefonemas
+- [ ] Contactos
+- [ ] Reuniões
+- [ ] Documentos
 - [ ] Fichas de Aptidão
 - [ ] Assistências
 - [ ] Acessos IEFP
 - [ ] Medicinas Ocupacionais
 
 **Módulos por rever:**
-- [ ] Contactos
-- [ ] Reuniões
-- [ ] Documentos
 - [ ] Notas
 - [ ] Emails
 - [ ] Formações
