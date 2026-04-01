@@ -498,10 +498,10 @@ O `Create / Quickcreate` de `Contactos` não replica integralmente o layout do S
 - [ ] Status [status_id]
 
 **Só na página real:**
-- [ ] Date Created [date_entered]
+- Sem diferenças
 
 **Nota técnica:**
-A listagem real não mostra `Status [status_id]`, embora esteja em `Default` no Studio, e apresenta duas colunas com `Date Created`, o que sugere ocultação de um campo esperado e duplicação semântica na configuração visível da página.
+A listagem real não mostra `Status [status_id]`, embora esteja em `Default` no Studio.
 
 ### Create / Quickcreate
 
@@ -543,7 +543,10 @@ O `Create / Quickcreate` de `Documentos` no Studio inclui vários campos técnic
 - Sem diferenças
 
 **Só na página real:**
-- Sem diferenças
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação semântica na configuração visível da página.
 
 ### Create / Quickcreate
 
@@ -640,7 +643,10 @@ O `Create / Quickcreate` de `Emails` na página real privilegia campos operacion
 - Sem diferenças
 
 **Só na página real:**
-- Sem diferenças
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação semântica na configuração visível da página.
 
 ### Create / Quickcreate
 
@@ -784,7 +790,7 @@ O `Create / Quickcreate` de `Sessões` na página real expõe `assigned_user_id`
 - [ ] A revisão ficou concluída para todos os módulos previstos nesta fase
 - [ ] O padrão mais frequente foi divergência entre o `Filtro` do Studio e os campos realmente visíveis na página
 - [ ] Vários módulos apresentam também diferenças no `Create / Quickcreate`, sobretudo por exposição de campos técnicos no Studio que não aparecem na página real
-- [ ] Foram detetados casos de divergência na `List View`, incluindo colunas adicionais na página real e, nalguns módulos, duplicação semântica de `Date Created`
+- [ ] Foram detetados casos de divergência na `List View`, incluindo colunas adicionais na página real e duplicação semântica de `Date Created` em `Clientes`, `Propostas`, `Faturas`, `Contratos`, `Contactos`, `Notas`, `Formações` e `Formandos`
 - [ ] `Medicinas Ocupacionais` e `Assistências` mantêm-se como módulos com divergências mais consistentes entre configuração do Studio e comportamento visível
 - [ ] `Acessos IEFP` foi o único módulo revisto sem diferenças no `Create / Quickcreate`
 
