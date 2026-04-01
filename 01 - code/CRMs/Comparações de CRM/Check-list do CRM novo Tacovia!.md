@@ -372,17 +372,120 @@
 
 ## ==Contratos==
 ### Vista de edição:
-#### Predefinido
+#### Visão geral
+- [ ] Nº
+- [ ] Assigned To
+- [ ] Anuidade
+- [ ] Versão
+- [ ] Data início
+- [ ] Data fim
+- [ ] Cliente
+- [ ] Data Renovação
+- [ ] Valor Líquido €
+- [ ] Valor do Pack
+- [ ] Pack
+- [ ] Estado do Pack
+- [ ] Descrição
+- [ ] Empresa
+- [ ] Contacto
+- [ ] Data criação
 #### Itens de linha
+- [ ] currency_id
+- [ ] Line Items
+- [ ] total_amt
+- [ ] Desconto
+- [ ] subtotal_amount
+- [ ] Portes de envio
+- [ ] shipping_tax_amt
+- [ ] Taxa
+- [ ] total_amount
 ### Vista de detalhe:
-#### Predefinido
+#### Visão geral
+- [ ] Nº
+- [ ] Assigned To
+- [ ] Anuidade
+- [ ] Versão
+- [ ] Data início
+- [ ] Data fim
+- [ ] Cliente
+- [ ] Data Renovação
+- [ ] Valor Líquido €
+- [ ] Valor do Pack
+- [ ] Pack
+- [ ] Estado do Pack
+- [ ] Descrição
+- [ ] Empresa
+- [ ] Contacto
+- [ ] Data criação
 #### Itens de linha
+- [ ] currency_id
+- [ ] Line Items
+- [ ] total_amt
+- [ ] Desconto
+- [ ] subtotal_amount
+- [ ] Portes de envio
+- [ ] shipping_tax_amt
+- [ ] Taxa
+- [ ] total_amount
 ### Vista de Lista
 #### Predefinido
+- [ ] Nº: [name]
+- [ ] Cliente: [account_id]
+- [ ] Anuidade: [anuidade_c]
+- [ ] Versão: [versao_c]
+- [ ] Data início: [start_date]
+- [ ] Data Renovação: [renewal_date_c]
+- [ ] Data fim: [end_date]
+- [ ] Valor Líquido €: [net_value_c]
+- [ ] Pack: [pack_c]
+- [ ] Estado do Pack: [pack_state_c]
+- [ ] Valor do Pack: [renewal_value_c]
+- [ ] Assigned To: [assigned_user_id]
+- [ ] Data criação: [date_entered]
 ### Criação rápida:
-#### Predefinido
+#### Visão geral
+- [ ] Nº
+- [ ] Annuity
+- [ ] Data início
+- [ ] Data fim
+- [ ] Cliente
+- [ ] Contacto
+- [ ] Net Value €
+- [ ] Pack
+- [ ] Version
+- [ ] Gestor do contrato
+- [ ] Renewal Date
+- [ ] Pack Value
+- [ ] Pack Status
+- [ ] Company
+- [ ] Descrição
+- [ ] Currency
+- [ ] Total
+- [ ] Desconto
+- [ ] Subtotal
+- [ ] Portes de envio
+- [ ] Taxa de envio
+- [ ] Taxa
+- [ ] Total final
+- [ ] Assigned To
+- [ ] Anuidade
+- [ ] Versão
+- [ ] Valor do Pack
+- [ ] Pack
+- [ ] Estado do Pack
+- [ ] Valor Líquido €
+- [ ] Data Renovação
+- [ ] Empresa
+- [ ] Line Items
+#### Itens de linha
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Nº: [name]
+- [ ] Annuity: [annuity]
+- [ ] Data início: [start_date]
+- [ ] Data fim: [end_date]
+- [ ] Cliente: [account_id]
 
 ## ==Contactos==
 ### Vista de edição:
@@ -527,24 +630,170 @@
 ### Filtro
 
 ## ==Acessos IEFP==
-### Vista de edição / Vista de detalhe:
-#### Predefinido
+### Vista de edição:
+#### Visão geral
+- [ ] Name
+- [ ] Contact
+- [ ] Access Date
+- [ ] Access Type
+- [ ] Status
+- [ ] Observations
+### Vista de detalhe:
+#### Visão geral
+- [ ] Name
+- [ ] Contact
+- [ ] Access Date
+- [ ] Access Type
+- [ ] Status
+- [ ] Observations
 ### Vista de Lista
-### Criação rápida:
 #### Predefinido
+- [ ] Name: [name]
+- [ ] Contact: [contact_id]
+- [ ] Access Date: [access_date]
+- [ ] Access Type: [access_type]
+- [ ] Status: [status]
+### Criação rápida:
+#### Visão geral
+- [ ] Name
+- [ ] Contact
+- [ ] Access Date
+- [ ] Access Type
+- [ ] Status
+- [ ] Observations
 ### Filtro
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Name: [name]
+- [ ] Contact: [contact_id]
+- [ ] Access Date: [access_date]
+- [ ] Access Type: [access_type]
+- [ ] Status: [status]
 
 ## ==Assistências==
-### Vista de edição / Vista de detalhe:
+### Vista de edição:
 #### Visão geral
-#### Outro
+- [ ] Assunto
+- [ ] Data
+- [ ] Modo
+- [ ] Data do serviço/auditoria
+- [ ] Enviar/Receber
+- [ ] Contacto
+- [ ] Área
+- [ ] Nome da conta
+- [ ] Country
+- [ ] Concelho
+- [ ] Data Limite
+- [ ] Prioridade
+- [ ] Código
+- [ ] Simulação de Inspeção Realizada?
+- [ ] Situação
+- [ ] Data resolução
+- [ ] Aberto por
+- [ ] Fechado por
+- [ ] Atribuído a
+- [ ] Envio automático de Email ao Cliente quando encerrado assistência
+- [ ] Faturas
+- [ ] Criado em
+#### Detalhes
+- [ ] Descrição do Problema / Serviços
+- [ ] Sugestões
+- [ ] Resolução
+- [ ] Atualizações - Texto
+- [ ] Hardware
+- [ ] Unidades
+- [ ] Atualização interna
+- [ ] Criado por
+### Vista de detalhe:
+#### Visão geral
+- [ ] Assunto
+- [ ] Data
+- [ ] Modo
+- [ ] Data do serviço/auditoria
+- [ ] Enviar/Receber
+- [ ] Contacto
+- [ ] Área
+- [ ] Nome da conta
+- [ ] Country
+- [ ] Concelho
+- [ ] Data Limite
+- [ ] Prioridade
+- [ ] Código
+- [ ] Simulação de Inspeção Realizada?
+- [ ] Situação
+- [ ] Data resolução
+- [ ] Aberto por
+- [ ] Fechado por
+- [ ] Atribuído a
+- [ ] Envio automático de Email ao Cliente quando encerrado assistência
+- [ ] Faturas
+- [ ] Criado em
+#### Detalhes
+- [ ] Descrição do Problema / Serviços
+- [ ] Sugestões
+- [ ] Resolução
+- [ ] Atualizações - Texto
+- [ ] Hardware
+- [ ] Unidades
+- [ ] Atualização interna
+- [ ] Criado por
 ### Vista de Lista
 #### Predefinido
+- [ ] Código: [code_c]
+- [ ] Situação: [status]
+- [ ] Prioridade: [priority]
+- [ ] Assunto: [name]
+- [ ] Nome da conta: [account_id]
+- [ ] phone_office: [phone_office]
+- [ ] Concelho: [billing_address_state]
+- [ ] billing_address_city: [billing_address_city]
+- [ ] Contacto: [who_contacted_c]
+- [ ] Data: [assistence_datetime_c]
+- [ ] Data Limite: [deadline_c]
+- [ ] Data resolução: [resolutions_date_c]
+- [ ] Fechado por: [closed_by_c]
+- [ ] Criado em: [date_entered]
+- [ ] Aberto por: [opened_by_c]
+- [ ] Criado por: [created_by_name]
 ### Criação rápida:
 #### Visão geral
-#### Outro
+- [ ] Assunto
+- [ ] Data
+- [ ] Modo
+- [ ] Data do serviço/auditoria
+- [ ] Enviar/Receber
+- [ ] Contacto
+- [ ] Área
+- [ ] Nome da conta
+- [ ] Country
+- [ ] Concelho
+- [ ] Data Limite
+- [ ] Prioridade
+- [ ] Código
+- [ ] Simulação de Inspeção Realizada?
+- [ ] Situação
+- [ ] Data resolução
+- [ ] Aberto por
+- [ ] Fechado por
+- [ ] Atribuído a
+- [ ] Envio automático de Email ao Cliente quando encerrado assistência
+- [ ] Faturas
+- [ ] Descrição do Problema / Serviços
+- [ ] Sugestões
+- [ ] Resolução
+- [ ] Atualizações - Texto
+- [ ] Hardware
+- [ ] Unidades
+- [ ] Atualização interna
+- [ ] Criado por
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Assunto: [name]
+- [ ] Data: [assistence_datetime_c]
+- [ ] Modo: [mode_c]
+- [ ] Data do serviço/auditoria: [service_date_c]
+- [ ] Enviar/Receber: [send_receive_c]
 
 ## ==Medicina Ocupacional==
 ### Vista de edição:
