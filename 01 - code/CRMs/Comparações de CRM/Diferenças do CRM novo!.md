@@ -78,9 +78,6 @@ A listagem real mostra duas colunas `Date Created`, o que sugere duplicação na
 **Só na página real:**
 - Sem diferenças
 
-**Nota técnica:**
-Não foi possível validar a página real de `Detail View` para este módulo devido ao erro: `Error: Invalid or expired token`.
-
 ## Assistências
 
 ### Filtro
@@ -794,7 +791,6 @@ O `Create / Quickcreate` de `Sessões` na página real expõe `assigned_user_id`
 ## Limitações
 
 - [ ] A comparação foi limitada a `Filtro`, `List View` e `Create / Quickcreate`
-- [ ] Não foi possível validar a página real de `Detail View` de `Fichas de Aptidão` devido ao erro `Error: Invalid or expired token`
 - [ ] A sessão de `admin` perde validade ao navegar na plataforma, sendo necessário fazer `logout` e `login` novamente para voltar a abrir páginas de detalhe
 - [ ] As diferenças foram registadas com base no que estava visível nos prints e no Studio, sem validação adicional de lógica interna ou metadados fora desses ecrãs
 
