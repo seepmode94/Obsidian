@@ -301,9 +301,69 @@ A listagem real mostra `Data de criação` e `Date Created` em simultâneo, o qu
 **Só na página real:**
 - Sem diferenças
 
+## Contratos
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+
+**Só na página real:**
+- [ ] Data Renovação [renewal_date_c]
+- [ ] Versão [versao_c]
+- [ ] Pack [pack_c]
+- [ ] Estado do Pack [pack_state_c]
+- [ ] Valor do Pack [renewal_value_c]
+- [ ] Empresa [empresa_c]
+- [ ] Assigned To [assigned_user_id]
+
+**Nota técnica:**
+O `Filtro` do Studio usa um conjunto mínimo de campos em `Default`, mas a página real mostra um conjunto alargado de campos contratuais, o que sugere uma configuração divergente do filtro visível.
+
+### List View
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real mostra `Data criação` e `Date Created` em simultâneo, o que sugere duplicação semântica na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] Annuity [annuity]
+- [ ] Net Value € [net_value]
+- [ ] Pack [pack]
+- [ ] Version [version]
+- [ ] Gestor do contrato [contract_manager_id]
+- [ ] Renewal Date [renewal_date]
+- [ ] Pack Value [pack_value]
+- [ ] Pack Status [pack_status]
+- [ ] Company [company]
+- [ ] Currency [currency]
+- [ ] Total [total]
+- [ ] Subtotal [subtotal]
+- [ ] Taxa de envio [shipping_tax]
+- [ ] Total final [grand_total]
+
+**Só na página real:**
+- [ ] Data criação [date_entered]
+- [ ] currency_id [currency_id]
+- [ ] total_amt [total_amt]
+- [ ] subtotal_amount [subtotal_amount]
+- [ ] shipping_tax_amt [shipping_tax_amt]
+- [ ] total_amount [total_amount]
+
+**Nota técnica:**
+O `Create / Quickcreate` mistura no Studio campos legacy em inglês com campos custom em português, enquanto a página real privilegia os campos custom e ainda expõe campos técnicos associados aos totais e à secção de `Line Items`.
+
 ## Conclusões
 
 - [ ] Foram identificadas diferenças reais entre o Studio e as páginas visíveis nos módulos `Fichas de Aptidão`, `Assistências` e `Medicinas Ocupacionais`
+- [ ] `Contratos` apresenta diferenças no `Filtro` e no `Create / Quickcreate`, e uma duplicação semântica na `List View`
 - [ ] Em `Medicinas Ocupacionais`, tanto o `Filtro` como a `List View` mostram um padrão consistente de divergência entre `Default` e comportamento real
 - [ ] Em `Assistências`, o `Filtro`, a `List View` e o `Create / Quickcreate` também não coincidem totalmente com o Studio
 - [ ] `Acessos IEFP` não apresentou diferenças no `Create / Quickcreate`
@@ -320,13 +380,13 @@ A listagem real mostra `Data de criação` e `Date Created` em simultâneo, o qu
 - [ ] Clientes
 - [ ] Propostas
 - [ ] Faturas
+- [ ] Contratos
 - [ ] Fichas de Aptidão
 - [ ] Assistências
 - [ ] Acessos IEFP
 - [ ] Medicinas Ocupacionais
 
 **Módulos por rever:**
-- [ ] Contratos
 - [ ] Contactos
 - [ ] Telefonemas
 - [ ] Reuniões
