@@ -8,27 +8,26 @@
 - [ ] Telefone de trabalho
 - [ ] Sítio Internet
 - [ ] Telefone alternativo
-- [ ] Faturação - Rua
-- [ ] Rua - endereço de envio
-- [ ] Nuts II
+- [ ] Endereço de faturação
+- [ ] Endereço de envio
+- [ ] NUTS II
 - [ ] Local de Visita
-- [ ] Email
+- [ ] email1
 - [ ] Descrição
 
 #### Mais detalhes
-- [ ] Tipo de cliente
+- [ ] Tipo
 - [ ] Nº Func.
 - [ ] Área de atividade
 - [ ] Nº Cond.
 - [ ] NIF
 - [ ] Ligeiros
-- [ ] Membro de
+- [ ] parent_name
 - [ ] Pesados
 - [ ] CAE
 - [ ] Nº Estab.
-- [ ] Tipo (mercadorias/passageiros)
+- [ ] Tipo
 - [ ] Enviar lembrete de Pagamento
-- [ ] (preencher)
 
 #### Outro
 - [ ] Atribuído a
@@ -41,9 +40,9 @@
 - [ ] Telefone alternativo
 - [ ] Endereço de faturação
 - [ ] Endereço de envio
-- [ ] Nuts II
+- [ ] NUTS II
 - [ ] Local de Visita
-- [ ] Email
+- [ ] email1
 - [ ] Descrição
 
 #### Mais detalhes
@@ -53,2070 +52,489 @@
 - [ ] Nº Cond.
 - [ ] NIF
 - [ ] Ligeiros
-- [ ] Membro de
+- [ ] parent_name
 - [ ] Pesados
 - [ ] CAE
 - [ ] Nº Estab.
 - [ ] Tipo
 - [ ] Enviar lembrete de Pagamento
-- [ ] (preencher)
 
 #### Outro
 - [ ] Atribuído a
 
 ### Vista de Lista
 #### Predefinido
-- [ ] NIF: [sic_code] 8%
-- [ ] Nome: [name] 24%
-- [ ] Nº Func.: [employees] 5%
-- [ ] Área de atividade: [industry] 10%
-- [ ] Cidade: [billing_address_city] 8%
-- [ ] Concelho: [billing_address_state] 7%
-- [ ] Faturação - País: [billing_address_country] 10%
-- [ ] Local de Visita: [place_of_visit_c] 10%
-- [ ] Telefone: [phone_office] 5%
-- [ ] Nº Estab.: [employees_establishment_c] 3%
-- [ ] Nº Cond.: [n_condutores_c] 3%
-- [ ] Pesados: [ownership] 3%
-- [ ] Ligeiros: [ticker_symbol] 3%
-- [ ] Data de criação: [date_entered] 10%
-- [ ] Utilizador: [assigned_user_name] 10%
 
 ### Criação rápida:
 #### Visão geral
-- [ ] Nome
-- [ ] Telefone de trabalho
-- [ ] Sítio Internet
-- [ ] Fax
-- [ ] Faturação - Rua
-- [ ] Rua - endereço de envio
-- [ ] Nuts II
-- [ ] Email
-- [ ] Descrição
-- [ ] LBL_PROJECT_ACCOUNT
 
 #### Mais detalhes
-- [ ] Tipo
-- [ ] Nº Func.
-- [ ] Área de atividade
-- [ ] Nº Cond.
-- [ ] NIF
-- [ ] Ligeiros
-- [ ] Membro de
-- [ ] Pesados
-- [ ] CAE
-- [ ] Nº Estab.
-- [ ] Tipo
-- [ ] Enviar lembrete de Pagamento
-- [ ] (preencher)
 
 #### Outro
-- [ ] Atribuído a
 
 ### Filtro
 #### Predefinido
-- [ ] Nome: [name]
-- [ ] NIF: [sic_code]
-- [ ] Telefone de trabalho: [phone_office]
-- [ ] Nº Func.: [employees]
-- [ ] Nº Cond.: [n_condutores_c]
-- [ ] Nº Estab.: [employees_establishment_c]
-- [ ] Pesados: [ownership]
-- [ ] Faturação - Rua: [billing_address_street]
-- [ ] Faturação - Cidade: [billing_address_city]
-- [ ] Concelho: [billing_address_state]
-- [ ] Local de Visita: [place_of_visit_c]
-- [ ] País: [billing_address_country]
-- [ ] Nuts II: [nutsii_c]
-- [ ] Atribuído a: [assigned_user_id]
-- [ ] Data de criação: [date_entered]
 
 ## ==Propostas==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Título
-- [ ] Clientes
-- [ ] Número da proposta
-- [ ] Fase proposta
-- [ ] Válida até
-- [ ] Data prevista fecho
-- [ ] Situação da fatura
-- [ ] Condições de pagamento
-- [ ] Situação de aprovação
-- [ ] Empresa
-- [ ] Descrição Proposta
-- [ ] Notas para a Faturação
-- [ ] Contactos
-- [ ] Atribuído a
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Título
-- [ ] Clientes
-- [ ] Número da proposta
-- [ ] Fase proposta
-- [ ] Válida até
-- [ ] Data prevista fecho
-- [ ] Situação da fatura
-- [ ] Condições de pagamento
-- [ ] Situação de aprovação
-- [ ] Empresa
-- [ ] Descrição Proposta
-- [ ] Notas para a Faturação
-- [ ] Contactos
-- [ ] Atribuído a
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Núm: [number] 5%
-- [ ] Título: [name] 10%
-- [ ] Clientes: [billing_account] 15%
-- [ ] Data prevista fecho: [data_prevista_fecho_c] 10%
-- [ ] Cidade: [billing_address_city] 10%
-- [ ] Concelho: [billing_address_state] 7%
-- [ ] Total final: [total_amount] 10%
-- [ ] Total: [total_amt] 10%
-- [ ] Fase proposta: [stage] 10%
-- [ ] Situação de aprovação: [approval_status] 10%
-- [ ] Utilizador: [assigned_user_name] 10%
-- [ ] Data criação: [date_entered] 5%
-- [ ] Data alteração: [date_modified] 10%
-- [ ] Criado por: [created_by_name] 10%
 
 ### Criação rápida:
 #### Visão geral
-- [ ] Título
-- [ ] Oportunidade
-- [ ] Número da proposta
-- [ ] Fase proposta
-- [ ] Válida até
-- [ ] Situação da fatura
-- [ ] Atribuído a
-- [ ] Condições de pagamento
-- [ ] Situação de aprovação
-- [ ] Descrição Proposta
 
 #### Dados de endereço
-- [ ] Clientes
-- [ ] (preencher)
-- [ ] Contactos
-- [ ] (preencher)
-- [ ] Faturação - Rua
-- [ ] Rua - morada envio
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Filtro
 #### Predefinido
-- [ ] Título: [name]
-- [ ] Fase proposta: [stage]
-- [ ] Clientes: [billing_account]
-- [ ] Data prevista fecho: [data_prevista_fecho_c]
-- [ ] Válida até: [expiration]
-- [ ] Situação de aprovação: [approval_status]
-- [ ] Situação da fatura: [invoice_status]
-- [ ] Contactos: [billing_contact]
-- [ ] Número da proposta: [number]
-- [ ] Concelho: [billing_address_state]
-- [ ] Cidade: [billing_address_city]
-- [ ] Total final: [total_amount]
-- [ ] Condições de pagamento: [term]
-- [ ] Atribuído: [assigned_user_id]
-- [ ] Data alteração: [date_modified]
-- [ ] Data criação: [date_entered]
 
 ## ==Faturas==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Título
-- [ ] Vendedor
-- [ ] Número da fatura
-- [ ] Clientes
-- [ ] (preencher)
-- [ ] Tipo
-- [ ] Descrição
-- [ ] Data da fatura
-- [ ] Valor Pago(€)
-- [ ] Data Pagamento
-- [ ] Valor Aberto(€)
-- [ ] Pack Avançado
-- [ ] Valor renovação(€)
-- [ ] Data Renovação
-- [ ] Enviar Email Automático a Relembrar Pagamento
-- [ ] Situação
-- [ ] Contratos
-- [ ] Notas de Faturação
-- [ ] Atribuído a
-- [ ] Criado por
-- [ ] Data de criação
-- [ ] Data de alteração
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Título
-- [ ] Vendedor
-- [ ] Número da fatura
-- [ ] Clientes
-- [ ] (preencher)
-- [ ] Tipo
-- [ ] Descrição
-- [ ] Data da fatura
-- [ ] Valor Pago(€)
-- [ ] Data Pagamento
-- [ ] Valor Aberto(€)
-- [ ] Pack Avançado
-- [ ] Valor renovação(€)
-- [ ] Data Renovação
-- [ ] Enviar Email Automático a Relembrar Pagamento
-- [ ] Situação
-- [ ] Contratos
-- [ ] Notas da Faturação
-- [ ] Atribuído a
-- [ ] Criado por
-- [ ] Data de criação
-- [ ] Data de alteração
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Núm: [number] 5%
-- [ ] Título: [name] 15%
-- [ ] Clientes: [billing_account] 15%
-- [ ] Data da fatura: [invoice_date] 10%
-- [ ] Descrição: [description] 10%
-- [ ] Total final: [total_amount] 10%
-- [ ] Subtotal: [subtotal_amount] 10%
-- [ ] Valor Aberto(€): [open_value_c] 10%
-- [ ] Valor Pago(€): [paid_value_c] 10%
-- [ ] Data Pagamento: [due_date] 10%
-- [ ] Data Renovação: [quote_date] 10%
-- [ ] Valor renovação(€): [renovation_value_c] 10%
-- [ ] Vendedor: [salesperson_c] 10%
-- [ ] Data de criação: [date_entered] 5%
-- [ ] Utilizador: [assigned_user_name] 10%
-- [ ] Criado por: [created_by_name] 10%
 
 ### Criação rápida:
 #### Visão geral
-- [ ] Título
-- [ ] Vendedor
-- [ ] Número da fatura
-- [ ] Clientes
-- [ ] Descrição
-- [ ] Data da fatura
-- [ ] Valor Pago(€)
-- [ ] Data Pagamento
-- [ ] Valor Aberto(€)
-- [ ] Pack Avançado
-- [ ] Valor renovação(€)
-- [ ] Data Renovação
-- [ ] Enviar Email Automático a Relembrar Pagamento
-- [ ] Situação
-- [ ] Atribuído a
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Filtro
 #### Predefinido
-- [ ] Valor Aberto(€): [open_value_c]
-- [ ] Total final: [total_amount]
-- [ ] Data da fatura: [invoice_date]
-- [ ] Data Pagamento: [due_date]
-- [ ] Título: [name]
-- [ ] Clientes: [billing_account]
-- [ ] Valor pago(€): [paid_value_c]
-- [ ] Vendedor: [salesperson_c]
-- [ ] Atribuído a: [assigned_user_id]
-- [ ] Categoria do produto: [product_category]
-- [ ] Produtos: [product_name_filter]
-- [ ] Itens de linha: [line_items]
 
 ## ==Contratos==
 
 ### Vista de edição:
 #### Predefinido
-- [ ] Nº
-- [ ] Gestor do contrato
-- [ ] Anuidade
-- [ ] Versão
-- [ ] Cliente
-- [ ] Data Renovação
-- [ ] Valor Líquido €
-- [ ] Valor do Pack
-- [ ] Data início
-- [ ] Data fim
-- [ ] Pack
-- [ ] Estado do Pack
-- [ ] Descrição
-- [ ] Empresa
-- [ ] Contacto
-- [ ] Data criação
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Vista de detalhe:
 #### Predefinido
-- [ ] Nº
-- [ ] Gestor do contrato
-- [ ] Anuidade
-- [ ] Versão
-- [ ] Cliente
-- [ ] Data Renovação
-- [ ] Valor Líquido €
-- [ ] Valor do Pack
-- [ ] Data início
-- [ ] Data fim
-- [ ] Pack
-- [ ] Estado do Pack
-- [ ] Descrição
-- [ ] Empresa
-- [ ] Contacto
-- [ ] Data criação
 
 #### Itens de linha
-- [ ] Moeda
-- [ ] Itens de linha
-- [ ] (preencher)
-- [ ] (empty)
-- [ ] Total
-- [ ] Desconto
-- [ ] Subtotal
-- [ ] Portes de envio
-- [ ] Taxa de envio
-- [ ] Taxa
-- [ ] Total final
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Nº: [name]
-- [ ] Cliente: [contract_account]
-- [ ] Anuidade: [anuidade_list_c]
-- [ ] Versão: [versao_c]
-- [ ] Data início: [start_date]
-- [ ] Data Renovação: [renewal_date_c]
-- [ ] Data fim: [end_date]
-- [ ] Valor Líquido €: [net_value_c]
-- [ ] Pack: [pack_c]
-- [ ] Estado do Pack: [pack_state_c]
-- [ ] Valor do Pack: [renewal_value_c]
-- [ ] Gestor do contrato: [assigned_user_name]
-- [ ] Data criação: [date_entered]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Nº
-- [ ] Gestor do contrato
-- [ ] Anuidade
-- [ ] Versão
-- [ ] Cliente
-- [ ] Data Renovação
-- [ ] Valor Líquido €
-- [ ] Valor do Pack
-- [ ] Data início
-- [ ] Data fim
-- [ ] Pack
-- [ ] Estado do Pack
-- [ ] Descrição
-- [ ] Empresa
-- [ ] Contacto
-- [ ] Data criação
 
 ### Filtro
 #### Predefinido
-- [ ] Nº: [name]
-- [ ] Cliente: [contract_account]
-- [ ] Anuidade: [anuidade_list_c]
-- [ ] Pack: [pack_c]
-- [ ] Estado do Pack: [pack_state_c]
-- [ ] Data início: [start_date]
-- [ ] Data fim: [end_date]
-- [ ] Data Renovação: [renewal_date_c]
-- [ ] Valor do contrato: [total_contract_value]
-- [ ] Valor do Pack: [renewal_value_c]
-- [ ] Versão: [versão_c]
-- [ ] Gestor do contrato: [assigned_user_id]
 
 ## ==Contactos==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Nome próprio
-- [ ] Data Admissão
-- [ ] Apelido
-- [ ] Telefone trabalho
-- [ ] Data Nascimento
-- [ ] Telemóvel
-- [ ] Cargo
-- [ ] Fax
-- [ ] Departamento
-- [ ] Sessão
-- [ ] Nome da conta
-- [ ] Profissão
-- [ ] Rua - endereço principal
-- [ ] Rua - endereço alternativo
-- [ ] Número CC
-- [ ] Data Validade CC
-- [ ] NIF
-- [ ] Nuts II
-- [ ] Estado civil
-- [ ] Nacionalidade
-- [ ] Sexo
-- [ ] Freguesia de nascimento
-- [ ] ADR?
-- [ ] Concelho de nascimento
-- [ ] Tipo
-- [ ] Habilitações Literárias
-- [ ] Email
-- [ ] Descrição
-- [ ] Tipo de Recurso
-- [ ] Número do Beneficiário
-- [ ] Último Exame
-- [ ] Próximo Exame
 
 #### Mais detalhes
-- [ ] Supervisionado por
-- [ ] Sincronizar contacto
-- [ ] Fonte da pista
-- [ ] Não telefonar
-- [ ] Campanha
 
 #### Outro
-- [ ] Atribuído a
-- [ ] (preencher)
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Nome próprio
-- [ ] Data Admissão
-- [ ] Apelido
-- [ ] Telefone Trabalho
-- [ ] Data Nascimento
-- [ ] Telemóvel
-- [ ] Cargo
-- [ ] Fax
-- [ ] Departamento
-- [ ] Sessão
-- [ ] Nome da conta
-- [ ] Profissão
-- [ ] Endereço principal
-- [ ] Endereço alternativo
-- [ ] Número CC
-- [ ] Data Validade CC
-- [ ] NIF
-- [ ] Nuts II
-- [ ] Estado civil
-- [ ] Nacionalidade
-- [ ] Sexo
-- [ ] Habilitações Literárias
-- [ ] ADR
-- [ ] (preencher)
-- [ ] É Formando?
-- [ ] É formador?
-- [ ] Tipo
-- [ ] (preencher)
-- [ ] Email
-- [ ] Descrição
-- [ ] Tipo de Recurso
-- [ ] Número do Beneficiário
-- [ ] Último Exame
-- [ ] Próximo Exame
 
 #### Mais detalhes
-- [ ] Supervisionado por
-- [ ] Sincronizar contacto
-- [ ] Fonte da pista
-- [ ] Não telefonar
-- [ ] Campanha
 
 #### Outro
-- [ ] Atribuído a
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Nome: [name]
-- [ ] Tipo: [contact_type_c]
-- [ ] Cargo: [title]
-- [ ] Nome da conta: [account_name]
-- [ ] Departamento: [department]
-- [ ] Email: [email1]
-- [ ] Telefone trabalho: [phone_work]
-- [ ] Utilizador: [assigned_user_name]
-- [ ] Data criação: [date_entered]
 
 ### Criação rápida:
 #### Visão geral
-- [ ] Nome próprio
-- [ ] Apelido
-- [ ] Telefone trabalho
-- [ ] Data Nascimento
-- [ ] Telemóvel
-- [ ] Cargo
-- [ ] Fax
-- [ ] Departamento
-- [ ] (preencher)
-- [ ] Nome da conta
-- [ ] Rua - endereço principal
-- [ ] Rua - Endereço alternativo
-- [ ] Número CC
-- [ ] Data Validade CC
-- [ ] NIF
-- [ ] Nuts II
-- [ ] Estado civil
-- [ ] Nacionalidade
-- [ ] Sexo
-- [ ] habilitações Literárias
-- [ ] ADR?
-- [ ] (preencher)
-- [ ] Tipo
-- [ ] (preencher)
-- [ ] Email
-- [ ] Descrição
 
 #### Mais detalhes
-- [ ] Supervisionado por
-- [ ] Sincronizar contacto
-- [ ] Fonte da pista
-- [ ] Não telefonar
-- [ ] Campanha
 
 #### Outro
-- [ ] Atribuído a
 
 ### Filtro
 #### Predefinido
-- [ ] Nome próprio: [first_name]
-- [ ] Apelido: [last_name]
-- [ ] Todos os telefones: [phone]
-- [ ] Cidade: [address_city]
-- [ ] Concelho: [address_state]
-- [ ] Nome da conta: [account_name]
-- [ ] Departamento: [department]
-- [ ] NIF: [vat_number_c]
-- [ ] País: [primary_address_country]
-- [ ] Todos os endereços de email: [email]
-- [ ] Tipo: [contact_type_c]
-- [ ] Cargo: [title]
-- [ ] Atribuído a: [assigned_user_id]
 
 ## ==Telefonemas==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Assunto
-- [ ] Situação
-- [ ] Data e hora de início
-- [ ] Referente a
-- [ ] Duração
-- [ ] Lembretes
-- [ ] Descrição
-- [ ] Propostas
-- [ ] Atribuído a
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Assunto
-- [ ] Situação
-- [ ] Data e hora de início
-- [ ] Referente a
-- [ ] Duração
-- [ ] Lembretes
-- [ ] Descrição
-- [ ] Atribuído a
-- [ ] Propostas
 
 #### Reagendar
-- [ ] Histórico tentativas telefonemas
-- [ ] (preencher)
 
 #### Outro
-- [ ] Data criação
-- [ ] Data alteração
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Fechar: [set_complete]
-- [ ] Data de início: [date_start]
-- [ ] Assunto: [name]
-- [ ] Situação: [status]
-- [ ] Contacto: [contacto_name]
-- [ ] Data criação: [date_entered]
-- [ ] Referente a: [parent_name]
-- [ ] Atribuído a: [assigned_user_name]
-- [ ] Propostas: [aos_quotes_calls_1_name]
-- [ ] Histórico tentativas telefonemas: [reschedule_history]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Assunto
-- [ ] Situação
-- [ ] Data e hora de início
-- [ ] Referente a
-- [ ] Duração
-- [ ] Lembretes
-- [ ] Atribuído a
-- [ ] Descrição
 
 ### Filtro
 #### Predefinido
-- [ ] Assunto: [name]
-- [ ] Referente a: [parent_name]
-- [ ] Meus itens: [current_user_only]
-- [ ] Direção: [direction]
-- [ ] Situação: [status]
-- [ ] Data início: [date_start]
-- [ ] Data criação: [date_entered]
-- [ ] Data alteração: [date_modified]
-- [ ] Atribuído a: [assigned_user_id]
 
 ## ==Reuniões==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Assunto
-- [ ] Situação
-- [ ] Data início
-- [ ] Cliente
-- [ ] Data fim
-- [ ] Local
-- [ ] Duração
-- [ ] Notificação auditoria ao cliente
-- [ ] Lembretes
-- [ ] Descrição
-- [ ] Propostas
 
 #### Outro
-- [ ] Atribuído a
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Assunto
-- [ ] Situação
-- [ ] Data e hora de início
-- [ ] Cliente
-- [ ] Data fim
-- [ ] Local
-- [ ] Duração
-- [ ] Notificações auditoria ao cliente
-- [ ] Lembretes
-- [ ] Descrição
-- [ ] Propostas
 
 #### Outro
-- [ ] Atribuído a
 
 ### Vista de Lista
-- [ ] Fechar: [set_complete]
-- [ ] Data de início: [date_start]
-- [ ] Assunto: [name]
-- [ ] Contacto: [contact_name]
-- [ ] Cliente: [parent_name]
-- [ ] Propostas: [aos_quotes_meeting_1_name]
-- [ ] Local: [location]
-- [ ] Utilizador atribuído: [assigned_user_name]
-- [ ] Data criação: [date_entered]
-- [ ] Criado por: [created_by_name]
 
 ### Criação rápida:
 #### Visão geral
-- [ ] Assunto
-- [ ] Situação
-- [ ] Data início
-- [ ] Cliente
-- [ ] Data fim
-- [ ] Local
-- [ ] Duração
-- [ ] Notificação auditoria ao cliente
-- [ ] Lembretes
-- [ ] Descrição
-- [ ] Propostas
 
 #### Outro
-- [ ] Atribuído a
 
 ### Filtro
 #### Predefinido
-- [ ] Assunto: [name]
-- [ ] Cliente: [parent_name]
-- [ ] Meus itens: [current_user_only]
-- [ ] Situação: [status]
-- [ ] Atribuído a: [assigned_user_id]
 
 ## ==Documentos==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Nome do ficheiro
-- [ ] Situação
-- [ ] Nome do documento
-- [ ] Revisão
-- [ ] Tipo de documento
-- [ ] Modelo?
-- [ ] Data de publicação
-- [ ] Categoria
-- [ ] Data de validade
-- [ ] Subcategoria
-- [ ] Descrição
-- [ ] Documento relacionado
-- [ ] Faturas(Histórico)
-- [ ] Medicina Ocupacional
 
 #### Outro
-- [ ] Atribuído a
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Nome do ficheiro
-- [ ] Situação
-- [ ] Nome do documento
-- [ ] Revisão
-- [ ] Tipo de documento
-- [ ] Modelo
-- [ ] Data de publicação
-- [ ] Categoria
-- [ ] Data de validade
-- [ ] Subcategoria
-- [ ] Descrição
-- [ ] Documento relacionado
-- [ ] Revisão do documento relacionado
-- [ ] Atribuído a
-- [ ] Faturas(Histórico)
-- [ ] Medicina Ocupacional
-- [ ] (preencher)
 
 #### LBL_REVISIONS_PANEL
-- [ ] Revisão criada por
-- [ ] Data de criação da última revisão
-- [ ] Situação
-- [ ] Data de criação
-- [ ] Data de alteração
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Nome do documento: [document_name]
-- [ ] Nome do ficheiro: [filename]
-- [ ] Data de criação: [date_entered]
-- [ ] Criado por: [created_by_name]
-- [ ] Descrição: [description]
-- [ ] Tipo de documento: [template_type]
-- [ ] Categoria: [category_id]
-- [ ] Data de validade: [exp_date]
-- [ ] Utilizador: [assigned_user_name]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Nome do ficheiro
-- [ ] Nome do documento
-- [ ] Atribuído a
-- [ ] Data de publicação
-- [ ] Descrição
 
 ### Filtro
 #### Predefinido
-- [ ] Nome do documento: [document_name]
-- [ ] Situação: [status]
-- [ ] Tipo de documento: [template_type]
-- [ ] Categoria: [category_id]
-- [ ] Subcategoria: [subcategory_id]
-- [ ] Atribuído a: [assigned_user_id]
-- [ ] Data de publicação: [active_date]
-- [ ] Data de validade: [exp_date]
 
 ## ==Notas==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Contacto
-- [ ] Referente a
-- [ ] Assunto da Nota
-- [ ] (preencher)
-- [ ] Anexo
-- [ ] Nota
-- [ ] (preencher)
 
 #### Outro
-- [ ] Atribuído a
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Contacto
-- [ ] Referente a
-- [ ] Assunto
-- [ ] Anexo
-- [ ] Nota
-- [ ] Atribuído a
-- [ ] (preencher)
 
 #### Outro
-- [ ] Data de alteração
-- [ ] Data de criação
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Assunto: [name]
-- [ ] Contacto: [contact_name]
-- [ ] Relacionada com: [parent_name]
-- [ ] Anexo: [filename]
-- [ ] Criado por: [created_by_name]
-- [ ] Data de criação: [date_entered]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Contacto
-- [ ] Referente a
-- [ ] Assunto
-- [ ] Atribuído a
-- [ ] Anexo
-- [ ] Nota
 
 ### Filtro
-- [ ] Assunto da Nota: [name]
-- [ ] Contacto: [contact_name]
-- [ ] Referente a: [parent_name]
-- [ ] Anexo: [filename]
-- [ ] Data de criação: [date_entered]
 
 ## ==Emails==
 
 ### Vista de edição:
-- [ ] Atribuído a
-- [ ] Relacionar com
-- [ ] Categoria
 
 ### Vista de detalhe:
-- [ ] Consentir
-- [ ] Data de envio/receção
-- [ ] De
-- [ ] Para
-- [ ] Cc
-- [ ] Bcc
-- [ ] Assunto
-- [ ] Corpo
-- [ ] Relacionar com
-- [ ] Data de criação
-- [ ] Data de alteração
-- [ ] Categoria
 
 ### Vista de Lista
-- [ ] De: [from_addr_name]
-- [ ] Indicador: [indicator]
-- [ ] Assunto: [subject]
-- [ ] Data de criação: [date_entered]
-- [ ] Data de envio/receção: [date_sent_received]
-- [ ] Categoria: [category_id]
 
 ### Criação rápida:
-- [ ] Assunto
-- [ ] Atribuído a
-- [ ] Categoria
 
 ### Filtro
-- [ ] Palavras-chave de IMAP: [imap_keywords]
-- [ ] De: [from_addr_name]
-- [ ] Para: [to_addrs_names]
-- [ ] Assunto: [name]
-- [ ] Corpo: [description]
-- [ ] Atribuído a: [assigned_user_id]
-- [ ] Categoria: [category_id]
-- [ ] Relacionar com: [parent_name]
 
 ## ==Formações==
 
 ### Vista de edição:
 #### Predefinido
-- [ ] Ação
-- [ ] Ano
-- [ ] Tipo de ação
-- [ ] Estado
-- [ ] Data Formação
-- [ ] Data Fim da formação
-- [ ] Cliente
-- [ ] Formador
-- [ ] Contacto
-- [ ] Sessões
-- [ ] Nº horas
-- [ ] Data adjudicação
-- [ ] Valor formação(€)
-- [ ] NUTS II
-- [ ] Nº Faturados
-- [ ] Média dos Formandos(€)
-- [ ] Nº presenças
-- [ ] Com Cheque Formação
-- [ ] Nº Cand
-- [ ] Data Candidatura
-- [ ] (preencher)
 
 #### Recursos Administrativos
-- [ ] Data Verificação
-- [ ] Data Envio Email info ao Cliente
-- [ ] Data entrega informação do formando
-- [ ] Data Confirmação Telf Cliente
-- [ ] Data Envio Adjudicação ao Formador
-- [ ] Data a Relembrar Formação
-- [ ] Nº certificados enviados
-- [ ] Data envio certificados
-- [ ] Followup Cliente
-- [ ] Observações
-- [ ] Data Digitalização
-- [ ] Data Análise Estatistica
-- [ ] Ação Fechada?
-- [ ] Data Fecho ação
-- [ ] Fechado por
-- [ ] (preencher)
 
 #### Recursos Técnicos
-- [ ] Local
-- [ ] Nº Fatura
-- [ ] Morada
-- [ ] Valor
-- [ ] Sala
-- [ ] Data Pagamento Sala
-- [ ] Projector
 
 #### Pagamentos
-- [ ] Nº factura
-- [ ] Data Pagamento
-- [ ] Valor factura(€)
-- [ ] Valor pago(€)
-- [ ] Data factura
-- [ ] (preencher)
 
 #### Outros
-- [ ] Atribuído a
 
 ### Vista de detalhe:
 #### Predefinido
-- [ ] Ação
-- [ ] Ano
-- [ ] Tipo de Ação
-- [ ] Estado
-- [ ] Data Formação
-- [ ] Data Fim da Formação
-- [ ] Cliente
-- [ ] Formador
-- [ ] Contacto
-- [ ] Sessões
-- [ ] Nº horas
-- [ ] Data adjudicação
-- [ ] Valor formação(€)
-- [ ] NUTS II
-- [ ] Nº Faturados
-- [ ] Média dos Formandos(€)
-- [ ] Nº presenças
-- [ ] Com Cheque Formação
-- [ ] Nº Cand
-- [ ] Data Candidatura
-- [ ] (preencher)
 
 #### Recursos Administrativos
-- [ ] Data Verificação
-- [ ] Data Envio Email info ao Cliente
-- [ ] Data entrega informação ao Formando
-- [ ] Data Confirmação Telf Cliente
-- [ ] Data Envio Adjudicação ao Formador
-- [ ] Data a Relembrar Formação
-- [ ] Nº certificados enviados
-- [ ] Data envio certificados
-- [ ] Followup Cliente
-- [ ] Observações
-- [ ] Data Digitalização
-- [ ] Data Análise Estatistica
-- [ ] Ação Fechada?
-- [ ] Data Fecho ação
-- [ ] Fechado por
-- [ ] (preencher)
 
 #### Recursos Técnicos
-- [ ] Local
-- [ ] Nº Fatura
-- [ ] Morada
-- [ ] Valor
-- [ ] Sala
-- [ ] Data Pagamento Sala
-- [ ] Projector
 
 #### Pagamentos
-- [ ] Nº factura
-- [ ] Data Pagamento
-- [ ] Valor factura(€)
-- [ ] Valor pago(€)
-- [ ] Data factura
-- [ ] (preencher)
 
 #### Outros
-- [ ] Atribuído a
 
 ### Vista de Lista
-- [ ] Ação: [formation_action]
-- [ ] Tipo de ação: [name]
-- [ ] Cliente: [accounts_sdmod_training_1_name]
-- [ ] Contacto: [contacto]
-- [ ] Ano: [year]
-- [ ] Followup Cliente: [followup_client_c]
-- [ ] Data Formação: [formation_date]
-- [ ] Valor factura(€): [invoice_value]
-- [ ] Data Pagamento: [payment_date]
-- [ ] Estado: [status]
-- [ ] Local: [place]
-- [ ] Valor pago (€): [paid_value_c]
-- [ ] Nº Faturados: [trainees_number]
-- [ ] Nº presenças: [trainees_number_action_c]
-- [ ] Nº horas: [hours_number]
-- [ ] Data Candidatura: [data_candidatura_c]
-- [ ] Nº cand: [formation_check_quantity_c]
-- [ ] Vendedor: [salesperson_c]
-- [ ] Atribuído a: [assigned_user_name]
-- [ ] Criado em: [date_entered]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Ação
-- [ ] Ano
-- [ ] Tipo de ação
-- [ ] Estado
-- [ ] Data Formação
-- [ ] Data Fim da Formação
-- [ ] Cliente
-- [ ] Contacto
-- [ ] Sessões
-- [ ] Nº horas
-- [ ] Data adjudicação
-- [ ] Valor formação (€)
-- [ ] NUTS II
-- [ ] Nº Faturados
-- [ ] Média dos Formandos (€)
-- [ ] Nº presenças
-- [ ] Com Cheque Formação
-- [ ] Nº cand
 
 #### Recursos Administrativos
-- [ ] Data Verificação
-- [ ] Data Envio Email Info ao Cliente
-- [ ] Data entrega informação do formando
-- [ ] Data Confirmação Telf Cliente
-- [ ] Data Envio Adjudicação ao Formador
-- [ ] Data a Relembrar Formação
-- [ ] Nº certificados enviados
-- [ ] Data envio certificados
-- [ ] Followup Cliente
-- [ ] Observações
-- [ ] Ação Fechada?
 
 #### Recursos Técnicos
-- [ ] Local
-- [ ] Nº Fatura
-- [ ] Morada
-- [ ] Valor
-- [ ] Sala
-- [ ] Data Pagamento Sala
-- [ ] Projector
 
 #### Pagamentos
-- [ ] Nº factura
-- [ ] Data Pagamento
-- [ ] Valor factura (€)
-- [ ] Valor pago (€)
-- [ ] Data factura
-- [ ] (preencher)
 
 #### Outros
-- [ ] Atribuído a
-- [ ] Vendedor
 
 ### Filtro
-- [ ] Ação: [formation_action]
-- [ ] Cliente: [accounts_sdmod_training_1_name]
-- [ ] Ano: [year]
-- [ ] Local: [place]
-- [ ] Data Pagamento: [payment_date]
-- [ ] Tipo de ação: [name]
-- [ ] Data Formação: [formation_date]
-- [ ] Data Envio Email Info ao Cliente: [cliente_email_info_date_c]
-- [ ] Valor pago (€): [paid_value_c]
-- [ ] Data Inicio Candidatura: [application_start_date_c]
-- [ ] Data Receção Info Cliente: [client_info_reception_date_c]
-- [ ] Data envio certificados: [sent_certificates_date]
-- [ ] Data Análise Estatistica: [data_analise_estatistica_c]
-- [ ] Data Fecho ação: [data_fecho_acao_c]
-- [ ] Data Digitalização: [data_da_digitalizacao_c]
-- [ ] Estado: [status]
-- [ ] NUTS II: [nutsii_c]
-- [ ] Com Cheque Formação: [formation_check_checkbox_c]
-- [ ] Criado em: [date_entered]
-- [ ] Atribuído a: [assigned_user_name]
-- [ ] Vendedor: [salesperson_c]
 
 ## ==Formandos==
 
 ### Vista de edição:
 #### Predefinido
-- [ ] Contacto
-- [ ] Atribuído a
-- [ ] Cliente
-- [ ] Nº acção
-- [ ] Nome da ação
-- [ ] Horas
-- [ ] Tipos de Formação
-- [ ] Local
 
 #### IEFP
-- [ ] Data Inicio Submissão IEFP Formando
-- [ ] Nº de candidatura IEFP
-- [ ] Data Candidatura Formando
-- [ ] Estado Candidatura
-- [ ] Data Verificação portal IEFP - Estado da Candidatura
-- [ ] Data Notificação do Pedido
-- [ ] Data limite p/ resposta
-- [ ] Razões de indeferimento / Dados
-- [ ] Data Pedido Dados Adicionais
-- [ ] Data Envio Dados Adicionais Portal IEFP
-- [ ] Data Deferimento
-- [ ] Processo encerrado?
-- [ ] Valor Aprovado em Candidatura IEFP (€)
-- [ ] Data Envio Resultado a Clientes
 
 #### Certificados Internos
-- [ ] Data Emissão certificado Internos
-- [ ] Data envio certificado
-- [ ] Certificado Nº
-- [ ] N/ Referência
-- [ ] Data da Ação - Inicio
-- [ ] Avaliação
-- [ ] Data da Ação - Fim
-- [ ] (preencher)
 
 #### SIGO
-- [ ] Data Emissão Certificado SIGO
-- [ ] Data inicial certificados SIGO
-- [ ] Código da Ação - SIGO
-- [ ] Data final certificados SIGO
-- [ ] Data upload IEFP
-- [ ] Sigo nº
 
 #### IMTT
-- [ ] Nº Código Acção IMT
-- [ ] Data Inicio Candidatura
-- [ ] Data envio certificados
-- [ ] Data Fecho da Candidatura
-- [ ] Processo encerrado?
 
 ### Vista de detalhe:
 #### Predefinido
-- [ ] Contacto
-- [ ] Atribuído a
-- [ ] Cliente
-- [ ] Nº acção
-- [ ] Nome da ação
-- [ ] Horas
-- [ ] Tipos de Formação
-- [ ] Local
 
 #### IEFP
-- [ ] Data Inicio Submissão IEFP Formando
-- [ ] Nº de candidatura IEFP
-- [ ] Data Candidatura Formando
-- [ ] Estado Candidatura
-- [ ] Data Verificação portal IEFP - Estado da Candidatura
-- [ ] Data Notificação do Pedido
-- [ ] Data limite p/ resposta
-- [ ] Razões de indeferimento / Dados
-- [ ] Data Pedido Dados Adicionais
-- [ ] Data Envio Dados Adicionais Portal IEFP
-- [ ] Data Deferimento
-- [ ] Processo encerrado?
-- [ ] Valor Aprovado em Candidatura IEFP (€)
-- [ ] Data Envio Resultado a Clientes
 
 #### Certificados Internos
-- [ ] Data Emissão certificado Internos
-- [ ] Data envio certificado
-- [ ] Certificado Nº
-- [ ] N/ Referência
-- [ ] Data da Ação - Inicio
-- [ ] Avaliação
-- [ ] Data da Ação - Fim
-- [ ] (preencher)
 
 #### SIGO
-- [ ] Data Emissão Certificado SIGO
-- [ ] Data inicial certificados SIGO
-- [ ] Código da Ação - SIGO
-- [ ] Data final certificados SIGO
-- [ ] Data upload IEFP
-- [ ] Sigo nº
 
 #### IMTT
-- [ ] Nº Código Acção IMT
-- [ ] Data Inicio Candidatura
-- [ ] Data envio certificados
-- [ ] Data Fecho da Candidatura
-- [ ] Processo encerrado?
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Ação: [name]
-- [ ] Nome da ação: [description]
-- [ ] Horas: [formation_hours_c]
-- [ ] Nº acção: [action_number_c]
-- [ ] Contacto: [contacts_sdmod_training_control_1_name]
-- [ ] Cliente: [accounts_sdmod_training_control_1_name]
-- [ ] Data Inicio Submissão IEFP Formando: [iefp_submission_date]
-- [ ] Nº de candidatura IEFP: [iefp_application_number]
-- [ ] Estado Candidatura: [candidature_status_c]
-- [ ] Data Verificação portal IEFP - Estado da Candidatura: [iefp_verification_date]
-- [ ] Certificado Nº: [intern_certificate_number_c]
-- [ ] Data envio certificado: [certificate_sent_date]
-- [ ] Código da Ação - SIGO: [sigo_formation_code]
-- [ ] Sigo nº: [sigo_n_c]
-- [ ] Data upload IEFP: [iefp_upload_date]
-- [ ] Criado em: [date_entered]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Contacto
-- [ ] Atribuído a
-- [ ] Cliente
-- [ ] Nº acção
-- [ ] Nome da ação
-- [ ] Horas
-- [ ] Tipos de Formação
-- [ ] Local
 
 #### IEFP
-- [ ] Data Inicio Submissão IEFP Formando
-- [ ] Nº de candidatura IEFP
-- [ ] Data Candidatura Formando
-- [ ] Estado Candidatura
-- [ ] Data Verificação portal IEFP - Estado da Candidatura
-- [ ] Data Notificação do Pedido
-- [ ] Data limite p/ resposta
-- [ ] Razões de indeferimento / Dados
-- [ ] Data Pedido Dados Adicionais
-- [ ] Data Envio Dados Adicionais Portal IEFP
-- [ ] Data Deferimento
-- [ ] Valor Aprovado em Candidatura IEFP (€)
-- [ ] Data Envio Resultado a Clientes
-- [ ] Processo encerrado?
 
 #### Certificados Internos
-- [ ] Data Emissão certificado Internos
-- [ ] Data envio certificado
-- [ ] Certificado Nº
-- [ ] N/ Referência
-- [ ] Data da Ação - Inicio
-- [ ] Avaliação
-- [ ] Data da Ação - Fim
-- [ ] (preencher)
 
 #### SIGO
-- [ ] Data Emissão Certificado SIGO
-- [ ] Data inicial certificados SIGO
-- [ ] Código da Ação - SIGO
-- [ ] Data final certificados SIGO
-- [ ] Data upload IEFP
-- [ ] (preencher)
 
 #### IMTT
-- [ ] Nº Código Acção IMT
-- [ ] Data Inicio Candidatura
-- [ ] Data envio certificados
-- [ ] Data Fecho da Candidatura
-- [ ] Processo encerrado?
 
 ### Filtro
 #### Predefinido
-- [ ] Nº acção: [action_number_c]
-- [ ] Cliente: [accounts_sdmod_training_control_1_name]
-- [ ] Nº de candidatura IEFP: [iefp_application_number]
-- [ ] NIF: [formationaccountsnif]
-- [ ] Data Emissão certificado Internos: [internal_certificate_date]
-- [ ] Código da Ação - SIGO: [sigo_formation_code]
-- [ ] Data envio certificado: [certificate_sent_date]
-- [ ] Data Emissão Certificado SIGO: [certificate_issue_date]
-- [ ] Data inicial certificados SIGO: [sigo_training_date]
-- [ ] Data final certificados SIGO: [sigo_training_date_new_c]
-- [ ] Data da Ação - Inicio: [intern_date_start_c]
-- [ ] Data da Ação - Fim: [intern_date_end_c]
-- [ ] Estado Candidatura: [candidature_status_c]
-- [ ] Tipos de Formação: [training_types_c]
-- [ ] Atribuído a: [assigned_user_id]
 
 ## ==Formadores==
 
 ### Vista de edição / Vista de detalhe / Criação rápida:
 #### Predefinido
-- [ ] Nome
-- [ ] Valor/Hora
-- [ ] Valor Total
-- [ ] Número da Fatura
-- [ ] Data de pagamento
-- [ ] Data da fatura
-- [ ] Valor do recibo (€)
-- [ ] Data Entrega Recibo
-- [ ] (preencher)
-- [ ] Dossier entregue pelo formador/a
-- [ ] Data verificação do Dossier
-- [ ] Observações
 
 ### Vista de Lista
-- [ ] Ação: [name]
-- [ ] Ação de Formação: [training_rel_c]
-- [ ] Nome: [trainer_name]
-- [ ] Cliente: [training_client_c]
-- [ ] Data da formação: [training_date_c]
-- [ ] Nº de Formandos da Ação: [training_trainees_c]
-- [ ] Valor/Hora: [hour_value]
-- [ ] Valor Total: [total_amount]
-- [ ] Valor do recibo (€): [registration_cost]
-- [ ] Número da Fatura: [receipt_number]
-- [ ] Data da fatura: [receipt_date]
-- [ ] Data Entrega Recibo: [receipt_delivery_date_c]
-- [ ] Data de pagamento: [payment_date]
-- [ ] Dossier entregue pelo formador/a: [trainer_info_date_c]
-- [ ] Data verificação do Dossier: [info_verification_date_c]
-- [ ] Observações: [observations]
 
 ### Filtro
-- [ ] Nome: [trainer_name]
-- [ ] Data da fatura: [receipt_date]
-- [ ] Dossier entregue pelo formador/a: [trainer_info_date_c]
-- [ ] Ação de Formação: [training_related]
-- [ ] Data da formação: [training_date]
-- [ ] Número de Formandos da Ação: [trainees_number]
-- [ ] Data de pagamento: [payment_date]
-- [ ] Data Entrega Recibo: [receipt_delivery_date_c]
-- [ ] Valor Total: [total_amount]
 
 ## ==Sessões==
 
 ### Vista de edição:
 #### Predefinido
-- [ ] Formação
-- [ ] (preencher)
-- [ ] Nome
-- [ ] Abreviatura
-- [ ] Sessões
-- [ ] (preencher)
-- [ ] Descrição
-- [ ] (preencher)
-- [ ] Atribuído a
-- [ ] (preencher)
 
 ### Vista de detalhe:
 #### Predefinido
-- [ ] Formação
-- [ ] (preencher)
-- [ ] Nome
-- [ ] Abreviatura
-- [ ] Sessões
-- [ ] (preencher)
-- [ ] Descrição
-- [ ] (preencher)
 
 ### Vista de Lista
-- [ ] Sessões: [session]
-- [ ] Nome: [name]
-- [ ] Abreviatura: [abbreviation]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Formação
-- [ ] (preencher)
-- [ ] Nome
-- [ ] Abreviatura
-- [ ] Sessões
-- [ ] (preencher)
-- [ ] Descrição
-- [ ] (preencher)
-- [ ] Atribuído a
-- [ ] (preencher)
 
 ### Filtro
-- [ ] Nome: [name]
-- [ ] Atribuído a: [assigned_user_id]
 
 ## ==Acessos IEFP==
 
 ### Vista de edição / Vista de detalhe:
 #### Predefinido
-- [ ] Contactos
-- [ ] Atribuído a
-- [ ] PUK
-- [ ] Password
-- [ ] Email - IEFP
-- [ ] (preencher)
 
 ### Vista de Lista
-- [ ] Contactos: [contacts_sdmod_iefp_accesses_1_name]
-- [ ] PUK: [puk_c]
-- [ ] Password: [contacts_password_c]
-- [ ] Email - IEFP: [iefp_email_c]
-- [ ] Criado em: [date_entered]
-- [ ] Modificado por (nome): [modified_by_name]
-- [ ] Atribuído a: [assigned_user_name]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Contactos
-- [ ] Atribuído a
-- [ ] PUK
-- [ ] Password
-- [ ] Email - IEFP
-- [ ] (preencher)
 
 ### Filtro
-- [ ] Ação: [name]
-- [ ] Atribuído a: [assigned_user_id]
 
 ## ==Assistências==
 
 ### Vista de edição / Vista de detalhe:
 #### Visão geral
-- [ ] Assunto
-- [ ] Data
-- [ ] Modo
-- [ ] Data do serviço/auditoria
-- [ ] Enviar/Receber
-- [ ] Contacto
-- [ ] Área
-- [ ] Nome da conta
-- [ ] LBL_BILLING_ADDRESS
-- [ ] Concelho
-- [ ] Data Limite
-- [ ] Prioridade
-- [ ] Código
-- [ ] Simulação de Inspeção Realizada?
-- [ ] Situação
-- [ ] Data resolução
-- [ ] Aberto por
-- [ ] Fechado por
-- [ ] Atribuído a
-- [ ] Envio automático de Email ao Cliente quando encerrada assistência
-- [ ] Faturas
 
 #### Outro
-- [ ] Descrição do Problema / Serviços
-- [ ] Sugestões
-- [ ] Resolução
-- [ ] Atualizações - Texto
-- [ ] Hardware
-- [ ] Unidades
-- [ ] Atualização interna
-- [ ] (preencher)
 
 ### Vista de Lista
 #### Predefinido
-- [ ] Código: [code_c]
-- [ ] Situação: [status]
-- [ ] Prioridade: [priority]
-- [ ] Assunto: [name]
-- [ ] Nome da conta: [account_name]
-- [ ] Telefone: [phone_office]
-- [ ] Concelho: [billing_address_state]
-- [ ] Cidade: [billing_address_city]
-- [ ] Contacto: [who_contacted_c]
-- [ ] Data: [assistence_datetime_c]
-- [ ] Data Limite: [deadline_c]
-- [ ] Data resolução: [resolutions_date_c]
-- [ ] Fechado por: [closed_by_c]
-- [ ] Criado em: [date_entered]
-- [ ] Aberto por: [opened_by_c]
 
 ### Criação rápida:
 #### Visão geral
-- [ ] Assunto
-- [ ] Data
-- [ ] Modo
-- [ ] Data do serviço/auditoria
-- [ ] Enviar/Receber
-- [ ] Contacto
-- [ ] Área
-- [ ] Nome da conta
-- [ ] Data Limite
-- [ ] Prioridade
-- [ ] Código
-- [ ] Simulação de Inspeção Realizada?
-- [ ] Situação
-- [ ] Data de Recepção de Ficheiros do Cliente
-- [ ] Aberto por
-- [ ] Fechado por
-- [ ] Atribuído a
-- [ ] (preencher)
 
 #### Outro
-- [ ] Descrição do Problema / Serviços
-- [ ] Resolução
-- [ ] Hardware
-- [ ] Unidades
-- [ ] Data resolução
 
 ### Filtro
 #### Predefinido
-- [ ] Assunto: [name]
-- [ ] Nome da conta: [account_name]
-- [ ] Cidade: [billing_address_city]
-- [ ] Concelho: [billing_address_state]
-- [ ] Telefone: [phone_office]
-- [ ] Data Limite: [deadline_c]
-- [ ] Data: [assistence_datetime_c]
-- [ ] Data resolução: [resolutions_date_c]
-- [ ] Data do serviço/auditoria: [service_date_c]
-- [ ] Aberto por: [opened_by_c]
-- [ ] Fechado por: [closed_by_c]
-- [ ] Situação: [status]
-- [ ] Prioridade: [priority]
-- [ ] Modo: [mode_c]
-- [ ] Código: [code_c]
-- [ ] Área: [area_c]
-- [ ] Atribuído a: [assigned_user_id]
-- [ ] Alterado em: [date_modified]
-- [ ] Criado em: [date_entered]
 
 ## ==Medicina Ocupacional==
 
 ### Vista de edição:
 #### Visão geral
-- [ ] Paciente
-- [ ] Nº Exame
-- [ ] Cliente
-- [ ] Data Prevista
-- [ ] Categoria Profissional
-- [ ] Tipo de exame
-- [ ] Data de admissão
-- [ ] Médico/Enfermeiro
 
 #### Histórico Familiar
-- [ ] Irrelevante
-- [ ] Relevante
-- [ ] Qual
 
 #### Doenças profissionais - Histórico Ocupacional
-- [ ] Sem doenças
-- [ ] Declaradas
-- [ ] Quais?
-- [ ] Detetadas
-- [ ] Quais?
 
 #### Acidentes de trabalho - Histórico Ocupacional
-- [ ] Sem acidentes
-- [ ] Com acidentes
-- [ ] Quais?
 
 #### Exposição a riscos profissionais - Histórico Ocupacional
-- [ ] Não
-- [ ] Sim
-- [ ] Quais?
-- [ ] Avaliação da exposição profissional do trabalhador
 
 #### Álcool - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Tabaco - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Café - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Medicamentos - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Passatempos
-- [ ] Passatempos
-- [ ] (preencher)
 
 #### Biometrias - Exame Médico Objetivado
-- [ ] Altura
-- [ ] Peso
-- [ ] Pulsação
-- [ ] Tensão arterial (min-mmhg)
-- [ ] Tensão arterial (máx-mmhg)
 
 #### Vacinação - Inoculações administradas
-- [ ] Atualizado
-- [ ] (preencher)
-- [ ] Não Atualizado
-- [ ] Quais?
-- [ ] Observações ao boletim de vacinas
 
 #### Exames Complementares de Diagnóstico
-- [ ] Análises ao Sangue
-- [ ] ECG
-- [ ] Análises à Urina
-- [ ] RX Tórax
-- [ ] Análises às Fezes
-- [ ] Rastreio oftalmológico
-- [ ] Análises à Glicémia
-- [ ] Análises ao Colesterol
-- [ ] Audiometria
-- [ ] Espirometria
-- [ ] Outros
-- [ ] Observações
 
 #### Patologia Apresentada
-- [ ] Sem problemas de saúde
-- [ ] Com problemas de saúde
-- [ ] Observações
 
 #### Recomendações
-- [ ] Recomendações
-- [ ] (preencher)
 
 #### Especialidade
-- [ ] Médico Assistente
-- [ ] Ginecologia
-- [ ] Cardiologia
-- [ ] Neurologia
-- [ ] Cirurgia
-- [ ] Oftalmologia
-- [ ] Dermatologia
-- [ ] Ortopedia
-- [ ] Endocrinologia
-- [ ] Otorrinolaringologia
-- [ ] Estomatologia
-- [ ] Outros
 
 #### Promoção da saúde/Aconselhamentos
-- [ ] Reduzir peso corporal
-- [ ] (preencher)
-- [ ] Reduzir consumo tabágico
-- [ ] (preencher)
-- [ ] Reduzir consumo bebidas alcoólicas
-- [ ] (preencher)
-- [ ] Praticar exercício físico
-- [ ] (preencher)
-- [ ] Atualizar vacinas
-- [ ] (preencher)
-- [ ] Outros
-- [ ] (preencher)
 
 #### Observações Finais
-- [ ] Observações Finais
 
 #### Outros
-- [ ] Presenças
-- [ ] Data Presença
-- [ ] Apreciação médica
-- [ ] (preencher)
-- [ ] Nome do Médico
-- [ ] Nº Cédula Profissional
-- [ ] Assinatura (Médico)
-- [ ] Modelo de projeto
-- [ ] Data de criação
-- [ ] Data de alteração
-- [ ] Considerar dias úteis
 
 ### Vista de detalhe:
 #### Visão geral
-- [ ] Paciente
-- [ ] Nº Exame
-- [ ] Cliente
-- [ ] Data Prevista
-- [ ] Categoria Profissional
-- [ ] Tipo de exame
-- [ ] Data de admissão
-- [ ] Gestor de projeto
 
 #### Histórico Familiar
-- [ ] Irrelevante
-- [ ] Relevante
-- [ ] Qual
 
 #### Doenças profissionais - Histórico Ocupacional
-- [ ] Sem doenças
-- [ ] Declaradas
-- [ ] Quais?
-- [ ] Detetadas
-- [ ] Quais?
 
 #### Acidentes de trabalho - Histórico Ocupacional
-- [ ] Sem acidentes
-- [ ] Com acidentes
-- [ ] Quais?
 
 #### Exposição a riscos profissionais - Histórico Ocupacional
-- [ ] Não
-- [ ] Sim
-- [ ] Quais?
-- [ ] Avaliação da exposição profissional do trabalhador
 
 #### Álcool - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Tabaco - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Café - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Medicamentos - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Passatempos
-- [ ] Passatempos
-- [ ] (preencher)
 
 #### Biometrias - Exame Médico Objetivado
-- [ ] Altura
-- [ ] Peso
-- [ ] Pulsação
-- [ ] Tensão arterial (min-mmhg)
-- [ ] Tensão arterial (máx-mmhg)
 
 #### Vacinação - Inoculações administradas
-- [ ] Atualizado
-- [ ] (preencher)
-- [ ] Não Atualizado
-- [ ] Quais?
-- [ ] Observações ao boletim de vacinas
 
 #### Exames Complementares de Diagnóstico
-- [ ] Análises ao Sangue
-- [ ] ECG
-- [ ] Análises à Urina
-- [ ] RX Tórax
-- [ ] Análises às Fezes
-- [ ] Rastreio oftalmológico
-- [ ] Análises à Glicémia
-- [ ] Análises ao Colesterol
-- [ ] Audiometria
-- [ ] Espirometria
-- [ ] Outros
-- [ ] Observações
 
 #### Patologia Apresentada
-- [ ] Sem problemas de saúde
-- [ ] Com problemas de saúde
-- [ ] Observações
 
 #### Recomendações
-- [ ] Recomendações
-- [ ] (preencher)
 
 #### Especialidade
-- [ ] Médico Assistente
-- [ ] Ginecologia
-- [ ] Cardiologia
-- [ ] Neurologia
-- [ ] Cirurgia
-- [ ] Oftalmologia
-- [ ] Dermatologia
-- [ ] Ortopedia
-- [ ] Endocrinologia
-- [ ] Otorrinolaringologia
-- [ ] Estomatologia
-- [ ] Outros
 
 #### Promoção da saúde/Aconselhamentos
-- [ ] Reduzir peso corporal
-- [ ] (preencher)
-- [ ] Reduzir consumo tabágico
-- [ ] (preencher)
-- [ ] Reduzir consumo bebidas alcoólicas
-- [ ] (preencher)
-- [ ] Praticar exercício físico
-- [ ] (preencher)
-- [ ] Atualizar vacinas
-- [ ] (preencher)
-- [ ] Outros
-- [ ] (preencher)
 
 #### Observações Finais
-- [ ] Observações Finais
 
 ### Vista de Lista
-- [ ] Nome: [name]
-- [ ] Paciente: [contacts_project_1_name]
-- [ ] Cliente: [accounts_project_1_name]
-- [ ] Concelho: [billing_address_state]
-- [ ] Cidade: [billing_address_city]
-- [ ] NUTS II: [nutsii_c]
-- [ ] Tipo de exame: [medicine_exam_type_c]
-- [ ] Apreciação médica: [medical_appreciation_c]
-- [ ] Nome do Médico: [nome_do_medico_c]
-- [ ] Data de admissão: [admission_date_c]
-- [ ] Data Prevista: [estimated_start_date]
-- [ ] Gestor de projeto: [assigned_user_name]
 
 ### Criação rápida:
 #### Visão geral
-- [ ] Paciente
-- [ ] Nº Exame
-- [ ] Cliente
-- [ ] Data Prevista
-- [ ] Categoria Profissional
-- [ ] Tipo de exame
-- [ ] Data de admissão
-- [ ] Médico/Enfermeiro
 
 #### Histórico Familiar
-- [ ] Irrelevante
-- [ ] Relevante
-- [ ] Qual
 
 #### Doenças profissionais - Histórico Ocupacional
-- [ ] Sem doenças
-- [ ] Declaradas
-- [ ] Quais?
-- [ ] Detetadas
-- [ ] Quais?
 
 #### Acidentes de trabalho - Histórico Ocupacional
-- [ ] Sem acidentes
-- [ ] Com acidentes
-- [ ] Quais?
 
 #### Exposição a riscos profissionais - Histórico Ocupacional
-- [ ] Não
-- [ ] Sim
-- [ ] Quais?
-- [ ] Avaliação da exposição profissional do trabalhador
 
 #### Álcool - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Tabaco - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Café - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Medicamentos - Hábitos
-- [ ] Não
-- [ ] Sim
-- [ ] Frequência
 
 #### Passatempos
-- [ ] Passatempos
-- [ ] (preencher)
 
 #### Biometrias - Exame Médico Objetivado
-- [ ] Altura
-- [ ] Peso
-- [ ] Pulsação
-- [ ] Tensão arterial (min-mmhg)
-- [ ] Tensão arterial (máx-mmhg)
 
 #### Vacinação - Inoculações administradas
-- [ ] Não Atualizado
-- [ ] Atualizado
-- [ ] Quais?
-- [ ] Observações ao boletim de vacinas
 
 #### Exames Complementares de Diagnóstico
-- [ ] Análises ao Sangue
-- [ ] ECG
-- [ ] Análises à Urina
-- [ ] RX Tórax
-- [ ] Análises às Fezes
-- [ ] Rastreio oftalmológico
-- [ ] Análises à Glicémia
-- [ ] Análises ao Colesterol
-- [ ] Audiometria
-- [ ] Espirometria
-- [ ] Outros
-- [ ] Observações
 
 #### Patologia Apresentada
-- [ ] Sem problemas de saúde
-- [ ] Com problemas de saúde
-- [ ] Observações
 
 #### Recomendações
-- [ ] Recomendações
-- [ ] (preencher)
 
 #### Especialidade
-- [ ] Médico Assistente
-- [ ] Ginecologia
-- [ ] Cardiologia
-- [ ] Neurologia
-- [ ] Cirurgia
-- [ ] Oftalmologia
-- [ ] Dermatologia
-- [ ] Ortopedia
-- [ ] Endocrinologia
-- [ ] Otorrinolaringologia
-- [ ] Estomatologia
-- [ ] Outros
 
 #### Promoção da saúde/Aconselhamentos
-- [ ] Reduzir peso corporal
-- [ ] (preencher)
-- [ ] Reduzir consumo tabágico
-- [ ] (preencher)
-- [ ] Reduzir consumo bebidas alcoólicas
-- [ ] (preencher)
-- [ ] Praticar exercício físico
-- [ ] (preencher)
-- [ ] Atualizar vacinas
-- [ ] (preencher)
-- [ ] Outros
-- [ ] (preencher)
 
 #### Observações Finais
-- [ ] Observações Finais
-- [ ] (preencher)
 
 #### Outros
-- [ ] Presenças
-- [ ] Data Presença
-- [ ] Apreciação médica
-- [ ] (preencher)
-- [ ] Nome do Médico
-- [ ] Nº Cédula Profissional
-- [ ] Assinatura (Médico)
-- [ ] Modelo de projeto
-- [ ] Data de criação
-- [ ] Data de alteração
-- [ ] Considerar dias úteis
 
 ### Filtro
-- [ ] Criado por: [created_by]
-- [ ] Concelho: [billing_address_state]
-- [ ] Cidade: [billing_address_city]
-- [ ] Tipo de exame: [medicine_exam_type_c]
-- [ ] Apreciação médica: [medical_appreciation_c]
-- [ ] Cliente: [accounts_project_1_name]
-- [ ] Paciente: [contacts_project_1_name]
-- [ ] Médico/Enfermeiro: [assigned_user_name]
-- [ ] Data Prevista: [estimated_start_date]
-- [ ] Data de alteração: [date_modified]
-- [ ] Data Presença: [attendance_date_c]
-- [ ] Data de admissão: [admission_date_c]
-- [ ] NUTS II: [nutsii_c]
 
 ## ==Fichas de Aptidão==
 
 ### Vista de edição:
 #### Predefinido
-- [ ] Nome
-- [ ] Atribuído a
-- [ ] Descrição
 
 ### Vista de detalhe:
 #### Predefinido
-- [ ] Nome
-- [ ] Atribuído a
-- [ ] Criado em
-- [ ] Alterado em
-- [ ] Descrição
 
 ### Vista de Lista
-- [ ] Nome: [name]
-- [ ] Atribuído a: [assigned_user_name]
 
 ### Criação rápida:
 #### Predefinido
-- [ ] Nome
-- [ ] Atribuído a
 
 ### Filtro
-- [ ] Nome: [name]
-- [ ] Atribuído a: [assigned_user_id]
