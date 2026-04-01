@@ -1211,7 +1211,7 @@
 - [ ] Data envio certificado
 - [ ] Certificado Nº
 - [ ] N/ Referência
-- [ ] Data da Ação - Inicio
+- [ ] Data da Ação - Início
 - [ ] Avaliação
 - [ ] Data da Ação - Fim
 - [ ] Data Emissão Certificado SIGO
@@ -1254,7 +1254,7 @@
 - [ ] Data envio certificado
 - [ ] Certificado Nº
 - [ ] N/ Referência
-- [ ] Data da Ação - Inicio
+- [ ] Data da Ação - Início
 - [ ] Avaliação
 - [ ] Data da Ação - Fim
 - [ ] Data Emissão Certificado SIGO
@@ -1306,7 +1306,7 @@
 - [ ] Data envio certificado
 - [ ] Certificado Nº
 - [ ] N/ Referência
-- [ ] Data da Ação - Inicio
+- [ ] Data da Ação - Início
 - [ ] Avaliação
 - [ ] Data da Ação - Fim
 - [ ] Data Emissão Certificado SIGO
@@ -1329,7 +1329,6 @@
 - [ ] Cliente: [account_id]
 - [ ] Nº acção: [action_number_c]
 - [ ] Nome da ação: [description]
-
 
 ## ==Formadores==
 ### Vista de edição / Vista de detalhe / Criação rápida:
