@@ -490,20 +490,146 @@
 ## ==Contactos==
 ### Vista de edição:
 #### Visão geral
-#### Mais detalhes
-#### Outro
+- [ ] Data Nascimento
+- [ ] Endereço principal
+- [ ] Endereço alternativo
+- [ ] Supervisionado por
+- [ ] Sincronizar contacto
+- [ ] Não telefonar
+- [ ] Campaign
+- [ ] Data Admissão
+- [ ] Sessão
+- [ ] Profissão
+- [ ] Número CC
+- [ ] Data Validade CC
+- [ ] NIF
+- [ ] NUTS II
+- [ ] Estado civil
+- [ ] Nacionalidade
+- [ ] Sexo
+- [ ] Habilitações Literárias
+- [ ] ADR?
+- [ ] É Formando?
+- [ ] É Formador?
+- [ ] Tipo
+- [ ] Tipo de Recurso
+- [ ] Número do Beneficiário
+- [ ] Ultimo Exame
+- [ ] Próximo Exame
+- [ ] Atribuído a
+- [ ] Descrição
+- [ ] Salutation
+- [ ] Nome próprio
+- [ ] Apelido
+- [ ] Cargo
+- [ ] Departamento
+- [ ] Telefone trabalho
+- [ ] Telemóvel
+- [ ] Home Phone
+- [ ] Fax
+- [ ] Email
+- [ ] Nome da conta
+- [ ] Fonte da pista
 ### Vista de detalhe:
 #### Visão geral
-#### Mais detalhes
-#### Outro
+- [ ] Data Nascimento
+- [ ] Endereço principal
+- [ ] Endereço alternativo
+- [ ] Supervisionado por
+- [ ] Sincronizar contacto
+- [ ] Não telefonar
+- [ ] Campaign
+- [ ] Data Admissão
+- [ ] Sessão
+- [ ] Profissão
+- [ ] Número CC
+- [ ] Data Validade CC
+- [ ] NIF
+- [ ] NUTS II
+- [ ] Estado civil
+- [ ] Nacionalidade
+- [ ] Sexo
+- [ ] Habilitações Literárias
+- [ ] ADR?
+- [ ] É Formando?
+- [ ] É Formador?
+- [ ] Tipo
+- [ ] Tipo de Recurso
+- [ ] Número do Beneficiário
+- [ ] Ultimo Exame
+- [ ] Próximo Exame
+- [ ] Atribuído a
+- [ ] Descrição
+- [ ] Salutation
+- [ ] Nome próprio
+- [ ] Apelido
+- [ ] Cargo
+- [ ] Departamento
+- [ ] Telefone trabalho
+- [ ] Telemóvel
+- [ ] Home Phone
+- [ ] Fax
+- [ ] Email
+- [ ] Nome da conta
+- [ ] Fonte da pista
 ### Vista de Lista
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Date Created: [date_entered]
+- [ ] Data Nascimento: [birthdate]
+- [ ] Date Modified: [date_modified]
+- [ ] Endereço principal: [primary_address_street]
+- [ ] Endereço alternativo: [alt_address_street]
 ### Criação rápida:
 #### Visão geral
-#### Mais detalhes
-#### Outro
+- [ ] Data Nascimento
+- [ ] Endereço principal
+- [ ] Endereço alternativo
+- [ ] Supervisionado por
+- [ ] Sincronizar contacto
+- [ ] Não telefonar
+- [ ] Campaign
+- [ ] Data Admissão
+- [ ] Sessão
+- [ ] Profissão
+- [ ] Número CC
+- [ ] Data Validade CC
+- [ ] NIF
+- [ ] NUTS II
+- [ ] Estado civil
+- [ ] Nacionalidade
+- [ ] Sexo
+- [ ] Habilitações Literárias
+- [ ] ADR?
+- [ ] É Formando?
+- [ ] É Formador?
+- [ ] Tipo
+- [ ] Tipo de Recurso
+- [ ] Número do Beneficiário
+- [ ] Ultimo Exame
+- [ ] Próximo Exame
+- [ ] Atribuído a
+- [ ] Descrição
+- [ ] Salutation
+- [ ] Nome próprio
+- [ ] Apelido
+- [ ] Cargo
+- [ ] Departamento
+- [ ] Telefone trabalho
+- [ ] Telemóvel
+- [ ] Home Phone
+- [ ] Fax
+- [ ] Email
+- [ ] Nome da conta
+- [ ] Fonte da pista
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Date Created: [date_entered]
+- [ ] Data Nascimento: [birthdate]
+- [ ] Date Modified: [date_modified]
+- [ ] Endereço principal: [primary_address_street]
+- [ ] Endereço alternativo: [alt_address_street]
 
 ## ==Telefonemas==
 ### Vista de edição:
@@ -643,16 +769,92 @@
 ## ==Documentos==
 ### Vista de edição:
 #### Visão geral
-#### Outro
+- [ ] Name
+- [ ] Document Name
+- [ ] File Name
+- [ ] Revision
+- [ ] Status
+- [ ] Active Date
+- [ ] Expiration Date
+- [ ] Category
+- [ ] Subcategory
+- [ ] Template Type
+- [ ] Is Template
+- [ ] Document Source
+- [ ] Document URL
+- [ ] External ID
+- [ ] Related Document
+- [ ] Assigned To
+- [ ] Description
+- [ ] MIME Type
+- [ ] File Extension
+- [ ] Last Revision Date
+- [ ] Current Revision ID
+- [ ] Related Revision ID
 ### Vista de detalhe:
 #### Visão geral
-#### LBL_REVISIONS_PANEL
+- [ ] Name
+- [ ] Document Name
+- [ ] File Name
+- [ ] Revision
+- [ ] Status
+- [ ] Active Date
+- [ ] Expiration Date
+- [ ] Category
+- [ ] Subcategory
+- [ ] Template Type
+- [ ] Is Template
+- [ ] Document Source
+- [ ] Document URL
+- [ ] External ID
+- [ ] Related Document
+- [ ] Assigned To
+- [ ] Description
+- [ ] MIME Type
+- [ ] File Extension
+- [ ] Last Revision Date
+- [ ] Current Revision ID
+- [ ] Related Revision ID
 ### Vista de Lista
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Name: [name]
+- [ ] Document Name: [document_name]
+- [ ] File Name: [filename]
+- [ ] Revision: [revision]
+- [ ] Status: [status_id]
 ### Criação rápida:
-#### Predefinido
+#### Visão geral
+- [ ] Name
+- [ ] Document Name
+- [ ] File Name
+- [ ] Revision
+- [ ] Status
+- [ ] Active Date
+- [ ] Expiration Date
+- [ ] Category
+- [ ] Subcategory
+- [ ] Template Type
+- [ ] Is Template
+- [ ] Document Source
+- [ ] Document URL
+- [ ] External ID
+- [ ] Related Document
+- [ ] Assigned To
+- [ ] Description
+- [ ] MIME Type
+- [ ] File Extension
+- [ ] Last Revision Date
+- [ ] Current Revision ID
+- [ ] Related Revision ID
 ### Filtro
 #### Predefinido
+- [ ] ID: [id]
+- [ ] Name: [name]
+- [ ] Document Name: [document_name]
+- [ ] File Name: [filename]
+- [ ] Revision: [revision]
+- [ ] Status: [status_id]
 
 ## ==Notas==
 ### Vista de edição:
