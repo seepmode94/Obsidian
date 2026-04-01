@@ -670,6 +670,336 @@
 - [ ] Access Type: [access_type]
 - [ ] Status: [status]
 
+## ==Medicinas Ocupacionais==
+### Vista de edição:
+#### Project Information
+- [ ] Paciente
+- [ ] Nº Exame
+- [ ] Cliente
+- [ ] Data Prevista
+- [ ] Categoria Profissional
+- [ ] Tipo de exame
+- [ ] Data de admissão
+- [ ] Gestor de projeto
+#### Family History
+- [ ] Irrelevante
+- [ ] Relevante
+- [ ] Qual
+#### Occupational Diseases
+- [ ] Sem doenças
+- [ ] Declaradas
+- [ ] Quais? (declaradas)
+- [ ] Detetadas
+- [ ] Quais? (detetadas)
+#### Work Accidents
+- [ ] Sem acidentes
+- [ ] Com acidentes
+- [ ] Quais? (acidentes)
+#### Hazards Exposure
+- [ ] Não (exposição)
+- [ ] Sim (exposição)
+- [ ] Quais? (exposição)
+- [ ] Avaliação da exposição profissional do trabalhador
+#### Alcohol
+- [ ] Não (álcool)
+- [ ] Sim (álcool)
+- [ ] Frequência (álcool)
+#### Tobacco
+- [ ] Não (tabaco)
+- [ ] Sim (tabaco)
+- [ ] Frequência (tabaco)
+#### Coffee
+- [ ] Não (café)
+- [ ] Sim (café)
+- [ ] Frequência (café)
+#### Medication
+- [ ] Não (medicação)
+- [ ] Sim (medicação)
+- [ ] Frequência (medicação)
+#### Hobbies
+- [ ] Passatempos
+#### Physical Exam
+- [ ] Altura
+- [ ] Peso
+- [ ] Pulsação
+- [ ] Tensão arterial (min-mmhg)
+- [ ] Tensão arterial (máx-mmhg)
+#### Vaccination
+- [ ] Atualizado
+- [ ] Não Atualizado
+- [ ] Quais? (vacinas)
+- [ ] Observações ao boletim de vacinas
+#### Lab Tests
+- [ ] Análises ao Sangue
+- [ ] ECG
+- [ ] Análises à Urina
+- [ ] RX Tórax
+- [ ] Análises às Fezes
+- [ ] Rastreio oftalmológico
+- [ ] Análises à Glicémia
+- [ ] Análises ao Colesterol
+- [ ] Audiometria
+- [ ] Espirometria
+- [ ] Outros (exames)
+- [ ] Observações (exames)
+#### Health Problems
+- [ ] Sem problemas de saúde
+- [ ] Com problemas de saúde
+- [ ] Observações (patologias)
+#### Recommendations
+- [ ] Recomendações
+#### Specialties
+- [ ] Médico Assistente
+- [ ] Ginecologia
+- [ ] Cardiologia
+- [ ] Neurologia
+- [ ] Cirurgia
+- [ ] Oftalmologia
+- [ ] Dermatologia
+- [ ] Ortopedia
+- [ ] Endocrinologia
+- [ ] Otorrinolaringologia
+- [ ] Estomatologia
+- [ ] Outros (especialidades)
+#### Advice
+- [ ] Reduzir peso corporal
+- [ ] Reduzir consumo tabágico
+- [ ] Reduzir consumo bebidas alcoólicas
+- [ ] Praticar exercício físico
+- [ ] Atualizar vacinas
+- [ ] Outros (conselhos)
+#### Final Observations
+- [ ] Observações Finais
+#### Conclusion
+- [ ] Presenças
+- [ ] Data Presença
+- [ ] Apreciação médica
+- [ ] Nome do Médico
+- [ ] Nº Cédula Profissional
+- [ ] Assinatura (Médico)
+- [ ] am_projecttemplates_project_1_name
+- [ ] Data de criação
+- [ ] Data de alteração
+- [ ] Considerar dias úteis
+### Vista de detalhe:
+#### Visão geral
+- [ ] Paciente
+- [ ] Nome
+- [ ] Nº Exame
+- [ ] Cliente
+- [ ] Data Prevista
+- [ ] Categoria Profissional
+- [ ] Tipo de exame
+- [ ] Data de admissão
+- [ ] Gestor de projeto
+- [ ] Irrelevante
+- [ ] Relevante
+- [ ] Qual
+- [ ] Sem doenças
+- [ ] Declaradas
+- [ ] Quais? (declaradas)
+- [ ] Detetadas
+- [ ] Quais? (detetadas)
+- [ ] Sem acidentes
+- [ ] Com acidentes
+- [ ] Quais? (acidentes)
+- [ ] Não (exposição)
+- [ ] Sim (exposição)
+- [ ] Quais? (exposição)
+- [ ] Avaliação da exposição profissional do trabalhador
+- [ ] Não (álcool)
+- [ ] Sim (álcool)
+- [ ] Frequência (álcool)
+- [ ] Não (tabaco)
+- [ ] Sim (tabaco)
+- [ ] Frequência (tabaco)
+- [ ] Não (café)
+- [ ] Sim (café)
+- [ ] Frequência (café)
+- [ ] Não (medicação)
+- [ ] Sim (medicação)
+- [ ] Frequência (medicação)
+- [ ] Passatempos
+- [ ] Altura
+- [ ] Peso
+- [ ] Pulsação
+- [ ] Tensão arterial (min-mmhg)
+- [ ] Tensão arterial (máx-mmhg)
+- [ ] Atualizado
+- [ ] Não Atualizado
+- [ ] Quais? (vacinas)
+- [ ] Observações ao boletim de vacinas
+- [ ] Análises ao Sangue
+- [ ] ECG
+- [ ] Análises à Urina
+- [ ] RX Tórax
+- [ ] Análises às Fezes
+- [ ] Rastreio oftalmológico
+- [ ] Análises à Glicémia
+- [ ] Análises ao Colesterol
+- [ ] Audiometria
+- [ ] Espirometria
+- [ ] Outros (exames)
+- [ ] Observações (exames)
+- [ ] Sem problemas de saúde
+- [ ] Com problemas de saúde
+- [ ] Observações (patologias)
+- [ ] Recomendações
+- [ ] Médico Assistente
+- [ ] Ginecologia
+- [ ] Cardiologia
+- [ ] Neurologia
+- [ ] Cirurgia
+- [ ] Oftalmologia
+- [ ] Dermatologia
+- [ ] Ortopedia
+- [ ] Endocrinologia
+- [ ] Otorrinolaringologia
+- [ ] Estomatologia
+- [ ] Outros (especialidades)
+- [ ] Reduzir peso corporal
+- [ ] Reduzir consumo tabágico
+- [ ] Reduzir consumo bebidas alcoólicas
+- [ ] Praticar exercício físico
+- [ ] Atualizar vacinas
+- [ ] Outros (conselhos)
+- [ ] Observações Finais
+- [ ] Presenças
+- [ ] Data Presença
+- [ ] Apreciação médica
+- [ ] Nome do Médico
+- [ ] Nº Cédula Profissional
+- [ ] Assinatura (Médico)
+- [ ] Modelo de projeto
+- [ ] Considerar dias úteis
+- [ ] Sexo
+- [ ] Data de Nascimento
+- [ ] Cidade
+- [ ] Concelho
+- [ ] NUTS II
+- [ ] Temperatura
+### Vista de Lista
+#### Predefinido
+- [ ] Nome: [name]
+- [ ] Paciente: [contact_id]
+- [ ] Cliente: [account_id]
+- [ ] Concelho: [billing_address_state]
+- [ ] Cidade: [billing_address_city]
+- [ ] NUTS II: [nutsii_c]
+- [ ] Tipo de exame: [medicine_exam_type_c]
+- [ ] Apreciação médica: [medical_appreciation_c]
+- [ ] Nome do Médico: [nome_do_medico_c]
+- [ ] Data de admissão: [admission_date_c]
+- [ ] Data Prevista: [estimated_start_date]
+- [ ] Data de Nascimento: [contacts_birthdate_c]
+- [ ] Sexo: [contact_gender_c]
+- [ ] Gestor de projeto: [assigned_user_id]
+### Criação rápida:
+#### Visão geral
+- [ ] Paciente
+- [ ] Nome
+- [ ] Nº Exame
+- [ ] Cliente
+- [ ] Data Prevista
+- [ ] Categoria Profissional
+- [ ] Tipo de exame
+- [ ] Data de admissão
+- [ ] Gestor de projeto
+- [ ] Irrelevante
+- [ ] Relevante
+- [ ] Qual
+- [ ] Sem doenças
+- [ ] Declaradas
+- [ ] Quais? (declaradas)
+- [ ] Detetadas
+- [ ] Quais? (detetadas)
+- [ ] Sem acidentes
+- [ ] Com acidentes
+- [ ] Quais? (acidentes)
+- [ ] Não (exposição)
+- [ ] Sim (exposição)
+- [ ] Quais? (exposição)
+- [ ] Avaliação da exposição profissional do trabalhador
+- [ ] Não (álcool)
+- [ ] Sim (álcool)
+- [ ] Frequência (álcool)
+- [ ] Não (tabaco)
+- [ ] Sim (tabaco)
+- [ ] Frequência (tabaco)
+- [ ] Não (café)
+- [ ] Sim (café)
+- [ ] Frequência (café)
+- [ ] Não (medicação)
+- [ ] Sim (medicação)
+- [ ] Frequência (medicação)
+- [ ] Passatempos
+- [ ] Altura
+- [ ] Peso
+- [ ] Pulsação
+- [ ] Tensão arterial (min-mmhg)
+- [ ] Tensão arterial (máx-mmhg)
+- [ ] Atualizado
+- [ ] Não Atualizado
+- [ ] Quais? (vacinas)
+- [ ] Observações ao boletim de vacinas
+- [ ] Análises ao Sangue
+- [ ] ECG
+- [ ] Análises à Urina
+- [ ] RX Tórax
+- [ ] Análises às Fezes
+- [ ] Rastreio oftalmológico
+- [ ] Análises à Glicémia
+- [ ] Análises ao Colesterol
+- [ ] Audiometria
+- [ ] Espirometria
+- [ ] Outros (exames)
+- [ ] Observações (exames)
+- [ ] Sem problemas de saúde
+- [ ] Com problemas de saúde
+- [ ] Observações (patologias)
+- [ ] Recomendações
+- [ ] Médico Assistente
+- [ ] Ginecologia
+- [ ] Cardiologia
+- [ ] Neurologia
+- [ ] Cirurgia
+- [ ] Oftalmologia
+- [ ] Dermatologia
+- [ ] Ortopedia
+- [ ] Endocrinologia
+- [ ] Otorrinolaringologia
+- [ ] Estomatologia
+- [ ] Outros (especialidades)
+- [ ] Reduzir peso corporal
+- [ ] Reduzir consumo tabágico
+- [ ] Reduzir consumo bebidas alcoólicas
+- [ ] Praticar exercício físico
+- [ ] Atualizar vacinas
+- [ ] Outros (conselhos)
+- [ ] Observações Finais
+- [ ] Presenças
+- [ ] Data Presença
+- [ ] Apreciação médica
+- [ ] Nome do Médico
+- [ ] Nº Cédula Profissional
+- [ ] Assinatura (Médico)
+- [ ] Modelo de projeto
+- [ ] Considerar dias úteis
+- [ ] Sexo
+- [ ] Data de Nascimento
+- [ ] Cidade
+- [ ] Concelho
+- [ ] NUTS II
+- [ ] Temperatura
+### Filtro
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Paciente: [contact_id]
+- [ ] Nome: [name]
+- [ ] Nº Exame: [medicine_exam_number_c]
+- [ ] Cliente: [account_id]
+- [ ] Data Prevista: [estimated_start_date]
+
 ## ==Assistências==
 ### Vista de edição:
 #### Visão geral
