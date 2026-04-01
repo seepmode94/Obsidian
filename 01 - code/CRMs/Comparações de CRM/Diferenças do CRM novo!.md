@@ -546,10 +546,7 @@ O `Create / Quickcreate` de `Documentos` no Studio inclui vários campos técnic
 - Sem diferenças
 
 **Só na página real:**
-- [ ] Date Created [date_entered]
-
-**Nota técnica:**
-A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação semântica na configuração visível da página.
+- Sem diferenças
 
 ### Create / Quickcreate
 
@@ -646,10 +643,7 @@ O `Create / Quickcreate` de `Emails` na página real privilegia campos operacion
 - Sem diferenças
 
 **Só na página real:**
-- [ ] Date Created [date_entered]
-
-**Nota técnica:**
-A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação semântica na configuração visível da página.
+- Sem diferenças
 
 ### Create / Quickcreate
 
@@ -665,6 +659,55 @@ A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação
 **Nota técnica:**
 No `Create / Quickcreate`, a página real cobre o layout funcional configurado, mas não expõe os campos técnicos de auditoria nem o campo relacional `Invoice` que continuam presentes no Studio.
 
+## Formandos
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] contacto [contact_id]
+- [ ] Atribuído a [assigned_user_id]
+- [ ] Cliente [account_id]
+- [ ] N° acção [action_number_c]
+- [ ] Nome da ação [description]
+
+**Só na página real:**
+- [ ] N° de candidatura IEFP [iefp_application_number]
+- [ ] Data Emissão certificado Internos [internal_certificate_date]
+- [ ] Código da Ação - SIGO [sigo_formation_code]
+- [ ] Data envio certificado [certificate_submission_date]
+- [ ] Data Emissão Certificado SIGO [certificate_issue_date]
+- [ ] Data inicial certificados SIGO [sigo_training_date]
+- [ ] Data final certificados SIGO [sigo_training_date_new_c]
+- [ ] Data da Acção - Inicio [intern_date_start_c]
+- [ ] Data da Acção - Fim [intern_date_end_c]
+- [ ] Estado Candidatura [candidature_status_c]
+- [ ] Tipos de Formação [training_types_c]
+
+### List View
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação semântica na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Date Created [date_entered]
+- [ ] Date Modified [date_modified]
+
+**Só na página real:**
+- Sem diferenças
+
+**Nota técnica:**
+No `Create / Quickcreate`, a página real replica o layout funcional do Studio, mas não expõe os campos técnicos de auditoria.
+
 ## Conclusões
 
 - [ ] Foram identificadas diferenças reais entre o Studio e as páginas visíveis nos módulos `Fichas de Aptidão`, `Assistências` e `Medicinas Ocupacionais`
@@ -675,7 +718,8 @@ No `Create / Quickcreate`, a página real cobre o layout funcional configurado, 
 - [ ] `Documentos` apresenta divergências no `Filtro`, na `List View` e no `Create / Quickcreate`
 - [ ] `Notas` apresenta diferenças no `Filtro`, duplicação semântica na `List View` e divergências técnicas no `Create / Quickcreate`
 - [ ] `Emails` apresenta divergências no `Filtro`, uma coluna adicional na `List View` e diferenças funcionais no `Create / Quickcreate`
-- [ ] `Formações` apresenta divergências no `Filtro`, duplicação semântica na `List View` e diferenças técnicas no `Create / Quickcreate`
+- [ ] `Formações` apresenta divergências no `Filtro` e diferenças técnicas no `Create / Quickcreate`
+- [ ] `Formandos` apresenta divergências no `Filtro`, duplicação semântica na `List View` e diferenças técnicas no `Create / Quickcreate`
 - [ ] Em `Medicinas Ocupacionais`, tanto o `Filtro` como a `List View` mostram um padrão consistente de divergência entre `Default` e comportamento real
 - [ ] Em `Assistências`, o `Filtro`, a `List View` e o `Create / Quickcreate` também não coincidem totalmente com o Studio
 - [ ] `Acessos IEFP` não apresentou diferenças no `Create / Quickcreate`
@@ -700,13 +744,13 @@ No `Create / Quickcreate`, a página real cobre o layout funcional configurado, 
 - [ ] Notas
 - [ ] Emails
 - [ ] Formações
+- [ ] Formandos
 - [ ] Fichas de Aptidão
 - [ ] Assistências
 - [ ] Acessos IEFP
 - [ ] Medicinas Ocupacionais
 
 **Módulos por rever:**
-- [ ] Formandos
 - [ ] Formadores
 - [ ] Sessões
 
