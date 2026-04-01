@@ -7,4 +7,4 @@ Depois, o texto resume porque as APIs são importantes: ajudam na automação, a
 Por fim, mostra casos de uso frequentes, como integração entre sistemas, adicionar funcionalidades a apps, ligar dispositivos IoT, suportar microservices e reforçar governação e segurança. Também refere exemplos reais de empresas que expõem APIs, como Salesforce, Notion, Discord, Pinterest e DoorDash.
 
 Fonte: Postman, "What is an API?" https://www.postman.com/what-is-an-api/
-https://youtu.be/-0MmWEYR2a8
+Vídeo - https://youtu.be/-0MmWEYR2a8
