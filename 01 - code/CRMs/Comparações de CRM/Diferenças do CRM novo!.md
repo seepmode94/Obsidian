@@ -525,6 +525,146 @@ A listagem real não mostra `Status [status_id]`, embora esteja em `Default` no 
 **Nota técnica:**
 O `Create / Quickcreate` de `Documentos` no Studio inclui vários campos técnicos e de gestão documental, enquanto a página real expõe o carregamento direto do ficheiro na secção `FILE UPLOAD`, o que altera materialmente a experiência face ao layout configurado.
 
+## Notas
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Descrição [description]
+- [ ] Related To (Module) [parent_type]
+- [ ] Related To [parent_id]
+
+**Só na página real:**
+- [ ] Attachment [filename]
+- [ ] Assigned To [assigned_user_id]
+- [ ] Date Created [date_entered]
+
+### List View
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação semântica na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Date Created [date_entered]
+- [ ] Date Modified [date_modified]
+- [ ] MIME Type [file_mime_type]
+
+**Só na página real:**
+- Sem diferenças
+
+**Nota técnica:**
+No `Create / Quickcreate`, a página real segue o núcleo funcional do formulário, enquanto o Studio mantém campos técnicos e de auditoria que não são expostos ao utilizador final.
+
+## Emails
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] To [to_addrs_names]
+- [ ] CC [cc_addrs_names]
+- [ ] BCC [bcc_addrs_names]
+
+**Só na página real:**
+- [ ] Type [type]
+- [ ] Status [status]
+- [ ] Assigned To [assigned_user_id]
+- [ ] Date Sent/Received [date_sent_received]
+
+### List View
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Date Created [date_entered]
+- [ ] Date Modified [date_modified]
+- [ ] Raw Source [raw_source]
+- [ ] Date Sent [date_sent]
+- [ ] Reply To Status [reply_to_status]
+- [ ] Message ID [message_id]
+- [ ] UID [uid]
+- [ ] Intent [intent]
+- [ ] Mailbox ID [mailbox_id]
+- [ ] Orphaned [orphaned]
+- [ ] Related To [parent_name]
+
+**Só na página real:**
+- [ ] Related Record ID [parent_id]
+- [ ] Flagged [flagged]
+
+**Nota técnica:**
+O `Create / Quickcreate` de `Emails` na página real privilegia campos operacionais do envio e relacionamento do registo, enquanto o Studio expõe um conjunto mais técnico associado ao processamento interno das mensagens.
+
+## Formações
+
+### Filtro
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Ação [formation_action]
+- [ ] Ano [year]
+- [ ] Tipo de ação [name]
+- [ ] Estado [status]
+- [ ] Data Formação [formation_date]
+
+**Só na página real:**
+- [ ] Cliente [account_id]
+- [ ] Local [place]
+- [ ] Data Pagamento [payment_date]
+- [ ] Data Envio Email Info ao Cliente [cliente_email_info_date_c]
+- [ ] Valor pago (€) [paid_value_c]
+- [ ] Data envio certificados [sent_certificates_date]
+- [ ] Data Análise Estatística [data_analise_estatistica_c]
+- [ ] Data Fecho ação [data_fecho_acao_c]
+- [ ] Data Digitalização [data_da_digitalizacao_c]
+- [ ] NUTS II [nutsii_c]
+- [ ] Com Cheque Formação [formation_check_checkbox_c]
+- [ ] Date Created [date_entered]
+- [ ] Atribuído a [assigned_user_id]
+- [ ] Vendedor [salesperson_c]
+
+### List View
+
+**Só no Studio:**
+- Sem diferenças
+
+**Só na página real:**
+- [ ] Date Created [date_entered]
+
+**Nota técnica:**
+A listagem real apresenta duas colunas `Date Created`, o que sugere duplicação semântica na configuração visível da página.
+
+### Create / Quickcreate
+
+**Só no Studio:**
+- [ ] ID [id]
+- [ ] Date Created [date_entered]
+- [ ] Date Modified [date_modified]
+- [ ] Invoice [invoice_id]
+
+**Só na página real:**
+- Sem diferenças
+
+**Nota técnica:**
+No `Create / Quickcreate`, a página real cobre o layout funcional configurado, mas não expõe os campos técnicos de auditoria nem o campo relacional `Invoice` que continuam presentes no Studio.
+
 ## Conclusões
 
 - [ ] Foram identificadas diferenças reais entre o Studio e as páginas visíveis nos módulos `Fichas de Aptidão`, `Assistências` e `Medicinas Ocupacionais`
@@ -533,6 +673,9 @@ O `Create / Quickcreate` de `Documentos` no Studio inclui vários campos técnic
 - [ ] `Contactos` apresenta divergências relevantes no `Filtro`, na `List View` e no `Create / Quickcreate`
 - [ ] `Reuniões` apresenta diferenças no `Filtro` e uma coluna adicional na `List View`
 - [ ] `Documentos` apresenta divergências no `Filtro`, na `List View` e no `Create / Quickcreate`
+- [ ] `Notas` apresenta diferenças no `Filtro`, duplicação semântica na `List View` e divergências técnicas no `Create / Quickcreate`
+- [ ] `Emails` apresenta divergências no `Filtro`, uma coluna adicional na `List View` e diferenças funcionais no `Create / Quickcreate`
+- [ ] `Formações` apresenta divergências no `Filtro`, duplicação semântica na `List View` e diferenças técnicas no `Create / Quickcreate`
 - [ ] Em `Medicinas Ocupacionais`, tanto o `Filtro` como a `List View` mostram um padrão consistente de divergência entre `Default` e comportamento real
 - [ ] Em `Assistências`, o `Filtro`, a `List View` e o `Create / Quickcreate` também não coincidem totalmente com o Studio
 - [ ] `Acessos IEFP` não apresentou diferenças no `Create / Quickcreate`
@@ -554,15 +697,15 @@ O `Create / Quickcreate` de `Documentos` no Studio inclui vários campos técnic
 - [ ] Contactos
 - [ ] Reuniões
 - [ ] Documentos
+- [ ] Notas
+- [ ] Emails
+- [ ] Formações
 - [ ] Fichas de Aptidão
 - [ ] Assistências
 - [ ] Acessos IEFP
 - [ ] Medicinas Ocupacionais
 
 **Módulos por rever:**
-- [ ] Notas
-- [ ] Emails
-- [ ] Formações
 - [ ] Formandos
 - [ ] Formadores
 - [ ] Sessões
