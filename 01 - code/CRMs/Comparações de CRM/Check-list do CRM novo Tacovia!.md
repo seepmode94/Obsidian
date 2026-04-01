@@ -1331,20 +1331,119 @@
 - [ ] Nome da ação: [description]
 
 ## ==Formadores==
-### Vista de edição / Vista de detalhe / Criação rápida:
+### Vista de edição:
 #### Predefinido
+- [ ] Nome
+- [ ] Valor/Hora
+- [ ] Valor Total
+- [ ] Número da Fatura
+- [ ] Data de pagamento
+- [ ] Data da fatura
+- [ ] Valor do recibo (€)
+- [ ] Data Entrega Recibo
+- [ ] (preencher)
+- [ ] Dossier entregue pelo formador/a
+- [ ] Data verificação do Dossier
+- [ ] Observações
+### Vista de detalhe:
+#### Predefinido
+- [ ] Nome
+- [ ] Valor/Hora
+- [ ] Valor Total
+- [ ] Número da Fatura
+- [ ] Data de pagamento
+- [ ] Data da fatura
+- [ ] Valor do recibo (€)
+- [ ] Data Entrega Recibo
+- [ ] (preencher)
+- [ ] Dossier entregue pelo formador/a
+- [ ] Data verificação do Dossier
+- [ ] Observações
 ### Vista de Lista
+#### Predefinido
+- [ ] Ação: [name]
+- [ ] Ação de Formação: [training_rel_c]
+- [ ] Nome: [trainer_name]
+- [ ] Cliente: [training_client_c]
+- [ ] Data da formação: [training_date_c]
+- [ ] Nº de Formandos da Ação: [training_trainees_c]
+- [ ] Valor/Hora: [hour_value]
+- [ ] Valor Total: [total_amount]
+- [ ] Valor do recibo (€): [registration_cost]
+- [ ] Número da Fatura: [receipt_number]
+- [ ] Data da fatura: [receipt_date]
+- [ ] Data Entrega Recibo: [receipt_delivery_date_c]
+- [ ] Data de pagamento: [payment_date]
+- [ ] Dossier entregue pelo formador/a: [trainer_info_date_c]
+- [ ] Data verificação do Dossier: [info_verification_date_c]
+- [ ] Observações: [observations]
+### Criação rápida:
+#### Predefinido
+- [ ] Nome
+- [ ] Valor/Hora
+- [ ] Valor Total
+- [ ] Número da Fatura
+- [ ] Data de pagamento
+- [ ] Data da fatura
+- [ ] Valor do recibo (€)
+- [ ] Data Entrega Recibo
+- [ ] (preencher)
+- [ ] Dossier entregue pelo formador/a
+- [ ] Data verificação do Dossier
+- [ ] Observações
 ### Filtro
+#### Predefinido
+- [ ] Nome: [trainer_name]
+- [ ] Data da fatura: [receipt_date]
+- [ ] Dossier entregue pelo formador/a: [trainer_info_date_c]
+- [ ] Ação de Formação: [training_related]
+- [ ] Data da formação: [training_date]
+- [ ] Número de Formandos da Ação: [trainees_number]
+- [ ] Data de pagamento: [payment_date]
+- [ ] Data Entrega Recibo: [receipt_delivery_date_c]
+- [ ] Valor Total: [total_amount]
 
 ## ==Sessões==
 ### Vista de edição:
 #### Predefinido
+- [ ] Formação
+- [ ] Nome
+- [ ] Abreviatura
+- [ ] Sessões
+- [ ] Descrição
+- [ ] Session Identifier
 ### Vista de detalhe:
 #### Predefinido
+- [ ] Formação
+- [ ] Nome
+- [ ] Abreviatura
+- [ ] Sessões
+- [ ] Descrição
+- [ ] Session Identifier
 ### Vista de Lista
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Formação: [training_id]
+- [ ] Nome: [name]
+- [ ] Abreviatura: [abbreviation]
+- [ ] Sessões: [session]
+- [ ] Descrição: [description]
 ### Criação rápida:
 #### Predefinido
+- [ ] Formação
+- [ ] Nome
+- [ ] Abreviatura
+- [ ] Sessões
+- [ ] Descrição
+- [ ] Session Identifier
 ### Filtro
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Formação: [training_id]
+- [ ] Nome: [name]
+- [ ] Abreviatura: [abbreviation]
+- [ ] Sessões: [session]
+- [ ] Descrição: [description]
 
 ## ==Acessos IEFP==
 ### Vista de edição:
@@ -1841,69 +1940,6 @@
 - [ ] Modo: [mode_c]
 - [ ] Data do serviço/auditoria: [service_date_c]
 - [ ] Enviar/Receber: [send_receive_c]
-
-## ==Medicina Ocupacional==
-### Vista de edição:
-#### Visão geral
-#### Histórico Familiar
-#### Doenças profissionais - Histórico Ocupacional
-#### Acidentes de trabalho - Histórico Ocupacional
-#### Exposição a riscos profissionais - Histórico Ocupacional
-#### Álcool - Hábitos
-#### Tabaco - Hábitos
-#### Café - Hábitos
-#### Medicamentos - Hábitos
-#### Passatempos
-#### Biometrias - Exame Médico Objetivado
-#### Vacinação - Inoculações administradas
-#### Exames Complementares de Diagnóstico
-#### Patologia Apresentada
-#### Recomendações
-#### Especialidade
-#### Promoção da saúde/Aconselhamentos
-#### Observações Finais
-#### Outros
-### Vista de detalhe:
-#### Visão geral
-#### Histórico Familiar
-#### Doenças profissionais - Histórico Ocupacional
-#### Acidentes de trabalho - Histórico Ocupacional
-#### Exposição a riscos profissionais - Histórico Ocupacional
-#### Álcool - Hábitos
-#### Tabaco - Hábitos
-#### Café - Hábitos
-#### Medicamentos - Hábitos
-#### Passatempos
-#### Biometrias - Exame Médico Objetivado
-#### Vacinação - Inoculações administradas
-#### Exames Complementares de Diagnóstico
-#### Patologia Apresentada
-#### Recomendações
-#### Especialidade
-#### Promoção da saúde/Aconselhamentos
-#### Observações Finais
-### Vista de Lista
-### Criação rápida:
-#### Visão geral
-#### Histórico Familiar
-#### Doenças profissionais - Histórico Ocupacional
-#### Acidentes de trabalho - Histórico Ocupacional
-#### Exposição a riscos profissionais - Histórico Ocupacional
-#### Álcool - Hábitos
-#### Tabaco - Hábitos
-#### Café - Hábitos
-#### Medicamentos - Hábitos
-#### Passatempos
-#### Biometrias - Exame Médico Objetivado
-#### Vacinação - Inoculações administradas
-#### Exames Complementares de Diagnóstico
-#### Patologia Apresentada
-#### Recomendações
-#### Especialidade
-#### Promoção da saúde/Aconselhamentos
-#### Observações Finais
-#### Outros
-### Filtro
 
 ## ==Fichas de Aptidão==
 ### Vista de edição:
