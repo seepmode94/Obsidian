@@ -109,10 +109,6 @@
 - [ ] Rating
 - [ ] Pesados
 
-#### Mais detalhes
-
-#### Outro
-
 ### Filtro
 #### Predefinido
 - [ ] ID: [id]
@@ -225,10 +221,6 @@
 - [ ] Company
 - [ ] Notas para a Faturação
 - [ ] Line Items
-
-#### Dados de endereço
-
-#### Itens de linha
 
 ### Filtro
 #### Predefinido
@@ -360,7 +352,6 @@
 - [ ] Payment Reminder
 - [ ] Company
 - [ ] Line Items
-#### Itens de linha
 ### Filtro
 #### Predefinido
 - [ ] ID: [id]
@@ -477,7 +468,6 @@
 - [ ] Data Renovação
 - [ ] Empresa
 - [ ] Line Items
-#### Itens de linha
 ### Filtro
 #### Predefinido
 - [ ] ID: [id]
@@ -1944,9 +1934,143 @@
 ## ==Fichas de Aptidão==
 ### Vista de edição:
 #### Predefinido
+- [ ] Cliente
+- [ ] NIPC/NIF
+- [ ] Estabelecimento
+- [ ] CAE principal
+- [ ] Endereço
+- [ ] Código Postal
+- [ ] Localidade
+- [ ] Telefone
+- [ ] E-mail
+- [ ] Medicina Ocupacional
+- [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
+- [ ] Se outro, especifique
+- [ ] Designação da empresa de serviço externo de saúde de trabalho [se aplicável]
+- [ ] NIPC/NIF
+- [ ] Processo de autorização (PA) da DGS nº
+- [ ] Paciente
+- [ ] Nacionalidade
+- [ ] Sexo
+- [ ] Data de nascimento
+- [ ] Data de admissão na empresa
+- [ ] Categoria Profissional
+- [ ] Posto de trabalho principal
+- [ ] Atividade/Função (proposta ou atual)
+- [ ] Data de admissão na Atividade/função
+- [ ] Análise do posto de trabalho:
+- [ ] Justificar em caso negativo
+- [ ] Identificação de fatores de risco profissional
+- [ ] Especificar os principais fatores de risco profissional
+- [ ] Avaliação da exposição profissional do trabalhador
+- [ ] Especificar a avaliação profissional
+- [ ] Data do exame
+- [ ] Resultado de aptidão
+- [ ] Tipo
+- [ ] Outras funções que pode desempenhar
+- [ ] Se outro, especifique
+- [ ] Recomendações
+- [ ] Outras recomendações
+- [ ] Nome do Médico
+- [ ] Nº Cédula Profissional
+- [ ] Gestor
 ### Vista de detalhe:
 #### Predefinido
+- [ ] Cliente
+- [ ] NIPC/NIF
+- [ ] Estabelecimento
+- [ ] CAE principal
+- [ ] Endereço
+- [ ] Código Postal
+- [ ] Localidade
+- [ ] Telefone
+- [ ] E-mail
+- [ ] Medicina Ocupacional
+- [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
+- [ ] Se outro, especifique
+- [ ] Designação da empresa de serviço externo de saúde de trabalho [se aplicável]
+- [ ] NIPC/NIF
+- [ ] Processo de autorização (PA) da DGS nº
+- [ ] Paciente
+- [ ] Nacionalidade
+- [ ] Sexo
+- [ ] Data de nascimento
+- [ ] Data de admissão na empresa
+- [ ] Categoria Profissional
+- [ ] Posto de trabalho principal
+- [ ] Atividade/Função (proposta ou atual)
+- [ ] Data de admissão na Atividade/função
+- [ ] Análise do posto de trabalho:
+- [ ] Justificar em caso negativo
+- [ ] Identificação de fatores de risco profissional
+- [ ] Especificar os principais fatores de risco profissional
+- [ ] Avaliação da exposição profissional do trabalhador
+- [ ] Especificar a avaliação profissional
+- [ ] Data do exame
+- [ ] Resultado de aptidão
+- [ ] Tipo
+- [ ] Outras funções que pode desempenhar
+- [ ] Se outro, especifique
+- [ ] Recomendações
+- [ ] Outras recomendações
+- [ ] Nome do Médico
+- [ ] Nº Cédula Profissional
+- [ ] Gestor
 ### Vista de Lista
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Cliente: [account_id]
+- [ ] NIPC/NIF: [nipc_c]
+- [ ] Estabelecimento: [estabelecimento_c]
+- [ ] CAE principal: [cae_c]
+- [ ] Endereço: [endereco_c]
 ### Criação rápida:
 #### Predefinido
+- [ ] Cliente
+- [ ] NIPC/NIF
+- [ ] Estabelecimento
+- [ ] CAE principal
+- [ ] Endereço
+- [ ] Código Postal
+- [ ] Localidade
+- [ ] Telefone
+- [ ] E-mail
+- [ ] Medicina Ocupacional
+- [ ] Modalidade de Organização do Serviço de Saúde do Trabalho
+- [ ] Se outro, especifique
+- [ ] Designação da empresa de serviço externo de saúde de trabalho [se aplicável]
+- [ ] NIPC/NIF
+- [ ] Processo de autorização (PA) da DGS nº
+- [ ] Paciente
+- [ ] Nacionalidade
+- [ ] Sexo
+- [ ] Data de nascimento
+- [ ] Data de admissão na empresa
+- [ ] Categoria Profissional
+- [ ] Posto de trabalho principal
+- [ ] Atividade/Função (proposta ou atual)
+- [ ] Data de admissão na Atividade/função
+- [ ] Análise do posto de trabalho:
+- [ ] Justificar em caso negativo
+- [ ] Identificação de fatores de risco profissional
+- [ ] Especificar os principais fatores de risco profissional
+- [ ] Avaliação da exposição profissional do trabalhador
+- [ ] Especificar a avaliação profissional
+- [ ] Data do exame
+- [ ] Resultado de aptidão
+- [ ] Tipo
+- [ ] Outras funções que pode desempenhar
+- [ ] Se outro, especifique
+- [ ] Recomendações
+- [ ] Outras recomendações
+- [ ] Nome do Médico
+- [ ] Nº Cédula Profissional
+- [ ] Gestor
 ### Filtro
+#### Predefinido
+- [ ] ID: [id]
+- [ ] Cliente: [account_id]
+- [ ] NIPC/NIF: [nipc_c]
+- [ ] Estabelecimento: [estabelecimento_c]
+- [ ] CAE principal: [cae_c]
+- [ ] Endereço: [endereco_c]
