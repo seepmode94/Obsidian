@@ -11,184 +11,176 @@
 ---
 
 ## ==Fichas de Aptidão==
-
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-- Está dividido em vários blocos como `Company Information`, `Service Organization`, `Worker Information`, `Work Analysis`, `Exam`, `Recommendations`, `Doctor`, `Assignment` e `Signatures`.
-
-### Tacovia
-- O módulo não aparece nesta nota.
-
 ### Diferença
-- Diferença confirmada.
-- O módulo está presente apenas em `Seepmode`.
+- Tipo: estrutural
+- `Seepmode`: módulo existente
+- `Tacovia`: módulo inexistente
 
 ---
 
 ## ==Assistências==
 
 ### Diferença
-- Sem diferenças relevantes identificadas.
+- Tipo: sem diferenças relevantes
 
 ---
 
 ## ==Acessos IEFP==
 
 ### Diferença
-- Na `Vista de Lista`, a `Seepmode` inclui `ID [id]` e a `Tacovia` não.
-- Nos restantes campos comparados, não foram identificadas diferenças relevantes.
+- Tipo: campos
+- `Vista de Lista`
+- `Seepmode`: inclui `ID [id]`
+- `Tacovia`: não inclui `ID`
+- Restante conteúdo alinhado.
 
 ---
 
 ## ==Sessões==
-
-### Seepmode
-- O módulo existe.
-- Está orientado para `Relatórios agendados`.
-
-### Tacovia
-- O módulo existe.
-- Está orientado para `Sessões` de formação.
-
 ### Diferença
-- Diferença confirmada.
-- O módulo não parece equivalente entre os dois CRMs.
+- Tipo: estrutural
+- `Seepmode`: orientado para `Relatórios agendados`
+- `Tacovia`: orientado para `Sessões` de formação
 
 ---
 
 ## ==Formadores==
 
 ### Diferença
-- Na `Vista de edição`, `Vista de detalhe` e `Criação rápida`, a `Seepmode` inclui campos técnicos adicionais que não estão refletidos na `Tacovia`, como `Training`, `Assigned To`, `Contact`, `Receipt Value` e `Currency`.
-- Nestas mesmas vistas, a `Tacovia` inclui um campo `(preencher)` que não aparece na `Seepmode`.
-- Na `Vista de Lista`, a `Tacovia` tem muito mais detalhe, com campos como `Ação`, `Ação de Formação`, `Cliente`, `Data da formação` e `Nº de Formandos da Ação`, que não estão refletidos na `Seepmode`.
-- No `Filtro`, a `Tacovia` também tem mais campos relevantes do que a `Seepmode`.
+- Tipo: campos
+- `Edição / Detalhe / Criação rápida`
+- `Seepmode`: campos extra `Training`, `Assigned To`, `Contact`, `Receipt Value`, `Currency`
+- `Tacovia`: campo extra `(preencher)`
+- `Vista de Lista`
+- `Tacovia`: mais detalhe com `Ação`, `Ação de Formação`, `Cliente`, `Data da formação`, `Nº de Formandos da Ação`
+- `Filtro`
+- `Tacovia`: mais campos do que a `Seepmode`
 
 ---
 
 ## ==Formandos==
 
 ### Diferença
-- Sem diferenças funcionais relevantes identificadas.
-- Existem apenas diferenças de nomenclatura em alguns rótulos, como `Nº ação` vs `Nº acção`, `Nº Referência` vs `N/ Referência` e um `IEPF` na `Seepmode` onde a `Tacovia` usa `IEFP`.
+- Tipo: nomenclatura
+- `Nº ação` vs `Nº acção`
+- `Nº Referência` vs `N/ Referência`
+- `IEPF` na `Seepmode` vs `IEFP` na `Tacovia`
 
 ---
 
 ## ==Formações==
 
 ### Diferença
-- Sem diferenças funcionais relevantes identificadas.
-- Foi identificada uma inconsistência de rótulo na `Vista de edição`:
+- Tipo: nomenclatura
+- `Vista de edição`
 - `Seepmode`: `Nº Formandos [trainees_number]`
 - `Tacovia`: `Nº Faturados`
-- Nas restantes vistas comparadas, o conteúdo está alinhado.
+- Restante conteúdo alinhado.
 
 ---
 
 ## ==Emails==
 
 ### Diferença
-- Sem diferenças relevantes identificadas.
+- Tipo: sem diferenças relevantes
 
 ---
 
 ## ==Notas==
 
 ### Diferença
-- Sem diferenças relevantes identificadas.
+- Tipo: sem diferenças relevantes
 
 ---
 
 ## ==Documentos==
 
 ### Diferença
-- Sem diferenças relevantes identificadas.
+- Tipo: sem diferenças relevantes
 
 ---
 
 ## ==Reuniões==
 
 ### Diferença
-- Sem diferenças relevantes identificadas.
+- Tipo: sem diferenças relevantes
 
 ---
 
 ## ==Telefonemas==
 
 ### Diferença
-- Sem diferenças relevantes identificadas.
+- Tipo: sem diferenças relevantes
 
 ---
 
 ## ==Contactos==
 
 ### Diferença
-- Sem diferenças relevantes identificadas.
+- Tipo: sem diferenças relevantes
 
 ---
 
 ## ==Contratos==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Tipo: estrutura + nomenclatura + campos
+- `Edição / Detalhe`
+- `Seepmode`: mistura PT/EN e mantém totais/campos comerciais no bloco principal
+- `Tacovia`: concentra a `Visão geral` em PT e separa totais em `Itens de linha`
+- `Tacovia`: inclui `Data criação`
+- `Vista de Lista`
+- `Seepmode`: lista curta com `ID`, `Annuity` e poucos campos
+- `Tacovia`: lista mais completa com `Anuidade`, `Versão`, `Data Renovação`, `Valor Líquido €`, `Pack`, `Estado do Pack`, `Valor do Pack`, `Assigned To`, `Data criação`
+- `Criação rápida`
+- Conteúdo próximo, mas com diferenças de nomenclatura PT/EN
 
 ---
 
 ## ==Faturas==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Tipo: estrutura + nomenclatura + campos
+- `Edição / Detalhe`
+- `Seepmode`: mais campos no bloco principal, incluindo totais e campos comerciais
+- `Tacovia`: `Visão geral` mais curta + `Itens de linha`
+- `Tacovia`: inclui `Data de criação`
+- Diferenças de nomes: `number`, `type_c`, `Company`, `Invoicing Notes`, `Payment Reminder`
+- `Vista de Lista`
+- `Seepmode`: lista curta
+- `Tacovia`: lista mais completa com `number`, `Descrição`, `total_amount`, `subtotal_amount`, `Valor Aberto (€)`, `Valor Pago (€)`, `Quote Date`, `Renovation Value`, `Vendedor`, `Data de criação`, `Atribuído a`, `created_by_name`
+- `Criação rápida`
+- Conteúdo próximo, com diferenças de nomenclatura como `Número da fatura` vs `number`, `Tipo` vs `type_c`, `Empresa` vs `Company`, `Notas da Faturação` vs `Invoicing Notes`
+- `Seepmode`: linha vazia no fim da vista
 
 ---
 
 ## ==Propostas==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Tipo: estrutura + nomenclatura + campos
+- `Edição / Detalhe`
+- `Seepmode`: um único bloco com totais e campos comerciais
+- `Tacovia`: `Visão geral` + `Itens de linha`
+- Diferenças de nomes: `number`, `stage`, `expiration`, `term`, `Company`, `approval_issue`
+- `Vista de Lista`
+- `Seepmode`: lista curta
+- `Tacovia`: lista mais completa com `number`, `Company`, `Data prevista fecho`, `billing_address_city`, `billing_address_state`, `total_amount`, `total_amt`, `stage`, `Situação de aprovação`, `Atribuído a`, `Date Created`, `Date Modified`, `created_by_name`
+- `Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
 ## ==Clientes==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Tipo: campos + nomenclatura
+- `Edição / Detalhe / Lista / Filtro`
+- Conteúdo alinhado no essencial
+- Diferenças de apresentação: `Mais detalhes (More Information)` vs `Mais detalhes`, `Outro (Assignment)` vs `Outro`, `Visão geral (Account Information)` vs `Visão geral`
+- `Criação rápida`
+- `Tacovia`: mais campos como `NUTS II`, `Nº Cond.`, `Nº Estab.`, `Enviar lembrete de Pagamento`, `Descrição`, `Membro de`, `Área de atividade`, `Telefone de trabalho`, `Sítio Internet`, `Endereço de faturação`, `Billing State`, `Billing Country`, `Shipping City`, `Shipping Postal Code`, `Rating`
+- `Seepmode`: menos campos e rótulos mais técnicos como `CAE [accounts_cae_c]`, `Tipo [client_service_type_c]`
 
 ---
 
