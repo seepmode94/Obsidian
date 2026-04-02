@@ -18,7 +18,7 @@ Obter informação suficiente para validar, por módulo, o que:
 
 ## Ordem de Trabalho
 
-- [x] `Assistências` ✅ 2026-04-02
+- [/] `Assistências` em validação
 - [ ] `Contratos`
 - [ ] `Acessos IEFP`
 - [ ] `Fichas de Aptidão`
@@ -182,12 +182,13 @@ Só considerar um módulo fechado quando:
 
 ### Assistências
 
-- [ ] Confirmar `code_c`
+- [/] Confirmar `code_c`
 - [ ] Confirmar `status`
 - [ ] Confirmar `priority`
 - [ ] Confirmar `area_c`
 - [ ] Confirmar `mode_c`
 - [ ] Confirmar `send_receive_c`
+- [x] Confirmar que os campos de data usam operadores de filtro comuns
 - [ ] Confirmar se `code_list` deve usar superset `Tacovia`
 - [ ] Confirmar impacto nos workflows
 

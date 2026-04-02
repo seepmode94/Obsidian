@@ -78,6 +78,116 @@
 - `mode_c` -> `cases_mode_list`
 - `send_receive_c` -> `send_receive_list`
 
+### Registo de validação em curso: Assistências
+
+Campos já confirmados no filtro do `Studio`:
+
+- `Assunto`
+- `Nome da conta`
+- `Concelho`
+- `Data Limite`
+- `Data`
+- `Data resolução`
+- `Data do serviço/auditoria`
+- `Aberto por`
+- `Fechado por`
+- `Situação`
+- `Prioridade`
+- `Modo`
+- `Código`
+- `Área`
+- `Criado em`
+- `Date Modified`
+- `Atribuído a`
+
+Leituras já confirmadas:
+
+- os campos de data usam um `dropdown` de operador de filtro comum
+- esse comportamento está coerente entre:
+  - `Data`
+  - `Data resolução`
+  - `Data do serviço/auditoria`
+  - `Data Limite`
+  - `Criado em`
+  - `Date Modified`
+- o campo `Código` está ativo como `dropdown` de negócio
+- o campo `Situação` está ativo como `dropdown` de negócio
+- o campo `Prioridade` está ativo como `dropdown` de negócio
+- o campo `Modo` está ativo como `dropdown` de negócio
+- no `dropdown` de `Código` existem valores com formatos mistos:
+  - alguns com `código + label`
+  - alguns apenas com o valor numérico
+
+Levantamento atual para `case_status_dom`:
+
+- `0 - Aberto`
+- `1 - Em espera`
+- `2 - Pendente`
+- `3 - Fechado`
+- `4 - Realizado`
+- `5 - Finalizado`
+- `6 - Expirado`
+
+Leitura provisória para `Situação`:
+
+- o `dropdown` está legível e uniformizado
+- os valores observados no `Studio` são coerentes com a lógica funcional do módulo
+- falta ainda cruzar esta lista com a recolha da outra fonte para fechar coerência entre extrações
+
+Levantamento atual para `priority_list`:
+
+- `1`
+- `2`
+- `3`
+
+Leitura provisória para `Prioridade`:
+
+- o `dropdown` está ativo e uniforme
+- os valores observados aparecem sem label descritiva
+- nesta fase não é erro por si só, mas deve ser cruzado com a outra recolha do `Studio` para perceber se:
+  - a lista foi documentada só com números
+  - ou se noutro levantamento existem labels associadas
+
+Levantamento atual para `cases_mode_list`:
+
+- `Email`
+- `Telefone`
+- `Presencial`
+
+Leitura provisória para `Modo`:
+
+- o `dropdown` está ativo e uniforme
+- os valores estão descritos com label textual
+- à partida não há sinal de falha estrutural
+- falta apenas cruzar com a outra recolha do `Studio`
+
+Levantamento atual para `code_list`:
+
+- exemplos com `label`:
+  - `106 - Colesterol total`
+  - `107 - Glicémia`
+  - `108 - Audiometria`
+  - `109 - Espirometria`
+  - `110 - ECG (repouso).`
+- exemplos só com valor numérico:
+  - `63`
+  - `64`
+  - `65`
+  - `66`
+  - `67`
+  - `68`
+  - `69`
+  - `73`
+
+Leitura provisória:
+
+- o `dropdown` `code_list` não está uniformizado ao nível de labels
+- isto deve ser tratado como ponto crítico de coerência entre recolhas do `Studio`
+- nesta fase ainda não está fechado se a diferença vem de:
+  - labels em falta
+  - configuração incompleta da lista
+  - diferença entre bases
+
 ### Observação sobre filtros com data
 
 No `Studio` e no filtro do módulo `Assistências` existem dois tipos de campos com comportamento diferente:
@@ -120,7 +230,10 @@ Conclusão provisória para `Assistências`:
 
 ### Assistências
 
-- Confirmar valores ativos de `code_c`
+- [/] Confirmar valores ativos de `code_c`
+- [/] Confirmar valores ativos de `status`
+- [/] Confirmar valores ativos de `priority`
+- [/] Confirmar valores ativos de `mode_c`
 - Alterar temporariamente um valor em `code_list`
 - Verificar impacto em:
   - criação
@@ -128,11 +241,8 @@ Conclusão provisória para `Assistências`:
   - filtro
   - workflows
 
-- Confirmar também os valores ativos de:
-  - `status`
-  - `priority`
+- [ ] Confirmar também os valores ativos de:
   - `area_c`
-  - `mode_c`
   - `send_receive_c`
 
 ### Módulos com extrações do Studio a rever
@@ -146,14 +256,44 @@ Conclusão provisória para `Assistências`:
 
 ### Assistências
 
-- [ ] Screenshot do filtro com os campos visíveis
-- [ ] Screenshot dos operadores de data no filtro
-- [ ] Screenshot do `Studio > Layouts > Filter View`
-- [ ] Notas sobre coerência entre extrações do `Studio`
+- [x] Screenshot do filtro com os campos visíveis
+- [x] Screenshot dos operadores de data no filtro
+- [x] Screenshot do `Studio > Layouts > Filter View`
+- [x] Notas sobre coerência entre extrações do `Studio`
 
 Anexos / observações:
 
-- 
+- os campos de data usam operadores de filtro comuns
+- `code_c` mostra valores com label e valores só numéricos
+- `status` apresenta valores uniformizados de `0` a `6`
+- `priority` apresenta valores `1`, `2`, `3` sem label textual
+
+## Critérios para Registo por Imagem
+
+Registar imagem sempre que apareça uma destas situações:
+
+- valores mistos no mesmo `dropdown`
+  - exemplo: alguns com `código + label` e outros só com número
+- valores sem label quando seria expectável haver descrição
+- diferenças entre o que aparece no filtro e o que aparece no `Studio`
+- campos presentes numa extração e ausentes noutra
+- nomes diferentes para o que parece ser o mesmo campo
+- ordem estranha ou quebra de sequência na lista
+- labels truncadas, vazias ou tecnicamente incorretas
+- um `dropdown` que parece incompleto face ao que está documentado
+- qualquer caso em que não seja óbvio se a diferença vem de:
+  - configuração
+  - recolha
+  - base de dados
+
+Aplicação já identificada em `Assistências`:
+
+- `code_c`
+  - deve ter sempre registo por imagem, porque mostra valores mistos
+- `priority`
+  - convém ter registo por imagem, porque a lista aparece só com números
+- `mode_c`
+  - imagem útil como evidência de lista uniforme e legível
 
 ## Fontes Base
 
