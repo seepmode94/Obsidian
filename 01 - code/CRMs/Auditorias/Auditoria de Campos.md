@@ -1,4 +1,12 @@
-# Auditoria de Fidelidade de Campos
+# Auditoria de Campos
+
+## Estado Atual
+
+- `Matriz de Auditoria`: criada
+- `Identificação de Gaps`: em curso
+- `Campos a fundir`: primeiros casos identificados
+- `Dropdowns divergentes por base`: em curso, com foco em `Assistências`
+- `Testes no Studio`: pendentes
 
 ## Objetivo
 
@@ -78,6 +86,9 @@ Mapear os campos SQL originais de `Seepmode` e `Tacovia` para o schema final do 
 - `Assistências.code_c` usa `code_list` com divergência forte:
   - `Seepmode`: 1 valor
   - `Tacovia`: 135 valores
+- A evidência funcional dos workflows mostra que `code_list` não é residual:
+  - há códigos ativos pelo menos em `1, 2, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19, 20, 23, 24, 25, 26, 28, 29, 33, 34, 35, 36, 38, 39, 40-57, 201, 250`
+- Isto reforça que a harmonização de `Assistências.code_c` não pode ser tratada como detalhe cosmético.
 - Validar também em `Assistências`:
   - `case_status_dom`
   - `priority_list`
@@ -108,6 +119,49 @@ Mapear os campos SQL originais de `Seepmode` e `Tacovia` para o schema final do 
 - `mode_c` -> `cases_mode_list`
 - `send_receive_c` -> `send_receive_list`
 
+### Assistências: leitura funcional já confirmada
+
+- `code_c`
+  - campo comum nas duas bases
+  - dropdown comum por nome: `code_list`
+  - divergência confirmada por documentação no conteúdo da lista
+  - criticidade alta porque os workflows dependem diretamente de grupos de códigos
+- `status`
+  - campo comum nas duas bases
+  - dropdown a validar: `case_status_dom`
+  - valores observados funcionalmente nos workflows:
+    - `Closed`
+    - `Pendente`
+    - `New`
+    - `Expirado`
+    - `Realized`
+- `priority`
+  - campo comum nas duas bases
+  - dropdown a validar: `priority_list`
+  - evidência funcional parcial:
+    - workflow de duplicação usa `priority = 3`
+- `area_c`
+  - campo comum nas duas bases
+  - dropdown a validar: `area_list`
+- `mode_c`
+  - campo comum nas duas bases
+  - dropdown a validar: `cases_mode_list`
+  - default observado em `fields_meta_data`: `Email`
+- `send_receive_c`
+  - campo comum nas duas bases
+  - dropdown a validar: `send_receive_list`
+  - default observado em `fields_meta_data`: `Send`
+
+### Decisão provisória para Assistências
+
+- `code_c` deve ser tratado como caso prioritário de harmonização
+- o `LuxuryCRM` deve usar um superset de códigos capaz de absorver pelo menos os grupos já observados nos workflows
+- antes de fechar a lista final, o Studio deve ser usado para confirmar:
+  - valores ativos
+  - ordem
+  - labels
+  - impacto real em criação, edição, filtro e workflows
+
 ## Testes a Executar no Studio
 
 ### Prioridade 1: Assistências
@@ -119,6 +173,16 @@ Mapear os campos SQL originais de `Seepmode` e `Tacovia` para o schema final do 
   - edição
   - filtro
   - workflows
+- Confirmar no Studio os valores ativos de:
+  - `status`
+  - `priority`
+  - `area_c`
+  - `mode_c`
+  - `send_receive_c`
+- Registar para cada campo:
+  - lista visível no Studio
+  - lista visível na página real
+  - se a alteração no Studio propaga ou não para a UI real
 
 ### Prioridade 2: Módulos com divergência Studio vs página real
 
@@ -134,12 +198,12 @@ Objetivo:
 
 ## Fontes Base
 
-- `01 - code/CRMs/Comparações de CRM/review.md`
-- `01 - code/CRMs/Comparações de CRM/Parecer tecnico.md`
-- `01 - code/CRMs/Comparações de CRM/Comparação dos antigos CRMs.md`
-- `01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/seepmode-vs-tacovia-fields.md`
-- `01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-matrix.md`
-- `01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-operation-plan.md`
+- [[01 - code/CRMs/Comparações de CRM/review]]
+- [[01 - code/CRMs/Comparações de CRM/Parecer tecnico]]
+- [[01 - code/CRMs/Comparações de CRM/Comparação dos antigos CRMs]]
+- [[01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/seepmode-vs-tacovia-fields]]
+- [[01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-matrix]]
+- [[01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-operation-plan]]
 
 ## Validação com Dumps SQL
 
@@ -237,12 +301,22 @@ Em ambos os dumps, `fields_meta_data` confirma os mesmos campos e os mesmos nome
 
 - `Assistências.code_c` continua a ser o principal caso de harmonização de dropdown
 - O alvo deve usar pelo menos o superset de `Tacovia` para `code_list`
+- Os workflows mostram que a lista funcional ativa inclui códigos distribuídos por vários domínios de negócio, incluindo CRM, suporte técnico, jurídico e segurança
 - Falta ainda validar conteúdo de:
   - `area_list`
   - `case_status_dom`
   - `priority_list`
   - `cases_mode_list`
   - `send_receive_list`
+
+**Evidência funcional adicional**
+
+- `suitecrm_workflows.md` demonstra uso operacional de `code_c` em grupos concretos:
+  - suporte técnico: `1-29` com subset funcional explícito
+  - CRM recorrente: `13`
+  - jurídico: `40-57`
+  - segurança/SST: `201`, `250`
+- Isto mostra que a harmonização de `code_list` deve preservar comportamento de workflows, não apenas labels de interface.
 
 ### 4. Fichas de Aptidão: modelo rico e relações
 
