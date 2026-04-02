@@ -330,7 +330,6 @@
   - [ ] Payment Reminder [payment_reminder_c]
   - [ ] Company [empresa_c]
   - [ ] Line Items [line_items]
-  - [ ] 
 ### Filtro
   - [ ] ID [id]
   - [ ] Título [name]

@@ -150,34 +150,43 @@
 ## ==Contratos==
 
 ### Diferença
-- Tipo: estrutura + nomenclatura + campos
+- Tipo: nomenclatura + campos
+
 - `Edição / Detalhe`
-- `Seepmode`: mantém no bloco principal campos como `Annuity`, `Net Value €`, `Version`, `Renewal Date`, `Pack Value`, `Pack Status`, `Company`, `Currency`, `Total`, `Subtotal`, `Taxa de envio`, `Total final`
-- `Tacovia`: concentra a `Visão geral` em PT e separa totais em `Itens de linha`
+- `Seepmode`: inclui no bloco principal `Annuity [annuity]`, `Net Value € [net_value]`, `Pack [pack]`, `Version [version]`, `Gestor do contrato [contract_manager_id]`, `Renewal Date [renewal_date]`, `Pack Value [pack_value]`, `Pack Status [pack_status]`, `Company [company]`, `Currency [currency]`, `Total [total]`, `Desconto [discount_amount]`, `Subtotal [subtotal]`, `Portes de envio [shipping_amount]`, `Taxa de envio [shipping_tax]`, `Taxa [tax_amount]`, `Total final [grand_total]`, `Assigned To [assigned_user_id]`, `Anuidade [anuidade_c]`, `Versão [versao_c]`, `Valor do Pack [renewal_value_c]`, `Pack [pack_c]`, `Estado do Pack [pack_state_c]`, `Valor Líquido € [net_value_c]`, `Data Renovação [renewal_date_c]`, `Empresa [empresa_c]`, `Line Items [line_items]`
+- `Tacovia`: usa na `Visão geral` `Assigned To`, `Anuidade`, `Versão`, `Data Renovação`, `Valor Líquido €`, `Valor do Pack`, `Pack`, `Estado do Pack`, `Empresa`, `Data criação`
+- `Tacovia`: usa em `Itens de linha` `currency_id`, `Line Items`, `total_amt`, `Desconto`, `subtotal_amount`, `Portes de envio`, `shipping_tax_amt`, `Taxa`, `total_amount`
 - `Tacovia`: inclui `Data criação`
 - `Vista de Lista`
-- `Seepmode`: lista curta com `ID`, `Annuity` e poucos campos
-- `Tacovia`: lista mais completa com `Anuidade`, `Versão`, `Data Renovação`, `Valor Líquido €`, `Pack`, `Estado do Pack`, `Valor do Pack`, `Assigned To`, `Data criação`
+- `Seepmode`: `ID`, `Nº`, `Annuity`, `Data início`, `Data fim`, `Cliente`
+- `Tacovia`: `Nº`, `Cliente`, `Anuidade`, `Versão`, `Data início`, `Data Renovação`, `Data fim`, `Valor Líquido €`, `Pack`, `Estado do Pack`, `Valor do Pack`, `Assigned To`, `Data criação`
 - `Criação rápida`
-- Diferenças de nomes entre campos como `Annuity` vs `Anuidade`, `Version` vs `Versão`, `Renewal Date` vs `Data Renovação`, `Company` vs `Empresa`
+- Diferenças de nomes: `Annuity` vs `Anuidade`, `Net Value €` vs `Valor Líquido €`, `Version` vs `Versão`, `Renewal Date` vs `Data Renovação`, `Pack Value` vs `Valor do Pack`, `Pack Status` vs `Estado do Pack`, `Company` vs `Empresa`
+- `Filtro`
+- Sem diferenças relevantes
 
 ---
 
 ## ==Faturas==
 
 ### Diferença
-- Tipo: estrutura + nomenclatura + campos
+- Tipo: nomenclatura + campos
+
 - `Edição / Detalhe`
-- `Seepmode`: mais campos no bloco principal, incluindo totais e campos comerciais
-- `Tacovia`: `Visão geral` mais curta + `Itens de linha`
+- `Seepmode`: inclui no bloco principal `Subtotal`, `Desconto`, `Taxa`, `Total`, `Portes de envio [amount_paid]`, `Número da fatura`, `Tipo`, `Vendor`, `Amount Open (€)`, `Valor renovação (€)`, `Pack Avançado`, `Data Renovação`, `Contratos`, `Notas da Faturação`, `Enviar Email Automático a Relembrar Pagamento`, `Empresa`, `Currency`, `Taxa de envio`, `Total final`, `Vendedor`, `Valor Pago (€)`, `Valor Aberto (€)`, `Legal Pack`, `Renovation Value`, `Quote Date`, `Invoicing Notes`, `Payment Reminder`, `Company`, `Line Items`
+
+- `Tacovia`: usa na `Visão geral` `Vendedor`, `number`, `type_c`, `Valor Pago (€)`, `Valor Aberto (€)`, `Legal Pack`, `Renovation Value`, `Quote Date`, `Company`, `Contratos`, `Invoicing Notes`, `Payment Reminder`, `Data de criação`, `Atribuído a`
+- `Tacovia`: usa em `Itens de linha` `currency_id`, `Line Items`, `total_amt`, `Desconto`, `subtotal_amount`, `shipping_amount`, `shipping_tax_amt`, `Taxa`, `total_amount`
 - `Tacovia`: inclui `Data de criação`
-- Diferenças de nomes: `number`, `type_c`, `Company`, `Invoicing Notes`, `Payment Reminder`
+
 - `Vista de Lista`
-- `Seepmode`: lista curta
-- `Tacovia`: lista mais completa com `number`, `Descrição`, `total_amount`, `subtotal_amount`, `Valor Aberto (€)`, `Valor Pago (€)`, `Quote Date`, `Renovation Value`, `Vendedor`, `Data de criação`, `Atribuído a`, `created_by_name`
+- `Seepmode`: `ID`, `Título`, `Clientes`, `Data da fatura`, `Data Pagamento`, `Situação`
+- `Tacovia`: `number`, `Título`, `Clientes`, `Data da fatura`, `Descrição`, `total_amount`, `subtotal_amount`, `Valor Aberto (€)`, `Valor Pago (€)`, `Data Pagamento`, `Quote Date`, `Renovation Value`, `Vendedor`, `Data de criação`, `Atribuído a`, `created_by_name`
+
 - `Criação rápida`
-- Conteúdo próximo, com diferenças de nomenclatura como `Número da fatura` vs `number`, `Tipo` vs `type_c`, `Empresa` vs `Company`, `Notas da Faturação` vs `Invoicing Notes`
-- `Seepmode`: linha vazia no fim da vista
+- Sem diferenças relevantes
+- `Filtro`
+- Sem diferenças relevantes
 
 ---
 
