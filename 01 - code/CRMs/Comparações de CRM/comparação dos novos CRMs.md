@@ -13,6 +13,7 @@
 ## ==Fichas de Aptidão==
 ### Diferença
 - Tipo: estrutural
+- `Módulo`
 - `Seepmode`: módulo existente
 - `Tacovia`: módulo inexistente
 
@@ -22,6 +23,8 @@
 
 ### Diferença
 - Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
@@ -32,13 +35,15 @@
 - `Vista de Lista`
 - `Seepmode`: inclui `ID [id]`
 - `Tacovia`: não inclui `ID`
-- Restante conteúdo alinhado.
+- `Edição / Detalhe / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
 ## ==Sessões==
 ### Diferença
 - Tipo: estrutural
+- `Módulo`
 - `Seepmode`: orientado para `Relatórios agendados`
 - `Tacovia`: orientado para `Sessões` de formação
 
@@ -47,7 +52,7 @@
 ## ==Formadores==
 
 ### Diferença
-- Tipo: campos
+- Tipo: campos + estrutura
 - `Edição / Detalhe / Criação rápida`
 - `Seepmode`: campos extra `Training`, `Assigned To`, `Contact`, `Receipt Value`, `Currency`
 - `Tacovia`: campo extra `(preencher)`
@@ -62,6 +67,7 @@
 
 ### Diferença
 - Tipo: nomenclatura
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
 - `Nº ação` vs `Nº acção`
 - `Nº Referência` vs `N/ Referência`
 - `IEPF` na `Seepmode` vs `IEFP` na `Tacovia`
@@ -75,7 +81,8 @@
 - `Vista de edição`
 - `Seepmode`: `Nº Formandos [trainees_number]`
 - `Tacovia`: `Nº Faturados`
-- Restante conteúdo alinhado.
+- `Vista de detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
@@ -83,6 +90,8 @@
 
 ### Diferença
 - Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
@@ -90,6 +99,8 @@
 
 ### Diferença
 - Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
@@ -97,6 +108,8 @@
 
 ### Diferença
 - Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
@@ -104,6 +117,8 @@
 
 ### Diferença
 - Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
@@ -111,6 +126,8 @@
 
 ### Diferença
 - Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
@@ -118,6 +135,8 @@
 
 ### Diferença
 - Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
