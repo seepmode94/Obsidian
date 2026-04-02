@@ -1,6 +1,6 @@
 
 ## Resumo
-- A maior parte dos módulos já tem conteúdo equivalente entre `check-list Tacovia.md` e `check-list Seepmode.md`.
+- A maior parte dos módulos já tem conteúdo equivalente entre `check-list do CRM antigo Tacovia.md` e `check-list do CRM antigo Seepmode.md`.
 - As diferenças de conteúdo realmente relevantes concentram-se em poucos módulos.
 
 ## Módulos sem diferenças de conteúdo relevantes
