@@ -38,7 +38,9 @@ Obter informação suficiente para validar, por módulo, o que:
 
 ## Checklist por Módulo
 
-Para cada módulo, validar:
+### Quando o módulo existe nas duas bases
+
+Validar:
 
 - [ ] Campos comuns entre as duas bases
 - [ ] Campos exclusivos da `Seepmode`
@@ -51,6 +53,18 @@ Para cada módulo, validar:
 - [ ] Gaps de schema no `LuxuryCRM`
 - [ ] Gaps de mapeamento no `LuxuryCRM`
 - [ ] Necessidade de teste no `Studio`
+
+### Quando o módulo existe só numa base
+
+Validar:
+
+- [ ] Confirmar que o módulo é exclusivo de uma base
+- [ ] Confirmar os campos do módulo nessa base
+- [ ] Confirmar relações relevantes
+- [ ] Confirmar dropdowns internos do módulo
+- [ ] Confirmar destino técnico no `LuxuryCRM`
+- [ ] Identificar gaps de schema ou mapeamento
+- [ ] Decidir se precisa de teste no `Studio`
 
 ## Como Validar
 
@@ -139,6 +153,7 @@ Usar apenas quando necessário para:
 - confirmar o que está configurado no `Studio`
 - validar coerência entre duas extrações diferentes do `Studio`
 - confirmar dropdowns ativos quando a documentação e o SQL não chegam
+- separar `dropdowns` de negócio de operadores de filtro
 
 Validação prática:
 
@@ -148,6 +163,7 @@ Validação prática:
 - [ ] Ver detalhe
 - [ ] Ver filtro
 - [ ] Ver list view
+- [ ] Separar campos de lista de negócio de campos com operador de pesquisa
 - [ ] Alterar temporariamente algo no `Studio`
 - [ ] Confirmar a alteração dentro do próprio `Studio`
 
@@ -189,6 +205,7 @@ Só considerar um módulo fechado quando:
 
 ### Fichas de Aptidão
 
+- [x] Assinalar como módulo exclusivo da `Seepmode` ✅ 2026-04-02
 - [ ] Confirmar modelo rico da `Seepmode`
 - [ ] Confirmar relações:
   - `accounts_sdmod_capability_1_c`
@@ -196,6 +213,14 @@ Só considerar um módulo fechado quando:
   - `project_sdmod_capability_1_c`
   - `sdmod_capability_documents_1_c`
 - [ ] Confirmar gap estrutural de `project_sdmod_capability_1_c`
+
+### Medicina Ocupacional
+
+- [x] Assinalar como módulo exclusivo da `Seepmode`, se essa ausência na `Tacovia` se confirmar ✅ 2026-04-02
+- [ ] Confirmar campos e relações do módulo
+- [ ] Confirmar dropdowns internos relevantes
+- [ ] Confirmar destino técnico no `LuxuryCRM`
+- [ ] Identificar gaps de schema ou mapeamento
 
 ## Resultado Esperado
 

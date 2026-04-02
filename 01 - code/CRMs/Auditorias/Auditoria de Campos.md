@@ -78,6 +78,44 @@
 - `mode_c` -> `cases_mode_list`
 - `send_receive_c` -> `send_receive_list`
 
+### Observação sobre filtros com data
+
+No `Studio` e no filtro do módulo `Assistências` existem dois tipos de campos com comportamento diferente:
+
+- `dropdowns` de negócio
+  - exemplos: `Código`, `Situação`, `Prioridade`, `Modo`, `Área`
+  - servem para escolher valores do próprio campo
+- `dropdowns` de operador de filtro
+  - exemplos: `Data`, `Data resolução`, `Data do serviço/auditoria`, `Data Limite`, `Criado em`, `Date Modified`
+  - servem para escolher o operador da pesquisa, como:
+    - `Igual`
+    - `Antes`
+    - `Depois`
+    - `Entre`
+
+Leitura desta validação:
+
+- os campos de data no filtro estão a funcionar de forma coerente entre si
+- o `dropdown` associado a estes campos não representa uma lista de negócio
+- representa antes uma lógica comum de operadores de pesquisa
+- por isso, nesta auditoria, estes campos devem ser tratados separadamente dos `dropdowns` funcionais do módulo
+
+Conclusão provisória para `Assistências`:
+
+- validar como `dropdowns críticos de negócio`:
+  - `code_c`
+  - `status`
+  - `priority`
+  - `mode_c`
+  - `area_c`
+- validar como `operadores de filtro`:
+  - `assistence_datetime_c`
+  - `service_date_c`
+  - `date_due`
+  - `date_entered`
+  - `date_modified`
+  - `resolution_date`
+
 ## Testes no Studio
 
 ### Assistências
@@ -103,6 +141,19 @@
 - `Medicina Ocupacional`
 - `Fichas de Aptidão`
 - `Propostas`
+
+## Evidência a Anexar
+
+### Assistências
+
+- [ ] Screenshot do filtro com os campos visíveis
+- [ ] Screenshot dos operadores de data no filtro
+- [ ] Screenshot do `Studio > Layouts > Filter View`
+- [ ] Notas sobre coerência entre extrações do `Studio`
+
+Anexos / observações:
+
+- 
 
 ## Fontes Base
 
