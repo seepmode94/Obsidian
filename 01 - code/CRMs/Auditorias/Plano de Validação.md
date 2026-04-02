@@ -183,10 +183,10 @@ Só considerar um módulo fechado quando:
 ### Assistências
 
 - [/] Confirmar `code_c`
-- [ ] Confirmar `status`
-- [ ] Confirmar `priority`
-- [ ] Confirmar `area_c`
-- [ ] Confirmar `mode_c`
+- [x] Confirmar `status` ✅ 2026-04-02
+- [x] Confirmar `priority` ✅ 2026-04-02
+- [x] Confirmar `area_c` ✅ 2026-04-02
+- [x] Confirmar `mode_c` ✅ 2026-04-02
 - [ ] Confirmar `send_receive_c`
 - [x] Confirmar que os campos de data usam operadores de filtro comuns
 - [ ] Confirmar se `code_list` deve usar superset `Tacovia`
