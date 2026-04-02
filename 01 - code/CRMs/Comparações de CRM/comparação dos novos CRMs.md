@@ -35,17 +35,9 @@
 
 ## ==Acessos IEFP==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Na `Vista de Lista`, a `Seepmode` inclui `ID [id]` e a `Tacovia` não.
+- Nos restantes campos comparados, não foram identificadas diferenças relevantes.
 
 ---
 
@@ -67,146 +59,72 @@
 
 ## ==Formadores==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Na `Vista de edição`, `Vista de detalhe` e `Criação rápida`, a `Seepmode` inclui campos técnicos adicionais que não estão refletidos na `Tacovia`, como `Training`, `Assigned To`, `Contact`, `Receipt Value` e `Currency`.
+- Nestas mesmas vistas, a `Tacovia` inclui um campo `(preencher)` que não aparece na `Seepmode`.
+- Na `Vista de Lista`, a `Tacovia` tem muito mais detalhe, com campos como `Ação`, `Ação de Formação`, `Cliente`, `Data da formação` e `Nº de Formandos da Ação`, que não estão refletidos na `Seepmode`.
+- No `Filtro`, a `Tacovia` também tem mais campos relevantes do que a `Seepmode`.
 
 ---
 
 ## ==Formandos==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Sem diferenças funcionais relevantes identificadas.
+- Existem apenas diferenças de nomenclatura em alguns rótulos, como `Nº ação` vs `Nº acção`, `Nº Referência` vs `N/ Referência` e um `IEPF` na `Seepmode` onde a `Tacovia` usa `IEFP`.
 
 ---
 
 ## ==Formações==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- Existe pelo menos uma diferença já identificada na `Criação rápida`.
-- Na `Tacovia` aparece o bloco `Recursos Administrativos`, que não está refletido da mesma forma na `Seepmode`.
+- Sem diferenças funcionais relevantes identificadas.
+- Foi identificada uma inconsistência de rótulo na `Vista de edição`:
+- `Seepmode`: `Nº Formandos [trainees_number]`
+- `Tacovia`: `Nº Faturados`
+- Nas restantes vistas comparadas, o conteúdo está alinhado.
 
 ---
 
 ## ==Emails==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Sem diferenças relevantes identificadas.
 
 ---
 
 ## ==Notas==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Sem diferenças relevantes identificadas.
 
 ---
 
 ## ==Documentos==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- Diferença confirmada.
-- Na `Seepmode` aparece `Fichas de Aptidão`.
-- Na `Tacovia` aparecem campos e blocos de revisão que não estão refletidos da mesma forma na `Seepmode`.
+- Sem diferenças relevantes identificadas.
 
 ---
 
 ## ==Reuniões==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Sem diferenças relevantes identificadas.
 
 ---
 
 ## ==Telefonemas==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Sem diferenças relevantes identificadas.
 
 ---
 
 ## ==Contactos==
 
-### Seepmode
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Vista de Criação Rápida` e `Filtro`.
-
-### Tacovia
-- O módulo existe.
-- Tem `Vista de edição`, `Vista de detalhe`, `Vista de Lista`, `Criação rápida` e `Filtro`.
-
 ### Diferença
-- À primeira vista, a estrutura geral está alinhada.
-- Fica para validação mais fina campo a campo.
+- Sem diferenças relevantes identificadas.
 
 ---
 
