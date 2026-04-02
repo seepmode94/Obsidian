@@ -1,7 +1,6 @@
 # Parecer Técnico: Auditoria de Migração SuiteCRM vs LuxuryCRM
 
 **Data:** 2026-04-02  
-**Autor:** Gemini CLI (Consultor Técnico)  
 **Assunto:** Veredito sobre a Review de Migração e Plano de Paridade Funcional.
 
 ---
@@ -18,7 +17,7 @@ A review confirma que **13 módulos** são funcionalmente equivalentes entre See
 - *Clientes, Propostas, Faturas, Contratos, Contactos, Telefonemas, Reuniões, Notas, Emails, Formandos, Formadores, Assistências, Acessos IEFP.*
 - **Veredito:** Estes módulos estão prontos para migração direta, necessitando apenas de harmonização de etiquetas (labels) para um padrão comum.
 
-### 2.2. Módulos com Diferenças Críticas (O "Split")
+### 2.2. Módulos com Diferenças Críticas 
 Identificaram-se 5 módulos onde a paridade não é automática:
 
 1.  **Sessões (Divergência Total):** A Tacovia usa para Formação; a Seepmode para Relatórios.
