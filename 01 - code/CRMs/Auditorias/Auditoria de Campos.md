@@ -68,6 +68,10 @@ Mapear os campos SQL originais de `Seepmode` e `Tacovia` para o schema final do 
 
 - Rever documentação operacional de filtros onde os ids usados não batem certo com a metadata técnica real.
 - Confirmar se os nomes usados em `filter-fields-mapping.md` são nomes finais do alvo ou nomes reais de metadata do SuiteCRM.
+- Existe pelo menos uma discrepância entre documentação comparativa e dumps SQL:
+  - a documentação antiga refere `icfp_email_c` na Seepmode
+  - os dumps SQL lidos nesta fase mostram `iefp_email_c` em ambos os lados
+  - este ponto deve ser tratado como conflito documental até validação final no sistema ativo
 
 ### Gaps de dropdown
 
@@ -136,3 +140,159 @@ Objetivo:
 - `01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/seepmode-vs-tacovia-fields.md`
 - `01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-matrix.md`
 - `01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-operation-plan.md`
+
+## Validação com Dumps SQL
+
+### Âmbito validado nesta fase
+
+- `aos_contracts_cstm`
+- `fields_meta_data`
+- `contacts_audit`
+- `sdmod_iefp_accesses_cstm`
+- evidência documental cruzada com `seepmode-vs-tacovia-fields.md`
+
+### 1. Contratos: `anuidade_c` vs `anuidade_list_c`
+
+**Confirmado nos dumps SQL**
+
+- `Seepmode`:
+  - em `aos_contracts_cstm`, existe a coluna `anuidade_c`
+  - em `fields_meta_data`, o campo aparece como:
+    - `AOS_Contractsanuidade_c`
+    - tipo `enum`
+    - dropdown `anuidade_list`
+- `Tacovia`:
+  - em `aos_contracts_cstm`, existe a coluna `anuidade_list_c`
+  - em `fields_meta_data`, o campo aparece como:
+    - `AOS_Contractsanuidade_list_c`
+    - tipo `enum`
+    - dropdown `anuidade_list`
+
+**Conclusão**
+
+- Os dois lados usam o mesmo conceito funcional e o mesmo dropdown lógico.
+- A diferença é apenas o nome técnico da coluna.
+- A decisão correta mantém-se:
+  - `anuidade_list_c` -> `anuidade_c`
+
+### 2. Acessos IEFP: `icfp_email_c` vs `iefp_email_c`
+
+**Resultado da validação SQL**
+
+- Nos dumps lidos nesta fase, aparece `iefp_email_c` dos dois lados:
+  - em `fields_meta_data`
+  - em `sdmod_iefp_accesses_cstm`
+  - e também em `contacts_audit` do dump Tacovia
+
+**Discrepância detetada**
+
+- A documentação comparativa anterior refere:
+  - `Seepmode` = `icfp_email_c`
+  - `Tacovia` = `iefp_email_c`
+- O SQL agora consultado não confirma essa diferença com a mesma clareza.
+
+**Conclusão provisória**
+
+- Manter a normalização final em `iefp_email_c`
+- Assinalar o caso como `discrepância documental`
+- Antes de fechar a auditoria definitiva, validar:
+  - se o typo existiu apenas em metadata antiga
+  - ou se surgiu em outro dump / outra extração histórica
+
+### 3. Assistências: dropdowns partilhados
+
+**Confirmado nos dumps SQL**
+
+Em ambos os dumps, `fields_meta_data` confirma os mesmos campos e os mesmos nomes lógicos de dropdown:
+
+- `Casescode_c` -> `code_list`
+- `Casesarea_c` -> `area_list`
+- `Casesmode_c` -> `cases_mode_list`
+- `Casessend_receive_c` -> `send_receive_list`
+
+**Limite da evidência SQL**
+
+- Os dumps SQL desta fase não incluem:
+  - tabela `dropdownlists`
+  - definição `app_list_strings`
+  - conteúdo completo das listas
+- Ou seja:
+  - o SQL confirma que o campo aponta para uma lista com esse nome
+  - mas não confirma os valores concretos dessa lista
+
+**Conclusão**
+
+- A estrutura do campo é comum nas duas bases.
+- O ponto de divergência não está no nome do campo nem no nome da lista.
+- O ponto de divergência está no conteúdo dos dropdowns.
+
+**Evidência documental complementar**
+
+- `seepmode-vs-tacovia-fields.md` confirma:
+  - `code_list`
+    - `Seepmode`: 1 valor
+    - `Tacovia`: 135 valores
+
+**Decisão**
+
+- `Assistências.code_c` continua a ser o principal caso de harmonização de dropdown
+- O alvo deve usar pelo menos o superset de `Tacovia` para `code_list`
+- Falta ainda validar conteúdo de:
+  - `area_list`
+  - `case_status_dom`
+  - `priority_list`
+  - `cases_mode_list`
+  - `send_receive_list`
+
+### 4. Fichas de Aptidão: modelo rico e relações
+
+**Confirmado nos dumps SQL**
+
+- O dump `Seepmode` mostra explicitamente campos ricos em `sdmod_capability`, por exemplo:
+  - `ability_result_c`
+  - `exam_date_c`
+  - `recommendations_c`
+- A evidência documental do projeto já dizia que este modelo rico existe na Seepmode e foi absorvido pelo `LuxuryCRM`.
+
+**Relações**
+
+- Os dumps mostram presença de tabelas de relação ligadas a `sdmod_capability`, incluindo:
+  - `accounts_sdmod_capability_1_c`
+- A documentação do projeto mantém ainda como relevantes:
+  - `contacts_sdmod_capability_1_c`
+  - `project_sdmod_capability_1_c`
+  - `sdmod_capability_documents_1_c`
+
+**Conclusão**
+
+- O modelo rico de `Fichas de Aptidão` continua validado como base final do schema.
+- O único ponto ainda em aberto é estrutural:
+  - relação `project_sdmod_capability_1_c`
+  - decidir `project_id` direto ou join dedicada
+
+## Estado da Evidência
+
+### Confirmado por SQL
+
+- diferença técnica entre `anuidade_c` e `anuidade_list_c`
+- existência comum dos campos de `Assistências`
+- existência de `code_list`, `area_list`, `cases_mode_list`, `send_receive_list` como dropdowns associados aos campos de `Cases`
+- existência do modelo rico `sdmod_capability` na Seepmode
+- existência de `iefp_email_c` no SQL consultado
+- limite dos dumps: confirmam referência à lista, não o conteúdo dos dropdowns
+
+### Confirmado só por documentação nesta fase
+
+- divergência quantitativa real do conteúdo de `code_list`
+- necessidade de usar o superset Tacovia em `Assistências.code_c`
+- discrepância antiga `icfp_email_c` vs `iefp_email_c`
+
+### Em aberto
+
+- validar o conteúdo completo das listas fora dos dumps SQL, através de metadata/language files ou da instância ativa:
+  - `area_list`
+  - `case_status_dom`
+  - `priority_list`
+  - `cases_mode_list`
+  - `send_receive_list`
+- fechar a decisão estrutural de `project_sdmod_capability_1_c`
