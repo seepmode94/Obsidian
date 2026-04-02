@@ -53,13 +53,19 @@
 
 ### Diferença
 - Tipo: campos + estrutura
+
 - `Edição / Detalhe / Criação rápida`
-- `Seepmode`: campos extra `Training`, `Assigned To`, `Contact`, `Receipt Value`, `Currency`
+- `Seepmode`: campos extra `Training [training_id]`, `Assigned To [assigned_user_id]`, `Contact [contact_id]`, `Receipt Value [receipt_value]`, `Currency [currency_id]`
 - `Tacovia`: campo extra `(preencher)`
+- Diferença de nome: `Número da Factura` vs `Número da Fatura`
+
 - `Vista de Lista`
-- `Tacovia`: mais detalhe com `Ação`, `Ação de Formação`, `Cliente`, `Data da formação`, `Nº de Formandos da Ação`
+- `Seepmode`: só inclui `ID`, `Nome`, `Valor/Hora`, `Valor Total`, `Número da Factura`, `Data de pagamento`
+- `Tacovia`: inclui `Ação`, `Ação de Formação`, `Cliente`, `Data da formação`, `Nº de Formandos da Ação`, `Valor do recibo (€)`, `Número da Fatura`, `Data da fatura`, `Data Entrega Recibo`, `Dossier entregue pelo formador/a`, `Data verificação do Dossier`, `Observações`
+
 - `Filtro`
-- `Tacovia`: mais campos do que a `Seepmode`
+- `Seepmode`: `ID`, `Nome`, `Valor/Hora`, `Valor Total`, `Número da Factura`, `Data de pagamento`
+- `Tacovia`: `Nome`, `Data da fatura`, `Dossier entregue pelo formador/a`, `Ação de Formação`, `Data da formação`, `Número de Formandos da Ação`, `Data de pagamento`, `Data Entrega Recibo`, `Valor Total`
 
 ---
 
@@ -70,7 +76,8 @@
 - `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
 - `Nº ação` vs `Nº acção`
 - `Nº Referência` vs `N/ Referência`
-- `IEPF` na `Seepmode` vs `IEFP` na `Tacovia`
+- `Sigo nº` vs `Sigo nº:`
+- `Data Início Submissão IEPF Formando` vs `Data Inicio Submissão IEFP Formando`
 
 ---
 
@@ -82,7 +89,7 @@
 - `Seepmode`: `Nº Formandos [trainees_number]`
 - `Tacovia`: `Nº Faturados`
 - `Vista de detalhe / Vista de Lista / Criação rápida / Filtro`
-- Conteúdo alinhado no essencial
+- Sem diferenças relevantes
 
 ---
 
@@ -178,15 +185,20 @@
 
 ### Diferença
 - Tipo: estrutura + nomenclatura + campos
+
 - `Edição / Detalhe`
-- `Seepmode`: um único bloco com totais e campos comerciais
-- `Tacovia`: `Visão geral` + `Itens de linha`
-- Diferenças de nomes: `number`, `stage`, `expiration`, `term`, `Company`, `approval_issue`
+- `Seepmode`: um único bloco com todos os campos
+- `Tacovia`: separa `Visão geral` e `Itens de linha`
+- `Seepmode`: usa `Fase proposta [quote_stage]`, `Válida até [valid_until]`, `Condições de pagamento [payment_terms]`, `Expected Close Date [expected_close_date]`, `Billing Notes [billing_notes]`, `Empresa [company]`, `Currency [currency]`, `Total final [grand_total]`, `Company [empresa_c]`, `Notas para a Faturação [invoicing_notes_c]`
+- `Tacovia`: usa `number`, `stage`, `expiration`, `term`, `Company`, `approval_issue`
+- `Tacovia`: coloca os totais em `Itens de linha` com `currency_id`, `Line Items`, `total_amt`, `Desconto`, `subtotal_amount`, `Portes de envio`, `shipping_tax_amt`, `Taxa`, `total_amount`
+
 - `Vista de Lista`
-- `Seepmode`: lista curta
-- `Tacovia`: lista mais completa com `number`, `Company`, `Data prevista fecho`, `billing_address_city`, `billing_address_state`, `total_amount`, `total_amt`, `stage`, `Situação de aprovação`, `Atribuído a`, `Date Created`, `Date Modified`, `created_by_name`
+- `Seepmode`: `ID`, `Título`, `Clientes`, `Fase proposta`, `Válida até`, `Condições de pagamento`
+- `Tacovia`: `number`, `Título`, `Clientes`, `Company`, `Data prevista fecho`, `billing_address_city`, `billing_address_state`, `total_amount`, `total_amt`, `stage`, `Situação de aprovação`, `Atribuído a`, `Date Created`, `Date Modified`, `created_by_name`
+
 - `Criação rápida / Filtro`
-- Conteúdo alinhado no essencial
+- Sem diferenças relevantes
 
 ---
 
@@ -194,11 +206,12 @@
 
 ### Diferença
 - Tipo: campos + nomenclatura
-- `Edição / Detalhe / Lista / Filtro`
-- Conteúdo alinhado no essencial
+- `Edição / Detalhe / Vista de Lista / Filtro`
+- Sem diferenças relevantes
+
 - `Criação rápida`
 - `Tacovia`: mais campos como `NUTS II`, `Nº Cond.`, `Nº Estab.`, `Enviar lembrete de Pagamento`, `Descrição`, `Membro de`, `Área de atividade`, `Telefone de trabalho`, `Sítio Internet`, `Endereço de faturação`, `Billing State`, `Billing Country`, `Shipping City`, `Shipping Postal Code`, `Rating`
-- `Seepmode`: menos campos e rótulos mais técnicos como `CAE [accounts_cae_c]`, `Tipo [client_service_type_c]`
+- `Seepmode`: não mostra esses campos e distingue dois campos `Tipo`, um deles como `Tipo [client_service_type_c]` e outro como `Tipo: [account_type]`
 
 ---
 
