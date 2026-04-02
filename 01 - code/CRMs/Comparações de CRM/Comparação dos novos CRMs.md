@@ -4,6 +4,13 @@
 - [[Check-list CRM novo Seepmode!]]
 - [[Check-list do CRM novo Tacovia!]]
 
+## Índice por tipo de diferença
+
+- `Sem diferenças relevantes`: [[#Contactos]], [[#Telefonemas]], [[#Reuniões]], [[#Documentos]], [[#Notas]], [[#Emails]], [[#Sessões]], [[#Assistências]]
+- `Campos`: [[#Clientes]], [[#Acessos IEFP]], [[#Formadores]], [[#Propostas]], [[#Faturas]], [[#Contratos]]
+- `Nomenclatura`: [[#Formações]], [[#Formandos]], [[#Clientes]], [[#Formadores]], [[#Propostas]], [[#Faturas]], [[#Contratos]]
+- `Estrutural`: [[#Fichas de Aptidão]]
+
 ## ==Clientes==
 
 ### Diferença
