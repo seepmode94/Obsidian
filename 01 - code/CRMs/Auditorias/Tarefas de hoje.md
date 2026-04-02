@@ -2,7 +2,7 @@
 
 ## Auditoria de fidelidade e alinhamento entre CRMs
 
-- [ ] Criar `auditoria-fidelidade-campos.md` para mapear colunas SQL originais para o novo schema.
+- [x] Criar `auditoria-fidelidade-campos.md` para mapear colunas SQL originais para o novo schema.
 - [ ] Identificar gaps e listar campos em falta.
 - [ ] Identificar quais campos se devem fundir entre os dois CRMs.
 - [ ] Identificar campos partilhados cujo dropdown varia conforme a base de dados, com prioridade para `Assistências`.
