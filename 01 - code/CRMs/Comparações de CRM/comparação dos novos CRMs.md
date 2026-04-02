@@ -6,7 +6,7 @@
 
 ## Ordem de análise
 - Comparação feita de baixo para cima.
-- A ideia é validar módulo a módulo e depois confirmar se existem diferenças reais.
+- validar módulo a módulo e depois confirmar se existem diferenças reais.
 
 ---
 
@@ -36,7 +36,7 @@
 - `Seepmode`: inclui `ID [id]`
 - `Tacovia`: não inclui `ID`
 - `Edição / Detalhe / Criação rápida / Filtro`
-- Conteúdo alinhado no essencial
+- Sem diferenças relevantes
 
 ---
 
@@ -145,14 +145,14 @@
 ### Diferença
 - Tipo: estrutura + nomenclatura + campos
 - `Edição / Detalhe`
-- `Seepmode`: mistura PT/EN e mantém totais/campos comerciais no bloco principal
+- `Seepmode`: mantém no bloco principal campos como `Annuity`, `Net Value €`, `Version`, `Renewal Date`, `Pack Value`, `Pack Status`, `Company`, `Currency`, `Total`, `Subtotal`, `Taxa de envio`, `Total final`
 - `Tacovia`: concentra a `Visão geral` em PT e separa totais em `Itens de linha`
 - `Tacovia`: inclui `Data criação`
 - `Vista de Lista`
 - `Seepmode`: lista curta com `ID`, `Annuity` e poucos campos
 - `Tacovia`: lista mais completa com `Anuidade`, `Versão`, `Data Renovação`, `Valor Líquido €`, `Pack`, `Estado do Pack`, `Valor do Pack`, `Assigned To`, `Data criação`
 - `Criação rápida`
-- Conteúdo próximo, mas com diferenças de nomenclatura PT/EN
+- Diferenças de nomes entre campos como `Annuity` vs `Anuidade`, `Version` vs `Versão`, `Renewal Date` vs `Data Renovação`, `Company` vs `Empresa`
 
 ---
 
@@ -196,7 +196,6 @@
 - Tipo: campos + nomenclatura
 - `Edição / Detalhe / Lista / Filtro`
 - Conteúdo alinhado no essencial
-- Diferenças de apresentação: `Mais detalhes (More Information)` vs `Mais detalhes`, `Outro (Assignment)` vs `Outro`, `Visão geral (Account Information)` vs `Visão geral`
 - `Criação rápida`
 - `Tacovia`: mais campos como `NUTS II`, `Nº Cond.`, `Nº Estab.`, `Enviar lembrete de Pagamento`, `Descrição`, `Membro de`, `Área de atividade`, `Telefone de trabalho`, `Sítio Internet`, `Endereço de faturação`, `Billing State`, `Billing Country`, `Shipping City`, `Shipping Postal Code`, `Rating`
 - `Seepmode`: menos campos e rótulos mais técnicos como `CAE [accounts_cae_c]`, `Tipo [client_service_type_c]`
