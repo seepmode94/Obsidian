@@ -1,61 +1,69 @@
-# Plano de Ação: Evolução LuxuryCRM (Pós-Review)
+# Plano de Ação Consolidado: Evolução LuxuryCRM
 
-**Objetivo:** Garantir a paridade funcional total, integrando as necessidades da Seepmode e Tacovia sem perda de dados históricos.
-
----
-
-## Fase 1: Sincronização de Schema (Base de Dados)
-*O foco aqui é preparar as tabelas para suportar o "Superset" de campos identificados na Página Real.*
-
-1.  **Migração SQL (Superset):** Criar ficheiro de migração (ex: `035_unify_fields_real_pages.sql`) para:
-    *   Adicionar campos de veículos em **Clientes** (Pesados, Ligeiros, Nº Condutores).
-    *   Adicionar campos biográficos e de rastreio em **Medicina Ocupacional** (Data Nascimento, Sexo, Rastreios).
-    *   Adicionar campos financeiros em **Faturas** (Valor Pago, Valor Aberto).
-    *   Adicionar campos técnicos em **Formações** e **Formandos** (Datas IEFP, SIGO, etc.).
-2.  **Módulo Sessões (Separação):**
-    *   Criar tabela `report_schedules` para os relatórios da Seepmode.
-    *   Limpar a tabela `sessions` para ser usada apenas para Formação.
+**Objetivo:** Executar a migração e unificação total baseada na review técnica, garantindo a paridade funcional e a não perda de dados.
 
 ---
 
-## Fase 2: Metadados e Interface (Vistas & Filtros)
-*Ajustar a interface para que reflita a experiência que os utilizadores tinham no sistema antigo.*
+## Fase 0: Auditoria de Fidelidade de Campos (Segurança de Dados)
+*Antes de qualquer alteração técnica, garantir o mapeamento SuiteCRM ➡️ LuxuryCRM.*
 
-1.  **Atualização de `module_field_nature.md`:** Refletir os novos campos e correções de nomes.
-2.  **Ajuste de List Views e Filtros:**
-    *   Configurar os filtros no LuxuryCRM para incluir os campos da "Página Real" (ex: filtro por Concelho nas Assistências).
-    *   Remover colunas duplicadas (ex: as várias colunas de "Date Created").
-3.  **Configuração Multi-Tenant:**
-    *   Garantir que os módulos de Medicina Ocupacional e Fichas de Aptidão estão configurados como visíveis apenas para o "caso" Seepmode.
+1.  **Matriz de Auditoria:** Criar `auditoria-fidelidade-campos.md` para mapear colunas SQL originais para o novo Schema.
+2.  **Identificação de Gaps:** Listar campos da "Página Real" que não têm destino e decidir a sua inclusão no Superset.
 
 ---
 
-## Fase 3: Enriquecimento e Validação de Dados Existentes
-*Trabalhar sobre os dados que já estão no sistema para garantir que estão completos.*
+## Fase 1: Resolver o split do módulo "Sessões"
+*Decisão sobre a divergência de propósitos do módulo.*
 
-1.  **Scripts de Cura de Dados:**
-    *   Preencher os novos campos (ex: NUTS II) a partir das tabelas originais, se possível.
-    *   Corrigir os tipos de dados (casts) para campos numéricos que estavam como varchar no SuiteCRM.
-2.  **Verificação de Totais:**
-    *   Executar script de validação de cálculos financeiros (Propostas/Faturas) para garantir que os valores migrados batem certo com o LuxuryCRM.
+1.  **Análise de Impacto:** Verificar dados existentes em ambos os dumps.
+2.  **Implementação da Decisão (Reunião):** 
+    *   **Opção B (Recomendada):** Criar `ReportSchedules` (Seepmode) e manter `Sessões` para Formação (Tacovia/Core).
 
 ---
 
-## Fase 4: Templates e Certificados (Output)
-*Garantir que os documentos gerados pelo CRM são idênticos ou superiores aos antigos.*
+## Fase 2: Construir o Superset Unificado de Campos
+*Criar a união dos campos de ambas as plataformas.*
 
-1.  **Fichas de Aptidão (Modelo Rico):** Implementar o template de PDF baseado no modelo da Seepmode (Trabalhador, Posto, Riscos, etc.).
-2.  **Faturas e Propostas:** Testar os templates com os novos campos de "Itens de Linha" e taxas/impostos unificados.
+1.  **Baseline:** Partir do `module_field_nature.md`.
+2.  **União (Union):** Adicionar campos em falta (ex: Documentos ricos da Tacovia + Fichas de Aptidão ricas da Seepmode).
+3.  **Normalização:** Resolver conflitos de nomes (ex: `icfp_email_c` ➡️ `iefp_email_c`).
 
 ---
 
-## Fase 5: Testes Cruzados e Lançamento
-1.  **UAT (User Acceptance Testing):**
-    *   Teste de fluxo completo Seepmode (Medicina Ocupacional -> Fichas de Aptidão).
-    *   Teste de fluxo completo Tacovia (Formação -> Faturação).
-2.  **Resolução de "To-Dos" Residuais:** Atacar a lista de pequenas correções de interface identificadas no ficheiro de diferenças da Seepmode.
+## Fase 3: Atualizar Documentos "Source-of-Truth"
+*Atualizar a documentação técnica que serve de guia ao desenvolvimento.*
+
+1.  **Metadados:** Atualizar `module_field_nature.md` com o Superset.
+2.  **Layouts:** Atualizar `module_views.md` com layouts de vistas fundidos.
+3.  **Relacionamentos:** Atualizar `module_relations.md` (ex: Documentos ↔ Faturas histórico).
+
+---
+
+## Fase 4: Gerar Migrações e Tipagem
+*Traduzir os campos identificados para a base de dados PostgreSQL.*
+
+1.  **Migrações SQL:** Criar ficheiros `.sql` para os novos campos e tabelas (`035_unify_fields_real_pages.sql`).
+2.  **Types & Seeds:** Atualizar `database.types.ts` e dados de semente (seeds).
+
+---
+
+## Fase 5: Atualizar Scripts de Importação SuiteCRM
+*Garantir que o motor de migração sabe onde colocar cada dado.*
+
+1.  **Loaders (40-support-training.ts):** Lidar com divergência de Sessões e Formações.
+2.  **Loaders (50-documents-emails.ts):** Implementar painel de revisões e relações complexas.
+3.  **Mapeamento por Plataforma:** Criar lógica condicional para campos com chaves diferentes por dump.
+
+---
+
+## Fase 6: Reconciliação, Validação e Output
+*A prova dos nove e os resultados finais.*
+
+1.  **Dry Run:** Executar importações de ambos os dumps.
+2.  **Reconciliação:** Verificar se todos os campos foram povoados sem perda.
+3.  **Templates de Output:** Validar PDFs (Fichas de Aptidão e Faturas) com os novos dados.
 
 ---
 
 ### Próximo Passo Imediato:
-- **Executar a Fase 1.1:** Criar a migração SQL com o superset de campos da "Página Real".
+- **Iniciar Fase 0:** Auditoria de Fidelidade para o módulo de Clientes.
