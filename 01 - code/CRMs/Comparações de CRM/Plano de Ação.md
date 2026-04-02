@@ -10,7 +10,10 @@
 *Baseado no Ponto 4.2 do Parecer Técnico.*
 
 1.  **Matriz de Auditoria:** Criar `auditoria-fidelidade-campos.md` para mapear colunas SQL originais para o novo Schema.
-2.  **Identificação de Gaps:** Listar campos da "Página Real" que não têm destino e decidir a sua inclusão no Superset.
+2.  **Identificação de Gaps:** Listar cam
+3. identificar quais campos se devem fundir entre os dois.
+3.1 Campos partilhados que dependendo da base de dados apresenta dropdown diferentes(assistencias).
+4. testar alterações no studio.
 
 ---
 
