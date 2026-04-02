@@ -18,7 +18,7 @@ Obter informação suficiente para validar, por módulo, o que:
 
 ## Ordem de Trabalho
 
-- [ ] `Assistências`
+- [x] `Assistências` ✅ 2026-04-02
 - [ ] `Contratos`
 - [ ] `Acessos IEFP`
 - [ ] `Fichas de Aptidão`
