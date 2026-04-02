@@ -205,6 +205,70 @@ Objetivo:
 - [[01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-matrix]]
 - [[01 - code/CRMs/LuxuryCRM(pasta do projeto)/Essenciais/migration-operation-plan]]
 
+## Cruzamento: Comparações de CRM vs LuxuryCRM
+
+### Alinhamentos Confirmados
+
+- `Fichas de Aptidão`
+  - `Comparações de CRM` conclui que o modelo rico da Seepmode deve ser a base final.
+  - `LuxuryCRM` confirma essa direção:
+    - `seepmode-vs-tacovia-fields.md` identifica 54 campos Seepmode-only em `sdmod_capability`
+    - `migration-matrix.md` já mapeia `sdmod_capability` para `capabilities`
+- `Contratos`
+  - `Comparações de CRM` identifica divergência técnica `anuidade_c` vs `anuidade_list_c`
+  - `LuxuryCRM` confirma essa divergência e já assume `anuidade_c` como convenção final
+- `Assistências`
+  - `Comparações de CRM` trata o módulo como funcionalmente equivalente entre bases
+  - `LuxuryCRM` confirma equivalência estrutural de campos, mas acrescenta uma divergência crítica de conteúdo em `code_list`
+- `Acessos IEFP`
+  - `Comparações de CRM` sinaliza diferença técnica no email IEFP
+  - `LuxuryCRM` já assume a necessidade de normalização de naming entre bases
+- `Studio vs Página Real`
+  - `Comparações de CRM` conclui que a página real tem prioridade funcional
+  - `LuxuryCRM` ainda depende de documentos de metadata e mapeamentos, portanto esta regra deve continuar ativa na auditoria
+
+### Divergências ou Tensões Entre os Dossiês
+
+- `Sessões`
+  - `Comparações de CRM` conclui que existe um split crítico:
+    - `Tacovia` = sessões de formação
+    - `Seepmode` = relatórios agendados
+  - `LuxuryCRM` está claramente alinhado com o modelo de formação:
+    - `module_field_nature.md`
+    - `module_views.md`
+    - `migration-matrix.md`
+  - **Tensão:** no material lido não aparece ainda uma formalização equivalente de `ReportSchedules` como destino explícito para o lado Seepmode.
+- `Documentos`
+  - `Comparações de CRM` pede union/superset:
+    - relação com `Fichas de Aptidão`
+    - histórico de faturas
+    - revisões e campos de revisão
+  - `LuxuryCRM` já contempla parte disso:
+    - `sdmod_capability_documents_1_c -> capabilities_documents`
+    - `document_revisions -> document_revisions`
+  - **Tensão:** a auditoria ainda não mostra evidência suficiente de que o superset de relações e metadados de revisão esteja fechado ponta a ponta.
+- `Assistências`
+  - `Comparações de CRM` chama o módulo de equivalente
+  - `LuxuryCRM` acrescenta uma diferença operacional forte em `code_list`
+  - **Leitura correta:** o módulo é equivalente na estrutura, mas não nos valores de dropdown.
+- `Acessos IEFP`
+  - `Comparações de CRM` fala em `icfp_email_c` vs `iefp_email_c`
+  - o SQL consultado nesta fase mostra `iefp_email_c` em ambos os lados
+  - **Tensão:** há conflito entre documentação comparativa e evidência dos dumps.
+- `Formações`
+  - `Comparações de CRM` regista diferenças menores de layout e alguns campos pontuais
+  - `LuxuryCRM` concentra-se mais em schema/field diff e menos na reconciliação fina de layouts deste módulo
+  - **Tensão:** ainda falta fechar se essas diferenças de vista precisam mesmo de schema ou apenas de layout/source-of-truth.
+
+### Leitura Consolidada
+
+- O dossiê `Comparações de CRM` é mais forte na leitura funcional por módulo e na distinção entre Studio e página real.
+- O dossiê `LuxuryCRM` é mais forte na leitura estrutural, schema, relações, loaders e impacto técnico de migração.
+- A auditoria deve combinar os dois assim:
+  - `Comparações de CRM` define o problema funcional
+  - `LuxuryCRM` define o destino técnico
+  - `Dados/*.sql` validam se a diferença existe mesmo ao nível da base
+
 ## Validação com Dumps SQL
 
 ### Âmbito validado nesta fase
@@ -370,3 +434,34 @@ Em ambos os dumps, `fields_meta_data` confirma os mesmos campos e os mesmos nome
   - `cases_mode_list`
   - `send_receive_list`
 - fechar a decisão estrutural de `project_sdmod_capability_1_c`
+
+## Levantamentos Desta Tarefa
+
+- A matriz de auditoria já existe e já consegue suportar:
+  - mapeamentos diretos
+  - campos a fundir
+  - gaps de schema
+  - gaps de dropdown
+- O cruzamento entre `Comparações de CRM` e `LuxuryCRM` confirma que:
+  - `Fichas de Aptidão` está bem encaminhado no alvo técnico
+  - `Contratos` tem um caso de fusão claro e já sustentado por SQL
+  - `Assistências` precisa de ser tratado como caso prioritário de harmonização de dropdown
+- `Assistências` não deve ser lido apenas como “sem diferenças relevantes”:
+  - a estrutura é equivalente
+  - o conteúdo do dropdown `code_list` não é equivalente
+  - os workflows mostram uso operacional forte de grupos de códigos
+- `Sessões` continua a ser um ponto de decisão incompletamente refletido no destino técnico:
+  - o lado formação está representado
+  - o lado relatórios agendados ainda não apareceu aqui como destino técnico explícito
+- `Documentos` ainda precisa de levantamento mais fino para provar que o superset pedido na review está completo
+- O caso `icfp_email_c` vs `iefp_email_c` não está fechado:
+  - a documentação comparativa aponta diferença
+  - os dumps consultados nesta fase apontam uniformização
+- Os dumps SQL confirmam:
+  - colunas e tabelas
+  - referências a dropdowns em `fields_meta_data`
+  - alguns nomes técnicos e relações
+- Os dumps SQL não confirmam por si só:
+  - conteúdo completo das listas de dropdown
+  - fidelidade da página real face ao Studio
+- A regra “usar a página real como referência funcional quando divergir do Studio” mantém-se válida e deve continuar a guiar a auditoria
