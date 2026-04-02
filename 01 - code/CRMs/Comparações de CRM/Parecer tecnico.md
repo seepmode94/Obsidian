@@ -7,7 +7,7 @@
 ---
 
 ## 1. Resumo Executivo
-Após uma análise dos 4 comentários da Review técnica e dos check-lists granulares de campo (Seepmode e Tacovia), o parecer é **favorável à migração**, desde que seja adotada uma estratégia de **"Superset Unificado"**. A review identificou que o SuiteCRM original apresenta divergências críticas que poderiam causar perda de dados se não forem tratadas individualmente por módulo.
+Após uma análise exaustiva dos 4 comentários da Review técnica e dos check-lists granulares de campo (Seepmode e Tacovia), o parecer é **favorável à migração**, desde que seja adotada uma estratégia de **"Superset Unificado"**. A review identificou que o SuiteCRM original apresenta divergências críticas que poderiam causar perda de dados se não forem tratadas individualmente por módulo.
 
 ---
 
@@ -18,7 +18,7 @@ A review confirma que **13 módulos** são funcionalmente equivalentes entre See
 - *Clientes, Propostas, Faturas, Contratos, Contactos, Telefonemas, Reuniões, Notas, Emails, Formandos, Formadores, Assistências, Acessos IEFP.*
 - **Veredito:** Estes módulos estão prontos para migração direta, necessitando apenas de harmonização de etiquetas (labels) para um padrão comum.
 
-### 2.2. Módulos com Diferenças Críticas 
+### 2.2. Módulos com Diferenças Críticas (O "Split")
 Identificaram-se 5 módulos onde a paridade não é automática:
 
 1.  **Sessões (Divergência Total):** A Tacovia usa para Formação; a Seepmode para Relatórios.
@@ -34,7 +34,7 @@ Identificaram-se 5 módulos onde a paridade não é automática:
 
 ## 3. Descobertas Técnicas Fundamentais
 
-### 3.1. "Studio vs. Página Real"
+### 3.1. A Armadilha "Studio vs. Página Real"
 Esta é a descoberta mais importante da review: **o Studio do SuiteCRM não reflete a realidade.**
 - Muitos campos críticos (NIF, Contagem de Veículos, NUTS II, Datas IEFP) aparecem na **Página Real** mas estão "escondidos" ou desalinhados no Studio.
 - **Veredito:** O LuxuryCRM deve ser construído com base na **Página Real**. Ignorar a configuração teórica do Studio para evitar a perda de campos que os utilizadores usam diariamente.
@@ -58,5 +58,5 @@ Deve ser decidido em reunião qual o caminho:
 
 ---
 
-## 5. Conclusão Final
-A migração é viável e o LuxuryCRM sairá reforçado ao adotar o **Superset** de ambas as plataformas. A estratégia de priorizar a "Página Real" em vez do "Studio" é a única garantia contra a perda de funcionalidades críticas. O plano de ação em 6 fases é validado tecnicamente.
+## 6. Próximos Passos
+Para a execução técnica deste parecer, consultar o [Plano de Ação](./Plano%20de%20Ação.md), que detalha as 6 fases operacionais de implementação.
