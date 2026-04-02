@@ -8,7 +8,13 @@ Obter informação suficiente para validar, por módulo, o que:
 - se deve fundir
 - diverge por dropdown
 - exige ajuste no `LuxuryCRM`
-- precisa de confirmação no `Studio` ou na página real
+- precisa de confirmação no `Studio`
+
+## Âmbito desta fase
+
+- O foco desta fase é a coerência entre informação retirada por pessoas diferentes a partir do `Studio`.
+- A `página real` não é referência principal nesta fase.
+- A `página real` só deve ser usada mais tarde, se for necessário resolver conflitos que o `Studio` não explique.
 
 ## Ordem de Trabalho
 
@@ -53,7 +59,6 @@ Para cada módulo, validar:
 Usar para:
 
 - perceber a diferença funcional que já foi estudada
-- identificar o que aparece na página real
 - perceber se a divergência é de:
   - campo
   - layout
@@ -127,25 +132,24 @@ Validação prática:
 - [ ] Procurar overrides customizados
 - [ ] Registar diferenças de valores e labels
 
-### 5. Studio / Página Real
+### 5. Studio
 
 Usar apenas quando necessário para:
 
-- confirmar o que está efetivamente visível ao utilizador
-- validar se o `Studio` governa ou não a página real
-- confirmar dropdowns ativos quando a metadata não chega
+- confirmar o que está configurado no `Studio`
+- validar coerência entre duas extrações diferentes do `Studio`
+- confirmar dropdowns ativos quando a documentação e o SQL não chegam
 
 Validação prática:
 
 - [ ] Abrir o módulo
-- [ ] Comparar `Studio` vs página real
 - [ ] Ver criação
 - [ ] Ver edição
 - [ ] Ver detalhe
 - [ ] Ver filtro
 - [ ] Ver list view
 - [ ] Alterar temporariamente algo no `Studio`
-- [ ] Confirmar se a alteração propaga
+- [ ] Confirmar a alteração dentro do próprio `Studio`
 
 ## Critério de Fecho de um Módulo
 

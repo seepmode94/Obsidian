@@ -14,7 +14,9 @@
   - `Comparações de CRM`
   - `LuxuryCRM(pasta do projeto)`
 - Critério principal:
-  - usar a página real como referência funcional sempre que diferir do Studio
+  - usar o `Studio` como referência principal nesta fase
+  - confirmar coerência entre informação retirada por pessoas diferentes
+  - usar os dumps SQL e a documentação técnica apenas como apoio
 - Ordem sugerida:
   - `Assistências`
   - `Contratos`

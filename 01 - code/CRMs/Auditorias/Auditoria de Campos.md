@@ -1,5 +1,12 @@
 # Auditoria de Campos
 
+## Âmbito desta fase
+
+- Comparar a coerência da informação retirada do `Studio`
+- Confirmar se os dados recolhidos por pessoas diferentes batem certo
+- Usar `LuxuryCRM` e os dumps SQL como apoio técnico
+- Não usar a página real como critério principal nesta fase
+
 ## Tarefas em Curso
 
 - [x] Criar a matriz de auditoria de campos
@@ -90,7 +97,7 @@
   - `mode_c`
   - `send_receive_c`
 
-### Módulos com divergência Studio vs página real
+### Módulos com extrações do Studio a rever
 
 - `Clientes`
 - `Medicina Ocupacional`
