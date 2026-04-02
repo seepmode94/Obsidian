@@ -100,6 +100,23 @@ Campos já confirmados no filtro do `Studio`:
 - `Date Modified`
 - `Atribuído a`
 
+### Tabela de validação: Assistências
+
+| Campo | Tipo | Estado atual | Levantamento |
+|---|---|---|---|
+| `code_c` | dropdown de negócio | parcial | confirmado no filtro; apresenta valores com `label` e outros só numéricos |
+| `status` | dropdown de negócio | parcial | confirmado no filtro; lista uniforme de `0` a `6` |
+| `priority` | dropdown de negócio | parcial | confirmado no filtro; lista `1`, `2`, `3` sem label textual |
+| `mode_c` | dropdown de negócio | parcial | confirmado no filtro; `Email`, `Telefone`, `Presencial` |
+| `area_c` | dropdown de negócio | parcial | confirmado no filtro; `Suporte`, `Jurídico`, `SGT`, `SUT`, `HACCP` |
+| `send_receive_c` | dropdown de negócio | por confirmar | identificado em SQL / metadata / layout do `Studio`; não confirmado no filtro atual |
+| `assistence_datetime_c` | operador de filtro | confirmado | operador comum de data |
+| `resolution_date` | operador de filtro | confirmado | operador comum de data |
+| `service_date_c` | operador de filtro | confirmado | operador comum de data |
+| `date_due` | operador de filtro | confirmado | operador comum de data |
+| `date_entered` | operador de filtro | confirmado | operador comum de data |
+| `date_modified` | operador de filtro | confirmado | operador comum de data |
+
 Leituras já confirmadas:
 
 - os campos de data usam um `dropdown` de operador de filtro comum
@@ -110,13 +127,8 @@ Leituras já confirmadas:
   - `Data Limite`
   - `Criado em`
   - `Date Modified`
-- o campo `Código` está ativo como `dropdown` de negócio
-- o campo `Situação` está ativo como `dropdown` de negócio
-- o campo `Prioridade` está ativo como `dropdown` de negócio
-- o campo `Modo` está ativo como `dropdown` de negócio
-- no `dropdown` de `Código` existem valores com formatos mistos:
-  - alguns com `código + label`
-  - alguns apenas com o valor numérico
+- `send_receive_c` não corresponde aos botões `Search` e `Clear`
+- os botões `Search` e `Clear` são ações do filtro, não campos do módulo
 
 Levantamento atual para `case_status_dom`:
 
@@ -160,6 +172,27 @@ Leitura provisória para `Modo`:
 - os valores estão descritos com label textual
 - à partida não há sinal de falha estrutural
 - falta apenas cruzar com a outra recolha do `Studio`
+
+Levantamento atual para `area_list`:
+
+- `Suporte`
+- `Jurídico`
+- `SGT`
+- `SUT`
+- `HACCP`
+
+Leitura provisória para `Área`:
+
+- o `dropdown` está ativo e uniforme
+- os valores estão descritos com label textual
+- não há, para já, sinal de valores vazios ou numéricos sem label
+- falta ainda cruzar com a outra recolha do `Studio`
+
+Leitura provisória para `send_receive_c`:
+
+- o campo está identificado na metadata técnica e no layout do `Studio`
+- nesta ronda não foi confirmado visualmente no filtro atual
+- fica marcado como `por confirmar`
 
 Levantamento atual para `code_list`:
 
@@ -234,6 +267,7 @@ Conclusão provisória para `Assistências`:
 - [/] Confirmar valores ativos de `status`
 - [/] Confirmar valores ativos de `priority`
 - [/] Confirmar valores ativos de `mode_c`
+- [/] Confirmar valores ativos de `area_c`
 - Alterar temporariamente um valor em `code_list`
 - Verificar impacto em:
   - criação
@@ -242,7 +276,6 @@ Conclusão provisória para `Assistências`:
   - workflows
 
 - [ ] Confirmar também os valores ativos de:
-  - `area_c`
   - `send_receive_c`
 
 ### Módulos com extrações do Studio a rever
@@ -293,6 +326,8 @@ Aplicação já identificada em `Assistências`:
 - `priority`
   - convém ter registo por imagem, porque a lista aparece só com números
 - `mode_c`
+  - imagem útil como evidência de lista uniforme e legível
+- `area_c`
   - imagem útil como evidência de lista uniforme e legível
 
 ## Fontes Base
