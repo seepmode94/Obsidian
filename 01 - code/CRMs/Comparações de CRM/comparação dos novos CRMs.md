@@ -42,10 +42,9 @@
 
 ## ==Sessões==
 ### Diferença
-- Tipo: estrutural
-- `Módulo`
-- `Seepmode`: orientado para `Relatórios agendados`
-- `Tacovia`: orientado para `Sessões` de formação
+- Tipo: sem diferenças relevantes
+- `Edição / Detalhe / Vista de Lista / Criação rápida / Filtro`
+- Conteúdo alinhado no essencial
 
 ---
 
