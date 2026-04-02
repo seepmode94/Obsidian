@@ -100,6 +100,7 @@
 ## Fontes Base
 
 - [[01 - code/CRMs/Auditorias/Plano de Validação]]
+- [[01 - code/CRMs/Auditorias/Comparações entre os campos e módulos de toda a informação da pasta LuxuryCRM(pasta do projeto) e a pasta Comparações de CRM]]
 - [[01 - code/CRMs/Comparações de CRM/review]]
 - [[01 - code/CRMs/Comparações de CRM/Parecer tecnico]]
 - [[01 - code/CRMs/Comparações de CRM/Comparação dos antigos CRMs]]
