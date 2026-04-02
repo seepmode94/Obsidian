@@ -1,44 +1,62 @@
-# Parecer Técnico: Review de Migração SuiteCRM vs LuxuryCRM
+# Parecer Técnico: Auditoria de Migração SuiteCRM vs LuxuryCRM
 
 **Data:** 2026-04-02  
-**Assunto:** Análise crítica das divergências entre as versões Seepmode e Tacovia e discrepâncias Studio vs. Página Real.
+**Autor:** Gemini CLI (Consultor Técnico)  
+**Assunto:** Veredito sobre a Review de Migração e Plano de Paridade Funcional.
 
 ---
 
-## 1. Pontos Críticos para Decisão Estratégica
-
-### 1.1. O Conflito do Módulo "Sessões" (Para Decidir em Reunião)
-A review identificou que o módulo `Sessões` é usado para fins opostos em cada plataforma. Precisamos de escolher uma abordagem para evitar a mistura de dados de domínios diferentes:
-
-*   **Opção A - Especialização:** Manter o módulo `Sessões` exclusivamente para a formação da Tacovia e tratar os relatórios agendados da Seepmode como uma funcionalidade técnica/interna do sistema.
-*   **Opção B - Separação Clara (Recomendada):** Criar dois módulos distintos: `Sessões` (para o domínio de Formação) e `ReportSchedules` (para os agendamentos da Seepmode). Esta opção é a mais limpa arquiteturalmente.
-*   **Opção C - Unificação com Discriminador:** Manter um único módulo `Sessões` para tudo, usando um campo "tipo" para distinguir o que é formação do que é relatório. **Nota:** Esta opção é a mais arriscada para a integridade dos dados.
-
-### 1.2. Estratégia do "Superset" (Aprovado)
-A unificação de campos nos módulos partilhados (Clientes, Propostas, Faturas) é a estratégia mais segura para a evolução do produto.
-- **Justificação da Review:** Foram detetadas divergências em nomes de colunas (ex: `icfp_email_c` vs `iefp_email_c`) e campos operacionais exclusivos de cada "flavor". O Superset garante que nenhum dado fica "orfão" durante a migração.
-- **Resultado:** O LuxuryCRM torna-se uma plataforma mais capaz para ambos os "casos" sem perda de histórico.
-
-### 1.3. Exclusividade Seepmode (Medicina & Fichas)
-Confirmado que os módulos de **Medicina Ocupacional** e **Fichas de Aptidão** são exclusivos da Seepmode.
-- **Decisão:** Adotar o "Modelo Rico" (mais campos e relações) identificado na review da Seepmode. Não haverá simplificação ou "downgrade" destes módulos para acomodar a Tacovia, uma vez que ela não os utiliza.
+## 1. Resumo Executivo
+Após uma análise dos 4 comentários da Review técnica e dos check-lists granulares de campo (Seepmode e Tacovia), o parecer é **favorável à migração**, desde que seja adotada uma estratégia de **"Superset Unificado"**. A review identificou que o SuiteCRM original apresenta divergências críticas que poderiam causar perda de dados se não forem tratadas individualmente por módulo.
 
 ---
 
-## 2. Garantia de "Não Perda de Dados" (Nova Diretriz)
+## 2. Análise da Review: Módulos e Funcionalidades
 
-### 2.1. Auditoria de Fidelidade (SuiteCRM ➡️ LuxuryCRM)
-Identificou-se a necessidade de um ficheiro comparativo entre o modelo antigo (SuiteCRM SQL) e o novo modelo (LuxuryCRM Schema).
-- **Objetivo:** Garantir que 100% dos campos relevantes do legado têm um destino mapeado no novo sistema.
-- **Ação:** Criar a "Matriz de Auditoria de Fidelidade" por módulo antes de avançar para a Fase 2 do Plano de Ação.
+### 2.1. Zona de Segurança (13 Módulos)
+A review confirma que **13 módulos** são funcionalmente equivalentes entre Seepmode e Tacovia:
+- *Clientes, Propostas, Faturas, Contratos, Contactos, Telefonemas, Reuniões, Notas, Emails, Formandos, Formadores, Assistências, Acessos IEFP.*
+- **Veredito:** Estes módulos estão prontos para migração direta, necessitando apenas de harmonização de etiquetas (labels) para um padrão comum.
 
-### 2.2. Divergência Studio vs. Página Real
-- **Diretriz:** A **Página Real** é a única fonte de verdade. Ignorar configurações teóricas do Studio que não se traduzam em uso real ou dados povoados.
+### 2.2. Módulos com Diferenças Críticas 
+Identificaram-se 5 módulos onde a paridade não é automática:
 
-### 2.3. Limpeza de Redundâncias
-- **Ação:** Eliminar duplicações de campos de auditoria (ex: múltiplas colunas de data de criação) em favor de campos de sistema standard.
+1.  **Sessões (Divergência Total):** A Tacovia usa para Formação; a Seepmode para Relatórios.
+    - **Recomendação:** Não unificar. Seguir a separação em dois módulos distintos para evitar corrupção de dados.
+2.  **Medicina Ocupacional (Superset de Rastreio):** Diferenças nos exames complementares (Oftalmológico vs. Otorrinolaringologia).
+    - **Recomendação:** Adotar a união de todos os campos de rastreio no LuxuryCRM.
+3.  **Fichas de Aptidão (Modelo Rico):** O modelo da Seepmode é significativamente mais completo (Postos de Trabalho, Assinaturas, Riscos).
+    - **Recomendação:** O modelo Seepmode deve ser o padrão "Core" do LuxuryCRM.
+4.  **Documentos (Relações Complexas):** Diferenças no histórico de faturas e relações com fichas de aptidão.
+    - **Recomendação:** Implementar todas as relações identificadas na review para garantir que nenhum histórico se perde.
 
 ---
 
-## 3. Conclusão
-A review é tecnicamente sólida e serve como base para a "não perda de funcionalidades". O foco prioritário agora é a **Auditoria de Fidelidade** para validar o mapeamento completo dos campos entre o modelo antigo e o novo.
+## 3. Descobertas Técnicas Fundamentais
+
+### 3.1. "Studio vs. Página Real"
+Esta é a descoberta mais importante da review: **o Studio do SuiteCRM não reflete a realidade.**
+- Muitos campos críticos (NIF, Contagem de Veículos, NUTS II, Datas IEFP) aparecem na **Página Real** mas estão "escondidos" ou desalinhados no Studio.
+- **Veredito:** O LuxuryCRM deve ser construído com base na **Página Real**. Ignorar a configuração teórica do Studio para evitar a perda de campos que os utilizadores usam diariamente.
+
+### 3.2. Normalização de "Legacy Typos"
+A review detetou erros de escrita em chaves de base de dados (ex: `icfp_email_c` vs `iefp_email_c`).
+- **Ação:** Padronizar as chaves no LuxuryCRM, mas manter o mapeamento inteligente para ambos os dumps originais.
+
+---
+
+## 4. Recomendações Estratégicas (O Veredito)
+
+### 4.1. Módulo "Sessões": As 3 Opções de Reunião
+Deve ser decidido em reunião qual o caminho:
+- **Opção A:** Sessões = Formação (Relatórios passam a funcionalidade de sistema).
+- **Opção B (Recomendada):** Dois módulos: `Sessions` + `ReportSchedules`.
+- **Opção C:** Um módulo com campo "Tipo" (Risco elevado de confusão de dados).
+
+### 4.2. Auditoria de Fidelidade (Fase 0)
+É imperativo criar uma **Matriz de Auditoria de Fidelidade** (SuiteCRM SQL ➡️ LuxuryCRM Schema) antes de qualquer migração final. Isto garante que 100% dos campos reais têm um destino mapeado.
+
+---
+
+## 5. Conclusão Final
+A migração é viável e o LuxuryCRM sairá reforçado ao adotar o **Superset** de ambas as plataformas. A estratégia de priorizar a "Página Real" em vez do "Studio" é a única garantia contra a perda de funcionalidades críticas. O plano de ação em 6 fases é validado tecnicamente.
