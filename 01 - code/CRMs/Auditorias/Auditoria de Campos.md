@@ -99,6 +99,7 @@
 
 ## Fontes Base
 
+- [[01 - code/CRMs/Auditorias/Plano de Validação]]
 - [[01 - code/CRMs/Comparações de CRM/review]]
 - [[01 - code/CRMs/Comparações de CRM/Parecer tecnico]]
 - [[01 - code/CRMs/Comparações de CRM/Comparação dos antigos CRMs]]
