@@ -22,6 +22,9 @@ Neste momento, o projeto já tem uma base documental muito mais sólida para:
 - `Assistências`
   - estrutura principal e dropdowns principais já validados
   - `send_receive_c` confirmado no `Studio`, com divergência no filtro real
+  - `code_list` fechado como divergência real
+  - decisão técnica fechada: usar superset da `Tacovia`
+  - impacto em workflows tratado como não bloqueante nesta fase
 - `Documentos`
   - estrutura base, anexos, revisão e relações visíveis reforçadas
 - `Clientes`
@@ -40,21 +43,17 @@ Neste momento, o projeto já tem uma base documental muito mais sólida para:
 - `Fichas de Aptidão`
   - modelo rico confirmado na evidência disponível
   - ligação funcional ao universo de `Medicina Ocupacional` confirmada
+  - relações finas confirmadas em `Studio > Relationships`
+  - `project_sdmod_capability_1_c` resolvido funcionalmente como `project_id`
 - `Medicina Ocupacional`
   - modelo rico e relações funcionais visíveis confirmados na `Tacovia`
+  - dropdowns internos já não aparecem como bloqueio crítico para apresentação
 
 ### O que ainda está realmente pendente
 
-- fechar melhor `Assistências.code_list`
-- confirmar se ainda há impacto em workflows a partir de `Assistências`
-- confirmar relações técnicas finas de `Fichas de Aptidão`
-  - `accounts_sdmod_capability_1_c`
-  - `contacts_sdmod_capability_1_c`
-  - `project_sdmod_capability_1_c`
-  - `sdmod_capability_documents_1_c`
-- fechar o gap estrutural exato de `project_sdmod_capability_1_c`
-- fechar melhor dropdowns internos e destino técnico final de `Medicina Ocupacional`
 - reconciliar notas antigas com o que já foi confirmado agora em `Studio` e UI
+- rever se ainda existe algum gap de schema ou mapeamento residual em `Medicina Ocupacional`
+- consolidar o alinhamento final com o `LuxuryCRM` nos módulos mais sensíveis
 
 ### Risco transversal já confirmado
 
@@ -74,54 +73,37 @@ Isto significa que:
 
 ### Fase 1. Fechar os pendentes críticos
 
-1. Fechar `Assistências.code_list`
-   - confirmar se a divergência é definitivamente real entre bases
-   - consolidar a decisão de usar superset da `Tacovia`
-   - rever se ainda falta alguma evidência útil por imagem
+1. Consolidar o fecho crítico já obtido
+   - `Assistências`
+   - `Fichas de Aptidão`
+   - `Medicina Ocupacional`
+   - garantir que estes três módulos aparecem como fechados ou não bloqueantes no estado final
 
-2. Rever impacto em workflows em `Assistências`
-   - apenas se este ponto continuar relevante para decisão técnica
-   - registar se o problema é estrutural, funcional ou apenas documental
-
-3. Fechar relações finas de `Fichas de Aptidão`
-   - confirmar:
-     - `accounts_sdmod_capability_1_c`
-     - `contacts_sdmod_capability_1_c`
-     - `project_sdmod_capability_1_c`
-     - `sdmod_capability_documents_1_c`
-   - sempre que possível, confirmar em SQL ou documentação técnica
-
-4. Fechar o gap de `project_sdmod_capability_1_c`
-   - decidir se o destino correto é:
-     - coluna direta `project_id`
-     - ou join dedicada
-
-5. Fechar `Medicina Ocupacional`
-   - rever dropdowns internos relevantes
-   - confirmar se o destino técnico previsto no `LuxuryCRM` está alinhado com a evidência já recolhida
-   - registar gaps de schema/mapeamento, se ainda existirem
+2. Rever apenas gaps residuais de `Medicina Ocupacional`
+   - confirmar se sobra algum gap real de schema ou mapeamento
+   - se não houver, marcar como sem bloqueios técnicos relevantes nesta fase
 
 ### Fase 2. Consolidar a auditoria documental
 
-6. Rever as notas antigas de comparação
+3. Rever as notas antigas de comparação
    - comparar o que foi escrito antes com o que já foi confirmado agora
    - separar:
      - divergência real
      - diferença documental antiga
      - inconsistência entre `Studio` e UI
 
-7. Atualizar as conclusões por módulo
+4. Atualizar as conclusões por módulo
    - tornar explícito, para cada módulo relevante:
      - o que está fechado
      - o que está parcial
      - o que ainda depende de outra base ou de SQL
 
-8. Limpar conclusões que já não são defensáveis sem nuance
+5. Limpar conclusões que já não são defensáveis sem nuance
    - sobretudo onde a presença operacional na `Tacovia` enfraqueceu leituras antigas demasiado rígidas
 
 ### Fase 3. Fecho técnico com foco no `LuxuryCRM`
 
-9. Rever os módulos que ainda exigem decisão técnica final no `LuxuryCRM`
+6. Rever os módulos que ainda exigem decisão técnica final no `LuxuryCRM`
    - confirmar se o destino técnico previsto absorve:
      - fusões
      - normalizações
@@ -129,7 +111,7 @@ Isto significa que:
      - dropdowns
      - gaps de schema
 
-10. Produzir uma lista curta e defensável de gaps reais
+7. Produzir uma lista curta e defensável de gaps reais
    - campos a fundir
    - campos a normalizar
    - relações que exigem decisão
@@ -138,13 +120,13 @@ Isto significa que:
 
 ### Fase 4. Preparar o fecho para projeto / issue / responsável
 
-11. Criar uma síntese executiva final
+8. Criar uma síntese executiva final
    - o que já pode avançar
    - o que ainda bloqueia
    - o que precisa de validação noutra base
    - o que é só correção documental
 
-12. Preparar texto final para issue ou responsável de projeto
+9. Preparar texto final para issue ou responsável de projeto
    - resumo curto do estado
    - lista de pendentes reais
    - lista de decisões já tomadas
@@ -153,12 +135,9 @@ Isto significa que:
 
 Se o trabalho continuar a partir daqui, a ordem recomendada é:
 
-1. `Assistências`
-2. `Fichas de Aptidão`
-3. `Medicina Ocupacional`
-4. consolidação documental transversal
-5. revisão final de alinhamento com `LuxuryCRM`
-6. síntese executiva / issue final
+1. consolidação documental transversal
+2. revisão final de alinhamento com `LuxuryCRM`
+3. síntese executiva / issue final
 
 ## Critério Prático para os próximos dias
 
