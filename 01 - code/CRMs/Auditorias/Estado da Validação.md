@@ -51,6 +51,7 @@ O trabalho está organizado em quatro linhas:
   - a UI visível trabalha com um único campo funcional de `Anuidade`
 - `Acessos IEFP`
   - existe um ponto de normalização entre `icfp_email_c` e `iefp_email_c`
+  - na `Tacovia`, o campo de email não aparece nas vistas nem em `Fields` do `Studio`
 - `Fichas de Aptidão`
   - está a ser tratada como módulo exclusivo da `Seepmode`
 - `Medicina Ocupacional`

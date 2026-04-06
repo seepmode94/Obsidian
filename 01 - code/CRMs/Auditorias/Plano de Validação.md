@@ -200,9 +200,9 @@ Só considerar um módulo fechado quando:
 
 ### Acessos IEFP
 
-- [ ] Confirmar `icfp_email_c` vs `iefp_email_c`
-- [ ] Confirmar se a divergência existe mesmo no SQL ou só na documentação
-- [ ] Confirmar campo final normalizado
+- [x] Confirmar `icfp_email_c` vs `iefp_email_c` no `Studio` atual da `Tacovia`: o campo não existe nas vistas nem em `Fields`
+- [/] Confirmar se a divergência existe mesmo no SQL ou só na documentação
+- [x] Confirmar campo final normalizado
 
 ### Fichas de Aptidão
 

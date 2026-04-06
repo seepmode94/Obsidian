@@ -99,6 +99,28 @@ Leitura atual para `Contratos`:
 - o alvo funcional final deve continuar a ser um único campo de anuidade
 - falta apenas evidência complementar da dropdown para fechar o nome da lista com observação direta, mas isso já não bloqueia a decisão de fusão
 
+## Registo de validação em curso: Acessos IEFP
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- `name`
+- `contact_id`
+- `access_date`
+- `access_type`
+- `status`
+- `observations`
+
+Leitura atual para `Acessos IEFP`:
+
+- o módulo existe na `Tacovia`
+- em `Edit View`, `Detail View`, `Quickcreate View`, `Filter View` e `List View` não há qualquer campo de email IEFP exposto
+- em `Fields`, o módulo também não apresenta qualquer campo de email
+- por isso, nesta base, a divergência `icfp_email_c` vs `iefp_email_c` não aparece no `Studio` atual
+- a divergência fica, para já, localizada na documentação anterior e/ou nos dumps SQL
+- mantém-se a normalização técnica prevista:
+  - `icfp_email_c` + `iefp_email_c` -> `iefp_email_c`
+- falta apenas confirmar no SQL qual dos dois nomes existe documentalmente na estrutura histórica consultada
+
 ### Registo de validação em curso: Assistências
 
 Campos já confirmados no filtro do `Studio`:
