@@ -248,3 +248,117 @@ Fontes complementares:
 - [022_quote_dropdown_field_metadata.sql](/home/seepmode94/Documentos/work/IT/LuxuryCRM/apps/api/src/database/migrations/022_quote_dropdown_field_metadata.sql)
 - [028_unify_seepmode_tacovia.sql](/home/seepmode94/Documentos/work/IT/LuxuryCRM/apps/api/src/database/migrations/028_unify_seepmode_tacovia.sql)
 
+## 7. Cobertura Deste Mapeamento
+
+Este documento não deve ser lido como "todos os dropdowns existentes nas duas plataformas".
+
+Deve ser lido como:
+
+- inventário das diferenças de dropdown já identificadas e documentadas no repositório
+- separação entre diferenças críticas e diferenças menores
+- base de trabalho para a alteração multi-plataforma
+
+### O que está confirmado
+
+| Tipo | Estado |
+|---|---|
+| dropdowns críticos com impacto funcional | confirmado |
+| diferenças de contagem/opções entre plataformas | confirmado |
+| diferenças de labels menores já documentadas | confirmado |
+| caso conhecido de campo divergente (`anuidade_c` vs `anuidade_list_c`) | confirmado |
+
+### O que não está garantido neste ficheiro
+
+| Tipo | Estado |
+|---|---|
+| inventário exaustivo de todos os dropdowns das duas instâncias | não garantido |
+| todas as diferenças de labels sem impacto funcional | não garantido |
+| todas as listas usadas apenas em customizações periféricas | não garantido |
+| comparação linha-a-linha de todos os valores de todas as listas | não incluída aqui |
+
+## 8. Inventário Confirmado Das Diferenças Entre Plataformas
+
+Esta secção junta, num só sítio, todas as diferenças explicitamente identificadas na fonte principal.
+
+### 8.1 Diferenças Críticas
+
+| Dropdown | Diferença confirmada |
+|---|---|
+| `empresa_list` | `seepmode` tem `seepmode`, `seepmed`; `tacovia` tem `tacovia` |
+| `product_code_dom` | catálogos diferentes; Seepmode `355`, Tacovia `317` |
+| `products_list` | catálogos diferentes; Seepmode `214`, Tacovia `136` |
+| `quote_stage_dom` | Seepmode `5` estados; Tacovia `9` estados |
+| `salesman_region_list` | estruturas comerciais diferentes; Seepmode `30`, Tacovia `15` |
+| `code_list` | Seepmode `1`; Tacovia `135` |
+
+### 8.2 Diferenças Menores
+
+| Dropdown | Diferença confirmada |
+|---|---|
+| `anuidade_list` | `1/2 anos` vs `1/2 Anos` |
+| `billing_state_list` | Tacovia acrescenta `Belgium_` |
+| `nutsii_list` | Tacovia acrescenta `Belgium_` |
+| `department_c_list` | Seepmode inclui `marketing` |
+| `exam_type_list` | `A pedido` vs `a pedido` |
+| `type_list` | Seepmode inclui `admin` e `distributer` |
+| `vat_list` | Tacovia acrescenta `5.0`, `7.5`, `17.5`, `20.0` |
+| `yes_no_list` | diferença documentada no valor `Sim` |
+| `moduleList` | labels PT diferentes entre plataformas |
+
+### 8.3 Diferenças De Campo Ligadas A Dropdown
+
+| Conceito | Seepmode | Tacovia | Nota |
+|---|---|---|---|
+| Anuidade | `anuidade_c` | `anuidade_list_c` | mesmo conceito, campo diferente |
+
+## 9. Como Usar Este Documento Na Alteração
+
+### Grupo A: tratar como multi-tenant obrigatório
+
+| Dropdown |
+|---|
+| `empresa_list` |
+| `product_code_dom` |
+| `products_list` |
+| `quote_stage_dom` |
+| `salesman_region_list` |
+| `code_list` |
+| `vat_list` |
+
+### Grupo B: tratar como diferença menor mas registada
+
+| Dropdown |
+|---|
+| `anuidade_list` |
+| `billing_state_list` |
+| `nutsii_list` |
+| `department_c_list` |
+| `exam_type_list` |
+| `type_list` |
+| `yes_no_list` |
+| `moduleList` |
+
+### Grupo C: rever mapeamento de campo além do dropdown
+
+| Caso |
+|---|
+| `anuidade_c` vs `anuidade_list_c` |
+
+## 10. Próxima Validação Se For Preciso Fecho Total
+
+Se precisares de fechar isto como inventário exaustivo antes da alteração, a validação que ainda falta é:
+
+1. extrair a lista completa de dropdowns das duas instâncias
+2. comparar todos os nomes de listas
+3. comparar todos os valores de cada lista
+4. marcar cada lista como:
+   - igual
+   - diferente
+   - só Seepmode
+   - só Tacovia
+5. anexar esse inventário ao documento
+
+Até esse passo existir, este ficheiro deve ser considerado:
+
+- suficientemente forte para começar a alteração dos casos principais
+- não ainda uma prova exaustiva de 100% das listas
