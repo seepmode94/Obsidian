@@ -242,6 +242,115 @@ Leitura atual para `Documentos`:
 - a evidência atual reforça a ideia de superset relacional do módulo
 - continua pendente apenas confirmar se este superset visível cobre integralmente tudo o que foi pedido pela review e pela documentação técnica
 
+## Registo de validação em curso: Clientes
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a estrutura visível da detail view está globalmente coerente com o `Studio`, incluindo:
+  - `name`
+  - `phone_office`
+  - `phone_alternate`
+  - `website`
+  - `billing_address_street`
+  - `billing_address_city`
+  - `billing_address_state`
+  - `billing_address_country`
+  - `shipping_address_street`
+  - `nutsii_c`
+  - `place_of_visit_c`
+  - `description`
+  - `account_type`
+  - `industry`
+  - `sic_code`
+  - `accounts_cae_c`
+  - `client_service_type_c`
+  - `employees`
+  - `n_condutores_c`
+  - `ticker_symbol`
+  - `ownership`
+  - `employees_establishment_c`
+  - `send_payment_reminder_c`
+  - `assigned_user_id`
+- o filtro real expõe também os campos operacionais principais do módulo
+- o `Studio > Fields` confirma os campos custom relevantes que já estavam a ser analisados
+- a detail view mostra relações funcionais visíveis com:
+  - `Contactos`
+  - `Propostas (Histórico)`
+  - `Propostas`
+  - `Faturas`
+  - `Contratos`
+  - `Assistências`
+  - `Medicinas Ocupacionais`
+  - `Fichas de Aptidão`
+  - `Formações`
+  - `Formandos`
+  - `Reuniões`
+  - `Telefonemas`
+  - `Tarefas`
+  - `Notas`
+  - `Documentos`
+  - `Emails`
+  - `Bases de Operações`
+
+Leitura atual para `Clientes`:
+
+- a estrutura do módulo está confirmada como rica e operacional
+- a coerência entre `Studio` e UI é globalmente boa neste módulo
+- a evidência atual reduz o risco de gap estrutural relevante em `Clientes`
+- ficam em aberto apenas diferenças finas de layout ou reconciliação documental com notas antigas
+
+## Registo de validação em curso: Propostas
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `name`
+  - `account_id`
+  - `number`
+  - `stage`
+  - `expiration`
+  - `data_prevista_fecho_c`
+  - `invoice_status`
+  - `term`
+  - `approval_status`
+  - `empresa_c`
+  - `approval_issue`
+  - `invoicing_notes_c`
+  - `contact_id`
+  - `assigned_user_id`
+- a secção `Line Items` está ativa e visível
+- a estrutura financeira principal fica confirmada:
+  - `currency_id`
+  - `total_amt`
+  - `subtotal_amount`
+  - `shipping_tax_amt`
+  - `line_items`
+  - `discount_amount`
+  - `shipping_amount`
+  - `tax_amount`
+  - `total_amount`
+- `Fields` confirmam também:
+  - `quote_stage`
+  - `valid_until`
+  - `payment_terms`
+  - `subtotal`
+  - `discount_amount`
+  - `tax_amount`
+  - `shipping_amount`
+  - `total`
+  - `quote_number`
+  - `company`
+  - `grand_total`
+
+Leitura atual para `Propostas`:
+
+- a estrutura do módulo está confirmada como operacional e coerente entre `Studio` e UI
+- os campos de negócio, financeiros e de workflow principais estão presentes
+- `Line Items` e totais confirmam que o módulo não está apenas exposto, mas funcionalmente ativo
+- ficam em aberto apenas diferenças finas de filtro/layout ou reconciliação com documentação anterior
+
 ### Registo de validação em curso: Assistências
 
 Campos já confirmados no filtro do `Studio`:

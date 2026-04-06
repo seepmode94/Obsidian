@@ -120,6 +120,7 @@ Falta:
 
 Ordem atual:
 
+- `Clientes`
 - `Documentos`
 
 ### 3. Continuar a auditoria por módulo

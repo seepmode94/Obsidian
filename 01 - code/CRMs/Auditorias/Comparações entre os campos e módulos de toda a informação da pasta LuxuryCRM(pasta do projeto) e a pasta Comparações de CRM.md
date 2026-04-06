@@ -25,8 +25,8 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 
 | Módulo | Studio / Comparações de CRM | Studio / LuxuryCRM | Estado | Levantamento |
 |---|---|---|---|---|
-| Clientes | Estrutura próxima entre bases; existem diferenças entre extrações | `module_views.md` e `module_field_nature.md` refletem o conjunto principal de campos | Parcial | Falta fechar coerência entre extrações do `Studio` |
-| Propostas | Sem diferenças relevantes, com alguns pontos de filtro | `migration-matrix.md` e documentação técnica cobrem bem o módulo | Parcial | Falta confirmar ids de filtro vs metadata do `Studio` |
+| Clientes | Estrutura rica e operacional; diferenças entre extrações parecem cada vez mais finas e localizadas | `module_views.md` e `module_field_nature.md` refletem o conjunto principal de campos | Parcial | Coerência geral reforçada; faltam só diferenças finas e reconciliação documental |
+| Propostas | Estrutura operacional confirmada; diferenças parecem residuais e mais ligadas a filtro/layout fino | `migration-matrix.md` e documentação técnica cobrem bem o módulo | Parcial | Coerência geral reforçada; faltam só confirmações finas de filtro vs metadata |
 | Faturas | Sem diferenças relevantes entre bases | `migration-matrix.md` cobre migração e relações principais | Parcial | Falta fecho fino por checklist vs SQL |
 | Contratos | Diferença clara em `anuidade_c` vs `anuidade_list_c` | `seepmode-vs-tacovia-fields.md` e `migration-matrix.md` confirmam a divergência e o destino técnico | Confirmado | Caso de fusão claro e já sustentado por SQL |
 | Contactos | Diferenças pequenas e isoladas | `LuxuryCRM` mantém o módulo como estruturalmente equivalente | Parcial | Falta fecho campo a campo |

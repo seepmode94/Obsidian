@@ -18,14 +18,14 @@ Obter informação suficiente para validar, por módulo, o que:
 
 ## Ordem de Trabalho
 
-- [/] `Assistências` em validação
-- [x] `Contratos`
+- [x] `Assistências` ✅ 2026-04-06
+- [x] `Contratos` ✅ 2026-04-06
 - [x] `Acessos IEFP` ✅ 2026-04-06
 - [x] `Fichas de Aptidão` ✅ 2026-04-06
 - [x] `Medicina Ocupacional` ✅ 2026-04-06
 - [x] `Documentos` ✅ 2026-04-06
-- [ ] `Clientes`
-- [ ] `Propostas`
+- [x] `Clientes` ✅ 2026-04-06
+- [x] `Propostas` ✅ 2026-04-06
 - [ ] `Faturas`
 - [ ] `Contactos`
 - [ ] `Formações`
