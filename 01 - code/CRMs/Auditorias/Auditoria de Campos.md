@@ -152,12 +152,28 @@ Leitura atual para `Fichas de Aptidão`:
 - o campo `project_id` aparece em `Fields` com label `Medicina Ocupacional` e tipo `relate`
 - isso reforça que existe uma ligação funcional relevante a preservar entre `Fichas de Aptidão` e `Medicina Ocupacional`
 - o campo `project_sdmod_capability_1_name` está confirmado visualmente no layout e na detail view
-- ficam ainda pendentes apenas as relações técnicas finas que não aparecem diretamente nesta vista de `Fields`:
-  - `accounts_sdmod_capability_1_c`
-  - `contacts_sdmod_capability_1_c`
-  - `project_sdmod_capability_1_c`
-  - `sdmod_capability_documents_1_c`
-- o gap estrutural de `project_sdmod_capability_1_c` continua aberto, mas a evidência atual mostra que a ligação funcional ao projeto existe
+- `Studio > Relationships` confirma explicitamente:
+  - `accounts_capabilities`
+    - `Accounts -> Capabilities`
+    - `one-to-many`
+  - `contacts_capabilities`
+    - `Contacts -> Capabilities`
+    - `one-to-many`
+  - `projects_capabilities`
+    - `Projects -> Capabilities`
+    - `one-to-many`
+  - `capabilities_documents`
+    - `Capabilities -> Documents`
+    - `many-to-many`
+- com esta evidência:
+  - `accounts_sdmod_capability_1_c` fica funcionalmente resolvido como `account_id`
+  - `contacts_sdmod_capability_1_c` fica funcionalmente resolvido como `contact_id`
+  - `project_sdmod_capability_1_c` fica funcionalmente resolvido como `project_id`, preservando a base relacional entre `Projects` e `Capabilities`
+  - `sdmod_capability_documents_1_c` fica confirmado como relação dedicada com `Documents`
+- o gap estrutural de `project_sdmod_capability_1_c` deixa de estar aberto como dúvida principal
+- a decisão técnica atual passa a ser:
+  - usar `project_id` como destino funcional principal
+  - admitir implementação relacional por trás, se o alvo a mantiver
 
 ## Registo de validação em curso: Medicina Ocupacional
 

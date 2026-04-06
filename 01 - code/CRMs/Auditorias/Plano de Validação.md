@@ -208,12 +208,12 @@ Só considerar um módulo fechado quando:
 
 - [x] Assinalar como módulo exclusivo da `Seepmode` ✅ 2026-04-02
 - [x] Confirmar modelo rico do módulo na evidência disponível
-- [ ] Confirmar relações:
+- [x] Confirmar relações:
   - `accounts_sdmod_capability_1_c`
   - `contacts_sdmod_capability_1_c`
   - `project_sdmod_capability_1_c`
   - `sdmod_capability_documents_1_c`
-- [/] Confirmar gap estrutural de `project_sdmod_capability_1_c`
+- [x] Confirmar gap estrutural de `project_sdmod_capability_1_c` como funcionalmente resolvido por `project_id` ✅ 2026-04-06
 
 ### Medicina Ocupacional
 

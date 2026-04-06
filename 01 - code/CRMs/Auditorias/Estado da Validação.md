@@ -55,6 +55,8 @@ O trabalho está organizado em quatro linhas:
   - os dumps SQL confirmam `iefp_email_c` e não mostram `icfp_email_c`
 - `Fichas de Aptidão`
   - a decisão funcional mantém-se, mas a evidência atual confirma modelo rico visível e utilizável na `Tacovia`
+  - as relações finas com `Accounts`, `Contacts`, `Projects` e `Documents` ficaram confirmadas no `Studio > Relationships`
+  - `project_sdmod_capability_1_c` fica funcionalmente resolvido como `project_id`
 - `Medicina Ocupacional`
   - a decisão funcional mantém-se, mas a evidência atual confirma modelo rico e relações funcionais visíveis na `Tacovia`
 
