@@ -33,7 +33,7 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 | Telefonemas | Estrutura simples e operacional confirmada; sem sinal de diferenças relevantes estruturais | Módulo tratado como equivalente | Parcial | Coerência geral reforçada; falta só reconciliação fina |
 | Reuniões | Estrutura simples e operacional confirmada; diferenças parecem pequenas e residuais | Módulo tratado como equivalente | Parcial | Coerência geral reforçada; falta só reconciliação fina |
 | Notas | Estrutura simples e operacional confirmada; sem sinal de diferenças relevantes estruturais | Módulo tratado como equivalente | Parcial | Coerência geral reforçada; falta só reconciliação fina |
-| Emails | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
+| Emails | Estrutura simples e operacional confirmada; sem sinal de diferenças relevantes estruturais | Módulo tratado como equivalente | Parcial | Coerência geral reforçada; falta só reconciliação fina |
 | Formandos | Estrutura rica e operacional confirmada; diferenças parecem pontuais e mais documentais do que estruturais | `LuxuryCRM` trata o módulo como estruturalmente migrável | Parcial | Coerência geral reforçada; falta só reconciliação fina ao nível de campos e vistas |
 | Formadores | Estrutura operacional simples confirmada; existe incoerência entre `Studio > Filter View` e filtro real | `migration-matrix.md` cobre a migração para `trainers` | Parcial | Coerência estrutural reforçada, mas o filtro ainda precisa de reconciliação fina |
 | Assistências | Estrutura equivalente; `send_receive_c` aparece nas duas extrações novas do `Studio`, mas não está visível no filtro real atual; diferenças concentram-se nas listas | `LuxuryCRM` confirma estrutura comum, fixa `send_receive_list` e destaca divergência forte em `code_list` | Parcial | Estrutura coerente; divergência funcional em `send_receive_c` e decisão final pendente sobre `code_list` |
@@ -68,10 +68,7 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 
 ### Não confirmado
 
-- `Telefonemas`
-- `Reuniões`
-- `Notas`
-- `Emails`
+- nenhum módulo nesta lista
 
 ## Como Ler o Estado
 

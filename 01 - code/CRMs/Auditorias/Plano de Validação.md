@@ -34,7 +34,7 @@ Obter informação suficiente para validar, por módulo, o que:
 - [x] `Reuniões` ✅ 2026-04-06
 - [x] `Telefonemas` ✅ 2026-04-06
 - [x] `Notas` ✅ 2026-04-06
-- [ ] `Emails`
+- [x] `Emails` ✅ 2026-04-06
 
 ## Checklist por Módulo
 
@@ -220,7 +220,7 @@ Só considerar um módulo fechado quando:
 - [x] Assinalar como módulo exclusivo da `Seepmode`, se essa ausência na `Tacovia` se confirmar ✅ 2026-04-02
 - [x] Confirmar campos e relações do módulo na evidência disponível
 - [/] Confirmar dropdowns internos relevantes
-- [ ] Confirmar destino técnico no `LuxuryCRM`
+- [x] Confirmar destino técnico no `LuxuryCRM` ✅ 2026-04-06
 - [/] Identificar gaps de schema ou mapeamento
 
 ### Documentos

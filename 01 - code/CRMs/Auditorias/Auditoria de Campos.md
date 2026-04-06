@@ -13,7 +13,7 @@
 - [/] Identificar gaps e listar campos em falta
 - [/] Identificar quais campos se devem fundir entre os dois CRMs
 - [/] Identificar campos partilhados com dropdown diferente por base, com prioridade para `Assistências`
-- [ ] Testar alterações no Studio
+- [x] Testar alterações no Studio ✅ 2026-04-06 (não responde)
 
 ## Matriz de Auditoria
 
@@ -738,6 +738,53 @@ Leitura atual para `Notas`:
 - a estrutura do módulo está confirmada como simples, operacional e coerente entre `Studio` e UI
 - não há sinal forte de gap estrutural relevante
 - as diferenças remanescentes parecem residuais e de baixo impacto técnico
+
+## Registo de validação em curso: Emails
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `name`
+  - `type`
+  - `from_addr_name`
+  - `to_addrs_names`
+  - `status`
+  - `cc_addrs_names`
+  - `bcc_addrs_names`
+  - `reply_to_addr`
+  - `date_sent_received`
+  - `category_id`
+  - `parent_type`
+  - `parent_id`
+  - `assigned_user_id`
+  - `description`
+  - `description_html`
+  - `date_entered`
+- a detail view confirma também:
+  - `Related Module`
+  - `Related To`
+  - `HTML Body`
+  - `Body`
+- existe secção de `Attachments`
+- `Fields` confirmam ainda campos adicionais de suporte:
+  - `raw_source`
+  - `date_sent`
+  - `flagged`
+  - `reply_to_status`
+  - `parent_name`
+  - `message_id`
+  - `uid`
+  - `intent`
+  - `mailbox_id`
+  - `orphaned`
+
+Leitura atual para `Emails`:
+
+- a estrutura do módulo está confirmada como operacional e coerente entre `Studio` e UI
+- o módulo preserva corretamente a componente de conteúdo (`Body` / `HTML Body`) e a relação contextual com outros módulos
+- não há sinal forte de gap estrutural relevante
+- as diferenças remanescentes parecem residuais e de baixo impacto técnico
 - no entanto, foi confirmada uma incoerência específica no filtro:
   - o `Studio > Filter View` tem como campos default:
     - `ID`
@@ -781,20 +828,20 @@ Campos já confirmados no filtro do `Studio`:
 
 ### Tabela de validação: Assistências
 
-| Campo | Tipo | Estado atual | Levantamento |
-|---|---|---|---|
-| `code_c` | dropdown de negócio | parcial | confirmado no filtro; apresenta valores com `label` e outros só numéricos |
-| `status` | dropdown de negócio | parcial | confirmado no filtro; lista uniforme de `0` a `6` |
-| `priority` | dropdown de negócio | parcial | confirmado no filtro; lista `1`, `2`, `3` sem label textual |
-| `mode_c` | dropdown de negócio | parcial | confirmado no filtro; `Email`, `Telefone`, `Presencial` |
-| `area_c` | dropdown de negócio | parcial | confirmado no filtro; `Suporte`, `Jurídico`, `SGT`, `SUT`, `HACCP` |
-| `send_receive_c` | dropdown de negócio | parcial | confirmado documentalmente em ambas as extrações do `Studio` e na metadata técnica; nesta ronda ficou por confirmar visualmente no filtro atual |
-| `assistence_datetime_c` | operador de filtro | confirmado | operador comum de data |
-| `resolution_date` | operador de filtro | confirmado | operador comum de data |
-| `service_date_c` | operador de filtro | confirmado | operador comum de data |
-| `date_due` | operador de filtro | confirmado | operador comum de data |
-| `date_entered` | operador de filtro | confirmado | operador comum de data |
-| `date_modified` | operador de filtro | confirmado | operador comum de data |
+| Campo                   | Tipo                | Estado atual | Levantamento                                                                                                                                    |
+| ----------------------- | ------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `code_c`                | dropdown de negócio | parcial      | confirmado no filtro; apresenta valores com `label` e outros só numéricos                                                                       |
+| `status`                | dropdown de negócio | parcial      | confirmado no filtro, lista uniforme de `0` a `6`                                                                                               |
+| `priority`              | dropdown de negócio | parcial      | confirmado no filtro; lista `1`, `2`, `3` sem label textual                                                                                     |
+| `mode_c`                | dropdown de negócio | parcial      | confirmado no filtro; `Email`, `Telefone`, `Presencial`                                                                                         |
+| `area_c`                | dropdown de negócio | parcial      | confirmado no filtro; `Suporte`, `Jurídico`, `SGT`, `SUT`, `HACCP`                                                                              |
+| `send_receive_c`        | dropdown de negócio | parcial      | confirmado documentalmente em ambas as extrações do `Studio` e na metadata técnica; nesta ronda ficou por confirmar visualmente no filtro atual |
+| `assistence_datetime_c` | operador de filtro  | confirmado   | operador comum de data                                                                                                                          |
+| `resolution_date`       | operador de filtro  | confirmado   | operador comum de data                                                                                                                          |
+| `service_date_c`        | operador de filtro  | confirmado   | operador comum de data                                                                                                                          |
+| `date_due`              | operador de filtro  | confirmado   | operador comum de data                                                                                                                          |
+| `date_entered`          | operador de filtro  | confirmado   | operador comum de data                                                                                                                          |
+| `date_modified`         | operador de filtro  | confirmado   | operador comum de data                                                                                                                          |
 
 Leituras já confirmadas:
 
@@ -978,14 +1025,7 @@ Fecho documental atual para `Assistências`:
 - `Fichas de Aptidão`
 - `Propostas`
 
-## Evidência a Anexar
 
-### Assistências
-
-- [x] Screenshot do filtro com os campos visíveis
-- [x] Screenshot dos operadores de data no filtro
-- [x] Screenshot do `Studio > Layouts > Filter View`
-- [x] Notas sobre coerência entre extrações do `Studio`
 
 Anexos / observações:
 
@@ -994,34 +1034,6 @@ Anexos / observações:
 - `status` apresenta valores uniformizados de `0` a `6`
 - `priority` apresenta valores `1`, `2`, `3` sem label textual
 
-## Critérios para Registo por Imagem
-
-Registar imagem sempre que apareça uma destas situações:
-
-- valores mistos no mesmo `dropdown`
-  - exemplo: alguns com `código + label` e outros só com número
-- valores sem label quando seria expectável haver descrição
-- diferenças entre o que aparece no filtro e o que aparece no `Studio`
-- campos presentes numa extração e ausentes noutra
-- nomes diferentes para o que parece ser o mesmo campo
-- ordem estranha ou quebra de sequência na lista
-- labels truncadas, vazias ou tecnicamente incorretas
-- um `dropdown` que parece incompleto face ao que está documentado
-- qualquer caso em que não seja óbvio se a diferença vem de:
-  - configuração
-  - recolha
-  - base de dados
-
-Aplicação já identificada em `Assistências`:
-
-- `code_c`
-  - deve ter sempre registo por imagem, porque mostra valores mistos
-- `priority`
-  - convém ter registo por imagem, porque a lista aparece só com números
-- `mode_c`
-  - imagem útil como evidência de lista uniforme e legível
-- `area_c`
-  - imagem útil como evidência de lista uniforme e legível
 
 ## Fontes Base
 
