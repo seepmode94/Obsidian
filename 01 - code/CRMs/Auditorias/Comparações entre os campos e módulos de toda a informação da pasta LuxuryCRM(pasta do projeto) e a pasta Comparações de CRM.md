@@ -30,9 +30,9 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 | Faturas | Estrutura operacional confirmada; diferenças parecem residuais e mais documentais do que estruturais | `migration-matrix.md` cobre migração e relações principais | Parcial | Coerência geral reforçada; falta só fecho fino por checklist vs SQL |
 | Contratos | Diferença clara em `anuidade_c` vs `anuidade_list_c` | `seepmode-vs-tacovia-fields.md` e `migration-matrix.md` confirmam a divergência e o destino técnico | Confirmado | Caso de fusão claro e já sustentado por SQL |
 | Contactos | Estrutura rica confirmada; diferenças parecem pequenas, isoladas e mais documentais do que estruturais | `LuxuryCRM` mantém o módulo como estruturalmente equivalente | Parcial | Coerência geral reforçada; falta só fecho fino campo a campo |
-| Telefonemas | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
+| Telefonemas | Estrutura simples e operacional confirmada; sem sinal de diferenças relevantes estruturais | Módulo tratado como equivalente | Parcial | Coerência geral reforçada; falta só reconciliação fina |
 | Reuniões | Estrutura simples e operacional confirmada; diferenças parecem pequenas e residuais | Módulo tratado como equivalente | Parcial | Coerência geral reforçada; falta só reconciliação fina |
-| Notas | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
+| Notas | Estrutura simples e operacional confirmada; sem sinal de diferenças relevantes estruturais | Módulo tratado como equivalente | Parcial | Coerência geral reforçada; falta só reconciliação fina |
 | Emails | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
 | Formandos | Estrutura rica e operacional confirmada; diferenças parecem pontuais e mais documentais do que estruturais | `LuxuryCRM` trata o módulo como estruturalmente migrável | Parcial | Coerência geral reforçada; falta só reconciliação fina ao nível de campos e vistas |
 | Formadores | Estrutura operacional simples confirmada; existe incoerência entre `Studio > Filter View` e filtro real | `migration-matrix.md` cobre a migração para `trainers` | Parcial | Coerência estrutural reforçada, mas o filtro ainda precisa de reconciliação fina |

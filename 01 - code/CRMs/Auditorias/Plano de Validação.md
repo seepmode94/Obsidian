@@ -32,8 +32,8 @@ Obter informação suficiente para validar, por módulo, o que:
 - [x] `Formandos` ✅ 2026-04-06
 - [x] `Formadores` ✅ 2026-04-06
 - [x] `Reuniões` ✅ 2026-04-06
-- [ ] `Telefonemas`
-- [ ] `Notas`
+- [x] `Telefonemas` ✅ 2026-04-06
+- [x] `Notas` ✅ 2026-04-06
 - [ ] `Emails`
 
 ## Checklist por Módulo

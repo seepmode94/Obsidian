@@ -683,6 +683,61 @@ Leitura atual para `Reuniões`:
 - a estrutura do módulo está confirmada como operacional e coerente entre `Studio` e UI
 - trata-se de um módulo relativamente simples, com diferenças residuais e pouco sinal de gap estrutural relevante
 - os campos adicionais de geolocalização/notificação parecem acessórios e não alteram a coerência funcional principal
+
+## Registo de validação em curso: Telefonemas
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `name`
+  - `status`
+  - `date_start`
+  - `date_end`
+  - `duration_hours`
+  - `duration_minutes`
+  - `direction`
+  - `reminder_time`
+  - `parent_type`
+  - `parent_id`
+  - `assigned_user_id`
+  - `description`
+  - `date_entered`
+- a detail view mostra relações funcionais visíveis com:
+  - `Contactos`
+  - `Utilizadores`
+  - `Propostas`
+- existe secção de `Attachments`
+
+Leitura atual para `Telefonemas`:
+
+- a estrutura do módulo está confirmada como operacional e coerente entre `Studio` e UI
+- trata-se de um módulo simples, com baixo sinal de gap estrutural
+- as diferenças remanescentes parecem finas e pouco relevantes do ponto de vista técnico
+
+## Registo de validação em curso: Notas
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `name`
+  - `contact_id`
+  - `parent_type`
+  - `parent_id`
+  - `filename`
+  - `assigned_user_id`
+  - `description`
+  - `file_mime_type`
+  - `date_entered`
+- existe secção de `Attachments`
+- o módulo mostra a relação funcional básica através de `Related To (Module)` / `Related To`
+
+Leitura atual para `Notas`:
+
+- a estrutura do módulo está confirmada como simples, operacional e coerente entre `Studio` e UI
+- não há sinal forte de gap estrutural relevante
+- as diferenças remanescentes parecem residuais e de baixo impacto técnico
 - no entanto, foi confirmada uma incoerência específica no filtro:
   - o `Studio > Filter View` tem como campos default:
     - `ID`
