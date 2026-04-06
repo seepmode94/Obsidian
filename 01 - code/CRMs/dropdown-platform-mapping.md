@@ -76,9 +76,71 @@ Regra:
 | `Contracts` | `anuidade_c` | `anuidade_list` |
 | `Cases` | `code_c` | `code_list` |
 
-## 5. Inventário Comparativo
+## 5. Dropdowns Confirmadas Como Usadas Pela Seepmode
 
-### 5.1 Partilhados Com Diferença Confirmada
+Confirmadas em [module_field_nature.md](/home/seepmode94/Documentos/work/IT/LuxuryCRM/documentation/module_field_nature.md) como efetivamente ligadas a campos.
+
+| Dropdown |
+|---|
+| `account_type_dom` |
+| `anuidade_list` |
+| `approval_status_dom` |
+| `area_list` |
+| `attendances_list` |
+| `billing_state_list` |
+| `campaign_status_dom` |
+| `candidature_status_list` |
+| `case_status_dom` |
+| `cases_mode_list` |
+| `client_service_type_list` |
+| `code_list` |
+| `contracts_status_list` |
+| `countries_list` |
+| `empresa_list` |
+| `exam_type_list` |
+| `gender_list` |
+| `industry_dom` |
+| `invoice_status_dom` |
+| `lead_source_dom` |
+| `literary_abilities_list` |
+| `marital_status_list` |
+| `medical_appreciation_list` |
+| `nutsii_list` |
+| `pack_list` |
+| `priority_list` |
+| `quote_invoice_status_dom` |
+| `quote_stage_dom` |
+| `quote_term_dom` |
+| `recommendations_list` |
+| `send_receive_list` |
+| `service_organization_list` |
+| `service_organization_name_c_list` |
+| `service_organization_nipc_c_list` |
+| `sexo_c_list` |
+| `training_types_list` |
+| `type_invoice` |
+| `type_list` |
+| `yes_no_list` |
+
+### 5.1 Dropdowns Usadas Só Ou Principalmente Pela Seepmode
+
+Estas estão ligadas a customizações que a comparação entre instâncias identifica como Seepmode-specific ou fortemente associadas ao domínio Seepmode.
+
+| Dropdown | Motivo |
+|---|---|
+| `service_organization_list` | usada em `sdmod_capability`, módulo altamente customizado em Seepmode |
+| `service_organization_name_c_list` | usada em `sdmod_capability`, customização Seepmode |
+| `service_organization_nipc_c_list` | usada em `sdmod_capability`, customização Seepmode |
+| `sexo_c_list` | usada em `sdmod_capability`, customização Seepmode |
+| `recommendations_list` | usada em `sdmod_capability`, customização Seepmode |
+
+Nota:
+
+- estas listas podem existir noutras instâncias após unificações/migrations, mas a sua utilização funcional confirmada nas fontes analisadas está associada sobretudo à Seepmode
+
+## 6. Inventário Comparativo
+
+### 6.1 Partilhados Com Diferença Confirmada
 
 | Dropdown |
 |---|
@@ -98,7 +160,7 @@ Regra:
 | `vat_list` |
 | `yes_no_list` |
 
-### 5.2 Partilhados Sem Diferença Documentada
+### 6.2 Partilhados Sem Diferença Documentada
 
 | Dropdown |
 |---|
@@ -133,7 +195,7 @@ Regra:
 | `training_types_list` |
 | `type_invoice` |
 
-### 5.3 Identificados Apenas Na Fonte Tacovia Usada
+### 6.3 Identificados Apenas Na Fonte Tacovia Usada
 
 Estas listas aparecem no inventário `dropdown_lists` de `luxurycrm_tacovia`, mas não estão cobertas nas fontes Seepmode usadas para este documento.
 
@@ -164,7 +226,7 @@ Estas listas aparecem no inventário `dropdown_lists` de `luxurycrm_tacovia`, ma
 | `task_status_dom` |
 | `users_sales_region_list` |
 
-### 5.4 Resumo Quantitativo
+### 6.4 Resumo Quantitativo
 
 | Classe | Quantidade |
 |---|---|
@@ -172,7 +234,7 @@ Estas listas aparecem no inventário `dropdown_lists` de `luxurycrm_tacovia`, ma
 | Partilhados sem diferença documentada | 30 |
 | Identificados apenas na fonte Tacovia usada | 24 |
 
-## 6. Uso Recomendado Na Alteração
+## 7. Uso Recomendado Na Alteração
 
 ### Tratar como multi-tenant obrigatório
 
@@ -205,12 +267,9 @@ Estas listas aparecem no inventário `dropdown_lists` de `luxurycrm_tacovia`, ma
 |---|
 | `identificados apenas na fonte Tacovia usada` |
 
-## 7. Nota De Confiança
+## 8. Nota
 
-Este documento é suficientemente forte para orientar a alteração dos casos principais.
-
-Limite atual:
+Este documento é suficientemente forte para orientar a alteração dos casos principais:
 
 - não é uma prova exaustiva linha-a-linha de todas as listas das duas instâncias
 - o grupo `identificados apenas na fonte Tacovia usada` depende da cobertura das fontes Seepmode presentes no repositório
-
