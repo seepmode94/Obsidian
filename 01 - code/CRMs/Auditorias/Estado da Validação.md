@@ -90,7 +90,7 @@ Estado atual do módulo:
 - `send_receive_c`
   - confirmado documentalmente nas duas extrações do `Studio`
   - metadata técnica confirma `send_receive_list`
-  - ainda falta confirmação visual no filtro atual
+  - existe no `Studio`, mas não está visível no filtro real atual
 
 ## Riscos e pontos de atenção já encontrados
 
@@ -100,7 +100,7 @@ Estado atual do módulo:
   - a lista aparece apenas com valores numéricos
 - `send_receive_c`
   - já não é dúvida estrutural
-  - ainda falta confirmação visual no filtro
+  - há divergência entre o `Studio` e o filtro real atual
 - existe risco de perda de informação se o cruzamento entre as duas recolhas não for feito módulo a módulo
 
 ## Processo que ainda falta percorrer
@@ -109,7 +109,6 @@ Estado atual do módulo:
 
 Falta:
 
-- confirmar visualmente `send_receive_c` no filtro atual
 - cruzar os dropdowns já vistos com a documentação da outra recolha
 - fechar documentalmente `code_list` como divergência real entre bases
 - decidir se resta alguma divergência real fora de `code_list` ou apenas diferença de levantamento

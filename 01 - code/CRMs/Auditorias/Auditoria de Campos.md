@@ -188,15 +188,17 @@ Leitura provisória para `Área`:
 - não há, para já, sinal de valores vazios ou numéricos sem label
 - falta ainda cruzar com a outra recolha do `Studio`
 
-Leitura provisória para `send_receive_c`:
+Leitura atual para `send_receive_c`:
 
 - o campo aparece nas duas extrações de `Check-list` do `Studio`
 - o `LuxuryCRM` confirma o dropdown técnico `send_receive_list`
 - a lista técnica identificada é:
   - `Received` -> `Recebido`
   - `Send` -> `Enviado`
-- nesta ronda não foi confirmado visualmente no filtro atual
-- por isso, o campo fica `confirmado documentalmente`, mas ainda com pendência de confirmação visual
+- o campo existe no `Studio > Layouts > Filter View`
+- no filtro real atual do módulo, o campo não está visível
+- isto confirma uma divergência entre layout configurado no `Studio` e campos expostos no filtro atual
+- o campo não corresponde aos botões `Search` e `Clear`
 
 Levantamento atual para `code_list`:
 
@@ -216,14 +218,12 @@ Levantamento atual para `code_list`:
   - `69`
   - `73`
 
-Leitura provisória:
+Leitura atual:
 
 - o `dropdown` `code_list` não está uniformizado ao nível de labels
 - isto deve ser tratado como ponto crítico de coerência entre recolhas do `Studio`
-- nesta fase ainda não está fechado se a diferença vem de:
-  - labels em falta
-  - configuração incompleta da lista
-  - diferença entre bases
+- a evidência documental disponível aponta para divergência real entre bases
+- a decisão técnica mais segura continua a ser usar o superset da `Tacovia`
 
 ### Observação sobre filtros com data
 
@@ -247,7 +247,7 @@ Leitura desta validação:
 - representa antes uma lógica comum de operadores de pesquisa
 - por isso, nesta auditoria, estes campos devem ser tratados separadamente dos `dropdowns` funcionais do módulo
 
-Conclusão provisória para `Assistências`:
+Conclusão para `Assistências`:
 
 - validar como `dropdowns críticos de negócio`:
   - `code_c`
@@ -267,6 +267,8 @@ Fecho documental atual para `Assistências`:
 
 - as duas extrações novas do `Studio` estão alinhadas ao nível de estrutura do módulo
 - `send_receive_c` deixou de ser um campo apenas inferido por SQL, porque aparece explicitamente nas duas recolhas documentais
+- `send_receive_c` existe no `Studio`, mas não está visível no filtro real atual
+- essa diferença deve ser registada como divergência entre configuração e exposição funcional do filtro
 - a grande divergência relevante entre bases continua a ser `code_list`
 - `priority_list` não mostra labels descritivas e deve continuar assinalado como ponto de atenção, mas a metadata confirma que a lista esperada é mesmo `1`, `2`, `3`
 - a recomendação técnica atual continua a ser tratar `code_list` como superset da `Tacovia`
