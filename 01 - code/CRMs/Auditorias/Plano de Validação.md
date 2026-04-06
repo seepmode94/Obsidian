@@ -20,10 +20,10 @@ Obter informação suficiente para validar, por módulo, o que:
 
 - [/] `Assistências` em validação
 - [x] `Contratos`
-- [ ] `Acessos IEFP`
-- [ ] `Fichas de Aptidão`
-- [ ] `Medicina Ocupacional`
-- [ ] `Documentos`
+- [x] `Acessos IEFP` ✅ 2026-04-06
+- [x] `Fichas de Aptidão` ✅ 2026-04-06
+- [x] `Medicina Ocupacional` ✅ 2026-04-06
+- [x] `Documentos` ✅ 2026-04-06
 - [ ] `Clientes`
 - [ ] `Propostas`
 - [ ] `Faturas`
@@ -218,10 +218,17 @@ Só considerar um módulo fechado quando:
 ### Medicina Ocupacional
 
 - [x] Assinalar como módulo exclusivo da `Seepmode`, se essa ausência na `Tacovia` se confirmar ✅ 2026-04-02
-- [ ] Confirmar campos e relações do módulo
-- [ ] Confirmar dropdowns internos relevantes
+- [x] Confirmar campos e relações do módulo na evidência disponível
+- [/] Confirmar dropdowns internos relevantes
 - [ ] Confirmar destino técnico no `LuxuryCRM`
-- [ ] Identificar gaps de schema ou mapeamento
+- [/] Identificar gaps de schema ou mapeamento
+
+### Documentos
+
+- [x] Confirmar estrutura base do módulo
+- [x] Confirmar anexos e revisão básica
+- [/] Confirmar superset de relações visíveis
+- [ ] Confirmar se o superset cobre integralmente a review
 
 ## Resultado Esperado
 

@@ -159,6 +159,89 @@ Leitura atual para `Fichas de Aptidão`:
   - `sdmod_capability_documents_1_c`
 - o gap estrutural de `project_sdmod_capability_1_c` continua aberto, mas a evidência atual mostra que a ligação funcional ao projeto existe
 
+## Registo de validação em curso: Medicina Ocupacional
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo existe na UI com filtro rico e volume real de registos
+- a detail view mostra um modelo funcional muito extenso, com painéis de:
+  - `Informação do Projeto`
+  - `Antecedentes Familiares`
+  - `Doenças Profissionais`
+  - `Acidentes de Trabalho`
+  - `Exposição a Perigos`
+  - `Álcool`
+  - `Tabaco`
+  - `Café`
+  - `Medicação`
+  - `Passatempos`
+  - `Biometrias`
+  - `Vacinação`
+  - `Exames Complementares`
+  - `Patologias Apresentadas`
+  - `Recomendações`
+  - `Encaminhamento para Especialidades`
+  - `Conselhos ao Trabalhador`
+  - `Conclusão`
+- na detail view aparecem relações funcionais com:
+  - `Propostas`
+  - `Assistências`
+  - `Fichas de Aptidão`
+  - `Security Groups`
+  - `Documentos`
+  - `Emails`
+- o `Studio > Edit View` confirma modelo rico equivalente ao visível na página
+- `Fields` confirmam um conjunto alargado de campos técnicos e funcionais
+
+Leitura atual para `Medicina Ocupacional`:
+
+- nesta base, o módulo está efetivamente configurado e utilizável
+- a evidência disponível confirma um modelo rico também na `Tacovia`
+- existe ligação funcional explícita com `Fichas de Aptidão`
+- com a evidência atual, fica fechada a existência de estrutura e relações funcionais principais
+- o que fica pendente não é a existência do módulo, mas sim a decisão funcional já assumida sobre primazia/destino técnico no projeto
+
+## Registo de validação em curso: Documentos
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura base coerente com o `Studio`, incluindo:
+  - `document_name`
+  - `filename`
+  - `status_id`
+  - `revision`
+  - `category_id`
+  - `subcategory_id`
+  - `active_date`
+  - `exp_date`
+  - `template_type`
+  - `is_template`
+  - `doc_type`
+  - `doc_url`
+  - `related_doc_id`
+  - `assigned_user_id`
+  - `description`
+- existe secção de `Attachments` com ficheiro associado
+- a detail view mostra relações funcionais visíveis com:
+  - `Clientes`
+  - `Contactos`
+  - `Propostas (Histórico)`
+  - `Assistências`
+  - `Contratos`
+  - `Propostas`
+  - `Medicinas Ocupacionais`
+  - `Fichas de Aptidão`
+  - `Bases de Operações`
+- o `Studio > Edit View` e `Fields` estão coerentes com a estrutura visível
+
+Leitura atual para `Documentos`:
+
+- a estrutura base do módulo fica confirmada
+- a existência de `Attachments`, `Revision` e `Related Document` confirma que o módulo suporta anexos e cadeia básica de revisão/relacionamento
+- a evidência atual reforça a ideia de superset relacional do módulo
+- continua pendente apenas confirmar se este superset visível cobre integralmente tudo o que foi pedido pela review e pela documentação técnica
+
 ### Registo de validação em curso: Assistências
 
 Campos já confirmados no filtro do `Studio`:

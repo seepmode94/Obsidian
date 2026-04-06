@@ -56,7 +56,7 @@ O trabalho está organizado em quatro linhas:
 - `Fichas de Aptidão`
   - a decisão funcional mantém-se, mas a evidência atual confirma modelo rico visível e utilizável na `Tacovia`
 - `Medicina Ocupacional`
-  - está a ser tratada como módulo exclusivo da `Seepmode`, sujeito a confirmação final
+  - a decisão funcional mantém-se, mas a evidência atual confirma modelo rico e relações funcionais visíveis na `Tacovia`
 
 ### Progresso concreto em Assistências
 
@@ -120,9 +120,6 @@ Falta:
 
 Ordem atual:
 
-- `Acessos IEFP`
-- `Fichas de Aptidão`
-- `Medicina Ocupacional`
 - `Documentos`
 
 ### 3. Continuar a auditoria por módulo
