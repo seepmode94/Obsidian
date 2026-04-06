@@ -614,6 +614,94 @@ Leitura atual para `Formandos`:
 - a evidência atual reforça a componente de acompanhamento administrativo e certificação do módulo
 - os gaps remanescentes parecem finos e mais documentais do que estruturais
 
+## Registo de validação em curso: Formadores
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `trainer_name`
+  - `hour_value`
+  - `total_amount`
+  - `receipt_number`
+  - `payment_date`
+  - `receipt_date`
+  - `registration_cost`
+  - `receipt_delivery_date_c`
+  - `trainer_info_date_c`
+  - `info_verification_date_c`
+  - `observations`
+- `Fields` confirmam também:
+  - `training_id`
+  - `assigned_user_id`
+  - `contact_id`
+  - `receipt_value`
+  - `currency_id`
+- a detail view mostra relação funcional visível com:
+  - `Sessões`
+- o módulo apresenta secção de `Attachments` e `Audit Trail`
+
+Leitura atual para `Formadores`:
+
+- a estrutura do módulo está confirmada como operacional e coerente entre `Studio` e UI
+- trata-se de um módulo mais simples do que `Formações` e `Formandos`, mas com propósito funcional claro
+- a evidência atual reduz o peso de gaps estruturais e deixa sobretudo pendências finas de reconciliação documental
+
+## Registo de validação em curso: Reuniões
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `name`
+  - `status`
+  - `date_start`
+  - `date_end`
+  - `duration_hours`
+  - `duration_minutes`
+  - `location`
+  - `reminder_time`
+  - `parent_type`
+  - `parent_id`
+  - `assigned_user_id`
+  - `description`
+  - `date_entered`
+- a detail view mostra relações funcionais visíveis com:
+  - `Contactos`
+  - `Utilizadores`
+  - `Propostas`
+- `Fields` confirmam ainda campos adicionais de suporte:
+  - `jjwg_maps_lng_c`
+  - `jjwg_maps_lat_c`
+  - `jjwg_maps_geocode_status_c`
+  - `jjwg_maps_address_c`
+  - `notificacao_de_auditoria_c`
+- existe secção de `Attachments`
+
+Leitura atual para `Reuniões`:
+
+- a estrutura do módulo está confirmada como operacional e coerente entre `Studio` e UI
+- trata-se de um módulo relativamente simples, com diferenças residuais e pouco sinal de gap estrutural relevante
+- os campos adicionais de geolocalização/notificação parecem acessórios e não alteram a coerência funcional principal
+- no entanto, foi confirmada uma incoerência específica no filtro:
+  - o `Studio > Filter View` tem como campos default:
+    - `ID`
+    - `Nome`
+    - `Valor/Hora`
+    - `Valor Total`
+    - `Número da Fatura`
+    - `Data de pagamento`
+  - o filtro real na UI mostra:
+    - `Nome`
+    - `Valor/Hora`
+    - `Valor Total`
+    - `Valor do recibo (€)`
+    - `Número da Fatura`
+    - `Data da factura`
+    - `Data Entrega Recibo`
+    - `Data de pagamento`
+- isto confirma divergência entre o `Filter View` do `Studio` e o filtro realmente exposto ao utilizador
+
 ### Registo de validação em curso: Assistências
 
 Campos já confirmados no filtro do `Studio`:
