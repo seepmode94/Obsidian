@@ -36,7 +36,7 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 | Emails | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
 | Formandos | Diferenças pontuais e alguns campos isolados | `LuxuryCRM` trata o módulo como estruturalmente migrável | Parcial | Falta reconciliação ao nível de campos e vistas |
 | Formadores | Diferenças pontuais | `migration-matrix.md` cobre a migração para `trainers` | Parcial | Estrutura técnica existe, mas falta reconciliação fina |
-| Assistências | Estrutura equivalente; diferenças nas listas e alguns campos adicionais | `LuxuryCRM` confirma estrutura comum e destaca divergência forte em `code_list` | Parcial | Dropdowns ainda não estão fechados |
+| Assistências | Estrutura equivalente; `send_receive_c` aparece nas duas extrações novas do `Studio`; diferenças concentram-se nas listas | `LuxuryCRM` confirma estrutura comum, fixa `send_receive_list` e destaca divergência forte em `code_list` | Parcial | Estrutura coerente; falta fecho visual no filtro e decisão final sobre `code_list` |
 | Acessos IEFP | Diferença documental em `icfp_email_c` vs `iefp_email_c` | `LuxuryCRM` assume normalização; dumps SQL consultados mostraram `iefp_email_c` | Parcial | Há conflito entre documentação antiga e SQL |
 | Sessões | Diferença crítica: formação vs relatórios agendados | `LuxuryCRM` está alinhado com o modelo de formação | Parcial | O lado relatórios agendados ainda não aparece com destino técnico explícito |
 | Medicina Ocupacional | Diferenças relevantes de campos, painéis e rastreios | `LuxuryCRM` documenta o módulo com estrutura rica e superset funcional | Parcial | A direção técnica faz sentido, mas falta fecho fino |
@@ -85,6 +85,7 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 ## Pontos Críticos em Aberto
 
 - `Assistências`
+  - fechar visualmente `send_receive_c` no filtro atual
   - fechar dropdowns, sobretudo `code_list`
 - `Acessos IEFP`
   - fechar a discrepância `icfp_email_c` vs `iefp_email_c`

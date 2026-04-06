@@ -109,7 +109,7 @@ Campos já confirmados no filtro do `Studio`:
 | `priority` | dropdown de negócio | parcial | confirmado no filtro; lista `1`, `2`, `3` sem label textual |
 | `mode_c` | dropdown de negócio | parcial | confirmado no filtro; `Email`, `Telefone`, `Presencial` |
 | `area_c` | dropdown de negócio | parcial | confirmado no filtro; `Suporte`, `Jurídico`, `SGT`, `SUT`, `HACCP` |
-| `send_receive_c` | dropdown de negócio | por confirmar | identificado em SQL / metadata / layout do `Studio`; não confirmado no filtro atual |
+| `send_receive_c` | dropdown de negócio | parcial | confirmado documentalmente em ambas as extrações do `Studio` e na metadata técnica; nesta ronda ficou por confirmar visualmente no filtro atual |
 | `assistence_datetime_c` | operador de filtro | confirmado | operador comum de data |
 | `resolution_date` | operador de filtro | confirmado | operador comum de data |
 | `service_date_c` | operador de filtro | confirmado | operador comum de data |
@@ -190,9 +190,13 @@ Leitura provisória para `Área`:
 
 Leitura provisória para `send_receive_c`:
 
-- o campo está identificado na metadata técnica e no layout do `Studio`
+- o campo aparece nas duas extrações de `Check-list` do `Studio`
+- o `LuxuryCRM` confirma o dropdown técnico `send_receive_list`
+- a lista técnica identificada é:
+  - `Received` -> `Recebido`
+  - `Send` -> `Enviado`
 - nesta ronda não foi confirmado visualmente no filtro atual
-- fica marcado como `por confirmar`
+- por isso, o campo fica `confirmado documentalmente`, mas ainda com pendência de confirmação visual
 
 Levantamento atual para `code_list`:
 
@@ -259,6 +263,14 @@ Conclusão provisória para `Assistências`:
   - `date_modified`
   - `resolution_date`
 
+Fecho documental atual para `Assistências`:
+
+- as duas extrações novas do `Studio` estão alinhadas ao nível de estrutura do módulo
+- `send_receive_c` deixou de ser um campo apenas inferido por SQL, porque aparece explicitamente nas duas recolhas documentais
+- a grande divergência relevante entre bases continua a ser `code_list`
+- `priority_list` não mostra labels descritivas e deve continuar assinalado como ponto de atenção, mas a metadata confirma que a lista esperada é mesmo `1`, `2`, `3`
+- a recomendação técnica atual continua a ser tratar `code_list` como superset da `Tacovia`
+
 ## Testes no Studio
 
 ### Assistências
@@ -275,7 +287,7 @@ Conclusão provisória para `Assistências`:
   - filtro
   - workflows
 
-- [ ] Confirmar também os valores ativos de:
+- [/] Confirmar também os valores ativos de:
   - `send_receive_c`
 
 ### Módulos com extrações do Studio a rever

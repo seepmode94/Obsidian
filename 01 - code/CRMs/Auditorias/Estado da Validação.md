@@ -88,8 +88,9 @@ Estado atual do módulo:
   - confirmado no filtro
   - lista uniforme e legível
 - `send_receive_c`
-  - identificado em SQL, metadata e layout do `Studio`
-  - ainda não confirmado visualmente no filtro atual
+  - confirmado documentalmente nas duas extrações do `Studio`
+  - metadata técnica confirma `send_receive_list`
+  - ainda falta confirmação visual no filtro atual
 
 ## Riscos e pontos de atenção já encontrados
 
@@ -98,6 +99,7 @@ Estado atual do módulo:
 - `priority`
   - a lista aparece apenas com valores numéricos
 - `send_receive_c`
+  - já não é dúvida estrutural
   - ainda falta confirmação visual no filtro
 - existe risco de perda de informação se o cruzamento entre as duas recolhas não for feito módulo a módulo
 
@@ -107,9 +109,10 @@ Estado atual do módulo:
 
 Falta:
 
-- confirmar `send_receive_c`
+- confirmar visualmente `send_receive_c` no filtro atual
 - cruzar os dropdowns já vistos com a documentação da outra recolha
-- decidir se há divergência real entre bases ou apenas diferença de levantamento
+- fechar documentalmente `code_list` como divergência real entre bases
+- decidir se resta alguma divergência real fora de `code_list` ou apenas diferença de levantamento
 
 ### 2. Validar os módulos prioritários seguintes
 
