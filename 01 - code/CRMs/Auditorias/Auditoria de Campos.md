@@ -119,7 +119,11 @@ Leitura atual para `Acessos IEFP`:
 - a divergência fica, para já, localizada na documentação anterior e/ou nos dumps SQL
 - mantém-se a normalização técnica prevista:
   - `icfp_email_c` + `iefp_email_c` -> `iefp_email_c`
-- falta apenas confirmar no SQL qual dos dois nomes existe documentalmente na estrutura histórica consultada
+- o SQL fecha a dúvida:
+  - em `Tacovia`, existe `iefp_email_c` em `sdmod_iefp_accesses_cstm` e em `fields_meta_data`
+  - em `Seepmode`, existe `iefp_email_c` em `sdmod_iefp_accesses_cstm` e em `fields_meta_data`
+  - não apareceu evidência de `icfp_email_c` nos dumps consultados
+- por isso, `icfp_email_c` deve ser tratado como erro documental antigo, e `iefp_email_c` como nome técnico correto
 
 ### Registo de validação em curso: Assistências
 

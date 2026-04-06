@@ -52,6 +52,7 @@ O trabalho está organizado em quatro linhas:
 - `Acessos IEFP`
   - existe um ponto de normalização entre `icfp_email_c` e `iefp_email_c`
   - na `Tacovia`, o campo de email não aparece nas vistas nem em `Fields` do `Studio`
+  - os dumps SQL confirmam `iefp_email_c` e não mostram `icfp_email_c`
 - `Fichas de Aptidão`
   - está a ser tratada como módulo exclusivo da `Seepmode`
 - `Medicina Ocupacional`
