@@ -28,8 +28,8 @@ Obter informação suficiente para validar, por módulo, o que:
 - [x] `Propostas` ✅ 2026-04-06
 - [x] `Faturas` ✅ 2026-04-06
 - [x] `Contactos` ✅ 2026-04-06
-- [ ] `Formações`
-- [ ] `Formandos`
+- [x] `Formações` ✅ 2026-04-06
+- [x] `Formandos` ✅ 2026-04-06
 - [ ] `Formadores`
 - [ ] `Reuniões`
 - [ ] `Telefonemas`

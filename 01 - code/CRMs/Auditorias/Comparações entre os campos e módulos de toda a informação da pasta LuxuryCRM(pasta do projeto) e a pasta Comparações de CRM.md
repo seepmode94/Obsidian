@@ -34,7 +34,7 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 | Reuniões | Diferenças isoladas pequenas | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
 | Notas | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
 | Emails | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
-| Formandos | Diferenças pontuais e alguns campos isolados | `LuxuryCRM` trata o módulo como estruturalmente migrável | Parcial | Falta reconciliação ao nível de campos e vistas |
+| Formandos | Estrutura rica e operacional confirmada; diferenças parecem pontuais e mais documentais do que estruturais | `LuxuryCRM` trata o módulo como estruturalmente migrável | Parcial | Coerência geral reforçada; falta só reconciliação fina ao nível de campos e vistas |
 | Formadores | Diferenças pontuais | `migration-matrix.md` cobre a migração para `trainers` | Parcial | Estrutura técnica existe, mas falta reconciliação fina |
 | Assistências | Estrutura equivalente; `send_receive_c` aparece nas duas extrações novas do `Studio`, mas não está visível no filtro real atual; diferenças concentram-se nas listas | `LuxuryCRM` confirma estrutura comum, fixa `send_receive_list` e destaca divergência forte em `code_list` | Parcial | Estrutura coerente; divergência funcional em `send_receive_c` e decisão final pendente sobre `code_list` |
 | Acessos IEFP | Diferença documental em `icfp_email_c` vs `iefp_email_c` | `LuxuryCRM` assume normalização; dumps SQL consultados mostraram `iefp_email_c` | Parcial | Há conflito entre documentação antiga e SQL |
@@ -42,7 +42,7 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 | Medicina Ocupacional | Diferenças relevantes de campos, painéis e rastreios | `LuxuryCRM` documenta o módulo com estrutura rica e superset funcional | Parcial | A direção técnica faz sentido, mas falta fecho fino |
 | Fichas de Aptidão | Modelo rico da Seepmode deve ser a base | `LuxuryCRM` confirma o modelo rico em `capabilities` | Confirmado | Um dos módulos mais coerentes entre as duas extrações |
 | Documentos | Precisa de union/superset de relações e revisões | `LuxuryCRM` já cobre parte das relações e revisões | Parcial | Falta provar documentalmente que o superset está completo |
-| Formações | Diferenças menores de layout e alguns campos | `LuxuryCRM` cobre schema e relações principais | Parcial | Falta reconciliação fina do layout e dos campos |
+| Formações | Estrutura rica e operacional confirmada; diferenças parecem menores e mais documentais do que estruturais | `LuxuryCRM` cobre schema e relações principais | Parcial | Coerência geral reforçada; falta só reconciliação fina do layout e dos campos |
 
 ## Leitura Rápida
 

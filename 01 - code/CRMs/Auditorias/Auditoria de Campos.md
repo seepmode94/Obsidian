@@ -486,6 +486,134 @@ Leitura atual para `Contactos`:
 - a coerência entre `Studio` e UI é globalmente boa
 - a evidência atual reduz o peso de diferenças estruturais e reforça que os gaps remanescentes são finos e documentais
 
+## Registo de validação em curso: Formações
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `formation_action`
+  - `year`
+  - `name`
+  - `status`
+  - `formation_date`
+  - `end_date_c`
+  - `account_id`
+  - `trainer_c`
+  - `contact_id`
+  - `sessions`
+  - `hours_number`
+  - `adjudication_date`
+  - `formation_value`
+  - `nutsii_c`
+  - `trainees_number`
+  - `trainees_average`
+  - `trainees_number_action_c`
+  - `formation_check_checkbox_c`
+  - `formation_check_quantity_c`
+  - `data_candidatura_c`
+- a secção `Follow-up` está ativa e coerente com `Fields`, incluindo:
+  - `verificarion_date_c`
+  - `cliente_email_info_date_c`
+  - `trainee_info_deliver_date`
+  - `client_tele_confirm_date_c`
+  - `trainer_info_deliver_date_c`
+  - `formation_reminder_date_c`
+  - `number_certificates_sent`
+  - `sent_certificates_date`
+  - `followup_client_c`
+  - `observations_c`
+  - `data_da_digitalizacao_c`
+  - `data_analise_estatistica_c`
+  - `closed_training_c`
+  - `data_fecho_acao_c`
+  - `issued_by_c`
+- as secções `Location`, `Invoice` e `Assignment` também estão ativas e coerentes com `Studio` / `Fields`, incluindo:
+  - `place`
+  - `local_invoice_number_c`
+  - `address`
+  - `local_value_c`
+  - `room`
+  - `local_payment_date_c`
+  - `projector`
+  - `invoice_number_new_c`
+  - `payment_date`
+  - `invoice_value`
+  - `paid_value_c`
+  - `invoice_date`
+  - `assigned_user_id`
+  - `salesperson_c`
+  - `invoice_id`
+- a detail view mostra relações funcionais visíveis com:
+  - `Sessões`
+  - `Formadores`
+  - `Faturas`
+- o audit trail confirma atividade real sobre o módulo
+
+Leitura atual para `Formações`:
+
+- a estrutura do módulo está confirmada como rica e operacional
+- a coerência entre `Studio` e UI é globalmente boa
+- o módulo já evidencia ligação funcional a `Sessões`, `Formadores` e `Faturas`
+- a evidência atual reduz o peso de gaps estruturais e deixa sobretudo pendências finas de reconciliação documental
+
+## Registo de validação em curso: Formandos
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `contact_id`
+  - `assigned_user_id`
+  - `account_id`
+  - `action_number_c`
+  - `description`
+  - `formation_hours_c`
+  - `training_types_c`
+  - `formation_place_c`
+- a secção `IEFP` está ativa e coerente com `Fields`, incluindo:
+  - `iefp_submission_date`
+  - `iefp_application_number`
+  - `trainee_application_date`
+  - `candidature_status_c`
+  - `iefp_verification_date`
+  - `notification_changes_date`
+  - `answer_deadline`
+  - `refusal_reasons`
+  - `additional_data_date`
+  - `additional_sent_data_date`
+  - `iefp_approved_value`
+  - `customers_result_date`
+  - `refusal_date`
+  - `iefp_process_closed`
+- as secções `Certificates`, `SIGO` e `IMTT` também estão ativas e coerentes com `Studio` / `Fields`, incluindo:
+  - `internal_certificate_date`
+  - `certificate_sent_date`
+  - `intern_certificate_number_c`
+  - `intern_reference_c`
+  - `intern_date_start_c`
+  - `intern_evaluation_c`
+  - `intern_date_end_c`
+  - `certificate_issue_date`
+  - `sigo_training_date`
+  - `sigo_formation_code`
+  - `sigo_training_date_new_c`
+  - `iefp_upload_date`
+  - `sigo_n_c`
+  - `imtt_action_code`
+  - `application_start_date`
+  - `certificate_submission_date`
+  - `application_closing_date`
+  - `process_closed`
+- o audit trail confirma atividade real sobre o módulo
+
+Leitura atual para `Formandos`:
+
+- a estrutura do módulo está confirmada como rica e operacional
+- a coerência entre `Studio` e UI é globalmente boa
+- a evidência atual reforça a componente de acompanhamento administrativo e certificação do módulo
+- os gaps remanescentes parecem finos e mais documentais do que estruturais
+
 ### Registo de validação em curso: Assistências
 
 Campos já confirmados no filtro do `Studio`:
