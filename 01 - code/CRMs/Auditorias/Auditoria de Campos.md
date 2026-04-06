@@ -996,24 +996,28 @@ Fecho documental atual para `Assistências`:
 - `send_receive_c` existe no `Studio`, mas não está visível no filtro real atual
 - essa diferença deve ser registada como divergência entre configuração e exposição funcional do filtro
 - a grande divergência relevante entre bases continua a ser `code_list`
+- a UI real confirma que `code_c` é funcional no filtro, na lista e na detail view
+- a lista `code_list` mostra mistura estrutural entre:
+  - valores com label descritiva
+  - valores apenas numéricos
+- essa mistura repete-se em várias zonas da dropdown e deve ser tratada como divergência real, não como erro pontual de recolha
 - `priority_list` não mostra labels descritivas e deve continuar assinalado como ponto de atenção, mas a metadata confirma que a lista esperada é mesmo `1`, `2`, `3`
 - a recomendação técnica atual continua a ser tratar `code_list` como superset da `Tacovia`
+- não há, nesta fase, evidência de impacto crítico em workflows que altere a decisão técnica para `LuxuryCRM`
+- o tema `workflow` fica marcado como não bloqueante nesta fase
 
 ## Testes no Studio
 
 ### Assistências
 
-- [/] Confirmar valores ativos de `code_c`
+- [x] Confirmar valores ativos de `code_c` ✅ 2026-04-06
 - [/] Confirmar valores ativos de `status`
 - [/] Confirmar valores ativos de `priority`
 - [/] Confirmar valores ativos de `mode_c`
 - [/] Confirmar valores ativos de `area_c`
-- Alterar temporariamente um valor em `code_list`
-- Verificar impacto em:
-  - criação
-  - edição
-  - filtro
-  - workflows
+- [x] Confirmar divergência estrutural de `code_list` ✅ 2026-04-06
+- [x] Fechar `code_list` como superset `Tacovia` ✅ 2026-04-06
+- [x] Classificar tema `workflow` como não bloqueante ✅ 2026-04-06
 
 - [/] Confirmar também os valores ativos de:
   - `send_receive_c`

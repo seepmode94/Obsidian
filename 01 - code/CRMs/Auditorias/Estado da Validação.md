@@ -77,7 +77,9 @@ Estado atual do módulo:
 
 - `code_c`
   - confirmado no filtro
+  - confirmado também na lista e na detail view
   - apresenta valores mistos: alguns com `label`, outros apenas numéricos
+  - a mistura repete-se em várias zonas da dropdown, pelo que a divergência é tratada como real
 - `status`
   - confirmado no filtro
   - lista uniforme e legível
@@ -94,6 +96,9 @@ Estado atual do módulo:
   - confirmado documentalmente nas duas extrações do `Studio`
   - metadata técnica confirma `send_receive_list`
   - existe no `Studio`, mas não está visível no filtro real atual
+ - `workflow`
+  - não existe, nesta fase, evidência de impacto crítico que altere a decisão técnica do módulo
+  - fica tratado como ponto não bloqueante
 
 ## Riscos e pontos de atenção já encontrados
 
@@ -113,8 +118,7 @@ Estado atual do módulo:
 Falta:
 
 - cruzar os dropdowns já vistos com a documentação da outra recolha
-- fechar documentalmente `code_list` como divergência real entre bases
-- decidir se resta alguma divergência real fora de `code_list` ou apenas diferença de levantamento
+- confirmar se resta alguma divergência real fora de `code_list` ou apenas diferença de levantamento
 
 ### 2. Validar os módulos prioritários seguintes
 

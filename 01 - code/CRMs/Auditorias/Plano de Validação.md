@@ -182,15 +182,15 @@ Só considerar um módulo fechado quando:
 
 ### Assistências
 
-- [/] Confirmar `code_c`
+- [x] Confirmar `code_c` ✅ 2026-04-06
 - [x] Confirmar `status` ✅ 2026-04-02
 - [x] Confirmar `priority` ✅ 2026-04-02
 - [x] Confirmar `area_c` ✅ 2026-04-02
 - [x] Confirmar `mode_c` ✅ 2026-04-02
 - [x] Confirmar `send_receive_c` documentalmente; existe no `Studio`, mas não está visível no filtro real atual
 - [x] Confirmar que os campos de data usam operadores de filtro comuns
-- [/] Confirmar se `code_list` deve usar superset `Tacovia`
-- [ ] Confirmar impacto nos workflows
+- [x] Confirmar se `code_list` deve usar superset `Tacovia` ✅ 2026-04-06
+- [x] Confirmar impacto nos workflows como não bloqueante nesta fase ✅ 2026-04-06
 
 ### Contratos
 
