@@ -6,7 +6,7 @@ Mapear as diferenças de dropdown entre `seepmode` e `tacovia` que interessam pa
 
 ## Fontes
 
-- [seepmode-vs-tacovia-fields.md](/home/seepmode94/Documentos/Obsidian-volte/01%20-%20code/CRMs/LuxuryCRM%28pasta%20do%20projeto%29/Cir%C3%BAgico/seepmode-vs-tacovia-fields.md)
+- [seepmode-vs-tacovia-fields.md](/home/seepmode94/Documentos/work/IT/LuxuryCRM/documentation/suitecrm/seepmode-vs-tacovia-fields.md)
 - [module_field_nature.md](/home/seepmode94/Documentos/work/IT/LuxuryCRM/documentation/module_field_nature.md)
 - [022_quote_dropdown_field_metadata.sql](/home/seepmode94/Documentos/work/IT/LuxuryCRM/apps/api/src/database/migrations/022_quote_dropdown_field_metadata.sql)
 - [028_unify_seepmode_tacovia.sql](/home/seepmode94/Documentos/work/IT/LuxuryCRM/apps/api/src/database/migrations/028_unify_seepmode_tacovia.sql)
@@ -35,9 +35,7 @@ Mapear as diferenças de dropdown entre `seepmode` e `tacovia` que interessam pa
 
 - `empresa_list` deve ser tratado por tenant.
 - `quote_stage_dom` deve ser tratado como superset com filtro por plataforma.
-- os estados extra documentados do lado `Tacovia` são `Draft`, `Delivered`, `Confirmed` e `Closed Dead`.
 - `code_list`, `product_code_dom`, `products_list` e `salesman_region_list` não devem ser assumidos como catálogos globais comuns.
-- `code_list` deve ser tratado como catálogo específico por plataforma, não apenas como diferença de contagem.
 - `vat_list` agrega regimes fiscais diferentes.
 
 ## 2. Diferenças Confirmadas Com Impacto Médio ou Baixo
@@ -134,14 +132,11 @@ Estas estão ligadas a customizações que a comparação entre instâncias iden
 | `service_organization_name_c_list` | usada em `sdmod_capability`, customização Seepmode |
 | `service_organization_nipc_c_list` | usada em `sdmod_capability`, customização Seepmode |
 | `sexo_c_list` | usada em `sdmod_capability`, customização Seepmode |
-| `medical_appreciation_list` | usada em `sdmod_capability` e ligada ao resultado de aptidão |
-| `exam_type_list` | usada em `sdmod_capability` e ligada ao tipo de exame |
 | `recommendations_list` | usada em `sdmod_capability`, customização Seepmode |
 
 Nota:
 
 - estas listas podem existir noutras instâncias após unificações/migrations, mas a sua utilização funcional confirmada nas fontes analisadas está associada sobretudo à Seepmode
-- isto não implica exclusividade estrutural absoluta na `Tacovia`; implica apenas associação funcional principal nas fontes comparadas
 
 ## 6. Inventário Comparativo
 
@@ -203,12 +198,6 @@ Nota:
 ### 6.3 Identificados Apenas Na Fonte Tacovia Usada
 
 Estas listas aparecem no inventário `dropdown_lists` de `luxurycrm_tacovia`, mas não estão cobertas nas fontes Seepmode usadas para este documento.
-
-Leitura correta desta classe:
-
-- não significa exclusividade real na `Tacovia`
-- significa apenas ausência de cobertura suficiente nas fontes `Seepmode` usadas aqui
-- qualquer decisão de exclusividade deve ser confirmada noutra fonte antes de ser assumida
 
 | Dropdown |
 |---|
@@ -278,9 +267,35 @@ Leitura correta desta classe:
 |---|
 | `identificados apenas na fonte Tacovia usada` |
 
-## 8. Nota
+## 8. Nota De Confiança
 
-Este documento é suficientemente forte para orientar a alteração dos casos principais:
+Este documento é suficientemente forte para orientar a alteração dos casos principais.
+
+Limite atual:
 
 - não é uma prova exaustiva linha-a-linha de todas as listas das duas instâncias
 - o grupo `identificados apenas na fonte Tacovia usada` depende da cobertura das fontes Seepmode presentes no repositório
+
+## 9. Validação Direta Nas Bases Importadas
+
+Validação feita após importar a dump da Seepmode para `luxurycrm_seepmode` e comparar com `luxurycrm_tacovia`.
+
+Resultado:
+
+- as duas bases têm o mesmo conjunto de `dropdown_lists`
+- as duas bases têm as mesmas contagens por lista
+- isto está alinhado com a migration [028_unify_seepmode_tacovia.sql](/home/seepmode94/Documentos/work/IT/LuxuryCRM/apps/api/src/database/migrations/028_unify_seepmode_tacovia.sql), que unifica o catálogo de dropdowns no schema do LuxuryCRM
+
+Conclusão prática:
+
+- no LuxuryCRM atual, a diferença entre Seepmode e Tacovia já não está principalmente em "que dropdown existe"
+- a diferença está sobretudo em:
+  - valores historicamente usados por cada tenant
+  - labels/documentação de origem
+  - campos que consomem essas listas
+  - comportamento funcional esperado por tenant
+
+Este documento deve, por isso, ser lido como:
+
+- mapeamento das diferenças de origem entre plataformas
+- não como prova de que hoje as bases importadas mantêm catálogos de dropdown separados
