@@ -19,7 +19,7 @@ Obter informação suficiente para validar, por módulo, o que:
 ## Ordem de Trabalho
 
 - [/] `Assistências` em validação
-- [ ] `Contratos`
+- [x] `Contratos`
 - [ ] `Acessos IEFP`
 - [ ] `Fichas de Aptidão`
 - [ ] `Medicina Ocupacional`
@@ -194,9 +194,9 @@ Só considerar um módulo fechado quando:
 
 ### Contratos
 
-- [ ] Confirmar `anuidade_c` vs `anuidade_list_c`
-- [ ] Confirmar dropdown `anuidade_list`
-- [ ] Confirmar decisão final de fusão
+- [x] Confirmar `anuidade_c` vs `anuidade_list_c`
+- [/] Confirmar dropdown `anuidade_list`
+- [x] Confirmar decisão final de fusão
 
 ### Acessos IEFP
 

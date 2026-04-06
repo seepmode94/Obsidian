@@ -48,6 +48,7 @@ O trabalho está organizado em quatro linhas:
 
 - `Contratos`
   - existe um caso claro de fusão entre `anuidade_c` e `anuidade_list_c`
+  - a UI visível trabalha com um único campo funcional de `Anuidade`
 - `Acessos IEFP`
   - existe um ponto de normalização entre `icfp_email_c` e `iefp_email_c`
 - `Fichas de Aptidão`
@@ -117,7 +118,6 @@ Falta:
 
 Ordem atual:
 
-- `Contratos`
 - `Acessos IEFP`
 - `Fichas de Aptidão`
 - `Medicina Ocupacional`

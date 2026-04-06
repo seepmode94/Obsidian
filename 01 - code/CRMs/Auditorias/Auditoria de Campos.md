@@ -69,6 +69,10 @@
 
 ## Dropdowns a Validar
 
+### Contratos
+
+- `annuity` / `anuidade_c` -> `anuidade_list`
+
 ### Assistências
 
 - `code_c` -> `code_list`
@@ -77,6 +81,23 @@
 - `area_c` -> `area_list`
 - `mode_c` -> `cases_mode_list`
 - `send_receive_c` -> `send_receive_list`
+
+## Registo de validação em curso: Contratos
+
+Campos já confirmados no `Studio` / página real:
+
+- `Annuity (annuity)` aparece como campo disponível no `Studio`
+- `Anuidade` está visível no filtro da página real
+- `Anuidade` está visível na detail view da página real
+
+Leitura atual para `Contratos`:
+
+- a interface visível trabalha com um único campo funcional de `Anuidade`
+- não há evidência visual de dois campos distintos de anuidade expostos ao utilizador
+- a decisão de fusão mantém-se correta:
+  - `anuidade_c` + `anuidade_list_c` -> `anuidade_c`
+- o alvo funcional final deve continuar a ser um único campo de anuidade
+- falta apenas evidência complementar da dropdown para fechar o nome da lista com observação direta, mas isso já não bloqueia a decisão de fusão
 
 ### Registo de validação em curso: Assistências
 
