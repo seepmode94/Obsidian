@@ -351,6 +351,141 @@ Leitura atual para `Propostas`:
 - `Line Items` e totais confirmam que o módulo não está apenas exposto, mas funcionalmente ativo
 - ficam em aberto apenas diferenças finas de filtro/layout ou reconciliação com documentação anterior
 
+## Registo de validação em curso: Faturas
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `name`
+  - `salesperson_c`
+  - `number`
+  - `account_id`
+  - `type_c`
+  - `description`
+  - `invoice_date`
+  - `paid_value_c`
+  - `due_date`
+  - `open_value_c`
+  - `legal_pack_c`
+  - `renovation_value_c`
+  - `quote_date`
+  - `empresa_c`
+  - `contract_id`
+  - `invoicing_notes_c`
+  - `payment_reminder_c`
+  - `status`
+  - `assigned_user_id`
+- a secção `Line Items` está ativa e visível
+- a estrutura financeira principal fica confirmada:
+  - `currency_id`
+  - `total_amt`
+  - `subtotal_amount`
+  - `shipping_tax_amt`
+  - `line_items`
+  - `discount_amount`
+  - `shipping_amount`
+  - `tax_amount`
+  - `total_amount`
+  - `grand_total`
+- `Fields` confirmam também:
+  - `invoice_number`
+  - `type`
+  - `vendor`
+  - `amount_open`
+  - `renewal_value`
+  - `advanced_pack`
+  - `renewal_date`
+  - `billing_notes`
+  - `auto_email_reminder`
+  - `company`
+
+Leitura atual para `Faturas`:
+
+- a estrutura do módulo está confirmada como operacional e coerente entre `Studio` e UI
+- os campos financeiros, comerciais e de controlo principais estão presentes
+- `Line Items` e totais confirmam atividade funcional real do módulo
+- ficam em aberto apenas diferenças finas de layout/filtro ou reconciliação documental residual
+
+## Registo de validação em curso: Contactos
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista e detail view ativos
+- a detail view confirma estrutura principal coerente com o `Studio`, incluindo:
+  - `first_name`
+  - `last_name`
+  - `data_de_admissao_c`
+  - `phone_work`
+  - `birthdate`
+  - `phone_mobile`
+  - `title`
+  - `phone_fax`
+  - `department`
+  - `sessao_c`
+  - `account_id`
+  - `profissao_c`
+  - `primary_address_street`
+  - `alt_address_street`
+  - `cc_number_c`
+  - `cc_expiration_date_c`
+  - `vat_number_c`
+  - `nutsii_c`
+  - `marital_status_c`
+  - `contact_nationality_c`
+  - `contact_gender_c`
+  - `literary_abilities_c`
+  - `contacts_adr_c`
+  - `is_trainee_c`
+  - `is_trainer_c`
+  - `contact_type_c`
+  - `tipo_de_recurso_c`
+  - `numero_do_beneficiario_c`
+  - `ultimo_exame_c`
+  - `proximo_exame_c`
+  - `email1`
+  - `description`
+  - `assigned_user_id`
+  - `report_to_id`
+  - `sync_contact`
+  - `do_not_call`
+  - `lead_source`
+- o filtro real confirma também os campos operacionais principais:
+  - `first_name`
+  - `last_name`
+  - `account_id`
+  - `department`
+  - `vat_number_c`
+  - `contact_type_c`
+  - `title`
+  - `assigned_user_id`
+- a detail view mostra relações funcionais visíveis com:
+  - `Clientes`
+  - `Propostas (Histórico)`
+  - `Assistências`
+  - `Medicinas Ocupacionais`
+  - `Fichas de Aptidão`
+  - `Formandos`
+  - `Acessos IEFP`
+  - `Propostas`
+  - `Faturas`
+  - `Contratos`
+  - `Reuniões`
+  - `Telefonemas`
+  - `Tarefas`
+  - `Notas`
+  - `Documentos`
+  - `Emails`
+  - `Utilizadores`
+  - `Bases de Operações`
+- o audit trail confirma ainda atividade real sobre campos do módulo
+
+Leitura atual para `Contactos`:
+
+- a estrutura do módulo está confirmada como rica e operacional
+- a coerência entre `Studio` e UI é globalmente boa
+- a evidência atual reduz o peso de diferenças estruturais e reforça que os gaps remanescentes são finos e documentais
+
 ### Registo de validação em curso: Assistências
 
 Campos já confirmados no filtro do `Studio`:

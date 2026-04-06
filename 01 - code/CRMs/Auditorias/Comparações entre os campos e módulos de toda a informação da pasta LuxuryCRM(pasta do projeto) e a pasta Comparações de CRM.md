@@ -27,9 +27,9 @@ para confirmar, por módulo, se as extrações feitas a partir do `Studio` estã
 |---|---|---|---|---|
 | Clientes | Estrutura rica e operacional; diferenças entre extrações parecem cada vez mais finas e localizadas | `module_views.md` e `module_field_nature.md` refletem o conjunto principal de campos | Parcial | Coerência geral reforçada; faltam só diferenças finas e reconciliação documental |
 | Propostas | Estrutura operacional confirmada; diferenças parecem residuais e mais ligadas a filtro/layout fino | `migration-matrix.md` e documentação técnica cobrem bem o módulo | Parcial | Coerência geral reforçada; faltam só confirmações finas de filtro vs metadata |
-| Faturas | Sem diferenças relevantes entre bases | `migration-matrix.md` cobre migração e relações principais | Parcial | Falta fecho fino por checklist vs SQL |
+| Faturas | Estrutura operacional confirmada; diferenças parecem residuais e mais documentais do que estruturais | `migration-matrix.md` cobre migração e relações principais | Parcial | Coerência geral reforçada; falta só fecho fino por checklist vs SQL |
 | Contratos | Diferença clara em `anuidade_c` vs `anuidade_list_c` | `seepmode-vs-tacovia-fields.md` e `migration-matrix.md` confirmam a divergência e o destino técnico | Confirmado | Caso de fusão claro e já sustentado por SQL |
-| Contactos | Diferenças pequenas e isoladas | `LuxuryCRM` mantém o módulo como estruturalmente equivalente | Parcial | Falta fecho campo a campo |
+| Contactos | Estrutura rica confirmada; diferenças parecem pequenas, isoladas e mais documentais do que estruturais | `LuxuryCRM` mantém o módulo como estruturalmente equivalente | Parcial | Coerência geral reforçada; falta só fecho fino campo a campo |
 | Telefonemas | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
 | Reuniões | Diferenças isoladas pequenas | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
 | Notas | Sem diferenças relevantes | Módulo tratado como equivalente | Não confirmado | Ainda não auditado em detalhe |
