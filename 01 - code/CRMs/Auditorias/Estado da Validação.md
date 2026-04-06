@@ -54,7 +54,7 @@ O trabalho está organizado em quatro linhas:
   - na `Tacovia`, o campo de email não aparece nas vistas nem em `Fields` do `Studio`
   - os dumps SQL confirmam `iefp_email_c` e não mostram `icfp_email_c`
 - `Fichas de Aptidão`
-  - está a ser tratada como módulo exclusivo da `Seepmode`
+  - a decisão funcional mantém-se, mas a evidência atual confirma modelo rico visível e utilizável na `Tacovia`
 - `Medicina Ocupacional`
   - está a ser tratada como módulo exclusivo da `Seepmode`, sujeito a confirmação final
 

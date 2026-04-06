@@ -125,6 +125,40 @@ Leitura atual para `Acessos IEFP`:
   - não apareceu evidência de `icfp_email_c` nos dumps consultados
 - por isso, `icfp_email_c` deve ser tratado como erro documental antigo, e `iefp_email_c` como nome técnico correto
 
+## Registo de validação em curso: Fichas de Aptidão
+
+Campos já confirmados no `Studio` / página real da `Tacovia`:
+
+- o módulo tem filtro, lista, detail view e edit view ativos
+- o modelo rico está confirmado no `Studio`, com painéis de:
+  - `Company Information`
+  - `Service Organization`
+  - `Worker Information`
+  - `Work Analysis`
+  - `Exam`
+  - `Recommendations`
+  - `Doctor`
+  - `Assignment`
+  - `Signatures`
+- o registo real mostra o módulo preenchido com dados funcionais
+- existem relações funcionais visíveis com:
+  - `Documentos`
+  - `Emails`
+
+Leitura atual para `Fichas de Aptidão`:
+
+- nesta base, o módulo não está apenas exposto; está efetivamente configurado e utilizável
+- o modelo rico fica confirmado na `Tacovia`
+- o campo `project_id` aparece em `Fields` com label `Medicina Ocupacional` e tipo `relate`
+- isso reforça que existe uma ligação funcional relevante a preservar entre `Fichas de Aptidão` e `Medicina Ocupacional`
+- o campo `project_sdmod_capability_1_name` está confirmado visualmente no layout e na detail view
+- ficam ainda pendentes apenas as relações técnicas finas que não aparecem diretamente nesta vista de `Fields`:
+  - `accounts_sdmod_capability_1_c`
+  - `contacts_sdmod_capability_1_c`
+  - `project_sdmod_capability_1_c`
+  - `sdmod_capability_documents_1_c`
+- o gap estrutural de `project_sdmod_capability_1_c` continua aberto, mas a evidência atual mostra que a ligação funcional ao projeto existe
+
 ### Registo de validação em curso: Assistências
 
 Campos já confirmados no filtro do `Studio`:
