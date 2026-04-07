@@ -2,6 +2,8 @@
 
 Fonte: https://diariodarepublica.pt/dr/lexionario/termo/periodo-experimental
 
+Fonte:https://www.doutorfinancas.pt/carreira-e-rendimentos/emprego/periodo-experimental-direitos-duracao-e-o-que-a-lei-realmente-permite/#:~:text=90%20dias%20%E2%80%93%20regra%20geral%20para%20a%20maioria%20dos%20trabalhadores
+
 ## Definição
 
 O período experimental corresponde ao tempo inicial de execução do contrato de trabalho, durante o qual ambas as partes avaliam o interesse na sua manutenção.
