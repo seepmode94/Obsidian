@@ -7,7 +7,7 @@
     *   **Exemplo:** Documentos de incapacidade/deficiência (multiusos) devem ser visíveis **apenas** para o perfil `ADMIN`.
     *   Garantir que estes dados não aparecem em listagens gerais ou exports gerados por RH.
     *   *Nota: [A REVER] Identificar outras "Situações Extraordinárias" que exijam este nível de restrição.*
-- [ ] **Expansão dos Dados Pessoais:**
+- [x] **Expansão dos Dados Pessoais:** ✅ 2026-04-07
     *   Adicionar campos: Telefone Pessoal, E-mail Pessoal, Contacto de Emergência, Morada (aba financeira) e Data de Aniversário.
     *   Garantir que o aniversário aparece no calendário partilhado da equipa.
 - [ ] **Ajuste de Dados Profissionais:**
