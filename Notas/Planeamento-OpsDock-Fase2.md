@@ -60,10 +60,11 @@
 ### 💼 Recrutamento (Página RH)
 
 - [ ] **Gestão de Vagas:**
-    *   Adicionar novas áreas/campos ao criar uma vaga.
+    *   Adicionar novas áreas/campos ao criar uma vaga(confirmar com o [Ficheiro R&S_20260318.xlsx](https://1drv.ms/x/c/6d8aad6180615584/IQDNn5umdOsUQLa_IMHBw6B_AT-XGwppppIzYOoM5tbP9R4) ).
     *   Incluir informações de: Empresa e Delegação.
 - [ ] **Workflow de Entrevistas:**
     *   Retirar a parte da Candidatura.
+    *   Adicionar aba de Contratado e 2ª entrevista caso exista.
     *   Adicionar possibilidade de configurar uma **2ª Entrevista** (aba específica caso exista).
     *   Definir Pessoa Responsável pela entrevista em ambas as fases (1ª e 2ª fase).
     *   Configurar agendamento automático de e-mail para o candidato com os detalhes da entrevista (usando como referência o e-mail de info@seepmode.com).
