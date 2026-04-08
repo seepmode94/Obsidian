@@ -38,33 +38,35 @@ Obter informação suficiente para validar, por módulo, o que:
 
 ## Checklist por Módulo
 
+Estado atualizado com base na pasta `01 - code/CRMs/` em `2026-04-08`.
+
 ### Quando o módulo existe nas duas bases
 
 Validar:
 
-- [ ] Campos comuns entre as duas bases
-- [ ] Campos exclusivos da `Seepmode`
-- [ ] Campos exclusivos da `Tacovia`
-- [ ] Campos com nome técnico diferente mas mesmo significado
-- [ ] Campos que se devem fundir
-- [ ] Campos com dropdown associado
-- [ ] Dropdowns com conteúdo diferente por base
-- [ ] Relações relevantes
-- [ ] Gaps de schema no `LuxuryCRM`
-- [ ] Gaps de mapeamento no `LuxuryCRM`
-- [ ] Necessidade de teste no `Studio`
+- [/] Campos comuns entre as duas bases
+- [/] Campos exclusivos da `Seepmode`
+- [/] Campos exclusivos da `Tacovia`
+- [x] Campos com nome técnico diferente mas mesmo significado
+- [x] Campos que se devem fundir
+- [/] Campos com dropdown associado
+- [/] Dropdowns com conteúdo diferente por base
+- [/] Relações relevantes
+- [/] Gaps de schema no `LuxuryCRM`
+- [/] Gaps de mapeamento no `LuxuryCRM`
+- [/] Necessidade de teste no `Studio`
 
 ### Quando o módulo existe só numa base
 
 Validar:
 
-- [ ] Confirmar que o módulo é exclusivo de uma base
-- [ ] Confirmar os campos do módulo nessa base
-- [ ] Confirmar relações relevantes
-- [ ] Confirmar dropdowns internos do módulo
-- [ ] Confirmar destino técnico no `LuxuryCRM`
-- [ ] Identificar gaps de schema ou mapeamento
-- [ ] Decidir se precisa de teste no `Studio`
+- [x] Confirmar que o módulo é exclusivo de uma base
+- [/] Confirmar os campos do módulo nessa base
+- [x] Confirmar relações relevantes
+- [/] Confirmar dropdowns internos do módulo
+- [x] Confirmar destino técnico no `LuxuryCRM`
+- [/] Identificar gaps de schema ou mapeamento
+- [/] Decidir se precisa de teste no `Studio`
 
 ## Como Validar
 
@@ -81,11 +83,11 @@ Usar para:
 
 Validação prática:
 
-- [ ] Ler os check-lists antigos
-- [ ] Ler os check-lists novos
-- [ ] Ler a `review`
-- [ ] Ler o `Parecer tecnico`
-- [ ] Registar na auditoria só o que afeta decisão técnica
+- [x] Ler os check-lists antigos
+- [x] Ler os check-lists novos
+- [x] Ler a `review`
+- [x] Ler o `Parecer tecnico`
+- [x] Registar na auditoria só o que afeta decisão técnica
 
 ### 2. LuxuryCRM: Essenciais e Analises
 
@@ -97,12 +99,12 @@ Usar para:
 
 Validação prática:
 
-- [ ] Ver `seepmode-vs-tacovia-fields.md`
-- [ ] Ver `migration-matrix.md`
-- [ ] Ver `migration-operation-plan.md`
-- [ ] Ver `module_field_nature.md`
-- [ ] Ver `module_views.md`
-- [ ] Ver `module_relations.md`
+- [x] Ver `seepmode-vs-tacovia-fields.md`
+- [x] Ver `migration-matrix.md`
+- [x] Ver `migration-operation-plan.md`
+- [x] Ver `module_field_nature.md`
+- [x] Ver `module_views.md`
+- [x] Ver `module_relations.md`
 
 ### 3. Dumps SQL
 
@@ -115,11 +117,11 @@ Usar para:
 
 Validação prática:
 
-- [ ] Procurar a coluna na tabela base
-- [ ] Procurar a coluna na tabela `_cstm`, quando aplicável
-- [ ] Procurar o campo em `fields_meta_data`
-- [ ] Procurar a tabela de relação, quando for uma relação
-- [ ] Registar na auditoria se a evidência é:
+- [/] Procurar a coluna na tabela base
+- [/] Procurar a coluna na tabela `_cstm`, quando aplicável
+- [x] Procurar o campo em `fields_meta_data`
+- [x] Procurar a tabela de relação, quando for uma relação
+- [x] Registar na auditoria se a evidência é:
   - estrutural
   - documental
   - funcional
@@ -141,10 +143,10 @@ Usar para:
 
 Validação prática:
 
-- [ ] Procurar `app_list_strings`
-- [ ] Procurar ficheiros de language relevantes
-- [ ] Procurar overrides customizados
-- [ ] Registar diferenças de valores e labels
+- [x] Procurar `app_list_strings`
+- [x] Procurar ficheiros de language relevantes
+- [/] Procurar overrides customizados
+- [x] Registar diferenças de valores e labels
 
 ### 5. Studio
 
@@ -157,26 +159,26 @@ Usar apenas quando necessário para:
 
 Validação prática:
 
-- [ ] Abrir o módulo
-- [ ] Ver criação
-- [ ] Ver edição
-- [ ] Ver detalhe
-- [ ] Ver filtro
-- [ ] Ver list view
-- [ ] Separar campos de lista de negócio de campos com operador de pesquisa
-- [ ] Alterar temporariamente algo no `Studio`
-- [ ] Confirmar a alteração dentro do próprio `Studio`
+- [/] Abrir o módulo
+- [/] Ver criação
+- [/] Ver edição
+- [/] Ver detalhe
+- [/] Ver filtro
+- [/] Ver list view
+- [x] Separar campos de lista de negócio de campos com operador de pesquisa
+- [x] Alterar temporariamente algo no `Studio`
+- [x] Confirmar a alteração dentro do próprio `Studio`
 
 ## Critério de Fecho de um Módulo
 
 Só considerar um módulo fechado quando:
 
-- [ ] Os campos comuns estão identificados
-- [ ] Os campos exclusivos estão identificados
-- [ ] Os campos a fundir estão decididos
-- [ ] Os dropdowns críticos estão comparados
-- [ ] Os gaps técnicos estão registados
-- [ ] Está decidido se precisa de teste no `Studio`
+- [/] Os campos comuns estão identificados
+- [/] Os campos exclusivos estão identificados
+- [x] Os campos a fundir estão decididos
+- [/] Os dropdowns críticos estão comparados
+- [/] Os gaps técnicos estão registados
+- [/] Está decidido se precisa de teste no `Studio`
 
 ## Foco Inicial
 
@@ -195,7 +197,7 @@ Só considerar um módulo fechado quando:
 ### Contratos
 
 - [x] Confirmar `anuidade_c` vs `anuidade_list_c`
-- [/] Confirmar dropdown `anuidade_list`
+- [x] Confirmar dropdown `anuidade_list`
 - [x] Confirmar decisão final de fusão
 
 ### Acessos IEFP
@@ -219,7 +221,7 @@ Só considerar um módulo fechado quando:
 
 - [x] Assinalar como módulo exclusivo da `Seepmode`, se essa ausência na `Tacovia` se confirmar ✅ 2026-04-02
 - [x] Confirmar campos e relações do módulo na evidência disponível
-- [/] Confirmar dropdowns internos relevantes
+- [x] Confirmar dropdowns internos relevantes
 - [x] Confirmar destino técnico no `LuxuryCRM` ✅ 2026-04-06
 - [/] Identificar gaps de schema ou mapeamento
 
@@ -227,8 +229,8 @@ Só considerar um módulo fechado quando:
 
 - [x] Confirmar estrutura base do módulo
 - [x] Confirmar anexos e revisão básica
-- [/] Confirmar superset de relações visíveis
-- [ ] Confirmar se o superset cobre integralmente a review
+- [x] Confirmar superset de relações visíveis
+- [/] Confirmar se o superset cobre integralmente a review
 
 ## Resultado Esperado
 

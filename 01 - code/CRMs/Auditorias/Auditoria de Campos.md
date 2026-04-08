@@ -17,25 +17,25 @@
 
 ## Matriz de Auditoria
 
-| Módulo | Campo SQL Seepmode | Campo SQL Tacovia | Campo final no LuxuryCRM | Tabela destino | Decisão | Observações |
-|---|---|---|---|---|---|---|
-| Contratos | `anuidade_c` | `anuidade_list_c` | `anuidade_c` | `contracts` | fundir | Mesmo conceito. LuxuryCRM já usa `anuidade_c`. |
-| Acessos IEFP | `icfp_email_c` | `iefp_email_c` | `iefp_email_c` | `iefp_accesses` | normalizar | Há conflito entre documentação antiga e dumps SQL. |
-| Fichas de Aptidão | `sdmod_capability` + `sdmod_capability_cstm` | `sdmod_capability` | `capabilities` | `capabilities` | manter | O modelo rico da Seepmode deve ser a base final. |
-| Fichas de Aptidão | `accounts_sdmod_capability_1_c` | — | `account_id` | `capabilities` | manter | Relação relevante já mapeada. |
-| Fichas de Aptidão | `contacts_sdmod_capability_1_c` | — | `contact_id` | `capabilities` | manter | Relação relevante já mapeada. |
-| Fichas de Aptidão | `project_sdmod_capability_1_c` | — | `project_id` ou join dedicada | `capabilities` / join | gap estrutural | Decidir coluna direta vs join. |
-| Fichas de Aptidão | `sdmod_capability_documents_1_c` | — | `capabilities_documents` | join | manter | Relação relevante com Documentos. |
-| Renovações | `aos_invoice_renawal_c` | — | `invoice_id` | `renewals` | manter | Relação extra do lado Seepmode. |
-| Renovações | — | `sdmod_iefp_accesses_id_c` | `iefp_access_id` | `renewals` | manter | Relação extra do lado Tacovia. |
-| Formações | `contact_id1_c` | — | `contact_id` | `trainings` | normalizar | FK criada por Studio. |
-| Formações | — | `sdmod_iefp_accesses_id_c` | `iefp_access_id` | `trainings` | manter | LuxuryCRM já prevê este destino. |
-| Assistências | `code_c` | `code_c` | `code_c` | `cases` | mapear direto | O campo é comum, mas a lista `code_list` diverge fortemente. |
-| Assistências | `status` | `status` | `status` | `cases` | mapear direto | Validar `case_status_dom`. |
-| Assistências | `priority` | `priority` | `priority` | `cases` | mapear direto | Validar `priority_list`. |
-| Assistências | `area_c` | `area_c` | `area_c` | `cases` | mapear direto | Validar `area_list`. |
-| Assistências | `mode_c` | `mode_c` | `mode_c` | `cases` | mapear direto | Validar `cases_mode_list`. |
-| Assistências | `send_receive_c` | `send_receive_c` | `send_receive_c` | `cases` | mapear direto | Validar `send_receive_list`. |
+| Módulo            | Campo SQL Seepmode                           | Campo SQL Tacovia          | Campo final no LuxuryCRM      | Tabela destino        | Decisão        | Observações                                                  |
+| ----------------- | -------------------------------------------- | -------------------------- | ----------------------------- | --------------------- | -------------- | ------------------------------------------------------------ |
+| Contratos         | `anuidade_c`                                 | `anuidade_list_c`          | `anuidade_c`                  | `contracts`           | fundir         | Mesmo conceito. LuxuryCRM já usa `anuidade_c`.               |
+| Acessos IEFP      | `icfp_email_c`                               | `iefp_email_c`             | `iefp_email_c`                | `iefp_accesses`       | normalizar     | Há conflito entre documentação antiga e dumps SQL.           |
+| Fichas de Aptidão | `sdmod_capability` + `sdmod_capability_cstm` | `sdmod_capability`         | `capabilities`                | `capabilities`        | manter         | O modelo rico da Seepmode deve ser a base final.             |
+| Fichas de Aptidão | `accounts_sdmod_capability_1_c`              | —                          | `account_id`                  | `capabilities`        | manter         | Relação relevante já mapeada.                                |
+| Fichas de Aptidão | `contacts_sdmod_capability_1_c`              | —                          | `contact_id`                  | `capabilities`        | manter         | Relação relevante já mapeada.                                |
+| Fichas de Aptidão | `project_sdmod_capability_1_c`               | —                          | `project_id` ou join dedicada | `capabilities` / join | gap estrutural | Decidir coluna direta vs join.                               |
+| Fichas de Aptidão | `sdmod_capability_documents_1_c`             | —                          | `capabilities_documents`      | join                  | manter         | Relação relevante com Documentos.                            |
+| Renovações        | `aos_invoice_renawal_c`                      | —                          | `invoice_id`                  | `renewals`            | manter         | Relação extra do lado Seepmode.                              |
+| Renovações        | —                                            | `sdmod_iefp_accesses_id_c` | `iefp_access_id`              | `renewals`            | manter         | Relação extra do lado Tacovia.                               |
+| Formações         | `contact_id1_c`                              | —                          | `contact_id`                  | `trainings`           | normalizar     | FK criada por Studio.                                        |
+| Formações         | —                                            | `sdmod_iefp_accesses_id_c` | `iefp_access_id`              | `trainings`           | manter         | LuxuryCRM já prevê este destino.                             |
+| Assistências      | `code_c`                                     | `code_c`                   | `code_c`                      | `cases`               | mapear direto  | O campo é comum, mas a lista `code_list` diverge fortemente. |
+| Assistências      | `status`                                     | `status`                   | `status`                      | `cases`               | mapear direto  | Validar `case_status_dom`.                                   |
+| Assistências      | `priority`                                   | `priority`                 | `priority`                    | `cases`               | mapear direto  | Validar `priority_list`.                                     |
+| Assistências      | `area_c`                                     | `area_c`                   | `area_c`                      | `cases`               | mapear direto  | Validar `area_list`.                                         |
+| Assistências      | `mode_c`                                     | `mode_c`                   | `mode_c`                      | `cases`               | mapear direto  | Validar `cases_mode_list`.                                   |
+| Assistências      | `send_receive_c`                             | `send_receive_c`           | `send_receive_c`              | `cases`               | mapear direto  | Validar `send_receive_list`.                                 |
 
 ## Gaps
 
