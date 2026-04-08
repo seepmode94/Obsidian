@@ -6,10 +6,10 @@
 - ter um saldo para Outros ou licença sem vencimento?
 
 ### Tipos de Ausências:
-
-
-
-
+![[Pasted image 20260408155507.png|504]]![[Pasted image 20260408155530.png]]
+Análise:
+- estes são os pedidos mais recorrentes em empresas, para facilitar o processo de pedidos e para acompanhar os resumos deixei os tipos de ausências mais explícitos.
+- é necessário mais algum tipo de ausência ou retirar tipo de ausência?
 
 
 ### Pedidos Pendentes:
