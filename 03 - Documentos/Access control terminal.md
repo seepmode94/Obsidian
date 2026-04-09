@@ -29,3 +29,15 @@ Equipado com Wi-Fi ou com 4G, o IDONIC CHRONOS 219 S está à frente dos seus pa
 
 (Sem preço)
 
+
+
+
+
+## METODO DE TRABALHO DE DADOS
+
+https://www.youtube.com/watch?v=Xzcmr2IVS84&t=5s
+IP
+
+
+
+
