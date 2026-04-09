@@ -10,3 +10,5 @@ https://www.anviz.com/product/smart-face-fingerprint-recognition-access-attendac
 ## Controlo biométrico por impressão digital e cartão
 Produto  Anviz W2 Pro:
 https://www.pccomponentes.pt/controle-de-acesso-anviz-w2-pro-impressao-digital-teclado-e-cartao-3000-usuarios-rele?srsltid=AfmBOoqAtM6vroPRnuMTDLFSlTLq0VNwP7qyfG9mXRl5fsr6aPMLx2AC (113€)
+
+
