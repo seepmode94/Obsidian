@@ -1,91 +1,133 @@
 
 
-## Identificação por reconhecimento facial de duplo sensor, cartão EM, impressão digital, PIN e/ou combinações
-Produto  Anviz W2-FACE :
-###### https://www.orbitadigital.com/pt/controlo-de-acessos/terminais/79126-anviz-w2-face-controlo-de-acesso-e-presenca-facial-impressao.html?gad_source=1&gad_campaignid=20767448601&gclid=CjwKCAjwnN3OBhA8EiwAfpTYekNfeiQz2e3vvEzB-x-F-3N2wp2KCBUUl6l6JFqKOC0JezzcwzqHCRoCUZ0QAvD_BwE  (217€)
-Link da Página:
+## Objetivo
+
+Avaliar opções de terminais de controlo de acessos e assiduidade, bem como alternativas de implementação e métodos de integração de dados.
+
+---
+
+## Opções de equipamento
+
+### 1. Identificação por reconhecimento facial de duplo sensor, cartão EM, impressão digital, PIN e/ou combinações
+
+Produto: Anviz W2-FACE
+![[Pasted image 20260409175449.png|286]]
+
+Link de compra:
+https://www.orbitadigital.com/pt/controlo-de-acessos/terminais/79126-anviz-w2-face-controlo-de-acesso-e-presenca-facial-impressao.html?gad_source=1&gad_campaignid=20767448601&gclid=CjwKCAjwnN3OBhA8EiwAfpTYekNfeiQz2e3vvEzB-x-F-3N2wp2KCBUUl6l6JFqKOC0JezzcwzqHCRoCUZ0QAvD_BwE
+
+Preço:
+217€
+
+Link da página:
 https://www.anviz.com/product/smart-face-fingerprint-recognition-access-attendace-terminal.html
 
+### 2. Controlo biométrico por impressão digital e cartão
 
+Produto: Anviz W2 Pro
 
+![[Pasted image 20260409175510.png|266]]
 
-## Controlo biométrico por impressão digital e cartão
-Produto  Anviz W2 Pro:
-###### https://www.pccomponentes.pt/controle-de-acesso-anviz-w2-pro-impressao-digital-teclado-e-cartao-3000-usuarios-rele?srsltid=AfmBOoqAtM6vroPRnuMTDLFSlTLq0VNwP7qyfG9mXRl5fsr6aPMLx2AC (113€)
+Link de compra:
+https://www.pccomponentes.pt/controle-de-acesso-anviz-w2-pro-impressao-digital-teclado-e-cartao-3000-usuarios-rele?srsltid=AfmBOoqAtM6vroPRnuMTDLFSlTLq0VNwP7qyfG9mXRl5fsr6aPMLx2AC
 
+Preço:
+113€
 
-
-
-
-
-
-## Proposta da IDONIC
+### 3. Proposta da IDONIC
 
 ![[Pasted image 20260409150239.png]]
 
-Link: https://idonic.pt/pt/artigo/idonic-chronos-219-s/6364
+Link:
+https://idonic.pt/pt/artigo/idonic-chronos-219-s/6364
 
-###### Biometria na ordem do dia  
-O IDONIC CHRONOS 219 S é um relógio de ponto para registo de assiduidade por impressão digital, cartão de proximidade (RFID 125KHz e Mifare) e código pin.  
-  
-###### Perspicaz na validação  
-Com um tempo de verificação de menos de 1 segundo, este terminal de assiduidade permite uma rápida picagem de ponto, tornando-se uma ótima opção para empresas com um grande número de funcionários a cumprirem o mesmo horário de trabalho.  
-  
-###### Um visionário na comunicação  
-Equipado com Wi-Fi ou com 4G, o IDONIC CHRONOS 219 S está à frente dos seus pares! Graças a estas duas formas de comunicação sem fios, este equipamento torna-se uma opção versátil e sempre online.
+Características referidas:
 
-(Sem preço)
+- Biometria na ordem do dia
+  O IDONIC CHRONOS 219 S é um relógio de ponto para registo de assiduidade por impressão digital, cartão de proximidade (RFID 125KHz e Mifare) e código pin.
+- Perspicaz na validação
+  Com um tempo de verificação de menos de 1 segundo, este terminal de assiduidade permite uma rápida picagem de ponto, tornando-se uma opção para empresas com um grande número de funcionários a cumprirem o mesmo horário de trabalho.
+- Um visionário na comunicação
+  Equipado com Wi-Fi ou com 4G, o IDONIC CHRONOS 219 S está à frente dos seus pares. Graças a estas duas formas de comunicação sem fios, este equipamento torna-se uma opção versátil e sempre online.
 
+Preço:
+Sem preço
 
-
-## Solução Rápida:
-Para testes mais rápido sugiro a utilização de um tablet, criamos uma app que gerar código qr a cada minuto( Para não ser possível contornar o sistema), o utilizador lê o código e a app comunica via wi-fi com o ponto, o telemóvel passa o ID de utilizador. Não dispensa da geolocalização. 
-
-
-
-## Escolha mais Viável!
+### 4. Escolha mais viável
 
 ![[Pasted image 20260409174448.png]]
 
 Isto é o mesmo aparelho que a Fatorial vende, mas com o sistema da Fatorial. Ainda não sabendo o valor do aparelho temos acesso às drivers dele e temos liberdade para integrar o nosso software tal como a Fatorial faz.
 
+Link:
 https://www.zkteco.com/en/SpeedFaceSeries/SpeedFace-V5L-Series
 
-Email enviado para a equipa de vendas pelo email guilhermeferreira@seepmode.com 09-04-2026
+Nota:
+Email enviado para a equipa de vendas pelo email guilhermeferreira@seepmode.com em 09-04-2026.
 
+---
 
+## Solução rápida para testes
 
+Para realizar testes o mais rápido possível sugiro a utilização de um tablet. Criamos uma app que gerar código qr a cada minuto, para não ser possível contornar o sistema. O utilizador lê o código e a app comunica via wi-fi com o ponto, o telemóvel passa o ID de utilizador. Não dispensa da geolocalização.
 
+---
 
+## Método de trabalho de dados com terminais
 
-## METODO DE TRABALHO DE DADOS
+### 1. Integração via API
 
-#### Integração via API (A mais moderna) 
+Alguns fabricantes, como a ControlID, já disponibilizam uma API REST nativa dentro do próprio equipamento.
 
-Alguns fabricantes (como a [ControlID](https://suporte.starsoft.com.br/portal/pt/kb/articles/conectividade-com-rel%C3%B3gios-de-ponto-controlid-via-api)) já disponibilizam uma API REST nativa dentro do próprio equipamento. 
+Referência:
+https://suporte.starsoft.com.br/portal/pt/kb/articles/conectividade-com-rel%C3%B3gios-de-ponto-controlid-via-api
 
-- Como funciona: O seu programa interno faz requisições HTTP (POST/GET) diretamente para o endereço IP do relógio na rede Wi-Fi.
-- Vantagem: Independe de linguagem de programação; funciona bem com sistemas em nuvem. 
+Como funciona:
 
-#### Uso de SDK (Software Development Kit)
+- o programa interno faz requisições HTTP POST/GET diretamente para o endereço IP do relógio na rede Wi-Fi
 
- Esta é a solução clássica para um controle mais granular. Muitos terminais vêm equipados com o chamado Push SDK. 
+Vantagem:
 
-- Como funciona: O fabricante fornece bibliotecas (DLLs ou pacotes para Java, Python, C#, etc.) que o seu desenvolvedor utiliza para "ensinar" o seu programa a falar a língua do relógio.
-- Vantagem: Permite capturar eventos em tempo real (push) e gerir templates biométricos de forma eficiente.
+- independe de linguagem de programação
+- funciona bem com sistemas em nuvem
 
+### 2. Uso de SDK
 
-#### Alguns sistemas utilizam um middleware ou configuram o relógio para o Modo Cliente. 
+Esta é a solução clássica para um controlo mais granular. Muitos terminais vêm equipados com o chamado Push SDK.
+
+Como funciona:
+
+- o fabricante fornece bibliotecas, como DLLs ou pacotes para Java, Python, C# e outras linguagens, que o programador utiliza para integrar o sistema com o relógio
+
+Vantagem:
+
+- permite capturar eventos em tempo real
+- permite gerir templates biométricos de forma eficiente
+
+### 3. Middleware ou modo cliente
+
+Alguns sistemas utilizam um middleware ou configuram o relógio para o modo cliente.
+
+Referência:
 https://www.youtube.com/watch?v=Xzcmr2IVS84&t=5s
 
-- Como funciona: O relógio liga-se ao Wi-Fi e "procura" ativamente o seu servidor (através de um IP/DNS configurado no menu do aparelho) para descarregar os logs de picagem.
-- Configuração: É necessário definir o IP do seu servidor e a porta de comunicação (ex: porta 3000 ou 3671) diretamente no menu do relógio. 
+Como funciona:
 
-Passo a Passo Técnico Recomendado:
+- o relógio liga-se ao Wi-Fi e procura ativamente o servidor, através de um IP ou DNS configurado no menu do aparelho, para descarregar os logs de picagem
 
-1. Fixação de IP: No seu router Wi-Fi, reserve um IP estático para o relógio para evitar que ele mude de endereço e perca a conexão com o seu software.
-2. Habilitação no Menu: Aceda às definições de Comunicação > Wi-Fi no relógio, conecte-o à rede e verifique se o ícone de status fica verde (conectado).
-3. Captura de Dados: Utilize a documentação do fabricante para configurar o "webhook" ou o serviço de escuta no seu programa que receberá os dados de identificação e carimbo de tempo.
+Configuração:
 
+- é necessário definir o IP do servidor e a porta de comunicação, por exemplo porta 3000 ou 3671, diretamente no menu do relógio
 
+---
 
+## Passo a passo técnico recomendado
+
+1. Fixação de IP
+Reservar um IP estático no router Wi-Fi para o relógio, para evitar mudança de endereço e perda de conexão com o software.
+
+2. Habilitação no menu
+Aceder às definições de Comunicação > Wi-Fi no relógio, ligá-lo à rede e verificar se o ícone de estado fica verde.
+
+3. Captura de dados
+Utilizar a documentação do fabricante para configurar o webhook ou o serviço de escuta no programa que receberá os dados de identificação e carimbo de tempo.
