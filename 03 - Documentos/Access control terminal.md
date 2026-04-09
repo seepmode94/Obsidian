@@ -62,10 +62,15 @@ Passo a Passo Técnico Recomendado:
 2. **Habilitação no Menu**: Aceda às definições de **Comunicação > Wi-Fi** no relógio, conecte-o à rede e verifique se o ícone de status fica verde (conectado).
 3. **Captura de Dados**: Utilize a documentação do fabricante para configurar o "webhook" ou o serviço de escuta no seu programa que receberá os dados de identificação e carimbo de tempo.
 
+
+
+## Solução Rápida:
 Para testes mais rápido sugiro a utilização de um tablet, criamos uma app que gerar codigo qr a cada minuto, o utilizador lê o código e a app comunica via wi-fi com o ponto, o telemóvel passa o ID de utilizador. Não dispensa da geolocalização. 
 
 
 
-## Escolha mais Viavel
+## Escolha mais Viavel!
 
 https://www.zkteco.com/en/SpeedFaceSeries/SpeedFace-V5L-Series
+
+Email enviado para a equipa de vendas pelo email guilhermeferreira@seepmode.com 09-04-2026
