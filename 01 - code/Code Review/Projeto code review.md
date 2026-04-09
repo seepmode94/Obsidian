@@ -133,3 +133,24 @@
 - criar o esqueleto do hook script
 - definir o formato do prompt enviado para a DeepSeek
 - testar o fluxo ponta a ponta com um exemplo simples
+
+
+## Checklist de Revisão
+
+ 
+Ao rever alterações, verificar obrigatoriamente:
+- [ ] PR resolve apenas e unicamente os objetivos da issue associada
+- [ ] Sem funcionalidades externas, complexidade desnecessária ou abstrações não solicitadas
+- [ ] Controladores contêm apenas routers — lógica auxiliar extraída para `/helpers/`
+- [ ] Sem helpers duplicados — reutilizar existentes
+- [ ] Novas tabelas na BD apenas se explicitamente pedidas na issue
+- [ ] Testes unitários criados para novos controladores e helpers (dentro de `/tests/` por temática)
+- [ ] `permission.json` alinhado com a documentação de validações
+- [ ] `package-lock.json` atualizado quando há alterações ao `package.json`
+- [ ] Migrações de BD reversíveis e testadas
+- [ ] Permissões não alargadas acidentalmente
+- [ ] Routing/geocoding usa endpoints OSM (não Google APIs)
+- [ ] Linter passa sem erros
+- [ ] Sem fallback chains especulativos — nomes de propriedades verificados
+- [ ] Deploy configs sincronizados entre todos os ambientes (staging, production, .env)
+- [ ] Documentação em `/documentation/` atualizada se lógica alterada em módulos afetados
