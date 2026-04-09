@@ -4,6 +4,8 @@
 ![[Pasted image 20260408101249.png|697]]Faz sentido:
 - ter um saldo já definido para quem tem direto à Paternidade?
 - ter um saldo para Outros ou licença sem vencimento?
+  
+ ## Acrescentar um scrolldown para ocultar
 
 ### Tipos de Ausências:
 ![[Pasted image 20260408155507.png|504]]![[Pasted image 20260408155530.png]]
@@ -11,6 +13,7 @@ Análise:
 - estes são os pedidos mais recorrentes em empresas, para facilitar o processo de pedidos e para acompanhar os resumos deixei os tipos de ausências mais explícitos.
 - é necessário mais algum tipo de ausência ou retirar tipo de ausência?
 
+## a Alexandra envio o excel com as faltas, adicionar as que não estão contempladas
 
 ### Pedidos Pendentes:
 ![[Pasted image 20260408152230.png]]
@@ -46,3 +49,6 @@ Preciso de:
   - passa para approved
 
   Para outros tipos de ausência, o fluxo continua direto para pending e depois RH/Admin.
+## Aqui o admin/Rh tem de ver os pedidos pendentes de aceitação por parte dos gestores responsáveis, e podem aceitar o pedido diretamente, e assim encorta o caminho .
+
+futuro pedido um excel com os gestores/chefes de departamento e os seus subordinados!
