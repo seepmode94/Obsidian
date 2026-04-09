@@ -34,14 +34,15 @@ Equipado com Wi-Fi ou com 4G, o IDONIC CHRONOS 219 S está à frente dos seus pa
 
 
 ## METODO DE TRABALHO DE DADOS
-Integração via API (A mais moderna) 
+
+#### Integração via API (A mais moderna) 
 
 Alguns fabricantes (como a [ControlID](https://suporte.starsoft.com.br/portal/pt/kb/articles/conectividade-com-rel%C3%B3gios-de-ponto-controlid-via-api)) já disponibilizam uma **API REST** nativa dentro do próprio equipamento. 
 
 - **Como funciona**: O seu programa interno faz requisições HTTP (POST/GET) diretamente para o endereço IP do relógio na rede Wi-Fi.
 - **Vantagem**: Independe de linguagem de programação; funciona bem com sistemas em nuvem. 
 
-2. Uso de SDK (Software Development Kit)
+#### Uso de SDK (Software Development Kit)
 
 Esta é a solução clássica para um controle mais granular. Muitos terminais vêm equipados com o chamado **Push SDK**. 
 
@@ -49,11 +50,8 @@ Esta é a solução clássica para um controle mais granular. Muitos terminais v
 - **Vantagem**: Permite capturar eventos em tempo real (push) e gerir templates biométricos de forma eficiente.
 
 
-
-
-
+#### Alguns sistemas utilizam um middleware ou configuram o relógio para o **Modo Cliente**. 
 https://www.youtube.com/watch?v=Xzcmr2IVS84&t=5s
-Alguns sistemas utilizam um middleware ou configuram o relógio para o **Modo Cliente**. 
 
 - **Como funciona**: O relógio liga-se ao Wi-Fi e "procura" ativamente o seu servidor (através de um IP/DNS configurado no menu do aparelho) para descarregar os logs de picagem.
 - **Configuração**: É necessário definir o IP do seu servidor e a porta de comunicação (ex: porta 3000 ou 3671) diretamente no menu do relógio. 
@@ -64,3 +62,4 @@ Passo a Passo Técnico Recomendado:
 2. **Habilitação no Menu**: Aceda às definições de **Comunicação > Wi-Fi** no relógio, conecte-o à rede e verifique se o ícone de status fica verde (conectado).
 3. **Captura de Dados**: Utilize a documentação do fabricante para configurar o "webhook" ou o serviço de escuta no seu programa que receberá os dados de identificação e carimbo de tempo.
 
+Para testes mais rápido sugiro a utilização de um tablet, criamos uma app que gerar codigo qr a cada minuto, o utilizador lê o código e a app comunica via wi-fi com o ponto, o telemóvel passa o ID de utilizador. Não dispensa da geolocalização. 
