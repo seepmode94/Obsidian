@@ -1,3 +1,5 @@
+
+https://stitch.withgoogle.com/projects/1365319446705332369
 ## Módulos:
 
 ### Vendas
@@ -25,6 +27,6 @@
 
 ## Views:
 
-- [ ] Detalhe
-- [ ] Edição
-- [ ] Lista + Filtros
+- [x] Detalhe ✅ 2026-04-13
+- [x] Edição ✅ 2026-04-13
+- [x] Lista + Filtros ✅ 2026-04-13
