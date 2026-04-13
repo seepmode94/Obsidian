@@ -10,7 +10,7 @@
 
 ### Atividades:
 
-- [ ] Calendário
+- [x] Calendário ✅ 2026-04-13
 - [ ] Assistências
 - [ ] Telefonemas
 - [ ] Reuniões
