@@ -18,7 +18,7 @@
 ### Formação:
 
 - [x] Formações ✅ 2026-04-13
-- [ ] Formandos
+- [x] Formandos ✅ 2026-04-13
 - [ ] Formadores
 
 
