@@ -12,7 +12,7 @@
 
 - [x] Calendário ✅ 2026-04-13
 - [ ] Assistências
-- [ ] Telefonemas
+- [x] Telefonemas ✅ 2026-04-13
 - [ ] Reuniões
 
 ### Formação:
