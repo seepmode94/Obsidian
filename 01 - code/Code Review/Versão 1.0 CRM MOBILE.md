@@ -2,29 +2,29 @@
 
 ### Vendas
 
-- Clientes
-- Faturas
-- Propostas
-- Contratos
-- Contactos
+- [x] Clientes ✅ 2026-04-13
+- [ ] Faturas
+- [ ] Propostas
+- [ ] Contratos
+- [ ] Contactos
 
 ### Atividades:
 
-- Calendário
-- Assistências
-- Telefonemas
-- Reuniões
+- [ ] Calendário
+- [ ] Assistências
+- [ ] Telefonemas
+- [ ] Reuniões
 
 ### Formação:
 
-- Formações
-- Formandos
-- Formadores
+- [ ] Formações
+- [ ] Formandos
+- [ ] Formadores
 
 
 
 ## Views:
 
-- Detalhe
-- Edição
-- Lista + Filtros
+- [ ] Detalhe
+- [ ] Edição
+- [ ] Lista + Filtros
