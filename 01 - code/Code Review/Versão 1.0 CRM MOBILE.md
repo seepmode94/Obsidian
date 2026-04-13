@@ -11,9 +11,9 @@
 ### Atividades:
 
 - [x] Calendário ✅ 2026-04-13
-- [x] Assistências ✅ 2026-04-13
+- [x] Assistências /SUPORTE TÉCNICO✅ 2026-04-13
 - [x] Telefonemas ✅ 2026-04-13
-- [ ] Reuniões
+- [x] Reuniões ✅ 2026-04-13
 
 ### Formação:
 
