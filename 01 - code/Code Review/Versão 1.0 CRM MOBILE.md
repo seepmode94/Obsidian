@@ -5,7 +5,7 @@
 - [x] Clientes ✅ 2026-04-13
 - [x] Faturas ✅ 2026-04-13
 - [x] Propostas ✅ 2026-04-13
-- [ ] Contratos
+- [x] Contratos ✅ 2026-04-13
 - [ ] Contactos
 
 ### Atividades:
