@@ -99,7 +99,19 @@ Para integrar o terminal biométrico com o software in house podemos, utilizar o
 Outras opções mais simples
 
 Cartão Facial e Senha:
-https://www.pccomponentes.pt/controle-de-acesso-dahua-dhi-asi3213a-w-facial-cartao-e-senha-3000-usuarios-wifi-lcd
+https://www.pccomponentes.pt/controle-de-acesso-dahua-dhi-asi3213a-w-facial-cartao-e-senha-3000-usuarios-wifi-lcd 95€
+- Limitação: A câmara deste modelo é otimizada para biometria facial. Embora alguns firmwares da Dahua permitam a leitura de QR Code via câmara nestes modelos, a performance (velocidade e distância) é inferior à do ASI6214J ou do SpeedFace[QR].
+    
+- Dica: Se o QR Code for o seu método principal, este modelo pode causar alguma frustração aos colaboradores por ser mais lento a focar o código.
+    
+
+### 2. Integração com a Opsdock
+
+- CGI/HTTP API: Pode continuar a usar comandos JSON para comunicar com o terminal.
+    
+- Wi-Fi integrado: Como o nome indica (o "-W"), ele facilita a instalação se não tiver um ponto de rede por perto, embora para um sistema de ponto eu recomende sempre o cabo (Ethernet) para evitar atrasos na validação dos tais códigos de 2 minutos.
+
+
 
 ---
 
