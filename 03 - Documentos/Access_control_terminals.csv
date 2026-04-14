@@ -1,7 +1,7 @@
 ID,Produto,Preço (€),Métodos de Autenticação,Conectividade,Link,Notas
 1,Anviz W2-FACE,217.00,"Facial (Duplo Sensor), Digital, Cartão EM, PIN","Wi-Fi, TCP/IP",https://www.orbitadigital.com/pt/controlo-de-acessos/terminais/79126-anviz-w2-face-controlo-de-acesso-e-presenca-facial-impressao.html,"Reconhecimento facial de duplo sensor"
 2,Anviz W2 Pro,113.00,"Digital, Cartão, PIN","TCP/IP",https://www.pccomponentes.pt/controle-de-acesso-anviz-w2-pro-impressao-digital-teclado-e-cartao-3000-usuarios-rele,"Controlo biométrico clássico"
-3,IDONIC Chronos 219 S,N/A,"Digital, Cartão (RFID/Mifare), PIN","Wi-Fi, 4G",https://idonic.pt/pt/artigo/idonic-chronos-219-s/6364,"Verificação em menos de 1 segundo"
+3,IDONIC Chronos 219 S,350,"Digital, Cartão (RFID/Mifare), PIN","Wi-Fi, 4G",https://idonic.pt/pt/artigo/idonic-chronos-219-s/6364,"Verificação em menos de 1 segundo"
 4,ZKTeco SpeedFace-V5L,334.57,"Facial, Digital, Cartão, Senha","TCP/IP, RS485, RS232, ADMS",https://www.amazon.es/-/pt/dp/B0DWSHKM5G,"Escolha mais viável; Suporta SDK e Protocolo ADMS (Cloud)"
 5,Dahua DHI-ASI3213A-W,95.00,"Facial, Cartão, Senha","Wi-Fi, TCP/IP",https://www.pccomponentes.pt/controle-de-acesso-dahua-dhi-asi3213a-w-facial-cartao-e-senha-3000-usuarios-wifi-lcd,"QR Code via câmara tem performance inferior"
 6,Dahua DHI-ASI6214J-MFW,215.07,"Facial, Digital, Cartão, Senha","Wi-Fi, Ethernet",https://www.worten.pt/produtos/dhi-asi6214j-mfw-dahua-leitor-de-controle-de-acesso-integrado-toque-cartao-de-senha-de-reconhecimento-facial-tela-lcd-4-3-camera-hd-2mp-mrkean-6939554948749,"Proteção IP65; Ecrã tátil de 4.3 polegadas"

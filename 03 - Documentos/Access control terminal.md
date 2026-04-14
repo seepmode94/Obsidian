@@ -51,7 +51,7 @@ Características referidas:
   Equipado com Wi-Fi ou com 4G, o IDONIC CHRONOS 219 S está à frente dos seus pares. Graças a estas duas formas de comunicação sem fios, este equipamento torna-se uma opção versátil e sempre online.
 
 Preço:
-Sem preço
+350€
 
 ### 4. Escolha mais viável
 
