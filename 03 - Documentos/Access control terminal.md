@@ -98,6 +98,8 @@ Para integrar o terminal biométrico com o software in house podemos, utilizar o
 ---
 Outras opções mais simples
 
+# DHI-ASI3213A-W
+
 Cartão Facial e Senha:
 https://www.pccomponentes.pt/controle-de-acesso-dahua-dhi-asi3213a-w-facial-cartao-e-senha-3000-usuarios-wifi-lcd 95€
 - Limitação: A câmara deste modelo é otimizada para biometria facial. Embora alguns firmwares da Dahua permitam a leitura de QR Code via câmara nestes modelos, a performance (velocidade e distância) é inferior à do ASI6214J ou do SpeedFace[QR].
@@ -112,6 +114,17 @@ https://www.pccomponentes.pt/controle-de-acesso-dahua-dhi-asi3213a-w-facial-cart
 - Wi-Fi integrado: Como o nome indica (o "-W"), ele facilita a instalação se não tiver um ponto de rede por perto, embora para um sistema de ponto eu recomende sempre o cabo (Ethernet) para evitar atrasos na validação dos tais códigos de 2 minutos.
 
 
+# DHI-ASI6214J-MFW
+Cartão Facial e Senha:
+https://www.worten.pt/produtos/dhi-asi6214j-mfw-dahua-leitor-de-controle-de-acesso-integrado-toque-cartao-de-senha-de-reconhecimento-facial-tela-lcd-4-3-camera-hd-2mp-mrkean-6939554948749?gad_source=1&gad_campaignid=17336356044&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-QNj4qP92w5nWscMmzPqOAKaxpHGSE9G6ralDv6XPKCm-rcXoC6LcaAvwbEALw_wcB €215,07
+
+- Conectividade: Wi-Fi (2.4 GHz) e Ethernet (RJ-45).
+    
+- Biometria: Reconhecimento Facial e Impressão Digital (capacitivo).
+    
+- Capacidade: Até 6.000 faces, 6.000 impressões digitais e 150.000 registos.
+    
+- Extras: Ecrã tátil de 4.3 polegadas e proteção IP65 (resistente a poeiras e jatos de água).
 
 ---
 
