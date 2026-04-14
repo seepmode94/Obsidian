@@ -68,6 +68,14 @@ Email enviado para a equipa de vendas pelo email guilhermeferreira@seepmode.com 
 
 https://www.amazon.es/-/pt/dp/B0DWSHKM5G/ref=sr_1_5?crid=290WEKVW9SYUM&dib=eyJ2IjoiMSJ9.fao788NjDmQvwhAe3ABJfL3G2rrPpUYOVo6tdN52j51OJAfWKjBwjIK3KNu9K_oJTpEJU7DjJpR9Q-y6TdbO1XOVGGck24eGl8DGnz_rmXjO-jX6Z0azED8LMaLmGy9R8yjF9uaoqPtCXKsATtJTVONLUlTi3zJCQnzGkW5ablRVvjQ5ti0ps0V8fdbs2BeDgDkQhVa151K1QoB2GMJZzfQ8AcGcVkbqvUICbbJZwcQe91LUUBKJ2LlW7xKF5mo6YhD0_sM_2dsxsVHCSmE9J3queWmkTlOPbkq5NQDdRk4.RZ9UzTaOez9CAuVEn6kalD_ffXGwQdZNXwSjUg9gFeQ&dib_tag=se&keywords=SpeedFace-V5L&qid=1776162079&sprefix=speedface-v5l%2Caps%2C102&sr=8-5&th=1
 
+- 30 dias para devolução
+- Autenticação múltipla: reconhecimento facial, impressão digital, cartão e senha.  
+- O brilho da luz de preenchimento é ajustável.  
+- Software profissional de gerenciamento de rede.  
+- Distância de reconhecimento: 0,3-2 metros.  
+- Capacidade: 6.000  leitores de impressões digitais. Capacidade: 6.000  
+- Métodos de comunicação: TCP/IP, RS485, RS232.  
+
 Para integrar o terminal biométrico com o software in house podemos, utilizar o ==software development kit== disponibilizado pela ZKTeco: 
 - Como funciona: O seu software comunica diretamente com o hardware através de bibliotecas (DLLs para C#, C++, Java).
     
