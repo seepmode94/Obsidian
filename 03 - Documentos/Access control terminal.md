@@ -64,15 +64,26 @@ https://www.zkteco.com/en/SpeedFaceSeries/SpeedFace-V5L-Series
 
 Nota:
 Email enviado para a equipa de vendas pelo email guilhermeferreira@seepmode.com em 09-04-2026.
-
+## esquecer a comunicação entre a ZKTECO/IDONIC
 
 https://www.amazon.es/-/pt/dp/B0DWSHKM5G/ref=sr_1_5?crid=290WEKVW9SYUM&dib=eyJ2IjoiMSJ9.fao788NjDmQvwhAe3ABJfL3G2rrPpUYOVo6tdN52j51OJAfWKjBwjIK3KNu9K_oJTpEJU7DjJpR9Q-y6TdbO1XOVGGck24eGl8DGnz_rmXjO-jX6Z0azED8LMaLmGy9R8yjF9uaoqPtCXKsATtJTVONLUlTi3zJCQnzGkW5ablRVvjQ5ti0ps0V8fdbs2BeDgDkQhVa151K1QoB2GMJZzfQ8AcGcVkbqvUICbbJZwcQe91LUUBKJ2LlW7xKF5mo6YhD0_sM_2dsxsVHCSmE9J3queWmkTlOPbkq5NQDdRk4.RZ9UzTaOez9CAuVEn6kalD_ffXGwQdZNXwSjUg9gFeQ&dib_tag=se&keywords=SpeedFace-V5L&qid=1776162079&sprefix=speedface-v5l%2Caps%2C102&sr=8-5&th=1
 
+Para integrar o terminal biométrico com o software in house podemos, utilizar o ==software development kit== disponibilizado pela ZKTeco: 
+- Como funciona: O seu software comunica diretamente com o hardware através de bibliotecas (DLLs para C#, C++, Java).
+    
+- Vantagem: Controlo total. Pode enviar novos utilizadores para o terminal, apagar digitais ou puxar os registos em tempo real.
 
+==Comunicação via Protocolo ADMS(Cloud):==
+- Como funciona: O terminal atua como um "cliente" que envia os dados para um servidor web (o seu software) sempre que ocorre uma marcação.
+    
+- Vantagem: Ideal para ligar terminais em redes diferentes ou filiais, pois o terminal "empurra" a informação para o seu servidor assim que deteta internet.
+    
+- Configuração: configurar o IP do seu servidor e a porta no menu "Configuração de Nuvem" do terminal.
 
-
-
-
+==Integração por Base de Dados (ZKBio Access/Time):==
+- - Como funciona: O software da ZKTeco descarrega os dados do terminal para uma base de dados (SQL Server ou PostgreSQL). O seu software  in-house lê simplesmente os novos registos dessa base de dados.
+    
+- Vantagem: Muito mais simples de implementar se a sua equipa de IT preferir trabalhar apenas com SQL.
 
 
 ---
