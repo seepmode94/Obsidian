@@ -98,7 +98,8 @@ Para integrar o terminal biométrico com o software in house podemos, utilizar o
 ---
 Outras opções mais simples
 
-
+Cartão Facial e Senha:
+https://www.pccomponentes.pt/controle-de-acesso-dahua-dhi-asi3213a-w-facial-cartao-e-senha-3000-usuarios-wifi-lcd
 
 ---
 
