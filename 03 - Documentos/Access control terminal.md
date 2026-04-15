@@ -196,17 +196,29 @@ Utilizar a documentação do fabricante para configurar o webhook ou o serviço 
 
 
 
-terminal de pé:
- https://www.orbitadigital.com/pt/controlo-de-acessos/terminal-termico/19114-hyu-855.html?gad_source=1&gad_campaignid=20767448601&gbraid=0AAAAADthsROXTb8b6ZpDKZa-AWnfqq0WS&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79rOE9WmHbDL2p1Pw_uWgUDHhQQgOALDudIlhq475gzbPQchJ_52SAaAqZ1EALw_wcB
 
-suporte para  ASI6214J-MFW https://www.dahuasecurity.com/pt/products/All-Products/Access-Control/AI/Standalone/ASI6214J-MFW:
+
+
+---
+
+terminal de pé 1715€:
+![[Pasted image 20260415102454.png]]
+ https://www.orbitadigital.com/pt/controlo-de-acessos/terminal-termico/19114-hyu-855.html?gad_source=1&gad_campaignid=20767448601&gbraid=0AAAAADthsROXTb8b6ZpDKZa-AWnfqq0WS&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79rOE9WmHbDL2p1Pw_uWgUDHhQQgOALDudIlhq475gzbPQchJ_52SAaAqZ1EALw_wcB
+ 
+
+suporte para  [[ASI6214J-MFW#https://www.dahuasecurity.com/pt/products/All-Products/Access-Control/AI/Standalone/ASI6214J-MFW]] ![[Pasted image 20260415102514.png]] :
 
 https://www.maclocks.eu/vesa-swift-floor-stand.html
 
 original: https://shopdelta.eu/bracket-asf172x-t1-dahua_l2_p16437.html
+Descontinuado em todos os outros sites
 
-Descontinuado
 
-solução para chão universal - aparafusar ao chão https://www.orbitadigital.com/pt/controlo-de-acessos/acessorios/31302-tower-bracket150-suporte-universal-de-chao-adequado-para-varios.html
+![[Pasted image 20260415102147.png]]
+solução para chão universal - aparafusar ao chão 137,48€  https://www.orbitadigital.com/pt/controlo-de-acessos/acessorios/31302-tower-bracket150-suporte-universal-de-chao-adequado-para-varios.html
 
 é furar o encaixe do terminal diretamente ao suporte
+
+![[Pasted image 20260415102109.png]]
+opção mais barata 65€: https://www.amazon.com/-/pt/dp/B0DRFT3ZJN/ref=pd_sbs_d_sccl_2_3/134-8252029-9619042?pd_rd_w=HDg26&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=P2HH0MQ6VHY4PV2VPRHD&pd_rd_wg=nvBLM&pd_rd_r=8d8c0042-22e5-421b-895f-df0eada00a23&pd_rd_i=B0DRFT3ZJN&psc=1 
+
