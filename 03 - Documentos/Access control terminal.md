@@ -200,7 +200,7 @@ Utilizar a documentação do fabricante para configurar o webhook ou o serviço 
 
 
 ---
-
+Exemplo
 terminal de pé 1715€:
 ![[Pasted image 20260415102454.png]]
  https://www.orbitadigital.com/pt/controlo-de-acessos/terminal-termico/19114-hyu-855.html?gad_source=1&gad_campaignid=20767448601&gbraid=0AAAAADthsROXTb8b6ZpDKZa-AWnfqq0WS&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79rOE9WmHbDL2p1Pw_uWgUDHhQQgOALDudIlhq475gzbPQchJ_52SAaAqZ1EALw_wcB
@@ -227,9 +227,11 @@ opção mais barata 65€: https://www.amazon.com/-/pt/dp/B0DRFT3ZJN/ref=pd_sbs_
 Kimaldi
 
 ![[Pasted image 20260415103326.png]]
+https://www.kimaldi.com/pt-pt/product/suprema-x-station-2-acesso-por-codigo-qr-telemovel-e-cartao-rfid/
 Em Portugal, o preço ronda os €350 a €480 (sem IVA)
 
 Com tudo:
+https://www.kimaldi.com/pt-pt/product/suprema-biostation-3-reconhecimento-facial/
 ![[Pasted image 20260415103818.png]]
 €580 – €720
 Mas já tem um programa interno
