@@ -222,3 +222,16 @@ solução para chão universal - aparafusar ao chão 137,48€  https://www.orbi
 ![[Pasted image 20260415102109.png]]
 opção mais barata 65€: https://www.amazon.com/-/pt/dp/B0DRFT3ZJN/ref=pd_sbs_d_sccl_2_3/134-8252029-9619042?pd_rd_w=HDg26&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=P2HH0MQ6VHY4PV2VPRHD&pd_rd_wg=nvBLM&pd_rd_r=8d8c0042-22e5-421b-895f-df0eada00a23&pd_rd_i=B0DRFT3ZJN&psc=1 
 
+
+--- 
+Kimaldi
+
+![[Pasted image 20260415103326.png]]
+Em Portugal, o preço ronda os €350 a €480 (sem IVA)
+
+Com tudo:
+![[Pasted image 20260415103818.png]]
+€580 – €720
+Mas já tem um programa interno
+
+
