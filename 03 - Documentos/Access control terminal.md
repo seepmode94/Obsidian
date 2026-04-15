@@ -205,3 +205,4 @@ https://www.maclocks.eu/vesa-swift-floor-stand.html
 
 original: https://shopdelta.eu/bracket-asf172x-t1-dahua_l2_p16437.html
 
+Descontinuado
