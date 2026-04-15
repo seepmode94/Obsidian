@@ -198,3 +198,10 @@ Utilizar a documentação do fabricante para configurar o webhook ou o serviço 
 
 terminal de pé:
  https://www.orbitadigital.com/pt/controlo-de-acessos/terminal-termico/19114-hyu-855.html?gad_source=1&gad_campaignid=20767448601&gbraid=0AAAAADthsROXTb8b6ZpDKZa-AWnfqq0WS&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79rOE9WmHbDL2p1Pw_uWgUDHhQQgOALDudIlhq475gzbPQchJ_52SAaAqZ1EALw_wcB
+
+suporte para  ASI6214J-MFW https://www.dahuasecurity.com/pt/products/All-Products/Access-Control/AI/Standalone/ASI6214J-MFW:
+
+https://www.maclocks.eu/vesa-swift-floor-stand.html
+
+original: https://shopdelta.eu/bracket-asf172x-t1-dahua_l2_p16437.html
+
