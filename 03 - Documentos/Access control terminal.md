@@ -192,3 +192,9 @@ Aceder às definições de Comunicação > Wi-Fi no relógio, ligá-lo à rede e
 
 3. Captura de dados
 Utilizar a documentação do fabricante para configurar o webhook ou o serviço de escuta no programa que receberá os dados de identificação e carimbo de tempo.
+
+
+
+
+terminal de pé:
+ https://www.orbitadigital.com/pt/controlo-de-acessos/terminal-termico/19114-hyu-855.html?gad_source=1&gad_campaignid=20767448601&gbraid=0AAAAADthsROXTb8b6ZpDKZa-AWnfqq0WS&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79rOE9WmHbDL2p1Pw_uWgUDHhQQgOALDudIlhq475gzbPQchJ_52SAaAqZ1EALw_wcB
