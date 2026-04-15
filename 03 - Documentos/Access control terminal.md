@@ -206,3 +206,7 @@ https://www.maclocks.eu/vesa-swift-floor-stand.html
 original: https://shopdelta.eu/bracket-asf172x-t1-dahua_l2_p16437.html
 
 Descontinuado
+
+solução para chão universal - aparafusar ao chão https://www.orbitadigital.com/pt/controlo-de-acessos/acessorios/31302-tower-bracket150-suporte-universal-de-chao-adequado-para-varios.html
+
+é furar o encaixe do terminal diretamente ao suporte
