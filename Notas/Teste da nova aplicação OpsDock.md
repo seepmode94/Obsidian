@@ -10,6 +10,8 @@
 	- Fazer check-in ao chegar e check-out ao sair
 	- Registar início e fim da pausa de almoço                                    
 	- Verificar se os horários ficam corretamente registados
+![[Pasted image 20260423093039.png]]
+
   - Ausências:                                                                     
 	- Submeter um pedido de férias ou ausência e confirmar que é enviado ao chefe
 	  de departamento para aprovação                                                  
