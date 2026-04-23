@@ -36,6 +36,10 @@
   
   **Enquanto Admin**
   
+  ![[Pasted image 20260423100341.png|277]]
+  Registro do Ponto:
+  - Confirmar picagens, as exceções(atrasos superiores a 15min) têm de ser validadas;
+  - 
   A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a    
   vossa opinião é fundamental para garantirmos que tudo funciona corretamente     
   antes do lançamento, especialmente no fluxo de aprovação das ausências, que    
