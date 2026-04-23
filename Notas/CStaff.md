@@ -1,4 +1,4 @@
-# Teste da nova aplicação OpsDock
+# Teste da nova aplicação
 
 Caros colegas,
 
@@ -46,11 +46,18 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 - Verificar as ausências da equipa
 - Navegar entre meses e confirmar que a informação está correta
 
+
+
+
 <div align="center">
 
-![[Pasted image 20260423093427.png|320]]
+![[05 - Anexos/Pasted image 20260423093427.png|320]]
 
 </div>
+
+
+
+
 
 ### Perfil
 - Consultar os vossos dados pessoais (nome, contacto, departamento)
@@ -72,7 +79,7 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 <div align="center">
 
-![[Pasted image 20260423100341.png|320]]
+![[05 - Anexos/Pasted image 20260423100341.png|320]]
 
 </div>
 
@@ -85,7 +92,7 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 <div align="center">
 
-![[Pasted image 20260423102315.png|320]]
+![[05 - Anexos/Pasted image 20260423102315.png|320]]
 
 </div>
 
@@ -99,7 +106,7 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 <div align="center">
 
-![[Pasted image 20260423102524.png|320]]
+![[05 - Anexos/Pasted image 20260423102524.png|320]]
 
 </div>
 
@@ -110,7 +117,7 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 <div align="center">
 
-![[Pasted image 20260423102905.png|320]]
+![[05 - Anexos/Pasted image 20260423102905.png|320]]
 
 </div>
 
@@ -119,7 +126,7 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 <div align="center">
 
-![[Pasted image 20260423103148.png|320]]
+![[05 - Anexos/Pasted image 20260423103148.png|320]]
 
 </div>
 
@@ -136,7 +143,7 @@ Testar o fluxo de recrutamento. Em cada vaga existe um funil de ações que vai 
 
 <div align="center">
 
-![[Pasted image 20260423103305.png|320]]
+![[05 - Anexos/Pasted image 20260423103305.png|320]]
 
 </div>
 
@@ -148,7 +155,7 @@ Testar o fluxo de recrutamento. Em cada vaga existe um funil de ações que vai 
 
 <div align="center">
 
-![[Pasted image 20260423103954.png|320]]
+![[05 - Anexos/Pasted image 20260423103954.png|320]]
 
 </div>
 
@@ -158,6 +165,6 @@ Testar o fluxo de recrutamento. Em cada vaga existe um funil de ações que vai 
 
 Se encontrarem algum problema ou tiverem sugestões de melhoria, não hesitem em contactar-me diretamente:
 
-**antoniosantos@seepmode.com**
+antoniosantos@seepmode.com
 
 Obrigado pela colaboração!
