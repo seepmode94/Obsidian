@@ -83,7 +83,10 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 ![[05 - Anexos/shared image (1).jpeg|320]]
 
+### Registo de Ponto
+- O registo passa pelo Chefes de delegação para depois serem validados pelos Chefes de departamento e depois poder ser visto pelos Recursos Humanos
 
+![[05 - Anexos/Pasted image 20260427175913.jpg|320]]
 ---
 
 ## Contacto
