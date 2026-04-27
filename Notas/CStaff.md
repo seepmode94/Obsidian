@@ -16,7 +16,7 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 ### Registo de Ponto
 - Fazer check-in ao chegar e check-out ao sair
-- Registar início e fim da pausa de almoço
+- Registar início e fim da pausas inclusive hora de almoço
 - Verificar se os horários ficam corretamente registados
 
 <div align="center">
@@ -71,93 +71,6 @@ A aplicação foi desenhada para ser intuitiva e fácil de usar. Ainda assim, a 
 
 <div style="page-break-after: always;"></div>
 
-## Enquanto Admin
-
-### Registo do Ponto
-- Confirmar picagens; as exceções (atrasos superiores a 15 min) têm de ser validadas
-- Confirmar que ausências de meio dia ou dia inteiro podem ser marcadas como falta injustificada
-
-<div align="center">
-
-![[05 - Anexos/Pasted image 20260423100341.png|320]]
-
-</div>
-
-<div style="page-break-after: always;"></div>
-
-### Diretório de Colaboradores
-- Confirmar dados
-- Confirmar que o símbolo das notificações avisa sobre pedidos de ausência
-- Adicionar documentos a cada utilizador
-
-<div align="center">
-
-![[05 - Anexos/Pasted image 20260423102315.png|320]]
-
-</div>
-
-<div style="page-break-after: always;"></div>
-
-### Férias e Ausências
-- Confirmar valores existentes com o Excel
-- Testar adicionar ausência por colaborador
-- Testar aceitar pedidos pendentes a partir de "Pedidos Pendentes"
-- Consultar o resumo de ausências de equipa
-
-<div align="center">
-
-![[05 - Anexos/Pasted image 20260423102524.png|320]]
-
-</div>
-
-<div style="page-break-after: always;"></div>
-
-### Posts
-- Testar a criação de post para todos os colaboradores
-
-<div align="center">
-
-![[05 - Anexos/Pasted image 20260423102905.png|320]]
-
-</div>
-
-### Dashboard
-- Confirmar dados do Dashboard
-
-<div align="center">
-
-![[05 - Anexos/Pasted image 20260423103148.png|320]]
-
-</div>
-
-<div style="page-break-after: always;"></div>
-
-### Recrutamento
-Testar o fluxo de recrutamento. Em cada vaga existe um funil de ações que vai desde a triagem até contratado ou rejeitado:
-
-- Colaboradores devem manter as informações dentro do recrutamento, mesmo que acabem por ser rejeitados ou contratados
-- Adicionar candidatos
-- Adicionar vagas, com opções de 1 ou 2 entrevistas
-- Adicionar comentários entre entrevistas
-- Ao marcar entrevista, tendo o email do candidato, uma mensagem automática é enviada para o candidato e o Calendário reflete as marcações com os detalhes
-
-<div align="center">
-
-![[05 - Anexos/Pasted image 20260423103305.png|320]]
-
-</div>
-
-<div style="page-break-after: always;"></div>
-
-### Documentos
-- Testar adição de documentos, associados a um ou mais colaboradores
-- Testar a visibilidade dos mesmos
-
-<div align="center">
-
-![[05 - Anexos/Pasted image 20260423103954.png|320]]
-
-</div>
 
 ---
 
