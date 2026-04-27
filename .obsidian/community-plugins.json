@@ -10,5 +10,7 @@
   "ninja-cursor",
   "obsidian-importer",
   "obsidian-tasks-plugin",
-  "github-embeds"
+  "github-embeds",
+  "dataview",
+  "templater-obsidian"
 ]
