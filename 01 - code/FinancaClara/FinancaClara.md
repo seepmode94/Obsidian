@@ -17,8 +17,8 @@ Centralizar gastos pessoais e familiares num só sítio. Mostrar **onde** vai o 
 ## 3. Utilizadores
 
 - **MVP**: eu (utilizador único).
-- **V1**: grupos familiares (convite por link/email, permissões partilha).
-- Futuro: casais, colegas de casa, pequenos grupos.
+- **V1**: grupos familiares, casais (convite por link/email, permissões partilha).
+- Futuro:  colegas de casa, pequenos grupos(PMEs).
 
 ## 4. Funcionalidades core
 
