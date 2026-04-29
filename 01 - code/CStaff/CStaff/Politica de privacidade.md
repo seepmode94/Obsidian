@@ -10,7 +10,7 @@
   Quaisquer dados pessoais que nos forneça serão tratados com as garantias de segurança e confidencialidade exigidas   
   pelo Regulamento Geral sobre a Proteção de Dados (RGPD) e demais enquadramento legal aplicável.
 
-  O acesso e a utilização da aplicação OpsDock devem ser efetuados pelo utilizador presumindo a Seepmode que este leu, 
+  O acesso e a utilização da aplicação CStaff devem ser efetuados pelo utilizador presumindo a Seepmode que este leu, 
   compreendeu e aceitou os Termos e Condições da sua utilização.
 
   Quaisquer tentativas de alterar a informação, ou qualquer outra ação que possa causar dano e pôr em risco a          
@@ -30,8 +30,8 @@
   A Seepmode respeita o seu direito à privacidade e não recolhe na aplicação qualquer informação pessoal sobre si sem o
    seu pedido ou consentimento explícito, ou fora do âmbito da relação laboral estabelecida.
 
-  A interação com a aplicação OpsDock requer autenticação prévia, sendo o acesso restrito a colaboradores e parceiros  
-  das empresas do grupo, devidamente autorizados nos termos definidos em seguida.
+  A interação com a aplicação CStaff requer autenticação prévia, sendo o acesso restrito a colaboradores e parceiros  
+  da Seepmode, devidamente autorizados nos termos definidos em seguida.
 
   Responsável pelo Tratamento                            
 
@@ -48,7 +48,7 @@
   
   Tipologia de Dados Pessoais                                                                                           
   Os dados pessoais sujeitos a tratamento por parte da Seepmode são de diversa natureza, atenta a prestação de serviços
-   de gestão de recursos humanos disponibilizados na aplicação OpsDock.
+   de gestão de recursos humanos disponibilizados na aplicação CStaff.
 
   De acordo com o tipo de serviço prestado e da relação contratual em curso, podem ser recolhidos: nome próprio e      
   apelido; data de nascimento; género; nacionalidade; número de identificação fiscal (NIF); número de identificação
@@ -115,7 +115,7 @@
 
   Armazenamento Local e Tecnologias Semelhantes                                                                        
    
-  A aplicação OpsDock utiliza mecanismos de armazenamento local no dispositivo do utilizador para melhorar o desempenho
+  A aplicação CStaff utiliza mecanismos de armazenamento local no dispositivo do utilizador para melhorar o desempenho
    e a experiência de utilização, eliminando, por exemplo, a necessidade de introduzir repetidamente as mesmas
   informações. Os mecanismos utilizados são os seguintes:                                                              
  
@@ -141,7 +141,7 @@
    
   A Seepmode não poderá ser responsabilizada por quaisquer prejuízos ou danos em sede de responsabilidade civil        
   (incluindo, mas sem que a estes estejam limitados, danos emergentes, lucros cessantes e danos morais, causados direta
-   ou indiretamente), que surjam em consequência da utilização, correta ou incorreta, da aplicação OpsDock e respetivos
+   ou indiretamente), que surjam em consequência da utilização, correta ou incorreta, da aplicação CStaff e respetivos
    conteúdos por parte do utilizador, ou do acesso ao dispositivo e sistema informático do utilizador por terceiros.
 
   A informação divulgada deve ser encarada na sua vertente informativa.                                                
