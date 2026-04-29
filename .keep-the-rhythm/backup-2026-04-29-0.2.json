@@ -62,7 +62,8 @@
     "highestStreakStartDate": "",
     "highestStreakEndDate": "",
     "daysWithCompletedGoal": [
-      "2026-04-28"
+      "2026-04-28",
+      "2026-04-29"
     ],
     "dailyActivity": [
       {
@@ -357,7 +358,7 @@
       },
       {
         "date": "2026-04-28",
-        "filePath": "01 - code/Flutter/Flutter Versions on-route.md",
+        "filePath": "01 - code/CStaff/Flutter Versions on-route.md",
         "wordCountStart": 1049,
         "charCountStart": 8569,
         "changes": [],
@@ -440,6 +441,167 @@
           }
         ],
         "id": 34
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "06 - Logs/2026-04-29.md",
+        "wordCountStart": 68,
+        "charCountStart": 422,
+        "changes": [],
+        "id": 35
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Log.md",
+        "wordCountStart": 765,
+        "charCountStart": 6023,
+        "changes": [],
+        "id": 36
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/Flutter Versions on-route.md",
+        "wordCountStart": 1049,
+        "charCountStart": 8569,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 37
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Execução.md",
+        "wordCountStart": 456,
+        "charCountStart": 2933,
+        "changes": [],
+        "id": 38
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Feedback.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 44,
+            "c": 257
+          }
+        ],
+        "id": 39
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CRMs/Luxury Documentos/Guia de testes  e descrições.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:05",
+            "w": 8,
+            "c": 48
+          },
+          {
+            "timeKey": "10:10",
+            "w": 0,
+            "c": 20
+          },
+          {
+            "timeKey": "10:15",
+            "w": 1598,
+            "c": 13036
+          },
+          {
+            "timeKey": "10:20",
+            "w": -41,
+            "c": -396
+          },
+          {
+            "timeKey": "10:25",
+            "w": 623,
+            "c": 4801
+          },
+          {
+            "timeKey": "10:30",
+            "w": 247,
+            "c": 3142
+          },
+          {
+            "timeKey": "10:40",
+            "w": -901,
+            "c": -10474
+          },
+          {
+            "timeKey": "10:45",
+            "w": 47,
+            "c": 478
+          },
+          {
+            "timeKey": "10:50",
+            "w": 66,
+            "c": 375
+          }
+        ],
+        "id": 40
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "Notas/Trex run - terminal.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:20",
+            "w": 402,
+            "c": 3015
+          }
+        ],
+        "id": 41
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Politica de privacidade.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "12:50",
+            "w": 1522,
+            "c": 14003
+          },
+          {
+            "timeKey": "12:55",
+            "w": 0,
+            "c": -4
+          }
+        ],
+        "id": 42
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Issue.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 43
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Issue-web.md",
+        "wordCountStart": 1100,
+        "charCountStart": 7582,
+        "changes": [
+          {
+            "timeKey": "17:30",
+            "w": -834,
+            "c": -5634
+          }
+        ],
+        "id": 44
       }
     ]
   }
