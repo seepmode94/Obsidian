@@ -1,0 +1,4 @@
+- no mobile quando das entrada/saída no trabalho aparece sempre uma hora antes, embora que na versão web a hora esteja correta;
+-  o botão da pausa está muito junto ao do terminar serviço;
+-  devia de ter uma confirmação para terminar e sair do trabalho;
+- 
