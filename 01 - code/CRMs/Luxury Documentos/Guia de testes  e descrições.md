@@ -1,4 +1,4 @@
-# Guia de Testes e Descrições — Luxury CRM
+# Guia de Utilização — Luxury CRM Mobile
 
 > **Plataforma:** Luxury CRM
 > **Versão analisada:** Aplicação móvel (Android)
@@ -8,295 +8,138 @@
 
 ## Índice
 
-1. [Banner / Identidade](#banner--identidade)
+1. [Sobre a aplicação](#sobre-a-aplicação)
 2. [Página de Login](#1-página-de-login)
 3. [Dashboard](#2-dashboard)
-4. [Módulo de Vendas — Clientes](#3-módulo-de-vendas--clientes)
-5. [Criação de Cliente](#4-criação-de-cliente)
-6. [Módulo de Atividades](#5-módulo-de-atividades)
-7. [Calendário](#6-calendário)
-8. [Assistências](#7-assistências)
-9. [Matriz de Testes Geral](#matriz-de-testes-geral)
+4. [Módulo de Vendas](#3-módulo-de-vendas)
+5. [Clientes — Listagem](#4-clientes--listagem)
+6. [Detalhe do Cliente](#5-detalhe-do-cliente)
+7. [Criação de Cliente](#6-criação-de-cliente)
+8. [Módulo de Atividades](#7-módulo-de-atividades)
+9. [Calendário](#8-calendário)
 
 ---
 
-## Banner / Identidade
+## Sobre a aplicação
 
+![[seepmode/SeepMode Logo.png]]
 
+LuxuryCRM Mobile é a aplicação móvel oficial do LuxuryCRM, uma plataforma de gestão de relacionamento com clientes (CRM) desenhada especificamente para organizações do mercado de luxo em Portugal.
+
+A aplicação leva para o telemóvel todas as ferramentas que as equipas comerciais, administrativas e de apoio ao cliente precisam no dia a dia, permitindo trabalhar em qualquer lugar, sem depender de um computador.
+
+**Principais áreas de trabalho disponíveis na aplicação:**
+
+- **Clientes e Contactos** — consulta, criação e edição de fichas de clientes e contactos, com toda a informação centralizada e acessível em segundos.
+- **Vendas** — gestão de Propostas, Contratos e Faturas, com acompanhamento do estado de cada documento e partilha rápida em PDF.
+- **Atividades** — registo de Telefonemas e Reuniões, integrado com um calendário próprio que ajuda a organizar a agenda da equipa.
+- **Assistências** — abertura e acompanhamento de pedidos de apoio pós-venda, garantindo que nenhum caso fica sem resposta.
+- **Formações** — gestão completa do ciclo de formação: Formações, Formadores e Formandos, ideal para empresas que oferecem programas de capacitação aos seus clientes ou colaboradores.
+- **Dashboard** — visão geral com indicadores e atalhos para as tarefas mais importantes do dia.
+
+A aplicação foi pensada para o utilizador português: valores em euros formatados corretamente, datas no formato local, números de telefone nacionais e toda a interface em português.
+
+Funcionalidades transversais incluem autenticação segura com renovação automática de sessão, filtros avançados em todas as listagens, formulários adaptáveis ao tipo de cada registo, partilha de documentos através das aplicações nativas do telemóvel e suporte a anexos.
 
 ---
 
 ## 1. Página de Login
 
-![[loginPage.png]]
+![[seepmode/loginPage.png]]
 
-### Descrição
-Ecrã de entrada da plataforma. Apresenta logótipo, título *Luxury CRM*, slogan e formulário de autenticação simples.
+A página de login é o ponto de entrada da aplicação. Ao abrir o LuxuryCRM Mobile, o utilizador é recebido com o logótipo da plataforma e o slogan *Premium Relationship Platform*, seguido de um formulário simples e direto.
 
-
-### Casos de teste
-
-| ID | Cenário | Passos | Resultado esperado |
-|---|---|---|---|
-| LOG-01 | Login com credenciais válidas | Inserir utilizador e palavra-passe corretos → tocar **Entrar** | Redireciona para Dashboard |
-| LOG-02 | Login com credenciais inválidas | Inserir utilizador e/ou palavra-passe errados | Mensagem de erro clara; não autentica |
-| LOG-03 | Campos vazios | Tocar **Entrar** sem preencher | Validação inline; botão inativo ou aviso |
-| LOG-04 | Mostrar/ocultar palavra-passe | Tocar ícone do olho | Alterna entre texto visível e oculto |
-| LOG-05 | Persistência de sessão | Fechar e reabrir app após login | Sessão mantém-se ativa (se aplicável) |
-| LOG-06 | Teclado e foco | Tocar nos campos | Teclado abre; foco visível no campo ativo |
+Para aceder, basta introduzir o **utilizador** e a **palavra-passe** atribuídos pela organização e tocar em **Entrar**. O ícone de olho ao lado do campo da palavra-passe permite mostrar ou ocultar os caracteres, evitando erros ao digitar em ambientes onde a privacidade não é crítica. A autenticação é segura e a sessão é mantida ativa nos acessos seguintes, com renovação automática para que o utilizador não precise de iniciar sessão repetidamente durante o dia de trabalho.
 
 ---
 
 ## 2. Dashboard
 
-![[dashboard.png]]
+![[seepmode/dashboard.png]]
 
-### Descrição
-Ecrã principal pós-login. Mostra saudação personalizada e mini-aplicações (widgets) com indicadores-chave do utilizador. Inclui barra de navegação inferior com os quatro módulos principais.
+Logo após o login, o utilizador chega ao **Dashboard**, a página inicial da aplicação. Aqui encontra uma saudação personalizada (por exemplo, *"Bom dia, Guilherme."*) que se adapta à hora do dia, e uma visão imediata daquilo que mais importa no momento.
 
-### Elementos da interface
-| Elemento | Descrição |
-|---|---|
-| Avatar utilizador (`GF`) | Iniciais no canto superior esquerdo |
-| Sino de notificações | Canto superior direito |
-| Saudação | "Bom dia, Guilherme." (dinâmica por hora do dia) |
-| **PAINEL CRM** | Botão / separador ativo |
-| **Ações ▼** | Menu pendente de ações rápidas |
-| **Miniaplicações do Painel** | Lista de cartões (Reuniões, Chamadas, Top oportunidades em aberto, Contas) |
-| Barra de navegação inferior | DASHBOARD · VENDAS · ATIVIDADES · MENU |
+O dashboard é organizado em **miniaplicações** — pequenos cartões com informação útil que podem ser personalizados conforme as preferências de cada utilizador. Por defeito, mostra widgets como **As minhas Reuniões** (com as próximas marcações, data, hora e estado — *Held*, *Planned*) e **As minhas Chamadas** (telefonemas registados ou agendados). Cada cartão suporta paginação, permitindo navegar por grandes volumes de dados sem sair da página.
 
-### Casos de teste
-
-| ID | Cenário | Resultado esperado |
-|---|---|---|
-| DASH-01 | Saudação dinâmica | Texto adapta-se a período do dia (Bom dia / Boa tarde / Boa noite) |
-| DASH-02 | Saudação com nome do utilizador | Apresenta nome correto da conta autenticada |
-| DASH-03 | Carregamento de miniaplicações | Indicadores de loading aparecem; dados carregam após pedido |
-| DASH-04 | Fechar miniaplicação (`×`) | Cartão é removido do dashboard |
-| DASH-05 | Adicionar miniaplicação | Ícone superior direito permite adicionar novos widgets |
-| DASH-06 | Menu **Ações** | Abre lista de ações rápidas (criar cliente, registar chamada, etc.) |
-| DASH-07 | Notificações | Tocar no sino abre lista de notificações |
-| DASH-08 | Navegação inferior | Cada separador (Vendas / Atividades / Menu) navega corretamente |
+No topo encontra-se o avatar do utilizador, o título **Dashboard** e o sino de notificações para ver alertas e novidades. Botões como **Painel CRM** e **Ações ▼** dão acesso a comandos rápidos. Em baixo, a barra de navegação permanente permite saltar diretamente entre **Dashboard**, **Vendas**, **Atividades** e **Menu**.
 
 ---
 
-## 3. Módulo de Vendas — Clientes
+## 3. Módulo de Vendas
 
-![[clienteDetalhes.png]]
+![[seepmode/moduloVendas.png]]
 
-### Descrição
-Ecrã de listagem de clientes ativos com pesquisa e filtros. Cada cartão mostra dados-chave do cliente (NIF, área, billing, responsável, data de criação). Botão flutuante (FAB `+`) para adicionar novo cliente.
+O separador **Vendas** centraliza toda a operação comercial da empresa. Ao tocar em **Vendas** na barra inferior, o utilizador chega a um menu com cinco áreas que cobrem o ciclo completo de venda:
 
-### Elementos da interface
-| Elemento | Descrição |
-|---|---|
-| Cabeçalho **CLIENTES** | Título + botão de retroceder |
-| Barra de pesquisa | Pesquisa em tempo real (ex.: `tacovia`) |
-| Botão de filtros | Abre painel de filtros avançados |
-| Banner **CLIENTES ATIVOS · TOTAL: N** | Contagem de resultados |
-| Cartão de cliente | Nome, NIF, Nº Func., Área, Billing, Visita, Responsável, Criado em, badge **CLIENTE** |
-| Ações rápidas no cartão | Telefone (📞) e e-mail (✉️) |
-| FAB `+` | Cria novo cliente |
+- **Clientes** — empresas e contas comerciais com quem a organização trabalha.
+- **Contactos** — pessoas singulares associadas aos clientes (interlocutores, decisores, técnicos).
+- **Faturas** — documentos de faturação emitidos.
+- **Propostas** — propostas comerciais em diferentes fases de negociação.
+- **Contratos** — contratos celebrados e em vigor.
 
-### Casos de teste
-
-| ID | Cenário | Resultado esperado |
-|---|---|---|
-| CLI-01 | Pesquisa por nome | Lista filtra dinamicamente (ex.: `tacovia` → apresenta `Tacovia, Lda`) |
-| CLI-02 | Pesquisa sem resultados | Mensagem "Sem resultados" e total = 0 |
-| CLI-03 | Limpar pesquisa (`×`) | Lista volta ao estado completo |
-| CLI-04 | Filtros avançados | Painel abre; filtros aplicam-se à lista |
-| CLI-05 | Tocar em cartão | Abre página de detalhe do cliente |
-| CLI-06 | Ação telefone | Abre marcador com número do cliente |
-| CLI-07 | Ação e-mail | Abre cliente de e-mail com endereço pré-preenchido |
-| CLI-08 | FAB `+` | Navega para o formulário **Novo Cliente** |
-| CLI-09 | Campos não definidos | "Não definido" surge quando o valor está vazio |
-| CLI-10 | Total dinâmico | Contador `TOTAL` reflete resultados após filtro/pesquisa |
+Cada área tem o seu próprio ícone e cor, facilitando a identificação visual e a navegação rápida. A partir deste hub, o utilizador acede aos sub-módulos com um único toque, podendo regressar ao menu sempre através do gesto de retroceder ou da barra inferior.
 
 ---
 
-## 4. Criação de Cliente
+## 4. Clientes — Listagem
 
-![[addCliente.png]]
+![[seepmode/cardClientes.png]]
 
-### Descrição
-Formulário **Novo Cliente** organizado em secção **Informação do Cliente** com dados principais e endereço de faturação.
+Ao entrar em **Clientes**, abre-se a listagem completa de clientes ativos da organização. No topo, uma barra de pesquisa permite filtrar dinamicamente os resultados — por exemplo, ao digitar `seepmode` a lista mostra apenas as fichas que contêm essa palavra. Ao lado, o botão de filtros avançados permite restringir por critérios adicionais como área de negócio, localização ou responsável.
 
-### Campos
-| Campo | Obrigatório | Tipo | Validação |
-|---|---|---|---|
-| Nome | ✅ | Texto | Não vazio |
-| Sítio Internet | ❌ | URL | Formato `https://...` |
-| Telefone de Trabalho | ❌ | Telefone (`+351`) | Formato PT |
-| Telefone Alternativo | ❌ | Telefone | Formato PT |
-| Email | ❌ | E-mail | Formato `exemplo@dominio.pt` |
-| Rua | ❌ | Texto longo | — |
-| Código Postal | ❌ | Texto | Formato `0000-000` |
-| Cidade | ❌ | Texto | — |
-| Concelho | ❌ | Texto | — |
-| País | ❌ | Texto / dropdown | — |
+Logo abaixo, um banner mostra o total de **Clientes Ativos** (no exemplo, 17). Cada cliente é apresentado num cartão limpo e organizado, com toda a informação essencial visível de relance: **nome**, **NIF**, **número de funcionários**, **área** de atividade, **morada de faturação (Billing)**, **local de visita**, **responsável** (com avatar de iniciais) e **data de criação**. Dois botões à direita permitem ligar diretamente para o cliente ou enviar-lhe um e-mail.
 
-### Ações
-- **X** (canto superior esquerdo) — fecha o formulário
-- **GUARDAR** (canto superior direito) — submete o formulário
-
-### Casos de teste
-
-| ID | Cenário | Resultado esperado |
-|---|---|---|
-| ADD-01 | Guardar com **Nome** vazio | Validação bloqueia; aviso visível |
-| ADD-02 | Guardar só com Nome | Cliente criado com restantes campos vazios/`Não definido` |
-| ADD-03 | Email mal formatado | Validação inline (`exemplo@dominio.pt`) |
-| ADD-04 | Código Postal mal formatado | Validação `0000-000` |
-| ADD-05 | Telefone com prefixo errado | Aceita só `+351 ---` ou normaliza |
-| ADD-06 | Cancelar via `X` | Pede confirmação se houve alterações |
-| ADD-07 | Guardar com sucesso | Volta para lista; novo cliente aparece com `TOTAL` incrementado |
-| ADD-08 | Foco em **Cidade** | Borda do campo destaca-se (verde) |
-| ADD-09 | Scroll do formulário | Cabeçalho fixo; barra inferior fixa |
-| ADD-10 | Rotação de ecrã | Dados não se perdem |
+No canto inferior direito, o botão flutuante verde com o sinal **+** abre o formulário de criação de novo cliente, sempre acessível a partir desta listagem.
 
 ---
 
-## 5. Módulo de Atividades
+## 5. Detalhe do Cliente
 
-![[moduloVendas.png]]
+![[seepmode/detalheCliente.png]]
 
-### Descrição
-Hub de atividades com seis sub-módulos. Funciona como menu de navegação para os tipos de interação suportados pelo CRM.
+Tocar num cartão da listagem abre a página de **Detalhe do Cliente**, onde o utilizador encontra a ficha completa da empresa. No topo, surge o nome do cliente e a área de atividade (por exemplo, *Transportes*), acompanhados de três ações rápidas: **Ligar** (abre o marcador com o número do cliente), **Email** (abre o cliente de e-mail com o endereço já preenchido) e **Mapa** (mostra a localização da morada de faturação no mapa).
 
-### Sub-módulos
-| Sub-módulo | Ícone | Descrição |
-|---|---|---|
-| **Calendário** | 📅 verde | Vista temporal de eventos |
-| **Assistências** | 🎧 laranja | Tickets / pedidos de suporte |
-| **Telefonemas** | 📞 azul | Registo de chamadas |
-| **Reuniões** | 👥 roxo | Marcações com clientes |
-| **Formações** | 🎓 verde-água | Sessões formativas |
-| **Formadores** | 🪪 verde | Gestão de formadores |
+Em baixo, a secção **Informação do Cliente** apresenta todos os dados relevantes de forma organizada: nome completo, sítio na internet, telefones de trabalho e alternativo, endereços de faturação e de envio, **NUTS II** (região administrativa, ex.: *Lisboa e Vale do Tejo*), local de visita e e-mail. Quando um campo não está preenchido, surge `--` para indicar claramente a ausência de valor.
 
-### Casos de teste
-
-| ID | Cenário | Resultado esperado |
-|---|---|---|
-| ATV-01 | Tocar em cada sub-módulo | Navega para o ecrã correspondente |
-| ATV-02 | Voltar ao hub | Botão de retroceder mantém estado |
-| ATV-03 | Ícones e cores | Cada item mantém ícone/cor consistentes |
-| ATV-04 | Scroll | Lista permite ver todos os 6 itens |
-| ATV-05 | Estado ativo na nav inferior | **Atividades** destacado quando neste hub |
+No canto superior direito encontram-se o menu vertical (`⋮`) com ações adicionais (editar, eliminar, exportar) e o avatar do responsável pelo cliente. O botão de retroceder mantém o estado da listagem original (pesquisa e filtros), facilitando o regresso sem perder o trabalho em curso.
 
 ---
 
-## 6. Calendário
+## 6. Criação de Cliente
 
-![[Calendario.png]]
+![[seepmode/addCliente.png]]
 
-### Descrição
-Vista mensal do calendário com eventos categorizados por cor. Suporta navegação entre meses e tem o dia atual destacado.
+Quando o utilizador toca no botão **+** da listagem de clientes, abre-se o formulário **Novo Cliente**. O formulário está organizado de cima para baixo, começando pela secção **Informação do Cliente** com os dados principais da empresa: **Nome** (obrigatório, marcado com asterisco), **Sítio Internet**, **Telefone de Trabalho** e **Telefone Alternativo** (ambos com prefixo `+351` predefinido) e **Email**.
 
-### Elementos da interface
-| Elemento | Descrição |
-|---|---|
-| Cabeçalho **CALENDÁRIO** | Botão retroceder + ajustes (filtros) |
-| Seletor de vista | **Mês ▼** (presumível: Dia / Semana / Mês) |
-| Navegação | `<` mês anterior · **Hoje** · `>` mês seguinte |
-| Mês corrente | Ex.: **Abril 2026** |
-| Legenda de cores | 🟩 Reunião · 🟦 Telefonema · 🟦 Tarefa · 🟥 Formações |
-| Grelha mensal | DOM–SAB; dia atual (28) com círculo verde |
+A seguir, uma secção de **Endereço de Faturação** recolhe os dados de localização: **Rua**, **Código Postal** (no formato `0000-000`), **Cidade**, **Concelho** e **País**. Os campos de Concelho e País apresentam um seletor (dropdown) com listas pré-definidas, garantindo dados consistentes em toda a base. Os campos com validação automática mostram avisos imediatos sempre que o formato esteja incorreto (por exemplo, e-mail mal formatado ou código postal inválido).
 
-### Casos de teste
-
-| ID | Cenário | Resultado esperado |
-|---|---|---|
-| CAL-01 | Vista por defeito | Mês corrente, dia atual marcado |
-| CAL-02 | Navegar mês anterior/seguinte | Grelha atualiza com mês correto |
-| CAL-03 | Botão **Hoje** | Volta ao mês corrente e marca o dia atual |
-| CAL-04 | Mudar vista (Dia/Semana/Mês) | Grelha re-renderiza para a vista escolhida |
-| CAL-05 | Tocar em dia com eventos | Mostra lista de eventos do dia |
-| CAL-06 | Tocar em dia sem eventos | Permite criar evento ou mostra estado vazio |
-| CAL-07 | Cores dos eventos | Coincidem com legenda (Reunião / Telefonema / Tarefa / Formações) |
-| CAL-08 | Filtros | Permite ocultar/mostrar tipos de evento |
-| CAL-09 | Dias fora do mês | Apresentados a cinzento (28–31 mar; 1–9 mai) |
-| CAL-10 | Data limite passada | Eventos passados visualmente diferenciados |
+No topo da página, o botão **X** à esquerda fecha o formulário e o botão **GUARDAR** à direita submete o registo. Após guardar, o utilizador volta automaticamente à listagem, onde o novo cliente passa a aparecer com o total atualizado.
 
 ---
 
-## 7. Assistências
+## 7. Módulo de Atividades
 
-![[assistencias.png]]
+![[seepmode/atividades.png]]
 
-### Descrição
-Listagem de tickets de assistência (atendimentos). Cada cartão mostra prioridade, datas, responsável e estado (NEW / EXPI…). Suporta pesquisa, filtros e criação via FAB.
+O separador **Atividades** funciona como o centro de organização do trabalho diário. Ao tocar em **Atividades** na barra inferior, o utilizador acede a um menu com seis sub-módulos que cobrem todos os tipos de interação suportados pela plataforma:
 
-### Elementos da interface
-| Elemento | Descrição |
-|---|---|
-| Cabeçalho **ASSISTÊNCIAS** | Botão retroceder |
-| Pesquisa | "Procurar assistências…" |
-| Botão filtros | Abre filtros avançados |
-| Banner **REGISTOS RECENTES · N Atendimentos** | Total de tickets |
-| Cartão de assistência | Tipo · Título · Prioridade · Criado em · Responsável · Data limite · Badge de estado |
-| FAB `+` | Cria novo registo |
+- **Calendário** — vista global da agenda com todos os eventos.
+- **Assistências** — pedidos de apoio pós-venda em aberto e fechados.
+- **Telefonemas** — registo histórico e planeamento de chamadas.
+- **Reuniões** — marcações com clientes (presenciais ou remotas).
+- **Formações** — sessões formativas agendadas e realizadas.
+- **Formadores** — gestão da equipa que ministra as formações.
 
-### Estados observados
-- **NEW** — recém-criado
-- **EXPI** (Expirado) — passou da data limite
-
-### Prioridades observadas
-- 🟢 **Média** (com ícone de raio)
-- (presumível: Baixa, Alta, Urgente)
-
-### Casos de teste
-
-| ID | Cenário | Resultado esperado |
-|---|---|---|
-| ASS-01 | Pesquisa por título | Filtra (ex.: `Formação` → mostra `Formação E-LIC`) |
-| ASS-02 | Filtros avançados | Filtra por prioridade / responsável / estado / data |
-| ASS-03 | Tocar num cartão | Abre detalhe do ticket |
-| ASS-04 | FAB `+` | Abre formulário de novo registo |
-| ASS-05 | Estado **NEW** | Surge em tickets criados recentemente |
-| ASS-06 | Estado **EXPI** | Surge quando `Data limite < hoje` e ticket por concluir |
-| ASS-07 | Data limite a vermelho | Datas críticas visualmente destacadas |
-| ASS-08 | Total de atendimentos | Reflete contagem real (ex.: `20 Atendimentos`) |
-| ASS-09 | Scroll | Lista carrega registos adicionais (paginação ou infinite scroll) |
-| ASS-10 | Responsável | Avatar com iniciais + nome correto |
+Cada item é apresentado num cartão com ícone colorido e nome, e abre o respetivo sub-módulo com um único toque. A barra inferior mantém-se sempre visível, com o ícone de **Atividades** destacado para indicar a localização atual.
 
 ---
 
-## Matriz de Testes Geral
+## 8. Calendário
 
-### Testes transversais (aplicáveis a todos os ecrãs)
+![[seepmode/calendario.png]]
 
-| ID | Categoria | Cenário | Resultado esperado |
-|---|---|---|---|
-| GEN-01 | Navegação | Barra inferior persistente | Sempre visível em ecrãs principais |
-| GEN-02 | Navegação | Botão retroceder | Volta ao ecrã anterior preservando estado |
-| GEN-03 | Performance | Tempo de carregamento | < 2s em rede 4G |
-| GEN-04 | Offline | Sem internet | Mensagem clara + cache local quando aplicável |
-| GEN-05 | Acessibilidade | Tamanho de fonte | Adapta-se às definições do sistema |
-| GEN-06 | Acessibilidade | Contraste | Cumpre WCAG AA |
-| GEN-07 | Internacionalização | Idioma PT-PT | Todos os textos em português europeu |
-| GEN-08 | Sessão | Token expirado | Redireciona para login com mensagem |
-| GEN-09 | Erros | Falha de servidor | Mensagem amigável + retry |
-| GEN-10 | Visual | Tema/cores | Paleta consistente em todos os ecrãs |
-| GEN-11 | Visual | Estado de loading | Indicador visível em fetch de dados |
-| GEN-12 | Dispositivos | Vários tamanhos de ecrã | Layout responsivo sem cortes |
-| GEN-13 | Rotação | Portrait/landscape | Sem perda de dados nem quebras |
-| GEN-14 | Notificações | Sino do dashboard | Lista atualiza em tempo real |
-| GEN-15 | Segurança | Palavra-passe oculta por defeito | Toggle explícito para mostrar |
+A vista de **Calendário** é o ponto central para organizar a agenda. Por defeito, abre na vista mensal e marca o dia de hoje com um círculo verde — no exemplo, **28 de Abril de 2026**. No topo da grelha, o seletor permite alternar entre vistas (Dia, Semana, Mês e **Mês Partilhado** — uma vista colaborativa que mostra os eventos de outros utilizadores partilhados, ideal para coordenar agendas em equipa).
 
----
+Os controlos de navegação permitem saltar para o **mês anterior** (`<`), regressar a **Hoje** ou avançar para o **mês seguinte** (`>`). A legenda de cores no topo identifica de forma clara o tipo de cada evento na grelha: 🟢 **Reunião**, 🟦 **Telefonema**, 🟦 **Tarefa** e 🟥 **Formações**.
 
-## Notas finais
-
-- **Bottom navigation:** quatro entradas — **Dashboard**, **Vendas**, **Atividades**, **Menu**.
-- **Padrão de cabeçalho:** verde escuro com título centrado em maiúsculas.
-- **FAB (`+`):** verde, presente em listagens onde se cria novo recurso (Clientes, Assistências).
-- **Cor do estado ativo:** ícone destacado em fundo claro na barra inferior.
-- **Inconsistência detetada:** ecrã de **Atividades** usa em ambos os lados (gráfico) o ícone do separador "Vendas" — confirmar mapeamento `moduloVendas.png` ↔ Atividades.
-
-> **Próximos prints recomendados** para completar o guia:
-> - Detalhe de cliente (após tocar num cartão)
-> - Detalhe de assistência
-> - Telefonemas / Reuniões / Formações / Formadores (sub-módulos ainda sem prints)
-> - Menu (4.º separador da nav inferior)
-> - Estado de erro / vazio / sem internet
+A grelha mostra todos os dias do mês em formato semanal (Domingo a Sábado). Os dias dos meses adjacentes aparecem a cinzento para manter a referência temporal. Tocar num dia específico abre os eventos desse dia, e o botão de filtros no canto superior direito permite ocultar tipos de evento, mantendo a visualização focada apenas no que interessa.
