@@ -1,0 +1,646 @@
+{
+  "schema": "0.2",
+  "settings": {
+    "enabledLanguages": [
+      "LATIN"
+    ],
+    "dailyWritingGoal": 500,
+    "startOfTheWeek": "SUNDAY",
+    "heatmapNavigation": true,
+    "heatmapConfig": {
+      "roundCells": true,
+      "hideMonthLabels": false,
+      "hideWeekdayLabels": false,
+      "intensityMode": "gradual",
+      "intensityStops": {
+        "low": 100,
+        "medium": 500,
+        "high": 1000
+      },
+      "colors": {
+        "light": {
+          "0": "#e0e0e0",
+          "1": "#9be9a8",
+          "2": "#6ad286",
+          "3": "#2ebd54",
+          "4": "#12a53e"
+        },
+        "dark": {
+          "0": "#ebedf015",
+          "1": "#0e4429",
+          "2": "#006d32",
+          "3": "#26a641",
+          "4": "#39d353"
+        }
+      }
+    },
+    "sidebarConfig": {
+      "visibility": {
+        "showSlots": true,
+        "showEntries": true,
+        "showHeatmap": true
+      },
+      "slots": [
+        {
+          "index": 0,
+          "option": "CURRENT_WEEK",
+          "unit": "WORD",
+          "calc": "TOTAL"
+        },
+        {
+          "index": 1,
+          "option": "LAST_MONTH",
+          "unit": "WORD",
+          "calc": "AVG"
+        }
+      ]
+    }
+  },
+  "stats": {
+    "currentStreak": 0,
+    "highestStreak": 0,
+    "highestStreakStartDate": "",
+    "highestStreakEndDate": "",
+    "daysWithCompletedGoal": [
+      "2026-04-28",
+      "2026-04-29"
+    ],
+    "dailyActivity": [
+      {
+        "date": "2026-04-27",
+        "filePath": "06 - Logs/2026-04-27.md",
+        "wordCountStart": 75,
+        "charCountStart": 462,
+        "changes": [
+          {
+            "timeKey": "12:35",
+            "w": 1,
+            "c": 6
+          },
+          {
+            "timeKey": "16:00",
+            "w": 12,
+            "c": 75
+          },
+          {
+            "timeKey": "16:05",
+            "w": 4,
+            "c": 27
+          },
+          {
+            "timeKey": "18:20",
+            "w": 6,
+            "c": 39
+          }
+        ],
+        "id": 1
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "Notas/terminal escritório.md",
+        "wordCountStart": 5,
+        "charCountStart": 47,
+        "changes": [],
+        "id": 2
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "Notas/Período experimental.md",
+        "wordCountStart": 336,
+        "charCountStart": 2228,
+        "changes": [],
+        "id": 3
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "Notas/Emulador via terminal.md",
+        "wordCountStart": 12,
+        "charCountStart": 94,
+        "changes": [],
+        "id": 4
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "Notas/CStaff.md",
+        "wordCountStart": 607,
+        "charCountStart": 4382,
+        "changes": [
+          {
+            "timeKey": "16:40",
+            "w": -301,
+            "c": -2182
+          }
+        ],
+        "id": 5
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "Notas/CStaff Copia.md",
+        "wordCountStart": 607,
+        "charCountStart": 4382,
+        "changes": [],
+        "id": 6
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "Notas/CStaff Gestores.md",
+        "wordCountStart": 306,
+        "charCountStart": 2200,
+        "changes": [
+          {
+            "timeKey": "16:55",
+            "w": 18,
+            "c": 148
+          },
+          {
+            "timeKey": "17:00",
+            "w": 20,
+            "c": 115
+          },
+          {
+            "timeKey": "17:05",
+            "w": 19,
+            "c": 117
+          },
+          {
+            "timeKey": "17:55",
+            "w": 6,
+            "c": 40
+          },
+          {
+            "timeKey": "18:00",
+            "w": 28,
+            "c": 182
+          }
+        ],
+        "id": 7
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "01 - code/CRMs/CRMs/Documentation/Compatility Matrix.md",
+        "wordCountStart": 8,
+        "charCountStart": 58,
+        "changes": [],
+        "id": 8
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "06 - Logs/2025-12-30.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 9
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "06 - Logs/2026-01-06.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:35",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 10
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "Templates/Diário de Trabalho.md",
+        "wordCountStart": 43,
+        "charCountStart": 291,
+        "changes": [],
+        "id": 11
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "06 - Logs/2026-04-14.md",
+        "wordCountStart": 79,
+        "charCountStart": 489,
+        "changes": [],
+        "id": 12
+      },
+      {
+        "date": "2026-04-27",
+        "filePath": "06 - Logs/2026-04-28.md",
+        "wordCountStart": 44,
+        "charCountStart": 282,
+        "changes": [
+          {
+            "timeKey": "18:20",
+            "w": 11,
+            "c": 60
+          },
+          {
+            "timeKey": "18:25",
+            "w": 4,
+            "c": 30
+          }
+        ],
+        "id": 13
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "06 - Logs/2026-04-27.md",
+        "wordCountStart": 98,
+        "charCountStart": 609,
+        "changes": [],
+        "id": 14
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/HOTSPOT_GUIDE.md",
+        "wordCountStart": 150,
+        "charCountStart": 960,
+        "changes": [],
+        "id": 15
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/CStaff Gestores.md",
+        "wordCountStart": 397,
+        "charCountStart": 2802,
+        "changes": [
+          {
+            "timeKey": "09:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 16
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "06 - Logs/2026-04-28.md",
+        "wordCountStart": 59,
+        "charCountStart": 372,
+        "changes": [
+          {
+            "timeKey": "17:55",
+            "w": 2,
+            "c": 13
+          }
+        ],
+        "id": 17
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/terminal escritório.md",
+        "wordCountStart": 5,
+        "charCountStart": 47,
+        "changes": [],
+        "id": 18
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/Período experimental.md",
+        "wordCountStart": 336,
+        "charCountStart": 2228,
+        "changes": [],
+        "id": 19
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/Kubernets.md",
+        "wordCountStart": 346,
+        "charCountStart": 2593,
+        "changes": [],
+        "id": 20
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/Emulador via terminal.md",
+        "wordCountStart": 12,
+        "charCountStart": 94,
+        "changes": [],
+        "id": 21
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "01 - code/FinancaClara/enable banking.md",
+        "wordCountStart": 21,
+        "charCountStart": 290,
+        "changes": [],
+        "id": 22
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/CStaff Copia.md",
+        "wordCountStart": 607,
+        "charCountStart": 4382,
+        "changes": [],
+        "id": 23
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/CStaff.md",
+        "wordCountStart": 306,
+        "charCountStart": 2200,
+        "changes": [],
+        "id": 24
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/Apps.md",
+        "wordCountStart": 41,
+        "charCountStart": 317,
+        "changes": [],
+        "id": 25
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "Notas/API( Application Programming Interface).md",
+        "wordCountStart": 175,
+        "charCountStart": 1202,
+        "changes": [],
+        "id": 26
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "01 - code/CStaff/Flutter Versions on-route.md",
+        "wordCountStart": 1049,
+        "charCountStart": 8569,
+        "changes": [],
+        "id": 27
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "03 - Documentos/Access control terminal.md",
+        "wordCountStart": 1350,
+        "charCountStart": 10672,
+        "changes": [],
+        "id": 28
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "03 - Documentos/Questões.md",
+        "wordCountStart": 327,
+        "charCountStart": 2097,
+        "changes": [],
+        "id": 29
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "03 - Documentos/Info!/Departamentos-Cargos-Delegações-Nacionalidades.md",
+        "wordCountStart": 126,
+        "charCountStart": 2751,
+        "changes": [],
+        "id": 30
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "01 - code/FinancaClara/FinancaClara.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:40",
+            "w": 511,
+            "c": 4053
+          },
+          {
+            "timeKey": "11:45",
+            "w": 267,
+            "c": 2404
+          },
+          {
+            "timeKey": "14:45",
+            "w": 1,
+            "c": 7
+          }
+        ],
+        "id": 31
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "02 - Acessos/Acessos aplicações.md",
+        "wordCountStart": 12,
+        "charCountStart": 88,
+        "changes": [],
+        "id": 32
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "02 - Acessos/Acessos Servidores.md",
+        "wordCountStart": 301,
+        "charCountStart": 2098,
+        "changes": [],
+        "id": 33
+      },
+      {
+        "date": "2026-04-28",
+        "filePath": "06 - Logs/2026-04-29.md",
+        "wordCountStart": 44,
+        "charCountStart": 282,
+        "changes": [
+          {
+            "timeKey": "17:55",
+            "w": 24,
+            "c": 140
+          }
+        ],
+        "id": 34
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "06 - Logs/2026-04-29.md",
+        "wordCountStart": 68,
+        "charCountStart": 422,
+        "changes": [
+          {
+            "timeKey": "18:00",
+            "w": 4,
+            "c": 26
+          }
+        ],
+        "id": 35
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Log.md",
+        "wordCountStart": 765,
+        "charCountStart": 6023,
+        "changes": [],
+        "id": 36
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/Flutter Versions on-route.md",
+        "wordCountStart": 1049,
+        "charCountStart": 8569,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 37
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Execução.md",
+        "wordCountStart": 456,
+        "charCountStart": 2933,
+        "changes": [],
+        "id": 38
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Feedback.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "09:50",
+            "w": 44,
+            "c": 257
+          },
+          {
+            "timeKey": "17:35",
+            "w": -44,
+            "c": -257
+          }
+        ],
+        "id": 39
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CRMs/Luxury Documentos/Guia de testes  e descrições.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "10:05",
+            "w": 8,
+            "c": 48
+          },
+          {
+            "timeKey": "10:10",
+            "w": 0,
+            "c": 20
+          },
+          {
+            "timeKey": "10:15",
+            "w": 1598,
+            "c": 13036
+          },
+          {
+            "timeKey": "10:20",
+            "w": -41,
+            "c": -396
+          },
+          {
+            "timeKey": "10:25",
+            "w": 623,
+            "c": 4801
+          },
+          {
+            "timeKey": "10:30",
+            "w": 247,
+            "c": 3142
+          },
+          {
+            "timeKey": "10:40",
+            "w": -901,
+            "c": -10474
+          },
+          {
+            "timeKey": "10:45",
+            "w": 47,
+            "c": 478
+          },
+          {
+            "timeKey": "10:50",
+            "w": 66,
+            "c": 375
+          }
+        ],
+        "id": 40
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "Notas/Trex run - terminal.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "11:20",
+            "w": 402,
+            "c": 3015
+          }
+        ],
+        "id": 41
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Politica de privacidade.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "12:50",
+            "w": 1522,
+            "c": 14003
+          },
+          {
+            "timeKey": "12:55",
+            "w": 0,
+            "c": -4
+          }
+        ],
+        "id": 42
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/Issue.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 43
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/issues/Issue-web.md",
+        "wordCountStart": 1100,
+        "charCountStart": 7582,
+        "changes": [
+          {
+            "timeKey": "17:30",
+            "w": -834,
+            "c": -5634
+          }
+        ],
+        "id": 44
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "01 - code/CStaff/CStaff/issues/Issue-mobile.md",
+        "wordCountStart": 283,
+        "charCountStart": 1981,
+        "changes": [],
+        "id": 45
+      },
+      {
+        "date": "2026-04-29",
+        "filePath": "06 - Logs/2026-04-30.md",
+        "wordCountStart": 44,
+        "charCountStart": 282,
+        "changes": [
+          {
+            "timeKey": "18:00",
+            "w": 6,
+            "c": 37
+          },
+          {
+            "timeKey": "18:05",
+            "w": 7,
+            "c": 52
+          }
+        ],
+        "id": 46
+      }
+    ]
+  }
+}
