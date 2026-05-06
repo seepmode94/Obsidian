@@ -897,9 +897,39 @@
         "charCountStart": 2097,
         "changes": [],
         "id": 73
+      },
+      {
+        "date": "2026-05-06",
+        "filePath": "01 - code/CStaff/Info!/Questões.md",
+        "wordCountStart": 327,
+        "charCountStart": 2097,
+        "changes": [],
+        "id": 74
+      },
+      {
+        "date": "2026-05-06",
+        "filePath": "01 - code/CRMs/Luxury Documentos/Guia de testes  e descrições.md",
+        "wordCountStart": 1647,
+        "charCountStart": 11030,
+        "changes": [
+          {
+            "timeKey": "09:45",
+            "w": 20,
+            "c": 169
+          }
+        ],
+        "id": 75
+      },
+      {
+        "date": "2026-05-06",
+        "filePath": "Notas/HOTSPOT_GUIDE.md",
+        "wordCountStart": 150,
+        "charCountStart": 960,
+        "changes": [],
+        "id": 76
       }
     ],
-    "wholeVaultWordCount": 154658,
-    "wholeVaultCharCount": 1305215
+    "wholeVaultWordCount": 154678,
+    "wholeVaultCharCount": 1305384
   }
 }
