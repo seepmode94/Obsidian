@@ -179,3 +179,9 @@ A vista de Calendário é o ponto central para organizar a agenda. Por defeito, 
 Os controlos de navegação permitem saltar para o mês anterior (`<`), regressar a Hoje ou avançar para o mês seguinte (`>`). A legenda de cores no topo identifica de forma clara o tipo de cada evento na grelha: 🟢 Reunião, 🟦 Telefonema, 🟦 Tarefa e 🟥 Formações.
 
 A grelha mostra todos os dias do mês em formato semanal (Domingo a Sábado). Os dias dos meses adjacentes aparecem a cinzento para manter a referência temporal. Tocar num dia específico abre os eventos desse dia, e o botão de filtros no canto superior direito permite ocultar tipos de evento, mantendo a visualização focada apenas no que interessa.
+
+## 9. Testes
+
+Plataformas no mobile:
+seepmode - flutter run --flavor seepmode --dart-define=PLATFORM=seepmode
+tacovia - flutter build apk --dart-define=PLATFORM=tacovia
