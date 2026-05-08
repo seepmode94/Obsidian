@@ -188,7 +188,7 @@ AcaoFormacao
 ├── tipo              // enum: PRESENCIAL | ELEARNING
 ├── curso             // FK -> Curso (TC, HST, CDE…)
 ├── data              // date
-├── localidade        // text
+├── localidade        // text(para já pois vai estar ligado com onroute?)
 ├── participantes     // int
 ├── empresa           // FK (default Seepmed)
 ├── cliente           // FK -> Cliente (opcional, hoje 1%)
@@ -247,7 +247,7 @@ AcaoFormacao
 
 ## 5. Pontos por esclarecer contigo
 
-1. **Empresa = "Seepmed, lda"**: é sempre fixo? Se sim, posso retirar o campo do formulário e deixar implícito.
+1. ~~**Empresa = "Seepmed, lda"**: é sempre fixo?~~ → **Resolvido (2026-05-08):** três empresas no sistema — **Seepmode**, **Seepmed** e **Tacovia**. Modelar como FK para tabela `Empresa` (dropdown obrigatório).
 2. **Confirmação vs Adjudicação**: são dois eventos diferentes ou redundantes? No exemplo M012/26 ambos têm "SQ #26.12.2025 Enviada".
 3. **`Acima de 15`**: é simplesmente `participantes >= 15`? Ou tem regra extra? Pode ser auto-calculado.
 4. **SF / MD / TS / CB / JM (e os "2")**: o que distingue cada coluna? São equipas ou pessoas? Porquê dois blocos?
