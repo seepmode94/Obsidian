@@ -23,6 +23,8 @@
 
 ## 1. Inventário do que existe em `form.seepmode.com`
 
+> **Nota (snapshot xlsx 2026-04-21):** o ficheiro `04_2_Produtividade Formação_20260421_IM.xlsx` tem 12 folhas (não 2). Para além de `02 - 2025` (2078 ações) e `02 - 2026` (799 ações), tem `01 - Tx Crescimento`, `GLOBAIS` (mapa semanal por parelha), `202602`/`202603` (apuramento real de prémios — secção 1.6 → Prémios), `Analise`, `ROTAS` (50 vendedores com Zona/OP/ADM/contacto), `Divisão Rotas` (cálculo de zonas), `INES` (working draft pessoal), e `Passwords`/`pass recrutamento` (credenciais externas — **não migrar**).
+
 ### 1.1 Áreas principais (top nav)
 
 | Tab | Função |
@@ -132,6 +134,8 @@ Os campos estão organizados em grelha 3 colunas. Lista completa (na ordem em qu
 
 > **Regra:** todos os campos são opcionais por defeito (o form atual aceita "Sem valor" em quase tudo). Apenas `Tipo`, `N.º Ação`, `Data` são obrigatórios. **Não cortar campos**, mesmo os sub-utilizados.
 
+> **Schema divergente entre anos:** o Excel não tem o mesmo conjunto de colunas em `02 - 2025` e `02 - 2026`. 2026 acrescenta `> acima de 15`, `Folha presenças`, `Digitalizado`, `CV`, `Ficha curricular`, `CCP`, `Teste`, `Quest. formandos`, `Rel. Estatística`, `Registos e resultados`, `Aval. Formador`, `Pauta`, e flags por pessoa `SF/MD/TS/CB/JM` em duas passagens. 2025 só tem `PP/LS/MJF`. **O importer (F14) tem de usar mapeamento de colunas por ano**, não único. No CStaff a tabela é única (todas as colunas existem); para ações de 2025 os campos novos ficam null.
+
 ### 1.5 Dashboard
 
 3 widgets lado a lado:
@@ -155,7 +159,26 @@ Header comum: `Fonte atual: 02 - 2026`.
 - Tabela "Tipologia de ações" (Tipologia / Ações / Fechadas / Dados em falta).
 
 #### Prémios
-- Estado atual: placeholder "Prémios pendentes até existir regra oficial na plataforma."
+- **Não é placeholder.** A regra oficial existe nas folhas `202602` e `202603` do Excel e é aplicada manualmente todos os meses.
+- **Variáveis de input** (por mês de referência):
+  - Por parelha (4 equipas): cada parelha = OP + ADM. Equipas vistas no Excel: `SF/MC`, `MD/FG`, `JM/MS`, `CB/IF`, `TS/SD`.
+  - Por OP individual: contagem de ações no mês.
+  - Por equipa de OPs (grupo): soma das ações dos colegas da mesma zona.
+  - Dias de mês trabalhados por cada pessoa (presença).
+  - Ações que **contam para o prémio** (≥15 alunos por ação).
+- **Tabela de prémios** (cabeçalhos vistos em `202602!A4:H8`):
+  - Faixas individuais: 1–4 ações = 0€, 5–10 = 3€/ação, 11–15 = 6€/ação, 16+ = 9€/ação.
+  - Faixas de grupo: 4–16 ações = 0€, 17–40 = 3€, 41–60 = 6€, 61+ = 9€.
+  - Total por pessoa = (parelha + grupo) × dias trabalhados/dias úteis.
+- **Condições obrigatórias** (todas têm de ser verdadeiras):
+  - Fecho completo das ações até ao último dia do mês seguinte.
+  - Área administrativa, pedagógica e operacional/vendas em dia.
+  - Média mensal ≥15 alunos por ação.
+  - Pessoa presente nos 2 meses de operacionalização.
+  - Todas as ações do mês fechadas (não apenas as que contam para o prémio).
+  - **O prémio de parelha só é atribuído se o de grupo também o for.**
+  - Valor mínimo a pagar: 50€ (abaixo disso não há pagamento).
+- **Output esperado**: por mês, lista `{ pessoa, parelha, equipa, ações, ações≥15, diasÚteis, diasTrabalhados, prémioParelha, prémioGrupo, total€, atribuído }`.
 
 #### Operador
 - Cards: Operadores, Ações mensais listadas, Ações semanais listadas, Top ranking.
@@ -184,7 +207,18 @@ Cliente { id, nome, ativo }                      // ~centenas
 Formador { id, nome, tipo: INTERNO|EXTERNO, valorHoraDefault?, ativo }
 Localidade { id, nome }                          // opcional — pode ser text livre
 PerfilUtilizador { ADMIN, COORDENACAO, ADM, GESTOR }
+
+// Decorrente da folha ROTAS / Divisão Rotas:
+Zona { id, nome }                                // Centro Sul, Centro, NORTE, Norte Med, Taco
+Parelha { id, codigo, opUserId: FK, admUserId: FK, equipaNum: int, zonaId: FK }
+                                                 // SF/MC, MD/FG, JM/MS, CB/IF, TS/SD
+Vendedor { id, nome, empresaId: FK, zonaId: FK,
+           parelhaId: FK,                        // OP/ADM responsáveis
+           rotaNome: string,                     // ex.: "Vendas SST Lx Centro"
+           telemovel?, email?, ativo }
 ```
+
+> **Origem dos dados:** `ROTAS` (50 vendedores → Empresa, Zona, OP, ADM, contacto, email) e `Divisão Rotas` (alocação de vendedores por zona/coordenador). O seed da F1 importa daqui — não inventar listas.
 
 ### 2.2 Tabela principal `acao_formacao`
 
@@ -317,7 +351,8 @@ GET    /relatorios/taxa-crescimento?planoAno=2026
 GET    /relatorios/atividades?planoAno=2026
 GET    /relatorios/operador?planoAno=2026&granularidade=mensal|semanal
 GET    /relatorios/adm?planoAno=2026
-GET    /relatorios/premios?planoAno=2026
+GET    /relatorios/premios?planoAno=2026&mes=2026-02   # cálculo real
+POST   /relatorios/premios/recalcular?mes=2026-02       # força recompute
 GET    /relatorios/:tipo/exportar  # CSV/XLSX
 
 # Importação (migração inicial)
@@ -351,14 +386,14 @@ Cada fase é uma unidade entregável. Estimativa em horas só para sentido de or
 | **F8** | Relatório: Atividades | 3h |
 | **F9** | Relatório: Operador | 4h |
 | **F10** | Relatório: ADM | 4h |
-| **F11** | Relatório: Prémios (placeholder) | 1h |
+| **F11** | Relatório: Prémios (cálculo real — ver 1.6.3) | 6h |
 | **F12** | Exportação CSV/XLSX dos relatórios | 4h |
 | **F13** | Utilizadores (reusar módulo existente; adicionar perfis se faltarem) | 3h |
 | **F14** | Migração: importer XLSX | 8h |
 | **F15** | Polimento UI (filtro rápido, ordenação, ações em lote) | 4h |
 | **F16** | Testes E2E + correção de bugs | 6h |
 
-**Total ≈ 74h** (~2 sprints semanais).
+**Total ≈ 79h** (~2 sprints semanais).
 
 ---
 
@@ -395,17 +430,33 @@ Cria as entidades auxiliares para o módulo formacao em apps/api/src/formacao/en
 - Curso { id, codigo, nome, tipoDefault, ativo }
 - Cliente { id, nome, ativo }
 - Formador { id, nome, tipo: 'INTERNO'|'EXTERNO', valorHoraDefault?, ativo }
+- Zona { id, nome }
+- Parelha { id, codigo, opUserId, admUserId, equipaNum, zonaId }
+- Vendedor { id, nome, empresaId, zonaId, parelhaId, rotaNome, telemovel?, email?, ativo }
 
 Cria as migrations correspondentes e endpoints GET (read-only por agora) em
-/api/v1/formacao/{empresas,cursos,clientes,formadores}.
+/api/v1/formacao/{empresas,cursos,clientes,formadores,zonas,parelhas,vendedores}.
 
-Cria seed em apps/api/src/seeds/formacao-lookups.seed.ts com:
-- Empresas: Seepmed, Seepmode, Tacovia
-- Cursos: lê o ficheiro /tmp/cursos.txt (lista que vou criar) e popula codigo+nome.
-  Se o ficheiro não existir, popula uma lista mínima: TC, HST, PS, CDE, AFC, CE,
-  SHT, ORTT, EMER, ISMET, MET5S, CI.
+Cria seed em apps/api/src/seeds/formacao-lookups.seed.ts que lê o ficheiro
+"04_2_Produtividade Formação_20260421_IM (1).xlsx" (path passado por env
+FORMACAO_SEED_XLSX) e popula:
 
-Verifica que o seed corre limpo num docker compose down/up.
+1. Empresas (folha ROTAS, coluna A): Seepmed, Seepmode, Tacovia.
+2. Zonas (folha ROTAS, coluna E): Centro Sul, Centro, NORTE, Norte Med, Taco.
+3. Vendedores (folha ROTAS, linhas 3–50): nome (D), zona (E), rota (F),
+   operacional/OP (G), administrativa/ADM (H), telemóvel (I), email (J),
+   empresa (A).
+4. Parelhas (deduzidas das colunas G/H da ROTAS): SF/MC, MD/FG, JM/MS, CB/IF,
+   TS/SD — equipaNum vem do número (B) da ROTAS.
+5. Cursos: lê os valores únicos da coluna D ("Curso") em "02 - 2026" e "02 - 2025".
+   Para cada um, cria { codigo, nome }. Se o valor parece já um nome longo
+   (>5 chars), usa como nome e gera código a partir da primeira maiúscula.
+6. Clientes: lê valores únicos da coluna R em "02 - 2026" (campo CLIENTE).
+7. Formadores: lê valores únicos da coluna J/K (formador) em ambas as folhas.
+   Marca tipo INT/EXT conforme a coluna seguinte (K em 2026).
+
+Verifica que o seed corre limpo num docker compose down/up. Imprime contagens
+no final (ex.: "50 vendedores, 5 zonas, 5 parelhas, 70 cursos, ...").
 ```
 
 ### F2 — CRUD da AcaoFormacao (API)
@@ -611,14 +662,45 @@ Resposta:
 }
 ```
 
-### F11 — Relatório: Prémios (placeholder)
+### F11 — Relatório: Prémios (cálculo real)
 
 ```
-Implementa a tab "Prémios" da página de relatórios com APENAS um card de texto:
-"Prémios pendentes até existir regra oficial na plataforma."
+Implementa a tab "Prémios" da página de relatórios com cálculo real, segundo
+a regra documentada na secção 1.6 → Prémios do "Plano_Implementacao_CStaff_Formacao.md".
 
-Mantém o lugar para futura regra: deixa um TODO no controller do backend
-(`/relatorios/premios` retorna um shape `{ status: 'pendente', mensagem: '...' }`).
+Backend:
+1. Service apps/api/src/formacao/premios/premios.service.ts com método
+   calcular(planoAno, mes: 'YYYY-MM'):
+   - Obtém parelhas ativas (folha ROTAS via tabela Parelha).
+   - Por OP: count de ações no mês; count de ações com participantes >= 15.
+   - Por equipa (Parelha.equipaNum): soma das ações dos OPs da equipa.
+   - Aplica faixas:
+       individual: 1-4 → 0€; 5-10 → 3€; 11-15 → 6€; 16+ → 9€ por ação.
+       grupo:      4-16 → 0€; 17-40 → 3€; 41-60 → 6€; 61+ → 9€.
+   - diasUteis e diasTrabalhados por pessoa (campo manual editável; default = dias úteis do mês).
+   - Total = (individual + grupo) * (diasTrabalhados / diasUteis).
+   - Aplica condições: todas as ações do mês fechadas? média >=15 alunos?
+     pessoa presente nos 2 meses? Se não cumpre, total=0 e atribuído=false.
+   - Regra: prémio de parelha SÓ é atribuído se o de grupo for atribuído.
+   - Mínimo 50€ — abaixo disso, atribuído=false.
+
+2. Endpoint GET /api/v1/formacao/relatorios/premios?planoAno=&mes=:
+   Retorna { mes, parelhas: [{ codigo, op, adm, acoesOp, acoes15Op,
+   acoesEquipa, individual€, grupo€, diasUteis, diasTrabalhados, total€,
+   atribuido, motivos: [] }] }
+
+3. Endpoint POST /api/v1/formacao/relatorios/premios/recalcular?mes=
+   força recálculo (invalida cache).
+
+Frontend:
+- Seletor de mês (default = mês corrente -1).
+- Tabela com uma linha por OP/ADM, colunas como o output acima.
+- Coluna "Atribuído" com badge verde/vermelho + tooltip com motivos quando vermelho.
+- Card de totais: total a pagar, nº pessoas com prémio, nº abaixo de 50€.
+- Botão "Recalcular" + "Exportar CSV".
+
+Testes unitários para cada faixa e cada condição. Fixture de teste deve
+reproduzir 1 parelha que recebe e 1 que não recebe (motivos diferentes).
 ```
 
 ### F12 — Exportação CSV/XLSX
@@ -654,7 +736,8 @@ o filtro inicial e o set de perfis visível.
 ### F14 — Importação do Excel atual
 
 ```
-Cria um importer para o ficheiro 04_Produtividade Formação_IT.xlsx existente:
+Cria um importer para o ficheiro "04_2_Produtividade Formação_20260421_IM (1).xlsx"
+(snapshot 2026-04-21, 12 folhas):
 
 1. Backend endpoint: POST /api/v1/formacao/import/xlsx
    - Recebe upload multipart/form-data.
@@ -663,20 +746,42 @@ Cria um importer para o ficheiro 04_Produtividade Formação_IT.xlsx existente:
 
 2. Worker apps/worker/src/jobs/formacao-import.processor.ts:
    - Lê o XLSX (lib `exceljs`).
-   - Para cada folha "02 - <ano>": cria registos AcaoFormacao com planoAno=<ano>.
-   - Mapeamento de colunas → campos: ver tabela em
-     "Plano_Implementacao_CStaff_Formacao.md" secção 1.4 (cada # corresponde
-     à ordem do form, que reflete a coluna do Excel).
-   - Resolve FKs: Empresa por nome, Curso por código, Cliente por nome (cria
-     se não existir, registando warning), Formador por nome, OP/Admin por
-     iniciais (FK Utilizador).
+   - Importa SÓ as folhas "02 - 2025" e "02 - 2026" (ignora ROTAS — essa é
+     responsabilidade do seed F1 — e ignora Passwords, pass recrutamento,
+     INES, Analise, GLOBAIS, Divisão Rotas, 202602, 202603, 01 - Tx Crescimento).
+
+   IMPORTANTE — mapeamento de colunas POR ANO (são diferentes!):
+
+   Schema "02 - 2025" (linha 3 = headers, linhas 4+ = dados, 48 colunas):
+     A=Tipo, B=Nº, C=Nº Ação, D=Curso, E=Data, F=Localidade, G=Participantes,
+     H=Op, I=Admin, J=VER, K=Formador, L=Confirmação, M=Adjudicação,
+     N=Data Fecho (1ª passagem), O=(vazio), P=Fechada, Q=Data Fecho,
+     R=OP, S=Faltam dados, T=Nº certificados, U=OP Envio, V=Data envio,
+     W=DTP, X=PP, Y=LS, Z=MJF, AB=PP, AC=LS, AD=MJF.
+
+   Schema "02 - 2026" (linha 3 = headers, linhas 4+ = dados, 48+ colunas):
+     A=Tipo, B=Nº, C=Nº Ação, D=Curso, E=Data, F=Localidade, G=Participantes,
+     H=Op, I=Admin, J=VER/OBS, K=Tipo (INT/EXT), L=Formador,
+     M=Confirmação cliente, N=Adjudicação formador, O=Sala,
+     P=> acima de 15, Q=Fechada, R=Data Fecho, S=OP, T=Faltam dados,
+     U=Nº certificados, V=OP Envio, W=Data envio, X=DTP - Entrada,
+     Y=Folha presenças, Z=Digitalizado, AA=CV, AB=Ficha curricular, AC=CCP,
+     AE=Teste, AF=Quest. formandos, AI=Rel. Estatística,
+     AJ=Registos e resultados, AK=Aval. Formador, AL=Pauta,
+     AO=SF, AP=MD, AQ=TS, AR=CB, AS=JM, AU=SF2, AV=MD2.
+
+   - Persiste cada linha em AcaoFormacao com planoAno=<ano>.
+   - Para 2025, os campos exclusivos de 2026 ficam null.
+   - Resolve FKs: Empresa por nome, Curso por código, Cliente por nome
+     (cria se não existir, regista warning), Formador por nome,
+     OP/Admin por iniciais (FK Vendedor/Utilizador).
    - Datas em formato Excel (serial) convertidas para Date.
    - Persiste em transação por folha. Em caso de erro, regista linha+motivo
      numa tabela `import_errors` e continua.
 
 3. Endpoints adicionais:
-   - GET /api/v1/formacao/import/preview/:jobId — devolve resumo: total linhas,
-     OK, erros, warnings, primeiros 10 registos.
+   - GET /api/v1/formacao/import/preview/:jobId — devolve resumo: total linhas
+     por folha, OK, erros, warnings, primeiros 10 registos.
    - POST /api/v1/formacao/import/confirm/:jobId — descarta o staging anterior
      se já existir e marca este import como ativo.
 
@@ -684,8 +789,9 @@ Cria um importer para o ficheiro 04_Produtividade Formação_IT.xlsx existente:
    - Upload de XLSX.
    - Mostra preview com tabela de erros e botão Confirmar.
 
-Testa com o ficheiro real "04_Produtividade Formação_IT.xlsx" (que tem ~5
-folhas: 02 - 2025, 02 - 2026, etc.).
+Testa com o ficheiro real. Contagens esperadas:
+  - 02 - 2025 → 2078 ações (até 31/12/2025).
+  - 02 - 2026 → 799 ações (até ~21/04/2026, snapshot do ficheiro).
 ```
 
 ### F15 — Polimento UI
@@ -739,20 +845,24 @@ Escreve testes Playwright (ou a lib E2E já usada pelo OpsDock-web) cobrindo:
 
 ## 6. Migração de dados — checklist
 
-- [ ] Backup do ficheiro `04_Produtividade Formação_IT.xlsx`.
-- [ ] Extração das listas canónicas do Excel:
-  - Empresas (Seepmed, Seepmode, Tacovia).
-  - Cursos (~70, em `/tmp/xlsx_out/02_-_2026.tsv` coluna F).
-  - Clientes (coluna R).
-  - Formadores (coluna J e AG combinadas).
-  - Utilizadores (iniciais nas colunas AC `Op` e AD `Admin`).
-- [ ] Popular tabelas auxiliares antes de importar `AcaoFormacao`.
-- [ ] Importar `02 - 2026` primeiro, validar.
-- [ ] Importar `02 - 2025` depois, validar.
+- [ ] Backup do ficheiro `04_2_Produtividade Formação_20260421_IM (1).xlsx`.
+- [ ] Extração das listas canónicas do Excel (todas no mesmo ficheiro, folhas distintas):
+  - Empresas (folha `ROTAS`, coluna A): Seepmed, Seepmode, Tacovia.
+  - Zonas (folha `ROTAS`, coluna E): 5 zonas.
+  - Vendedores + Parelhas + Rotas (folha `ROTAS`, 50 linhas).
+  - Cursos (folha `02 - 2026`, coluna D — valores únicos; cruzar com `02 - 2025`).
+  - Clientes (folha `02 - 2026`, coluna R — quando existir).
+  - Formadores (folha `02 - 2026`, coluna L; folha `02 - 2025`, coluna K).
+  - Utilizadores OP/ADM (iniciais nas colunas H/I de ambas as folhas).
+- [ ] Popular tabelas auxiliares ANTES de importar `AcaoFormacao` (seed F1 a partir de ROTAS).
+- [ ] Importar `02 - 2026` primeiro (schema mais completo), validar.
+- [ ] Importar `02 - 2025` depois (com mapeamento de colunas distinto), validar.
 - [ ] Verificar contagens batem certo:
-  - 2026: ~531 ações Q1 (pelo Tx Crescimento).
-  - 2025: ~2079 ações totais (pelo Tx Crescimento, linha "TOTAL ACUMULADO").
+  - 2026: 799 ações no snapshot (Tx Crescimento mostra 532 fechadas até fim de Q1).
+  - 2025: 2078 ações (Tx Crescimento `TOTAL ACUMULADO` = 2079 — 1 de diferença a investigar).
 - [ ] Comparar 5 ações aleatórias por amostragem (campo a campo).
+- [ ] Validar regra dos Prémios: recalcular `202602` no CStaff e comparar com a folha do Excel — totais por parelha têm de bater.
+- [ ] **Não migrar:** folhas `Passwords`, `pass recrutamento` (credenciais externas, geri num password manager), `INES` (working draft pessoal), `Analise` (vazia), `GLOBAIS`/`Divisão Rotas`/`01 - Tx Crescimento`/`202602`/`202603` (são vistas/analytics, geradas a partir de `02 - YYYY`).
 - [ ] Manter o Excel como fonte de verdade até confirmar 1 mês de uso paralelo.
 
 ---
@@ -776,8 +886,9 @@ A migração está completa quando:
 - Anexos por campo (CV, CCP, Ficha curricular…): boolean → upload de PDF para MinIO. Pode ser F17 separada.
 - Notificações: alertar OP/ADM quando uma ação fica > N dias sem fechar. Pode ser F18.
 - Integração com sistema contabilístico (preencher automaticamente N.º Recibo, IRS, IVA): F19.
-- Regras de Prémios (quando definidas): substituir o placeholder de F11.
+- UI editável de configuração das faixas/condições dos Prémios (F11 implementa cálculo com valores hardcoded; um ecrã de admin para editar a tabela vem depois): F20.
+- Mapa de zonas/rotas com edição visual (substituir folha `Divisão Rotas`): F21.
 
 ---
 
-> **Origem deste plano:** screenshots de `form.seepmode.com` + análise da folha `02 - 2026` do `04_Produtividade Formação_IT.xlsx`. Documento companion: `Estudo da produtividade da Formação.md`. Data: 2026-05-08.
+> **Origem deste plano:** screenshots de `form.seepmode.com` + análise das 12 folhas de `04_2_Produtividade Formação_20260421_IM (1).xlsx` (snapshot 2026-04-21). Documento companion: `Estudo da produtividade da Formação.md`. Última revisão: 2026-05-08.
