@@ -132,7 +132,9 @@ Os campos estão organizados em grelha 3 colunas. Lista completa (na ordem em qu
 | 64 | CB 2 | text | |
 | 65 | JM 2 | text | |
 
-> **Regra:** todos os campos são opcionais por defeito (o form atual aceita "Sem valor" em quase tudo). Apenas `Tipo`, `N.º Ação`, `Data` são obrigatórios. **Não cortar campos**, mesmo os sub-utilizados.
+> **Regra:** todos os campos são opcionais por defeito (o form atual aceita "Sem valor" em quase tudo). Apenas `Tipo`, `N.º Ação`, `Data` são obrigatórios.
+>
+> ⚠️ **Atualização 2026-05-08:** a regra "não cortar campos" foi substituída por **subset prático** — ver §1A. O schema final será derivado de auditoria de dados reais (form.seepmode.com + LoungeCRM), não do clone cego dos 65 campos.
 
 > **Schema divergente entre anos:** o Excel não tem o mesmo conjunto de colunas em `02 - 2025` e `02 - 2026`. 2026 acrescenta `> acima de 15`, `Folha presenças`, `Digitalizado`, `CV`, `Ficha curricular`, `CCP`, `Teste`, `Quest. formandos`, `Rel. Estatística`, `Registos e resultados`, `Aval. Formador`, `Pauta`, e flags por pessoa `SF/MD/TS/CB/JM` em duas passagens. 2025 só tem `PP/LS/MJF`. **O importer (F14) tem de usar mapeamento de colunas por ano**, não único. No CStaff a tabela é única (todas as colunas existem); para ações de 2025 os campos novos ficam null.
 
@@ -193,6 +195,78 @@ Header comum: `Fonte atual: 02 - 2026`.
 - Filtro por Perfil.
 - Botões `Limpar filtro`, `Novo utilizador`, `Atualizar`.
 - Tabela: Utilizador (link) / Perfil / Contacto / Estado (toggle Ativo) / Criado em / Ações [Editar].
+
+---
+
+## 1A. Subset prático — auditoria antes de fixar o schema
+
+A versão original deste plano clonava os 65 campos do `form.seepmode.com` na íntegra. Após inspeção do **LoungeCRM** (também SuiteCRM 8 — ver §1B) descobriu-se um conjunto parcialmente sobreposto de ~49 campos com nomes diferentes e alguns campos novos (NUTS II, Cheque Formação, Nº candidatos, datas de follow-up granulares).
+
+**Decisão:** o schema final da `AcaoFormacao` no CStaff será um **subset prático** — só campos efetivamente preenchidos em dados reais. Evita carregar zombies (campos com 99% NULL) e simplifica o form.
+
+### Procedimento (executar ANTES de F2)
+
+1. **Excel `form.seepmode.com`:** ler `04_Produtividade Formação_IT.xlsx` folhas `02 - 2026` e `02 - 2025`. Para cada coluna calcular `% preenchido` (não-NULL e não-"Sem valor"). **Threshold:** `< 5%` preenchido → candidato a corte.
+
+2. **LoungeCRM:** via API (ver §9) listar `100` registos sample do módulo Formação. Mesmo cálculo de `% preenchido` por campo.
+
+3. **Tabela final:** lista única dos campos a manter, com origem anotada (`form` | `lounge` | `ambos`). Salvar em `01 - code/CStaff/CStaff/Formação/auditoria_campos.md` com colunas:
+
+   | Campo CStaff | Origem | % preenchido form | % preenchido Lounge | Decisão | Justificação |
+
+4. **Validação humana:** Coordenação revê a lista de cortes — alguns campos de baixa frequência podem ser legais/regulatórios (NUTS II, certificados) e ter de ficar mesmo com baixo preenchimento.
+
+5. **Schema final fixado** → daí F1/F2 são geradas em cima desta lista, não dos 65 originais nem da união cega das duas fontes.
+
+> **Regra de oiro:** quando em dúvida, mantém o campo. Custo de armazenamento é zero; custo de re-introduzir uma coluna depois de o sistema estar em produção é alto.
+
+---
+
+## 1B. Inventário do LoungeCRM (SuiteCRM 8) — módulo Formação
+
+LoungeCRM é uma instância SuiteCRM 8 separada, em produção. Mesma família tecnológica que Seepmode/Tacovia/LuxuryCRM (ver `01 - code/CRMs/`). UI em PT, top nav: Vendas · Atividades · Suporte técnico · **Formação** · Saúde & Segurança · Marketing · Tudo.
+
+### 1B.1 Listagem `FORMAÇÕES`
+
+**Filtros básicos** (~19): Ação, Cliente, Ano, Local, Data Pagamento, Nome, Data Formação, Data Envio Email Info Cliente, Valor Pago, Data envio certificados, Data Análise Estatística, Data Fecho ação, Data Digitalização, Estado, NUTS II, Com Cheque Formação, Data de Criação, Atribuído a, Vendedor.
+
+**Filtros guardados** (dropdown + Guardar/Atualizar/Eliminar). Botões: `+ Criar Formações`, `Importar`, `Limpar`, `Pesquisar`.
+
+**Tabela:** Ação · Nome · Cliente · Contacto · Ano · Followup · Data Form. · Valor Fac. · Data Paga. · Estado · Local · Valor Pag. · Nº Faturad. · "Ação em massa" · Colunas (toggle).
+
+### 1B.2 Detalhe — 5 secções, ~49 campos
+
+**Overview (20):** Ação · Ano · Nome* · Estado · Data Formação · Data Fim Formação · Cliente (FK Account) · Formador (FK MOD_Formadores?) · Contacto (FK Contact) · Sessões · Nº horas · Data adjudicação · Valor formação € · NUTS II · Nº Faturados · Média Formandos € · Nº presenças · Com Cheque Formação · Nº cand · Data Candidatura.
+
+**Follow-up (15):** Data Verificação · Data Envio Email Info ao Cliente · Data entrega informação do formando · Data Confirmação Telf Cliente · Data Envio Adjudicação ao Formador · Data a Relembrar Formação · Nº certificados enviados · Data envio certificados · Followup Cliente · Observações · Data Digitalização · Data Análise Estatística · Ação Fechada? · Data Fecho ação · Fechado por (FK User).
+
+**Location (7):** Local · Nº Fatura · Morada · Valor · Sala · Data Pagamento Sala · Projector.
+
+**Invoice (5):** Nº factura · Data Pagamento · Valor factura € · Valor Pago · Data da Fatura.
+
+**Atribuição (2):** Atribuído a (FK User) · Vendedor (FK User).
+
+### 1B.3 Sobreposição com `form.seepmode.com`
+
+| Conceito | `form.seepmode.com` | LoungeCRM |
+|---|---|---|
+| Identificador da ação | `N.º AÇÃO` ("M216/26") | `Ação` (livre) |
+| Ano-plano | `Plano 2025/2026` toggle | `Ano` (campo) |
+| Cliente | `CLIENTE` (FK Cliente) | `Cliente` (FK Account) |
+| Formador | `NOME DO FORMADOR` | `Formador` (FK módulo próprio) |
+| Local físico | `LOCALIDADE` + `SALA` | `Local` + `Sala` + `Morada` |
+| Data | `DATA` | `Data Formação` + `Data Fim` |
+| Horas | `HORAS` | `Nº horas` |
+| Participantes | `PARTICIPANTES` | `Nº presenças` (+ `Nº Faturados`, `Nº cand`) |
+| Fecho | `FECHADA` + `DATA FECHO` + `OP FECHO` | `Ação Fechada?` + `Data Fecho ação` + `Fechado por` |
+| Pagamento | `Nº RECIBO` + `DATA PAG.` | `Nº factura` + `Data Pagamento` + `Valor Pago` |
+| Observações | `VER/OBS.` | `Observações` |
+
+**Só LoungeCRM:** NUTS II, Com Cheque Formação, Nº cand + Data Candidatura, Sessões, Média Formandos, Projector, ~8 datas de follow-up granulares (Verificação, Envio Email Info, Entrega info formando, Confirmação Telf, Envio Adjudicação Formador, Relembrar, Followup Cliente, Análise Estatística), Vendedor.
+
+**Só `form.seepmode.com`:** Empresa (Seepmed/Seepmode/Tacovia), TIPO (Presencial/E-Learning), TIPO 2, financeiro detalhado (Valor Hora · Total Honorários · KMs/Diesel · IVA Despesa · IRS · Tesouraria · IVA Tesouraria), dossier Sim/Não (CV · CCP · Folha Presenças · Ficha Curricular · Teste · Questionários · Relatórios Avaliativos · Registos · Aval. Formador · Pauta · Digitalizado · Entrada DTP), flags equipa SF/MD/TS/CB/JM (×2), Confirmação/Adjudicação como texto livre, Faltam Dados, Acima de 15.
+
+> Conclusão: o LoungeCRM cobre **~50%** dos conceitos do `form.seepmode.com` mas com granularidade de follow-up superior. As fontes são **complementares**, não substitutas.
 
 ---
 
@@ -392,8 +466,13 @@ Cada fase é uma unidade entregável. Estimativa em horas só para sentido de or
 | **F14** | Migração: importer XLSX | 8h |
 | **F15** | Polimento UI (filtro rápido, ordenação, ações em lote) | 4h |
 | **F16** | Testes E2E + correção de bugs | 6h |
+| **F-1** | **Auditoria de campos** (subset prático — ver §1A) | 4h |
+| **F17** | LoungeCRM client (OAuth2 + proxy básico) — ver §9 | 6h |
+| **F18** | UI: tab `Origem Lounge` + merge view | 5h |
 
-**Total ≈ 79h** (~2 sprints semanais).
+**Total ≈ 94h** (~2,5 sprints semanais).
+
+> **Ordem recomendada:** F-1 corre **antes** de F1/F2 (auditoria define o schema). F17 e F18 podem correr em paralelo com F6+ desde que F0 esteja feito.
 
 ---
 
@@ -841,6 +920,128 @@ Escreve testes Playwright (ou a lib E2E já usada pelo OpsDock-web) cobrindo:
    que registos aparecem na listagem.
 ```
 
+### F-1 — Auditoria de campos (subset prático, ANTES de F1/F2)
+
+```
+Objetivo: produzir auditoria_campos.md com o subset de campos a manter no
+schema final da AcaoFormacao do CStaff. Não escrever migrations enquanto
+este ficheiro não existir e não estiver validado.
+
+1. Ler 04_2_Produtividade Formação_20260421_IM (1).xlsx, folhas 02 - 2026 e
+   02 - 2025. Para cada coluna calcular:
+   - total_linhas
+   - preenchidas (não-vazio e não-"Sem valor")
+   - pct = preenchidas / total_linhas
+
+2. Via API LoungeCRM (ver §9 do plano) listar 100 registos sample do módulo
+   MOD_Formacoes (ou nome técnico real — confirmar com /Api/V8/meta/modules).
+   Para cada campo do schema retornado calcular o mesmo pct.
+
+3. Produzir 01 - code/CStaff/CStaff/Formação/auditoria_campos.md com tabela:
+   | Campo CStaff (proposto) | Origem (form/lounge/ambos) | pct form | pct lounge | Decisão (manter/cortar/condicional) | Justificação |
+
+4. Marcar como CONDICIONAL (não cortar automaticamente) campos com pct < 5%
+   mas que sejam:
+   - regulatórios (NUTS II, certificados, CCP)
+   - financeiros (qualquer currency)
+   - usados em relatórios oficiais (Prémios, IEFP)
+
+5. Apresentar resumo no fim:
+   - total de campos analisados
+   - propostos para manter
+   - propostos para cortar
+   - condicionais (a validar com Coordenação)
+
+Não tocar em código de migrations/entities. Só ficheiro markdown.
+```
+
+### F17 — LoungeCRM client (OAuth2 + proxy básico)
+
+```
+Cria um módulo NestJS apps/api/src/integrations/lounge-crm/ que expõe acesso
+read-only ao módulo Formação do LoungeCRM (SuiteCRM 8). Detalhes em §9 do
+"Plano_Implementacao_CStaff_Formacao.md".
+
+1. ConfigSchema:
+   LOUNGE_CRM_BASE_URL, LOUNGE_CRM_CLIENT_ID, LOUNGE_CRM_CLIENT_SECRET,
+   LOUNGE_CRM_GRANT_TYPE (default: client_credentials),
+   LOUNGE_CRM_FORMACAO_MODULE (default: MOD_Formacoes — confirmar via meta).
+
+2. LoungeCrmClient (Injectable, singleton):
+   - getAccessToken(): POST {BASE}/Api/access_token (form-urlencoded). Cache
+     em memória, refresh 60s antes do expires_in. Mutex para evitar race em
+     refresh concorrente.
+   - request(method, path, opts): adiciona Authorization Bearer + headers
+     application/vnd.api+json. Retry exponencial 3x em 5xx ou 401 (force
+     refresh em 401).
+
+3. LoungeCrmFormacaoService:
+   - list({ ano, estado, page, pageSize }): GET /Api/V8/module/{MODULE}
+     com filter[ano_c][eq], filter[estado_c][eq], page[size], sort=-date_entered,
+     include=accounts,users_assigned. Map JSON:API → FormacaoLoungeDto usando
+     o mapeamento de §9.4.
+   - get(id): GET /Api/V8/module/{MODULE}/{id}?include=accounts,users_assigned.
+   - getMeta(): GET /Api/V8/meta/modules/{MODULE} — para gerar/validar o
+     mapeamento dos nomes técnicos. Salvar resposta em
+     apps/api/src/integrations/lounge-crm/__schema__/formacoes.json (commitado).
+
+4. LoungeCrmController em /api/v1/integrations/lounge:
+   - GET /formacoes?ano=&estado=&page=&pageSize=
+   - GET /formacoes/:id
+   - Guard: Admin/Coordenação/ADM têm acesso total. Gestor só vê registos com
+     assigned_user_id == email/username do utilizador autenticado (filter
+     extra ao chamar a API do CRM).
+
+5. Cache: usa CacheModule (Redis se disponível, senão in-memory) com TTL=60s
+   por chave (path + querystring + role do utilizador).
+
+6. Testes:
+   - mock fetch HTTP. Cobrir refresh de token, 401→refresh→retry, mapeamento
+     JSON:API → DTO, paginação (links.next).
+   - integração opcional: skipped por defeito; corre só se as env LOUNGE_*
+     estiverem definidas (ler de .env.test.local).
+
+ANTES DE FIXAR O MAPEAMENTO: corre uma vez `pnpm exec ts-node scripts/lounge-meta.ts`
+que faz `service.getMeta()` e imprime os campos. Compara com §9.4 do plano e
+ajusta nomes técnicos onde divirjam. Atualiza §9.4 do plano com a versão
+verificada.
+```
+
+### F18 — UI: tab Origem Lounge
+
+```
+Em apps/web/app/formacao/page.tsx adiciona um toggle de origem com 3 modos:
+[ CStaff (local) | Lounge (live) | Ambos ]
+
+Estado guardado em Zustand "formacaoSourceStore", sincronizado com query
+string ?source=cstaff|lounge|both para shareable links.
+
+Comportamento:
+- CStaff (default): comportamento existente após F3.
+- Lounge: chama GET /api/v1/integrations/lounge/formacoes com os filtros
+  aplicáveis (Ano, Estado, Cliente livre, Atribuído a). Tabela com colunas:
+  badge [Lounge] · Ação · Nome · Cliente · Data · Estado · Valor Pago.
+  Botão "Editar" abre {LOUNGE_CRM_BASE_URL}/index.php?module={MODULE}&action=
+  DetailView&record={id} em nova tab. SEM edição inline.
+- Ambos: fetch paralelo CStaff+Lounge. Merge por (planoAno, numeroAcao):
+  - linhas exclusivas CStaff: badge azul [CStaff]
+  - linhas exclusivas Lounge: badge verde [Lounge]
+  - matches: badge laranja [CStaff+Lounge] (mostra dados CStaff; tooltip
+    com diferenças de campos)
+  Filtros não aplicáveis a Lounge ficam disabled com tooltip "Disponível só
+  na fonte CStaff" (ex.: filtros por OP, ADM, Empresa, Tipo).
+
+Loading: skeleton por origem (não esperar a mais lenta para mostrar a outra).
+Erro Lounge: linha de aviso "Não foi possível ler do LoungeCRM" com botão
+Retry; CStaff continua a funcionar normalmente (graceful degradation).
+
+Testes E2E (Playwright):
+- Toggle entre os 3 modos com filtros aplicados.
+- Click "Editar" no modo Lounge abre URL correta.
+- Erro 503 do proxy mostra alert mas não quebra a página.
+- Filtros aplicáveis vs disabled conforme origem.
+```
+
 ---
 
 ## 6. Migração de dados — checklist
@@ -883,11 +1084,207 @@ A migração está completa quando:
 ## 8. Pontos por decidir mais tarde (não bloqueantes)
 
 - Mobile (Flutter): replicar a Home + criar/editar ação com câmara para anexar Folha de Presenças? Decidir após F16.
-- Anexos por campo (CV, CCP, Ficha curricular…): boolean → upload de PDF para MinIO. Pode ser F17 separada.
-- Notificações: alertar OP/ADM quando uma ação fica > N dias sem fechar. Pode ser F18.
-- Integração com sistema contabilístico (preencher automaticamente N.º Recibo, IRS, IVA): F19.
-- UI editável de configuração das faixas/condições dos Prémios (F11 implementa cálculo com valores hardcoded; um ecrã de admin para editar a tabela vem depois): F20.
-- Mapa de zonas/rotas com edição visual (substituir folha `Divisão Rotas`): F21.
+- Anexos por campo (CV, CCP, Ficha curricular…): boolean → upload de PDF para MinIO. Pode ser F19 separada.
+- Notificações: alertar OP/ADM quando uma ação fica > N dias sem fechar. Pode ser F20.
+- Integração com sistema contabilístico (preencher automaticamente N.º Recibo, IRS, IVA): F21.
+- UI editável de configuração das faixas/condições dos Prémios (F11 implementa cálculo com valores hardcoded; um ecrã de admin para editar a tabela vem depois): F22.
+- Mapa de zonas/rotas com edição visual (substituir folha `Divisão Rotas`): F23.
+- Write-through ao LoungeCRM (criar/editar registos do LoungeCRM a partir do CStaff via PATCH/POST V8 REST): F24 — só faz sentido depois de F18 estar estável e a equipa de Vendas concordar.
+
+---
+
+## 9. Integração LoungeCRM (SuiteCRM 8) — sistema paralelo, read-only
+
+LoungeCRM é uma instância **SuiteCRM 8** separada que mantém o seu próprio módulo Formação (~49 campos, ver §1B). **Não migrar.** O CStaff lê em tempo real via API V8 REST e apresenta vistas combinadas (modo `Ambos` em F18).
+
+### 9.1 Arquitetura
+
+```
+[CStaff Web (Next.js)]
+        │
+        ▼ /api/v1/integrations/lounge/*
+[CStaff API (NestJS)]
+        │ (cache Redis 60s)
+        ▼ /Api/V8/module/MOD_Formacoes
+[LoungeCRM (SuiteCRM 8)]
+```
+
+Princípios:
+- **Frontend nunca chama LoungeCRM diretamente** — segredo OAuth2 fica no backend; também evita CORS.
+- **Backend é um proxy fino** — autentica, faz a chamada, mapeia JSON:API → DTO interno, devolve.
+- **Sem persistência** — não há tabela `lounge_formacao` no Postgres do CStaff. A fonte de verdade é o CRM.
+- **Cache curto (60s)** por chave (path + querystring + role do utilizador) para reduzir latência e carga no CRM.
+- **Graceful degradation** — quando o CRM está indisponível, a vista CStaff continua a funcionar; a tab Lounge mostra erro recuperável.
+
+### 9.2 Autenticação OAuth2
+
+SuiteCRM 8 expõe OAuth2 em `/Api/access_token` (compatível com a V8 REST legacy) ou `/api/oauth/v2/token` (nas versões 8.5+; depende da configuração). Suporta dois grant types relevantes:
+
+| Grant | Quando usar | Nota |
+|---|---|---|
+| **Client Credentials** | Server-to-server (CStaff API → LoungeCRM). **Recomendado.** | Token amarrado a um oauth2-client + utilizador técnico associado. Sem contexto de utilizador final. |
+| **Password Grant** | Quando precisas que o token reflita as permissões de um utilizador real. | Cliente tem de receber as credenciais do utilizador — só faz sentido em apps "first-party". |
+
+**Setup em SuiteCRM (admin):**
+1. Painel Admin → **OAuth2 Clients And Tokens** → *Add OAuth2 client*.
+2. Tipo: `Client Credentials Client`. Definir secret. Associar utilizador "técnico" com perfil **só de leitura** sobre `MOD_Formacoes`, `Accounts`, `Contacts`, `Users`.
+3. Guardar credenciais em `OpsDock-development/.env`:
+   ```env
+   LOUNGE_CRM_BASE_URL=https://crm.lounge.example
+   LOUNGE_CRM_CLIENT_ID=...
+   LOUNGE_CRM_CLIENT_SECRET=...
+   LOUNGE_CRM_GRANT_TYPE=client_credentials
+   LOUNGE_CRM_FORMACAO_MODULE=MOD_Formacoes
+   ```
+
+**Fluxo do client (NestJS):**
+```http
+POST /Api/access_token
+Host: crm.lounge.example
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=<ID>&client_secret=<SECRET>
+```
+
+Resposta:
+```json
+{
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "access_token": "eyJ0eXAiOi..."
+}
+```
+
+Cache do token em memória, refresh 60s antes do `expires_in`. Mutex para evitar refresh concorrente. Em `401` força refresh + retry uma vez.
+
+### 9.3 Endpoints úteis (V8 — JSON:API spec)
+
+Headers obrigatórios em **todas** as chamadas:
+```
+Authorization: Bearer {access_token}
+Accept: application/vnd.api+json
+Content-Type: application/vnd.api+json
+```
+
+| Operação | Endpoint |
+|---|---|
+| Schema do módulo | `GET /Api/V8/meta/modules/MOD_Formacoes` |
+| Listar | `GET /Api/V8/module/MOD_Formacoes?page[size]=100&sort=-date_entered` |
+| Filtrar | `GET /Api/V8/module/MOD_Formacoes?filter[ano_c][eq]=2026&filter[estado_c][eq]=fechada` |
+| Detalhe | `GET /Api/V8/module/MOD_Formacoes/{id}` |
+| Detalhe + relacionados | `GET /Api/V8/module/MOD_Formacoes/{id}?include=accounts,users_assigned,contacts` |
+| Lookup Accounts | `GET /Api/V8/module/Accounts?filter[name][like]=...` |
+| Lookup Users | `GET /Api/V8/module/Users` |
+
+**Operadores de filtro** SuiteCRM V8: `eq`, `neq`, `gt`, `gte`, `lt`, `lte`, `like`, `in`, `nin`, `null`, `not_null`. Combinações: `filter[and][...][...]`, `filter[or][...][...]`.
+
+**Paginação:** resposta inclui `links.next`, `links.prev`, `meta.total-pages`, `meta.records`. **Evita N+1** — usa `?include=` para hidratar relacionados na mesma chamada.
+
+**Resposta JSON:API exemplo:**
+```json
+{
+  "data": [{
+    "type": "MOD_Formacoes",
+    "id": "abc-123",
+    "attributes": { "name": "...", "ano_c": 2026, "estado_c": "fechada", ... },
+    "relationships": {
+      "accounts": { "data": [{ "type": "Accounts", "id": "..." }] }
+    }
+  }],
+  "included": [
+    { "type": "Accounts", "id": "...", "attributes": { "name": "Cliente X" } }
+  ],
+  "links": { "next": "...", "last": "..." },
+  "meta": { "records": 815, "total-pages": 9 }
+}
+```
+
+### 9.4 Mapeamento de campos LoungeCRM → CStaff (a verificar)
+
+> Os nomes técnicos de campos custom em SuiteCRM têm sufixo `_c`. **Confirma via** `GET /Api/V8/meta/modules/MOD_Formacoes` antes de fixar — esta tabela é a melhor inferência a partir dos labels em PT, mas a única fonte autoritativa é o schema do CRM.
+
+| LoungeCRM (label) | Nome técnico provável | Tipo | Equivalente CStaff (subset) |
+|---|---|---|---|
+| Ação | `name` ou `acao_c` | varchar | `numeroAcao` |
+| Ano | `ano_c` | int | `planoAno` |
+| Nome | `name` | varchar | descritivo |
+| Estado | `estado_c` | enum | `estado` |
+| Data Formação | `data_formacao_c` | date | `data` |
+| Data Fim Formação | `data_fim_formacao_c` | date | (novo) |
+| Cliente (rel) | `accounts_mod_formacoes` | rel Account | `clienteId` |
+| Formador (rel) | `mod_formadores_mod_formacoes` | rel | `formadorId` |
+| Contacto (rel) | `contacts_mod_formacoes` | rel Contact | (novo) |
+| Sessões | `sessoes_c` | int | (decidir em F-1) |
+| Nº horas | `n_horas_c` | int | `horas` |
+| Data adjudicação | `data_adjudicacao_c` | date | `adjudicacao` |
+| Valor formação | `valor_formacao_c` | currency | `valorFinal` (rever) |
+| NUTS II | `nuts_ii_c` | enum | (novo — relevante p/ IEFP) |
+| Nº Faturados | `n_faturados_c` | int | (decidir) |
+| Média Formandos | `media_formandos_c` | currency | (decidir) |
+| Nº presenças | `n_presencas_c` | int | `participantes` |
+| Com Cheque Formação | `com_cheque_formacao_c` | bool | (novo) |
+| Nº cand | `n_cand_c` | int | (novo) |
+| Data Candidatura | `data_candidatura_c` | date | (novo) |
+| Local | `local_c` | varchar | `localidade` |
+| Sala | `sala_c` | varchar | `salaTexto` |
+| Projector | `projector_c` | bool | (novo) |
+| Nº factura | `n_factura_c` | varchar | `numRecibo` |
+| Data Pagamento | `data_pagamento_c` | date | `dataPagamento` |
+| Valor Pago | `valor_pago_c` | currency | (novo) |
+| Ação Fechada | `acao_fechada_c` | bool | `fechada` |
+| Data Fecho ação | `data_fecho_accao_c` | date | `dataFecho` |
+| Fechado por (rel) | `fechado_por_id_c` | rel User | `opFechoId` |
+| Atribuído a | `assigned_user_id` | rel User | `opId` (?) |
+| Vendedor | `vendedor_id_c` | rel User | (novo) |
+| Observações | `description` ou `observacoes_c` | text | `observacoes` |
+| Data Verificação | `data_verificacao_c` | date | (novo) |
+| Data Envio Email Info Cliente | `data_envio_email_info_c` | date | (novo) |
+| Data entrega info formando | `data_entrega_info_form_c` | date | (novo) |
+| Data Confirmação Telf Cliente | `data_conf_telf_cliente_c` | date | (novo) |
+| Data Envio Adjudicação Formador | `data_envio_adj_formador_c` | date | (novo) |
+| Data a Relembrar | `data_relembrar_c` | date | (novo) |
+| Nº certificados enviados | `n_certificados_env_c` | int | `numCertificados` |
+| Data envio certificados | `data_envio_certificados_c` | date | `dataEnvio` |
+| Followup Cliente | `followup_cliente_c` | date | (novo) |
+| Data Digitalização | `data_digitalizacao_c` | date | (decidir) |
+| Data Análise Estatística | `data_analise_est_c` | date | (novo) |
+| Nº Fatura (Local) | `n_fatura_local_c` | varchar | (decidir) |
+| Morada | `morada_c` | text | (novo) |
+| Valor (Local) | `valor_local_c` | currency | (decidir) |
+| Data Pagamento Sala | `data_pag_sala_c` | date | `salaDataPagamento` |
+| Data da Fatura | `data_da_fatura_c` | date | (novo) |
+| Valor factura | `valor_factura_c` | currency | (novo) |
+
+### 9.5 Estrutura backend (CStaff)
+
+```
+apps/api/src/integrations/lounge-crm/
+  ├── lounge-crm.module.ts
+  ├── lounge-crm.client.ts              # OAuth2 + token cache + retries + mutex
+  ├── lounge-crm-formacao.service.ts    # listFormacoes, getFormacao, getMeta
+  ├── lounge-crm.controller.ts          # passthrough /api/v1/integrations/lounge/*
+  ├── dto/
+  │   └── formacao-lounge.dto.ts
+  ├── mappers/
+  │   └── formacao-lounge.mapper.ts     # JSON:API → DTO
+  ├── __schema__/
+  │   └── formacoes.json                # snapshot do GET /meta/modules — versionado
+  └── *.spec.ts
+```
+
+### 9.6 UI no CStaff (resumo — detalhe em F18)
+
+- Toggle de origem em `/formacao`: `CStaff` | `Lounge` | `Ambos`.
+- Modo Lounge: sem edição inline. Botão "Editar" abre o registo no LoungeCRM em nova tab.
+- Modo Ambos: merge por `(planoAno, numeroAcao)` quando coincide. Badges de origem por linha.
+- Filtros aplicáveis ao modo Lounge: Ano, Estado, Cliente (livre), Atribuído a. Os demais filtros ficam *disabled* com tooltip explicativo.
+
+### 9.7 Limitações conhecidas / decisões adiadas
+
+- **Sem write-through na primeira fase.** Editar registos LoungeCRM no CStaff fica em F24 (ver §8) — depois de validar que a leitura está estável e que a equipa de Vendas concorda em ceder edições ao CStaff.
+- **Resolução de conflitos no merge:** se um registo aparecer em ambas as fontes com campos diferentes (ex.: `valorFinal` no CStaff vs `valor_formacao_c` no Lounge), a UI mostra ambos com tooltip; **não há reconciliação automática**.
+- **Permissões granulares no LoungeCRM:** o token do client_credentials reflete o utilizador técnico, não o utilizador final do CStaff. Para Gestor (que só pode ver os seus), o backend filtra por `assigned_user_id` na query — **mas se o LoungeCRM tiver Security Groups extra, alguns registos podem ficar invisíveis ao token técnico**. Validar com 1-2 contas reais.
+- **Rate limit:** SuiteCRM V8 não documenta limites oficiais. Cache de 60s + mutex é suficiente para uso humano interativo. Se surgir necessidade de batch reads, usar `page[size]=100` (max típico) e nunca polling agressivo.
 
 ---
 
