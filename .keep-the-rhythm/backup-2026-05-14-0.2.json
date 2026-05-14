@@ -1472,6 +1472,11 @@
             "timeKey": "10:00",
             "w": -7,
             "c": -44
+          },
+          {
+            "timeKey": "15:35",
+            "w": 4,
+            "c": 26
           }
         ],
         "id": 121
@@ -1481,7 +1486,13 @@
         "filePath": "Notas/HOTSPOT_GUIDE.md",
         "wordCountStart": 150,
         "charCountStart": 960,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "15:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
         "id": 122
       },
       {
@@ -1638,7 +1649,7 @@
         "id": 132
       }
     ],
-    "wholeVaultWordCount": 160865,
-    "wholeVaultCharCount": 1350729
+    "wholeVaultWordCount": 160869,
+    "wholeVaultCharCount": 1350755
   }
 }
