@@ -1523,6 +1523,16 @@
             "timeKey": "10:05",
             "w": 94,
             "c": 672
+          },
+          {
+            "timeKey": "10:10",
+            "w": -3,
+            "c": -14
+          },
+          {
+            "timeKey": "12:45",
+            "w": 0,
+            "c": 0
           }
         ],
         "id": 124
@@ -1610,9 +1620,25 @@
           }
         ],
         "id": 130
+      },
+      {
+        "date": "2026-05-14",
+        "filePath": "Notas/Trex run - terminal.md",
+        "wordCountStart": 402,
+        "charCountStart": 3015,
+        "changes": [],
+        "id": 131
+      },
+      {
+        "date": "2026-05-14",
+        "filePath": "Notas/CStaff.md",
+        "wordCountStart": 306,
+        "charCountStart": 2200,
+        "changes": [],
+        "id": 132
       }
     ],
-    "wholeVaultWordCount": 160868,
-    "wholeVaultCharCount": 1350743
+    "wholeVaultWordCount": 160865,
+    "wholeVaultCharCount": 1350729
   }
 }
