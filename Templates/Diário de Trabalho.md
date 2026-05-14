@@ -4,8 +4,6 @@ const d = new Date(today);
 d.setDate(d.getDate() - 1);
 const yest = d.toISOString().slice(0, 10);
 -%>
-# <% tp.file.title %>
-
 > **Anteriores:** [[<% yest %>]]
 
 ## Pendentes Anteriores
