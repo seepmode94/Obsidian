@@ -39,3 +39,29 @@ Registo de verificações de paridade entre o **Studio** (web/admin) e o **mobil
 2. **Retirar** o bloco "Resumo Geral" do mobile e criar paridade com a web (que não tem este resumo).
 
 **Próximo passo:** validar com a web se o bloco existe; alinhar decisão antes de mexer no código.
+
+---
+
+### Tradução de nomenclaturas de campos (Studio › Assistências › Campos)
+
+**Contexto:** vários campos aparecem com nomes técnicos/em inglês no mobile (ver entrada *Propostas — vista de lista* acima, com `City` e `State`). É preciso garantir que cada campo tem **Etiqueta PT** definida em Studio, para que o mobile herde a label traduzida.
+
+**Procedimento (igual ao usado para o campo `name`):**
+
+Em **Studio › Assistências › Campos**, para cada campo a corrigir:
+
+1. **Se o campo aparece na lista** → `Editar` → preencher **Etiqueta PT** → `Guardar`.
+2. **Se não aparece** → `Adicionar campo` → preencher:
+   - `field name` (técnico, em snake_case)
+   - `type` (varchar, phone, etc.)
+   - `etiqueta` (PT)
+   - `Guardar`.
+
+**Campos identificados nesta sessão:**
+
+| Field name (técnico) | Type | Etiqueta PT |
+|---|---|---|
+| `billing_address_city` | varchar | Cidade |
+| `phone_office` | phone | Telefone Principal |
+
+**Pendente:** levantar restantes campos não traduzidos à medida que aparecem nas vistas (ex.: `State` da entrada *Propostas* acima — adicionar à tabela quando confirmado o `field name` técnico correspondente).
