@@ -65,3 +65,17 @@ Em **Studio › Assistências › Campos**, para cada campo a corrigir:
 | `phone_office` | phone | Telefone Principal |
 
 **Pendente:** levantar restantes campos não traduzidos à medida que aparecem nas vistas (ex.: `State` da entrada *Propostas* acima — adicionar à tabela quando confirmado o `field name` técnico correspondente).
+
+
+---
+
+### Telefonemas — resumo geral 
+
+**Ecrã:** # Novo registo Chamada → vista de lista (mobile), bloco "Resumo Geral"
+
+![[Pasted image 20260520112904.png]]
+
+Não aparece como no mobile uma relação de relate to, o que está acontecer é uma melhor paridade com o studio do lado do mobile ![[Pasted image 20260520113015.png]]
+ao selecionar o tipo de relação ele vai buscar a pesquisar desse tipo ![[Pasted image 20260520113110.png|335]]
+
+
