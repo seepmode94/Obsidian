@@ -34,7 +34,8 @@ Resumo das regras esclarecidas com a Alexandra Borges (20/05/2026) sobre como ap
 
 ### Material de escritório
 - Papel, canetas, computadores, telemóveis.
-- Sofá pequeno, secretária, bancos/cadeiras.
+- Sofá pequeno, secretária, bancos/cadeiras — **OK**.
+- Não precisam de ser considerados **ativos**, basta serem **gastos**.
 
 ### Material de limpeza
 - O que for.
