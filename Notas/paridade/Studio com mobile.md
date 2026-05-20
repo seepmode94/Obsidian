@@ -79,3 +79,8 @@ Não aparece como no mobile uma relação de relate to, o que está acontecer é
 ao selecionar o tipo de relação ele vai buscar a pesquisar desse tipo ![[Pasted image 20260520113110.png|335]]
 
 
+### Formadores  
+
+**Ecrã:** # formadores → confirmar os nomes dos formadores, paridade total no mobile.
+
+![[Pasted image 20260520125525.png]]
