@@ -1,10 +1,8 @@
 <div align="center">
 
-# Reunião Formação — Resumo
+<u>CRM — reorganização de módulos para o fluxo da Formação</u>
 
-_CRM — reorganização de módulos para o fluxo da Formação_
-
-**Data:** 2026-05-25
+<u>Data: 2026-05-25</u>
 
 </div>
 
@@ -12,11 +10,11 @@ _CRM — reorganização de módulos para o fluxo da Formação_
 
 ## Sumário
 
-- Centralizar tudo no módulo _Ações_ com submódulos embutidos — acabar com saltos entre páginas.
+- Centralizar tudo no módulo <u>Ações</u> com submódulos embutidos — acabar com saltos entre páginas.
 - Eliminar texto livre → todos os campos selecionáveis (com opção "criar novo").
-- Acrescentar estado _Pré-Ativo_ e bloquear progressão enquanto faltarem campos / anexos.
+- Acrescentar estado <u>Pré-Ativo</u> e bloquear progressão enquanto faltarem campos / anexos.
 - Integrar Calendário CStaff, SIGO (CSV + recibos) e automatizar o Comprovativo de Frequência.
-- _Decisão pendente:_ Contactos multi-tipo vs módulos dedicados a Formandos / Pacientes.
+- <u>Decisão pendente:</u> Contactos multi-tipo vs módulos dedicados a Formandos / Pacientes.
 
 <div style="page-break-after: always;"></div>
 
@@ -24,26 +22,26 @@ _CRM — reorganização de módulos para o fluxo da Formação_
 
 | Submódulo | O que muda |
 |---|---|
-| _Formador_ | Dropdown com formações ministradas; ao selecionar, autopreenche os campos relacionados. |
-| _Sala_ | Novos campos: nome, morada, condições comerciais/pagamento, IVA, nº fatura, data pagamento, responsável + email. Pesquisa por dropdowns encadeados Região → Concelho → Cidade (mostra projetores disponíveis na área). |
-| _Formandos_ | Dentro da Ação. Anexar certificados / justificativos / reclamações. Checkbox "está no SIGO". |
-| _Sessões_ | Datas, hora início/fim, formandos em dropdown, _projetor atribuído_. Cada Ação tem duração definida = X sessões. |
-| _Projetores_ (aba) | Inventário central de todos os projetores. Atribuição ao nível da _Sessão_ (não da Ação). Vê posição em tempo real, calendário de reservas por projetor, evita double-booking, cruza com filtro geográfico das salas, mantém histórico de utilização e dispara e-mail automático ao detentor a pedir devolução. |
-| _DTP / Anexos_ (fim) | PPT, digitalização DTP, plano de sessão (auto), avaliações, relatórios. Sem anexos → ação não finaliza. Inclui verificação IEFP. |
+| <u>Formador</u> | Dropdown com formações ministradas; ao selecionar, autopreenche os campos relacionados. |
+| <u>Sala</u> | Novos campos: nome, morada, condições comerciais/pagamento, IVA, nº fatura, data pagamento, responsável + email. Pesquisa por dropdowns encadeados Região → Concelho → Cidade (mostra projetores disponíveis na área). |
+| <u>Formandos</u> | Dentro da Ação. Anexar certificados / justificativos / reclamações. Checkbox "está no SIGO". |
+| <u>Sessões</u> | Datas, hora início/fim, formandos em dropdown, <u>projetor atribuído</u>. Cada Ação tem duração definida = X sessões. |
+| <u>Projetores</u> (aba) | Inventário central de todos os projetores. Atribuição ao nível da <u>Sessão</u> (não da Ação). Vê posição em tempo real, calendário de reservas por projetor, evita double-booking, cruza com filtro geográfico das salas, mantém histórico de utilização e dispara e-mail automático ao detentor a pedir devolução. |
+| <u>DTP / Anexos</u> (fim) | PPT, digitalização DTP, plano de sessão (auto), avaliações, relatórios. Sem anexos → ação não finaliza. Inclui verificação IEFP. |
 
 <div style="page-break-after: always;"></div>
 
 ## 2. Estados e Fluxo
 
-- Atualmente _6 estados_ → adicionar _Pré-Ativo_ (estados antes da criação efetiva).
-- _Pré-Ativo_ só transita quando todos os campos obrigatórios estiverem preenchidos.
-- _Comprovativo de Frequência Individual_ deixa de ser Word manual → gerado automaticamente via IEFP ↔ CRM.
+- Atualmente <u>6 estados</u> → adicionar <u>Pré-Ativo</u> (estados antes da criação efetiva).
+- <u>Pré-Ativo</u> só transita quando todos os campos obrigatórios estiverem preenchidos.
+- <u>Comprovativo de Frequência Individual</u> deixa de ser Word manual → gerado automaticamente via IEFP ↔ CRM.
 
 ## 3. Contactos
 
-- Hoje agrega Formadores, Formandos, Médicos, Pacientes, Salas… via campo _Tipo_.
-- Necessário separar _conteúdo sensível_ (ex.: pacientes invisíveis para colegas da Formação).
-- _Questão em aberto:_
+- Hoje agrega Formadores, Formandos, Médicos, Pacientes, Salas… via campo <u>Tipo</u>.
+- Necessário separar <u>conteúdo sensível</u> (ex.: pacientes invisíveis para colegas da Formação).
+- <u>Questão em aberto:</u>
 
 | Opção | Vantagens |
 |---|---|
@@ -58,7 +56,7 @@ _CRM — reorganização de módulos para o fluxo da Formação_
 
 ### 4.1 Calendário CStaff ↔ CRM
 - Frame embebida no CRM com a vista mensal do CStaff: contadores diários (`Xaç. · Xform.`), cores por empresa e modalidade, entradas clicáveis abrem a ação.
-- Campos dinâmicos por modalidade: _e-learning_ vs _presencial_ abrem tabelas diferentes.
+- Campos dinâmicos por modalidade: <u>e-learning</u> vs <u>presencial</u> abrem tabelas diferentes.
 
 ![[anexos/cstaff-calendario.png|650]]
 
@@ -78,12 +76,12 @@ _CRM — reorganização de módulos para o fluxo da Formação_
 
 ## 5. Outros pontos
 
-- _Acessos IEFP_ — página nunca usada pelas colegas; manter em ambiente próprio.
-- _Pasta do Cliente_ — ficheiros no servidor, informação no CRM; permite estado de candidaturas em massa.
-- _NUTS II_ — campo a normalizar como local da ação.
-- _Módulo IEFP_ — avaliar utilidade; consolidar ou remover se redundante.
-- _Normalização_ — sem texto livre em lado nenhum; só listas selecionáveis com opção "criar novo".
-- _Automação_ — princípio transversal a todos os pontos.
+- <u>Acessos IEFP</u> — página nunca usada pelas colegas; manter em ambiente próprio.
+- <u>Pasta do Cliente</u> — ficheiros no servidor, informação no CRM; permite estado de candidaturas em massa.
+- <u>NUTS II</u> — campo a normalizar como local da ação.
+- <u>Módulo IEFP</u> — avaliar utilidade; consolidar ou remover se redundante.
+- <u>Normalização</u> — sem texto livre em lado nenhum; só listas selecionáveis com opção "criar novo".
+- <u>Automação</u> — princípio transversal a todos os pontos.
 
 <div style="page-break-after: always;"></div>
 
@@ -91,47 +89,44 @@ _CRM — reorganização de módulos para o fluxo da Formação_
 
 ![[anexos/crm-acao-mapeamento.png|700]]
 
-| Secção | Estado | Notas |
-|---|---|---|
-| Seguimento | Manter | Datas de verificação, envio info, certificados, fecho, etc. |
-| Localização / Sala | Expandir | Acrescentar: nome sala, condições comerciais/pagamento, IVA, _Fatura (em falta)_, responsável + email |
-| Formadores | Novo | Dropdown com formações ministradas; autopreenche campos |
-| Sessões | Novo | Início, fim, formandos (dropdown), _projetor atribuído à sessão_. Duração da Ação = nº fixo de sessões. |
-| Projetor | Move-se | Sai do ecrã da Ação (campo único em Localização) e passa para o nível _Sessão_. Gestão central na aba _Projetores_ (inventário + calendário). |
-| Formandos | Novo | Anexar documentos + checkbox SIGO |
-| Fatura | Manter | Nº, valor, datas, valor pago |
-| Atribuição | Manter | Atribuído a · Vendedor |
-| Relações | Manter | Faturas · Sessões · Grupos de segurança |
+| Secção             | Estado   | Notas                                                                                                                                         |
+| ------------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Seguimento         | Manter   | Datas de verificação, envio info, certificados, fecho, etc.                                                                                   |
+| Localização / Sala | Expandir | Acrescentar: nome sala, condições comerciais/pagamento, IVA, <u>Fatura (em falta)</u>, responsável + email                                         |
+| Formadores         | Novo     | Dropdown com formações ministradas, pagamento, IVA, <u>Fatura (em falta)</u>, responsável + email; autopreenche campos ao selecionar o formador    |
+| Sessões            | Novo     | Início, fim, formandos (dropdown), <u>projetor atribuído à sessão</u>. Duração da Ação = nº fixo de sessões.                                       |
+| Projetor           | Move-se  | Sai do ecrã da Ação (campo único em Localização) e passa para o nível <u>Sessão</u>. Gestão central na aba <u>Projetores</u> (inventário + calendário). |
+| Formandos          | Novo     | Anexar documentos + checkbox SIGO                                                                                                             |
+| Fatura             | Manter   | Nº, valor, datas, valor pago, documentos em anexo                                                                                             |
+| Atribuição         | Manter   | Atribuído a · Vendedor                                                                                                                        |
+| Relações           | Manter   | Faturas · Sessões · Grupos de segurança                                                                                                       |
 
-> _A confirmar:_ campos legais/IEFP fora deste ecrã que precisem entrar no novo desenho.
 
 <div style="page-break-after: always;"></div>
 
 ## 7. Próximos passos
 
-- [ ] Definir submódulos de _Ações_ e arquitetura final.
-- [ ] _Sala_ — novos campos + base de dados geográfica (Região → Concelho → Cidade) cruzada com projetores.
-- [ ] _Formador_ — dropdown com autopreenchimento.
-- [ ] _Formandos_ — módulo dentro da Ação.
-- [ ] _Sessões_ — datas, horas, formandos em dropdown, projetor atribuído. Duração da Ação = nº fixo de sessões (regra a estipular).
-- [ ] _Projetores_ — inventário central, calendário de reservas por projetor (validação anti-double-booking ao criar sessão), histórico de utilização e e-mail automático de devolução.
-- [ ] _DTP/Anexos_ — módulo final; ação não finaliza sem anexos; ligar verificação IEFP.
-- [ ] Confirmar onde se faz a _emissão de certificados_.
-- [ ] _Calendário CStaff_ — integração + frame embebida no CRM.
+- [ ] <u>Sala</u> — novos campos + base de dados geográfica (Região → Concelho → Cidade) cruzada com projetores.
+- [ ] <u>Formador</u> — dropdown com autopreenchimento.
+- [ ] <u>Formandos</u> — módulo dentro da Ação.
+- [ ] <u>Sessões</u> — datas, horas, formandos em dropdown, projetor atribuído. Duração da Ação = nº fixo de sessões (regra a estipular).
+- [ ] <u>Projetores</u> — inventário central, calendário de reservas por projetor (validação anti-double-booking ao criar sessão), histórico de utilização e e-mail automático de devolução.
+- [ ] <u>DTP/Anexos</u> — módulo final; ação não finaliza sem anexos; ligar verificação IEFP.
+- [ ] Confirmar onde se faz a <u>emissão de certificados</u>.
+- [ ] <u>Calendário CStaff</u> — integração + frame embebida no CRM.
 - [ ] Campos dinâmicos por modalidade (e-learning vs presencial).
-- [ ] Estado _Pré-Ativo_ — adicionar ao ciclo (6 → 7) e bloqueio até campos preenchidos.
-- [ ] _Comprovativo de Frequência_ — automação IEFP ↔ CRM.
-- [ ] _Pasta do cliente_ centralizada no CRM + estado de candidaturas em massa.
-- [ ] _NUTS II_ — normalizar como local da ação.
-- [ ] _SIGO_ — recibos + CSV de formandos; adaptar `Formandos_Template.xls` para formadores.
-- [ ] _Importação CRM_ — campos obrigatórios + deduplicação.
-- [ ] _IEFP_ — avaliar manter / consolidar / remover.
-- [ ] _Contactos_ — regra de visibilidade para isolar dados sensíveis.
+- [ ] Estado <u>Pré-Ativo</u> — adicionar ao ciclo (6 → 7) e bloqueio até campos preenchidos.
+- [ ] <u>Comprovativo de Frequência</u> — automação IEFP ↔ CRM.
+- [ ] <u>Pasta do cliente</u> centralizada no CRM + estado de candidaturas em massa.
+- [ ] <u>NUTS II</u> — normalizar como local da ação.
+- [ ] <u>SIGO</u> — recibos + CSV de formandos; adaptar `Formandos_Template.xls` para formadores.
+- [ ] <u>Importação CRM</u> — campos obrigatórios + deduplicação.
+- [ ] <u>IEFP</u> — avaliar manter / consolidar / remover.
+- [ ] <u>Contactos</u> — regra de visibilidade para isolar dados sensíveis.
 - [ ] Converter todo o texto livre em listas selecionáveis (com "criar novo").
 - [ ] Validar se Formandos/Formadores ficam ocultos após migração para Sessões.
 
 ## 8. Pendências
 
-- _Decisão de modelo:_ Contactos multi-tipo vs módulos dedicados a Formandos e Pacientes.
+- <u>Decisão de modelo:</u> Contactos multi-tipo vs módulos dedicados a Formandos e Pacientes.
 - Confirmar se o template SIGO suporta várias tipologias num só ficheiro.
-- Confirmar local de _emissão de certificados_.
