@@ -125,6 +125,9 @@
 - [ ] <u>Contactos</u> — regra de visibilidade para isolar dados sensíveis.
 - [ ] Converter todo o texto livre em listas selecionáveis (com "criar novo").
 - [ ] Validar se Formandos/Formadores ficam ocultos após migração para Sessões.
+- [ ] automatizar via scripts e scraping a emissão de certificados de conclusao e os estados no iefp
+
+
 
 ## 8. Pendências
 
