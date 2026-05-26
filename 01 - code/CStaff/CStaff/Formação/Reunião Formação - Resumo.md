@@ -127,7 +127,7 @@
 - [ ] Validar se Formandos/Formadores ficam ocultos após migração para Sessões.
 - [ ] automatizar via scripts e scraping a emissão de certificados de conclusao e os estados no iefp
 
-
+<div style="page-break-before: always;"></div>
 
 ## 8. Pendências
 
