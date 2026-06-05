@@ -118,6 +118,27 @@ Objetivo inicial: bot que prevê o mercado e aposta sozinho, com "ganhos garanti
 
 **Próximo passo (F0):** clonar o weather-bot, correr em simulação, e mapear onde entra a camada de calibração ML.
 
+### Alternativa explorada: bot de arbitragem (autónomo)
+
+**Instinto correto:** na arbitragem a autonomia é obrigatória (janelas de segundos, humano não chega a tempo) — mas "só de certa forma" = autonomia com travões rígidos.
+
+⚠️ **Bloqueio crítico para Portugal:** a arbitragem clássica é *cross-platform* (Kalshi↔Polymarket). Mas a **Polymarket está bloqueada em PT desde jan-2026** (lei PT proíbe apostas em eventos políticos; prediction markets = jogo não licenciado; bloqueou utilizadores PT por completo). Logo a perna Polymarket é inacessível de forma legítima. A Kalshi ainda não está na lista de bloqueio dela, mas pela mesma lógica legal o estatuto em PT é **frágil** (Espanha já bloqueou ambas). → **Sem caminho limpo para arb com dinheiro real a partir de PT agora.** Falsificar residência US = fraude (fora de questão).
+
+**Caminho legítimo:** construir tudo em **paper/simulação com dados reais** (legal, sem dinheiro em risco, projeto técnico real). O mesmo código vai a live se/quando houver jurisdição/venue legítimo.
+
+**A "certa forma" (autonomia com guardrails):**
+- Disparar só quando o edge *líquido de todas as taxas* + buffer > limiar; sem edge → não age.
+- Ordens **FOK/IOC** para evitar ficar preso a uma só perna (leg risk).
+- **Matching de critério de resolução** — o killer silencioso: mercados "iguais" que resolvem diferente pelo texto. Só pares pré-validados (whitelist).
+- Caps: $ por oportunidade, exposição total, posições concorrentes, capital bloqueado até resolução.
+- Kill switch / circuit breakers (perda diária, falhas consecutivas, "arb bom demais → provável mismatch, ignora").
+- Tier humano: auto abaixo de $X, aprovação acima.
+- Dry-run primeiro; ordens idempotentes (falhas de rede / fills parciais).
+
+**Realidades honestas:** dominado por HFT (apanhas as sobras), taxas comem a margem, capital preso até resolução baixa o retorno anualizado.
+
+**Tools:** `pmxt` (execução unificada — mas perna Polymarket bloqueada limita-o em PT), `Jon-Becker` (backtest: medir quão frequentes/duradouras foram as arbs → decidir se vale a pena).
+
 Fontes:
 - Kalshi — International access & eligibility: https://help.kalshi.com/en/articles/14026044-international-access-eligibility
 - Kalshi — Where is Kalshi (disponibilidade por país): https://where.kalshi.com/
