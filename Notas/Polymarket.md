@@ -92,7 +92,31 @@ Objetivo inicial: bot que prevê o mercado e aposta sozinho, com "ganhos garanti
 - **F4** — paper trading live.
 - **F5** — (só se validado) capital real pequeno + limites de risco.
 
-**Em aberto:** domínio alvo (depende da expertise/dados do António). Recomendo passar para nota própria quando começarmos o F0.
+### Repos analisados (GitHub) e decisão
+
+> Análise dos READMEs em jun-2026. Nenhum tem "ganhos garantidos"; os LLM-puros admitem perdas e não têm edge validado; só o `homerun` modela fills/slippage a sério.
+
+| Repo | ★ | O que é | Método de previsão | Backtest / paper | Custo APIs | Licença | Veredicto |
+|---|---|---|---|---|---|---|---|
+| **suislanchez/polymarket-kalshi-weather-bot** | 424 | Bot weather Kalshi (KXHIGH) + Poly | Ensemble GFS 31 membros (voto simples, **sem calibração**) | Só simulação/paper, com Brier tracking | **Grátis** (Open-Meteo/NWS) | MIT | **BASE recomendada** — domínio tratável; a calibração ML que falta é o *teu* valor a acrescentar |
+| **Jon-Becker/prediction-market-analysis** | 3466 | Dataset + análise (36 GiB Poly+Kalshi) | — (só dados) | Sem engine própria | Grátis | MIT | **Camada de DADOS** para treino + backtest histórico |
+| **braedonsaunders/homerun** | 79 | Plataforma completa (estratégias em Python) | Escreves tu; tem treino ML + 25 estratégias | Backtest L2 sofisticado + shadow→live | Grátis (precisa Postgres/Docker) | **AGPL-3.0** ⚠️ | "Graduar para" quando precisares de infra séria; copyleft importa se distribuíres |
+| **arshka/pykalshi** | 101 | Cliente Python Kalshi (ws, pandas, orderbook) | — | — | Grátis | MIT | Camada de API se construíres de raiz |
+| **pmxt-dev/pmxt** | 1846 | Cliente unificado multi-plataforma | — | — | Grátis | MIT | Útil p/ cross-platform/arb; TS-primário |
+| ryanfrigo/kalshi-ai-trading-bot | 426 | Toolkit LLM | 1 LLM via OpenRouter | Paper (SQLite), sem backtest histórico | **OpenRouter pago** | MIT | Honesto, mas LLM ≠ edge; roubar padrões de risco (quarter-Kelly, circuit breakers) |
+| OctagonAI/kalshi-trading-bot-cli | 313 | CLI IA, edge vs orderbook, half-Kelly, 5 gates | Octagon Research API (IA) | Backtest 15d (Brier, skill score) — sem fees/slippage | **Octagon + LLM pagos** | MIT | Bem feito, mas núcleo depende de API paga |
+| 0mnjb/Kalshi-AI-Trading-Bot | 83 | Ensemble de 5 LLMs | 5 LLMs (Grok/Claude/GPT/Gemini/DeepSeek) | Paper, sem backtest formal | **xAI + OpenRouter pagos** | MIT | LLM-as-forecaster não calibrado; só admite edge em NCAAB |
+
+**Decisão:**
+- **Base:** `suislanchez/polymarket-kalshi-weather-bot` — dá o pipeline de dados meteo (Open-Meteo GFS, NWS), integração com mercados KXHIGH da Kalshi, Brier tracking e Kelly, **em modo simulação por defeito** (alinha com o nosso paper-first). A fraqueza dele (voto de ensemble sem calibração) é exatamente o que a tua camada de ML resolve → projeto de aprendizagem com hipótese real de edge.
+- **Dados p/ backtest:** `Jon-Becker/prediction-market-analysis` (histórico Kalshi).
+- **Graduar para:** `homerun` se precisares de infra séria (atenção à AGPL).
+- **De raiz, se preferires:** `pykalshi` como cliente.
+- **Evitar como núcleo preditivo:** os LLM-puros (ryanfrigo/Octagon/0mnjb) — servem só para *roubar padrões de gestão de risco*.
+
+**Domínio alvo resolvido:** meteorologia (séries KXHIGH), por ser o mais tratável e por a melhor base já o cobrir.
+
+**Próximo passo (F0):** clonar o weather-bot, correr em simulação, e mapear onde entra a camada de calibração ML.
 
 Fontes:
 - Kalshi — International access & eligibility: https://help.kalshi.com/en/articles/14026044-international-access-eligibility
