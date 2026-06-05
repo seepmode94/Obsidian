@@ -1,0 +1,111 @@
+confianca,criado_hoje,id_novo,ja_existia,id_antigo,tipo_antigo,tokens_comuns,pesquisar_global
+ALTA,Anabela Bastos Canelas Dias,6cdd5e14-8f13-4155-be13-359ccecef957,Anabela Bastos Canelas,43e8dbfa-411f-5c64-ae99-4388754f2a40,^Formador^,3,anabela
+ALTA,Daniel Vinhais Pereira,737e8d50-534f-43a1-a1dc-05e2ca5d3e51,Daniel Cardoso Botelho Vinhais Pereira,b78bd3c3-2afc-5748-a53c-146cb7bf68fb,^Formando^,3,pereira
+ALTA,Luís António Santos da Silva (REPETIDO com linha 868),e17d48e8-fa25-4dff-b5cc-387d983c4b64,Luís António Ferreira dos Santos,bf11e592-a240-5999-b220-eeb0bf9c2415,(normal),3,antonio
+ALTA,Luís Miguel Marques Casquinha (NOVO),2d8f3ff6-1d49-45eb-9aad-6412f6c82e6f,Luis Miguel Marques Frade,d7cc2f9c-e808-5568-95d6-39756a6d6688,(normal),3,marques
+ALTA,ANA SOFIA FERREIRA CANEDO,e0234ace-d09f-401c-aa57-90f05152ba00,Ana Ferreira,78858e75-d983-5fff-ab78-1667789fee89,(normal),2,ferreira
+ALTA,Alexsandro Medeiros,5282b98d-ecc4-4026-a059-16f339930565,Alexsandro Portela Medeiros,a95ab552-fb53-5254-a482-32f05df41172,"^Formando^,^Paciente^",2,alexsandro
+ALTA,Ana Beatriz Teixeira,b2bc7342-42bd-45b1-839e-4d9417ceda54,Ana Teixeira,b65d6f74-4442-5c72-ac88-336b23166171,(normal),2,teixeira
+ALTA,Ana Carlota Gomes de Barros Queiroz,ce91d01c-84b9-4761-8db5-f7d8108cf5fb,Ana Gomes,cd599c50-1b7b-5f02-9630-31f463f685b6,(normal),2,gomes
+ALTA,Ana Ferreira Canedo,323b8ef2-bee4-4cb5-a72f-b6a70d0aedbf,Ana Ferreira,78858e75-d983-5fff-ab78-1667789fee89,(normal),2,ferreira
+ALTA,Ana Loureiro,9578828e-e6b1-40ec-ad69-51a275328ef8,ANA BEATRIZ ESTIMA DOS SANTOS LOUREIRO,e5bc99a8-b549-5c99-805e-102da76a5288,"^Formando^,^Paciente^",2,loureiro
+ALTA,Anabela Lourenço,04908738-fcce-4527-8433-102bb7e852ca,Anabela da Conceição Lourenço do Nascimento,ad8ab3ea-6426-51e0-b18e-d2e088e9cdab,"^Formador^,^Paciente^",2,lourenco
+ALTA,António Mata,80a5c33c-8b78-482e-9cc3-393762b93a04,António Joaquim Mata,a1b446af-becc-5526-ac5c-1492903dde93,(normal),2,antonio
+ALTA,Catarine Tavares,bf3c7798-0976-4708-9237-537ad18e58bc,Catarine da Siva Tavares,4710967b-9733-582c-8a11-d0f30a8faeee,^Formando^,2,catarine
+ALTA,Diogo Manuel de Oliveira Gomes,0d00f5ca-95e2-4a77-b239-748dd7f8172d,Diogo Oliveira,fce7966c-d717-5da7-a20b-7657b88ce561,(normal),2,oliveira
+ALTA,Débora Alves,f3bf64e7-d634-488b-bfe4-2437897bdbb8,Débora Alves - Formadora,d17a18e4-6558-58e4-b0aa-0f929a20ce2e,^Formador^,2,debora
+ALTA,Fernando Galvão Jesus (ALTEROU IBAN),cf771e26-9325-48d8-87d3-fcf368063d3c,Fernando de Jesus Dias Frazão,9a856f94-dd3a-5783-b8c6-595cd0de5fb1,(normal),2,fernando
+ALTA,Fernando Palma,c4afcc9e-70b0-4e97-8459-46545b92cc14,Fernando Manuel Palma Cavaco,44afb053-6c4d-59e3-98a9-a37ac4f495ff,(normal),2,fernando
+ALTA,Gabriel Marques,bb977a4a-f159-4782-8ee7-fdb145631980,Gabriel Albino Marques de Carvalho,b84b8cac-139d-5f1f-8028-414d0a299bbf,^Formando^,2,marques
+ALTA,Hernani Francisco,ea83b3c8-0384-4827-864d-7ebd3407f140,Hernani Francisco - Formador,29ae7923-33da-59c2-a2aa-335ba76f88ed,^Formador^,2,francisco
+ALTA,Hernani Francisco (ALTEROU O IBAN),c8ee3fc2-1ce7-4e55-b3a5-f3e3b7d72b09,Hernani Francisco - Formador,29ae7923-33da-59c2-a2aa-335ba76f88ed,^Formador^,2,francisco
+ALTA,Hélder Esteves,92d38b4e-d873-4c9d-a7d2-3dd8ca82726b,HÉLDER FILIPE ESTEVES FERREIRA,9fd2aca4-097a-58c5-8d90-7a3e2eb4f04f,^Formando^,2,esteves
+ALTA,Inês Lourenço Sousa,f96771f8-0e76-4123-b3a7-43366eecea08,Inês Lourenço (RH),d4d3b4fc-b0fa-5fce-ade8-2752738dbebe,^^,2,lourenco
+ALTA,Jesse Pontes,034e2d3c-c3c2-4d73-b51a-efad198fd467,Jesse Bandeira de Sousa Pontes,d63a31ee-5b37-5a6a-9e4d-d7c624be5be6,"^Formando^,^Paciente^",2,pontes
+ALTA,Joana Queiros,82a2c8e3-2c46-48b3-9bbc-2cd7e0e7ca97,Joana Queirós - Formadora,87e35cf8-e59d-1d06-863a-654b96b75fe1,^Formando^,2,queiros
+ALTA,Joana Rita Ferreira Gomes,3368bc54-17c4-447f-a617-00bb018765f9,Joana Ferreira,df3aa83e-329c-59fc-9fc9-da2413c73ae6,(normal),2,ferreira
+ALTA,Joaquim Aguiar,9c29a13c-bddc-4ee2-beb8-56a7918a338f,Joaquim José Aguiar Pinto,b88a427f-e62a-5cb8-8048-69322d44c842,^^,2,joaquim
+ALTA,Joaquim Filipe dos Santos Costa,e543eed7-cfc7-4a71-8f76-ee8f29b4117d,joaquim Santos,185d7cfa-b455-5d48-a50d-5c88a3a62217,(normal),2,joaquim
+ALTA,Joaquim Lopes Álvaro,b6cf0a9a-84c4-4c76-9165-814f3b084cbc,Joaquim lopes,3ae22a00-1cf1-22f2-b507-58f5489b9333,(normal),2,joaquim
+ALTA,Jose Jorge Lopes dos Santos,b6515363-25ef-4e11-b9cb-066c63ce80f2,José Lopes,b6e34be2-f172-57f0-9656-d1c23966b6c9,(normal),2,lopes
+ALTA,José Carlos Rocha Godinho,04ff27a6-47ba-4e84-a277-5fc0f2a3f8cf,José Godinho,133c1284-5ef9-5f0a-a40a-77c486098412,(normal),2,godinho
+ALTA,José Geraldes,57781da1-c872-4f4d-8d91-f1aa73a8e962,JOSÉ ALBERTO GERALDES ALEXANDRE,8c271833-55d8-503c-a0a6-18ea327657e0,"^Formando^,^Paciente^",2,geraldes
+ALTA,José Leandro Oliveira Ferreira,abe2faf3-0df0-48da-ba7d-e6d02caea28f,José Ferreira,a0d03616-940b-52ee-bfe7-8e15560b173e,(normal),2,ferreira
+ALTA,José Leandro Oliveira Ferreira (alterou IBAN),64d209dd-50a6-4c3a-bc45-cabfda57794e,José Ferreira,a0d03616-940b-52ee-bfe7-8e15560b173e,(normal),2,ferreira
+ALTA,José Pedro Duarte Silva Velhinho Geraldes (Alterou IBAN),4ae46d73-60f7-4576-97dd-52a0dbb8857e,José Carlos Silva,17541ec4-ab32-5e09-9e2a-254f5d014a3f,(normal),2,silva
+ALTA,Julieta Messena,c68dc324-6303-4860-9e77-f3fc3c8c34ac,JULIETA DO CÉU VIEGAS MESSENA- Formadora,412275a3-7257-598d-b8db-9b90a708fd84,(normal),2,julieta
+ALTA,"Julieta Messena (Mordomia das Letras Unip, Lda)",1c4104a7-6431-48f7-a32c-ae29686221b3,JULIETA DO CÉU VIEGAS MESSENA- Formadora,412275a3-7257-598d-b8db-9b90a708fd84,(normal),2,julieta
+ALTA,"Luis Lourenço (Sandra Maria Rodrigues Moreira, Unip, Lda)",5d9aa0f5-d413-47a8-b35b-b5b58c36dcca,Luis Miguel Lourenço,abe6437e-1c8a-5578-aae7-86f579152201,(normal),2,lourenco
+ALTA,Luis Milheiro,ca282b46-8df5-4bc9-8f8f-745d80c705a6,Luis Carlos Milheiro de Oliveira,8a6815f1-f432-5f7b-9c30-f478499fe31c,^Formando^,2,milheiro
+ALTA,Luís Casquinha,fdffef02-d037-44e3-bc78-9479a3111097,Luís Miguel Marques Casquinha,7c51c33d-9309-5833-94bb-672c9a355a11,^Formando^,2,casquinha
+ALTA,Lúcia Sobral Sousa,a873b1c1-e4c3-4f54-a2a1-7b1f239cf439,Lúcia Sousa - Formadora,10dea836-9a70-58e3-89f4-8a2b1dd286ee,(normal),2,sousa
+ALTA,Manuel Joaquim Barbosa Dias,1239540c-8c6e-4593-9ea3-fbd9dc308558,Manuel Dias,9e2e00e3-04d5-2262-b7a5-58f548f1a002,(normal),2,manuel
+ALTA,Marco Sá,3eda7eef-fddd-4f36-97b4-594f60975848,Marco António de Sá Correia,e523b51f-95c1-596c-84d3-520688367a52,(normal),2,marco
+ALTA,Maria Conceição Figueiredo,e874dec8-9f6e-4734-9964-ad17e020d4e7,Maria Conceição,449311cd-4357-55df-9ef6-900f72c44d8d,(normal),2,conceicao
+ALTA,Nuno Tomás Pereira Sobral,1baceac6-050e-452d-b4fd-119d9a27463b,Nuno Pereira,3e055d7e-4c28-52db-ba0e-567fe30e8e70,(normal),2,pereira
+ALTA,Paula Catarino,168b4fde-2a63-41e3-bd59-a26490e66174,PAULA ALEXANDRA PINTO RAMOS CATARINO,14fe5f7a-9ed7-5c62-b0e8-2864345ee10a,"^Formando^,^Paciente^",2,catarino
+ALTA,Paulo Borges (CARDINAL EXPERIENTE),cc4d75a6-0d7f-4809-9135-fe7930feefc2,Paulo Alexandre Fernandes Borges,c1811881-e212-517d-a051-89d215daa926,^Formando^,2,borges
+ALTA,Paulo Moreira(ktc),726bae3f-ffa9-4ddd-b820-62fd7555da48,Paulo Moreira,6f5a5e5f-1a15-5543-8f1d-7547459da318,(normal),2,moreira
+ALTA,Paulo Sérgio Dionisio Correia,6cce7ed7-0ae3-4941-a292-5e501d1f7b89,Paulo Sérgio,387fce7d-d8e3-56d5-ae21-8bbf28b3a2e2,(normal),2,sergio
+ALTA,Paulo Vinicius Lopes,f833fd4f-46b6-4793-bd33-45e33318853b,Paulo Lopes,e558b64e-162d-541e-b58f-627fc1ba42ff,(normal),2,lopes
+ALTA,Paulo dos Santos Vieira,a5bd6289-a191-4fc6-af1b-7f74ec6a0c4c,Paulo Vieira*,f153d162-e98b-5e3d-bd16-a788d7d6e8ef,(normal),2,vieira
+ALTA,Pedro Canteiro,f9d87e13-252d-45e7-9244-1e44eaf95e1e,Pedro Canteiro - Formador,ee053b73-817d-5f95-b2f5-1699394664e4,^Formador^,2,canteiro
+ALTA,Pedro Osório Santos Ferreira,392d64fd-ebb6-4bae-978e-aa556239783d,Pedro Santos,b7fa848d-a34f-28df-9b78-58f548eadb38,(normal),2,santos
+ALTA,"RICARDO AMADEU, UNIPESSOAL LDA (NOVO NIF)",e96b88ec-1eb5-4181-b85d-a6e234e46a25,Ricardo Amadeu,b683e253-a654-5422-a561-7065f19edda7,(normal),2,ricardo
+ALTA,Ricardo Alexandre Cardoso Rodrigues,5d867329-e7f6-4706-980c-c003111db149,Ricardo Cardoso,02301811-dbc0-5895-b196-3c638d6c4388,(normal),2,cardoso
+ALTA,"Ricardo Amadeu (REFLEXASTUTO - FORMAÇÃO E CONSULTORIA, UNIP. LDA)",8e21f1c6-703e-4cf3-b114-239d45872199,Ricardo Amadeu,b683e253-a654-5422-a561-7065f19edda7,(normal),2,ricardo
+ALTA,Ricardo Pimentel,46fb45b9-f658-4397-b901-6f9d2bc42f3b,RICARDO SAMPAIO PIMENTEL,1430259e-37bf-53ad-8878-607fa1237f81,^Formando^,2,pimentel
+ALTA,Ricardo Vinhais,377bff6a-f473-41c6-ae37-f9c0db90eee8,Ricardo Vinhais - Formador,1d1b6b6d-869d-5102-860b-ececf35f8314,^Formador^,2,vinhais
+ALTA,Rosa Maria Bastos Gonçalves Guerra,32141dcc-95fd-4716-856b-0ec5e43bd564,Rosa Maria,472a8d40-44bf-57e1-9109-62285fe79bd9,(normal),2,maria
+ALTA,Rui Emanuel Fernandes,495495f4-892d-40da-81bc-945ec3830b88,Rui Fernandes,1d7d007b-e31c-5241-8508-4f60f0ecd17a,(normal),2,fernandes
+ALTA,"Rui Messena (Mordomia das Letras Unip, Lda)",13808207-3b16-48ab-90d7-88f59842e7c8,Rui Messena,21d4d37d-d2c6-50b2-a8ad-221189eba5c6,^Formador^,2,messena
+ALTA,Rui Miguel Soares José,7fdccc8b-24d6-46f4-abe9-b5c56b56a43d,Rui Miguel,773abedc-fe68-5f85-8710-f4ec5e487742,(normal),2,miguel
+ALTA,"Rui Silva (Mordomia das Letras Unip, Lda)",a2cc5019-521c-4666-a61f-eaea6e4440af,Rui Silva,5ab60595-dacc-5093-9c6e-2add5ff04aff,(normal),2,silva
+ALTA,Sandro Sá,4f251791-f04e-4ae1-abdf-7c2cabd2e8f9,Sandro Domingos Gomes Silva Sá,8a2d1886-1d02-59b1-a8d5-c8a35c40c938,"^Formando^,^Paciente^",2,sandro
+ALTA,Sara Maria Lucas da Costa,65d2ec9d-d0d8-4fbc-be6f-03ea87c3343a,Sara Costa (Gestor de Frota),281c1ff2-13c6-5489-9145-3871878633dd,(normal),2,costa
+ALTA,Sara Queiroz,357d4f36-4c4e-4db5-b377-421a0883c878,Sara Queiroz - Formadora,3c8d0104-c135-538a-8f91-d403577a490b,^Formador^,2,queiroz
+ALTA,Tiago Almeida (ALTEROU IBAN),b2f4476e-6bac-45bd-8068-a3aab7b83b79,TIAGO MIGUEL FREITAS DE ALMEIDA,5c1b0fef-387c-535c-920d-6af8696e7e7f,(normal),2,almeida
+ALTA,Tiago Guimarães,3c7266fd-ab63-4f86-827d-642b31cb5d4a,TIAGO  CESAR  GUIMARÃES,8002fecb-870b-452b-b792-3d5f52cb5f83,(normal),2,guimaraes
+ALTA,VERA SOFIA PIRES DE MATOS,a808735c-e29d-4ed8-8506-df5015679b39,Vera Pires (RH),97df66ff-df84-5b71-b396-0638340dbf4e,^^,2,pires
+ALTA,Vasco Alves,4ec2b104-0597-47de-82be-d4834ae38315,Vasco André Pinto Alves,9a2f22bb-59c7-5a00-8249-6a35c344810c,^Formando^,2,alves
+ALTA,Vitor Costa (ALTEROU O IBAN),5d6dc5a7-e956-4b1b-bfba-b871c96903cc,Vitor Costa* e Elsa Costa** (donos),bf7ba578-f9c4-539e-aa50-9f0d1d2ffdf6,(normal),2,costa
+MEDIA,Ana Isabel Moreira da Silva e Sousa,bfeb3656-0fde-4ed4-87e3-3fb7c7063d6d,Ana Isabel de Sousa Cabrita,0c46a8c1-b105-5c77-9b59-f0ec12cb8b1b,(normal),3,isabel
+MEDIA,Cláudia Isabel Pereira Silva,ed853417-2863-45fd-90b6-242702f79f42,Cláudia Sofia Pereira Tavares Silva,b733bba2-129e-5e24-985a-cd79babf5a60,"^Formando^,^Paciente^",3,pereira
+MEDIA,Francisco José da Silva Coelho Lima,15470992-5137-4ec6-aae6-a2c56c00b6de,FRANCISCO JOSÉ DA SILVA VIEIRA,9ca3405e-1bac-5194-b7cd-18b06add3632,(normal),3,francisco
+MEDIA,José Carlos Laranjeira Alves Costa,acf0249e-018e-4af6-8821-146c899f45fe,José Carlos da Costa Lopes,3e96bd71-8ade-5ebb-9f7c-ca224e5b5942,(normal),3,carlos
+MEDIA,João Paulo dos Santos Cebola,8f5d433a-d2ec-41c2-8ab7-7505277eb30e,João Paulo Paciência Santos,7fd4d9bf-6124-5d82-875e-f1de12fdfea0,(normal),3,santos
+MEDIA,LUIS FILIPE LOPES VIEIRA,0bf4f95d-1cc3-4f67-85e7-fdda19514573,LUÍS FILIPE LOPES MOURA,970329e0-2748-57d7-9487-aabef60d7e17,(normal),3,filipe
+MEDIA,Luís António Santos da Silva,471d23fa-5abe-42e3-91a6-e736d8b148dc,Luís António Ferreira dos Santos,bf11e592-a240-5999-b220-eeb0bf9c2415,(normal),3,antonio
+MEDIA,Luís Manuel Cortes Nunes,b7cb1c50-8e2e-4627-be57-691b90b5f8af,Luis Manuel Nunes Antão,94addf25-ee1b-5a57-9e79-b6373a6bbafb,(normal),3,manuel
+MEDIA,Manuel Paulo Pereira Alves Calado,bd294c69-a85e-49ae-b3c0-01a3e8ff92bb,Manuel Fernando Pereira Alves,d4fa15b0-5a7d-53a1-8f76-029decb366c4,(normal),3,pereira
+MEDIA,Maria de Fátima Antunes Duque,affdbc6e-1e93-46d1-bb2c-d00be6106c2a,MARIA DE FATIMA ANTUNES FAUSTINO,e1fe27a7-42b2-54ff-832a-0097a20f04e7,(normal),3,antunes
+MEDIA,Paulo Jorge de Sá Carvalho,58d26efe-8153-45ad-93c1-981e285f0c13,Paulo Firmino de Sá Carvalho,2ad243a2-f123-5a9a-81b4-6cf20a998efc,(normal),3,carvalho
+MEDIA,Pedro Alexandre Rodrigues Moço de Jesus,28fc6c55-c94e-4deb-ba4b-aeb63449b04c,Pedro João Rodrigues de Jesus,f08e47b9-034c-5490-8cc2-cdc04e7ca80c,(normal),3,rodrigues
+MEDIA,Pedro Miguel Pereira da Silva Costa,3350cdfb-d44b-4928-badd-98aa36425db2,PEDRO MIGUEL SILVA VARANDAS,fa8f030c-5755-5f63-b6ac-02286b995d14,(normal),3,miguel
+MEDIA,Rui Fernando Alves Dias,66d1c01f-1139-40b4-a493-59ad90b5313a,Rui Fernando Pereira Alves,3fbef2b5-ffbe-5026-9eb8-0b8b169fa99a,(normal),3,fernando
+MEDIA,Rui Miguel da Silva Lopes,4ba39a42-e12f-45e9-a501-146316294e6c,Rui Miguel Martins Lopes,1c532ada-13d7-5259-8fd2-c0f2bcc243e6,(normal),3,miguel
+MEDIA,Vitor Manuel Alves Brito,2dd46bd7-e315-42f1-b2df-f70345e601fc,Vitor Manuel Cardoso Romão Alves,1e2cf556-69a1-5eb3-ab1b-fd25d0d91210,(normal),3,manuel
+MEDIA,ALEXANDRA PAULINA QUINTELA ANTAS FREITAS LEITE,02a5d0b6-4f8d-4c60-8834-d6c90b57ba1a,Alexandra Leite da Russa,f3889e3d-c207-5e6c-b3fe-8f037fb29185,"^Formando^,^Paciente^",2,alexandra
+MEDIA,ANTONIO PEDRO SEQUEIRA LOURO,cc44db51-bb57-4e66-b2b8-5e56bafd2a9d,António Costa / Sr. Pedro,274ac028-5737-599d-9fe6-42076e47fce7,(normal),2,antonio
+MEDIA,ANTONIO RUI MOREIRA NOGUEIRA,c759f72b-1df6-4277-8e34-fa81f9fa9a45,António Moreira Está para africa,cbcf0bc7-66e7-59aa-bddd-8d7f1936fdec,(normal),2,antonio
+MEDIA,Alcino Alberto Pires Ferreira,7b07d7a3-bc91-4c63-8988-3fdccbddb7b1,Alcino Pedro Ferreira da Cruz Castro,6a601275-009b-533e-9192-7f461dd497f2,(normal),2,ferreira
+MEDIA,Anacleto Jordão Santos,21294a15-b62a-4a85-8d4b-309d0b9e8913,Anacleto Santos Coteiro Bajouco,2c3090b6-4398-5c12-9f86-22341fb43fdc,(normal),2,anacleto
+MEDIA,Andreia Paulo da Silva,47d55d14-3ce1-42ec-a8ae-361d7c71ae6b,Andreia da Silva Alves,b43d8707-3182-55b1-ba26-b387e33be74b,(normal),2,andreia
+MEDIA,Carlos Filipe Lima,07ee5873-9822-4b4c-8213-69919bcc2b1d,Carlos Manuel Filipe Roque,5f0938e8-4d90-5199-8678-8f9b75f8d47e,(normal),2,filipe
+MEDIA,Debora Alexandra das Neves Marafuga,744b9400-352a-40a8-b57b-c3daedfcaa7a,Debora Alexandra Sousa Silva,9dcb0efb-af3a-5f91-9294-caef62df2d78,"^Formando^,^Paciente^",2,alexandra
+MEDIA,Fernando Loureiro Jesus (Viseu),be39ad97-5661-4b15-9e9e-15714b030b78,Fernando de Jesus Dias Frazão,9a856f94-dd3a-5783-b8c6-595cd0de5fb1,(normal),2,fernando
+MEDIA,Francisco José Gonçalves Oliveira,c7df3225-741d-4b60-9d47-45dbfcc8c2a5,Francisco José Jimenez el jefe,1f908af3-ecf7-5d53-b2cc-03084ca46e62,(normal),2,francisco
+MEDIA,Fábio Daniel Borges da Silva,3ebb9236-62de-40a0-aa3e-4ffdd0f0d45b,FÁBIO ANDRÉ SILVA OLIVEIRA,c7422afd-71f4-53bc-a2dd-eebc11704b51,(normal),2,fabio
+MEDIA,Hélder Manuel Salvado Nascimento,844f94c5-04aa-499b-bb82-0c4d15895212,Helder Manuel Barbara Reis,805285bb-24b8-5580-8394-fe14735c2e1c,(normal),2,helder
+MEDIA,Joana Filipa Queiros,76b491e5-29bd-4e8e-9982-84030dac7c0f,Joana Filipa Vieira da Costa,f057519e-2ab8-508b-a211-8df8fd229861,^Paciente^,2,filipa
+MEDIA,Joaquim Luis da Costa Pinto,fc22cc4f-e8fa-4507-b4d4-165ffffc466a,Joaquim Costa Fernando,9feda04a-139c-521f-ab8e-10b3c441b7db,(normal),2,joaquim
+MEDIA,Jorge Soares Pinto (SPGEST),a137cec4-ebc2-43b0-b04c-4b3d933feee6,JORGE MANUEL SOARES GASPAR,4deb83fa-6999-546c-8911-58f95d5e1908,(normal),2,soares
+MEDIA,João Bernardo Sousa,4b93ffdd-2c93-4a83-8c27-4928da8a66c0,João Das Neves Mendes Bernardo,c675cd9e-8e9c-53a3-9965-a81fdd886762,(normal),2,bernardo
+MEDIA,Julia Maria Freitas Ferreira,077a2ca1-3c0d-4d42-a6fa-1e48ac8de002,Julia Maria Teixeira Soares Servolo a,55798ebb-8d80-5595-99ac-77eefe3ddcb6,"^Formando^,^Paciente^",2,maria
+MEDIA,Luis Carlos de Castro Fretias Teixeira Milheiro,7a03a0cf-5882-455a-ada5-1275dda33bcb,Luis Jesus Teixeira,94a03aab-9196-59b6-aebf-d2bffc374025,(normal),2,teixeira
+MEDIA,Maria Catarina Duarte Silva,2cae0640-ebdc-4f46-bbf6-5a31fe3966da,Maria Manuela Correia Vicente Silva,ca2389a4-13c4-58d8-916b-a76bebfd58f1,(normal),2,maria
+MEDIA,Maria Madalena de Noronha Filipe,93753a6f-9294-4e49-9349-cbdcfdbe71cc,MARIA MADALENA AREIA,c9f19130-3ad4-5ef7-86f3-5fa7e02606d5,(normal),2,madalena
+MEDIA,Maria Manuela Morgado Trepado,339e3ceb-e9c9-4de0-b86e-f5d8ef4c4dc6,Maria Manuela Machiais Moreira Moutinho,0f724c18-4e9f-5ace-9fdf-f0ffaa2e1cc1,(normal),2,manuela
+MEDIA,Ruben Rocha Fernandes,5d858777-ac29-49e6-8594-3bb8b01eb6c3,Rúben André Gomes Rocha,cc6d9944-35ed-5403-bd14-7435a6458109,^Formando^,2,ruben
+MEDIA,SANDRA MARIA LEITÃO DA COSTA,5d73b808-0ade-4642-9da5-8b2b53390fec,Sandra Maria Clemente Tavares Ramos,e3b511e3-6eee-51e4-bc7d-a8d6f6064527,(normal),2,sandra
+MEDIA,TIAGO POTES DE ABREU MIGUEIS,d95aec59-c7f9-4d2f-b975-a4d0b8b5e7ee,Tiago Filipe de Abreu Alfornelos,6ea643fe-f653-5005-bdb8-994fad6e4650,^Formando^,2,tiago
