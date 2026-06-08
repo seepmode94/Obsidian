@@ -6,7 +6,7 @@
 		{"id":"0865164ff8ee0bcd","type":"file","file":"Duplicação Catarina Tavares Monteiro.png","x":-40,"y":-148,"width":400,"height":67},
 		{"id":"da3195ff5da443b3","type":"file","file":"duplicação com typos.png","x":-480,"y":0,"width":397,"height":39},
 		{"id":"c039891521d7b8cd","type":"file","file":"duplicação formador anabela.png","x":-480,"y":80,"width":827,"height":50},
-		{"id":"e1537d68cda85959","x":-483,"y":200,"width":400,"height":400,"type":"file","file":"duplicados_formadores.csv"}
+		{"id":"e1537d68cda85959","type":"file","file":"duplicados_formadores.csv","x":-483,"y":200,"width":400,"height":400}
 	],
 	"edges":[]
 }
