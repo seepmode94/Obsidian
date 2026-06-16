@@ -5,6 +5,9 @@ status: ideação
 
 # Cosmetics — App de análise de pele + recomendação de produtos
 
+> [!info] Relação com o catálogo
+> Isto é uma **ideia/feature**, ainda em ideação. O **catálogo e-commerce real e construído** é o **EBeauty** (projeto `Vendas`) — ver [[EBeauty - Catálogo (projeto Vendas)]]. Esta análise de pele faria sentido como feature que **recomenda produtos do catálogo EBeauty**.
+
 ## 🎯 Conceito
 
 App que usa IA com acesso à câmara para **analisar a pele** do utilizador e **recomendar um produto da loja** (base de dados própria).
