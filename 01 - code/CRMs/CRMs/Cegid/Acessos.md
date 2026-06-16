@@ -24,9 +24,9 @@ tags: [cegid, primavera, webapi, acessos]
 | `grandType` (grant_type) | `password`                         |
 | `apiUrl` (externo)       | `http://46.189.246.8:50056/WebApi` |
 | `localApiUrl` (interno)  | `http://192.168.0.7:2018/WebApi`   |
-| `username`               | `Guilherme`                        |
+| `username`               | `Seepmode00`                       |
 | `password`               | `Jennyferp`                        |
-| `company`                | `9003`                             |
+| `company`                | `999903`                           |
 | `instance`               | `DEFAULT`                          |
 | `line`                   | `Professional`                     |
 | `access_token`           | gerado no `/token` (não fixo)      |
