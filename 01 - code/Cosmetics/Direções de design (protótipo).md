@@ -4,8 +4,8 @@ tags: [cosmetics, ebeauty, design, prototipo]
 
 # EBeauty — Direções de design (protótipo)
 
-> Prints das 4 variantes geradas no protótipo (`app/_prototype/`, alternáveis em `/?variant=`).
-> Ver também [[EBeauty - Catálogo (projeto Vendas)]]. Objetivo: escolher uma direção de arte — o design atual parecia fraco/datado.
+> ✅ **DECIDIDO: B2 "Apple-modern"** foi escolhida e **dobrada na homepage real** (`app/page.tsx`); o protótipo (`app/_prototype/`) foi removido. Acento **teal** `#0d9488` (mudável em `ACCENT`). O rodapé legal já está integrado.
+> Prints abaixo como registo das direções comparadas. Ver também [[EBeauty - Catálogo (projeto Vendas)]] e [[Sanity (Fase 1)]].
 
 Como ver ao vivo:
 ```bash
