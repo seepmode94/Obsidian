@@ -19,19 +19,19 @@ tags: [cegid, primavera, webapi, acessos]
 
 ## 🔑 Acessos (ambiente Postman "Primavera")
 
-| Variável | Valor |
-|---|---|
-| `grandType` (grant_type) | `password` |
-| `apiUrl` (externo) | `http://46.189.246.8:50056/WebApi` |
-| `localApiUrl` (interno) | `http://192.168.0.7:2018/WebApi` |
-| `username` | `Guilherme` |
-| `password` | `Jennyferp` |
-| `company` | `9003` |
-| `instance` | `DEFAULT` |
-| `line` | `Professional` |
-| `access_token` | gerado no `/token` (não fixo) |
-| `firstToken` | — |
-| `secondToken` | gerado (não fixo) |
+| Variável                 | Valor                              |
+| ------------------------ | ---------------------------------- |
+| `grandType` (grant_type) | `password`                         |
+| `apiUrl` (externo)       | `http://46.189.246.8:50056/WebApi` |
+| `localApiUrl` (interno)  | `http://192.168.0.7:2018/WebApi`   |
+| `username`               | `Guilherme`                        |
+| `password`               | `Jennyferp`                        |
+| `company`                | `9003`                             |
+| `instance`               | `DEFAULT`                          |
+| `line`                   | `Professional`                     |
+| `access_token`           | gerado no `/token` (não fixo)      |
+| `firstToken`             | —                                  |
+| `secondToken`            | gerado (não fixo)                  |
 
 > Coleção Postman completa em anexo: [[Primavera WebAPI Collections.postman_collection.json]]
 

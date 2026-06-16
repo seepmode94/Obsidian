@@ -55,12 +55,18 @@ Branco, **estrutura com sidebar** (Categorias / Ativos / Certificações) + grel
 
 ## ⭐ Direção B2 — B+ Apple-modern (favorita atual)
 
-Evolução da **B**: mantém a substância clínica (ativos, certificações, "Adicionar", stock) mas com a **pele da Apple** — mobile-first, muito whitespace, **tipografia grande** (hero "A ciência da pele. Simples e bonita."), nav translúcida (blur), paleta neutra Apple (`#f5f5f7` / `#1d1d1f`) + **acento teal moderno**, cards arredondados, e **animações simples**: reveal no scroll (fade + slide-up), hover suave nos cards, zoom subtil na imagem.
+Evolução da **B** com a substância clínica (ativos, certificações, "Adicionar", stock) mas estudada a partir do **apple.com/pt real**:
 
-A sidebar densa da B deu lugar a **chips de filtro** (categorias + ativos) — mais mobile-first e mais Apple.
+- **Tiles full-bleed empilhados** com fundos alternados (branco / `#f5f5f7` / **preto**), um produto por bloco — o ritmo da homepage da Apple, não uma grelha.
+- Nome **enorme centrado** (semibold, tracking apertado) + tagline cinza + **2 CTAs pill** (cheio + texto "›") + imagem grande em painel.
+- Padrão de título assinatura **"Bold. Cinza."** (ex.: *"Catálogo. Encontra o teu cuidado."*).
+- **Banda escura** "Encomenda simples." (o ritmo preto da Apple).
+- Nav slim translúcida (blur), paleta neutra (`#1d1d1f`/`#f5f5f7`) + **acento teal** (`#0d9488` — Apple usa azul `#0071e3`, trocável numa linha).
+- Sidebar da B → **chips de filtro** (categorias + ativos), mais mobile-first.
+- **Animações simples**: reveal no scroll (fade + slide-up, com stagger), hover/zoom suave, botões `active:scale`. Respeita `prefers-reduced-motion`.
 
-- ✅ Moderno, premium, mobile-first; mantém confiança/ativos da B; animações tasteful.
-- ⚠️ As animações **só se sentem ao vivo** (`?variant=B2`); o acento teal é trocável.
+- ✅ Lê inequivocamente "Apple modern"; mantém confiança/ativos da B; mobile-first; motion tasteful.
+- ⚠️ As animações e o ritmo dos tiles **só se sentem ao vivo** (`?variant=B2`); o acento é trocável; **depende muito de fotografia consistente** (os tiles são dominados pela imagem).
 
 | Desktop | Mobile |
 |---|---|
