@@ -9,9 +9,9 @@ tags: [cegid, primavera, webapi, acessos]
 
 ## 🔌 Endpoints (base URL)
 
-| Ambiente | URL |
-|---|---|
-| Dentro da rede (local) | `http://192.168.0.7:2018/WebApi/` |
+| Ambiente               | URL                                 |
+| ---------------------- | ----------------------------------- |
+| Dentro da rede (local) | `http://192.168.0.7:2018/WebApi/`   |
 | Fora da rede (público) | `http://46.189.246.8:50056/WebApi/` |
 
 > [!note] Porta externa
