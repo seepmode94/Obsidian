@@ -6,7 +6,9 @@ atualizado: 2026-06-17
 # EBeauty — Ponto de situação (continuar aqui)
 
 > 📌 **Começar por aqui.** Repo: `~/Documentos/Projects/Vendas`.
-> Notas detalhadas: [[EBeauty - Catálogo (projeto Vendas)]] · [[Direções de design (protótipo)]] · [[Páginas legais]] · [[Sanity (Fase 1)]] · [[Carrinho + checkout (Fase 4-5)]]
+> Notas detalhadas: [[EBeauty - Catálogo (projeto Vendas)]] · [[Direções de design (protótipo)]] · [[Páginas legais]] · [[Sanity (Fase 1)]] · [[Carrinho + checkout (Fase 4-5)]] · [[Deploy (Vercel)]]
+>
+> 🌐 **LIVE:** https://ebeauty-pt.vercel.app
 
 ## ✅ Onde estamos (17/06/2026)
 
@@ -15,6 +17,7 @@ atualizado: 2026-06-17
 - **Páginas legais** prontas (`/termos-e-condicoes`, `/privacidade`, `/envios-e-devolucoes`, `/avisos-legais`) + banner cookies + rodapé legal. Dados em `lib/legal.ts` (placeholders "(a definir)").
 - **Migração mock → Sanity CONCLUÍDA** — homepage e página de produto leem do Sanity via GROQ (`lib/queries.ts`), com ISR (`revalidate = 30`). Catálogo semeado (8 produtos + marcas + categorias + imagens) via `sanity/seed.mjs`. Imagens servidas pelo CDN do Sanity. ⚠️ Leitura precisa de **token** (`SANITY_API_READ_TOKEN`) — novo modelo RBAC; detalhes → [[Sanity (Fase 1)]].
 - **Carrinho + checkout CONCLUÍDO** — Zustand + persist (localStorage), drawer lateral, `CartButton` com badge nos headers, "Adicionar ao pedido" ligado, checkout por **WhatsApp/email** com a mensagem do pedido. Verificado end-to-end. → [[Carrinho + checkout (Fase 4-5)]]
+- **DEPLOY no Vercel CONCLUÍDO** — live e público em **https://ebeauty-pt.vercel.app** (homepage, produto, `/studio`, legais — todas 200). Env vars + CORS + protection tratados. → [[Deploy (Vercel)]]
 - ⚠️ **Tudo por commitar** no git (último commit = migração para pnpm). `.env.local` (com tokens) está gitignored — não commitar.
 
 ## ▶️ Retomar o ambiente
