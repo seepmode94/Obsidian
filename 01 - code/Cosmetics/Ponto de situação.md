@@ -27,7 +27,7 @@ pnpm dev
 
 ## ⏭️ Próximos passos (por ordem)
 
-1. **[Carrinho — Fase 4]** `AddToCartButton` ainda é stub (`console.log`). Falta store Zustand + persist, `CartDrawer`, rota `/carrinho`. Ligar também os botões "Adicionar" da homepage e tornar os cards clicáveis (→ `/produtos/[slug]`).
+1. **[Carrinho — Fase 4]** `AddToCartButton` ainda é stub (`console.log`). Falta store Zustand + persist, `CartDrawer`, rota `/carrinho`, e ligar "Adicionar ao pedido". (Cards da homepage **já são clicáveis** → `/produtos/[slug]`, feito 17/06.)
 2. **[WhatsApp — Fase 5]** gerar a mensagem do pedido a partir do carrinho + botões de checkout.
 3. **[Sanity] Ligar `storeSettings`** ao rodapé/legal e ao nº de WhatsApp (substituir placeholder `STORE.whatsappDigits`). Convidar o vendedor (Members → Invite).
 4. **[Design] Alinhar a página de produto** (`/produtos/...`) com a B2 — ainda no design antigo (cream/coral).
