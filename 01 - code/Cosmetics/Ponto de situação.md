@@ -6,7 +6,7 @@ atualizado: 2026-06-17
 # EBeauty — Ponto de situação (continuar aqui)
 
 > 📌 **Começar por aqui.** Repo: `~/Documentos/Projects/Vendas`.
-> Notas detalhadas: [[EBeauty - Catálogo (projeto Vendas)]] · [[Direções de design (protótipo)]] · [[Páginas legais]] · [[Sanity (Fase 1)]]
+> Notas detalhadas: [[EBeauty - Catálogo (projeto Vendas)]] · [[Direções de design (protótipo)]] · [[Páginas legais]] · [[Sanity (Fase 1)]] · [[Carrinho + checkout (Fase 4-5)]]
 
 ## ✅ Onde estamos (17/06/2026)
 
@@ -14,6 +14,7 @@ atualizado: 2026-06-17
 - **Design B2 "Apple-modern"** é a homepage real (`app/page.tsx`); acento teal `#0d9488`. Mobile-first.
 - **Páginas legais** prontas (`/termos-e-condicoes`, `/privacidade`, `/envios-e-devolucoes`, `/avisos-legais`) + banner cookies + rodapé legal. Dados em `lib/legal.ts` (placeholders "(a definir)").
 - **Migração mock → Sanity CONCLUÍDA** — homepage e página de produto leem do Sanity via GROQ (`lib/queries.ts`), com ISR (`revalidate = 30`). Catálogo semeado (8 produtos + marcas + categorias + imagens) via `sanity/seed.mjs`. Imagens servidas pelo CDN do Sanity. ⚠️ Leitura precisa de **token** (`SANITY_API_READ_TOKEN`) — novo modelo RBAC; detalhes → [[Sanity (Fase 1)]].
+- **Carrinho + checkout CONCLUÍDO** — Zustand + persist (localStorage), drawer lateral, `CartButton` com badge nos headers, "Adicionar ao pedido" ligado, checkout por **WhatsApp/email** com a mensagem do pedido. Verificado end-to-end. → [[Carrinho + checkout (Fase 4-5)]]
 - ⚠️ **Tudo por commitar** no git (último commit = migração para pnpm). `.env.local` (com tokens) está gitignored — não commitar.
 
 ## ▶️ Retomar o ambiente
@@ -27,10 +28,8 @@ pnpm dev
 
 ## ⏭️ Próximos passos (por ordem)
 
-1. **[Carrinho — Fase 4]** `AddToCartButton` ainda é stub (`console.log`). Falta store Zustand + persist, `CartDrawer`, rota `/carrinho`, e ligar "Adicionar ao pedido". (Cards da homepage **já são clicáveis** → `/produtos/[slug]`, feito 17/06.)
-2. **[WhatsApp — Fase 5]** gerar a mensagem do pedido a partir do carrinho + botões de checkout.
-3. **[Sanity] Ligar `storeSettings`** ao rodapé/legal e ao nº de WhatsApp (substituir placeholder `STORE.whatsappDigits`). Convidar o vendedor (Members → Invite).
-4. **[Design] Alinhar a página de produto** (`/produtos/...`) com a B2 — ainda no design antigo (cream/coral).
+1. **[Sanity] Ligar `storeSettings`** ao rodapé/legal, ao **nº de WhatsApp** e **email** (substituir placeholders `STORE.whatsappDigits` / `STORE.email` em `lib/products.ts`).
+2. **[Design] Alinhar a página de produto** (`/produtos/...`) com a B2 — ainda no design antigo (cream/coral); o drawer usa tokens cream/coral.
 5. **[Legal] Preencher dados reais** em `lib/legal.ts`: NIF, morada, email, nº WhatsApp, prazos/custos de envio, pagamento. Selo oficial do Livro de Reclamações. **Revisão jurídica.** → [[Páginas legais]]
 6. **[Qualidade] Fotografia consistente** dos 8 produtos (mesmo fundo/luz/enquadramento).
 7. *(opcional)* **Commit** do trabalho.
