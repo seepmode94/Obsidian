@@ -9,8 +9,9 @@ atualizado: 2026-06-17
 
 ## 🌐 Live (17/06/2026)
 
-- **URL público:** https://ebeauty-pt.vercel.app
+- **Site (público):** https://ebeauty-pt.vercel.app
   (`ebeauty.vercel.app` está ocupado por outra conta; `ebeauty-pt` é o alias limpo reclamado.)
+- **Studio / Admin:** https://ebeauty-pt.vercel.app/studio — mesmo domínio, rota `/studio`. Online (200). Acesso com a **conta Sanity** (ou o editor convidado `antonio.santos2467@gmail.com`). A rota é pública mas o login do Sanity protege a edição; **publicar aqui mexe no catálogo live**. Studio é desktop-first (ver [[Sanity (Fase 1)]]).
 - Projeto Vercel: **ebeauty** · scope `seepmode94s-projects` · framework Next.js auto-detetado.
 - Verificado público: homepage (produtos + imagens CDN), página de produto, `/studio`, páginas legais — todas 200.
 

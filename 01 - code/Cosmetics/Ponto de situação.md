@@ -8,7 +8,7 @@ atualizado: 2026-06-17
 > 📌 **Começar por aqui.** Repo: `~/Documentos/Projects/Vendas`.
 > Notas detalhadas: [[EBeauty - Catálogo (projeto Vendas)]] · [[Direções de design (protótipo)]] · [[Páginas legais]] · [[Sanity (Fase 1)]] · [[Carrinho + checkout (Fase 4-5)]] · [[Deploy (Vercel)]]
 >
-> 🌐 **LIVE:** https://ebeauty-pt.vercel.app
+> 🌐 **LIVE:** https://ebeauty-pt.vercel.app · **Studio/Admin:** https://ebeauty-pt.vercel.app/studio
 
 ## ✅ Onde estamos (17/06/2026)
 
