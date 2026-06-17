@@ -1,42 +1,39 @@
 ---
 tags: [cosmetics, ebeauty, estado, handoff]
-atualizado: 2026-06-16
+atualizado: 2026-06-17
 ---
 
 # EBeauty — Ponto de situação (continuar aqui)
 
-> 📌 **Começar por aqui amanhã de manhã.** Repo: `~/Documentos/Projects/Vendas`.
+> 📌 **Começar por aqui.** Repo: `~/Documentos/Projects/Vendas`.
 > Notas detalhadas: [[EBeauty - Catálogo (projeto Vendas)]] · [[Direções de design (protótipo)]] · [[Páginas legais]] · [[Sanity (Fase 1)]]
 
-## ✅ Onde estamos (16/06/2026)
+## ✅ Onde estamos (17/06/2026)
 
-- **Design escolhido: B2 "Apple-modern"** — já é a **homepage real** (`app/page.tsx`). Protótipo (`app/_prototype/`) removido. Tiles full-bleed, banda preta, nav blur, animações simples (robustas, visíveis mesmo sem JS), **acento teal `#0d9488`** (const `ACCENT`). Mobile-first.
-- **Páginas legais** prontas como rotas reais: `/termos-e-condicoes`, `/privacidade`, `/envios-e-devolucoes`, `/avisos-legais` + **banner de cookies** + **rodapé legal** (links + Livro de Reclamações). Dados em `lib/legal.ts` (nome = EBeauty; resto = "(a definir)").
-- **Sanity (Fase 1)** arrancado: schemas escritos em `sanity/schemas/` (product/brand/category/storeSettings). Ainda **não instalado**.
-- Tudo verificado a compilar (HTTP 200, sem erros). Catálogo ainda **hardcoded** em `lib/products.ts` (8 produtos).
+- **Sanity (Fase 1) CONCLUÍDA e verificada** — Studio embebido a funcionar em `http://localhost:3000/studio` (HTTP 200). Projeto Sanity criado: **Project ID `0qopudd2`**, dataset `production` (público), CORS de localhost configurado. Deps instaladas (`sanity@6`, `next-sanity@13`, etc.). `.env.local` preenchido. Detalhes + gotcha do `"use client"` → [[Sanity (Fase 1)]].
+- **Design B2 "Apple-modern"** é a homepage real (`app/page.tsx`); acento teal `#0d9488`. Mobile-first.
+- **Páginas legais** prontas (`/termos-e-condicoes`, `/privacidade`, `/envios-e-devolucoes`, `/avisos-legais`) + banner cookies + rodapé legal. Dados em `lib/legal.ts` (placeholders "(a definir)").
+- **Catálogo ainda hardcoded** em `lib/products.ts` (8 produtos) — próximo passo é migrar para GROQ.
+- ⚠️ **Tudo por commitar** no git (último commit = migração para pnpm).
 
 ## ▶️ Retomar o ambiente
 
 ```bash
 cd ~/Documentos/Projects/Vendas
 pnpm dev
-# Computador: http://localhost:3000
+# Computador: http://localhost:3000   ·   Studio: http://localhost:3000/studio
 # Telemóvel (mesma WiFi): http://192.168.0.124:3000
 ```
-(o dev server de hoje já não deve estar a correr)
 
 ## ⏭️ Próximos passos (por ordem)
 
-1. **[Sanity] Passo manual primeiro** — criar projeto Sanity e dar-me o Project ID:
-   ```bash
-   pnpm dlx sanity@latest login
-   pnpm dlx sanity@latest projects create "EBeauty"
-   ```
-   Depois eu: instalo `next-sanity`+`sanity`, monto o **Studio em `/studio`**, migro a homepage/produto para **GROQ**, e semeio os 8 produtos. → [[Sanity (Fase 1)]]
-2. **[Design] Alinhar a página de produto** (`/produtos/...`) com a B2 — ainda está no design antigo (cream/coral).
-3. **[Legal] Preencher dados reais** em `lib/legal.ts`: NIF (quando existir), morada, email, **nº WhatsApp**, prazos/custos de envio, métodos de pagamento, datas. Trocar link do Livro de Reclamações pelo **selo oficial**. **Revisão jurídica.** → [[Páginas legais]]
-4. **[Qualidade] Fotografia consistente** dos 8 produtos (mesmo fundo/luz/enquadramento) — é o que mais eleva o design.
-5. *(opcional)* **Commit** do trabalho — está tudo por commitar no git.
+1. **[Sanity Fase 2] Ligar os dados** — migrar a homepage e a página de produto de `lib/products.ts` (mock) → **GROQ** via `sanity/lib/client.ts` (server component + ISR). Depois **semear** os 8 produtos + marcas + categorias e ligar `storeSettings` (rodapé/legal + nº WhatsApp). → [[Sanity (Fase 1)]]
+2. **[Carrinho — Fase 4]** `AddToCartButton` ainda é stub (`console.log`). Falta store Zustand + persist, `CartDrawer`, rota `/carrinho`.
+3. **[WhatsApp — Fase 5]** gerar a mensagem do pedido a partir do carrinho + botões de checkout.
+4. **[Design] Alinhar a página de produto** (`/produtos/...`) com a B2 — ainda no design antigo (cream/coral).
+5. **[Legal] Preencher dados reais** em `lib/legal.ts`: NIF, morada, email, nº WhatsApp, prazos/custos de envio, pagamento. Selo oficial do Livro de Reclamações. **Revisão jurídica.** → [[Páginas legais]]
+6. **[Qualidade] Fotografia consistente** dos 8 produtos (mesmo fundo/luz/enquadramento).
+7. *(opcional)* **Commit** do trabalho.
 
 ## 🔒 Decisões fixadas
 
@@ -44,9 +41,5 @@ pnpm dev
 
 ## ⚠️ Notas técnicas
 
-- **Next.js 16** tem breaking changes — consultar `node_modules/next/dist/docs/` antes de escrever código (ver `AGENTS.md`).
-- Confirmar compatibilidade do **Sanity Studio com Next 16 / React 19** ao instalar.
-
-## ❓ Decisão em aberto
-
-- Acento ficou **teal** por defeito (o que viste). Alternativas: azul Apple `#0071e3`, verde menta, ou quase-preto sem acento. Trocar em `ACCENT` (`app/page.tsx`).
+- **Next.js 16** tem breaking changes — consultar `node_modules/next/dist/docs/` antes de escrever código (ver `AGENTS.md`). `params` é agora **async** (Promise).
+- **Studio:** o `sanity.config.ts` precisa de `"use client"` (senão `/studio` dá 500 com `createContext` em Turbopack).

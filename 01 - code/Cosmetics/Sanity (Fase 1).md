@@ -1,5 +1,6 @@
 ---
 tags: [cosmetics, ebeauty, sanity, cms]
+atualizado: 2026-06-17
 ---
 
 # EBeauty — Sanity (Fase 1)
@@ -8,43 +9,40 @@ tags: [cosmetics, ebeauty, sanity, cms]
 > (`lib/products.ts`) por **Sanity**, dando ao vendedor um **Studio em `/studio`** para gerir
 > produtos, stock, marcas e definições — sem código nem deploy.
 
-## ✅ Já feito (não precisa do teu projeto Sanity)
+## ✅ FASE 1 CONCLUÍDA E VERIFICADA (17/06/2026)
 
-Schemas escritos em `sanity/schemas/` (objetos puros, não partem o build):
-- `product` — espelha o tipo `Product` (nome, slug, marca↗, categoria↗, preço, promoção, fotos, **stock**, hideWhenOutOfStock, destaque, sku, descrição, ingredientes, certificações, SEO…)
-- `brand`, `category`
-- `storeSettings` (singleton) — identidade + contactos + **dados legais** (NIF, morada, Livro de Reclamações)
+O Studio embebido **carrega em `http://localhost:3000/studio` (HTTP 200)**, pronto para login e criação de produtos.
 
-## 🔑 Passo MANUAL (só tu — precisa de conta Sanity)
+**Dependências instaladas:** `sanity@6`, `next-sanity@13`, `@sanity/vision@6`, `@sanity/image-url@2`, `styled-components@6`.
 
-Criar um projeto Sanity grátis para obter o **projectId**:
+**Projeto Sanity criado** (via API de gestão, após `sanity login`):
+- **Project ID: `0qopudd2`** · Organização `o8SvRc9Li` (criada automaticamente)
+- **Dataset `production`** (público — o catálogo lê via CDN sem token)
+- **CORS:** `http://localhost:3000` (com credenciais) + `localhost:3333`
 
-```bash
-# no terminal (ou com ! aqui na sessão):
-pnpm dlx sanity@latest login        # abre o browser para login/registo
-pnpm dlx sanity@latest projects create "EBeauty"   # cria projeto → dá um Project ID
-# alternativa: criar em https://www.sanity.io/manage e copiar o Project ID
-```
+**Ficheiros escritos:**
+- `sanity/env.ts` — projectId/dataset/apiVersion a partir de env vars (erro claro se faltar)
+- `sanity/lib/client.ts` — client de leitura (`useCdn: true`)
+- `sanity/lib/image.ts` — helper `urlFor()` (usa o **named export** `createImageUrlBuilder`; o default está deprecated)
+- `sanity/structure.ts` — sidebar do Studio; **`storeSettings` é singleton** (abre direto, sem lista)
+- `sanity.config.ts` — `defineConfig` (basePath `/studio`, structureTool + visionTool). **Tem `"use client"` no topo** (ver gotcha abaixo)
+- `app/studio/[[...tool]]/page.tsx` — rota embebida, Server Component, `export const dynamic = "force-static"`, re-exporta `metadata`/`viewport` de `next-sanity/studio`
+- `.env.local` — `NEXT_PUBLIC_SANITY_PROJECT_ID=0qopudd2`, dataset `production`, apiVersion `2024-10-01` (não vai para git, `.env*` ignorado)
 
-Depois diz-me o **Project ID** (ou põe em `.env.local`):
+Schemas (já existiam): `product`, `brand`, `category`, `storeSettings` em `sanity/schemas/` (objetos puros; em `sanity.config.ts` há um cast `as SchemaTypeDefinition[]` até os envolvermos em `defineType`).
 
-```
-NEXT_PUBLIC_SANITY_PROJECT_ID=xxxxxxxx
-NEXT_PUBLIC_SANITY_DATASET=production
-```
+## ⚠️ Gotcha resolvido (Next 16 + Turbopack)
 
-## ⏭️ A seguir (eu faço, assim que houver Project ID)
+`/studio` deu **500: `createContext only works in Client Components`** (vindo de `@sanity/ui`). Causa: o `sanity.config.ts` era avaliado no **servidor** (a página importa-o). **Fix:** `"use client"` no topo de `sanity.config.ts` → o grafo do Sanity só avalia no browser; a página continua Server Component (pode re-exportar `metadata`/`viewport`). Padrão confirmado no doc-comment do próprio `next-sanity@13`.
 
-1. `pnpm add next-sanity sanity @sanity/vision @sanity/image-url styled-components`
-2. `sanity.config.ts` + cliente (`lib/sanity.ts`) + helper de imagens
-3. Studio embebido em **`/studio`** (rota `app/studio/[[...tool]]/page.tsx`)
-4. Migrar o fetch da **homepage** e da **página de produto** de `lib/products.ts` → **GROQ** (server component com ISR, `revalidate` curto → stock propaga em ~1s)
-5. Semear os **8 produtos** atuais + marcas + categorias no Sanity
-6. Ligar `storeSettings` ao rodapé/legal e ao número de WhatsApp
-7. Convidar o vendedor (Sanity → Members → Invite) + cheat sheet
+## ⏭️ A seguir (Fase 2 — ligar os dados)
 
-## ⚠️ Notas de compatibilidade
+1. **Migrar `lib/products.ts` mock → GROQ** usando o `client`: homepage e página de produto passam a fazer fetch real (server component + ISR, `revalidate` curto → stock propaga em ~1s).
+2. **Semear** os 8 produtos atuais + marcas + categorias no Sanity (ou criar à mão no Studio).
+3. Ligar `storeSettings` ao rodapé/legal e ao **nº de WhatsApp** (substituir o placeholder `STORE.whatsappDigits`).
+4. Convidar o vendedor (Sanity → Members → Invite) + cheat sheet.
 
-- Projeto é **Next.js 16 + React 19**. Verificar a versão do **Sanity Studio** compatível
-  (testar `pnpm dev` e `/studio` após instalar; resolver peer-deps se aparecerem).
-- ADR-0002 mantém Sanity + Netlify; ADR-0003 = modelo PRODUTO (vendedor autónomo).
+## 📝 Notas
+
+- Para criar/gerir o projeto sem o CLI, dashboard em https://www.sanity.io/manage (Project ID `0qopudd2`).
+- ADR-0002 = Sanity + Netlify; ADR-0003 = modelo PRODUTO (vendedor autónomo); ADR-0004 = multi-marca sem variantes.
