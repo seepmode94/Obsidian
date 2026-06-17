@@ -53,6 +53,10 @@ Mesmo com o dataset `aclMode: public`, a **leitura anónima devolve 0 documentos
 
 Abrir `http://192.168.0.124:3000/studio` no telemóvel dava **ecrã em branco** (só o fallback `<noscript>`). Causa: o **Next 16 bloqueia por defeito recursos internos de dev** (`/_next/*`, HMR) vindos de origens não-localhost → o JS do Studio (SPA) não arranca. (Não era do telemóvel: reproduzia em qualquer browser via IP; via `localhost` funcionava.) **Fix:** `allowedDevOrigins: ["192.168.0.124"]` em `next.config.ts` + reiniciar o dev server. Só afeta `next dev` — em produção não existe. Se o IP da WiFi mudar, atualizar lá (e nos CORS do Sanity).
 
+### ℹ️ Edição no telemóvel: Studio é desktop-first
+
+No telemóvel, editar/publicar no Studio é pouco fiável (o botão **Publish** fica na barra de ações no fundo do painel do documento e em ecrã estreito é difícil de alcançar/renderizar). **NÃO é bug nosso:** verificado que o papel **Editor** tem grant `mode: publish` e que uma escrita+publicação via API funciona (patch ao preço OK). Conclusão: **gestão de catálogo faz-se no desktop**; telemóvel serve para ver. Membro convidado: `antonio.santos2467@gmail.com` (Editor).
+
 ## ⏭️ Pendente
 
 - Ligar `storeSettings` ao rodapé/legal e ao **nº de WhatsApp** (substituir placeholder `STORE.whatsappDigits` em `lib/products.ts`).

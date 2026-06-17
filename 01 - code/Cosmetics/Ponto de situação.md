@@ -38,6 +38,7 @@ pnpm dev
 ## 🔒 Decisões fixadas
 
 - Direção visual **B2 + acento teal** · Modelo de negócio **PRODUTO** · Fecho por **WhatsApp** (site não processa pagamento) · Multi-marca **sem variantes de cor** (ADR-0004).
+- **Gestão do catálogo no Studio em desktop**; telemóvel só para ver. (Sanity Studio é desktop-first; editar/publicar em mobile não é fiável. Backend/permissões verificados OK — não é bug nosso. Decisão 17/06: não construir admin mobile próprio por agora.)
 
 ## ⚠️ Notas técnicas
 
