@@ -35,12 +35,29 @@ Schemas (já existiam): `product`, `brand`, `category`, `storeSettings` em `sani
 
 `/studio` deu **500: `createContext only works in Client Components`** (vindo de `@sanity/ui`). Causa: o `sanity.config.ts` era avaliado no **servidor** (a página importa-o). **Fix:** `"use client"` no topo de `sanity.config.ts` → o grafo do Sanity só avalia no browser; a página continua Server Component (pode re-exportar `metadata`/`viewport`). Padrão confirmado no doc-comment do próprio `next-sanity@13`.
 
-## ⏭️ A seguir (Fase 2 — ligar os dados)
+## ✅ FASE 2 — MIGRAÇÃO mock → Sanity CONCLUÍDA (17/06/2026)
 
-1. **Migrar `lib/products.ts` mock → GROQ** usando o `client`: homepage e página de produto passam a fazer fetch real (server component + ISR, `revalidate` curto → stock propaga em ~1s).
-2. **Semear** os 8 produtos atuais + marcas + categorias no Sanity (ou criar à mão no Studio).
-3. Ligar `storeSettings` ao rodapé/legal e ao **nº de WhatsApp** (substituir o placeholder `STORE.whatsappDigits`).
-4. Convidar o vendedor (Sanity → Members → Invite) + cheat sheet.
+Homepage e página de produto leem agora do Sanity (verificado: HTTP 200, imagens do CDN, 404 em slug inexistente).
+
+- `lib/products.ts` — passou a conter **só** tipos/constantes/helpers puros (seguro em client components). Removidos o array `PRODUCTS` e o `getProductBySlug` sync. `Product.category` agora é `string` (categorias dinâmicas).
+- `lib/queries.ts` (novo, server-only) — fetchers GROQ: `getAllProducts`, `getProductBySlug`, `getProductSlugs`, `getOtherProducts`. Projeção resolve `brand->name`, `category->name`, `photos[0].asset->url`, `coalesce(photoHue,"warm")`.
+- `app/page.tsx`, `app/produtos/[slug]/page.tsx` — async + `export const revalidate = 30` (ISR). `generateStaticParams` vem dos slugs do Sanity. `RelatedProducts` async.
+- Schema `product` ganhou campo opcional **`photoHue`** (dropdown, fallback visual).
+- **Seed:** `sanity/seed.mjs` (idempotente, `createOrReplace` com `_id`s tipo `product.<slug>`). Correr: `node --env-file=.env.local sanity/seed.mjs`. Semeou 4 categorias, 6 marcas, 8 produtos, storeSettings + upload de 3 imagens (`public/produtos/`). Adicionado `@sanity/client` como dep direta (pnpm não hoista transitivas).
+
+### ⚠️ Gotcha grande: leitura precisa de TOKEN (novo modelo RBAC)
+
+Mesmo com o dataset `aclMode: public`, a **leitura anónima devolve 0 documentos** (testado com `perspective=raw/published`; com token devolve 8). Este projeto usa o novo modelo de acesso por grupos do Sanity (`_.groups.public` sem grant de leitura). **Fix:** o read client usa um **token de leitura (role `viewer`)** no servidor → `SANITY_API_READ_TOKEN` no `.env.local`; `sanity/lib/client.ts` com `useCdn: false` + `token`. O token é server-side, nunca chega ao browser. Há também `SANITY_API_TOKEN` (role `editor`) para o seed.
+
+### ⚠️ Gotcha: Studio em branco no telemóvel (dev via IP)
+
+Abrir `http://192.168.0.124:3000/studio` no telemóvel dava **ecrã em branco** (só o fallback `<noscript>`). Causa: o **Next 16 bloqueia por defeito recursos internos de dev** (`/_next/*`, HMR) vindos de origens não-localhost → o JS do Studio (SPA) não arranca. (Não era do telemóvel: reproduzia em qualquer browser via IP; via `localhost` funcionava.) **Fix:** `allowedDevOrigins: ["192.168.0.124"]` em `next.config.ts` + reiniciar o dev server. Só afeta `next dev` — em produção não existe. Se o IP da WiFi mudar, atualizar lá (e nos CORS do Sanity).
+
+## ⏭️ Pendente
+
+- Ligar `storeSettings` ao rodapé/legal e ao **nº de WhatsApp** (substituir placeholder `STORE.whatsappDigits` em `lib/products.ts`).
+- Tornar os cards da homepage clicáveis (→ `/produtos/[slug]`) e ligar os botões "Adicionar" ao carrinho.
+- Convidar o vendedor (Sanity → Members → Invite) + cheat sheet.
 
 ## 📝 Notas
 
