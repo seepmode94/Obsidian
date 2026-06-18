@@ -35,12 +35,49 @@ A escada de planos foge ao "empregado dos €30": vendo **valor em planos**, nã
 | **Pequenas alterações incluídas** | 2 / mês | **4 / mês** | 4 / mês |
 | **Consultora IA + câmara** | básica / — | ✅ (até **N** conversas/mês) | ✅ (até **N** conversas/mês) |
 | **Pré-requisito** | — | — | **Pagamento online integrado** |
-| **Preço** | **€X / mês** | **~€X × 10 / ano** (2 meses grátis) | **€base + Y%** das vendas |
+| **Preço** | **€59 / mês** | **€590 / ano** (≈ €49/mês · poupa ~2 meses) | **€39/mês + 6%** das vendas online |
 | **Ideal para** | Quer baixo risco e flexibilidade | Quer mais valor + desconto | Acredita no volume, quer parceria |
 
 > [!tip] Como ler
 > - O **Anual** é mais barato ao ano **porque há compromisso** (não dou desconto a quem pode sair no mês 3).
 > - O **Performance** só "liga" depois de existir **pagamento online** (senão não há como medir vendas).
+
+## 💶 Discriminação dos valores
+
+> [!note] Pressupostos (recalibrar com a secção *O meu valor/hora* em [[Custos e margem (EBeauty)]])
+> Valor/hora **€27,5** (meio da banda €25–30) · tempo médio real **~0,75h/mês** (site pequeno estável; as alterações incluídas são um **teto**, não a média) · infra partilhada + Sanity free + IA baixa. A avença é lucrativa mesmo modesta — o **lucro grande vem do build + extras + escala**, não da avença.
+
+**Mensal — €59/mês**
+| Componente | ~Valor |
+|---|---|
+| Alojamento + domínio gerido (DNS/SSL) | €5 |
+| Gestão, monitorização, updates + até 2 alterações/mês (~0,75h) | €20 |
+| CMS (Sanity) | incl. |
+| **Margem** | **~€34** |
+
+**Anual — €590/ano (≈ €49/mês)**
+| Componente | ~Valor/mês |
+|---|---|
+| Tudo do Mensal (custo ~€25) | — |
+| Consultora **IA com câmara** (até N conversas) | €4 |
+| Até 4 alterações/mês + prioridade | incl. |
+| **Margem** | **~€20/mês + cash à cabeça** |
+
+> A troca pelo desconto é o **compromisso de 12 meses** (e o cash adiantado). Margem mensal menor que o Mensal, mas ganhas retenção + tesouraria.
+
+**Performance — €39/mês + 6% das vendas online**
+| Componente | ~Valor |
+|---|---|
+| Base (infra + gestão mínima) — não trabalho de graça | €39 (custo ~€25 · margem ~€14) |
+| IA com câmara (interessa-me que converta) | incl. |
+| **+ 6% das vendas online** (só as medíveis) | upside |
+| Pré-requisito: pagamento online integrado | setup one-time |
+
+> [!tip] Tens margem para subir
+> €59/€49 é **barato** para um site gerido **com consultora IA**. Posicionando como premium, **€69–89/mês** defende-se. Começa onde fechas o cliente e sobe com referências.
+
+> [!info] Setup/build (one-time, FORA da avença)
+> Cliente novo (branding + conteúdo + go-live) ≈ **€250–600** conforme o trabalho. A EBeauty já está construída.
 
 ## 🧾 O que está incluído na avença
 
