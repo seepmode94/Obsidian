@@ -145,18 +145,18 @@ Outros repassados que eu absorvo ........  €0
 -------------------------------------------------
 SUBTOTAL custos "duros" .................  €5–9
 
-O MEU TEMPO: ~0,75 h/mês × €20/h ........  €15   ⭐ o que manda
+O MEU TEMPO: ~1 h/mês × €20/h ...........  €20   ⭐ (incluído; extras faturados — salvaguarda B)
 -------------------------------------------------
-CUSTO REAL POR CLIENTE / MÊS ...........  ~€20 (sem IA) · ~€24 (com IA)
+CUSTO REAL POR CLIENTE / MÊS ...........  ~€25 (sem IA) · ~€29 (com IA)
 ```
 
 ## 💰 Margem por plano (preencher com os preços de [[Modelo de negócio e planos (avença)]])
 
 | Plano | Preço/mês | Custo real/mês | **Margem** |
 |---|---|---|---|
-| Mensal | €59 | ~€20 | **~€39** |
-| Anual (÷12) | €49 | ~€24 | **~€25** + cash |
-| Performance | €39 + 6% | ~€24 | **~€15** + % |
+| Mensal | €59 | ~€25 | **~€34** |
+| Anual (÷12) | €49 | ~€29 | **~€20** + cash |
+| Performance | €39 + 6% | ~€29 | **~€10** + % |
 
 > [!danger] Regra do desconto anual
 > O anual (≈ 2 meses grátis) **tem de continuar acima do custo real**. Não descontar até ao prejuízo.
@@ -175,7 +175,7 @@ CUSTO REAL POR CLIENTE / MÊS ...........  ~€20 (sem IA) · ~€24 (com IA)
 ## ✅ A confirmar antes de propor
 
 - [x] ~~**Valor/hora** meu~~ → **€20/h** (arranque; chão recomendado €25, alvo €30).
-- [ ] **Horas/mês** estimadas de gestão por cliente.
+- [x] ~~**Horas/mês** de gestão~~ → **~1h/mês incluída** (≈2 alterações); extras faturados, aprovados antes (salvaguarda B).
 - [ ] Fornecedor de VPS + specs (RAM ≥ 4–8 GB) + custo de backups.
 - [ ] Conversas/mês esperadas da IA → custo Gemini.
 - [ ] Decidir início: **Vercel (1 cliente)** vs **VPS (planear para 5+)**.

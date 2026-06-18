@@ -32,7 +32,7 @@ A escada de planos foge ao "empregado dos €30": vendo **valor em planos**, nã
 | **Compromisso** | Cancela c/ 30 dias | 12 meses | A definir |
 | **Gestão + hosting + CMS (Sanity)** | ✅ | ✅ | ✅ |
 | **Updates de segurança** | ✅ | ✅ | ✅ |
-| **Pequenas alterações incluídas** | 2 / mês | **4 / mês** | 4 / mês |
+| **Pequenas alterações incluídas** (≈1h; extras orçamentados antes) | 2 / mês | 2 / mês + prioridade | 2 / mês |
 | **Consultora IA + câmara** | básica / — | ✅ (até **N** conversas/mês) | ✅ (até **N** conversas/mês) |
 | **Pré-requisito** | — | — | **Pagamento online integrado** |
 | **Preço** | **€59 / mês** | **€590 / ano** (≈ €49/mês · poupa ~2 meses) | **€39/mês + 6%** das vendas online |
@@ -45,38 +45,38 @@ A escada de planos foge ao "empregado dos €30": vendo **valor em planos**, nã
 ## 💶 Discriminação dos valores
 
 > [!note] Pressupostos (recalibrar com a secção *O meu valor/hora* em [[Custos e margem (EBeauty)]])
-> Valor/hora **€20** (preço de arranque / primeiro cliente; chão recomendado €25) · tempo médio real **~0,75h/mês** (site pequeno estável; as alterações incluídas são um **teto**, não a média) · infra partilhada + Sanity free + IA baixa. A avença é lucrativa mesmo modesta — o **lucro grande vem do build + extras + escala**, não da avença.
+> Valor/hora **€20** (preço de arranque / primeiro cliente; chão recomendado €25) · **incluído ~1h/mês (≈2 pequenas alterações); além disso → orçamento aprovado ANTES (salvaguarda B)** · infra partilhada + Sanity free + IA baixa. A avença é lucrativa mesmo modesta — o **lucro grande vem do build + extras + escala**, não da avença.
 
 | Plano | Preço | **Custo real** | Margem |
 |---|---|---|---|
-| **Mensal** | €59/mês | **~€20** | ~€39 |
-| **Anual** | €49/mês (€590/ano) | **~€24** | ~€25/mês + cash |
-| **Performance** | €39/mês + 6% | **~€24** | ~€15/mês + % |
+| **Mensal** | €59/mês | **~€25** | ~€34 |
+| **Anual** | €49/mês (€590/ano) | **~€29** | ~€20/mês + cash |
+| **Performance** | €39/mês + 6% | **~€29** | ~€10/mês + % |
 
-> *Custo real = infra (~€5) + gestão (~€15 = 0,75h × **€20/h**) + IA (~€4, no Anual/Performance). Margem = Preço − Custo real.*
+> *Custo real = infra (~€5) + incluído (~€20 = **1h × €20/h**) + IA (~€4, no Anual/Performance). Margem = Preço − Custo real. **Além de ~1h → faturado (salvaguarda B).***
 
 **Mensal — €59/mês**
 | Componente | ~Valor |
 |---|---|
 | Alojamento + domínio gerido (DNS/SSL) | €5 |
-| Gestão, monitorização, updates + até 2 alterações/mês (~0,75h × €20) | €15 |
+| Gestão + ~1h incluída/mês (≈2 alterações; extras faturados) | €20 |
 | CMS (Sanity) | incl. |
-| **Margem** | **~€39** |
+| **Margem** | **~€34** |
 
 **Anual — €590/ano (≈ €49/mês)**
 | Componente | ~Valor/mês |
 |---|---|
-| Tudo do Mensal (custo ~€20) | — |
+| Tudo do Mensal (custo ~€25) | — |
 | Consultora **IA com câmara** (até N conversas) | €4 |
-| Até 4 alterações/mês + prioridade | incl. |
-| **Margem** | **~€25/mês + cash à cabeça** |
+| Prioridade no suporte (mesmas ~2 alterações/mês) | incl. |
+| **Margem** | **~€20/mês + cash à cabeça** |
 
 > A troca pelo desconto é o **compromisso de 12 meses** (e o cash adiantado). Margem mensal menor que o Mensal, mas ganhas retenção + tesouraria.
 
 **Performance — €39/mês + 6% das vendas online**
 | Componente | ~Valor |
 |---|---|
-| Base (infra €5 + gestão €15 + IA €4) — não trabalho de graça | €39 (custo ~€24 · margem ~€15) |
+| Base (infra €5 + 1h €20 + IA €4) — não trabalho de graça | €39 (custo ~€29 · margem ~€10) |
 | IA com câmara (interessa-me que converta) | incl. |
 | **+ 6% das vendas online** (só as medíveis) | upside |
 | Pré-requisito: pagamento online integrado | setup one-time |
@@ -92,7 +92,7 @@ A escada de planos foge ao "empregado dos €30": vendo **valor em planos**, nã
 - Gestão e manutenção do website (manter no ar, monitorizar).
 - CMS (Sanity) disponível para o cliente gerir o catálogo no desktop.
 - Atualizações de segurança e de dependências.
-- **N pequenas alterações/mês** — entende-se por *pequena alteração* um pedido de **até ~30 min** (ex.: trocar um preço, uma foto, um texto). Acumulável? **Não** (não transita para o mês seguinte).
+- **~1h/mês de pequenas alterações** (≈ 2 pedidos de até ~30 min: trocar um preço, uma foto, um texto). **Não acumulável** (não transita). **Salvaguarda (B):** o que passa de ~1h é **orçamentado e aprovado ANTES** de avançar — nunca há fatura-surpresa.
 
 ## 🚫 O que NÃO está incluído (orçamento à parte)
 
@@ -101,7 +101,7 @@ A escada de planos foge ao "empregado dos €30": vendo **valor em planos**, nã
 - Campanhas, SEO avançado, produção de conteúdo/fotografia.
 - Integração de **pagamentos** (Stripe / MB Way) — trabalho one-time.
 
-Tabela de extras: **€/hora** ou **orçamento fechado** por pedido.
+Tabela de extras: **€/hora** ou **orçamento fechado** por pedido — sempre **aprovado antes** de começar (salvaguarda B).
 
 ## 💳 Custos repassados
 
