@@ -29,12 +29,12 @@ status: ideias
 
 ## As APIs, mapeadas ao meu caso
 
-| API | O que faz | Encaixe na cosmética | Prioridade |
-|---|---|---|---|
-| **Firecrawl** | scraping → dados limpos p/ LLM | **Monitor de preços da concorrência** (avisa quando concorrentes mudam preços dos mesmos produtos) | 🟢 alta |
-| **Ayrshare** | publicar/agendar redes sociais via API | **Redes sociais no automático** (cria + agenda posts do mês) | 🟢 alta |
-| **Exa** | busca inteligente p/ IA | (1) tendências/SEO de cosmética p/ conteúdo · (2) **encontrar clientes-alvo** p/ a minha agência | 🟡 média |
-| **Deepgram** | transcrição/voz | atendente telefónico p/ clínicas — **outro nicho** | 🔴 parar (objeto brilhante) |
+| API           | O que faz                              | Encaixe na cosmética                                                                               | Prioridade                  |
+| ------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------- |
+| **Firecrawl** | scraping → dados limpos p/ LLM         | **Monitor de preços da concorrência** (avisa quando concorrentes mudam preços dos mesmos produtos) | 🟢 alta                     |
+| **Ayrshare**  | publicar/agendar redes sociais via API | **Redes sociais no automático** (cria + agenda posts do mês)                                       | 🟢 alta                     |
+| **Exa**       | busca inteligente p/ IA                | (1) tendências/SEO de cosmética p/ conteúdo · (2) **encontrar clientes-alvo** p/ a minha agência   | 🟡 média                    |
+| **Deepgram**  | transcrição/voz                        | atendente telefónico p/ clínicas — **outro nicho**                                                 | 🔴 parar (objeto brilhante) |
 
 ### 🟢 Firecrawl — Monitor de preços da concorrência
 Upsell limpo para a EBeauty: alerta a dona quando um concorrente mexe no preço dos mesmos produtos (Medicube, etc.).
@@ -42,6 +42,8 @@ Upsell limpo para a EBeauty: alerta a dona quando um concorrente mexe no preço 
 
 ### 🟢 Ayrshare — Redes sociais no automático
 Resolve um problema que a EBeauty **já tem**: os ícones de Instagram/Facebook/TikTok no rodapé estão **mortos** (`href="#"`). Pequenos negócios penam com social. Modelo: a dona responde a 3 perguntas/mês → o sistema cria e agenda os posts. **Add-on ou tier premium.**
+
+> 📖 **Docs (quickstart):** https://www.ayrshare.com/docs/quickstart
 
 ### 🟡 Exa — duplo uso
 1. Tendências e SEO de cosmética para alimentar conteúdo da loja.
