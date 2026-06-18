@@ -93,3 +93,36 @@ Este é o problema, e a proposta da Factorial é usar a IA para ajudar as empres
 > Isto não é suavizar a exigência. É tornar a exigência sustentável.
 
 ![[summit-factorial-decisao-estrategica.png]]
+
+### O Futuro da Experiência e do Talento — Tendências e Desafios Emergentes
+> Tendências atuais: a forma como trabalhamos e gerimos pessoas está a evoluir. Estas tendências estão a moldar o futuro da Employee Experience.
+
+1. **Personalização** — experiências menos uniformes e mais adaptadas às necessidades individuais.
+2. **Escuta contínua** — pulse surveys; feedback contínuo; people analytics.
+3. **Experiência digital** — forte foco em UX interna.
+4. **Bem-estar integrado** — saúde física, psicológica e social.
+5. **Gestão baseada em skills** — experiências mais flexíveis e orientadas a competências.
+
+> Colocar as pessoas no centro, com experiências relevantes e significativas, é o caminho para organizações mais humanas, ágeis e competitivas.
+
+![[summit-factorial-futuro-experiencia-talento.png]]
+
+### Pirâmide de Maslow e a Motivação no Trabalho
+> A pirâmide de Maslow aplicada ao contexto organizacional revela que as necessidades básicas — como salário e segurança — são condição necessária mas não suficiente para a retenção. É nos níveis superiores — pertença, reconhecimento e propósito — que reside o verdadeiro motor do compromisso.
+
+Da base ao topo:
+1. **Necessidades fisiológicas**
+2. **Segurança**
+3. **Pertença**
+4. **Estima**
+5. **Autorrealização**
+
+![[summit-factorial-piramide-maslow.png]]
+
+### Resumindo? (Employee Experience)
+1. **Além do Salário** — as pessoas não ficam apenas pela remuneração; permanecem pela experiência vivida diariamente na organização.
+2. **Experiência Global** — Employee Experience (EX) representa a perceção global do colaborador ao longo de toda a sua jornada organizacional.
+3. **Impacto Direto** — o EX impacta diretamente o engagement, a retenção de talento e o desempenho individual e coletivo (+23% produtividade / −30% turnover — Gartner, 2024).
+4. **O Papel dos RH** — atuar como curador da experiência, garantindo coerência entre a EVP, a cultura organizacional e as práticas de gestão de pessoas.
+
+![[summit-factorial-resumindo-employee-experience.png]]
