@@ -24,6 +24,24 @@ status: rascunho
 
 ---
 
+## ⏱️ O meu valor/hora (definir primeiro — é o chão de tudo)
+
+Banda realista para **quem começa** como freelancer web em PT: **~€20–35/h**.
+
+> [!warning] A taxa de freelancer ≠ salário/hora
+> Como independente cobres o que um patrão cobriria: **Segurança Social (~21,4%)**, **IRS**, **sem férias/baixas pagas**, **tempo não faturável** (admin, vendas, aprender) e **meses sem clientes**. Regra prática: taxa freelancer ≈ **2×–2,5×** o que queres receber **líquido** à hora.
+
+| Queres líquido/h | Cobra (aprox.) |
+|---|---|
+| ~€10–12 | **~€25–30/h** |
+
+- **Começar a €25–30/h** é saudável. €15 é desvalorizares-te (e atrai maus clientes). Sobe com portfólio/referências.
+- ⭐ **Vende valor/pacotes, não horas.** A hora serve para *calcular o custo interno* e orçamentar extras — não tem de ser o que mostras ao cliente. Cobrar à hora limita-te ao teu tempo; cobrar por valor (tens a IA como diferenciador) não.
+
+*(Banda contextual — varia com nicho/zona/confiança. Números fiscais → confirmar com contabilista.)*
+
+---
+
 ## 🖥️ Infra — Opção A: Vercel (gerido)
 
 | Item | Custo | Nota |
@@ -82,6 +100,24 @@ A escolha **não é dinheiro** (ambos são baratos por cliente). É **tempo vs c
 | **Custo IA/mês ≈** | `custo/conversa × conversas/mês` = `____` |
 
 > Por isso a IA fica no **plano de cima** com **limite justo** (N conversas/mês). Acima → extra.
+
+> [!info] O risco real não é o uso normal — é o abuso
+> Numa loja pequena, o custo *normal* é baixo (Flash é barato, só uma fração das visitas conversa). O perigo é o **disparo**: um bot, ou alguém a spammar a análise de **foto** (a parte mais cara). Foco nº1 = **um teto**, não medição fina.
+
+### Como controlar o uso (código — fazer quando se avançar)
+- **Limite por visitante** — X mensagens por sessão/dia (cookie ou KV tipo Upstash Redis).
+- **Teto mensal global (kill-switch)** ⭐ — ao atingir N conversas/mês, o chat degrada com elegância ("fala connosco no WhatsApp") em vez de chamar a API. O custo **nunca surpreende**.
+- **Cap de tokens de saída** + limitar histórico enviado → baixa o custo por conversa.
+- **Limitar fotos por sessão** — a imagem é o hotspot de custo.
+- **Anti-bot** (Vercel BotID / firewall) para não queimarem a API.
+
+### Como cobrar / medir
+- **Franquia incluída + excedente** (já nos planos): N conversas/mês incluídas; acima → €X por bloco (ex.: por 100 conversas).
+- **Medir a sério:** a resposta do Gemini traz o **uso de tokens** → somas e tens o custo real por cliente. Montar **só quando o volume justificar**.
+- **Para já:** franquia generosa + **cláusula de uso justo** + kill-switch. A maioria das lojas pequenas nem chega perto do limite.
+
+> [!todo] Por fazer no código (ainda não feito)
+> Implementar no `app/api/chat/route.ts`: limite por visitante + **kill-switch mensal** + cap de tokens de saída. É a apólice contra contas de surpresa — e vira feature vendável ("uso de IA controlado").
 
 ---
 
