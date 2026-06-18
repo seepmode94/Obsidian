@@ -47,6 +47,14 @@ A escada de planos foge ao "empregado dos €30": vendo **valor em planos**, nã
 > [!note] Pressupostos (recalibrar com a secção *O meu valor/hora* em [[Custos e margem (EBeauty)]])
 > Valor/hora **€27,5** (meio da banda €25–30) · tempo médio real **~0,75h/mês** (site pequeno estável; as alterações incluídas são um **teto**, não a média) · infra partilhada + Sanity free + IA baixa. A avença é lucrativa mesmo modesta — o **lucro grande vem do build + extras + escala**, não da avença.
 
+| Plano | Preço | **Custo real** | Margem |
+|---|---|---|---|
+| **Mensal** | €59/mês | **~€25** | ~€34 |
+| **Anual** | €49/mês (€590/ano) | **~€29** | ~€20/mês + cash |
+| **Performance** | €39/mês + 6% | **~€25** | ~€14/mês + % |
+
+> *Custo real = infra (~€5) + gestão (~€20) + IA (~€4, só no Anual/Performance). Margem = Preço − Custo real.*
+
 **Mensal — €59/mês**
 | Componente | ~Valor |
 |---|---|
@@ -111,56 +119,105 @@ Tabela de extras: **€/hora** ou **orçamento fechado** por pedido.
 
 ## ⚖️ Funcionário vs Fornecedor vs Sócio
 
-O que decide **não** são as tarefas — é o **acordo**. Três testes:
+O que decide **não** são as tarefas (fazer imagens, gerir o Sanity, etc.) — é o **acordo**: como sou pago, quem corre o risco, que autonomia tenho. As mesmas tarefas podem fazer de mim as três coisas.
 
-1. **Como sou pago?** Fixo/por entrega → fornecedor. % das vendas → sócio.
+**Três testes:**
+1. **Como sou pago?** Fixo / por entrega → fornecedor. % das vendas → sócio.
 2. **Quem corre o risco?** Recebo mesmo que não vendam → fornecedor. Só ganho se venderem → sócio.
-3. **Autonomia?** Decido como/quando e posso ter outros clientes → fornecedor. Sob direção deles + exclusivo → **empregado** (risco de *falso recibo verde* em PT).
+3. **Autonomia?** Decido como/quando e posso ter outros clientes → fornecedor/sócio. Sob direção deles + exclusivo + horário → **empregado**.
 
-> [!danger] Falso recibo verde
-> Gestão contínua para **um só cliente, exclusivo e sob direção dele** pode ser reclassificada como contrato de trabalho. Manter-me claramente **fornecedor** (livre para outros clientes, a faturar entregas). Confirmar com contabilista.
+> [!danger] Falso recibo verde (risco real em PT)
+> Gestão contínua para **um só cliente, exclusivo e sob a direção dele** pode ser reclassificada como contrato de trabalho — com consequências fiscais e legais para os dois. Antídoto: manter-me claramente **fornecedor** (livre para outros clientes, a faturar **serviço/entregas**, com autonomia). Confirmar com contabilista.
 
-- **Mensal/Anual** = sou **fornecedor**. Seguro.
-- **Performance (% das vendas)** = derivo para **sócio**. Decidir:
-  - **Fornecedor com bónus** → base normal + **% pequena**. Continuo seguro.
-  - **Sócio a sério** → base baixa + **% grande**, aposta no volume → **formalizar por escrito** (% definida, partilha de decisões).
-- ⚠️ **Nunca % pura.** Sem base, se não venderem trabalho de graça e ainda pago API + hosting. Sempre **base (cobre custos) + %**.
+**Mapeamento dos planos:**
+- **Mensal / Anual** → sou **fornecedor**. Recebo vendam eles muito ou pouco. Seguro.
+- **Performance (% das vendas)** → derivo para **sócio**. Decidir conscientemente:
+  - **Fornecedor com bónus** → base normal + **% pequena**. Continuo seguro, a % é só extra.
+  - **Sócio a sério** → base baixa + **% grande**, aposto no volume → **formalizar por escrito** (% definida, partilha de decisões, talvez empresa).
+- ⚠️ **Nunca % pura.** Sem base, se não venderem trabalho de graça e ainda pago API + hosting do meu bolso.
+
+> [!tip] O antídoto ao "empregado dos €30"
+> Não é o modelo — é: (1) **cobrar por outputs**, não por estar disponível; (2) manter **autonomia**; (3) ter (ou poder ter) **outros clientes**; (4) **escalar** o mesmo motor. Um cliente numa avença pequena sabe a pouco; cinco clientes no mesmo motor é uma agência.
+
+## ⚠️ Riscos e mitigação por plano
+
+| Plano | Risco principal | Mitigação |
+|---|---|---|
+| **Mensal** | Cancelam quando quiserem → receita instável | Pré-aviso 30 dias; usar para ganhar confiança e migrar para Anual |
+| **Anual** | Margem mensal fina; cliente pesado consome > incluído | Cláusula de uso justo; limite de IA; alterações = teto não-acumulável |
+| **Performance** | Dependo do **marketing deles** (não controlo vendas); atribuição difícil | Base que cobre custos; % só sobre vendas **online medíveis**; nunca % pura |
+
+## 🎯 Como apresentar (script + objeções)
+
+- **Ancorar no Anual** como o "recomendado" (mais valor + IA câmara + mais barato/mês). O Mensal é a âncora cara que faz o Anual parecer óbvio. O Performance é a opção de parceria.
+- Apresentar sempre os **3 juntos** — dá sensação de escolha e controlo, e raramente escolhem o mais barato puro.
+- **Objeções:**
+  - *"É caro."* → Separar avença (manter no ar + IA) do build (one-time). €49/mês ≈ uns cafés/semana por um site gerido **com consultora IA**.
+  - *"Posso gerir eu."* → Podem gerir o **conteúdo** (Sanity é para isso). A avença é a parte técnica, segurança, IA e disponibilidade — não o data-entry.
+  - *"E se quiser cancelar?"* → Mensal: 30 dias, sem drama. Mostrar que não os prendo → gera confiança.
+  - *"Não preciso da IA."* → Oferecer o **Mensal sem câmara**. A IA é upsell, não obrigatória.
 
 ## 🛒 Pré-requisito do Performance: ver as vendas
 
-- Comissão exige vendas **medíveis**. Checkout atual = **WhatsApp manual** → invisível.
-- Para % real → **integrar pagamento online** (Stripe / MB Way via gateway). Setup one-time (€Z).
-- A conta de pagamento é **do cliente**; faturo a % no fim do mês com base no relatório.
-- ❌ **Não** ser eu a plataforma (Stripe Connect) → tornar-me-ia *merchant of record* (reembolsos, KYC, impostos). Peso a mais para uma loja pequena.
-- Gatilho a escrever: *"Se quiseres pagamento online + partilha de receita, o modelo passa a base €X + Y% das vendas, com setup de €Z."*
+- Comissão exige vendas **medíveis**. Checkout atual = **WhatsApp manual** → invisível, não dá para cobrar %.
+- Para % real → **integrar pagamento online** (Stripe / MB Way via gateway local: IfthenPay, Easypay, Eupago…). Setup **one-time (€Z)**, faturado à parte.
+- A conta de pagamento é **do cliente**; eu faturo a % no fim do mês com base no relatório (preciso de acesso de leitura ao dashboard + confiança/reconciliação).
+- ❌ **Não** ser eu a plataforma (Stripe Connect) → tornar-me-ia *merchant of record* (reembolsos, KYC/AML, impostos sobre dinheiro de terceiros). Peso a mais para uma loja pequena.
+- **Porquê 6%?** Faixa defensável **5–8%** quando forneço plataforma + IA + otimização. Só sobre vendas **online** (não WhatsApp/presencial — não atribuíveis).
+- **Alinhamento:** a parte boa é que passo a otimizar o site para **converter** (ganho com isso). Mas o volume de uma loja pequena é a incógnita → é o "quando crescermos juntos", não a porta de entrada.
+- Gatilho a escrever: *"Se quiseres pagamento online + partilha de receita, o modelo passa a €39 base + 6% das vendas online, com setup de €Z."*
 
-## 🏷️ Propriedade do código (DECIDIR — muda tudo)
+## 🏷️ Propriedade do código (DECIDIR — muda tudo o resto)
 
-- **Licença** (recomendado p/ avença): o "motor" é meu; usam enquanto pagam. Se cancelam, a minha alavanca mantém-se. ← coerente com avença.
-- **Venda outright:** ficam donos do código; só lhes vendo manutenção.
-- Define o que recebem na saída (export Sanity, transferência Vercel/domínio).
+- **Licença (recomendado p/ avença):** o "motor" é **meu**; usam enquanto pagam. Se cancelam, a minha alavanca mantém-se e reutilizo o motor noutros clientes. ← coerente com avença + escala.
+- **Venda outright:** ficam **donos** do código (build mais caro); depois só vendo manutenção. Perco alavanca e a reutilização fica limitada.
+- **Híbrido:** vendo o site, mas a **consultora IA / componentes do motor** ficam sob licença (continuam a depender de mim).
+- Definir o que recebem **na saída**: export do Sanity (conteúdo é deles), transferência de Vercel. O **domínio é sempre do cliente** (em nome dele).
+
+## 🖥️ Infra: Vercel vs VPS (ver [[Custos e margem (EBeauty)]])
+
+- **1 cliente → Vercel Pro.** Não comprar servidor para um site.
+- **5+ clientes → VPS (Hetzner ~€5–6) + Coolify/Dokploy.** Custo fixo partilhado, paga-se sozinho; arranca o modelo de agência.
+- O servidor **só** substitui o front-end (Vercel). **Sanity e Gemini ficam cloud sempre.**
+- Trade-off: VPS troca **dinheiro por tempo** (eu viro o SRE: backups, SSL, uptime, ponto único de falha).
+
+## 🤖 Custo da IA: controlar (ver [[Custos e margem (EBeauty)]])
+
+- Risco real = **abuso/disparo** (bot, spam de fotos), não o uso normal.
+- **A fazer no código (ainda não feito):** kill-switch mensal + limite por visitante + cap de tokens em `app/api/chat/route.ts`. Apólice contra contas de surpresa.
+- Comercialmente: **franquia incluída + excedente** + cláusula de uso justo.
 
 ## 🧾 Faturação e avença "automática" (PT)
 
-São **duas peças**:
-1. **Fatura legal:** como trabalhador independente, **fatura-recibo** no **Portal das Finanças** ou **software certificado AT** (InvoiceXpress, Vendus, Moloni, Cegid…). Vários fazem **faturas recorrentes**.
+São **duas peças** separadas:
+1. **Fatura legal:** como trabalhador independente, **fatura-recibo** no **Portal das Finanças** ou em **software certificado pela AT** (InvoiceXpress, Vendus, Moloni, Cegid…). Vários emitem **faturas recorrentes** automáticas.
 2. **Pagamento automático:** **débito direto SEPA** ou subscrição (**Stripe Billing**) que cobra o cartão todo o mês. O **contrato autoriza** a cobrança recorrente.
 
-> [!note] IVA
-> Regime de isenção (art. 53.º) vs. regime normal depende do volume/limites. **Confirmar com contabilista** — não assumir números de cabeça.
+> [!note] IVA e Segurança Social
+> Regime de isenção (art. 53.º) vs. regime normal depende do volume/limites; como independente há também **Segurança Social (~21,4%)** e IRS. **Confirmar tudo com contabilista** — não assumir números de cabeça.
+
+## 📈 Caminho de crescimento
+
+1. Fechar a EBeauty (Mensal ou Anual) → primeira receita recorrente + **caso de estudo / demo ao vivo**.
+2. **Faturar a backlog** one-time (pendentes em [[Ponto de situação]]: ligar storeSettings, favicon/OG, pesquisa, alinhar design, redes sociais, dados legais).
+3. **Subir preços** com portfólio/referências (€59 → €69–89).
+4. **Reutilizar o motor** noutras lojas pequenas (cosmética/parafarmácia) → cada cliente novo é quase só branding + conteúdo. Deixa de ser "um site" e vira produto/agência.
 
 ## ✅ Recomendação
 
-1. **Base = serviço.** Fechar **Mensal** (ou Anual com saída fácil) com a EBeauty já. Receita previsível.
-2. **Faturar a backlog + "pacote go-live"** como trabalho (ver pendentes em [[Ponto de situação]]).
-3. **Performance = 3.ª opção opcional**, sempre **base + %**, só após pagamento integrado. É o "quando crescermos juntos", não a porta de entrada.
-4. **A alavancagem real = escala:** o mesmo motor em vários clientes. A EBeauty é o **caso de estudo / demo**.
+1. **Base = serviço.** Fechar **Mensal** (ou **Anual** com saída fácil) com a EBeauty **já**. Receita previsível, risco baixo.
+2. **Faturar backlog + "pacote go-live"** à parte (one-time).
+3. **Performance = 3.ª opção opcional**, sempre **base + %**, só após pagamento integrado. "Quando crescermos juntos."
+4. **Alavancagem real = escala** (mesmo motor, vários clientes).
 
 ## ❓ Decisões em aberto (preencher antes de propor)
 
-- [ ] Preços reais: `€X` mensal, desconto anual, `€base + Y%` e `€Z` setup.
+- [x] ~~Preços~~ → propostos: **€59 mensal · €590/ano · €39 + 6% performance** (rever com valor/hora final).
+- [ ] **Valor/hora** final e **horas/mês** reais (recalibra as margens).
 - [ ] Limite de uso da IA por plano (**N** conversas/mês).
-- [ ] **Mensal (flexível)** ou **Anual (compromisso)** como entrada?
-- [ ] **Propriedade:** licença vs venda.
-- [ ] Definição fechada de "pequena alteração" (tempo/tipo).
-- [ ] Quem paga o quê dos custos variáveis (API/hosting) acima do limite.
+- [ ] **Mensal (flexível)** ou **Anual (compromisso)** como entrada para a EBeauty?
+- [ ] **Propriedade:** licença vs venda vs híbrido.
+- [ ] Cláusula de saída antecipada do Anual (meses em falta / penalização / aviso).
+- [ ] Setup/build one-time para a EBeauty: já pago? quanto?
+- [ ] Quem paga os custos variáveis (API/hosting) acima do limite.
+- [ ] Infra de arranque: Vercel agora → migrar a VPS aos 5+ clientes.
