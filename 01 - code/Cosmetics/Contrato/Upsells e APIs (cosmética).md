@@ -32,7 +32,7 @@ status: ideias
 | API           | O que faz                              | Encaixe na cosmética                                                                               | Prioridade                  |
 | ------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------- |
 | **Firecrawl** | scraping → dados limpos p/ LLM         | **Monitor de preços da concorrência** (avisa quando concorrentes mudam preços dos mesmos produtos) | 🟢 alta                     |
-| **Ayrshare**  | publicar/agendar redes sociais via API | **Redes sociais no automático** (cria + agenda posts do mês)                                       | 🟢 alta                     |
+| **Ayrshare**  | publicar/agendar redes sociais via API | **Redes sociais no automático** (cria + agenda posts do mês)                                       | 🟡 ideia boa, provider caro — ver alternativas (Postiz/Mixpost) |
 | **Exa**       | busca inteligente p/ IA                | (1) tendências/SEO de cosmética p/ conteúdo · (2) **encontrar clientes-alvo** p/ a minha agência   | 🟡 média                    |
 | **Deepgram**  | transcrição/voz                        | atendente telefónico p/ clínicas — **outro nicho**                                                 | 🔴 parar (objeto brilhante) |
 
@@ -44,6 +44,11 @@ Upsell limpo para a EBeauty: alerta a dona quando um concorrente mexe no preço 
 Resolve um problema que a EBeauty **já tem**: os ícones de Instagram/Facebook/TikTok no rodapé estão **mortos** (`href="#"`). Pequenos negócios penam com social. Modelo: a dona responde a 3 perguntas/mês → o sistema cria e agenda os posts. **Add-on ou tier premium.**
 
 > 📖 **Docs (quickstart):** https://www.ayrshare.com/docs/quickstart
+
+> [!warning] Ayrshare NÃO é grátis (verificado 2026-06-18)
+> O **código do demo** ([social-api-demo](https://github.com/ayrshare/social-api-demo)) é **MIT/grátis**, mas o **serviço não tem tier grátis**: começa em **$149/mês (1 perfil social)**; multi-perfil $299–599/mês. A **$149/perfil NÃO dá para revender** a uma loja pequena (perdias dinheiro). Só compensa **à escala** (Business ~$20/perfil em 30 perfis).
+>
+> **Alternativas para o upsell:** self-hosted no VPS — **Postiz** ou **Mixpost** (custo fixo, clientes ilimitados, encaixa no modelo de agência); ou **manual** no 1º cliente. A **ideia** mantém-se 🟢 — muda o **provider**.
 
 ### 🟡 Exa — duplo uso
 1. Tendências e SEO de cosmética para alimentar conteúdo da loja.
@@ -79,6 +84,13 @@ Reutiliza a IA que **já tenho**, dá presença social à loja, e é um **upsell
 - **"Grátis" é para validar** — a tier grátis acaba; ao escalar pagas. Mesma lógica de custo repassado de sempre.
 - **Scraping (Firecrawl):** cuidado legal/ToS.
 - **O moat é a relação + o produto que funciona**, não a API.
+
+---
+
+## 📺 Para ver depois
+
+- **"Make Money from your API Tutorial"** — https://www.youtube.com/watch?v=MbqSMgMAzxU
+  Ângulo **diferente**: monetizar a **minha própria API** (construir + cobrar), não usar APIs alheias. Encaixa na tese de **produtizar o motor** a longo prazo (ex.: expor a consultora IA de beleza, ou o motor "loja+IA", como produto). ⚠️ Direção **futura** — não desviar do foco cosmética/EBeauty agora.
 
 ---
 
