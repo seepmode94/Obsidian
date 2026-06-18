@@ -45,38 +45,38 @@ A escada de planos foge ao "empregado dos €30": vendo **valor em planos**, nã
 ## 💶 Discriminação dos valores
 
 > [!note] Pressupostos (recalibrar com a secção *O meu valor/hora* em [[Custos e margem (EBeauty)]])
-> Valor/hora **€27,5** (meio da banda €25–30) · tempo médio real **~0,75h/mês** (site pequeno estável; as alterações incluídas são um **teto**, não a média) · infra partilhada + Sanity free + IA baixa. A avença é lucrativa mesmo modesta — o **lucro grande vem do build + extras + escala**, não da avença.
+> Valor/hora **€20** (preço de arranque / primeiro cliente; chão recomendado €25) · tempo médio real **~0,75h/mês** (site pequeno estável; as alterações incluídas são um **teto**, não a média) · infra partilhada + Sanity free + IA baixa. A avença é lucrativa mesmo modesta — o **lucro grande vem do build + extras + escala**, não da avença.
 
 | Plano | Preço | **Custo real** | Margem |
 |---|---|---|---|
-| **Mensal** | €59/mês | **~€25** | ~€34 |
-| **Anual** | €49/mês (€590/ano) | **~€29** | ~€20/mês + cash |
-| **Performance** | €39/mês + 6% | **~€25** | ~€14/mês + % |
+| **Mensal** | €59/mês | **~€20** | ~€39 |
+| **Anual** | €49/mês (€590/ano) | **~€24** | ~€25/mês + cash |
+| **Performance** | €39/mês + 6% | **~€24** | ~€15/mês + % |
 
-> *Custo real = infra (~€5) + gestão (~€20) + IA (~€4, só no Anual/Performance). Margem = Preço − Custo real.*
+> *Custo real = infra (~€5) + gestão (~€15 = 0,75h × **€20/h**) + IA (~€4, no Anual/Performance). Margem = Preço − Custo real.*
 
 **Mensal — €59/mês**
 | Componente | ~Valor |
 |---|---|
 | Alojamento + domínio gerido (DNS/SSL) | €5 |
-| Gestão, monitorização, updates + até 2 alterações/mês (~0,75h) | €20 |
+| Gestão, monitorização, updates + até 2 alterações/mês (~0,75h × €20) | €15 |
 | CMS (Sanity) | incl. |
-| **Margem** | **~€34** |
+| **Margem** | **~€39** |
 
 **Anual — €590/ano (≈ €49/mês)**
 | Componente | ~Valor/mês |
 |---|---|
-| Tudo do Mensal (custo ~€25) | — |
+| Tudo do Mensal (custo ~€20) | — |
 | Consultora **IA com câmara** (até N conversas) | €4 |
 | Até 4 alterações/mês + prioridade | incl. |
-| **Margem** | **~€20/mês + cash à cabeça** |
+| **Margem** | **~€25/mês + cash à cabeça** |
 
 > A troca pelo desconto é o **compromisso de 12 meses** (e o cash adiantado). Margem mensal menor que o Mensal, mas ganhas retenção + tesouraria.
 
 **Performance — €39/mês + 6% das vendas online**
 | Componente | ~Valor |
 |---|---|
-| Base (infra + gestão mínima) — não trabalho de graça | €39 (custo ~€25 · margem ~€14) |
+| Base (infra €5 + gestão €15 + IA €4) — não trabalho de graça | €39 (custo ~€24 · margem ~€15) |
 | IA com câmara (interessa-me que converta) | incl. |
 | **+ 6% das vendas online** (só as medíveis) | upside |
 | Pré-requisito: pagamento online integrado | setup one-time |
@@ -213,7 +213,7 @@ São **duas peças** separadas:
 ## ❓ Decisões em aberto (preencher antes de propor)
 
 - [x] ~~Preços~~ → propostos: **€59 mensal · €590/ano · €39 + 6% performance** (rever com valor/hora final).
-- [ ] **Valor/hora** final e **horas/mês** reais (recalibra as margens).
+- [x] ~~Valor/hora~~ → **€20/h** (arranque) · **~0,75h/mês**. Subir a €25–30 recalcula (margens descem ligeiramente).
 - [ ] Limite de uso da IA por plano (**N** conversas/mês).
 - [ ] **Mensal (flexível)** ou **Anual (compromisso)** como entrada para a EBeauty?
 - [ ] **Propriedade:** licença vs venda vs híbrido.

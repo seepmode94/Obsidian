@@ -40,6 +40,9 @@ Banda realista para **quem começa** como freelancer web em PT: **~€20–35/h*
 
 *(Banda contextual — varia com nicho/zona/confiança. Números fiscais → confirmar com contabilista.)*
 
+> [!example] Assumido nos cálculos: **€20/h** (preço de arranque / primeiro cliente)
+> Abaixo do chão recomendado (€25); usado como **rampa** para fechar os primeiros clientes e ganhar referências — subir para €25–30 depois. A €20/h: ~800h faturáveis/ano ≈ €16 000 bruto → **~€950–1 050/mês líquido** (a rondar o salário mínimo). Pesa sobretudo no **build e nos extras**, não na avença.
+
 ---
 
 ## 🖥️ Infra — Opção A: Vercel (gerido)
@@ -135,25 +138,25 @@ A escolha **não é dinheiro** (ambos são baratos por cliente). É **tempo vs c
 ## 🧮 Custo total por cliente / mês (preencher)
 
 ```
-Infra (VPS÷N  ou  Vercel marginal) ......  €____
-IA (Gemini esperado) ....................  €____
-Sanity (se pago) ........................  €____
-Outros repassados que eu absorvo ........  €____
+Infra (Vercel marginal / VPS÷N) .........  €5
+IA (Gemini, só planos com IA) ...........  €4    (€0 no Mensal básico)
+Sanity (catálogo pequeno = grátis) ......  €0
+Outros repassados que eu absorvo ........  €0
 -------------------------------------------------
-SUBTOTAL custos "duros" .................  €____
+SUBTOTAL custos "duros" .................  €5–9
 
-O MEU TEMPO: ___ h/mês × €___/h .........  €____   ⭐ o que manda
+O MEU TEMPO: ~0,75 h/mês × €20/h ........  €15   ⭐ o que manda
 -------------------------------------------------
-CUSTO REAL POR CLIENTE / MÊS ............  €____
+CUSTO REAL POR CLIENTE / MÊS ...........  ~€20 (sem IA) · ~€24 (com IA)
 ```
 
 ## 💰 Margem por plano (preencher com os preços de [[Modelo de negócio e planos (avença)]])
 
 | Plano | Preço/mês | Custo real/mês | **Margem** |
 |---|---|---|---|
-| Mensal | €____ | €____ | €____ |
-| Anual (÷12) | €____ | €____ | €____ |
-| Performance | €base + Y% | €____ | €____ + % |
+| Mensal | €59 | ~€20 | **~€39** |
+| Anual (÷12) | €49 | ~€24 | **~€25** + cash |
+| Performance | €39 + 6% | ~€24 | **~€15** + % |
 
 > [!danger] Regra do desconto anual
 > O anual (≈ 2 meses grátis) **tem de continuar acima do custo real**. Não descontar até ao prejuízo.
@@ -171,7 +174,7 @@ CUSTO REAL POR CLIENTE / MÊS ............  €____
 
 ## ✅ A confirmar antes de propor
 
-- [ ] **Valor/hora** meu (define isto primeiro — é o chão de tudo).
+- [x] ~~**Valor/hora** meu~~ → **€20/h** (arranque; chão recomendado €25, alvo €30).
 - [ ] **Horas/mês** estimadas de gestão por cliente.
 - [ ] Fornecedor de VPS + specs (RAM ≥ 4–8 GB) + custo de backups.
 - [ ] Conversas/mês esperadas da IA → custo Gemini.
