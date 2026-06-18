@@ -36,6 +36,15 @@ O Prestador presta ao Cliente um serviço de **gestão, alojamento e manutençã
 
 ---
 
+### 3.1 Add-ons opcionais  *(assinalar se pretendido)*
+
+- [ ] **Monitor de preços da concorrência** — alerta o Cliente quando concorrentes alteram preços dos mesmos produtos — **€______/mês**
+- [ ] **Redes sociais no automático** — criação e agendamento de publicações nas redes do Cliente — **€______/mês**
+
+*Os add-ons estão sujeitos a limites de uso e a um eventual valor de configuração inicial, a indicar em orçamento.*
+
+---
+
 ### 4. O que está incluído
 
 - Alojamento e **domínio gerido** (DNS e certificado SSL).
