@@ -1,9 +1,10 @@
 ---
 tags: [cosmetics, ebeauty, contrato, cliente]
-atualizado: 2026-06-18
+atualizado: 2026-06-19
 ---
 
 > *Rascunho — rever com apoio jurídico e **remover esta linha** antes de enviar/assinar.*
+> Versão para assinar em papel/PDF preenchível: `Contrato EBeauty (preenchivel).pdf` (gerado a partir desta nota).
 
 # Contrato de Prestação de Serviços
 ## Gestão e manutenção de website
@@ -24,20 +25,24 @@ Contacto: ______________  ·  Email: ______________
 
 ### 2. Objeto
 
-O Prestador presta ao Cliente um serviço de **gestão, alojamento e manutenção** do website **______________________** (domínio: ______________), incluindo o sistema de gestão de conteúdos (CMS) e, conforme o plano contratado, a consultora virtual com IA.
+O Prestador presta ao Cliente um serviço de **gestão, alojamento e manutenção** do website **______________________** (domínio: ______________), incluindo o sistema de gestão de conteúdos (CMS) e a **consultora virtual com IA** nos termos das secções 4 e 3.1.
 
 ---
 
 ### 3. Plano contratado  *(assinalar um)*
 
 - [ ] **Mensal** — **€59/mês**. Sem fidelização; cancelável com 30 dias de pré-aviso.
-- [ ] **Anual** — **€590/ano** (equivalente a ~€49/mês). Compromisso de 12 meses.
+- [ ] **Anual** — **€590/ano** (equivalente a ~€49/mês). Compromisso de 12 meses; prioridade no suporte.
 - [ ] **Performance** — **€39/mês + 6%** das vendas online. Requer integração de pagamento online (ver 5).
+
+> A **consultora IA por texto** está incluída em **todos os planos** (ver 4). Os planos diferem no preço, compromisso e prioridade — **não** na IA de texto.
 
 ---
 
 ### 3.1 Add-ons opcionais  *(assinalar se pretendido)*
 
+- [ ] **Análise de pele por foto (IA 📸)** — a consultora analisa fotos enviadas (análise estética, não médica; a foto **não é guardada**). Como usa **visão por IA**, tem **custo de tokens superior** e é faturada à parte do texto.
+  Inclui **______ análises/mês**; acima disso **€______/análise** (ou bloco). **Valor: €______/mês.**
 - [ ] **Monitor de preços da concorrência** — alerta o Cliente quando concorrentes alteram preços dos mesmos produtos — **€______/mês**
 - [ ] **Redes sociais no automático** — criação e agendamento de publicações nas redes do Cliente — **€______/mês**
 
@@ -51,13 +56,14 @@ O Prestador presta ao Cliente um serviço de **gestão, alojamento e manutençã
 - **CMS** para o Cliente gerir o catálogo (produtos, preços, fotos).
 - **Atualizações de segurança** e de manutenção.
 - **Até ~1 hora/mês de pequenas alterações** (≈ 2 pedidos de até ~30 min — ex.: trocar um preço, uma foto, um texto). Não acumulável para o mês seguinte.
-- *(Anual e Performance)* **Consultora com IA** (incl. análise por foto), até **______ conversas/mês**.
+- **Consultora IA por texto** — incluída em **todos os planos**, até **______ conversas/mês** (uso justo). A **análise por foto** é um **add-on pago** (ver 3.1), por consumir mais recursos.
 - *(Anual)* **Prioridade** no suporte.
 
 ---
 
 ### 5. O que NÃO está incluído  *(orçamentado à parte e aprovado previamente)*
 
+- **Análise de pele por foto**, salvo se o add-on da secção 3.1 estiver assinalado.
 - Funcionalidades novas, redesenhos ou alterações estruturais.
 - Campanhas, SEO avançado, produção de conteúdo/fotografia.
 - Integração de pagamentos online (Stripe / MB Way) — trabalho pontual.
@@ -67,7 +73,7 @@ O Prestador presta ao Cliente um serviço de **gestão, alojamento e manutençã
 
 ### 6. Preço e pagamento
 
-- Valor conforme o plano assinalado na secção 3.
+- Valor conforme o plano assinalado na secção 3, acrescido dos add-ons assinalados em 3.1.
 - **Método de pagamento** *(assinalar um)*:
   - [ ] Débito direto SEPA
   - [ ] Cartão (subscrição recorrente)
@@ -80,7 +86,8 @@ O Prestador presta ao Cliente um serviço de **gestão, alojamento e manutençã
 
 ### 7. Custos repassados
 
-- A utilização da IA e do alojamento está incluída **até ao limite do plano**; uso acima do limite é faturado à parte.
+- A **consultora IA por texto** e o alojamento estão incluídos **até ao limite do plano** (uso justo); uso acima do limite é faturado à parte.
+- A **análise por foto** consome mais recursos (visão por IA) e só está disponível com o **add-on da secção 3.1**; o que exceder a franquia mensal é faturado ao valor unitário indicado.
 - O **domínio é propriedade e responsabilidade do Cliente** (registado em nome do Cliente); o respetivo custo é do Cliente.
 
 ---
@@ -109,7 +116,7 @@ Em caso de não pagamento, o Prestador notifica o Cliente e, decorridos **______
 
 ### 11. Proteção de dados (RGPD)
 
-Cada parte cumpre o RGPD no âmbito das suas responsabilidades. O Prestador trata os dados estritamente para a prestação do serviço e não os utiliza para outros fins.
+Cada parte cumpre o RGPD no âmbito das suas responsabilidades. O Prestador trata os dados estritamente para a prestação do serviço e não os utiliza para outros fins. As fotos enviadas à consultora IA são processadas para análise estética e **não são guardadas**.
 
 ---
 
@@ -136,3 +143,5 @@ ___________________________________
 
 ___________________________________
 (______________________________)
+</content>
+</invoke>
