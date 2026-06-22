@@ -51,7 +51,7 @@ Esquema em camadas:
 
 ---
 
-## O método de funding discutido: Binance → Phantom → Poly
+## O método de funding discutido: Binance → Phantom → Poly → Phantom -> (Swap para Monero -> Outra Phatom Wallet → Polymarket"overkill")
 
 Fluxo proposto: comprar cripto na **Binance** → enviar para uma **carteira Phantom** ("que nem está associada a nada teu") → depositar no **Polymarket**.
 
@@ -74,6 +74,24 @@ Esta é a parte honesta que o instinto inicial não cobre:
 
 ### O ângulo tecnicamente relevante (para o bot)
 Um bot que negoceie via **CLOB API + carteira Polygon** interage com os endpoints/contratos diretamente, **não** com o front-end web bloqueado. Isto contorna o geo-block *do site*, mas **a ToS e a lei continuam a aplicar-se** — não muda o estatuto legal, só o caminho técnico. Não resolve nada do que está acima; apenas evita o IP-block do browser.
+
+---
+
+## Análise de segurança — circumvenção de geo-block (defensiva)
+
+> Documenta, do ponto de vista **defensivo/analítico**, o que utilizadores tentam para contornar o bloqueio e **porque falha**. Não é um guia operacional — é o modelo de ameaça e a realidade da deteção. A sequência executável de ocultação foi deliberadamente deixada de fora.
+
+**Vetor típico que utilizadores tentam:** desligar a identidade KYC do endereço de trading — em geral exchange-KYC → carteira → moeda de privacidade (ex. Monero) → carteira nova → plataforma. A premissa é que a "lavagem" pela moeda de privacidade corta o rasto on-chain.
+
+**Por que falha — três camadas independentes:**
+
+1. **A âncora KYC é fixa.** O ponto de entrada (exchange) conhece a identidade e o primeiro endereço/levantamento. Essa ligação existe mesmo que os hops seguintes sejam opacos. Empresas de chain-analysis (Chainalysis, TRM Labs, Elliptic) trabalham exatamente em desanonimizar fluxos, incluindo padrões de entrada/saída de moedas de privacidade.
+2. **O geo-block não é (só) o IP.** A ToS §2.1.4 do Polymarket confirma deteção geográfica que vai além do IP e identifica VPN; contas apanhadas são congeladas/terminadas. Quebrar a *identidade da carteira* não faz nada contra a *deteção geográfica à entrada da app* — são problemas ortogonais. A carteira "limpa" entra na mesma na rede de deteção.
+3. **A blockchain é permanente e pública.** Qualquer falha de OPSEC (reutilização de endereço, timing, fonte do gas) re-liga a cadeia. O registo é eterno e auditável retroativamente.
+
+**Camada legal (a que mais pesa):** desligar deliberadamente a origem dos fundos para aceder a um serviço bloqueado por um regulador transforma "uso de zona cinzenta" em **ocultação intencional** — tratada como branqueamento em muitas jurisdições, com exposição muito acima de uma simples conta congelada.
+
+**Conclusão defensiva:** a cadeia é tecnicamente frágil (a âncora KYC e a deteção da app sobrevivem-lhe), economicamente fraca (margem de arb minúscula vs. capital preso e congelável) e legalmente séria. O *takeaway* de segurança é que **a defesa da plataforma não está na carteira — está na deteção geográfica + KYC de entrada + chain-analysis**, e é aí que estas tentativas caem.
 
 ---
 
