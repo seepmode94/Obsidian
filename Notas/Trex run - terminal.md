@@ -1,4 +1,4 @@
-# <TERM-REX/>
+sim # <TERM-REX/>
 
 [](https://github.com/SATYADAHAL/termrex#term-rex)
 
