@@ -43,9 +43,51 @@ Depois das 18h de 06/07/2026, o portátil foi **inscrito remotamente no Fleet** 
 
 As duas sessões da noite serviram para **onboarding deste PC na gestão de frota Fleet**: agora é inventariável e auditável remotamente a partir de `fleet.cstaff.eu`, e aceita SSH. No momento da verificação não havia ligação aberta ao Fleet — normal, o orbit faz *polling* periódico.
 
+## Privacidade — o que o Fleet consegue ver (análise 2026-07-07)
+
+### Capacidades ativas (flags reais do processo `osqueryd`)
+Confirmado nos argumentos do processo em execução:
+- `--disable_distributed=false` → **live queries ATIVAS**: o admin pode consultar qualquer tabela osquery a pedido, em tempo real.
+- `--disable_carver=false` + `--carver_disable_function=false` (blocos 8 MB) → **file carving ATIVO**: pode puxar ficheiros inteiros da máquina para o servidor.
+- `--config_plugin=tls`, `--config_refresh=60` → config renova a cada 60 s de `fleet.cstaff.eu`.
+- `--logger_plugin=tls,filesystem` → logs para o servidor e cópia local em `/opt/orbit/osquery_log`.
+- Corre como **root**; host id `864df646-2caf-4206-ac39-61544bbc92fc`.
+
+### Captura contínua de execuções: DESLIGADA
+`disable_audit=true`, `disable_events=true`, `enable_bpf_events=false` → **sem stream contínuo** de cada comando/exec. A visibilidade é por *snapshot* (o que estiver a correr quando a query dispara) + o que fica persistido em ficheiro. Não é keylogging nem gravação de ecrã.
+
+### Passwords
+NÃO são visíveis — nenhuma query decifra/exfiltra passwords; sem keylogging, sem screenshots. As guardadas no browser ficam cifradas e não há tabela que as devolva.
+
+### Identidade dos logins — em parte SIM
+Query de inventário padrão já enviada pelo Fleet:
+`SELECT email FROM google_chrome_profiles WHERE NOT ephemeral AND email <> ''`
+→ o **email das contas Google no Chrome é reportado**. Também recolhe contas de utilizador (`uid, username, shell, groups`), cifragem de disco, SO, hardware, espaço em disco.
+
+### Atividade no terminal / projetos — SIM (com prova nesta máquina)
+- **Diretórios abertos (live):** `SELECT name, cwd FROM processes` revelou os terminais abertos, incl.:
+  - `/home/seepmode94/Documentos/work/IT/OpsDock/OpsDock-development`
+  - `/home/seepmode94/Documentos/work/IT/Luxury/LuxuryMobile`
+- **Comandos escritos:** a tabela `shell_history` (uid=1000) devolveu **6664 comandos** — lê o `~/.zsh_history` inteiro (262 KB, 6530 linhas, atualizado ao vivo; histórico desde março). Inclui `cd`, `git`, `docker`, scripts **e qualquer segredo escrito na linha de comandos**.
+- **Conteúdo do código:** tabela `file` lista os ficheiros; **carving (ativo)** pode puxar o conteúdo real.
+
+### O que foi EFETIVAMENTE recolhido até agora
+- `osqueryd.results.log` local **vazio (0 linhas)**; sem packs recorrentes a escrever localmente.
+- Sem registos de scripts/carving nos logs do `orbit`.
+- Ou seja: só correu o **inventário base** (incl. emails do Chrome, contas, cifragem). Capacidade armada, mas sem sinais de harvesting ativo. Nota: execução de scripts remotos do Fleet é controlada no servidor e não deixa flag no cliente — não confirmável a partir daqui.
+
+### Mitigações (equipamento gerido, não privado)
+- Não trabalhar em **projetos pessoais** aqui (caminho + comandos ficam visíveis).
+- **Nunca** escrever segredos na linha de comandos (persistem no `.zsh_history`, lido por completo).
+- Sair da sessão Google/Chrome pessoal; não guardar credenciais pessoais no browser/keychain desta máquina.
+- Para pessoal, usar outro dispositivo ou uma VM não enrolada no Fleet.
+- Quem controla `fleet.cstaff.eu` (IT) tem, na prática, alcance root a esta máquina, *on-demand* e sem notificação ao utilizador.
+
 ## Fontes (comandos)
 - `journalctl --list-boots`, `last reboot`, `who -b`
 - `journalctl -b -2` / `-b -1` (login, sshd, sudo, poweroff)
 - `/var/log/apt/history.log`, `/var/log/dpkg.log`
 - `dpkg -l | grep fleet`, `systemctl status orbit`
 - `/etc/default/orbit` (`ORBIT_FLEET_URL`, `ORBIT_UPDATE_URL`)
+- `sudo tr '\0' ' ' < /proc/<pid>/cmdline` (flags reais do `osqueryd`)
+- `sudo osqueryd -S "SELECT ... FROM processes / shell_history / osquery_flags"` (prova de visibilidade)
