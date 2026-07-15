@@ -1,134 +1,177 @@
-# Vender Websites com IA — Framework M.O.N.E.Y.
+# Método: Construir e Vender Websites com IA
 
-**Resumo do vídeo** *"How I Build & Sell $8,000 AI Websites (AntiGravity + Stitch)"*
+**Playbook extraído do vídeo** *"How I Build & Sell $8,000 AI Websites"* — Jack Roberts
+🔗 https://www.youtube.com/watch?v=wr0bvxVyPEs · 1:19:47 · nota criada a 15-07-2026
 
-| | |
+---
+
+## Ferramentas usadas no método
+
+| Ferramenta | Papel no método |
 |---|---|
-| **Canal** | Jack Roberts |
-| **Duração** | 1:19:47 |
-| **Publicado** | 18-02-2026 |
-| **Link** | https://www.youtube.com/watch?v=wr0bvxVyPEs |
-| **Nota criada** | 15-07-2026 |
+| **Google AntiGravity** | IDE agêntico — o "centro de operações": leads, build, clonagem, publicação |
+| **Google AI Studio** | Gerar o design inicial do site (é melhor a desenhar que o AntiGravity) |
+| **Google Stitch** | Design de sites multi-página; liga-se ao AntiGravity por MCP |
+| **Instant Data Scraper** (ext. Chrome) | Scraping rápido e manual do Google Maps |
+| **Apify** | Scraping programático de leads (via MCP no AntiGravity) |
+| **AnyMailFinder** | Enriquecimento: encontrar/validar emails dos leads (via API) |
+| **UI/UX Pro skill** (repo GitHub) | Checklist automática de UI/UX, acessibilidade e SEO |
+| **21st.dev** | Biblioteca de componentes bonitos para "UI sniping" |
+| **GitHub** | Armazenar cada site num repo (via CLI autenticada no AntiGravity) |
+| **Vercel** | Hosting; publicação programática via MCP (API token) |
+| **Instantly** | Campanhas de cold email com sequências de follow-up |
+| **GoHighLevel / WordPress** | (Opcional) destino alternativo do site, exportado como HTML/CSS |
+| **VideoAsk** | Recolher testemunhos em vídeo dos clientes |
 
 ---
 
-## Sumário executivo
+## FASE 1 — Escolher o nicho
 
-Jack Roberts (ex-fundador de uma startup com 60 mil clientes, hoje com uma agência de automação com IA) apresenta o sistema completo que usa para construir e vender websites a pequenos negócios — o primeiro vendeu-o por **8.000 £ com 2 dias de trabalho**. A tese central: oferecer um website excelente **de graça** a negócios "aborrecidos" com sites maus, e converter essa relação em **receita mensal recorrente** (hosting, SEO, chatbots, automações).
-
-A ferramenta central é o **Google AntiGravity** (IDE agêntico da Google), combinado com **Google AI Studio** (design), **Google Stitch** (design multi-página) e vários serviços ligados por MCP. O processo segue um framework de 5 passos: **M.O.N.E.Y.**
-
----
-
-## M — Mapear o nicho
-
-**Evitar os nichos "sexy" saturados** (dentistas, ginásios, med spas, imobiliárias) e atacar nichos **aborrecidos, lucrativos e mal servidos**: limpeza comercial, AVAC/canalizadores, jardinagem e abate de árvores, detailing automóvel, controlo de pragas, vedações, manutenção de piscinas, remoção de entulho.
-
-Porquê? Estes donos de negócio têm dinheiro, não são tech-savvy, quase nunca são abordados — e os websites deles são genuinamente maus (o vídeo mostra exemplos reais de empresas de piscinas em Austin).
-
-**Checklist de validação do nicho:**
-
-- Há pelo menos 20 negócios do tipo na tua zona? (quantos mais, melhor — o sistema de clonagem serve todos)
-- Têm websites maus ou desatualizados?
-- São lucrativos (têm dinheiro para pagar)?
-- Tens alguma experiência prévia no setor ("1% skill") que possas alavancar?
-
-**Filosofia do primeiro cliente:** não é receita, é **prova** — prova de que entregas, prova de que o mercado diz sim, prova a ti próprio. O website é a "porta de entrada" (gateway) para vender depois todos os outros serviços.
+1. Escolher um nicho **aborrecido, lucrativo e não tech-savvy**: limpeza comercial, AVAC/canalizadores, jardinagem/abate de árvores, detailing auto, controlo de pragas, vedações, manutenção de piscinas, remoção de entulho.
+2. Validar com a checklist:
+   - [ ] 20+ negócios desse tipo na zona-alvo
+   - [ ] Websites maus ou desatualizados (verificar no Google)
+   - [ ] Negócios com dinheiro (lucrativos)
+   - [ ] De preferência, um setor onde já tenha alguma experiência
 
 ---
 
-## O — Obter leads
+## FASE 2 — Obter e enriquecer leads
 
-Duas vias, da mais simples à mais poderosa:
+### Via rápida (manual)
 
-**1. Manual rápida** — extensão Chrome **Instant Data Scraper** sobre resultados do Google Maps: extrai nome, telefone, website, morada e avaliações de centenas de negócios, exporta CSV.
+1. Pesquisar o nicho no **Google Maps** (ex.: "pool cleaners Austin");
+2. Ativar a extensão **Instant Data Scraper** → "infinite scroll" → "start crawling";
+3. Exportar CSV com nome, telefone, website, morada, nº de reviews.
 
-**2. Programática com AntiGravity + Apify (MCP)** — liga-se o Apify ao AntiGravity via MCP (colar a API key na config) e pede-se em linguagem natural: "extrai-me todos os limpa-piscinas de Austin, gasta no máximo 20 cêntimos". Resultado no vídeo: **71 negócios por 0,77 $**, com telefones (96%), websites (89%) e emails (46%).
+### Via programática (AntiGravity + Apify)
 
-**3. Enriquecimento com AnyMailFinder** — via API, o AntiGravity valida os emails existentes e encontra os em falta: passou de 33 para 55+ negócios com email, **215 emails verificados**, incluindo contactos individuais.
+1. Criar conta **Apify** → Console → Settings → API & Integrations → copiar API key;
+2. No AntiGravity: `... → MCP servers → manage MCP servers → view raw config`, e pedir ao agente para adicionar o MCP do Apify ao `mcp_config.json` com a key;
+3. **Desativar ferramentas MCP não usadas** (manter < 50 ativas — poupa contexto);
+4. Prompt de teste com **orçamento limitado**: *"scrape pool cleaners em Austin, gasta no máximo 0,20 $"* — validar que funciona antes de escalar (no vídeo: 71 negócios por 0,77 $);
+5. Acompanhar a execução no console do Apify (separador "Runs").
 
-**Dicas técnicas do vídeo:**
+### Enriquecimento de emails
 
-- Desativar ferramentas MCP não usadas (idealmente < 50 ativas) — poupam contexto e tokens;
-- Transformar todo o processo numa **skill reutilizável** do AntiGravity: da próxima vez basta dizer "500 leads de empresas X em Y" e corre sozinho;
-- Ligar pessoalmente aos leads também funciona — ninguém o faz, destaca-se logo.
+1. Criar conta **AnyMailFinder** → API → copiar API key;
+2. Prompt no AntiGravity: *"enriquece esta lista com a API do AnyMailFinder — valida os emails existentes e encontra os que faltam"* + colar a key;
+3. Resultado esperado: taxa de emails passa de ~45% para 80%+, com contactos individuais verificados.
 
----
+### Automatizar para sempre
 
-## N — "Nail the build" (construir o website)
-
-O passo mais longo do vídeo. O fluxo de construção:
-
-**1. Investigar antes de construir** — pedir ao AntiGravity para analisar os websites dos 5-10 concorrentes locais com melhores avaliações Google e extrair o que têm em comum. Padrões encontrados: linguagem hiper-local ("os teus vizinhos em Austin"), listas granulares de serviços, secção "como funciona", FAQ, testemunhos com nomes reais e bairros, áreas de serviço extensas (ótimo para SEO local).
-
-**2. Desenhar no Google AI Studio** — o AI Studio produz designs mais bonitos que o AntiGravity; o truque é dar-lhe **pouca informação** (só design, sem o estudo dos concorrentes) e referências visuais: screenshots do Dribbble ou HTML extraído de sites que se admira. Nota do autor: para vender a clientes, construir do zero com referências — não copiar código de terceiros.
-
-**3. Passar para o AntiGravity via GitHub** — sincronizar o resultado do AI Studio com o GitHub e importá-lo no AntiGravity, que é melhor em engenharia/escala. Correr em localhost para iterar.
-
-**4. Aplicar a skill "UI/UX Pro"** (repo público no GitHub com 31 mil estrelas) — checklist automática de acessibilidade, contraste, espaçamentos, lazy loading, responsividade mobile e SEO. Faz-se uma vez; os clones herdam tudo.
-
-**5. Melhorar o copy com os dados** — aplicar agora os padrões dos concorrentes de topo: hero reescrito, barra de estatísticas, preços transparentes, testemunhos reais do Google, FAQ, CTA fixo "pedir orçamento grátis".
-
-**6. (Opcional) "UI sniping"** — buscar componentes bonitos em 21st.dev e pedir ao AntiGravity para os integrar. Mas o autor avisa: nestes nichos, **menos é mais** — o trabalho do site é converter, não impressionar.
-
-### O sistema de clonagem (a peça central do vídeo)
-
-1. Pedir ao AntiGravity para **decompor o site em componentes variáveis**: nome, logo, telefone, email, testemunhos, áreas de serviço, preços, esquema de cores;
-2. Refatorar para uma **arquitetura config-driven** — um único ficheiro `site-config.ts` de onde tudo flui;
-3. Criar uma **skill de clonagem**: dá-se o website de um lead e o agente extrai sozinho o logo, o telefone real, a nota Google verdadeira, os testemunhos e o esquema de cores da marca, e gera um site novo personalizado — no vídeo, sem tocar em nada;
-4. Repetir para 50, 80, 100 negócios do nicho.
-
-**Alternativa/complemento — Google Stitch:** agente de design da Google para websites **multi-página** (formulários, funis). Liga-se ao AntiGravity por MCP e também clona designs entre nichos ("duplica esta app de piscinas para remoção de resíduos").
-
-**Exportação para GoHighLevel/WordPress:** pedir ao AntiGravity para converter o site num bloco HTML/CSS/JavaScript e colar num code block — útil para quem trabalha com funis.
+Pedir ao AntiGravity para **transformar todo o pipeline numa skill reutilizável** (scraping → limpeza → enriquecimento). A partir daí basta: *"500 leads de empresas X em Y"*.
 
 ---
 
-## E — Executar o outreach
+## FASE 3 — Construir o website modelo
 
-**Publicação automática** — o AntiGravity liga-se ao GitHub (cria os repos) e ao **Vercel via MCP** (publica cada site com URL única), tudo programático. Truque importante: adicionar uma coluna "novo website" aos dados de leads, preenchida automaticamente com a URL de cada clone — permite emails em massa com o link personalizado de cada negócio.
+### 3.1 Investigar o que funciona no nicho
 
-**Os emails de contacto** (3 templates no playbook grátis dele):
+Prompt ao AntiGravity: *"pega nos 5-10 negócios com melhores reviews Google da nossa lista, faz scraping dos websites deles e dá-me 10 coisas acionáveis que os melhores fazem e os piores não."*
 
-- Assunto em minúsculas ("parece escrito por um humano");
-- Estrutura: "construí-te um website novo, aqui está o link, é teu, grátis, estou a construir portefólio" — **zero pedido, zero fricção**;
-- Variantes: a local ("sou da tua cidade"), a do elogio ("reparei nisto no teu negócio, aqui vai um quick win").
+Padrões típicos encontrados: linguagem hiper-local, listas granulares de serviços, secção "como funciona", FAQ, testemunhos com nomes reais e bairros, listas extensas de áreas de serviço (SEO local).
 
-**Follow-ups no Instantly** — "o dinheiro está todo no follow-up" (emails 3 a 7): sequência sugerida nos dias 3, 7, 14 e 28 (breakup email). Boas práticas: domínios pré-aquecidos para não cair em spam (não enviar de @gmail.com), parar a sequência à primeira resposta, enviar ao meio-dia do fuso do lead, limites diários baixos em contas novas, A/B testing das variantes.
+### 3.2 Desenhar no Google AI Studio
+
+- Dar **pouca informação** ao AI Studio (quanto mais contexto, pior o design) — só o pedido de design + referências visuais;
+- Referências: screenshots do **Dribbble**, ou HTML extraído de um site admirado (pesquisar "HTML extractor") anexado ao prompt;
+- Prompt-tipo: *"desenha um website lindo para uma empresa de limpeza de piscinas, foco total num hero gorgeous, segue o HTML anexo como guia de estilo."*
+
+### 3.3 Passar para o AntiGravity
+
+1. No AI Studio: **Sync to GitHub** → criar repo → stage & commit;
+2. No AntiGravity: *"instala este website numa pasta própria e abre em localhost"* (colar o link do repo);
+3. O AntiGravity vê o browser — se não carregar, corrige sozinho (tipicamente erros TypeScript).
+
+### 3.4 Otimizar
+
+1. Instalar a skill **UI/UX Pro** (repo GitHub c/ 31 mil estrelas): *"instala a skill abaixo neste projeto"* + colar o link;
+2. Correr: *"passa o site pela checklist da skill sem alterar o design — acessibilidade, contraste, lazy loading, responsividade, SEO — e devolve a lista de melhorias feitas"*;
+3. Aplicar o estudo da fase 3.1 ao copy: *"com base na análise dos top 10, edita o copy e acrescenta as secções que faltam"*;
+4. Verificar a versão mobile no preview;
+5. (Opcional) "UI sniping": escolher componentes no **21st.dev** ("best of the week") → copiar o código → *"implementa isto"*. Regra: nestes nichos, **menos é mais** — o site existe para converter.
+
+Este trabalho de otimização **faz-se uma única vez** — os clones herdam tudo.
 
 ---
 
-## Y — Yield (monetizar)
+## FASE 4 — O sistema de clonagem
 
-O **modelo "razor blades"** (Harry's Razors): o website grátis é o descanso da lâmina; as lâminas vendem-se todos os meses. Só avançar quando o cliente demonstra gratidão genuína ("não acredito que fizeste isto de graça") — é o sinal de que a relação está construída.
+1. **Decompor**: *"decompõe o site nos componentes que mudam de negócio para negócio"* → tipicamente 7: nome/logo/branding, testemunhos, contactos, áreas de serviço, preços, esquema de cores, stats/FAQ;
+2. **Refatorar para config-driven**: aceitar a sugestão de criar um `site-config.ts` único — muda-se o ficheiro, o site inteiro atualiza;
+3. **Clonar o primeiro**: *"clona o site para [negócio X da lista]: extrai o logo, telefone, rating Google real, testemunhos e cores da marca a partir do site deles; usa placeholders onde não houver dados"*;
+4. **Transformar em skill de clonagem** — a partir daí, cada novo clone é um prompt de uma linha, e pode correr para 50-100 negócios da lista.
 
-**Menu de add-ons MRR** (valores do vídeo):
+### Alternativa multi-página: Google Stitch
 
-| Serviço | Preço/mês |
+- Para sites com várias páginas/formulários, desenhar no **Stitch** (escolher modo "web", não "app");
+- Ligar ao AntiGravity: Stitch → settings → criar API key → *"adiciona o MCP do Stitch ao mcp_config.json"*;
+- O AntiGravity consegue puxar os projetos do Stitch e cloná-los entre nichos: *"duplica este layout para [outro nicho]"*.
+
+### (Opcional) Exportar para GoHighLevel/WordPress
+
+*"converte o site num único bloco HTML/CSS/JavaScript pronto a colar num code block"* → GoHighLevel: Sites → new website → página → elemento "code block" → colar.
+
+---
+
+## FASE 5 — Publicar programaticamente
+
+1. **GitHub**: *"liga-te ao GitHub para poderes criar repos"* → o AntiGravity instala a CLI, gera um código de autorização → colar em github.com/login/device → a partir daí cria e publica repos sozinho;
+2. **Vercel**: criar token em `vercel.com/account/settings/tokens` → *"adiciona o MCP do Vercel ao mcp_config.json"* → **ativar só ~10 das 100 ferramentas** do MCP (deploy + essenciais);
+3. *"publica o repo X no Vercel e devolve-me a URL"* → site live em `<nome>.vercel.app`;
+4. Erros visuais (ex.: logo em falta): screenshot → colar no chat → *"corrige isto"*;
+5. Transformar também isto numa **skill GitHub→Vercel**;
+6. **Crucial**: pedir para acrescentar uma coluna "novo website" aos dados dos leads, preenchida com a URL de cada clone — é o que permite o email em massa personalizado.
+
+> Bónus: alterações feitas no AntiGravity propagam-se automaticamente (código → GitHub → Vercel).
+
+---
+
+## FASE 6 — Outreach automatizado
+
+### O email (a oferta é o site grátis, sem pedido)
+
+- Assunto **em minúsculas** (parece escrito por humano);
+- Corpo-tipo: *"Olá [nome], sou [X] de [cidade]. Vi a [empresa] e achei que o vosso site podia fazer mais por vocês. Construí-vos um novo: [link único]. É vosso, grátis — estou a construir portefólio e o vosso negócio destacou-se. Se quiserem afinar algo, digam."*
+- 3 variantes para A/B test: a direta, a local, a do elogio + quick win.
+
+### Campanha no Instantly
+
+1. Conta de envio: **domínio pré-aquecido** (comprado no Instantly) ou o próprio email se o volume for baixo (30-40/semana). Nunca @gmail.com;
+2. Upload do CSV enriquecido (limpar antes: 1 email por célula, localidades escritas de forma natural — o AntiGravity trata disso);
+3. Email 1 com variável `{{website}}` para o link único de cada lead;
+4. **Sequência de follow-ups: dias 3, 7, 14 e 28** (o último é o "breakup email") — o dinheiro está nos emails 3-7;
+5. Definições: parar ao primeiro reply, envio ao meio-dia do fuso do lead, limite diário baixo em contas novas, A/B das 3 variantes.
+
+---
+
+## FASE 7 — Monetizar (modelo "razor blades")
+
+O site grátis é o suporte; as lâminas são os **add-ons mensais**. Só avançar quando o cliente demonstra gratidão genuína.
+
+| Add-on MRR | Preço/mês (referência do vídeo) |
 |---|---|
-| Hosting + manutenção do site | ~50 $ |
-| SEO local mensal | ~250 $ |
-| Chatbot IA no site (responde a leads em segundos) | ~500 $ |
-| Gestão de redes sociais | ~100+ $ |
+| Hosting + manutenção | 50 $ |
+| SEO local mensal | 250 $ |
+| Chatbot IA no site | 500 $ |
+| Gestão de redes sociais | 100+ $ |
 | Automação de follow-up de emails | variável |
-| Sistema de geração de reviews pós-serviço | variável |
-| Marcação de serviços online / missed-call text-back | variável |
+| Geração automática de reviews pós-serviço | variável |
+| Marcações online / missed-call text-back | variável |
 
-**Como vender o upsell:** perguntar como vai o site → perguntar qual é a maior dor do negócio → **ouvir mais do que falar** → propor UM add-on pequeno que resolva essa dor. Regras para o primeiro cliente: manter abaixo de 300 $/mês, acordo mês-a-mês sem contratos, cancelamento livre — "o teu primeiro cliente a pagar 150 $/mês vale infinitamente mais do que zero clientes a 2.000 $".
+**Script do upsell**: como vai o site? → qual é a maior dor do negócio agora? → **ouvir mais do que falar** → propor UM add-on pequeno que resolva essa dor.
 
-**Escalar a partir daí:**
+**Regras para o 1.º cliente**: < 300 $/mês, acordo mês-a-mês, cancelamento livre, sim fácil. Um cliente a 150 $/mês > zero clientes a 2.000 $.
 
-- **Testemunhos sempre** (ferramenta sugerida: VideoAsk), mesmo de quem não compra — prova social é tudo;
-- **Referências**: "conheces alguém que beneficiaria de um website grátis?" (menos vendedor que pedir diretamente);
-- **Autoridade de nicho**: "somos a agência dos limpa-piscinas" vence sempre a agência generalista — e o pitch fica devastador: "estudámos os 10 melhores do Texas, fazem estas 10 coisas, tu não fazes 9 delas — já corrigi, aqui está o site";
-- **Subir preços** quando houver 3+ clientes pagos com resultados, casos de estudo e procura acima da capacidade.
+**Escalar**: testemunhos sempre (VideoAsk), mesmo de quem não compra; pedir referências ("conheces alguém que beneficiaria de um site grátis?"); posicionar como especialista do nicho ("a agência dos limpa-piscinas"); subir preços com 3+ clientes pagos e casos de estudo.
+
+O pitch com autoridade de nicho: *"estudámos os 10 melhores do setor na tua região — fazem estas 10 coisas no site, tu não fazes 9. Já corrigi: aqui está o teu site novo."*
 
 ---
 
-## Nota crítica (minha, não do vídeo)
+## ⚠️ Notas para adaptação (minhas)
 
-O vídeo tem conteúdo técnico real e detalhado, mas é também marketing: o autor vende a comunidade paga dele, e a descrição está cheia de links de afiliado (Instantly, GoHighLevel, Apify — apesar de dizer no vídeo que não é afiliado). O valor de 8.000 £ é a melhor venda dele, não a típica. A tática de "grabar" logos, testemunhos e conteúdo dos sites dos leads para os clones levanta questões legais reais (direitos de autor, RGPD nos emails em massa na Europa — o Instantly configurado à americana não cumpre as regras de prospeção B2B portuguesas sem cuidado). Usar as ideias, filtrar a execução.
-
-## Relevância pessoal
-
-Este vídeo é praticamente o manual de vendas da minha ideia registada em "Ideia - Venda de sites com manutenção (VPS próprio)": o framework M.O.N.E.Y. cobre exatamente a parte que lá estava menos desenvolvida — **como arranjar clientes** (nicho aborrecido + site grátis + upsell para avença). As diferenças: eu planeava Astro + Coolify/Hetzner em vez de AntiGravity + Vercel, e o modelo dele confirma a lógica da avença mensal (hosting + manutenção + SEO) como produto principal. A ideia da arquitetura config-driven + clonagem é diretamente aproveitável para o meu template.
+- As ferramentas são substituíveis em quase todos os passos — o que interessa é o pipeline: **nicho → leads → site modelo → config-driven + clonagem → publicação automática → email com link único → avença**;
+- Em Portugal/UE, o cold email em massa à americana precisa de filtro RGPD (prospeção B2B tem regras), e extrair logos/testemunhos dos sites dos leads para os clones tem implicações de direitos de autor — rever antes de usar;
+- Cruzar com a nota "Ideia - Venda de sites com manutenção (VPS próprio)" — este método preenche a parte comercial que lá faltava.
