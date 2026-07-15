@@ -67,3 +67,6 @@ Antes de tudo: mesmo com no-code (Lovable, Replit), defende que é preciso perce
 ## Nota crítica (minha, não do vídeo)
 
 Os números da app dele não são verificáveis e o vídeo tem um segmento patrocinado (JetBrains/Kotlin, que ignorei por ser publicidade). Dois pontos discutíveis: descartar Android por completo é uma opinião polémica (válida talvez para apps de subscrição no mercado americano, menos na Europa), e o ROI de 130 $ por 50 $ em ads é o melhor caso dele, não uma expectativa realista. A parte mais sólida e reutilizável é a secção 3 (hardening) — é uma checklist técnica correta — e a lógica de validar ideias com TrustMRR/YC em vez de inventar do zero.
+
+---
+*Índice do tema: [[Negócios com IA (índice)]]*

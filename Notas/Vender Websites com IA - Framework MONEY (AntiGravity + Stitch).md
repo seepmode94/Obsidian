@@ -175,3 +175,6 @@ O pitch com autoridade de nicho: *"estudámos os 10 melhores do setor na tua reg
 - As ferramentas são substituíveis em quase todos os passos — o que interessa é o pipeline: **nicho → leads → site modelo → config-driven + clonagem → publicação automática → email com link único → avença**;
 - Em Portugal/UE, o cold email em massa à americana precisa de filtro RGPD (prospeção B2B tem regras), e extrair logos/testemunhos dos sites dos leads para os clones tem implicações de direitos de autor — rever antes de usar;
 - Cruzar com a nota "Ideia - Venda de sites com manutenção (VPS próprio)" — este método preenche a parte comercial que lá faltava.
+
+---
+*Índice do tema: [[Negócios com IA (índice)]]*

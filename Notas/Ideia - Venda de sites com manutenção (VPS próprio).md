@@ -93,3 +93,6 @@ No dia a dia, manutenção e alterações = trabalhar no repo + `git push`.
 - [ ] Definir tabela de preços (setup + avença) e o que a avença inclui
 - [ ] Redigir minuta de acordo de manutenção simples
 - [ ] Primeiro cliente piloto (idealmente alguém conhecido, com desconto, em troca de testemunho)
+
+---
+*Índice do tema: [[Negócios com IA (índice)]]*

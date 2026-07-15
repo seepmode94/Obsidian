@@ -166,3 +166,6 @@ Todas as ideias são viáveis e há pessoas a ganhar dinheiro com cada uma; a qu
 ## Nota crítica (minha, não do vídeo)
 
 Vale ler este resumo com filtro: o vídeo é também um funil de vendas do autor — promove o treino pago dele (FounderX), calls de vendas e um link de afiliado da Hostinger. Os números dos casos (40 mil $/mês, 10 mil $ em 30 dias) não são verificáveis e representam os melhores resultados, não a média. As ideias em si são legítimas e conhecidas no mercado de freelancing; o realismo está em assumir meses de aprendizagem e prospeção, não "este fim de semana".
+
+---
+*Índice do tema: [[Negócios com IA (índice)]]*

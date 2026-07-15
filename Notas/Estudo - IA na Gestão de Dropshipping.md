@@ -141,3 +141,6 @@ Entramos na **"Economia Agêntica"** — Gartner prevê 33% das apps empresariai
 - Zendrop — Best AI Agent for Dropshipping (MCP): https://www.zendrop.com/blog/best-ai-agent-for-dropshipping/
 - BigCommerce — Ecommerce AI Agents 2026: https://www.bigcommerce.com/blog/ecommerce-ai-agents/
 - Creatify — testar produtos sem amostras: https://creatify.ai/blog/dropshipping-how-to-test-products-fast
+
+---
+*Índice do tema: [[Negócios com IA (índice)]]*

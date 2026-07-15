@@ -46,3 +46,6 @@ O vídeo termina com um aviso importante: "grátis" não significa custo zero. S
 - **Supabase** e **Coolify** podem ser interessantes como alternativa de backend/deploy nos projetos Flutter ([[FinançaClara]], [[CStaff]]).
 - **n8n** pode servir para automações internas na Seepmode.
 - **Excalidraw** e **Penpot** são úteis já, sem instalar nada (têm versões web gratuitas).
+
+---
+*Índice do tema: [[Negócios com IA (índice)]]*
